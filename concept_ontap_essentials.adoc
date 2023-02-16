@@ -1,0 +1,83 @@
+---
+sidebar: sidebar 
+permalink: concept_ontap_essentials.html 
+summary: Aspectos básicos de ONTAP es un conjunto de consolas y flujos de trabajo que ofrecen descripciones detalladas de su entorno. 
+keywords: dashboard, widget, ontap, overview, insight 
+---
+= Aspectos básicos de ONTAP
+:allow-uri-read: 
+
+
+[role="lead"]
+Aspectos básicos de ONTAP es un conjunto de consolas y flujos de trabajo que proporcionan información general detallada de sus inventarios y cargas de trabajo de ONTAP. Es posible que aparezca los siguientes términos que se utilizan al trabajar en aspectos básicos de ONTAP:
+
+* Infrastructure/Inventory: Objetos que proporcionan servicios de almacenamiento/red a los datos de usuario
+* Cargas de trabajo: Objetos que proporcionan interfaz para los usuarios de lectura y escritura de datos.
+* Protección de datos: Objetos que se pueden proteger con tecnologías de protección de datos de NetApp
+
+
+Para obtener más términos y definiciones relacionados con ONTAP, consulte link:task_dc_na_cdot.html["Recopilador de datos de ONTAP"] documentación.
+
+Aspectos básicos de ONTAP requiere al menos un recopilador de datos de ONTAP que funcione con los datos recopilados en los últimos siete días.
+
+
+
+== Descripción general
+
+Para comenzar a explorar, seleccione *aspectos básicos de ONTAP* en el menú principal de Cloud Insights.
+
+image:ONTAP_Essentials_Overview_Sept.png["Consola de información general para ONTAP Essentials"]
+
+El panel *Descripción general* muestra información útil como el número de clústeres de su entorno con sus porcentajes de capacidad y rendimiento generales. También verá datos predictivos relacionados con el número de días esperados hasta que la capacidad de almacenamiento o la capacidad de rendimiento se queda sin espacio. Además, si alguna controladora de su infraestructura funciona a altas temperaturas, ONTAP Essentials les mostrará estas características.
+
+Los gráficos informativos le ofrecen una mirada al rendimiento con el tiempo y los problemas durante el uso de la capacidad.
+
+Cada uno de estos gráficos o puntos de datos se puede utilizar como punto de partida para la exploración o la investigación.
+
+Nota: Un número "días a lleno" de "0" (cero) indica que se estima que días a lleno es superior a 90 días. En otras palabras, sus sistemas no corren peligro de quedarse sin espacio en breve.
+
+
+
+== Protección de datos
+
+Seleccione la página *Data Protection* para ver las relaciones de SnapMirror. Haga clic en hasta la información del volumen de origen o de destino, o bien haga clic en el icono de engranaje para agregar columnas para los datos que desea ver.
+
+image:ONTAP_Essentials_data_protection.png["Página de lista SnapMirror Relationships"]
+
+
+
+== Alertas
+
+Aquí puede ver las alertas Active en su entorno y profundizar rápidamente en los posibles problemas. Seleccione la ficha _Resolved_ para ver las alertas que se han resuelto.
+
+image:ONTAP_Essentials_Alerts_Menu.png["Menú Alertas ONTAP"]
+image:ONTAP_Essentials_Alerts_Page.png["Ejemplo de página Alertas ONTAP que muestra las alertas activas"]
+
+
+
+== De almacenamiento
+
+La página aspectos básicos de ONTAP * Infraestructura* le ofrece una vista del estado y el rendimiento del clúster, utilizando consultas preintegradas (pero aún más personalizables) sobre todos los objetos básicos de ONTAP. Seleccione el tipo de objeto que desea explorar (clúster, pool de almacenamiento, etc.) y elija si desea ver información sobre el estado o el rendimiento. Defina filtros para obtener más información sobre cada sistema.
+
+image:ONTAP_Essentials_Health_Performance.png["Selecciones de infraestructura para pools de almacenamiento"]
+
+Página de infraestructura que muestra el estado del clúster:image:ONTAP_Essentials_Infrastructure_A.png["Objetos de infraestructura que se deben explorar"]
+
+
+
+== Redes
+
+Las redes básicas de ONTAP le ofrecen una visión de la infraestructura FC, NVMe FC, Ethernet e iSCSI. En estas páginas, puede explorar cosas como puertos en sus clústeres y sus nodos.
+
+image:ONTAP_Essentials_Alerts_Menu.png["Menú de red de ONTAP Essentials"]
+image:ONTAP_Essentials_Alerts_Page.png["Página ONTAP Essentials Networking FC que muestra los puertos en los nodos del clúster"]
+
+
+
+== Cargas de trabajo
+
+Consulte y Explore cargas de trabajo en LUN/volúmenes, recursos compartidos de NFS o SMB o qtree en su entorno.
+
+image:ONTAP_Essentials_Workloads_Menu.png["Menú cargas de trabajo"]
+
+image:ONTAP_Essentials_Workloads_Page.png["Página de lista Workloads"]

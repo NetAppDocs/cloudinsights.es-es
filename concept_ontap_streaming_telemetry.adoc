@@ -1,0 +1,12 @@
+---
+sidebar: sidebar 
+permalink: concept_ontap_streaming_telemetry.html 
+summary: Configuración de Cloud Insights con la telemetría streaming de ONTAP de NetApp 
+keywords: ONTAP, Telemetry, streaming, 
+---
+= Telemetría de streaming ONTAP de NetApp
+:allow-uri-read: 
+
+
+[role="lead"]
+Para obtener información actualizada, consulte link:https://docs.netapp.com/us-en/cloudinsights/task_dc_na_cloud_connection.html["Conexión cloud de NetApp para ONTAP 9.9 o posterior"] página recopilador de datos.

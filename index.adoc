@@ -1,0 +1,43 @@
+---
+sidebar: sidebar 
+permalink: index.html 
+summary: Bienvenido al portal de documentación de Cloud Insights. 
+---
+= Documentación de Cloud Insights
+:allow-uri-read: 
+
+
+[role="lead"]
+Cloud Insights de NetApp es una herramienta de supervisión de infraestructura de cloud que le proporciona visibilidad sobre su infraestructura completa. Con Cloud Insights, puede supervisar, solucionar problemas y optimizar todos los recursos, incluidos los clouds públicos y los centros de datos privados.
+
+
+
+== ¿Qué puede hacer Cloud Insights por mí?
+
+Cloud Insights proporciona supervisión de multicloud híbrido, lo que proporciona una capacidad de observación de toda la pila de infraestructura y cargas de trabajo.
+
+* Recopiladores de datos para infraestructura y cargas de trabajo heterogéneas, incluido Kubernetes
+* Colector Open Telegraf y API abiertas para una fácil integración
+* Notificaciones y alertas completas
+* Aprendizaje automático para obtener información inteligente
+* Optimización de la utilización de recursos
+* Paneles integrados o personalizables con filtros avanzados para minimizar el ruido de la pantalla para responder a las preguntas
+* Detectar el estado de las operaciones de almacenamiento de ONTAP 
+* Proteja los activos empresariales más valiosos, los datos, desde el ransomware o el ataque de destrucción de datos
+
+
+'''
+
+
+== Primeros pasos
+
+* ¿Cómo puedo hacerlo link:task_cloud_insights_onboarding_1.html["*empezar*"] Con Cloud Insights?
+* Estoy registrado. Ahora, ¿qué debo hacer?link:task_getting_started_with_cloud_insights.html["Adquisición de datos"]
+link:concept_user_roles.html["Configurar usuarios"]
+* ¡Impresionante! El futurolink:task_defining_annotations.html["Preparación de activos: Anotación"]
+link:concept_querying_assets.html["Buscar los activos que desea: Consultar"]
+link:concept_dashboards_overview.html["Ver los datos que desea: Paneles"]
+link:https:task_create_monitor.html["Supervisión y alertas"]
+link:https://docs.netapp.com/us-en/cloudinsights/task_cs_getting_started.html["Protección de los datos"]
+* ¡Esto es una gran cosa! Estoy listo link:concept_subscribing_to_cloud_insights.html["*suscríbase*"].
+

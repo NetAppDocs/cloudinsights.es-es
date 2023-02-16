@@ -1,0 +1,65 @@
+---
+sidebar: sidebar 
+permalink: concept_acquisition_unit_requirements.html 
+summary: El servidor o equipo virtual que utilice como unidad de adquisición debe cumplir los requisitos mínimos 
+keywords: AU, acquisition unit, RAU, requirements, sizing 
+---
+= Requisitos de la unidad de adquisición
+:allow-uri-read: 
+
+
+[role="lead"]
+Debe instalar una unidad de adquisición (AU) para obtener información de los recopiladores de datos de la infraestructura (almacenamiento, VM, puerto, EC2, etc.). Antes de instalar la Unidad de adquisición, debe asegurarse de que su entorno cumple con los requisitos de sistema operativo, CPU, memoria y espacio en disco.
+
+
+
+== Requisitos
+
+|===
+
+
+| Componente | Requisitos de Linux | Requisitos de Windows 
+
+
+| De NetApp | Un ordenador que ejecuta una versión con licencia de uno de los siguientes: * CentOS (64 bits): 7.2 a 7.9, Stream 8, Stream 9 * Debian (64 bits): 9 y 10 * Oracle Enterprise Linux (64 bits): 7.5 a 7.9, 8.1 a 8.4 * Red Hat Enterprise Linux (64 bits): 7.2 a 7.9, 8.1 a 8.6 * Ubuntu Server: 18.04 y 20.04 LTS este equipo no debe ejecutar ningún otro software de nivel de aplicación. Se recomienda un servidor dedicado. | Un equipo que ejecuta una versión con licencia de una de las siguientes opciones: * Microsoft Windows 10 64 bits * Microsoft Windows Server 2012 * Microsoft Windows Server 2012 R2 * Microsoft Windows Server 2016 * Microsoft Windows Server 2019 * Microsoft Windows Server 2022 * Microsoft Windows 11 este equipo no debe ejecutar ningún otro software de nivel de aplicación. Se recomienda un servidor dedicado. 
+
+
+| CPU | 2 núcleos de CPU | Igual 
+
+
+| Memoria | 8 GB DE MEMORIA RAM | Igual 
+
+
+| Espacio disponible en disco | 50 GB para Linux, el espacio en disco se debe asignar de esta manera: /Opt/netapp 10 GB /var/log/netapp 40 GB /tmp al menos 1 GB disponible durante la instalación | 50 GB 
+
+
+| Red | Se requiere una conexión Ethernet de 100 Mbps/1 Gbps, una dirección IP estática y conectividad de puerto 80 o 443 desde la unidad de adquisición a *.cloudinsights.netapp.com o el entorno Cloud Insights (por ejemplo, \https://<environment_id>.c01.cloudinsights.netapp.com). Para conocer los requisitos entre la unidad de adquisición y cada colector de datos, consulte las instrucciones para link:data_collector_list.html["Recopilador de datos"]. Si su organización requiere el uso de proxy para el acceso a Internet, es posible que tenga que comprender el comportamiento del proxy de su empresa y buscar ciertas excepciones para que Cloud Insights funcione. Por ejemplo, ¿bloquea su organización el acceso de forma predeterminada y sólo permite el acceso a sitios o dominios web específicos mediante excepción? Si es así, necesitará obtener el siguiente dominio agregado a la lista de excepciones: *.cloudinsights.netapp.com para obtener más información, listo sobre Proxies link:task_troubleshooting_linux_acquisition_unit_problems.html#considerations-about-proxies-and-firewalls["aquí"] o. link:task_troubleshooting_windows_acquisition_unit_problems.html#considerations-about-proxies-and-firewalls["aquí"]. | Igual 
+
+
+| Permisos | Permisos sudo en el servidor de unidades de adquisición. /tmp debe montarse con capacidades exec. | Permisos de administrador en el servidor de unidades de adquisición 
+
+
+| Análisis de virus |  | Durante la instalación, debe desactivar por completo todos los detectores de virus. Tras la instalación, las rutas utilizadas por el software de la Unidad de adquisición deben excluirse del análisis de virus. 
+|===
+
+
+== Recomendaciones adicionales
+
+* Para obtener informes precisos de auditoría y datos, se recomienda encarecidamente sincronizar el tiempo en la máquina de la unidad de adquisición mediante *Protocolo de tiempo de red (NTP)* o *Protocolo simple de tiempo de red (SNTP)*.
+
+
+
+
+== En cuanto al tamaño
+
+Es posible empezar con una unidad de adquisición Cloud Insights con solo 8 GB de memoria y 50 GB de espacio en disco; sin embargo, para entornos de gran tamaño, deberá hacerse las siguientes preguntas:
+
+¿Espera:
+
+* ¿Descubra más de 2500 máquinas virtuales o 10 clústeres ONTAP de gran tamaño (> 2 nodos), Symmetrix o cabinas HDS/HPE VSP/XP en esta unidad de adquisición?
+* ¿Desplegar 75 o más recopiladores de datos totales en esta unidad de adquisición?
+
+
+Para cada respuesta "Sí" anterior, se recomienda añadir 8 GB de memoria y 50 GB de espacio en disco a la unidad AU. Así pues, si ha respondido afirmativamente a ambos, deberá poner en marcha un sistema de memoria de 24 GB con 150 GB o más de espacio en disco. En Linux, el espacio en disco que se agregará a la ubicación del registro.
+
+Si quiere más preguntas de tamaño, póngase en contacto con el soporte de NetApp.

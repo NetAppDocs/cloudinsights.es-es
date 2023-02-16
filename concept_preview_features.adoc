@@ -1,0 +1,14 @@
+---
+sidebar: sidebar 
+permalink: concept_preview_features.html 
+summary: Las funciones de vista previa están disponibles en capacidad limitada y su función destacada aún no está lista para la hora punta. 
+keywords: coming soon, preview, 
+---
+= Funciones y funcionalidad de vista previa
+:allow-uri-read: 
+
+
+[role="lead"]
+Cloud Insights resalta nuevas funciones y funcionalidades de forma _Preview_. Las funciones de vista previa están disponibles en entornos limitados o con una capacidad limitada.
+
+Si está interesado en previsualizar una o más de estas funciones, póngase en contacto con su link:https://www.netapp.com/us/forms/sales-inquiry/cloud-insights-sales-inquiries.aspx["Equipo de ventas de NetApp"] si quiere más información.
