@@ -98,7 +98,7 @@ Mientras utiliza Cloud Insights, si ve un icono de candado image:padlock.png["Ca
 
 == Versión de prueba
 
-Cuando se inscriba en Cloud Insights y su entorno esté activo, deberá participar en una prueba gratuita de 30 días de Cloud Insights. Durante esta prueba podrá explorar las funciones que Cloud Insights tiene para ofrecer en su propio entorno. Todas las funciones de Cloud Insights <<editions,Edición Standard>> están disponibles durante esta prueba.
+Cuando se inscriba en Cloud Insights y su entorno esté activo, deberá participar en una prueba gratuita de 30 días de Cloud Insights. Durante esta prueba podrá explorar las funciones que Cloud Insights tiene para ofrecer en su propio entorno.
 
 En cualquier momento durante el período de prueba, puede suscribirse a Cloud Insights. Al suscribirse a Cloud Insights se garantiza un acceso ininterrumpido a los datos y se amplía link:https://docs.netapp.com/us-en/cloudinsights/concept_requesting_support.html["*asistencia para productos*"] opciones.
 
