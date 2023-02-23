@@ -9610,14 +9610,11 @@
   <block id="ebb397c50a10a758892e24ffe755b4e4" category="inline-link-macro">OData v4</block>
   <block id="a755b355075d62b57c54f7a8a785c054" category="inline-link-macro">este tutorial</block>
   <block id="b82b439fceeed91eb6cf1e17ac845ee4" category="paragraph">La API de informes de Cloud Insights sigue la <block ref="3174809a10586791538fc9a640526e27" category="inline-link-macro-rx"></block> (Protocolo de datos abierto) estándar para su consulta de la base de datos de informes. Para obtener más información o para obtener más información, consulte <block ref="e667935284fd58d7e65ea97109344a3b" category="inline-link-macro-rx"></block> En OData.</block>
-  <block id="5b18f1d58f1483da5c81155095d22768" category="section-title">Configuración DEL cliente REST para consultas sinc</block>
   <block id="622cc3cd255274a9efa2b5fab43cefab" category="paragraph">Tenga en cuenta lo siguiente al trabajar con consultas de la API de Reporting.</block>
-  <block id="ca5f5ae182f010eb67697760ff6586f3" category="list-text">La consulta debe estar contenida en una sola línea</block>
   <block id="d38246b0166d90788ce89df63b2bf0b3" category="list-text">Se deben escapar las comillas dobles, es decir, \"</block>
   <block id="63120938c0e559d26c98c9576a1d2ecb" category="list-text">Las fichas son compatibles como \t</block>
   <block id="cc93dd8699d557a2b66d1c5a5490d28f" category="list-text">Evite comentarios</block>
   <block id="4478764ebfa3eddbaccd1d177b34133a" category="list-text">Se admiten los nombres de tablas en minúsculas</block>
-  <block id="2f9a3dbd7bceea75acec35221d985871" category="list-text">Debe ser una cadena JSON válida</block>
   <block id="f018faa29d3a2ffeb961b60dfaa40a06" category="paragraph">Además:</block>
   <block id="0d6642fdc7f58abaa6abe00db247d66a" category="list-text">Se requieren 2 encabezados:</block>
   <block id="a06751273618aaa2a3136426034f3331" category="list-text">Nombre “X-CloudInsights-ApiKey”</block>
@@ -9635,7 +9632,6 @@
   <block id="b035f264e2d66667aac580634dbe607d" category="list-text">Establezca permisos como lectura/escritura.</block>
   <block id="8cf4a3bec43eb5523f7aebc751974a95" category="list-text">Defina una fecha de caducidad de deseos.</block>
   <block id="180ebf1ad2f81cbd9a8112c041856a19" category="list-text">Haga clic en “Guardar” y, a continuación, *copie la clave y guárdela* en un lugar seguro. No podrá acceder más tarde a la clave completa.</block>
-  <block id="7415c956bfe8a68bf044e258a167601a" category="paragraph">APIKeys es bueno para _Sync_ o _Async_ &lt;TBD More information&gt;</block>
   <block id="3d62db14635eb8da302c8e072258a87b" category="section-title">Consulta directa de tablas</block>
   <block id="461dd189a57c1dc872768b7c8d5359aa" category="paragraph">Con la clave de API en vigor, ahora es posible realizar consultas directas de la base de datos de informes. Las direcciones URL largas se pueden simplificar a \https://.../odata/ con fines de visualización en lugar de \https://&lt;Cloud Insights URL&gt;/Rest/v1/dwh-Management/odata/</block>
   <block id="a2a3fc9e51cdd71061084aa6403ef9df" category="paragraph">Pruebe consultas sencillas como</block>
@@ -9646,7 +9642,6 @@
   <block id="18e7612d8417cb1a04ad930369915d59" category="list-text">\https://.../odata/dwh_custom/custom_queries</block>
   <block id="25de0257c507b6c736e10a9674011469" category="section-title">Ejemplos de API de REST</block>
   <block id="7c747afe26ddf80110c972b197e875f1" category="paragraph">La URL para todas las llamadas es _\https://&lt;Cloud Insights URL&gt;/Rest/v1/dwh-Management/odata_.</block>
-  <block id="538c8f380c1292ec200c79af465d46b6" category="list-text">GET /{schema}/** - recupera datos de la base de datos de informes, requiere al menos la función _Guest_.</block>
   <block id="6989b99c608e30f67ef33cbb04a24e33" category="paragraph">Formato: _\https://&lt;Cloud Insights URL&gt;/Rest/v1/dwh-Management/odata/&lt;schema_name&gt;/&lt;query&gt;_</block>
   <block id="81eeab9506186e2dca8faefa78d54067" category="paragraph">Ejemplo:</block>
   <block id="5aac38deec604d81565722cc5a2a6be1" category="paragraph">Resultado:</block>
@@ -10785,4 +10780,5 @@
   <block id="db6129c16869ab28d6476f3e30e7d24e" category="sidebar">Introducción a Workload Security</block>
   <block id="fe6cdf9e3b45ba510d852c0481680e2f" category="sidebar">Configuración de un agente de seguridad de carga de trabajo</block>
   <block id="8b323f07a8614b39412ac6f03ce45d0e" category="sidebar">Gestión de usuarios de seguridad de cargas de trabajo</block>
+  <block id="d38e6d2b2a7ab4eab18cf40e7c0ae800" category="summary">Unidad de adquisición instalación, desinstalación, configuración del soporte de proxy, etc. en Windows y Linux.</block>
 </blocks>
