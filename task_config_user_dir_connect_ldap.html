@@ -9,15 +9,15 @@
   <meta property="og:title" content="Configurar un recopilador de servidor de directorio LDAP" />
 	<meta property="og:type" content="website" />
 	<meta property="og:url" content="https://docs.netapp.com/es-es/cloudinsights/task_config_user_dir_connect_ldap.html" />
-	<meta property="og:description" content="Configurar el recopilador de directorios de usuarios LDAP de Cloud Secure" />
+	<meta property="og:description" content="Configurar Workload Security LDAP User Directory Collector" />
   <meta property="og:image" content="https://docs.netapp.com/es-es/cloudinsights/images/logo-tophat-social.png" />
   <meta property="og:image:alt" content="NetApp Logo" />
   <meta name="format-detection" content="telephone=no">
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <meta http-equiv="encoding" content="utf-8">
   <meta http-equiv="nss-type" content="Product Documentation"/>
-  <meta http-equiv="nss-subtype" content="User Guide"/><meta name="description" content="Configurar el recopilador de directorios de usuarios LDAP de Cloud Secure">
-  <meta name="keywords" content=" collector, configure, LDAP, Active Directory"><!-- Icons -->
+  <meta http-equiv="nss-subtype" content="User Guide"/><meta name="description" content="Configurar Workload Security LDAP User Directory Collector">
+  <meta name="keywords" content=" collector, configure, LDAP, Active Directory, cloud secure"><!-- Icons -->
   <link rel="icon" href="/es-es/cloudinsights/images/favicon.ico" type="image/x-icon">
 
   <!-- RSS Feed --><!-- CSS Definitions: NetApp CSS should be defined after generic css -->
@@ -79,11 +79,17 @@
 
   <!-- Used for Product Family Page Sidebar Visibility --><!-- Used to import Promise for IE. Required for SearchKit -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/bluebird/3.3.5/bluebird.min.js"></script><script src='/es-es/cloudinsights/js/na-search.js'></script><script src='/es-es/cloudinsights/js/na-pagenav.js'></script><script src='/es-es/cloudinsights/js/na-utility.js'></script>
+ <!--  
+  <link rel='stylesheet' href='/es-es/cloudinsights/css/prism.css' type='text/css'>
+  <link rel='stylesheet' href='/es-es/cloudinsights/css/prism-netapp.css' type='text/css'>
+ -->
+
+  <!-- <script src='/es-es/cloudinsights/js/na-utility.js'></script> -->
   <script src='/es-es/cloudinsights/js/clouddocs.js'></script>
   <script src='/es-es/cloudinsights/js/jquery.navgoco.min.js'></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-  <script src='/es-es/cloudinsights/js/toc.js'></script>
-  <script src='/es-es/cloudinsights/js/customscripts.js'></script><script>
+  <!-- <script src='/es-es/cloudinsights/js/toc.js'></script> -->
+  <!-- <script src='/es-es/cloudinsights/js/customscripts.js'></script> --><script>
       $(document).ready(function() {
           
           var collapseOnInit = true;
@@ -148,7 +154,7 @@
   <script src='/es-es/cloudinsights/js/FileSaver.min.js'></script>
   <script src='/es-es/cloudinsights/js/jszip-utils.min.js'></script>
   <script src='/es-es/cloudinsights/js/jszip.min.js'></script>
-  <script src='/es-es/cloudinsights/js/pdf-ux.js'></script>
+  <!-- <script src='/es-es/cloudinsights/js/pdf-ux.js'></script> -->
 </head>
 
 
@@ -221,7 +227,7 @@
           <span class="n-property-bar__menu-toggle-text">Menu</span>
           <svg class="n-icon-bars n-property-bar__menu-toggle-icon" aria-labelledby="title">
             <title>bars</title>
-            <use xlink:href="/es-es/cloudinsights/common/svg/sprite.svg#bars"></use>
+            <use xlink:href="/es-es/cloudinsights/images/sprite.svg#bars"></use>
           </svg>
         </a>
       </div>
@@ -230,11 +236,11 @@
           <div class="n-property-bar__logo">
             <svg class="n-icon-netapp-mark n-icon-netapp-mark n-property-bar__netapp-mark-icon" aria-labelledby="title">
               <title>netapp-mark</title>
-              <use xlink:href="/es-es/cloudinsights/common/svg/sprite.svg#netapp-mark"></use>
+              <use xlink:href="/es-es/cloudinsights/images/sprite.svg#netapp-mark"></use>
             </svg>
             <svg class="n-icon-netapp-logo n-property-bar__logo-svg" aria-labelledby="title">
               <title>netapp-logo</title>
-              <use xlink:href="/es-es/cloudinsights/common/svg/sprite.svg#netapp-logo"></use>
+              <use xlink:href="/es-es/cloudinsights/images/sprite.svg#netapp-logo"></use>
             </svg>
           </div>
         </a>
@@ -260,7 +266,7 @@
           <button class="n-property-bar__search-toggle-button" type="button">
             <svg class="n-icon-search n-property-bar__search-toggle-button-icon" aria-labelledby="title">
               <title>search</title>
-              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/es-es/cloudinsights/common/svg/sprite.svg#search"></use>
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/es-es/cloudinsights/images/sprite.svg#search"></use>
             </svg>
           </button>
         </div>
@@ -274,7 +280,7 @@
       <span class="lang-name">Español</span>
           <svg class="n-globe__icon" aria-labelledby="title">
             <title>globe</title>
-            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/es-es/cloudinsights/common/svg/sprite.svg#globe"></use>
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/es-es/cloudinsights/images/sprite.svg#globe"></use>
           </svg>
         </button>
       </div>
@@ -803,11 +809,11 @@
           
           <a target="_blank" 
             
-              href="/es-es/cloudinsights/pdfs/sidebar/Cloud_Secure.pdf" 
+              href="/es-es/cloudinsights/pdfs/sidebar/Seguridad_de_carga_de_trabajo_de_almacenamiento.pdf" 
             
           >
             <img src="/es-es/cloudinsights/images/pdf.png" alt="" width="16" height="16"/>
-            Cloud Secure
+            Seguridad de carga de trabajo de almacenamiento
           </a>
           
 
@@ -2051,20 +2057,20 @@
         Tablas de esquema
       </a></li></ul></li><li 
       data-pdf-exists="true" 
-      data-pdf-filename="Cloud Secure"
+      data-pdf-filename="Seguridad de carga de trabajo de almacenamiento"
       data-li-level="1" 
       class="subfolders "
     ><a href="#">
-        <div class="na-navbar-padding"> Cloud Secure</div>
+        <div class="na-navbar-padding"> Seguridad de carga de trabajo de almacenamiento</div>
       </a>
       <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
-      data-pdf-filename="Acerca de Cloud Secure"
+      data-pdf-filename="Acerca de Workload Security"
       data-li-level="2#" 
       class=" "
     ><a class="na-navbar-padding" href="/es-es/cloudinsights/cs_intro.html">
-        Acerca de Cloud Secure
+        Acerca de Workload Security
       </a></li><li 
       data-pdf-exists="true" 
       data-pdf-filename="Primeros pasos"
@@ -2076,32 +2082,32 @@
       <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
-      data-pdf-filename="Primeros pasos con Cloud Secure"
+      data-pdf-filename="Introducción a Workload Security"
       data-li-level="3#" 
       class=" "
     ><a class="na-navbar-padding" href="/es-es/cloudinsights/task_cs_getting_started.html">
-        Primeros pasos con Cloud Secure
+        Introducción a Workload Security
       </a></li><li 
       data-pdf-exists="true" 
-      data-pdf-filename="Requisitos del agente de Cloud Secure"
+      data-pdf-filename="Requisitos del agente de seguridad de cargas de trabajo"
       data-li-level="3#" 
       class=" "
     ><a class="na-navbar-padding" href="/es-es/cloudinsights/concept_cs_agent_requirements.html">
-        Requisitos del agente de Cloud Secure
+        Requisitos del agente de seguridad de cargas de trabajo
       </a></li><li 
       data-pdf-exists="true" 
-      data-pdf-filename="Configuración de un agente Cloud Secure"
+      data-pdf-filename="Configuración de un agente de seguridad de carga de trabajo"
       data-li-level="3#" 
       class=" "
     ><a class="na-navbar-padding" href="/es-es/cloudinsights/task_cs_add_agent.html">
-        Configuración de un agente Cloud Secure
+        Configuración de un agente de seguridad de carga de trabajo
       </a></li><li 
       data-pdf-exists="true" 
-      data-pdf-filename="Eliminación de un agente de Cloud Secure"
+      data-pdf-filename="Eliminar un agente de seguridad de carga de trabajo"
       data-li-level="3#" 
       class=" "
     ><a class="na-navbar-padding" href="/es-es/cloudinsights/task_cs_delete_agent.html">
-        Eliminación de un agente de Cloud Secure
+        Eliminar un agente de seguridad de carga de trabajo
       </a></li><li 
       data-pdf-exists="true" 
       data-pdf-filename="Configuración de un recopilador de directorios de AD"
@@ -2132,11 +2138,11 @@
         Configurar el recopilador de datos de Cloud ONTAP
       </a></li><li 
       data-pdf-exists="true" 
-      data-pdf-filename="Gestión de usuarios de Cloud Secure"
+      data-pdf-filename="Gestión de usuarios de seguridad de cargas de trabajo"
       data-li-level="3#" 
       class=" "
     ><a class="na-navbar-padding" href="/es-es/cloudinsights/task_cs_user_management.html">
-        Gestión de usuarios de Cloud Secure
+        Gestión de usuarios de seguridad de cargas de trabajo
       </a></li><li 
       data-pdf-exists="true" 
       data-pdf-filename="Comprobador de tasa de eventos (guía de tamaños del agente)"
@@ -2218,11 +2224,11 @@
         Notificaciones
       </a></li><li 
       data-pdf-exists="true" 
-      data-pdf-filename="API de Cloud Secure"
+      data-pdf-filename="API de seguridad de cargas de trabajo"
       data-li-level="2#" 
       class=" "
     ><a class="na-navbar-padding" href="/es-es/cloudinsights/concept_cs_api.html">
-        API de Cloud Secure
+        API de seguridad de cargas de trabajo
       </a></li></ul></li><li 
       data-pdf-exists="true" 
       data-pdf-filename="Active IQ"
@@ -3028,7 +3034,7 @@
     <div class="ie-nmt-disclaimer-container">
       <div class="ie-nmt-disclaimer-icon">
         <svg class="luci-icon" aria-hidden="true">
-          <use xlink:href="/es-es/cloudinsights/common/svg/sprite.svg#circle-info">
+          <use xlink:href="/es-es/cloudinsights/images/sprite.svg#circle-info">
         </svg>
       </div>
       <div class="ie-nmt-disclaimer-content">
@@ -3045,7 +3051,7 @@
 <p class="page-details">
   
     
-    <time datetime="2023-02-20 15:16:58 +0000">02/20/2023</time>
+    <time datetime="2023-02-23 14:30:25 +0000">02/23/2023</time>
     
   
 
@@ -3058,7 +3064,7 @@
 <div id="preamble">
 <div class="sectionbody">
 <div class="paragraph lead">
-<p>Configura Cloud Secure para recoger atributos de usuario de los servidores de directorio LDAP.</p>
+<p>La función Seguridad de carga de trabajo se configura para recopilar atributos de usuario desde los servidores de directorio LDAP.</p>
 </div>
 <div class="ulist">
 <div class="title">Antes de empezar</div>
@@ -3078,7 +3084,7 @@
 <div class="title">Pasos para configurar un recopilador de directorios de usuarios</div>
 <ol class="arabic">
 <li>
-<p>En el menú Cloud Secure, haga clic en: <strong>Admin &gt; colectores de datos &gt; colectores de directorios de usuarios &gt; + colector de directorios de usuarios</strong> y seleccione <strong>servidor de directorio LDAP</strong></p>
+<p>En el menú Workload Security (Seguridad de carga de trabajo), haga clic en: <strong>Admin &gt; colectores de datos &gt; colectores de directorios de usuarios &gt; + colector de directorios de usuarios</strong> y seleccione <strong>servidor de directorio LDAP</strong></p>
 <div class="paragraph">
 <p>El sistema muestra la pantalla Agregar directorio de usuario.</p>
 </div>
@@ -3229,7 +3235,7 @@
 <div class="ulist">
 <ul>
 <li>
-<p>Use el siguiente comando para validar los permisos de usuario de LDAP de Cloud Secure:</p>
+<p>Utilice el siguiente comando para validar los permisos de usuario de LDAP de seguridad de carga de trabajo:</p>
 <div class="literalblock">
 <div class="content">
 <pre> ldapsearch -D "uid=john ,cn=users,cn=accounts,dc=dorp,dc=company,dc=com" -W -x -LLL -o ldif-wrap=no -b "cn=accounts,dc=dorp,dc=company,dc=com" -H ldap://vmwipaapp08.dorp.company.com
@@ -3281,7 +3287,7 @@
 <td class="tableblock halign-left valign-top"><p class="tableblock">Se ha proporcionado una base de búsqueda incorrecta. Edite y proporcione el nombre de bosque correcto.</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Los atributos opcionales del usuario de dominio no aparecen en la página Perfil de usuario de Cloud Secure.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Los atributos opcionales del usuario de dominio no aparecen en la página Workload Security User Profile (Perfil de usuario de seguridad de carga de trabajo).</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Esto probablemente se deba a una discrepancia entre los nombres de los atributos opcionales agregados en CloudSecure y los nombres de atributos reales en Active Directory. Los campos distinguen mayúsculas de minúsculas. Edite y proporcione los nombres de atributos opcionales correctos.</p></td>
 </tr>
 <tr>
@@ -3333,7 +3339,7 @@
 <td class="tableblock halign-left valign-top"><p class="tableblock">Lo más probable es que esto se deba a un problema de asignación de atributos con Active Directory. 1. Edite el recopilador de Active Directory concreto que está obteniendo la información del usuario desde Active Directory. 2. Aviso bajo atributos opcionales, hay un nombre de campo “número de teléfono” asignado al atributo de Active Directory ‘telefonenumber’. 4. Ahora, utilice la herramienta Explorador de Active Directory como se describe anteriormente para explorar el servidor de directorio LDAP y ver el nombre de atributo correcto. 3. Asegúrese de que en el Directorio LDAP hay un atributo llamado ‘telefonenumber’ que tiene el número de teléfono del usuario. 5. Digamos en el Directorio LDAP que se ha modificado a ‘fonenumber’. 6. A continuación, edite el colector de CloudSecure User Directory. En la sección atributo opcional, sustituya ‘telefonenumber’ por ‘fonenumber’. 7. Guarde el recopilador de Active Directory, el recopilador se reiniciará y obtendrá el número de teléfono del usuario y se mostrará el mismo en la página de perfil de usuario.</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Si el certificado de cifrado (SSL) está habilitado en el servidor de Active Directory (AD), el recopilador de directorios de usuarios de Cloud Secure no se puede conectar al servidor AD.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Si el certificado de cifrado (SSL) está habilitado en el servidor de Active Directory (AD), el recopilador de directorios de usuarios de seguridad de carga de trabajo no se puede conectar al servidor AD.</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Desactive el cifrado de AD Server antes de configurar un recopilador de directorios de usuarios. Una vez que se haya recuperado el detalle del usuario, estará allí por 13 meses. Si el servidor AD se desconecta después de obtener los detalles del usuario, los usuarios recién agregados en AD no se obtendrán. Para recuperar de nuevo el recopilador de directorios de usuarios debe estar conectado a AD.</p></td>
 </tr>
 </tbody>
@@ -3390,7 +3396,7 @@
                 <svg class="n-icon-blog n-footer__social-link-icon" aria-labelledby="title">
                   <title>blog@</title>
                   <use xmlns:xlink="http://www.w3.org/1999/xlink"
-                    xlink:href="/es-es/cloudinsights/common/svg/sprite.svg#blog"></use>
+                    xlink:href="/es-es/cloudinsights/images/sprite.svg#blog"></use>
                 </svg>
               </a>
             </li>
@@ -3401,7 +3407,7 @@
                 <svg class="n-icon-community n-footer__social-link-icon" aria-labelledby="title">
                   <title>community@</title>
                   <use xmlns:xlink="http://www.w3.org/1999/xlink"
-                    xlink:href="/es-es/cloudinsights/common/svg/sprite.svg#comments"></use>
+                    xlink:href="/es-es/cloudinsights/images/sprite.svg#comments"></use>
                 </svg>
               </a>
             </li>
@@ -3412,7 +3418,7 @@
                 <svg class="n-icon-twitter n-footer__social-link-icon" aria-labelledby="title">
                   <title>twitter@</title>
                   <use xmlns:xlink="http://www.w3.org/1999/xlink"
-                    xlink:href="/es-es/cloudinsights/common/svg/sprite.svg#twitter"></use>
+                    xlink:href="/es-es/cloudinsights/images/sprite.svg#twitter"></use>
                 </svg>
               </a>
             </li>
@@ -3423,7 +3429,7 @@
                 <svg class="n-icon-facebook n-footer__social-link-icon" aria-labelledby="title">
                   <title>facebook@</title>
                   <use xmlns:xlink="http://www.w3.org/1999/xlink"
-                    xlink:href="/es-es/cloudinsights/common/svg/sprite.svg#facebook"></use>
+                    xlink:href="/es-es/cloudinsights/images/sprite.svg#facebook"></use>
                 </svg>
               </a>
             </li>
@@ -3434,7 +3440,7 @@
                 <svg class="n-icon-linkedin n-footer__social-link-icon" aria-labelledby="title">
                   <title>linkedin@</title>
                   <use xmlns:xlink="http://www.w3.org/1999/xlink"
-                    xlink:href="/es-es/cloudinsights/common/svg/sprite.svg#linkedin"></use>
+                    xlink:href="/es-es/cloudinsights/images/sprite.svg#linkedin"></use>
                 </svg>
               </a>
             </li>
@@ -3445,7 +3451,7 @@
                 <svg class="n-icon-youtube n-footer__social-link-icon" aria-labelledby="title">
                   <title>youtube@</title>
                   <use xmlns:xlink="http://www.w3.org/1999/xlink"
-                    xlink:href="/es-es/cloudinsights/common/svg/sprite.svg#youtube"></use>
+                    xlink:href="/es-es/cloudinsights/images/sprite.svg#youtube"></use>
                 </svg>
               </a>
             </li>
@@ -3456,7 +3462,7 @@
                 <svg class="n-icon-slideshare n-footer__social-link-icon" aria-labelledby="title">
                   <title>slideshare@</title>
                   <use xmlns:xlink="http://www.w3.org/1999/xlink"
-                    xlink:href="/es-es/cloudinsights/common/svg/sprite.svg#slideshare"></use>
+                    xlink:href="/es-es/cloudinsights/images/sprite.svg#slideshare"></use>
                 </svg>
               </a>
             </li>
@@ -3480,7 +3486,6 @@
       cookieLaw.euCountry = "US";
       cookieLaw.invoke = function(){return false;}
     </script>
-    <script src='/es-es/cloudinsights/js/www-ntap.js'></script>
     <script src='/es-es/cloudinsights/js/tabbed-blocks.js'></script>
     <script src='/es-es/cloudinsights/js/sidebar.js'></script>
   </body></html>
