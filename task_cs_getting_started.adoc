@@ -1,16 +1,17 @@
 ---
 sidebar: sidebar 
 permalink: task_cs_getting_started.html 
-keywords: collectors, data collectors, configure, introduction, browsers 
-summary: Estos sencillos pasos le ayudarán a utilizar Cloud Secure 
+keywords: collectors, data collectors, configure, introduction, browsers , Cloud Secure 
+summary: Estos sencillos pasos le permitirán empezar a utilizar Workload Security 
 ---
-= Primeros pasos con Cloud Secure
+= Introducción a Workload Security
 :allow-uri-read: 
 
 
-Hay tareas de configuración que se deben completar antes de poder utilizar Cloud Secure para supervisar la actividad del usuario.
+[role="lead"]
+Hay tareas de configuración que se deben completar antes de empezar a utilizar Workload Security para supervisar la actividad del usuario.
 
-El sistema Cloud Secure utiliza un agente para recopilar datos de acceso de los sistemas de almacenamiento y la información de usuario de los servidores de servicios de directorio.
+El sistema Workload Security utiliza un agente para recopilar datos de acceso de los sistemas de almacenamiento e información de usuario de los servidores de Directory Services.
 
 Es necesario configurar lo siguiente para poder comenzar a recoger datos:
 
@@ -43,4 +44,4 @@ link:https://netapp.hubs.vidyard.com/watch/NEmbmYrFjCHvPps7QMy8me?["*Vídeo*: Co
 
 | Resolución de problemas | link:https://netapp.hubs.vidyard.com/watch/Fs8N2w9wBtsFGrhRH9X85U?["*Vídeo*: Solución de problemas"] 
 |===
-Cloud Secure también se puede integrar con otras herramientas. Por ejemplo: link:http://docs.netapp.com/us-en/cloudinsights/CloudInsights_CloudSecure_Splunk_integration_guide.pdf["consulte esta guía"] En la integración con Splunk.
+La seguridad de la carga de trabajo también se puede integrar con otras herramientas. Por ejemplo: link:http://docs.netapp.com/us-en/cloudinsights/CloudInsights_CloudSecure_Splunk_integration_guide.pdf["consulte esta guía"] En la integración con Splunk.

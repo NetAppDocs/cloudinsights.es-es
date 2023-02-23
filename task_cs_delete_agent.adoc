@@ -1,15 +1,15 @@
 ---
 sidebar: sidebar 
 permalink: task_cs_delete_agent.html 
-keywords: agent, Cloud Secure, delete agent 
-summary: Eliminando agentes Cloud Secure 
+keywords: agent, Workload Security, delete agent, Cloud Secure 
+summary: Eliminando agentes de seguridad de carga de trabajo 
 ---
-= Eliminación de un agente de Cloud Secure
+= Eliminar un agente de seguridad de carga de trabajo
 :allow-uri-read: 
 
 
 [role="lead"]
-Al eliminar un agente de Cloud Secure, primero se deben eliminar todos los recopiladores de datos asociados con el agente.
+Al eliminar un agente de seguridad de carga de trabajo, primero deben eliminarse todos los recopiladores de datos asociados con el agente.
 
 
 
@@ -19,7 +19,7 @@ Al eliminar un agente de Cloud Secure, primero se deben eliminar todos los recop
 IMPORTANT: Al eliminar un agente se eliminan todos los recopiladores de datos asociados al agente. Si planea configurar los recopiladores de datos con un agente diferente, debe crear una copia de seguridad de las configuraciones de recopilador de datos antes de eliminar el agente.
 
 .Antes de empezar
-. Asegúrese de que todos los recopiladores de datos asociados con el agente se eliminan del portal de Cloud Secure.
+. Asegúrese de que todos los recopiladores de datos asociados con el agente se eliminan del portal Workload Security.
 +
 Nota: Ignore este paso si todos los recopiladores asociados están EN estado DETENIDO.
 

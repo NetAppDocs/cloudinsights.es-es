@@ -9,7 +9,7 @@ summary: Adición de recopiladores de datos
 
 
 [role="lead"]
-Cloud Secure utiliza recopiladores de datos para recopilar datos de acceso de archivos y usuarios desde dispositivos. Los datos se proporcionan a Cloud Secure para su análisis.
+Workload Security utiliza recopiladores de datos para recopilar datos de acceso de archivos y usuarios desde dispositivos. Los datos se proporcionan a Workload Security para su análisis.
 
 .Antes de empezar
 Necesita la siguiente información para configurar este recopilador de datos:
@@ -21,7 +21,7 @@ Necesita la siguiente información para configurar este recopilador de datos:
 
 
 .Pasos para la configuración
-. Inicie sesión como administrador o propietario de cuenta en su entorno de Cloud Secure.
+. Inicie sesión como administrador o propietario de cuenta en su entorno de seguridad de carga de trabajo.
 . Haga clic en *Admin > colectores de datos > +colectores de datos*
 +
 El sistema muestra los colectores de datos disponibles.

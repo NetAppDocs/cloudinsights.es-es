@@ -1,0 +1,87 @@
+---
+sidebar: sidebar 
+permalink: security_admin_tool.html 
+summary: Cloud Insights sigue las prácticas recomendadas de seguridad a lo largo del ciclo de vida de la versión. 
+keywords: security, risk, protection 
+---
+= Herramienta securityadmin
+:allow-uri-read: 
+
+
+[role="lead"]
+CI incluye funciones de seguridad que permiten a los entornos de Insight operar con seguridad mejorada. Entre las características se incluyen mejoras en el cifrado, el hashing de contraseñas y la capacidad de cambiar contraseñas de usuario internas y pares de claves que cifran y descifran contraseñas.
+
+Para proteger los datos confidenciales, NetApp recomienda cambiar las claves predeterminadas y la contraseña de usuario Acquisition después de una instalación o actualización.
+
+Las contraseñas cifradas del origen de datos se almacenan en Cloud Insights, que utiliza una clave pública para cifrar contraseñas cuando un usuario las introduce en una página de configuración del recopilador de datos. Cloud Insights no tiene las claves privadas necesarias para descifrar las contraseñas del recopilador de datos; sólo las unidades de adquisición tienen la clave privada del recopilador de datos necesaria para descifrar las contraseñas del recopilador de datos.
+
+
+
+== Consideraciones sobre la actualización y la instalación
+
+Cuando el sistema Insight contiene configuraciones de seguridad no predeterminadas (es decir, contraseñas recodificadas), debe realizar una copia de seguridad de sus configuraciones de seguridad. La instalación de software nuevo o, en algunos casos, la actualización de software, revierte el sistema a una configuración de seguridad predeterminada. Cuando el sistema vuelve a la configuración predeterminada, debe restaurar la configuración no predeterminada para que el sistema funcione correctamente.
+
+
+
+== Gestión de la seguridad en la unidad de adquisición
+
+La herramienta SecurityAdmin le permite administrar opciones de seguridad para Cloud Insights y se ejecuta en el sistema de unidades de adquisición. La gestión de seguridad incluye la gestión de claves y contraseñas, el guardado y la restauración de configuraciones de seguridad que se crean o restauran con la configuración predeterminada.
+
+
+
+== Antes de empezar
+
+Debe tener privilegios de administrador en el sistema AU para realizar tareas de configuración de seguridad.
+
+Acerca de esta tarea la herramienta SecurityAdmin se encuentra en el sistema de unidades de adquisición en cualquiera de estas ubicaciones:
+
+* *Windows - C:\Archivos de programa\SANscreen\securityadmin\bin\securityadmin.bat
+* * Linux - /bin/oci-securityadmin.sh
+
+
+.Pasos
+* *Inicie la herramienta SecurityAdmin en modo interactivo (-i).
++
+Se muestran las siguientes opciones:
+
+* Backup
++
+Crea un archivo zip de copia de seguridad del almacén que contiene todas las contraseñas y claves y coloca el archivo en una ubicación especificada por el usuario o en las siguientes ubicaciones predeterminadas:
+
++
+....
+Windows - C:\Program Files\SANscreen\backup\vault
+Linux - /var/log/netapp/oci/backup/vault
+....
+* Restaurar
++
+Restaura la copia de seguridad zip del almacén que se creó. Una vez restaurada, todas las contraseñas y claves se revierten a valores existentes en el momento de la creación del backup.
+
++
+Restore se puede utilizar para sincronizar contraseñas y claves en varios servidores, por ejemplo: - Cambiar claves de cifrado en la unidad AU - Crear una copia de seguridad del almacén - Restaurar la copia de seguridad del almacén en cada uno de los AUS
+
+* Cambiar las claves de cifrado
++
+Cambie las claves de cifrado AU utilizadas para cifrar o descifrar las contraseñas del dispositivo.
+
++
+Al cambiar las claves de cifrado, debe realizar un backup de la nueva configuración de seguridad para poder restaurarla después de una actualización o instalación.
+
+* Actualizar contraseña
++
+Cambiar la contraseña de la cuenta de usuario de "adquisición".
+
++
+Al cambiar contraseñas, debe realizar una copia de seguridad de la nueva configuración de seguridad para poder restaurarla si es necesario.
+
+* Restablecer a valores predeterminados
++
+Restablece la contraseña de usuario de adquisición y las claves de cifrado de usuario de adquisición a los valores predeterminados, los valores predeterminados son los que se proporcionan durante la instalación.
+
+* Salga
++
+Salga de la herramienta SecurityAdmin.
+
+
+
+Elija la opción que desea configurar y siga las indicaciones.

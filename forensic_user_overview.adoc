@@ -55,4 +55,4 @@ La lista de usuarios se actualiza cada 12 horas.
 
 == Política de retención
 
-Si no se vuelve a actualizar, la lista de usuarios se conserva durante 13 meses. Después de 13 meses, los datos se eliminarán. Si se elimina el entorno Cloud Secure, se eliminan todos los datos asociados con el entorno.
+Si no se vuelve a actualizar, la lista de usuarios se conserva durante 13 meses. Después de 13 meses, los datos se eliminarán. Si se elimina el entorno Workload Security, se eliminan todos los datos asociados con el entorno.

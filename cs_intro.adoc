@@ -1,15 +1,15 @@
 ---
 sidebar: sidebar 
 permalink: cs_intro.html 
-keywords: CloudSecure 
+keywords: CloudSecure, Cloud Secure 
 summary: Descripción general 
 ---
-= Acerca de Cloud Secure
+= Acerca de la seguridad de carga de trabajo de almacenamiento
 :allow-uri-read: 
 
 
 [role="lead"]
-Cloud Secure le ayuda a proteger sus datos con inteligencia práctica sobre las amenazas internas. Proporciona control y visibilidad centralizados de todos los accesos a datos corporativos en los entornos de cloud híbrido para garantizar la consecución de los objetivos de seguridad y cumplimiento de normativas.
+La seguridad de cargas de trabajo del almacenamiento de Cloud Insights (anteriormente Cloud Secure) le ayuda a proteger los datos con inteligencia procesable sobre amenazas internas. Proporciona control y visibilidad centralizados de todos los accesos a datos corporativos en los entornos de cloud híbrido para garantizar la consecución de los objetivos de seguridad y cumplimiento de normativas.
 
 
 
@@ -17,7 +17,7 @@ Cloud Secure le ayuda a proteger sus datos con inteligencia práctica sobre las 
 
 Obtenga una visibilidad y control centralizados del acceso del usuario a los datos corporativos más importantes almacenados en sus instalaciones o en el cloud.
 
-Sustituye herramientas y procesos manuales que no ofrecen una visibilidad precisa y puntual del acceso a los datos y el control. Cloud Secure opera de forma única en sistemas de almacenamiento tanto cloud como en las instalaciones para proporcionar alertas en tiempo real sobre el comportamiento de usuarios malintencionados.
+Sustituye herramientas y procesos manuales que no ofrecen una visibilidad precisa y puntual del acceso a los datos y el control. Workload Security funciona de forma única en sistemas de almacenamiento en la nube y en las instalaciones para proporcionar alertas en tiempo real sobre el comportamiento de los usuarios malintencionados.
 
 
 

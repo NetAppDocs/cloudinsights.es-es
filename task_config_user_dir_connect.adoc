@@ -1,15 +1,15 @@
 ---
 sidebar: sidebar 
 permalink: task_config_user_dir_connect.html 
-keywords: collector, configure, LDAP, Active Directory 
-summary: Configurar el recopilador de directorios de usuarios de Cloud Secure Active Directory 
+keywords: collector, configure, LDAP, Active Directory, cloud secure 
+summary: Configurar Workload Security Collector de Active Directory User Directory 
 ---
 = Configurar un recopilador de directorios de usuarios de Active Directory (AD)
 :allow-uri-read: 
 
 
 [role="lead"]
-Cloud Secure se puede configurar para recopilar atributos de usuario de los servidores de Active Directory.
+Workload Security se puede configurar para recopilar atributos de usuario desde los servidores de Active Directory.
 
 .Antes de empezar
 * Debe ser administrador de Cloud Insights o propietario de la cuenta para realizar esta tarea.
@@ -18,7 +18,7 @@ Cloud Secure se puede configurar para recopilar atributos de usuario de los serv
 
 
 .Pasos para configurar un recopilador de directorios de usuarios
-. En el menú Cloud Secure, haga clic en: *Admin > colectores de datos > colectores de directorio de usuario > + colector de directorio de usuario* y seleccione *Active Directory*
+. En el menú Workload Security (Seguridad de carga de trabajo), haga clic en: *Admin > colectores de datos > colectores de directorios de usuarios > + colector de directorio de usuario* y seleccione *Active Directory*
 +
 El sistema muestra la pantalla Agregar directorio de usuario.
 
@@ -114,7 +114,7 @@ Haga clic en incluir atributos opcionales para agregar cualquiera de los siguien
 
 Puede validar los permisos de usuario LDAP y las definiciones de atributos mediante los procedimientos siguientes:
 
-* Use el siguiente comando para validar los permisos de usuario de LDAP de Cloud Secure:
+* Utilice el siguiente comando para validar los permisos de usuario de LDAP de seguridad de carga de trabajo:
 +
 `ldapsearch -o ldif-wrap=no -LLL -x -b "dc=netapp,dc=com" -h 10.235.40.29 -p 389 -D \Administrator@netapp.com -W`
 
@@ -145,7 +145,7 @@ En la siguiente tabla se describen los problemas conocidos y las resoluciones qu
 | La adición de un conector de directorio de usuarios da como resultado el estado "error". El error indica que “no se ha podido obtener el objeto correspondiente a DN=DC=hq,DC=domainname,DC=com proporcionado como nombre de bosque”. | Se ha proporcionado un nombre de bosque incorrecto. Edite y proporcione el nombre de bosque correcto. 
 
 
-| Los atributos opcionales del usuario de dominio no aparecen en la página Perfil de usuario de Cloud Secure. | Esto probablemente se deba a una discrepancia entre los nombres de los atributos opcionales agregados en CloudSecure y los nombres de atributos reales en Active Directory. Edite y proporcione los nombres de atributos opcionales correctos. 
+| Los atributos opcionales del usuario de dominio no aparecen en la página Workload Security User Profile (Perfil de usuario de seguridad de carga de trabajo). | Esto probablemente se deba a una discrepancia entre los nombres de los atributos opcionales agregados en CloudSecure y los nombres de atributos reales en Active Directory. Edite y proporcione los nombres de atributos opcionales correctos. 
 
 
 | Recopilador de datos en estado de error "Failed to retrieve users LDAP". Motivo del error: No se puede conectar al servidor, la conexión es nula" | Reinicie el recopilador haciendo clic en el botón _restart_. 
@@ -178,7 +178,7 @@ En la siguiente tabla se describen los problemas conocidos y las resoluciones qu
 | El número de teléfono no se rellena en la página del perfil de usuario. | Lo más probable es que esto se deba a un problema de asignación de atributos con Active Directory. 1. Edite el recopilador de Active Directory concreto que está obteniendo la información del usuario desde Active Directory. 2. Aviso bajo atributos opcionales, hay un nombre de campo “número de teléfono” asignado al atributo de Active Directory ‘telefonenumber’. 4. Ahora, utilice la herramienta Explorador de Active Directory como se ha descrito anteriormente para examinar Active Directory y ver el nombre de atributo correcto. 3. Asegúrese de que en Active Directory hay un atributo llamado ‘telefonenumber’ que tiene el número de teléfono del usuario. 5. Digamos que en Active Directory se ha modificado a ‘fonenumber’. 6. A continuación, edite el colector de CloudSecure User Directory. En la sección atributo opcional, sustituya ‘telefonenumber’ por ‘fonenumber’. 7. Guarde el recopilador de Active Directory, el recopilador se reiniciará y obtendrá el número de teléfono del usuario y se mostrará el mismo en la página de perfil de usuario. 
 
 
-| Si el certificado de cifrado (SSL) está habilitado en el servidor de Active Directory (AD), el recopilador de directorios de usuarios de Cloud Secure no se puede conectar al servidor AD. | Desactive el cifrado de AD Server antes de configurar un recopilador de directorios de usuarios. Una vez que se haya recuperado el detalle del usuario, estará allí por 13 meses. Si el servidor AD se desconecta después de obtener los detalles del usuario, los usuarios recién agregados en AD no se obtendrán. Para recuperar de nuevo, el recopilador de directorios de usuarios debe estar conectado a AD. 
+| Si el certificado de cifrado (SSL) está habilitado en el servidor de Active Directory (AD), el recopilador de directorios de usuarios de seguridad de carga de trabajo no se puede conectar al servidor AD. | Desactive el cifrado de AD Server antes de configurar un recopilador de directorios de usuarios. Una vez que se haya recuperado el detalle del usuario, estará allí por 13 meses. Si el servidor AD se desconecta después de obtener los detalles del usuario, los usuarios recién agregados en AD no se obtendrán. Para recuperar de nuevo, el recopilador de directorios de usuarios debe estar conectado a AD. 
 
 
 | Los datos de Active Directory están presentes en CloudInsights Security. Desea eliminar toda la información de usuario de CloudInsights. | No SÓLO es posible eliminar la información de usuario de Active Directory de CloudInsights Security. Para eliminar el usuario, el arrendatario completo debe ser eliminado. 

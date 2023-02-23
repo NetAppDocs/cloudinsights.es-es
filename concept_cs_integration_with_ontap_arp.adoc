@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: concept_cs_integration_with_ontap_arp.html 
-summary: Cloud Secure se integra con la protección de ransomware autónoma de ONTAP para mejorar la detección de ransomware. 
+summary: Workload Security se integra con la protección de ransomware autónoma de ONTAP para mejorar la detección de ransomware. 
 keywords: ransomware, ARP, Protection, Security 
 ---
 = Integración con la protección autónoma de ransomware de ONTAP
@@ -13,9 +13,9 @@ La función de protección de ransomware autónoma de ONTAP (ARP) utiliza el an�
 
 Se pueden encontrar más detalles y requisitos de licencia sobre ARP link:https://docs.netapp.com/us-en/ontap/anti-ransomware/index.html["aquí"].
 
-Cloud Secure se integra con ONTAP para recibir eventos ARP y proporciona una capa de análisis adicional y respuestas automáticas.
+Workload Security se integra con ONTAP para recibir eventos ARP y proporcionar una capa de análisis adicional y respuestas automáticas.
 
-Cloud Secure recibe los eventos ARP de ONTAP y realiza las siguientes acciones:
+Workload Security recibe los eventos ARP de ONTAP y realiza las siguientes acciones:
 
 . Correlaciona los eventos de cifrado de volúmenes con la actividad de usuario para identificar quién está causando los daños.
 . Implementa políticas de respuesta automática (si está definido)
@@ -32,8 +32,8 @@ Cloud Secure recibe los eventos ARP de ONTAP y realiza las siguientes acciones:
 == Requisitos previos
 
 . Versión mínima de ONTAP: 9.11.1
-. Volúmenes con ARP habilitado. Se pueden encontrar detalles sobre la habilitación de ARP link:https://docs.netapp.com/us-en/ontap/anti-ransomware/enable-task.html["aquí"]. ARP debe habilitarse mediante System Manager de OnCommand. Cloud Secure no puede habilitar ARP.
-. Se debe añadir el recopilador Cloud Secure a través de la IP del clúster.
+. Volúmenes con ARP habilitado. Se pueden encontrar detalles sobre la habilitación de ARP link:https://docs.netapp.com/us-en/ontap/anti-ransomware/enable-task.html["aquí"]. ARP debe habilitarse mediante System Manager de OnCommand. La seguridad de carga de trabajo no puede habilitar ARP.
+. Se debe agregar el recopilador de seguridad de carga de trabajo a través de la IP del clúster.
 . Se necesitan credenciales para que esta función funcione. En otras palabras, se deben usar credenciales de nivel de clúster al añadir la SVM.
 
 
@@ -43,7 +43,7 @@ Cloud Secure recibe los eventos ARP de ONTAP y realiza las siguientes acciones:
 
 Si utiliza credenciales de administración del clúster, no es necesario contar con permisos nuevos.
 
-Si utiliza un usuario personalizado (por ejemplo, _csuser_) con permisos proporcionados al usuario, siga los pasos que se indican a continuación para otorgar permisos a Cloud Secure para recopilar información relacionada con ARP de ONTAP.
+Si utiliza un usuario personalizado (por ejemplo, _csuser_) con permisos proporcionados al usuario, siga los pasos que se indican a continuación para otorgar permisos a Seguridad de carga de trabajo para recopilar información relacionada con ARP desde ONTAP.
 
 Para _csuser_ con credenciales de clúster, haga lo siguiente desde la línea de comandos de ONTAP:
 
@@ -66,7 +66,7 @@ Un banner de gran confianza indica que el ataque ha mostrado el comportamiento d
 
 == Limitaciones
 
-En caso de que Cloud Secure no supervise una SVM, pero existen eventos ARP generados por ONTAP, Cloud Secure seguirá recibiendo y mostrando los eventos. Sin embargo, la información forense relacionada con la alerta, así como la asignación de usuarios, no se capturará ni se mostrará.
+En caso de que una SVM no esté supervisada por Workload Security, pero hay eventos de ARP generados por ONTAP, los eventos serán recibidos y mostrados por Workload Security. Sin embargo, la información forense relacionada con la alerta, así como la asignación de usuarios, no se capturará ni se mostrará.
 
 
 
@@ -79,5 +79,5 @@ Los problemas conocidos y sus resoluciones se describen en la siguiente tabla.
 | Problema: | Resolución: 
 
 
-| Las alertas por correo electrónico se reciben 24 horas después de que se detecta un ataque. En la interfaz de usuario de, las alertas se muestran 24 horas antes de que reciban los correos electrónicos con el servicio Seguridad de cargas de trabajo de Cloud Insights. | Cuando ONTAP envía el evento _Ransomware Detected_ a Seguridad de carga de trabajo de Cloud Insights (por ejemplo, Cloud Secure), se envía el correo electrónico. El evento contiene una lista de ataques y sus marcas de tiempo. La interfaz de usuario de Workload Security muestra la Marca de tiempo de alerta del primer archivo atacado. ONTAP envía el evento _Ransomware Detected_ a Cloud Insights cuando se codifican ciertos archivos. Por lo tanto, es posible que haya una diferencia entre la hora en que se muestra la alerta en la interfaz de usuario y la hora en la que se envía el correo electrónico. 
+| Las alertas por correo electrónico se reciben 24 horas después de que se detecta un ataque. En la interfaz de usuario de, las alertas se muestran 24 horas antes de que reciban los correos electrónicos con el servicio Seguridad de cargas de trabajo de Cloud Insights. | Cuando ONTAP envía el evento _Ransomware Detected_ a Seguridad de carga de trabajo de Cloud Insights (por ejemplo, Seguridad de carga de trabajo), se envía el correo electrónico. El evento contiene una lista de ataques y sus marcas de tiempo. La interfaz de usuario de Workload Security muestra la Marca de tiempo de alerta del primer archivo atacado. ONTAP envía el evento _Ransomware Detected_ a Cloud Insights cuando se codifican ciertos archivos. Por lo tanto, es posible que haya una diferencia entre la hora en que se muestra la alerta en la interfaz de usuario y la hora en la que se envía el correo electrónico. 
 |===

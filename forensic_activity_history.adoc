@@ -9,7 +9,7 @@ summary: datos del historial de actividades forenses
 
 
 [role="lead"]
-La página toda la actividad le ayuda a comprender las acciones realizadas en las entidades del entorno de Cloud Secure.
+La página All Activity permite comprender las acciones que se realizan en las entidades del entorno Workload Security.
 
 
 
@@ -131,7 +131,7 @@ image:CloudSecure_ActivitySelection.png["Selector de actividades, width=30%"]
 
 == Retención del historial de actividades
 
-El historial de actividades se conserva durante 13 meses en entornos Cloud Secure activos.
+El historial de actividad se conserva durante 13 meses para entornos de seguridad de carga de trabajo activa.
 
 
 

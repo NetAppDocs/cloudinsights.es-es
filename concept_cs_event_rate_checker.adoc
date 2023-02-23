@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: concept_cs_event_rate_checker.html 
 summary: Este script se puede ejecutar para comprobar la tasa de eventos en la SVM antes de instalar una máquina virtual de almacenamiento DSC de ONTAP 
-keywords: event, checker, rate, sizing, size, guide, 
+keywords: event, checker, rate, sizing, cloud secure 
 ---
 = Comprobador de tasa de eventos de SVM (guía de ajuste de tamaño del agente)
 :allow-uri-read: 
@@ -47,8 +47,7 @@ Pasos:
  “Svm svm_rate is generating 100 events/sec”.
 
 
-. Cada recopilador de datos de SVM de ONTAP se puede asociar a una única SVM, lo que significa que cada recopilador de datos podrá recibir el número de eventos que genera una única SVM.
-
+Cada recopilador de datos de SVM de ONTAP se puede asociar a una única SVM, lo que significa que cada recopilador de datos podrá recibir el número de eventos que genera una única SVM.
 
 Tenga en cuenta lo siguiente:
 
@@ -144,10 +143,10 @@ Overall svm audit_svm is generating 300 events/sec
 |===
 
 
-| Pregunta: Si ejecuto esta secuencia de comandos en una SVM que ya está configurada para Cloud Secure, ¿utiliza simplemente la configuración de fpolicy existente en la SVM o configura una temporal y ejecuta el proceso? 
+| Pregunta: Si ejecuto esta secuencia de comandos en una SVM que ya está configurada para la seguridad de la carga de trabajo, ¿solo usa la configuración de fpolicy existente en la SVM o configura una temporal y ejecuta el proceso? 
 
 
-| Respuesta: El comprobador de tasa de eventos puede ejecutarse correctamente incluso para una SVM ya configurada para Cloud Secure. No debería haber ningún impacto. 
+| Respuesta: El comprobador de tasa de eventos puede ejecutarse correctamente incluso para una SVM ya configurada para la seguridad de la carga de trabajo. No debería haber ningún impacto. 
 
 
 | Pregunta: ¿Puedo aumentar el número de SVM en las que se puede ejecutar el script? 

@@ -33,7 +33,7 @@ WARNING: Los entornos Cloud Insights Basic Edition inactivos se eliminan y se re
 NOTE: Las características, los tiempos de retención de datos y los objetos o métricas recopilados en la edición básica de Cloud Insights están sujetos a cambios con o sin previo aviso.
 
 * *Standard Edition* está disponible por suscripción y ofrece todas las funciones de Basic Edition y mucho más.
-* *Edición Premium* ofrece ventajas adicionales como Inteligencia Empresarial e Informes, así como Auditoría Cloud Secure y detección de amenazas.
+* *Premium Edition* ofrece ventajas adicionales como Business Intelligence e Reporting, así como auditoría de seguridad de carga de trabajo y detección de amenazas.
 
 
 
@@ -82,10 +82,10 @@ Estas son las funciones clave disponibles en Basic, Standard y Premium Edition:
 | Inicio de sesión único (SSO) | - | - | &comprobar; 
 
 
-| Auditoría de acceso a los datos de usuarios de Cloud Secure | - | - | &comprobar; 
+| Auditoría del acceso a los datos del usuario de seguridad de carga de trabajo | - | - | &comprobar; 
 
 
-| Detección de amenazas interna Cloud Secure con AI/ML | - | - | &comprobar; 
+| Seguridad de la carga de trabajo detección de amenazas interna con IA/ML | - | - | &comprobar; 
 
 
 | Inteligencia empresarial e informes y ast; y ast; | - | - | &comprobar; 

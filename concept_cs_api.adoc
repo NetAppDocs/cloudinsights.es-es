@@ -2,32 +2,32 @@
 sidebar: sidebar 
 permalink: concept_cs_api.html 
 keywords: api, access, token, swagger 
-summary: Cloud Secure incluye una potente API que permite la integración con otras aplicaciones, como CMDB. 
+summary: Workload Security incluye una potente API para la integración con otras aplicaciones, como CMDB. 
 ---
-= API de Cloud Secure
+= API de seguridad de cargas de trabajo
 :allow-uri-read: 
 
 
 [role="lead"]
-La API de Cloud Secure permite a los clientes y proveedores independientes de software (ISV) de NetApp integrar Cloud Secure con otras aplicaciones, como CMDB u otros sistemas de emisión de boletos.
+La API de seguridad de carga de trabajo permite a los clientes y proveedores independientes de software (ISV) de NetApp integrar la seguridad de la carga de trabajo con otras aplicaciones, como CMDB u otros sistemas de emisión de boletos.
 
 Requisitos para el acceso a API:
 
 * Se utiliza un modelo de token de acceso de API para conceder acceso.
-* La gestión de token de API la realizan los usuarios de Cloud Secure con la función de administrador.
+* La gestión de token de API la realizan los usuarios de Workload Security con la función de administrador.
 
 
 
 
 == Documentación de API (Swagger)
 
-Para obtener la información más reciente sobre la API, inicie sesión en Cloud Secure y vaya a *Administración > acceso a la API*. Haga clic en el enlace *Documentación de API*. La documentación de API es basada en Swagger, que proporciona una descripción breve e información de uso de la API, y permite probarlo en su entorno.
+La información más reciente de la API se encuentra iniciando sesión en Workload Security y navegando a *Admin > API Access*. Haga clic en el enlace *Documentación de API*. La documentación de API es basada en Swagger, que proporciona una descripción breve e información de uso de la API, y permite probarlo en su entorno.
 
 
 
 == Tokens de acceso API
 
-Antes de utilizar la API de Cloud Secure, debe crear uno o más *tokens de acceso de API*. Los tokens de acceso conceden permisos de lectura. También puede establecer la caducidad de cada token de acceso.
+Antes de utilizar la API de seguridad de carga de trabajo, debe crear uno o más * tokens de acceso de API*. Los tokens de acceso conceden permisos de lectura. También puede establecer la caducidad de cada token de acceso.
 
 Para crear un token de acceso:
 

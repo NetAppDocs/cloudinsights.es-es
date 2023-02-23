@@ -65,7 +65,7 @@ Su Unidad de adquisición de Cloud Insights, así como sus interacciones en un e
 
 === Visualización de extremos de proxy
 
-Puede ver sus extremos proxy haciendo clic en el enlace *Configuración de proxy* cuando elija un recopilador de datos durante la incorporación, o en el vínculo de _Configuración de proxy_ en la página *Ayuda > Soporte*. Se muestra una tabla como la siguiente. Si tiene Cloud Secure en el entorno, las direcciones URL del extremo configuradas también se mostrarán en esta lista.
+Puede ver sus extremos proxy haciendo clic en el enlace *Configuración de proxy* cuando elija un recopilador de datos durante la incorporación, o en el vínculo de _Configuración de proxy_ en la página *Ayuda > Soporte*. Se muestra una tabla como la siguiente. Si tiene Seguridad de carga de trabajo en su entorno, las direcciones URL de extremo configuradas también se mostrarán en esta lista.
 
 image:ProxyEndpoints_NewTable.png["Tabla de puntos finales de proxy"]
 

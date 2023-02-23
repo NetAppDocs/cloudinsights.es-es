@@ -25,6 +25,6 @@ Consulte link:cs_restrict_user_access.html["Restringir acceso de usuarios"] Para
 
 Puede modificar o poner en pausa una directiva de respuesta automática seleccionando la opción del menú desplegable de la directiva.
 
-Cloud Secure eliminará automáticamente las snapshots una vez al día en función de la configuración de purgado de snapshot.
+Workload Security eliminará automáticamente las snapshots una vez al día en función de la configuración de purga de snapshots.
 
 image:CloudSecure_SnapshotPurgeSettings.png["Configuración de purga de instantáneas"]
