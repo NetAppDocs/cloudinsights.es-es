@@ -1,12 +1,12 @@
+---
+sidebar: sidebar 
+permalink: concept_cs_attack_simulator.html 
+keywords: ransomware, simulation, simulator, restrict, attack 
+summary: Mediante un script, puede simular un ataque de ransomware para probar o demostrar la seguridad de la carga de trabajo 
+---
 = Seguridad de la carga de trabajo: Simulación de un ataque
 :allow-uri-read: 
 
-
-código --- barra lateral: Enlace permanente: concept_cs_attack_simulator.html palabras clave: Ransomware, simulación, simulador, restricción, resumen de ataque: Usando un script, puede simular un ataque de Ransomware para probar o demostrar la seguridad de la carga de trabajo ----
-
-
-
-= Seguridad de la carga de trabajo: Simulación de un ataque
 
 [role="lead"]
 Puede utilizar las instrucciones de esta página para simular un ataque con el fin de probar o demostrar la seguridad de la carga de trabajo mediante el script de simulación de Ransomware incluido.
