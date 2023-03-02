@@ -3046,7 +3046,6 @@
   <block id="4aba696177ce8a74216803ac14343d2c" category="sidebar">Gestionar colectores de datos configurados</block>
   <block id="72633c43eaf6d098d8df9b7b7cf5fb7a" category="sidebar">Errores de recopilación de datos de investigación</block>
   <block id="3f919c7c06027082bb746a8ef324bad2" category="sidebar">Importación de paneles recomendados</block>
-  <block id="299db49f1f95a819e1364febfbbb0b0f" category="sidebar">Cambiando a otros productos de Cloud Central</block>
   <block id="7d98fdc49fc17d8fbb4bb34a4904c7c8" category="sidebar">Lista de recopiladores de datos</block>
   <block id="dccd6b1a35e5f58699c220a398ba4b60" category="sidebar">Resolución automática del dispositivo</block>
   <block id="a0a44b683686e93d33180f439c1b3ed7" category="sidebar">Descripción general de la resolución del dispositivo</block>
@@ -10781,4 +10780,6 @@
   <block id="8b323f07a8614b39412ac6f03ce45d0e" category="sidebar">Gestión de usuarios de seguridad de cargas de trabajo</block>
   <block id="d38e6d2b2a7ab4eab18cf40e7c0ae800" category="summary">Unidad de adquisición instalación, desinstalación, configuración del soporte de proxy, etc. en Windows y Linux.</block>
   <block id="d26ec9bd59920d141e6767082f0524dc" category="summary">Mediante un script, puede simular un ataque de ransomware para probar o demostrar la seguridad de la carga de trabajo</block>
+  <block id="5dfe08a6b6855a1ebeedad2a282e5824" category="cell">El bloqueo del usuario (dirección IP) para NFS funciona, pero para SMB / CIFS, aparece un mensaje de error: “Error de la transformación de SID a DomainName. Motivo de tiempo de espera: No se ha establecido el socket”</block>
+  <block id="e8aaaf728a906b8e9d531bb2447c9cf2" category="cell">Esto puede suceder es _csuser_ no tiene permiso para realizar ssh. (Asegúrese de conexión a nivel de clúster y, a continuación, asegúrese de que el usuario pueda realizar ssh). el rol _csuser_ requiere estos permisos.<block ref="3066b8235934d1594e54f7b043a73648" category="inline-link-rx"></block>Para _csuser_ con credenciales de clúster, haga lo siguiente desde la línea de comandos de ONTAP: security login role create -role csrole -cmddirname "vserver export-policy rule" -access all security login role create -role csrole -cmddirname set -access all security login role create -role csrole -cmddirname "vserver cifs session" -access all security login role create -role create -role csrole -role -role -dirrole -dirname "vserver services access security" Role create -role csrole -cmddirname "vserver name-mapping" -access all If _csuser_ no se utiliza y si se usa el usuario administrador a nivel de clúster, asegúrese de que el usuario administrador tenga permiso ssh para ONTAP.</block>
 </blocks>
