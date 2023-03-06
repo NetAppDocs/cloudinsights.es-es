@@ -114,7 +114,8 @@ sc.exe delete telegraf
 +
 ....
 cd Cert:\CurrentUser\Root
-rm E5FB7B68C08B1CA902708584C274F8EFC7BE8ABC
+//rm E5FB7B68C08B1CA902708584C274F8EFC7BE8ABC
+rm 1A918038E8E127BB5C87A202DF173B97A05B4996
 ....
 . Elimine la carpeta _C:\Archivos de programa\telegraf_ para eliminar los archivos binarios, de registros y de configuración
 . Elimine la clave _SYSTEM\CurrentControlSet\Services\EventLog\Application\telegraf_ del Registro
@@ -535,7 +536,7 @@ La secuencia de comandos de instalación, el archivo de entorno y los archivos Y
 
 El archivo PEM puede verificarse confirmando que su huella digital es la siguiente:
 
- E5:FB:7B:68:C0:8B:1C:A9:02:70:85:84:C2:74:F8:EF:C7:BE:8A:BC
+ 1A918038E8E127BB5C87A202DF173B97A05B4996
 Más específicamente,
 
 * No Windows:

@@ -54,10 +54,7 @@ Cloud Insights admite la supervisión de nodos Kubernetes que ejecutan Linux, es
 |===
 * El operador de supervisión Kubernetes de NetApp y sus dependencias (telegraf, kube-state-Metrics, fluentbit, etc.) no son compatibles con los nodos que se ejecutan con la arquitectura Arm64.
 * Deben estar disponibles los siguientes comandos: _Curl_, _sudo_, _openssl_, _sha256sum_ y _kubectl_. Para obtener los mejores resultados, añada estos comandos a la RUTA DE ACCESO.
-
-
->>>>>> E64b5299cf9e0451417037778f9d37b84b9d9e6b * el host que utilizará para la instalación del operador de supervisión de Kubernetes de NetApp debe tener _kubectl_ configurado para comunicarse con el clúster K8s de destino y tener conectividad de Internet con su entorno Cloud Insights. Si este host requiere que un proxy llegue a Cloud Insights, siga las instrucciones en <<configuring-proxy-support,Configurar el soporte del proxy>> sección.
-
+* El host que utilizará para la instalación del operador de supervisión de Kubernetes de NetApp debe tener _kubectl_ configurado para comunicarse con el clúster K8s de destino y tener conectividad a Internet con el entorno de Cloud Insights. Si este host requiere que un proxy llegue a Cloud Insights, siga las instrucciones en <<configuring-proxy-support,Configurar el soporte del proxy>> sección.
 * El operador de supervisión de Kubernetes de NetApp instala sus propias métricas de estado kube para evitar conflictos con otras instancias.
 * Si está detrás de un proxy durante la instalación o cuando utilice el clúster K8s que se va a supervisar, siga las instrucciones del <<configuring-proxy-support,Configurar el soporte del proxy>> sección.
 * Debe tener permisos para crear roles en el clúster de Kubernetes y vinculaciones de roles.
@@ -426,7 +423,7 @@ La secuencia de comandos de instalación, el archivo de entorno y los archivos Y
 
 El archivo PEM puede verificarse confirmando que su huella digital es la siguiente:
 
- E5:FB:7B:68:C0:8B:1C:A9:02:70:85:84:C2:74:F8:EF:C7:BE:8A:BC
+ 1A918038E8E127BB5C87A202DF173B97A05B4996
 Más específicamente,
 
  openssl x509 -fingerprint -sha1 -noout -inform pem -in netapp_cert.pem
