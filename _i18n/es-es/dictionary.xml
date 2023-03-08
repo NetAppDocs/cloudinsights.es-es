@@ -9166,8 +9166,6 @@
   <block id="f476f509e4376cd5626f5e00f9ae0b36" category="cell"><block ref="f476f509e4376cd5626f5e00f9ae0b36" category="inline-link-macro-rx"></block></block>
   <block id="940c7504c600c1a52faad7bd127ac49d" category="inline-link-macro">Dell EMC PowerScale (anteriormente Isilon)</block>
   <block id="f5e6914e29cffad03c2f603e72e6798b" category="cell"><block ref="f5e6914e29cffad03c2f603e72e6798b" category="inline-link-macro-rx"></block></block>
-  <block id="3fb9d15e7ce5e74d2d3cbbd4d6d1eeb7" category="inline-link-macro">REST de Dell EMC Isilon</block>
-  <block id="debcc72094a806a749160def821d5dcf" category="cell"><block ref="debcc72094a806a749160def821d5dcf" category="inline-link-macro-rx"></block></block>
   <block id="9926fd0e172b4a25000e01c11bb3747f" category="inline-link-macro">PowerStore de Dell EMC</block>
   <block id="1b109b38fea9959dbc53058628693aef" category="cell"><block ref="1b109b38fea9959dbc53058628693aef" category="inline-link-macro-rx"></block></block>
   <block id="f8e3c055426933bde369444cdafa0c6b" category="inline-link-macro">RecoverPoint de Dell EMC</block>
@@ -10114,7 +10112,6 @@
   <block id="74fc57ab5709f51d1937bb0914fee569" category="cell">Tiempo de espera de conexión HTTP (s)</block>
   <block id="6939a409597e034178c1b1a80d734f5d" category="cell">Tiempo de espera HTTP en segundos.</block>
   <block id="9d8dde207423e16514f1a132221a65a3" category="summary">Configuración del recopilador de datos REST de Dell EMC Isilon / PowerScale.</block>
-  <block id="831b6c031c23b2fb141faacc1a32e259" category="doc">Recopilador de datos DE REST de Dell EMC Isilon</block>
   <block id="9b7f99f4d867484d5fc5fad6f84567ba" category="paragraph">Cloud Insights utiliza el recopilador de datos DE REST de Dell EMC Isilon / PowerScale para adquirir datos de inventario y rendimiento del almacenamiento de Dell EMC Isilon o PowerScale.</block>
   <block id="c40dff11b6ddb88303480bb455edaf14" category="cell">Sistema de archivos OneFS</block>
   <block id="c593547a39a4d7895f41492d41fd6fa3" category="list-text">Una cuenta de usuario y una contraseña. Esta cuenta NO necesita ser admin/root, pero DEBE conceder un número sustancial de privilegios de sólo lectura a su cuenta de servicio; consulte la tabla siguiente</block>
@@ -10786,4 +10783,8 @@
   <block id="eefa6cd78e40f4194cf842026e05a215" category="section-title">Cloud Connection para ONTAP 9.9 o posterior obsoleto</block>
   <block id="2589e2b6868c0dfc4223608ad37b1ecf" category="paragraph">El recopilador de datos de Cloud Connection para ONTAP 9.9+ está obsoleto. A partir del 4 de abril de 2023, los recopiladores de datos de Cloud Connection en su entorno ya no recopilarán datos y, en su lugar, presentarán un error al realizar el sondeo. El recopilador de datos de Cloud Connection se eliminará por completo de Cloud Insights en una actualización posterior.</block>
   <block id="8ae386dae67728714e42ae37acbde665" category="paragraph">Antes del 4 de abril de 2023, es obligatorio configurar un nuevo recopilador de datos de software de gestión de datos de ONTAP de NetApp para cualquier sistema ONTAP que esté recopilado actualmente por Cloud Connection. <block ref="61bbaeff08609910a4a5c1401ada9f16" category="inline-link-macro-rx"></block>.</block>
+  <block id="3d535cce2c7c7b6ca074afafcd02ca81" category="inline-link-macro">REST de Dell EMC Isilon/PowerScale</block>
+  <block id="0f68b3cd7cc981b302e5fc48409617ab" category="cell"><block ref="0f68b3cd7cc981b302e5fc48409617ab" category="inline-link-macro-rx"></block></block>
+  <block id="e23a1eab258608c673f841550477728b" category="doc">Recopilador de datos DE REST de Dell EMC Isilon y PowerScale</block>
+  <block id="9406d81673e1646c43299c62b0289100" category="sidebar">Isilon/PowerScale REST</block>
 </blocks>

@@ -75,7 +75,7 @@ Lista alfabética de recopiladores de datos compatibles con Cloud Insights:
 | link:task_dc_emc_isilon.html["Dell EMC PowerScale (anteriormente Isilon)"] | De almacenamiento 
 
 
-| link:task_dc_emc_isilon_rest.html["REST de Dell EMC Isilon"] | De almacenamiento 
+| link:task_dc_emc_isilon_rest.html["REST de Dell EMC Isilon/PowerScale"] | De almacenamiento 
 
 
 | link:task_dc_emc_powerstore.html["PowerStore de Dell EMC"] | De almacenamiento 
