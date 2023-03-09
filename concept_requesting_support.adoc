@@ -68,7 +68,9 @@ image:SupportPage_SN_Section-NA.png["Pantalla_SN"]
 
 == Obtención de información de soporte
 
-NetApp ofrece soporte para Cloud Insights de diversas formas. Las amplias opciones de autoservicio gratuitas están disponibles las 24 horas del día, los 7 días de la semana, como los artículos de la base de conocimiento (KB) o la comunidad de NetApp. Para los usuarios suscritos a cualquiera de las ediciones de Cloud Insights (básico, estándar, Premium), el soporte técnico está disponible por teléfono o mediante emisión de boletos Web. Se requiere una cuenta SSO del sitio de soporte de NetApp (NSS) para poder abrir incidencias junto con la gestión de casos.
+NetApp ofrece soporte para Cloud Insights de diversas formas. Las amplias opciones de autoservicio gratuitas están disponibles las 24 horas del día, los 7 días de la semana, como los artículos de la base de conocimiento (KB) o la comunidad de NetApp. Para los usuarios suscritos a cualquiera de las ediciones de Cloud Insights (básico*, estándar, Premium), el soporte técnico está disponible por teléfono o mediante emisión de boletos Web. Se requiere una cuenta SSO del sitio de soporte de NetApp (NSS) para poder abrir incidencias junto con la gestión de casos.
+
+*El soporte está disponible con Basic Edition siempre que todos sus sistemas de almacenamiento NetApp estén cubiertos, al menos, por el nivel de soporte Premium.
 
 
 
