@@ -58,7 +58,9 @@ security login create -user-or-group-name csuser -application http -authmethod p
 
 A continuación se muestra una alerta de muestra generada debido a un evento ARP:
 
-image:CS_ONTAP_ARP_EXAMPLE.png["Pantalla de ejemplo de ONTAP ARP"]
+image:CS_Ransomware_Example_1.png["Sección superior de la alerta de ransomware"]
+image:CS_Ransomware_Example_2.png["Sección superior de la alerta de ransomware"]
+image:CS_Ransomware_Example_3.png["Sección superior de la alerta de ransomware"]
 
 Un banner de gran confianza indica que el ataque ha mostrado el comportamiento de ransomware junto con actividades de cifrado de archivos. El gráfico de archivos cifrados indica la Marca de tiempo en la que la solución ARP ha detectado la actividad de cifrado de volúmenes.
 
