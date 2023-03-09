@@ -83,6 +83,8 @@ La forma más sencilla de hacerlo es especificar la configuración de comodines 
 
 NOTE: El uso de un asterisco (*) para el comodín es común, pero la configuración de proxy/firewall puede usar un formato diferente. Consulte la documentación del proxy para asegurarse de que la especificación del comodín es correcta en su entorno.
 
+Puede encontrar más información sobre la configuración de proxy en NetApp link:https://kb.netapp.com/Advice_and_Troubleshooting/Cloud_Services/Cloud_Insights/Where_is_the_proxy_information_saved_to_in_the_Cloud_Insights_Acquisition_Unit["Conocimientos"].
+
 
 
 ==== Ver las URL de proxy
@@ -136,6 +138,8 @@ La forma más sencilla de hacerlo es especificar la configuración de comodines 
  *.cloudinsights.netapp.com
 
 NOTE: El uso de un asterisco (*) para el comodín es común, pero la configuración de proxy/firewall puede usar un formato diferente. Consulte la documentación del proxy para asegurarse de que la especificación del comodín es correcta en su entorno.
+
+Puede encontrar más información sobre la configuración de proxy en NetApp link:https://kb.netapp.com/Advice_and_Troubleshooting/Cloud_Services/Cloud_Insights/Where_is_the_proxy_information_saved_to_in_the_Cloud_Insights_Acquisition_Unit["Conocimientos"].
 
 
 
