@@ -172,7 +172,10 @@ password: <password from docker secret step above>
 ....
 Tire de la imagen del operador docker desde Cloud Insights. Asegúrese de que el número de versión de _netapp-Monitoring_ sea actual:
 
- docker pull docker.<cluster>.cloudinsights.netapp.com/netapp-monitoring:<version>
+....
+docker pull docker.<cluster>.cloudinsights.netapp.com/netapp-monitoring:<version>
+docker pull docker.<cluster>.cloudinsights.netapp.com/distroless-root-user:<version>
+....
 Busque el campo _netapp-Monitoring_ <version> mediante el comando siguiente:
 
  kubectl -n netapp-monitoring describe deployment monitoring-operator | grep -i "image:" |grep netapp-monitoring
