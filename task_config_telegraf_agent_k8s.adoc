@@ -453,7 +453,7 @@ Puede ajustar el operador de supervisión Kubernetes de NetApp para obtener un r
 
 Algunos puntos para intentar si tiene problemas para configurar el operador de supervisión de Kubernetes de NetApp:
 
-[cols="2*"]
+[cols="stretch"]
 |===
 | Problema: | Pruebe lo siguiente: 
 
@@ -480,5 +480,17 @@ Algunos puntos para intentar si tiene problemas para configurar el operador de s
 
 
 | Se han visto errores "ImagePullBackoff" | Puede observar estos errores si dispone de un repositorio de Docker personalizado o privado y aún no ha configurado el operador de supervisión de Kubernetes de NetApp para que lo reconozca correctamente. <<using-a-custom-or-private-docker-repository,Leer más>> acerca de la configuración para repo personalizado/privado. 
+
+
+| Tengo un problema con la implementación de mi operador de supervisión y la documentación actual no me ayuda a resolverla.  a| 
+Capture o anote el resultado de los siguientes comandos y póngase en contacto con el equipo de soporte técnico.
+
+[listing]
+----
+ kubectl -n netapp-monitoring get all
+ kubectl -n netapp-monitoring describe all
+ kubectl -n netapp-monitoring logs <monitoring-operator-pod> --all-containers=true
+ kubectl -n netapp-monitoring logs <telegraf-pod> --all-containers=true
+----
 |===
 Puede encontrar información adicional en link:concept_requesting_support.html["Soporte técnico"] o en la link:https://docs.netapp.com/us-en/cloudinsights/CloudInsightsDataCollectorSupportMatrix.pdf["Matriz de compatibilidad de recopilador de datos"].
