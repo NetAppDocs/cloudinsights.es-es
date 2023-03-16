@@ -143,6 +143,7 @@ El precio de Cloud Insights es por *Unidad gestionada*. El uso de las unidades a
 
 Tenga en cuenta que los siguientes recopiladores de datos se miden en un TIB sin procesar diferente a la tasa de unidades administradas. Cada 40 TIB de capacidad sin formato en estos recopiladores de datos se carga como 1 Unidad administrada (MU):
 
+* AWS S3
 * EMC ECS de Dell
 * Plataforma de contenidos Hitachi
 * IBM Cleversafe
