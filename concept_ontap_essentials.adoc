@@ -28,7 +28,7 @@ Para comenzar a explorar, seleccione *aspectos básicos de ONTAP* en el menú pr
 
 image:ONTAP_Essentials_Overview_Sept.png["Consola de información general para ONTAP Essentials"]
 
-El panel *Descripción general* muestra información útil como el número de clústeres de su entorno con sus porcentajes de capacidad y rendimiento generales. También verá datos predictivos relacionados con el número de días esperados hasta que la capacidad de almacenamiento o la capacidad de rendimiento se queda sin espacio. Además, si alguna controladora de su infraestructura funciona a altas temperaturas, ONTAP Essentials les mostrará estas características.
+El panel *Descripción general* muestra información útil como el número de clústeres de su entorno con sus porcentajes de capacidad y rendimiento generales. También verá datos predictivos relacionados con el número de días esperados hasta que la capacidad de almacenamiento o la capacidad de rendimiento se queda sin espacio. Además, si alguna controladora de su infraestructura se ejecuta con su CPU en más del 65 %, lo que puede suponer un riesgo para su clúster en caso de recuperación tras fallos, ONTAP Essentials muestra las controladoras como controladoras "calientes".
 
 Los gráficos informativos le ofrecen una mirada al rendimiento con el tiempo y los problemas durante el uso de la capacidad.
 
