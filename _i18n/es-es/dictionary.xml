@@ -2182,12 +2182,6 @@
   <block id="7040b350f10440ae0d8da871848e4a81" category="list-text">Una fpolicy ya existente con el mismo nombre, número de secuencia, etc. dará error.</block>
   <block id="92848109d677425a3581b7e70806e998" category="list-text">El script se detiene abruptamente mientras se ejecuta.</block>
   <block id="f03d806bb84581d824fc78103e668b12" category="paragraph">A continuación se muestra un ejemplo de ejecución de script:</block>
-  <block id="414578a6fb051cf762571b6abc3062a7" category="cell">Pregunta: ¿Puedo aumentar el número de SVM en las que se puede ejecutar el script?</block>
-  <block id="4c39b760a2129c8773ade4e38c7ee8a1" category="cell">Respuesta: Sí. Solo tiene que editar la secuencia de comandos y cambiar el número máximo de SVM de 5 a cualquier número que desee.</block>
-  <block id="70fd916f11013b88f353d7c4cc8288b0" category="cell">Pregunta: Si aumenta el número de SVM, ¿aumentará el tiempo de ejecución del script?</block>
-  <block id="f64044d833e646b68fe903a7d7204ce9" category="cell">Respuesta: No La secuencia de comandos se ejecutará durante un máximo de 5 minutos, aunque el número de SVM aumente.</block>
-  <block id="aeb20f65fbd8c09dda397cfc3a4d6120" category="cell">Respuesta: Sí. Debe editar el script y cambiar el número máximo de SVM de 5 a cualquier número que desee.</block>
-  <block id="e90fb31b8ec18f1817a08fecf70d9418" category="cell">Respuesta: No La secuencia de comandos se ejecutará durante un máximo de 5 minutos, aunque el número de SVM aumente.</block>
   <block id="ef3aa6b9d2f782f33da5b73b27fa7356" category="summary">Diagramas de esquema de Data Warehouse y tablas para usar con Reporting</block>
   <block id="813a56890a4533afc3bcfe8afcb993b9" category="doc">Esquemas Cloud Insights para creación de informes</block>
   <block id="37027f0e1c5a6324ee414a6d53995364" category="paragraph">Estas tablas de esquema y diagramas se proporcionan a continuación como referencia para los informes de Cloud Insights.</block>
@@ -10744,8 +10738,6 @@
 <block ref="536041084bffaf10e48c1cc03ccee7a2" category="inline-link-macro-rx"></block></block>
   <block id="58ecb418298e803c7a0ae49007466440" category="paragraph">La página All Activity permite comprender las acciones que se realizan en las entidades del entorno Workload Security.</block>
   <block id="0ab830109b4f56f33fe1f751ed17ca85" category="paragraph">El historial de actividad se conserva durante 13 meses para entornos de seguridad de carga de trabajo activa.</block>
-  <block id="48d308d5944f69b2199664d16fb4ef02" category="cell">Pregunta: Si ejecuto esta secuencia de comandos en una SVM que ya está configurada para la seguridad de la carga de trabajo, ¿solo usa la configuración de fpolicy existente en la SVM o configura una temporal y ejecuta el proceso?</block>
-  <block id="6dc6e27b054fdfb47ea4834bce442633" category="cell">Respuesta: El comprobador de tasa de eventos puede ejecutarse correctamente incluso para una SVM ya configurada para la seguridad de la carga de trabajo. No debería haber ningún impacto.</block>
   <block id="2ffc6472f9d6abaf761bbe2e6a0385ce" category="paragraph">Consulte la documentación de OnCommand Cloud Volumes ONTAP para configurar una instancia AWS de un solo nodo/alta disponibilidad para alojar la carga de trabajo del agente de seguridad:<block ref="caca64b8e9927e0ea8e8b0158b9e47cd" category="inline-link-rx"></block></block>
   <block id="830d10f97264e90663c5e3935c2d632d" category="paragraph">En AWS, siga estos pasos para configurar el equipo que se utilizará como agente de seguridad de carga de trabajo:</block>
   <block id="1c670cb717b4140f57366cd8d3f7073b" category="paragraph">Siga estos pasos para configurar el equipo que se utilizará como agente de seguridad de carga de trabajo:</block>
@@ -10797,4 +10789,16 @@
   <block id="368fbe1d48012e8e4f24249e2b27a8dd" category="paragraph">Capture o anote el resultado de los siguientes comandos y póngase en contacto con el equipo de soporte técnico.</block>
   <block id="128edc3ff8c2d69c9c76b866643314ec" category="list-text">AWS S3</block>
   <block id="239169e06fcc5c8354859b561ff0a0b6" category="paragraph">El panel *Descripción general* muestra información útil como el número de clústeres de su entorno con sus porcentajes de capacidad y rendimiento generales. También verá datos predictivos relacionados con el número de días esperados hasta que la capacidad de almacenamiento o la capacidad de rendimiento se queda sin espacio. Además, si alguna controladora de su infraestructura se ejecuta con su CPU en más del 65 %, lo que puede suponer un riesgo para su clúster en caso de recuperación tras fallos, ONTAP Essentials muestra las controladoras como controladoras "calientes".</block>
+  <block id="a97ea56b0e00b2379736ae60869ff66a" category="cell">Pregunta</block>
+  <block id="3751695c17afed4055a7a5ad5d46f6f5" category="cell">Responda</block>
+  <block id="d0361ec8dd55377b979879d46798dd21" category="cell">Si ejecuto este script en una SVM que ya está configurada para la seguridad de la carga de trabajo, ¿utiliza simplemente la configuración de fpolicy existente en la SVM o configura una temporal y ejecuta el proceso?</block>
+  <block id="dd6c1727e8619e941f226765e3ee28ed" category="cell">El comprobador de tasa de eventos puede ejecutarse correctamente incluso para una SVM ya configurada para la seguridad de la carga de trabajo. No debería haber ningún impacto.</block>
+  <block id="865bc2d6c9cc50637b3abc05118e4574" category="cell">¿Puedo aumentar el número de SVM en las que se puede ejecutar el script?</block>
+  <block id="d2a27dbe2bebb82fe8bccf11a4f69d9b" category="cell">Sí. Solo tiene que editar la secuencia de comandos y cambiar el número máximo de SVM de 5 a cualquier número que desee.</block>
+  <block id="e94aec426eb2ace8240d7abaeefa8597" category="cell">Si aumenta el número de SVM, ¿aumentará el tiempo de ejecución del script?</block>
+  <block id="3367c7848384adc0d8f9445dcca8b87e" category="cell">No La secuencia de comandos se ejecutará durante un máximo de 5 minutos, aunque el número de SVM aumente.</block>
+  <block id="49eeed91da2974d7d682c9398b2adbd0" category="cell">Sí. Debe editar el script y cambiar el número máximo de SVM de 5 a cualquier número que desee.</block>
+  <block id="ecb5fa18c7cd0623faea3969f936f4c3" category="cell">No La secuencia de comandos se ejecutará durante un máximo de 5 minutos, aunque el número de SVM aumente.</block>
+  <block id="ce3d712deda180dd445bfed60562d712" category="cell">¿Qué ocurre si ejecuto el Comprobador de frecuencia de sucesos con un agente existente?</block>
+  <block id="697ee668360d1c19e858e5fdd25062e6" category="cell">Si se ejecuta el comprobador de tasa de eventos con un agente ya existente, se puede aumentar la latencia en la SVM. Este aumento será de naturaleza temporal mientras se ejecuta el comprobador de tasa de eventos.</block>
 </blocks>

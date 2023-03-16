@@ -143,32 +143,23 @@ Overall svm audit_svm is generating 300 events/sec
 |===
 
 
-| Pregunta: Si ejecuto esta secuencia de comandos en una SVM que ya está configurada para la seguridad de la carga de trabajo, ¿solo usa la configuración de fpolicy existente en la SVM o configura una temporal y ejecuta el proceso? 
+| Pregunta | Responda 
 
 
-| Respuesta: El comprobador de tasa de eventos puede ejecutarse correctamente incluso para una SVM ya configurada para la seguridad de la carga de trabajo. No debería haber ningún impacto. 
+| Si ejecuto este script en una SVM que ya está configurada para la seguridad de la carga de trabajo, ¿utiliza simplemente la configuración de fpolicy existente en la SVM o configura una temporal y ejecuta el proceso? | El comprobador de tasa de eventos puede ejecutarse correctamente incluso para una SVM ya configurada para la seguridad de la carga de trabajo. No debería haber ningún impacto. 
 
 
-| Pregunta: ¿Puedo aumentar el número de SVM en las que se puede ejecutar el script? 
+| ¿Puedo aumentar el número de SVM en las que se puede ejecutar el script? | Sí. Solo tiene que editar la secuencia de comandos y cambiar el número máximo de SVM de 5 a cualquier número que desee. 
 
 
-| Respuesta: Sí. Solo tiene que editar la secuencia de comandos y cambiar el número máximo de SVM de 5 a cualquier número que desee. 
+| Si aumenta el número de SVM, ¿aumentará el tiempo de ejecución del script? | No La secuencia de comandos se ejecutará durante un máximo de 5 minutos, aunque el número de SVM aumente. 
 
 
-| Pregunta: Si aumenta el número de SVM, ¿aumentará el tiempo de ejecución del script? 
+| ¿Puedo aumentar el número de SVM en las que se puede ejecutar el script? | Sí. Debe editar el script y cambiar el número máximo de SVM de 5 a cualquier número que desee. 
 
 
-| Respuesta: No La secuencia de comandos se ejecutará durante un máximo de 5 minutos, aunque el número de SVM aumente. 
+| Si aumenta el número de SVM, ¿aumentará el tiempo de ejecución del script? | No La secuencia de comandos se ejecutará durante un máximo de 5 minutos, aunque el número de SVM aumente. 
 
 
-| Pregunta: ¿Puedo aumentar el número de SVM en las que se puede ejecutar el script? 
-
-
-| Respuesta: Sí. Debe editar el script y cambiar el número máximo de SVM de 5 a cualquier número que desee. 
-
-
-| Pregunta: Si aumenta el número de SVM, ¿aumentará el tiempo de ejecución del script? 
-
-
-| Respuesta: No La secuencia de comandos se ejecutará durante un máximo de 5 minutos, aunque el número de SVM aumente. 
+| ¿Qué ocurre si ejecuto el Comprobador de frecuencia de sucesos con un agente existente? | Si se ejecuta el comprobador de tasa de eventos con un agente ya existente, se puede aumentar la latencia en la SVM. Este aumento será de naturaleza temporal mientras se ejecuta el comprobador de tasa de eventos. 
 |===
