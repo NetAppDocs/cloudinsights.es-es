@@ -17,6 +17,12 @@ Cloud Insights ofrece la *NetApp Kubernetes Monitoring Operator* (NKMO) para la 
 
 image:kubernetes_tile.png["Recuadro del recopilador de datos de Kubernetes"]
 
+A continuación se muestra una ilustración de alto nivel que muestra dónde reside el operador en su entorno. En función del entorno, es posible que se requiera o no _Proxy Server_.
+
+image:CI_Diagram_with_NKMO.png["Un mapa de alto nivel donde se muestra NKMO que reside en el clúster de Kubernetes, con flechas que muestran cómo los datos viajan al clúster desde los hosts, servidores proxy; todo ello hasta Cloud Insights"]
+
+El operador (NKMO) y los recopiladores de datos se descargan del Registro Cloud Insights Docker. Una vez instalado, NKMO gestiona los colectores compatibles con el operador implementados en los nodos del clúster de Kubernetes para adquirir datos, incluida la gestión del ciclo de vida de dichos colectores. Después de esta cadena, los datos se adquieren de los colectores y se envían a Cloud Insights.
+
 
 
 == Antes de instalar el operador de supervisión de Kubernetes de NetApp
