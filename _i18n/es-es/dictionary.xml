@@ -522,7 +522,6 @@
   <block id="e46ad1cf454a36b0aa27d5cb43692c6b" category="paragraph">Inicie sesión en el repositorio docker:</block>
   <block id="db14bf839f053975690a0aa27f23e573" category="paragraph">Tire de la imagen del operador docker desde Cloud Insights. Asegúrese de que el número de versión de _netapp-Monitoring_ sea actual:</block>
   <block id="231509eaa9ac837e90f55a78ed5a859e" category="paragraph">Busque el campo _netapp-Monitoring_ &lt;version&gt; mediante el comando siguiente:</block>
-  <block id="2ab991b456a7fa9b1f3d4ecbbe41e44d" category="paragraph">Introduzca la imagen del operador docker en el repositorio de su proveedor de servicios de empresa/local/privado de acuerdo con las políticas de su empresa.</block>
   <block id="e11da9afe91d381489a365c86cc614ab" category="inline-xref">Requisitos previos</block>
   <block id="6c427ef0d84924952ea57287d5c12a55" category="paragraph">Descargue todas las dependencias de código abierto en su registro de docker privado. Es necesario descargar las siguientes imágenes de código abierto. Consulte <block ref="972589b8633c88ae3dbc8b66dfee3076" category="inline-xref-macro-rx"></block> de la sección anterior para las versiones más actuales de estos componentes:</block>
   <block id="cb43d6ddfc5892dafbf435fffd06e735" category="paragraph">Si el bit fluido está activado, también descargue:</block>
@@ -10805,4 +10804,5 @@
   <block id="ba242d5a39d9f558e864fb59273d1683" category="inline-image-macro">Un mapa de alto nivel donde se muestra NKMO que reside en el clúster de Kubernetes, con flechas que muestran cómo los datos viajan al clúster desde los hosts, servidores proxy; todo ello hasta Cloud Insights</block>
   <block id="40071b38a2f52894172d224dcc8c0caa" category="paragraph"><block ref="40071b38a2f52894172d224dcc8c0caa" category="inline-image-macro-rx" type="image"></block></block>
   <block id="fe5c84e62a55503753fc6f02fa98fbd5" category="paragraph">El operador (NKMO) y los recopiladores de datos se descargan del Registro Cloud Insights Docker. Una vez instalado, NKMO gestiona los colectores compatibles con el operador implementados en los nodos del clúster de Kubernetes para adquirir datos, incluida la gestión del ciclo de vida de dichos colectores. Después de esta cadena, los datos se adquieren de los colectores y se envían a Cloud Insights.</block>
+  <block id="5fdef5014971511d708c48ee3a739357" category="paragraph">Introduzca la imagen del operador docker en el repositorio de su proveedor de servicios de empresa/local/privado de acuerdo con las políticas de su empresa. Asegúrese de que las rutas de acceso del directorio a estas imágenes del repositorio sean coherentes con las de docker.&lt;cluster&gt;.cloudinsights.netapp.com.</block>
 </blocks>
