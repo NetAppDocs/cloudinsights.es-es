@@ -185,8 +185,6 @@ docker pull docker.<cluster>.cloudinsights.netapp.com/distroless-root-user:<vers
 Busque el campo _netapp-Monitoring_ <version> mediante el comando siguiente:
 
  kubectl -n netapp-monitoring describe deployment monitoring-operator | grep -i "image:" |grep netapp-monitoring
-Introduzca la imagen del operador docker en el repositorio de su proveedor de servicios de empresa/local/privado de acuerdo con las políticas de su empresa. Asegúrese de que las rutas de acceso del directorio a estas imágenes del repositorio sean coherentes con las de docker.<cluster>.cloudinsights.netapp.com.
-
 Descargue todas las dependencias de código abierto en su registro de docker privado. Es necesario descargar las siguientes imágenes de código abierto. Consulte <<before-installing-the-netapp-kubernetes-monitoring-operator,Requisitos previos>> de la sección anterior para las versiones más actuales de estos componentes:
 
 ....
@@ -200,6 +198,8 @@ Si el bit fluido está activado, también descargue:
 docker pull docker.<cluster>.cloudinsights.netapp.com/fluent-bit:<fluent-bit version>
 docker pull docker.<cluster>.cloudinsights.netapp.com/kubernetes-event-exporter:<kubernetes-event-exporter version>
 ....
+Introduzca la imagen del operador docker en el repositorio de su proveedor de servicios de empresa/local/privado de acuerdo con las políticas de su empresa. Asegúrese de que las rutas de acceso del directorio a estas imágenes del repositorio sean coherentes con las de docker.<cluster>.cloudinsights.netapp.com.
+
 Edite la implementación del operador de supervisión y modifique todas las referencias de imagen para utilizar la nueva ubicación de repo de docker:
 
 ....
