@@ -10805,4 +10805,9 @@
   <block id="40071b38a2f52894172d224dcc8c0caa" category="paragraph"><block ref="40071b38a2f52894172d224dcc8c0caa" category="inline-image-macro-rx" type="image"></block></block>
   <block id="fe5c84e62a55503753fc6f02fa98fbd5" category="paragraph">El operador (NKMO) y los recopiladores de datos se descargan del Registro Cloud Insights Docker. Una vez instalado, NKMO gestiona los colectores compatibles con el operador implementados en los nodos del clúster de Kubernetes para adquirir datos, incluida la gestión del ciclo de vida de dichos colectores. Después de esta cadena, los datos se adquieren de los colectores y se envían a Cloud Insights.</block>
   <block id="5fdef5014971511d708c48ee3a739357" category="paragraph">Introduzca la imagen del operador docker en el repositorio de su proveedor de servicios de empresa/local/privado de acuerdo con las políticas de su empresa. Asegúrese de que las rutas de acceso del directorio a estas imágenes del repositorio sean coherentes con las de docker.&lt;cluster&gt;.cloudinsights.netapp.com.</block>
+  <block id="560b3269d8d097187c911ee417754210" category="summary">Configurar el recopilador de datos de Rubrik CDM.</block>
+  <block id="58d5d56dba192f09d08e6175eb1db050" category="doc">Rubrik CDM Data Collector</block>
+  <block id="9d8f41573ef4839d0be28a08053b14eb" category="paragraph">Cloud Insights utiliza el recopilador de datos de Rubrik CDM para recopilar datos de inventario y rendimiento.</block>
+  <block id="ff1f57ccd65dd781b0a6758d9e036ad4" category="admonition">Esto se considera un cobrador _Preview_ y esta información está sujeta a cambios.</block>
+  <block id="846d77217eb2a05bd5ff4c3a5f932421" category="paragraph">Esta página se acerca pronto.</block>
 </blocks>
