@@ -102,14 +102,6 @@ image:Monitor_Group_By_Example.png["Seleccione log para supervisar, defina un fi
 
 
 
-==== Defina el comportamiento de la alerta
-
-Elija cómo desea recibir una alerta cuando se active una alerta de registro. Puede configurar el monitor para que emita una alerta con _Warning_, _Critical_ o _Informational_ Severity, en función de las condiciones de filtro establecidas anteriormente.
-
-image:Monitor_log_alert_behavior.png["defina el comportamiento del registro que se va a supervisar"]
-
-
-
 ==== Defina el comportamiento de resolución de alertas
 
 Puede elegir cómo se resuelve una alerta de monitor de registro. Se le presentan tres opciones:
