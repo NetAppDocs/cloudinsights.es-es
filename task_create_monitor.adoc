@@ -102,6 +102,12 @@ image:Monitor_Group_By_Example.png["Seleccione log para supervisar, defina un fi
 
 
 
+==== Defina el comportamiento de la alerta
+
+Puede crear el monitor para que emita una alerta con un nivel de gravedad de _Critical_, _Warning_ o _Informational_, cuando se produzcan las condiciones definidas anteriormente (es decir, inmediatamente) o esperar a que se produzcan alertas hasta que se produzcan dos o más condiciones.
+
+
+
 ==== Defina el comportamiento de resolución de alertas
 
 Puede elegir cómo se resuelve una alerta de monitor de registro. Se le presentan tres opciones:

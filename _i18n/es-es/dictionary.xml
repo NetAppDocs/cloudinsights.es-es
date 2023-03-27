@@ -166,7 +166,6 @@
   <block id="d7aba68e0b82cfef5e7644a1a09648f2" category="inline-image-macro">Seleccione log para supervisar, defina un filtro y seleccione Group by Method, si lo desea</block>
   <block id="3da252deb38a2d58507e7ff50d6508f0" category="paragraph"><block ref="3da252deb38a2d58507e7ff50d6508f0" category="inline-image-macro-rx" type="image"></block></block>
   <block id="0625f5fb5e60f291ab595c8261238b23" category="section-title">Defina el comportamiento de resolución de alertas</block>
-  <block id="5e5c54ebd8c197b5e4372aff434134f5" category="paragraph">Puede elegir cómo se resuelve una alerta de monitor de registro. Se le presentan tres opciones:</block>
   <block id="5b9f5e9161724c93f9ca0032b82722d5" category="list-text">*Resolver instantáneamente*: La alerta se resuelve inmediatamente sin que sea necesario realizar ninguna otra acción</block>
   <block id="0eab361e279540d56cc831a9ffb6892c" category="list-text">*Resolver basado en el tiempo*: La alerta se resuelve después de que ha transcurrido el tiempo especificado</block>
   <block id="f7cb011afb94ace20c314d609b593ced" category="list-text">*Resolver basado en la entrada de registro*: La alerta se resuelve cuando se ha producido una actividad de registro posterior. Por ejemplo, cuando un objeto se registra como "disponible".</block>
@@ -10809,4 +10808,7 @@
   <block id="d270a242787fdce58a1a0b666e5deafd" category="inline-link-macro">Rubrik CDM Storage</block>
   <block id="8f59429f2f39c71254ce2fdcfe65bbc2" category="cell"><block ref="8f59429f2f39c71254ce2fdcfe65bbc2" category="inline-link-macro-rx"></block></block>
   <block id="38d38399d4a7514463d665125ae50a4a" category="sidebar">Rubrik CDM</block>
+  <block id="95347c78f9b32647a267d1b7bad05732" category="section-title">Defina el comportamiento de la alerta</block>
+  <block id="de6aa397f5d731cb90b688abf776c138" category="paragraph">Puede crear el monitor para que emita una alerta con un nivel de gravedad de _Critical_, _Warning_ o _Informational_, cuando se produzcan las condiciones definidas anteriormente (es decir, inmediatamente) o esperar a que se produzcan alertas hasta que se produzcan dos o más condiciones.</block>
+  <block id="395204e03c9e6835fee3d859f3a52f45" category="paragraph">Puede elegir cómo se resuelve una alerta de monitor de registro. Se le presentan tres opciones:</block>
 </blocks>
