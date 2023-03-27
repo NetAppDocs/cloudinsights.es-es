@@ -165,10 +165,6 @@
   <block id="aca15d8fd21dcf5be785b4d359f6563d" category="admonition">El filtro Monitor de registro no puede estar vacío.</block>
   <block id="d7aba68e0b82cfef5e7644a1a09648f2" category="inline-image-macro">Seleccione log para supervisar, defina un filtro y seleccione Group by Method, si lo desea</block>
   <block id="3da252deb38a2d58507e7ff50d6508f0" category="paragraph"><block ref="3da252deb38a2d58507e7ff50d6508f0" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="454176c970e70022beb38f8813bea495" category="section-title">Defina el comportamiento de la alerta</block>
-  <block id="cce8c43ff15076e2a47a1be2c1993164" category="paragraph">Elija cómo desea recibir una alerta cuando se active una alerta de registro. Puede configurar el monitor para que emita una alerta con _Warning_, _Critical_ o _Informational_ Severity, en función de las condiciones de filtro establecidas anteriormente.</block>
-  <block id="842f9b92217e385fb4514d9f0467d53e" category="inline-image-macro">defina el comportamiento del registro que se va a supervisar</block>
-  <block id="1b1f71445d1920c9625e6c1f2018a229" category="paragraph"><block ref="1b1f71445d1920c9625e6c1f2018a229" category="inline-image-macro-rx" type="image"></block></block>
   <block id="0625f5fb5e60f291ab595c8261238b23" category="section-title">Defina el comportamiento de resolución de alertas</block>
   <block id="5e5c54ebd8c197b5e4372aff434134f5" category="paragraph">Puede elegir cómo se resuelve una alerta de monitor de registro. Se le presentan tres opciones:</block>
   <block id="5b9f5e9161724c93f9ca0032b82722d5" category="list-text">*Resolver instantáneamente*: La alerta se resuelve inmediatamente sin que sea necesario realizar ninguna otra acción</block>
@@ -10810,4 +10806,7 @@
   <block id="9d8f41573ef4839d0be28a08053b14eb" category="paragraph">Cloud Insights utiliza el recopilador de datos de Rubrik CDM para recopilar datos de inventario y rendimiento.</block>
   <block id="ff1f57ccd65dd781b0a6758d9e036ad4" category="admonition">Esto se considera un cobrador _Preview_ y esta información está sujeta a cambios.</block>
   <block id="846d77217eb2a05bd5ff4c3a5f932421" category="paragraph">Esta página se acerca pronto.</block>
+  <block id="d270a242787fdce58a1a0b666e5deafd" category="inline-link-macro">Rubrik CDM Storage</block>
+  <block id="8f59429f2f39c71254ce2fdcfe65bbc2" category="cell"><block ref="8f59429f2f39c71254ce2fdcfe65bbc2" category="inline-link-macro-rx"></block></block>
+  <block id="38d38399d4a7514463d665125ae50a4a" category="sidebar">Rubrik CDM</block>
 </blocks>

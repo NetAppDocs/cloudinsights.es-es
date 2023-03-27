@@ -294,6 +294,9 @@ Lista alfabética de recopiladores de datos compatibles con Cloud Insights:
 | link:task_config_telegraf_agent.html#rhel-and-centos["RHEL  CentOS"] | Servicio 
 
 
+| link:task_dc_rubrik_cdm.html["Rubrik CDM Storage"] | De almacenamiento 
+
+
 | link:task_config_telegraf_agent.html#ubuntu-and-debian["Ubuntu  Debian"] | Servicio 
 
 
