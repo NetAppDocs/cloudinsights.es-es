@@ -10801,9 +10801,6 @@
   <block id="5fdef5014971511d708c48ee3a739357" category="paragraph">Introduzca la imagen del operador docker en el repositorio de su proveedor de servicios de empresa/local/privado de acuerdo con las políticas de su empresa. Asegúrese de que las rutas de acceso del directorio a estas imágenes del repositorio sean coherentes con las de docker.&lt;cluster&gt;.cloudinsights.netapp.com.</block>
   <block id="560b3269d8d097187c911ee417754210" category="summary">Configurar el recopilador de datos de Rubrik CDM.</block>
   <block id="58d5d56dba192f09d08e6175eb1db050" category="doc">Rubrik CDM Data Collector</block>
-  <block id="9d8f41573ef4839d0be28a08053b14eb" category="paragraph">Cloud Insights utiliza el recopilador de datos de Rubrik CDM para recopilar datos de inventario y rendimiento.</block>
-  <block id="ff1f57ccd65dd781b0a6758d9e036ad4" category="admonition">Esto se considera un cobrador _Preview_ y esta información está sujeta a cambios.</block>
-  <block id="846d77217eb2a05bd5ff4c3a5f932421" category="paragraph">Esta página se acerca pronto.</block>
   <block id="d270a242787fdce58a1a0b666e5deafd" category="inline-link-macro">Rubrik CDM Storage</block>
   <block id="8f59429f2f39c71254ce2fdcfe65bbc2" category="cell"><block ref="8f59429f2f39c71254ce2fdcfe65bbc2" category="inline-link-macro-rx"></block></block>
   <block id="38d38399d4a7514463d665125ae50a4a" category="sidebar">Rubrik CDM</block>
@@ -10814,4 +10811,17 @@
   <block id="94e0aa0f534273005cdbd647f8f4eab8" category="doc">Ejemplo de YLMA de función de clúster NKMO</block>
   <block id="38836a8a56831bc3569901f9b16d3eaf" category="paragraph">El componente _kubectl_ del operador de supervisión de Kubernetes de NetApp (NKMO) debe configurarse con el acceso a los siguientes objetos de kubernetes, como mínimo: Agentes, roles en clúster, agrupaciones, definiciones de clientes, puestas en marcha, espacios de nombres, roles, enlaces de rol, secretos, cuentas de servicio, y servicios. A continuación se muestra un ejemplo de clusterrole con estos privilegios mínimos.</block>
   <block id="fcb70ec2b5ff14dcc062955ceca887b6" category="list-text">Deben estar disponibles los siguientes comandos: _Curl, sudo, openssl, sha256sum,_ y _kubectl_. Para obtener los mejores resultados, añada estos comandos a la RUTA DE ACCESO. Tenga en cuenta que _kubectl_ debe configurarse con acceso a los siguientes objetos de kubernetes como mínimo: _Agentes, roles del clúster, agrupaciones en clúster, definiciones de recursos cliente, puestas en marcha, espacios de nombres, roles, enlaces de rol, secretos, cuentas de servicio,_ y _services_. Consulte <block ref="2322ad97d10659602a6f09125f69eba0" category="inline-link-macro-rx"></block> para obtener un ejemplo de archivo .ylma con estos privilegios mínimos de clusterrole.</block>
+  <block id="179f74ad6aecb22f37252502d5f39223" category="paragraph">Cloud Insights utiliza el recopilador de datos de Rubrik para adquirir los datos de inventario y rendimiento de los dispositivos de almacenamiento de Rubrik.</block>
+  <block id="33a86d81c4ea09bf20b800c1ec8450bc" category="paragraph">Cloud Insights adquiere la siguiente información de inventario del recopilador de datos de Rubrik. Para cada tipo de activo adquirido por Cloud Insights, se muestra la terminología más común utilizada para este activo. Al ver o solucionar problemas de este recopilador de datos, tenga en cuenta la siguiente terminología:</block>
+  <block id="8f8baa884fbda77b562cc514c3b81d0c" category="cell">Pool de almacenamiento</block>
+  <block id="4789f5469e7862776edfb6738109575f" category="list-text">La Unidad de adquisición de Cloud Insights iniciará conexiones con el puerto TCP 443 al clúster Rubrik. Un recopilador por clúster.</block>
+  <block id="ba1537545eae7c49c014e94db43517c8" category="list-text">Dirección IP del clúster de Rubrik.</block>
+  <block id="662de008b2f10a99c71484e7e9c3ed75" category="list-text">El nombre de usuario y la contraseña para el clúster de.</block>
+  <block id="93264baac0728f5daa6ac1609e5b5fdc" category="cell">Dirección IP del clúster Rubrik</block>
+  <block id="417cc983ef27be035f66210ac6213b46" category="cell">El nombre de usuario del clúster</block>
+  <block id="e41f6efeb9a8c29ac8077a1348b68078" category="cell">Contraseña del clúster</block>
+  <block id="444301801d58f01b1fb488fe224bb8c5" category="cell">He recibido un mensaje que indica que se ha creado más de un almacenamiento.</block>
+  <block id="7de7475f4bb973126434d7c3f9801f08" category="cell">Compruebe que el clúster esté configurado correctamente y que el recopilador apunte a un único clúster.</block>
+  <block id="fc971fc699329bc531b4d65ff180a629" category="cell">Recibí una advertencia de que la API de disco devolvió más datos</block>
+  <block id="3cd62817285774be5e17bfa3b11a6309" category="cell">Póngase en contacto con el servicio de soporte para obtener más datos.</block>
 </blocks>
