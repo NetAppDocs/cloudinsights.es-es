@@ -112,12 +112,16 @@ Puede crear el monitor para que emita una alerta con un nivel de gravedad de _Cr
 
 Puede elegir cómo se resuelve una alerta de monitor de registro. Se le presentan tres opciones:
 
-* *Resolver instantáneamente*: La alerta se resuelve inmediatamente sin que sea necesario realizar ninguna otra acción
-* *Resolver basado en el tiempo*: La alerta se resuelve después de que ha transcurrido el tiempo especificado
-* *Resolver basado en la entrada de registro*: La alerta se resuelve cuando se ha producido una actividad de registro posterior. Por ejemplo, cuando un objeto se registra como "disponible".
+* Resuelva al instante
+* Purgar después del período de retención de datos (consulte la página de ediciones para obtener más información). Tenga en cuenta que el monitor no tiene ninguna condición de resolución por definición, por lo que una alerta permanecerá _Active_ y suprimirá todas las alertas posteriores generadas por este monitor, hasta que haya pasado el período de retención de datos.
+* Resolver basado en la entrada de registro: Resuelva una alerta cuando se detecte la línea de registro como se describe en la siguiente definición, o realice una purga después del período de retención de datos
 
 
-image:Monitor_log_monitor_resolution.png["Resolución de alertas"]
+image:LogMonitorAlertResolution.png["Opciones de resolución de alertas"]
+
+/// * *resolver instantáneamente*: La alerta se resuelve inmediatamente sin que se requiera ninguna otra acción * *resolver en función del tiempo*: La alerta se resuelve después de que haya pasado el tiempo especificado * *resolver en función de la entrada de registro*: La alerta se resuelve cuando se ha producido una actividad de registro posterior. Por ejemplo, cuando un objeto se registra como "disponible".
+
+image:Monitor_log_monitor_resolution.png["Resolución de alertas"]///
 
 
 

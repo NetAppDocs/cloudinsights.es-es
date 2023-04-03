@@ -166,11 +166,7 @@
   <block id="d7aba68e0b82cfef5e7644a1a09648f2" category="inline-image-macro">Seleccione log para supervisar, defina un filtro y seleccione Group by Method, si lo desea</block>
   <block id="3da252deb38a2d58507e7ff50d6508f0" category="paragraph"><block ref="3da252deb38a2d58507e7ff50d6508f0" category="inline-image-macro-rx" type="image"></block></block>
   <block id="0625f5fb5e60f291ab595c8261238b23" category="section-title">Defina el comportamiento de resolución de alertas</block>
-  <block id="5b9f5e9161724c93f9ca0032b82722d5" category="list-text">*Resolver instantáneamente*: La alerta se resuelve inmediatamente sin que sea necesario realizar ninguna otra acción</block>
-  <block id="0eab361e279540d56cc831a9ffb6892c" category="list-text">*Resolver basado en el tiempo*: La alerta se resuelve después de que ha transcurrido el tiempo especificado</block>
-  <block id="f7cb011afb94ace20c314d609b593ced" category="list-text">*Resolver basado en la entrada de registro*: La alerta se resuelve cuando se ha producido una actividad de registro posterior. Por ejemplo, cuando un objeto se registra como "disponible".</block>
   <block id="8728ea9412d646983052607068b25d61" category="inline-image-macro">Resolución de alertas</block>
-  <block id="0267d15c881fe01be2ed5e9baa605285" category="paragraph"><block ref="0267d15c881fe01be2ed5e9baa605285" category="inline-image-macro-rx" type="image"></block></block>
   <block id="0c2055379a44f0c3e3fa1c66b6e90e9d" category="section-title">Seleccione el tipo de notificación y los destinatarios</block>
   <block id="89275c0783a0e53b681cf17404e53efd" category="paragraph">En la sección _Configurar notificación(s) de equipo_, puede elegir si desea avisar a su equipo por correo electrónico o mediante Webhook.</block>
   <block id="f5ea0637921e9f794d41cae2031b1d5c" category="inline-image-macro">Elija método de alerta</block>
@@ -10824,4 +10820,11 @@
   <block id="7de7475f4bb973126434d7c3f9801f08" category="cell">Compruebe que el clúster esté configurado correctamente y que el recopilador apunte a un único clúster.</block>
   <block id="fc971fc699329bc531b4d65ff180a629" category="cell">Recibí una advertencia de que la API de disco devolvió más datos</block>
   <block id="3cd62817285774be5e17bfa3b11a6309" category="cell">Póngase en contacto con el servicio de soporte para obtener más datos.</block>
+  <block id="8d3d5857627846ebb0bfd18533d81373" category="list-text">Resuelva al instante</block>
+  <block id="17b8d34f8d949597a55a6101ce83364d" category="list-text">Purgar después del período de retención de datos (consulte la página de ediciones para obtener más información). Tenga en cuenta que el monitor no tiene ninguna condición de resolución por definición, por lo que una alerta permanecerá _Active_ y suprimirá todas las alertas posteriores generadas por este monitor, hasta que haya pasado el período de retención de datos.</block>
+  <block id="befadb349d88b7326b91ea95e095647d" category="list-text">Resolver basado en la entrada de registro: Resuelva una alerta cuando se detecte la línea de registro como se describe en la siguiente definición, o realice una purga después del período de retención de datos</block>
+  <block id="e9e214a6e16f6beca61f905fa6ce3ab9" category="inline-image-macro">Opciones de resolución de alertas</block>
+  <block id="990eaf3ef2e3748beed4f15a2dc6d080" category="paragraph"><block ref="990eaf3ef2e3748beed4f15a2dc6d080" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="6dfab0f82f494a8fd5d9bb100e34504b" category="paragraph">/// * *resolver instantáneamente*: La alerta se resuelve inmediatamente sin que se requiera ninguna otra acción * *resolver en función del tiempo*: La alerta se resuelve después de que haya pasado el tiempo especificado * *resolver en función de la entrada de registro*: La alerta se resuelve cuando se ha producido una actividad de registro posterior. Por ejemplo, cuando un objeto se registra como "disponible".</block>
+  <block id="e0155eef58f15e0fa7e34b03a853acaa" category="paragraph"><block ref="0267d15c881fe01be2ed5e9baa605285" category="inline-image-macro-rx" type="image"></block>///</block>
 </blocks>
