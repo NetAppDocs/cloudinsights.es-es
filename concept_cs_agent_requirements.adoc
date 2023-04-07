@@ -108,6 +108,9 @@ Tenga en cuenta que al agregar _link:task_add_collector_svm.html#permissions-whe
 
 
 | TCP | 7 | Direcciones IP de LIF de datos de SVM | Bidireccional | Bidireccional entre la seguridad de cargas de trabajo y ONTAP. El agente hace ping a las LIF de SVM. 
+
+
+| SSH | 22 | Gestión de clústeres | Bidireccional | Necesario para el bloqueo de usuarios CIFS/SMB. 
 |===
 
 
