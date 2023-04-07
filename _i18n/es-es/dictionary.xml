@@ -6699,20 +6699,13 @@
   <block id="b658088fb929fb96d594ab2f4ffdab24" category="paragraph">Nota: El intervalo de sondeo de rendimiento predeterminado es de 300 segundos y no se puede cambiar. Este es el único intervalo admitido por HPE Alletra 6000.</block>
   <block id="e9017792019e9d0101cc81616e5cec41" category="summary">Registrarse en Cloud Insights y crear el entorno.</block>
   <block id="695d7a391bb9043561bcc3c254868311" category="doc">Incorporación de Cloud Insights</block>
-  <block id="6329d89c7b2b3701d83d3ed83052a76e" category="paragraph">Antes de empezar a trabajar con Cloud Insights, debe registrarse en el portal *NetApp Cloud Central*. Si ya tiene un inicio de sesión en Cloud Central de NetApp, puede iniciar una prueba gratuita de Cloud Insights con unos pasos rápidos.</block>
   <block id="25866b1c01dcfb4e4ba435720ed78045" category="section-title">Creación de la cuenta de Cloud Central de NetApp</block>
-  <block id="b774e3c992e27992438d1136422802d2" category="paragraph">Para registrarse y obtener acceso a los servicios en nube de NetApp, visite<block ref="48193388be73f88a2882d9236b5e6933" category="inline-link-rx"></block> Y haga clic en *Registrarse*.</block>
   <block id="05d2a837df7692f0d65e4466b2fb05bd" category="list-text">Introduzca una dirección de correo electrónico profesional válida y elija una contraseña.</block>
   <block id="ad66d403ef43ddd58a7b527874c51878" category="list-text">Escriba el nombre de su empresa y el nombre completo.</block>
-  <block id="4c06cb4a1ddf48a942b31fd3adc6beac" category="list-text">Acepte los términos y condiciones y haga clic en *Registrarse*.</block>
-  <block id="492ed91f9d2947561b2194ab07a36546" category="paragraph">Después, irá a la página de ofertas de cloud de NetApp.</block>
   <block id="d02f5d878903034a62253cb17ae51c2d" category="paragraph">Seleccione Cloud Insights.</block>
   <block id="136e3fa9a2b8381149c5e720a65374fa" category="section-title">¿Qué sucede si ya tengo un inicio de sesión en el cloud de NetApp?</block>
-  <block id="f1ce126ef5bc99b772d2bf676e9623e3" category="paragraph">Si ya tiene una cuenta Cloud Central de NetApp, solo tiene que elegir *Iniciar sesión* en el<block ref="48193388be73f88a2882d9236b5e6933" category="inline-link-rx"></block> portal de datos.</block>
   <block id="a46b8a484704b65f978247cb9b3901aa" category="paragraph">Introduzca su dirección de correo electrónico y contraseña. Después, irá a la página de ofertas de cloud de NetApp.</block>
   <block id="b1d39b97c6fe789fe5e7963f078e112d" category="section-title">Comience su prueba gratuita de Cloud Insights</block>
-  <block id="d848196a84667339542dcb58ece628d0" category="paragraph">Si es la primera vez que inicia sesión en Cloud Insights, bajo la oferta de Cloud Insights, haga clic en *Iniciar prueba gratuita*. Cloud Insights creará el entorno de su empresa.</block>
-  <block id="bcd7dafbb46dcec5f527627b1114f261" category="paragraph">Una vez finalizada la creación de su entorno, puede usar las credenciales de Cloud Central para iniciar sesión e iniciar una prueba gratuita de 30 días de Cloud Insights. Durante esta prueba puede explorar todas las características que la edición estándar de Cloud Insights tiene para ofrecer.</block>
   <block id="3b1f676d06286548e11b332567f42bbd" category="inline-link-macro">inicie su suscripción</block>
   <block id="93219f4a6fd1dbd20138a0a65d6e08de" category="paragraph">Durante la prueba gratuita, puede <block ref="822a67eb96671d13fff372a75b259713" category="inline-link-macro-rx"></block> A Cloud Insights en cualquier momento. Una vez que se haya suscrito, puede utilizar las funciones de Cloud Insights en función de su suscripción actual.</block>
   <block id="2c4bb88652ba26d23266d851053ba465" category="section-title">Inicie sesión y go</block>
@@ -10827,4 +10820,16 @@
   <block id="990eaf3ef2e3748beed4f15a2dc6d080" category="paragraph"><block ref="990eaf3ef2e3748beed4f15a2dc6d080" category="inline-image-macro-rx" type="image"></block></block>
   <block id="6dfab0f82f494a8fd5d9bb100e34504b" category="paragraph">/// * *resolver instantáneamente*: La alerta se resuelve inmediatamente sin que se requiera ninguna otra acción * *resolver en función del tiempo*: La alerta se resuelve después de que haya pasado el tiempo especificado * *resolver en función de la entrada de registro*: La alerta se resuelve cuando se ha producido una actividad de registro posterior. Por ejemplo, cuando un objeto se registra como "disponible".</block>
   <block id="e0155eef58f15e0fa7e34b03a853acaa" category="paragraph"><block ref="0267d15c881fe01be2ed5e9baa605285" category="inline-image-macro-rx" type="image"></block>///</block>
+  <block id="964a8b3315ffa6f99cb6f09543be37c8" category="paragraph">Para empezar a trabajar con Cloud Insights, tienes que registrarte en el portal *NetApp BlueXP* (antes llamado Cloud Central). Si ya tiene un inicio de sesión en Cloud Central de NetApp, puede iniciar una prueba gratuita de Cloud Insights con unos pasos rápidos.</block>
+  <block id="21a763771df4e64b083a2b050ce81f09" category="inline-link">*BlueXP de NetApp*</block>
+  <block id="79f4eac777cfb8f368485c1ed783c385" category="paragraph">Para empezar a usar los servicios cloud de NetApp, vaya a.<block ref="bb4bedb035450655c109a482f18f7a40" category="inline-link-rx"></block> Y haga clic en *Comenzar*.</block>
+  <block id="1e26781b207fa848ce81c7268cf016a7" category="list-text">Si aún no se ha registrado, seleccione *Registrarse*</block>
+  <block id="895a961645c5f6456e2cc43102e1de8a" category="list-text">Acepte los términos y condiciones y seleccione * Continuar *.</block>
+  <block id="027e58ebcf59f73bde476a8af6584584" category="list-text">BlueXP te guiará para empezar.</block>
+  <block id="263bd04f886f846996f5ed624502bf8f" category="inline-link">* BlueXPl de NetApp*</block>
+  <block id="361b2969b0cdb055eb84b98514758bea" category="paragraph">Cuando tengas una cuenta de NetApp BlueXP, solo tienes que seleccionar *Iniciar sesión* en la<block ref="87139ca7d238418aa56c6f30bb2cbebf" category="inline-link-rx"></block> portal de datos.</block>
+  <block id="87174dc7b61ea27d55ab152cfdbfcbb0" category="inline-image-macro">Prueba gratuita de Cloud Insights en BlueXP</block>
+  <block id="5d6203b83b93ae1cf7e9b34368cd7f9d" category="paragraph"><block ref="5d6203b83b93ae1cf7e9b34368cd7f9d" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="7395877188489ccb99fbacc8cc003a01" category="paragraph">Si es la primera vez que inicia sesión en Cloud Insights, bajo la oferta de Cloud Insights, haga clic en *Iniciar prueba gratuita*. Cloud Insights te guiará a través de la creación del entorno de tu empresa.</block>
+  <block id="5787741cafb89158f9880654c9e9b5a5" category="paragraph">Una vez finalizada la creación de su entorno, puede usar las credenciales de Cloud Central para iniciar sesión e iniciar una prueba gratuita de 30 días de Cloud Insights. Durante esta prueba se pueden explorar las funciones que Cloud Insights puede ofrecer.</block>
 </blocks>
