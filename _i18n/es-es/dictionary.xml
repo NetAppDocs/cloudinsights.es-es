@@ -5221,7 +5221,6 @@
   <block id="34727dd01aaa3e0d53fd68d429bbff53" category="doc">Recopilador de datos de NetApp Cloud Connection para ONTAP 9.9+</block>
   <block id="0803ffc49bb5d009027ad578d29858b8" category="paragraph">Este recopilador de datos crea una conexión con el cloud para admitir la recogida de datos de los sistemas ONTAP 9.9+ CVO, AFF y FAS.</block>
   <block id="35799672184c185a5b76dc14b0e32aa7" category="inline-link-macro">Base de conocimientos</block>
-  <block id="29668e5fb5605cd58bd9225b6fba6375" category="admonition">Este recopilador de datos es <block ref="88ca6a9abe9d198dfefab0128680ed01" category="inline-link-macro-rx"></block> A partir del 1 de enero de 2023. Para obtener información sobre la transición a la recopilación de datos basada en AU, consulte <block ref="334c0315e59c6351d5f9bac4d495b3ee" category="inline-link-macro-rx"></block>.</block>
   <block id="99135d7be2a5fb615612c7da87e284f9" category="paragraph">Cloud Insights recopila datos de ONTAP 9.9+ mediante una *conexión en nube*, lo que elimina la necesidad de instalar una unidad de adquisición externa, lo que simplifica la solución de problemas, el mantenimiento y la implementación inicial. La configuración de la conexión en la nube para el recopilador de datos ONTAP 9.9+ requiere que copie un *Código de emparejamiento* en el Administrador del sistema de ONTAP, que establecerá una conexión con el entorno de Cloud Insights. Una vez establecida la conexión, los datos recopilados son los mismos que si se recopilaron a través de una unidad de adquisición.</block>
   <block id="72c287aa31792e43cc71160178046540" category="paragraph">Este recopilador de datos admite sistemas ONTAP 9.9+ de CVO, AFF y FAS.</block>
   <block id="2a631e19719818429fd1edf9045b1163" category="inline-image-macro">Configuración de recopilador de datos de Cloud Agent</block>
@@ -5236,8 +5235,6 @@
   <block id="5e1ab5a21ba64b40d2b3a2b6b18b1d7d" category="list-text">Haga clic en _Add Cloud Connection_ y pegue el código de emparejamiento.</block>
   <block id="da7eaf2bcf79794e261e4a33bfc75902" category="list-text">Vuelva a la pestaña Cloud Insights del navegador y espere a que se establezca la conexión. Una vez establecido, se revela un botón _Complete_.</block>
   <block id="e01ce4b74a8ea3e86d2c3af5c67d14e0" category="list-text">Haga clic en _Complete_.</block>
-  <block id="92d3290a1afbd21d7ba484ec66073bda" category="cell">Veo el siguiente error al intentar conectarse a Azure CVO: "No se ha completado la solicitud de firma de certificación al servicio de CA de broker/Manager".</block>
-  <block id="53d0d22fc59191f4037e101562c4dae2" category="cell">Compruebe que la configuración del proxy de Cloud Manager está establecida en la IP privada de Cloud Manager. La instalación de Cloud Manager puede establecer un proxy diferente. Una vez que el proxy se ha establecido en la dirección IP correcta y hace referencia al proxy en el cuadro de diálogo conector en la nube, la conexión a Cloud Insights se debe conectar correctamente.</block>
   <block id="4715797e850d7872546c22d0a379ca4f" category="summary">Utilice una consulta para asignar varias aplicaciones o anotaciones a objetos o para eliminar varias aplicaciones o anotaciones de ellos.</block>
   <block id="de1cabd167f3864b78d24d3da683bd0c" category="doc">Asignar múltiples aplicaciones a o quitar varias aplicaciones de activos</block>
   <block id="b5fba9ff24d0045d1377a05a46b32f68" category="inline-link-macro">más grandes</block>
@@ -10834,4 +10831,5 @@
   <block id="5787741cafb89158f9880654c9e9b5a5" category="paragraph">Una vez finalizada la creación de su entorno, puede usar las credenciales de Cloud Central para iniciar sesión e iniciar una prueba gratuita de 30 días de Cloud Insights. Durante esta prueba se pueden explorar las funciones que Cloud Insights puede ofrecer.</block>
   <block id="1eb5ae63609e68a11106494d272615bf" category="cell">Gestión de clústeres</block>
   <block id="269ab41459ba8b3de391eb30b649d222" category="cell">Necesario para el bloqueo de usuarios CIFS/SMB.</block>
+  <block id="bcef352854994ddcd8d20e92b3fdd116" category="admonition">Este recopilador de datos ya no está disponible en Cloud Insights a partir del 4 de abril de 2023. Para obtener información sobre la transición a la recopilación de datos basada en AU, consulte <block ref="334c0315e59c6351d5f9bac4d495b3ee" category="inline-link-macro-rx"></block>.</block>
 </blocks>
