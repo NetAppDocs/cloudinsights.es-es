@@ -26,13 +26,11 @@ Aspectos básicos de ONTAP requiere al menos un recopilador de datos de ONTAP qu
 
 Para comenzar a explorar, seleccione *aspectos básicos de ONTAP* en el menú principal de Cloud Insights.
 
-image:ONTAP_Essentials_Overview_Sept.png["Consola de información general para ONTAP Essentials"]
+image:OE_Overview.png["Consola de información general para ONTAP Essentials"]
 
 El panel *Descripción general* muestra información útil como el número de clústeres de su entorno con sus porcentajes de capacidad y rendimiento generales. También verá datos predictivos relacionados con el número de días esperados hasta que la capacidad de almacenamiento o la capacidad de rendimiento se queda sin espacio. Además, si alguna controladora de su infraestructura se ejecuta con su CPU en más del 65 %, lo que puede suponer un riesgo para su clúster en caso de recuperación tras fallos, ONTAP Essentials muestra las controladoras como controladoras "calientes".
 
-Los gráficos informativos le ofrecen una mirada al rendimiento con el tiempo y los problemas durante el uso de la capacidad.
-
-Cada uno de estos gráficos o puntos de datos se puede utilizar como punto de partida para la exploración o la investigación.
+Los gráficos informativos le ofrecen una mirada al rendimiento con el tiempo y los problemas durante el uso de la capacidad. Cada uno de estos gráficos o puntos de datos se puede utilizar como punto de partida para la exploración o la investigación.
 
 Nota: Un número "días a lleno" de "0" (cero) indica que se estima que días a lleno es superior a 90 días. En otras palabras, sus sistemas no corren peligro de quedarse sin espacio en breve.
 
@@ -42,7 +40,84 @@ Nota: Un número "días a lleno" de "0" (cero) indica que se estima que días a 
 
 Seleccione la página *Data Protection* para ver las relaciones de SnapMirror. Haga clic en hasta la información del volumen de origen o de destino, o bien haga clic en el icono de engranaje para agregar columnas para los datos que desea ver.
 
-image:ONTAP_Essentials_data_protection.png["Página de lista SnapMirror Relationships"]
+image:OE_DataProtection.png["Página de lista SnapMirror Relationships"]
+
+
+
+== Seguridad
+
+La consola de seguridad le ofrece una vista instantánea de su situación de seguridad actual y muestra gráficos de cifrado de volúmenes de hardware y software, el estado antiransomware y los métodos de autenticación de clúster. Los criterios de seguridad se evalúan en función de las recomendaciones definidas en la link:https://www.netapp.com/pdf.html?item=/media/10674-tr4569.pdf["*Guía sobre la seguridad reforzada de NetApp para ONTAP 9*"].
+
+Selecciona cualquiera de los números de cifrado o antiransomware para entrar en tu entorno.
+
+image:OE_SecurityDashboard.png["Consola de seguridad de aspectos básicos de ONTAP"]
+
+La consola de seguridad básica de ONTAP supervisa su entorno para determinar el estado de cumplimiento de normativas de los clústeres. Consulte la link:https://docs.netapp.com/us-en/active-iq-unified-manager/health-checker/reference_cluster_compliance_categories.html["Categorías de cumplimiento de clústeres"] para obtener más información. ONTAP Essentials utiliza los siguientes monitores para determinar el cumplimiento:
+
+|===
+| Nombre del monitor | Nombre de Atributo (mostrado en Detalles de Cluster) | Valor de conformidad de atributo 
+
+
+| Modo FIPS deshabilitado | Modo FIPS | Activado 
+
+
+| Cifrados no seguros del clúster para SSH | Configuración segura de SSH | Sí 
+
+
+| Protocolo Telnet activado | Telnet | Deshabilitado 
+
+
+| Shell remoto activado | Shell remoto | Deshabilitado 
+
+
+| Usuario administrador local predeterminado habilitado | Usuario administrador predeterminado | Deshabilitado 
+
+
+| MD5 ha hash la contraseña | MD5 en uso | No 
+
+
+| Comunicación entre iguales de clúster no cifrada | Conexión de clústeres entre iguales | Cifrado/Sin pares 
+
+
+| Transporte HTTPS de AutoSupport deshabilitado | AutoSupport mediante HTTPS | Sí 
+
+
+| No hay servidores NTP configurados | Protocolo de hora de red | Configurado 
+
+
+| El número de servidores NTP es bajo | Protocolo de hora de red | Configurado 
+
+
+| Se deshabilitará el banner de inicio de sesión del clúster | Banner de inicio de sesión | Activado 
+
+
+| Reenvío de registros no cifrado | Reenvío de registros cifrado | Sí 
+|===
+Tenga en cuenta que si un monitor anterior está desactivado, los detalles del clúster mostrarán el valor como 'No comprobado' para el atributo de cumplimiento de seguridad correspondiente.
+
+image:OE_Cluster_Compliance_Example.png["Estado de cumplimiento de normativas del clúster"]
+
+Para las SVM, la consola de seguridad muestra los siguientes monitores:
+
+|===
+| Nombre del monitor | Nombre de atributo (se muestra en la configuración de Storage VM) | Valor de conformidad de atributo 
+
+
+| Cifrados no seguros de máquinas virtuales de almacenamiento para SSH | Configuración segura de SSH | Sí 
+
+
+| Se deshabilitó el banner de inicio de sesión de máquina virtual de almacenamiento | Banner de inicio de sesión | Activado 
+
+
+| Registro de auditoría de la máquina virtual de almacenamiento deshabilitado | Registro de auditoría | Activado 
+|===
+En la lista de clústeres, seleccione _View Details_ para cada clúster para abrir un panel «slideout» que muestre la configuración actual de _Cluster, Storage VM_ o _Anti-Ransomware_.
+
+Los detalles del clúster incluyen el estado de conexión, la información del certificado y mucho más:image:OE_Cluster_Slideout.png["Panel de desplazamiento de detalles del clúster"]
+
+Los detalles de las VM de almacenamiento muestran información de auditoría y SSH:image:OE_Storage_Slideout.png["Pestaña Storage"]
+
+Los detalles anti-ransomware muestran si una máquina virtual de almacenamiento está protegida por la protección antiransomware de ONTAP o la seguridad de cargas de trabajo de Cloud Insights. Tenga en cuenta que la columna ARP de ONTAP muestra el estado actual de la protección antiransomware integrada de ONTAP, que se configura en el sistema ONTAP. Para habilitar la seguridad de cargas de trabajo Cloud Insights, seleccione Protect en esa columna.image:OE_Anti-Ransomware_Slideout.png["Pestaña Anti-Ransomware"]
 
 
 
@@ -50,8 +125,7 @@ image:ONTAP_Essentials_data_protection.png["Página de lista SnapMirror Relation
 
 Aquí puede ver las alertas Active en su entorno y profundizar rápidamente en los posibles problemas. Seleccione la ficha _Resolved_ para ver las alertas que se han resuelto.
 
-image:ONTAP_Essentials_Alerts_Menu.png["Menú Alertas ONTAP"]
-image:ONTAP_Essentials_Alerts_Page.png["Ejemplo de página Alertas ONTAP que muestra las alertas activas"]
+image:OE_Alerts.png["Lista de alertas de aspectos básicos de ONTAP"]
 
 
 

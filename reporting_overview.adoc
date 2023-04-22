@@ -41,7 +41,7 @@ Los informes de Cloud Insights pueden generar informes personalizados para área
 
 Para acceder a los informes de Cloud Insights, haga clic en el enlace *Informes* del menú.
 
-Se le llevará a la interfaz de Informes. Cloud Insights utiliza IBM Cognos Analytics para su motor de generación de informes. Inicie sesión con sus credenciales de Reporting.
+Se le llevará a la interfaz de Informes. Cloud Insights utiliza IBM Cognos Analytics para su motor de generación de informes.
 
 
 

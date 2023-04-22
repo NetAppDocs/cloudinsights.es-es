@@ -23,6 +23,8 @@ sidebar:
       url: "/security_overview.html"
     - title: Qué nos almacena y dónde
       url: "/security_information_and_region.html"
+    - title: Herramienta securityadmin
+      url: "/security_admin_tool.html"
   - title: Primeros pasos
     entries:
     - title: Tutoriales de funciones

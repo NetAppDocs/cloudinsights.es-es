@@ -8,8 +8,83 @@ keywords: features
 :allow-uri-read: 
 
 
-NetApp mejora y mejora continuamente sus productos y servicios. Aquí encontrará algunas de las últimas características y funcionalidades disponibles en Cloud Insights.
+NetApp mejora y mejora continuamente sus productos y servicios. Estas son algunas de las últimas características y funcionalidades disponibles en las ediciones comerciales de Cloud Insights.
 
+
+NOTE: Es posible que algunas de estas funciones no estén disponibles en la edición federal de Cloud Insights o que estén disponibles con funciones reducidas. Siempre que sea posible, estas diferencias se anotan en la documentación.
+
+
+
+== Abril de 2023
+
+
+
+=== Supervisión y asignación del rendimiento de Kubernetes
+
+La link:concept_kubernetes_performance_monitoring_and_map.html["_Rendimiento de la red de Kubernetes y Map_"] Esta función simplifica la solución de problemas mediante la asignación de dependencias entre cargas de trabajo de Kubernetes. Proporciona visibilidad en tiempo real de las latencias y anomalías del rendimiento de la red de Kubernetes para identificar problemas de rendimiento antes de que afecten a los usuarios. Esta funcionalidad ayuda a las organizaciones a reducir los costes generales mediante el análisis y la auditoría de los flujos de tráfico de Kubernetes.
+
+Características principales: • El mapa de carga de trabajo presenta los flujos y dependencias de las cargas de trabajo de Kubernetes y destaca los problemas de red y de rendimiento. • Supervisar el tráfico de red entre los pods de Kubernetes, las cargas de trabajo y los nodos; identifica la fuente del tráfico y los problemas de latencia. • Reduzca los costes generales analizando el tráfico de red entre zonas, entre regiones y entre zonas.
+
+Mapa de cargas de trabajo en el que se muestran detalles de la presentación:
+
+image:Workload Map Example_withSlideout.png["Ejemplo de mapa de carga de trabajo que muestra el panel de desplazamiento con detalles"]
+
+La supervisión y el mapa del rendimiento de Kubernetes están disponibles como link:concept_preview_features.html["Vista previa"] función.
+
+
+
+=== Consola de seguridad de aspectos básicos de ONTAP
+
+La link:concept_ontap_essentials.html#security["Panel de seguridad"] le ofrece una visión instantánea de su situación de seguridad actual y muestra gráficos de cifrado de volúmenes de hardware y software, estado antiransomware y métodos de autenticación de clústeres. El panel de control de seguridad está disponible como link:concept_preview_features.html["Vista previa"] función.
+
+image:OE_SecurityDashboard.png["Consola de seguridad de aspectos básicos de ONTAP"]
+
+
+
+=== Recupere el almacenamiento de datos fríos ONTAP
+
+La información _Reclaim ONTAP Cold Storage_ proporciona datos sobre capacidad fría, ahorros potenciales de costes/energía, y elementos de acción recomendados para volúmenes en sistemas de ONTAP.
+
+image:Cold_Data_Example_1.png["Recomendaciones de ejemplos de Cold Data Insight"]
+
+Con este Insight, puede responder a preguntas como:
+
+* ¿Qué cantidad de datos inactivos en un clúster de almacenamiento se ubican en discos SSD de alto coste, (b) discos HDD y (c) discos virtuales?
+* ¿Cuáles son las cargas de trabajo que más contribuyen al almacenamiento no optimizado?
+* ¿Cuál es la duración (en días) de los datos inactivos en una carga de trabajo determinada?
+
+
+_Reclaim ONTAP Almacenamiento en frío_ se considera un link:concept_preview_features.html["_Preview_"] y, por lo tanto, está sujeta a cambios.
+
+
+
+=== La notificación de suscripción también controla los mensajes de banner
+
+La configuración de destinatarios para las notificaciones de suscripción (Admin > Notifications) ahora también controla quién verá las notificaciones del banner del producto relacionadas con la suscripción.
+
+image:Subscription_Expiring_Banner.png["La suscripción caduca en un ejemplo de banner de 2 días"]
+
+
+
+=== Los informes tienen un aspecto nuevo
+
+Notará que las pantallas de informes de Cloud Insights tienen un nuevo aspecto y que algunas de las opciones de navegación del menú han cambiado. Estas pantallas y cambios de navegación se han actualizado en la versión actual link:reporting_overview.html["Documentación de informes"].
+
+image:Reporting_Menu.png["Nuevo aspecto del menú de informes"]
+
+
+
+=== Monitores en pausa de forma predeterminada
+
+En el caso de nuevos entornos de Cloud Insights, tenga en cuenta esto link:task_system_monitors.html["monitores definidos por el sistema"] no enviar notificaciones de alerta de forma predeterminada. Tendrá que habilitar las notificaciones para cualquier monitor que desee que le avise, agregando uno o más métodos de entrega para el monitor. Para los entornos Cloud Insights existentes, se ha eliminado la lista de destinatarios de notificaciones _global_ por defecto para todos los monitores definidos por el sistema que se encuentren actualmente en estado _Paused_. Las notificaciones definidas por el usuario permanecen sin cambios, al igual que la configuración de notificaciones para los monitores definidos por el sistema actualmente activos.
+
+
+
+=== ¿Está buscando la pestaña de medición de API?
+
+La medición de API se ha movido de la página Suscripción a la página *Admin > Acceso a API*.
+
+'''
 
 
 == Marzo de 2023
@@ -22,6 +97,7 @@ El recopilador de datos de Cloud Connection para ONTAP 9.9+ está obsoleto. A pa
 
 Antes del 4 de abril de 2023, es obligatorio configurar un nuevo recopilador de datos de software de gestión de datos de ONTAP de NetApp para cualquier sistema ONTAP que esté recopilado actualmente por Cloud Connection. link:https://kb.netapp.com/Advice_and_Troubleshooting/Cloud_Services/Cloud_Insights/How_to_transition_from_NetApp_Cloud_Connection_to_AU_based_data_collector["Leer más"].
 
+'''
 
 
 == Enero de 2023
@@ -42,6 +118,7 @@ Garantizar la accesibilidad a sus datos es fundamental, por lo que hemos realiza
 
 Las personalizaciones de datos, como la selección de columnas, el cambio de nombre de columnas y las conversiones de unidades, también se incluyen ahora en la nueva funcionalidad de exportación.
 
+'''
 
 
 == Diciembre de 2022

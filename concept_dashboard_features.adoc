@@ -635,11 +635,14 @@ Al hacer clic en el vínculo de un widget de un único valor o de un widget de i
 
 Al igual que los widgets de un solo valor y de calibre, puede establecer el formato condicional en los widgets de tabla, lo que le permite resaltar datos con colores y/o iconos especiales.
 
+
+NOTE: El formato condicional no está disponible actualmente en la edición federal de Cloud Insights.
+
 El formato condicional permite establecer y resaltar umbrales de nivel de advertencia y de nivel crítico en los widgets de tabla, lo que proporciona visibilidad instantánea a los valores atípicos y puntos de datos excepcionales.
 
 image:ConditionalFormattingExample.png["Ejemplo de formato condicional"]
 
-El formato condicional se define por separado para cada columna de una tabla. Por ejemplo, puede elegir un conjunto de umbrales para una columna de capacidad y otro conjunto para una columna de rendimiento.
+El formato condicional se define por separado para cada columna de una tabla. Por ejemplo, puede elegir un conjunto de umbrales para una columna Capacidad y otro conjunto para una columna Rendimiento.
 
 Si cambia la visualización de unidades para una columna, el formato condicional permanece y refleja el cambio en los valores. Las imágenes siguientes muestran el mismo formato condicional aunque la unidad de visualización sea diferente.
 

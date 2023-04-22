@@ -12,6 +12,9 @@ summary: Cloud Insights proporciona varias cuentas de usuario con diferentes niv
 Cloud Insights proporciona hasta cuatro roles de cuenta de usuario: Propietario de cuenta, administrador, usuario e invitado. A cada cuenta se le asignan niveles de permiso específicos, como se indica en la tabla siguiente. Los usuarios ya lo están link:#creating-accounts-by-inviting-users["invitado"] A Cloud Insights y a un rol específico, o puede iniciar sesión a través de link:#single-sign-on-sso-accounts["Autorización de inicio de sesión único (SSO)"] con un rol predeterminado. La autorización de SSO está disponible como función de la edición Premium de Cloud Insights.
 
 
+NOTE: Los inicios de sesión de los usuarios en la edición federal de Cloud Insights se limitan a los proveedores de identidad configurados (con sus dominios de correo electrónico especificados). Cuando se invita a un nuevo usuario a un entorno federal de Cloud Insights, su dirección de correo electrónico debe coincidir con el dominio configurado para ese entorno.
+
+
 
 == Niveles de permisos
 

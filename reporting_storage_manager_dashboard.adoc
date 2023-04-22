@@ -14,11 +14,15 @@ El panel de Storage Manager ofrece una visualización centralizada que permite c
 
 NOTE: La función Reporting se encuentra disponible en Cloud Insights link:concept_subscribing_to_cloud_insights.html["Edición Premium"].
 
-La consola incluye siete componentes que contienen información contextual sobre ciertos aspectos del entorno de almacenamiento. Puede analizar los aspectos de sus servicios de almacenamiento para realizar un análisis en profundidad de una sección que más le interese.
-
 
 
 == Resumen
+
+Al seleccionar *Storage Manager Dashboard* de Team Content, se proporcionan varios informes que proporcionan información sobre su tráfico y almacenamiento.
+
+image:Reporting_Storage_Manager_Dashboard_Choices.png["Opciones de la consola de Storage Manager"]
+
+Para una vista de un vistazo, el *Storage Manager Report* consta de siete componentes que contienen información contextual sobre muchos aspectos de su entorno de almacenamiento. Puede analizar los aspectos de sus servicios de almacenamiento para realizar un análisis en profundidad de una sección que más le interese.
 
 image:Reporting-SMD.png["Consola de Storage Manager"]
 

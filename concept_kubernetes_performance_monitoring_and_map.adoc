@@ -1,0 +1,104 @@
+---
+sidebar: sidebar 
+permalink: concept_kubernetes_performance_monitoring_and_map.html 
+keywords: service map, workloads, Kubernetes, 
+summary: Presenta flujos y dependencias de cargas de trabajo de Kubernetes, y destaca los problemas de red y rendimiento 
+---
+= Supervisión y asignación del rendimiento de Kubernetes
+:allow-uri-read: 
+
+
+[role="lead"]
+La función de rendimiento y asignación de red de Kubernetes simplifica la solución de problemas mediante la asignación de dependencias entre cargas de trabajo de Kubernetes. Proporciona visibilidad en tiempo real de las latencias y anomalías del rendimiento de la red de Kubernetes para identificar problemas de rendimiento antes de que afecten a los usuarios. Esta funcionalidad ayuda a las organizaciones a reducir los costes generales mediante el análisis y la auditoría de los flujos de tráfico de Kubernetes.
+
+
+NOTE: El mapa y rendimiento de la red de Kubernetes es A. link:concept_preview_features.html["Vista previa"] la característica y está sujeta a cambios.
+
+Características principales: • El mapa de carga de trabajo presenta los flujos y dependencias de las cargas de trabajo de Kubernetes y destaca los problemas de red y de rendimiento. • Supervisar el tráfico de red entre los pods de Kubernetes, las cargas de trabajo y los nodos; identifica la fuente del tráfico y los problemas de latencia. • Reduzca los costes generales analizando el tráfico de red entre zonas, entre regiones y entre zonas.
+
+image:Workload Map Example_withSlideout.png["Ejemplo de mapa de carga de trabajo que muestra el panel de desplazamiento con detalles"]
+
+
+
+== Requisitos previos
+
+Antes de poder usar el mapa y rendimiento de red de Kubernetes, debe haber configurado el link:task_config_telegraf_agent_k8s.html["Operador de supervisión Kubernetes de NetApp"] para activar esta opción. Durante el despliegue del operador, seleccione la casilla de verificación Rendimiento de red y mapa para activarlo. También puedes habilitar esta opción navegando a una página de destino de Kubernetes y seleccionando «Modificar implementación».
+
+image:ServiceMap_NKMO_Deployment_Options.png["Selección de la opción Mapa durante NKMO stup"]
+
+
+
+== Supervisiones
+
+La asignación de carga de trabajo utiliza link:task_create_monitor.html["supervisiones"] para derivar información. Cloud Insights proporciona una serie de monitores de Kubernetes predeterminados (tenga en cuenta que estos pueden ser _Paused_ de forma predeterminada. Puede _Reanudar_ (es decir, habilitar) los monitores que desee), o puede crear monitores personalizados para objetos de kubernetes, que también utilizará el mapa de carga de trabajo.
+
+
+
+== El mapa
+
+El mapa muestra los servicios (también denominados cargas de trabajo) y sus relaciones entre sí. Las flechas muestran las direcciones del tráfico. El pasar por encima de una carga de trabajo muestra información resumida de esa carga de trabajo, como puede observarse en este ejemplo:
+
+image:ServiceMap_Simple_Example.png["Ejemplo de carga de trabajo de asignación de cargas de trabajo"]
+
+Los iconos dentro de los círculos representan diferentes tipos de servicio. Tenga en cuenta que los iconos sólo son visibles si los objetos subyacentes tienen <<workload-labels,etiquetas>>.
+
+image:ServiceMap_Icons.png["Explicación de los iconos de servicio"]
+
+El tamaño de cada círculo indica el tamaño del nodo. Tenga en cuenta que estos tamaños son relativos, el nivel de zoom del navegador o el tamaño de la pantalla pueden afectar el tamaño real del círculo. De la misma manera, el estilo de la línea de tráfico le ofrece una vista rápida del tamaño de la conexión; las líneas sólidas en negrita son de alto tráfico, mientras que las líneas con puntos claros son de menor tráfico.
+
+Los números dentro de los círculos son el número de conexiones externas que está procesando actualmente el servicio.
+
+image:ServiceMap_Node_and_Connection_Legend.png["leyenda que muestra el círculo relativo (nodo) y los tamaños de conexión"]
+
+
+
+== Detalles de carga de trabajo y alertas
+
+Los círculos mostrados en color indican una alerta de nivel crítico o de advertencia para la carga de trabajo. Pase el cursor sobre el círculo para ver un resumen del problema o haga clic en el círculo para abrir un panel deslizante con más detalles.
+
+image:Workload_Map_Slideout_with_Alert.png["Detalles de la diapositiva de las cargas de trabajo con alertas"]
+
+
+
+== Filtrado
+
+Al igual que sucede con otras funciones de Cloud Insights, puede establecer fácilmente filtros para centrarse en los objetos específicos o los atributos de carga de trabajo que desee.
+
+image:Workload_Map_Filtering.png["Filtrado de asignación de carga de trabajo"]
+
+
+
+== Etiquetas de carga de trabajo
+
+Las etiquetas de carga de trabajo son necesarias si desea que el mapa identifique los tipos de cargas de trabajo que se muestran (es decir, los iconos de círculo). Las etiquetas se derivan de la siguiente manera:
+
+* Nombre del servicio/aplicación que se ejecuta en términos genéricos
+* Si la fuente es un pod:
++
+** Se deriva de la etiqueta de carga de trabajo del pod
+** Se esperaba una etiqueta en la carga de trabajo: App.kubernetes.io/component
+** Referencia de nombre de etiqueta: https://kubernetes.io/docs/concepts/overview/working-with-objects/common-labels/[]
+** Etiquetas recomendadas:
++
+*** front-end
+*** backend
+*** base de datos
+*** caché
+*** cola
+*** kafka
+
+
+
+
+* Si el origen externo al clúster de k8s:
++
+** Intente analizar el nombre resuelto DNS y extraiga el tipo de servicio
++
+ejemplo: s3.eu-north-1.amazonaws.com
+
++
+nombre resuelto analizado para obtener s3
+
+
+
+

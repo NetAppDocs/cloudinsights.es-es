@@ -18,6 +18,9 @@ Empezar a usar Cloud Insights es tan sencillo como contar con tres sencillos pas
 Durante el proceso de registro, es posible elegir la región global donde se alojará el entorno de Cloud Insights. Para obtener más información, lea acerca de Cloud Insights link:security_information_and_region.html["Información y Región"].
 
 
+NOTE: A menos que se indique lo contrario, la información de esta página generalmente se aplica a las ediciones comerciales de Cloud Insights (Básico, Estándar, Premium). Es posible que la edición federal de Cloud Insights no contenga algunas de las funciones descritas en esta página.
+
+
 
 == Ediciones
 
@@ -33,7 +36,7 @@ WARNING: Los entornos Cloud Insights Basic Edition inactivos se eliminan y se re
 NOTE: Las características, los tiempos de retención de datos y los objetos o métricas recopilados en la edición básica de Cloud Insights están sujetos a cambios con o sin previo aviso.
 
 * *Standard Edition* está disponible por suscripción y ofrece todas las funciones de Basic Edition y mucho más.
-* *Premium Edition* ofrece ventajas adicionales como Business Intelligence e Reporting, así como auditoría de seguridad de carga de trabajo y detección de amenazas.
+* *Edición Federal* proporciona una Edición Cloud Insights compatible con FedRAMP para EE.UU Estados Unidos. Es posible que algunas funciones que están disponibles en las ediciones comerciales anteriores no estén disponibles en la edición federal o que estén disponibles con funcionalidad reducida. Cuando sea posible, estas diferencias se indican en la documentación de Cloud Insights.
 
 
 
@@ -61,7 +64,7 @@ Estas son las funciones clave disponibles en Basic, Standard y Premium Edition:
 | Videos de Foro, Documentación y formación | &comprobar; | &comprobar; | &comprobar; 
 
 
-| Chat en directo y soporte técnico | - | &comprobar; | &comprobar; 
+| Chat en directo^&plus;&plus;^ y soporte técnico | - | &comprobar; | &comprobar; 
 
 
 | Métricas de VM | - | &comprobar; | &comprobar; 
@@ -76,7 +79,7 @@ Estas son las funciones clave disponibles en Basic, Standard y Premium Edition:
 | Monitores y alertas | &ast; | &comprobar; | &comprobar; 
 
 
-| Acceso a API y además; | &comprobar; | &comprobar; | &comprobar; 
+| Acceso a API^&más;^ | &comprobar; | &comprobar; | &comprobar; 
 
 
 | Inicio de sesión único (SSO) | - | - | &comprobar; 
@@ -90,7 +93,7 @@ Estas son las funciones clave disponibles en Basic, Standard y Premium Edition:
 
 | Inteligencia empresarial e informes y ast; y ast; | - | - | &comprobar; 
 |===
-&ast;limitado a 5 monitores personalizados activos a la vez &plus;el acceso a la API varía según Edition &ast;&ast;disponible para entornos de 500 unidades administradas y mayores
+&ast;Limitado a 5 monitores personalizados activos a la vez &más;El acceso a la API varía según la edición &ast;&ast;Disponible para entornos de 500 unidades gestionadas y funciones ^&plus;^ de mayor tamaño no disponibles en la edición federal de Cloud Insights
 
 Mientras utiliza Cloud Insights, si ve un icono de candado image:padlock.png["Candado"]Significa que la función no está disponible en la edición actual o está disponible en formato limitado. Actualice para obtener acceso completo a la función.
 

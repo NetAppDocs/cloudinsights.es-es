@@ -60,6 +60,18 @@ En la siguiente tabla se muestran las funciones disponibles para cada rol de gen
 
 
 | Realizar tareas administrativas | No | No | Sí 
+
+
+| Agregar/Editar Elemento HTML | No | No | Sí 
+
+
+| Ejecutar informe con elemento HTML | Sí | Sí | Sí 
+
+
+| Agregar/Editar SQL personalizado | No | No | Sí 
+
+
+| Ejecutar informes con SQL personalizado | Sí | Sí | Sí 
 |===
 
 
@@ -82,7 +94,12 @@ Si ya es cliente de Premium Edition, SSO no se activa automáticamente para su e
 
 Para asegurarse de que sus informes se conservan, migre todos los informes de _My Content_ a _Team Content_ mediante los pasos siguientes. Debe hacerlo antes de habilitar SSO en su entorno:
 
-. Cree una nueva carpeta en _Team Content_
+. Vaya a *Menú > Contenido*
+
+
+image:Reporting_Menu.png["Menú superior izquierdo de Cognos"]
+
+. Cree una nueva carpeta en *_Team Content_*
 +
 .. Si se han creado varios usuarios, cree una carpeta independiente para que cada usuario evite sobrescribir informes con nombres duplicados
 

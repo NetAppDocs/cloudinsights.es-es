@@ -100,13 +100,13 @@ Cada modelo de datos contiene un simple data Mart y un Data Mart avanzado:
 
 
 
-=== Modelo de datos de capacidad
+=== Modelos de datos de capacidad
 
 Le permite responder preguntas acerca de la capacidad de almacenamiento, el uso del sistema de archivos, la capacidad de volumen interno, la capacidad del puerto, la capacidad para qtrees, Y la capacidad de las máquinas virtuales (VM). El modelo de datos de capacidad es un contenedor para varios modelos de datos de capacidad. Puede crear informes que contesten varios tipos de preguntas mediante este modelo de datos:
 
 
 
-=== Modelo de datos con capacidad de almacenamiento y pool de almacenamiento
+==== Modelo de datos con capacidad de almacenamiento y pool de almacenamiento
 
 Le permite responder preguntas sobre la planificación de recursos de la capacidad de almacenamiento, incluidos los pools de almacenamiento y almacenamiento, e incluye datos de pools de almacenamiento físico y virtual. Este sencillo modelo de datos puede ayudarle a responder a preguntas relacionadas con la capacidad sobre el suelo y el uso de la capacidad de los pools de almacenamiento por nivel y centro de datos con el tiempo. Si es el nuevo modelo de informes de capacidad, debe empezar por este modelo de datos, ya que es un modelo de datos más sencillo y objetivo. Con este modelo de datos, puede responder preguntas similares a las siguientes:
 
@@ -122,7 +122,7 @@ Le permite responder preguntas sobre la planificación de recursos de la capacid
 
 
 
-=== Modelo de datos de utilización del sistema de ficheros
+==== Modelo de datos de utilización del sistema de ficheros
 
 Este modelo de datos ofrece visibilidad sobre el uso de la capacidad por parte de los hosts a nivel de sistema de archivos. Los administradores pueden determinar la capacidad asignada y utilizada por sistema de ficheros, determinar el tipo de sistema de ficheros e identificar las estadísticas de tendencias por tipo de sistema de ficheros. Puede responder a las siguientes preguntas utilizando este modelo de datos:
 
@@ -133,7 +133,7 @@ Este modelo de datos ofrece visibilidad sobre el uso de la capacidad por parte d
 
 
 
-=== Modelo de datos con capacidad de volumen interno
+==== Modelo de datos con capacidad de volumen interno
 
 Permite responder a preguntas sobre la capacidad interna de volumen utilizado, la capacidad asignada y el uso de la capacidad a lo largo del tiempo:
 
@@ -143,7 +143,7 @@ Permite responder a preguntas sobre la capacidad interna de volumen utilizado, l
 
 
 
-=== Modelo de datos de capacidad del puerto
+==== Modelo de datos de capacidad del puerto
 
 Le permite responder preguntas acerca de la conectividad de los puertos del switch, el estado de los puertos y la velocidad de los puertos a lo largo del tiempo. Puede responder a preguntas similares a las siguientes para ayudarle a planificar la compra de switches nuevos: ¿Cómo puedo crear una previsión de consumo de puertos que predice la disponibilidad de los recursos (puertos) (según el centro de datos, el proveedor de switches y la velocidad de puertos)?
 
@@ -156,7 +156,7 @@ Le permite responder preguntas acerca de la conectividad de los puertos del swit
 
 
 
-=== Modelo de datos de capacidad Qtree
+==== Modelo de datos de capacidad Qtree
 
 Permite tendencia al uso de qtrees (con datos como usar o la capacidad asignada) a lo largo del tiempo. Puede ver la información por diferentes dimensiones; por ejemplo, por entidad de negocio, aplicación, nivel y nivel de servicio. Puede responder a las siguientes preguntas utilizando este modelo de datos:
 
@@ -168,7 +168,7 @@ Permite tendencia al uso de qtrees (con datos como usar o la capacidad asignada)
 
 
 
-=== Modelo de datos de capacidad de las máquinas virtuales
+==== Modelo de datos de capacidad de las máquinas virtuales
 
 Le permite informar sobre el entorno virtual y el uso de su capacidad. Este modelo de datos le permite informar sobre los cambios en el uso de la capacidad a lo largo del tiempo en equipos virtuales y almacenes de datos. El modelo de datos también proporciona datos de pago por uso de equipos virtuales y thin provisioning.
 
@@ -182,7 +182,7 @@ Las capacidades del modelo de datos de capacidad de máquinas virtuales están t
 
 
 
-=== Modelo de datos de capacidad de volumen
+==== Modelo de datos de capacidad de volumen
 
 Le permite analizar todos los aspectos de los volúmenes de su entorno y organizar los datos por proveedor, modelo, nivel, nivel de servicio y centro de datos.
 
@@ -248,7 +248,7 @@ Le permite responder a preguntas acerca de los recursos de inventario, incluidos
 
 === Modelo de datos de rendimiento
 
-Le permite responder preguntas sobre el rendimiento de volúmenes, volúmenes de aplicaciones, volúmenes internos, switches, aplicaciones, Máquinas virtuales, VMDK, ESX frente a nodos de máquinas virtuales, hosts y aplicaciones. Con este modelo de datos, puede crear informes que respondan a varios tipos de preguntas de gestión del rendimiento:
+Le permite responder preguntas sobre el rendimiento de volúmenes, volúmenes de aplicaciones, volúmenes internos, switches, aplicaciones, Máquinas virtuales, VMDK, ESX frente a nodos de máquinas virtuales, hosts y aplicaciones. Muchos de estos datos de informe _Hourly_, _Daily_ o ambos. Con este modelo de datos, puede crear informes que respondan a varios tipos de preguntas de gestión del rendimiento:
 
 * ¿Qué volúmenes o volúmenes internos no se han utilizado o no se ha accedido a ellos durante un periodo específico?
 * ¿Podemos determinar cualquier configuración incorrecta posible para el almacenamiento de una aplicación (sin utilizar)?

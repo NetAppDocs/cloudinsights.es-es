@@ -28,11 +28,12 @@ Cloud Insights da cabida a múltiples usuarios para la creación de informes, lo
 
 Al abrir el Portal de informes, la carpeta _Team Content_ es el punto de partida para que seleccione el tipo de información que necesita en los informes de Cloud Insights.
 
-. En el panel de navegación izquierdo, haga clic en *Contenido del equipo* y seleccione la categoría de información que desea utilizar.
-. Haga clic en *Informes* para acceder a los informes predefinidos.
+. En el panel de navegación de la izquierda, selecciona *Contenido > Contenido del equipo*.
+. Selecciona *Informes* para acceder a los informes predefinidos.
 
 
-image:Reporting-TeamContent.png["Contenido del equipo"]
+image:Reporting_Menu.png["Menú Informes"]
+image:Reporting_Team_Content.png["Contenido del equipo que muestra los informes resaltados"]
 
 
 

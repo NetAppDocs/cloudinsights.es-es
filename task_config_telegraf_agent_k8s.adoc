@@ -454,6 +454,9 @@ Puede ajustar el operador de supervisión Kubernetes de NetApp para obtener un r
 
  kubectl exec -c manager -it <operator-pod-name> -n <namespace> -- cat configs/substitution-vars/README.txt
 
+NOTE: La sintonización del operador no está disponible en la edición federal de Cloud Insights
+
+
 
 == Resolución de problemas
 

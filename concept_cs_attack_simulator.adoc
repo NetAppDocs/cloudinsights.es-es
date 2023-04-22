@@ -12,6 +12,9 @@ summary: Mediante un script, puede simular un ataque de ransomware para probar o
 Puede utilizar las instrucciones de esta página para simular un ataque con el fin de probar o demostrar la seguridad de la carga de trabajo mediante el script de simulación de Ransomware incluido.
 
 
+NOTE: La seguridad de carga de trabajo no está disponible en la edición federal de Cloud Insights.
+
+
 
 == Cosas que tomar en cuenta antes de empezar
 

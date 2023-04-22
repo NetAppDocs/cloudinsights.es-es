@@ -11,6 +11,9 @@ keywords: agent, Linux, requirements, docker, browsers, permissions, Network, Cl
 [role="lead"]
 Debe link:task_cs_add_agent.html["Instale un agente"] para adquirir información de sus recopiladores de datos. Antes de instalar el agente, debe asegurarse de que su entorno cumple con los requisitos de sistema operativo, CPU, memoria y espacio en disco.
 
+
+NOTE: La seguridad de la carga de trabajo de almacenamiento no está disponible en la edición federal de Cloud Insights.
+
 [cols="36,60"]
 |===
 | Componente | Requisitos de Linux 

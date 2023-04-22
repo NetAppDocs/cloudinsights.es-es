@@ -12,6 +12,9 @@ summary: Descripción general
 La seguridad de cargas de trabajo del almacenamiento de Cloud Insights (anteriormente Cloud Secure) le ayuda a proteger los datos con inteligencia procesable sobre amenazas internas. Proporciona control y visibilidad centralizados de todos los accesos a datos corporativos en los entornos de cloud híbrido para garantizar la consecución de los objetivos de seguridad y cumplimiento de normativas.
 
 
+NOTE: La seguridad de carga de trabajo no está disponible en la edición federal de Cloud Insights.
+
+
 
 == Visibilidad
 
