@@ -22,7 +22,7 @@ summary: Cree monitores para alertar sobre los umbrales de rendimiento o inventa
 Cloud Insights incluye una serie de monitores definidos por el sistema para métricas y registros. Los monitores del sistema disponibles dependen de los recopiladores de datos presentes en el entorno. Debido a ello, los monitores disponibles en Cloud Insights pueden cambiar a medida que se agregan recopiladores de datos o se cambian sus configuraciones.
 
 
-NOTE: La mayoría de los monitores del sistema están en estado _pausado_ de forma predeterminada. Antes de reanudar el monitor, debe asegurarse de que _Advanced Counter Data Collection_ y _Enable ONTAP EMS log Collection_ estén habilitados en el recopilador de datos. Estas opciones se pueden encontrar en el recopilador de datos de ONTAP en _Configuración avanzada_:image:Enable_Log_Monitor_Collection.png["Habilitar la recogida de contador avanzado y registro de EMS para ONTAP"]
+NOTE: Muchos monitores del sistema están en estado _Paused_ por defecto. Puede activar un monitor del sistema seleccionando la opción _Reanudar_ para el monitor. Asegúrese de que _Advanced Counter Data Collection_ y _Enable ONTAP EMS log collection_ estén habilitados en el recopilador de datos. Estas opciones se pueden encontrar en el recopilador de datos de ONTAP en _Configuración avanzada_:image:Enable_Log_Monitor_Collection.png["Habilitar la recogida de contador avanzado y registro de EMS para ONTAP"]
 
 
 toc::[]
