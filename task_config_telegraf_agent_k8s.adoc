@@ -501,5 +501,17 @@ Capture o anote el resultado de los siguientes comandos y póngase en contacto c
  kubectl -n netapp-monitoring logs <monitoring-operator-pod> --all-containers=true
  kubectl -n netapp-monitoring logs <telegraf-pod> --all-containers=true
 ----
+
+
+| Los pods de Net-Observer (Workload Map) en el espacio de nombres NKMO se encuentran en CrashLoopBackOff | Estos pods corresponden al recopilador de datos de asignación de cargas de trabajo para la observabilidad de red. Pruebe estos: • Compruebe los registros de uno de los pods para confirmar la versión mínima del kernel. Por ejemplo: --- {«ci-tenant-id»: «Your-tenant-id», «collector-cluster»: «Your-k8s-cluster-name», «environment»: «Prod», «level»: «Error», «msg»: «Failed in validation. Razón: La versión del kernel 3.10.0 es menor que la versión mínima del kernel de 4.18.0”, “tiempo”: “2022-11-09T08:23:08Z”} ---- • Los pods de Net-Observer requieren que la versión del kernel de Linux sea al menos 4.18.0. Compruebe la versión del núcleo con el comando “uname -r” y asegúrese de que son >= 4.18.0 
+
+
+| Los pods de observador de red en el espacio de nombres NKMO se encuentran en CrashLoopBackOff en el entorno OpenShift 4 | Actualmente no se admite esta operación. Esté atento a la adición de soporte en una futura actualización. 
+
+
+| Los pods se ejecutan en el espacio de nombres NKMO (predeterminado: Supervisión de netapp), pero no se muestran datos en la interfaz de usuario para el mapa de carga de trabajo o métricas de Kubernetes en consultas | Compruebe la configuración de hora en los nodos del clúster K8S. Para obtener informes precisos de auditoría y datos, se recomienda encarecidamente sincronizar la hora en el equipo del agente mediante el Protocolo de hora de red (NTP) o el Protocolo de hora de red simple (SNTP). 
+
+
+| Algunos de los pods de observador de red en el espacio de nombres NKMO están en estado Pendiente | NET-observer es un DaemonSet y ejecuta un pod en cada nodo del cluster k8s. • Observe el pod que está en estado Pendiente y compruebe si está experimentando un problema de recursos para la CPU o la memoria. Asegúrese de que la memoria y la CPU requeridas estén disponibles en el nodo. 
 |===
 Puede encontrar información adicional en link:concept_requesting_support.html["Soporte técnico"] o en la link:https://docs.netapp.com/us-en/cloudinsights/CloudInsightsDataCollectorSupportMatrix.pdf["Matriz de compatibilidad de recopilador de datos"].
