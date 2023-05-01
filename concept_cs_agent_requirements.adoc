@@ -107,13 +107,13 @@ Tenga en cuenta que al agregar _link:task_add_collector_svm.html#permissions-whe
 | TCP | 443 | Dirección IP de gestión del clúster o de SVM (según la configuración del recopilador SVM) | Saliente | Comunicación API con ONTAP 
 
 
-| TCP | 35000 - 55000 | Direcciones IP de LIF de datos de SVM | Entrante/saliente | Comunicación con ONTAP para eventos de Fpolicy 
+| TCP | 35000 - 55000 | Direcciones IP de LIF de datos de SVM | Entrada | Comunicación con ONTAP para eventos de Fpolicy 
 
 
-| TCP | 7 | Direcciones IP de LIF de datos de SVM | Bidireccional | Bidireccional entre la seguridad de cargas de trabajo y ONTAP. El agente hace ping a las LIF de SVM. 
+| TCP | 7 | Direcciones IP de LIF de datos de SVM | Saliente | Unidireccional entre ONTAP y Seguridad de Carga de Trabajo. El agente hace ping a las LIF de SVM. 
 
 
-| SSH | 22 | Gestión de clústeres | Bidireccional | Necesario para el bloqueo de usuarios CIFS/SMB. 
+| SSH | 22 | Gestión de clústeres | Saliente | Necesario para el bloqueo de usuarios CIFS/SMB. 
 |===
 
 
