@@ -117,7 +117,7 @@ Puede ordenar los datos del historial de actividades por _Time, User, Source IP,
 
 == Exportando toda la actividad
 
-Puede exportar el historial de actividades a un archivo .CSV haciendo clic en el botón _Export_ situado encima de la tabla Historial de actividades. Tenga en cuenta que sólo se exportan los 10,000 registros principales.
+Puede exportar el historial de actividades a un archivo .CSV haciendo clic en el botón _Export_ situado encima de la tabla Historial de actividades. Tenga en cuenta que sólo se exportan los 100.000 registros principales. Dependiendo de la cantidad de datos, la exportación puede tardar desde unos segundos hasta varios minutos.
 
 
 
