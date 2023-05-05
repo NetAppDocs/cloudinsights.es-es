@@ -58,7 +58,7 @@ Podrá configurar posteriormente recopiladores de datos adicionales.
 
 === Sistema operativo:
 
-Para los recopiladores de datos _Operating System_, elija una plataforma (MacOS, Linux, Windows) para instalar un agente de Cloud Insights. Debe tener al menos un agente para recopilar datos de los Servicios. El agente también recopila datos del propio host, para su uso en Cloud Insights. Estos datos se clasifican como datos "nodo" en widgets, etc.
+Para los recopiladores de datos _Sistema operativo_, seleccione una plataforma (Linux, Windows) para instalar un agente de Cloud Insights. Debe tener al menos un agente para recopilar datos de los Servicios. El agente también recopila datos del propio host, para su uso en Cloud Insights. Estos datos se clasifican como datos "nodo" en widgets, etc.
 
 * Abra una ventana de terminal o comando en el host o VM del agente y pegue el comando mostrado para instalar el agente.
 * Una vez finalizada la instalación, haga clic en *completar configuración*.

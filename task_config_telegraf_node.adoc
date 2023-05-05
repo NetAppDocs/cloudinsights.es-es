@@ -49,24 +49,3 @@ Los objetos siguientes y sus contadores se recopilan como métricas Node:
 == Configuración
 
 Encontrará información sobre la configuración y la solución de problemas en la link:task_config_telegraf_agent.html["Configuración de un agente"] página.
-
-
-
-== Uso de memoria de MacOS
-
-Cloud Insights (a través de Telegraf) y MacOS informan de diferentes números para el uso de memoria. Tanto Telegraf como el monitor de actividad Mac utilizan métricas recopiladas de _vm_stat_; sin embargo, el uso total de la memoria se calcula de forma diferente para cada uno.
-
-*Telegraf* calcula _memoria usada total_ de la siguiente manera:
-
- Memory Used Total = Memory Total - Memory Available Total
-Donde _Memory Available total_ se deriva de la suma de "Pages free" y "Pages inactive" en _vm_stat_.
-
-*El monitor de actividad Mac*, por otro lado, calcula la memoria utilizada de la siguiente manera:
-
- Memory Used = App Memory + Wired Memory + Compressed
-Donde:
-
-* _App Memory_ se deriva de la diferencia entre “páginas anónimas” y “Páginas purgable” en _vm_stat_,
-* _Wired Memory_ se deriva de “Pages wired down” en _vm_stat_, y.
-* _Compressed_ se deriva de “Páginas ocupadas por compresor” en _vm_stat_.
-

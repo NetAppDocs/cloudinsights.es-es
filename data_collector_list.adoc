@@ -198,9 +198,6 @@ Lista alfabética de recopiladores de datos compatibles con Cloud Insights:
 | link:task_dc_lenovo.html["Serie HX de Lenovo"] | De almacenamiento 
 
 
-| link:task_config_telegraf_agent.html#macos["MacOS"] | Servicio 
-
-
 | link:task_config_telegraf_memcached.html["Memcached"] | Servicio 
 
 

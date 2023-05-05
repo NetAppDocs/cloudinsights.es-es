@@ -141,7 +141,7 @@ image:Kubernetes_Workload_LP.png["Ejemplo de página de destino de la carga de t
 
 === Compruebe sus sumas de comprobación
 
-Usted nos pidió que le proporcionaran valores de suma de comprobación durante la instalación del agente para Windows, Linux y MacOS, y creemos que esa es una gran idea. Así que aquí están:
+Nos pidió que le proporcionáramos valores de suma de comprobación durante la instalación del agente para Windows y Linux y creemos que es una gran idea. Así que aquí están:
 
 image:Agent_Checksum_Instructions.png["Se muestran los valores de suma de comprobación del agente durante la instalación"]
 
