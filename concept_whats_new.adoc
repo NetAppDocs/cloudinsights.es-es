@@ -15,6 +15,16 @@ NOTE: Es posible que algunas de estas funciones no estén disponibles en la edic
 
 
 
+== Mayo de 2023
+
+
+
+=== Carga de pantalla de seguridad de carga de trabajo mejorada
+
+Cloud Insights ha mejorado la experiencia del usuario al mostrar las pantallas de Observabilidad y Seguridad de la Carga de Trabajo de manera más eficiente, lo que reduce el tiempo de carga a medida que navega por estas funciones. Tenga en cuenta que las direcciones URL de la página Seguridad de Carga de Trabajo han cambiado. Las URL anteriores redirigirán automáticamente a las nuevas URL.
+
+
+
 == Abril de 2023
 
 
