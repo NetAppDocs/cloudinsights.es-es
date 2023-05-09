@@ -40,7 +40,8 @@ Nota: Un número "días a lleno" de "0" (cero) indica que se estima que días a 
 
 Seleccione la página *Data Protection* para ver las relaciones de SnapMirror. Haga clic en hasta la información del volumen de origen o de destino, o bien haga clic en el icono de engranaje para agregar columnas para los datos que desea ver.
 
-image:OE_DataProtection.png["Página de lista SnapMirror Relationships"]
+image:DataProtectionDashboard_OverviewWidgets.png["Widgets del panel de control de protección de datos que muestran las descripciones locales y remotas"]
+image:DataProtectionDashboard_ClusterList.png["Lista de clústeres de protección de datos"]
 
 
 
