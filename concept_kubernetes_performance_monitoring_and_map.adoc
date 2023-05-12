@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar 
-permalink: concept_kubernetes_network_monitoring_and_map.html 
+permalink: concept_kubernetes_performance_monitoring_and_map.html 
 keywords: service map, workloads, Kubernetes, 
 summary: Presenta flujos y dependencias de cargas de trabajo de Kubernetes, y destaca los problemas de red y rendimiento 
 ---

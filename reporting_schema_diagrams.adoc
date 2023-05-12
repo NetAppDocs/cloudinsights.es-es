@@ -22,51 +22,33 @@ Las siguientes imágenes describen el datamart de inventario.
 
 
 
-=== Anotaciones
+=== Reducida
 
-image:annotations.png[""]
-
-
-
-=== Más grandes
-
-image:apps_annot.png[""]
+image:storage.png[""]
 
 
 
-=== Métricas de Kubernetes
+=== Nodo de almacenamiento
 
-image:k8s_schema.jpg["Kubernetes"]
-
-
-
-==== Hecho de métricas de clústeres de Kubernetes
-
-image:k8s_cluster_metrics_fact.jpg["Hecho de métricas de clústeres de Kubernetes"]
+image:storage_node.png[""]
 
 
 
-==== Métrica de espacio de nombres de Kubernetes
+=== Estructura SAN
 
-image:k8s_namespace_metrics_fact.jpg["Métrica de espacio de nombres de Kubernetes"]
-
-
-
-==== Hecho de métricas de nodos de Kubernetes
-
-image:k8s_node_metrics_fact.jpg["Hecho de métricas de nodos de Kubernetes"]
+image:fabric.png[""]
 
 
 
-==== Hecho de métricas de PVC de Kubernetes
+=== Conectividad de puertos
 
-image:k8s_pvc_metrics_fact.jpg["Hecho de métricas de PVC de Kubernetes"]
+image:connectivity.png[""]
 
 
 
-==== Hecho de las métricas de carga de trabajo de Kubernetes
+=== MÁQUINA VIRTUAL
 
-image:k8s_workload_metrics_fact.jpg["Hecho de las métricas de carga de trabajo de Kubernetes"]
+image:vm.png[""]
 
 
 
@@ -82,76 +64,39 @@ image:logical.png[""]
 
 
 
-=== Conectividad de puertos
+=== Anotaciones
 
-image:connectivity.png[""]
-
-
-
-=== Estructura SAN
-
-image:fabric.png[""]
+image:annotations.png[""]
 
 
 
-=== Reducida
+=== Más grandes
 
-image:storage.png[""]
-
-
-
-=== Nodo de almacenamiento
-
-image:storage_node.png[""]
+image:apps_annot.png[""]
 
 
 
-=== MÁQUINA VIRTUAL
+=== Capacidad de almacenamiento y pool de almacenamiento
 
-image:vm.png[""]
-
-'''
-
-
-== Capacidad Datamart
-
-Las siguientes imágenes describen la capacidad datamart.
+image:Storage_and_Storage_Pool_Capacity_Fact.png[""]
 
 
 
-=== Pago por uso
+=== Capacidad de un volumen
 
-image:Chargeback_Fact.png[""]
-
-
-
-=== Capacidad de grupos de discos
-
-image:Disk_Group_Capacity.png[""]
+image:Volume_Capacity.png[""]
 
 
 
-=== Utilización del sistema de ficheros
+=== Capacidad de los equipos virtuales
 
-image:fs_util.png[""]
+image:VM_Capacity_Fact.png[""]
 
 
 
 === Capacidad del volumen interno
 
 image:Internal_Volume_Capacity_Fact.png[""]
-
-
-
-=== Capacidad del VP de Kubernetes
-
-image:k8s_pvc_capacity_fact.jpg[""]
-
-
-
-=== Capacidad del puerto
-
-image:ports.png[""]
 
 
 
@@ -173,23 +118,28 @@ image:Storage_and_Storage_Pool_Capacity_Fact.png[""]
 
 
 
-=== Capacidad del nodo de almacenamiento
+=== Utilización del sistema de ficheros
 
-image:Storage_Node_Capacity_Fact.jpg[""]
-
-
-
-=== Capacidad de los equipos virtuales
-
-image:VM_Capacity_Fact.png[""]
+image:fs_util.png[""]
 
 
 
-=== Capacidad de un volumen
+=== Capacidad del puerto
 
-image:Volume_Capacity.png[""]
+image:ports.png[""]
 
-'''
+
+
+=== Pago por uso
+
+image:Chargeback_Fact.png[""]
+
+
+
+=== Capacidad de grupos de discos
+
+image:Disk_Group_Capacity.png[""]
+
 
 
 == Datos de rendimiento
@@ -200,55 +150,43 @@ Las siguientes imágenes describen el rendimiento datamart.
 
 === Rendimiento por hora del volumen de la aplicación
 
-image:application_performance_fact.jpg[""]
-
-
-
-=== Rendimiento diario del disco
-
-image:disk_daily_performance_fact.png[""]
-
-
-
-=== Rendimiento por hora del disco
-
-image:disk_hourly_performance_fact.png[""]
-
-
-
-=== Rendimiento por hora del host
-
-image:host_performance_fact.jpg[""]
+b68ed2de708ea9b3b40e76b37e99573b
 
 
 
 === Rendimiento por hora del volumen interno
 
-image:internal_volume_performance_fact.jpg[""]
+49849b07ecf6904a481a051c4c6e59bf
+
+
+
+=== Rendimiento por hora del volumen interno
+
+566adfd62d1d59e5aa02e13ceb0d2212
 
 
 
 === Rendimiento diario de volumen interno
 
-image:internal_volume_daily_performance_fact.jpg[""]
+8665cb5eac9e402f835407ee789aba61
+
+
+
+=== Rendimiento por hora del volumen
+
+image:vmdk_hourly_performance_fact.png[""]
+
+
+
+=== Rendimiento diario de volumen
+
+d14385553d6e0a6f14394bc02a502a42
 
 
 
 === Rendimiento diario de Qtree
 
 image:QtreeDailyPerformanceFact.png[""]
-
-
-
-=== Rendimiento diario del nodo de almacenamiento
-
-image:storage_node_daily_performance_fact.jpg[""]
-
-
-
-=== Rendimiento por hora del nodo de almacenamiento
-
-image:storage_node_hourly_performance_fact.jpg[""]
 
 
 
@@ -318,12 +256,24 @@ image:vmdk_hourly_performance_fact.png[""]
 
 
 
-=== Rendimiento por hora del volumen
+=== Rendimiento por hora del nodo de almacenamiento
 
-image:volume_performance_fact.jpg[""]
+a6040f821773a9032da45c788b24e202
 
 
 
-=== Rendimiento diario de volumen
+=== Rendimiento diario del disco
 
-image:volume_daily_performance_fact.jpg[""]
+image:disk_daily_performance_fact.png[""]
+
+
+
+=== Rendimiento por hora del disco
+
+image:disk_hourly_performance_fact.png[""]
+
+
+
+== Kubernetes
+
+image:k8s_schema.jpg["Kubernetes"]
