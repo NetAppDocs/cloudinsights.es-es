@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: concept_subscribing_to_cloud_insights.html 
 summary: En cualquier momento durante su prueba gratuita, puede suscribirse a Cloud Insights. 
-keywords: subscribe, trial, subscription, contract, raw capacity, region, data retention, retention, MU, managed unit, managed units, units, managed 
+keywords: subscribe, trial, subscription, contract, raw capacity, region, data retention, retention, 
 ---
 = Suscribirse a Cloud Insights
 :allow-uri-read: 
