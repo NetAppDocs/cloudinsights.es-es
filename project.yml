@@ -173,6 +173,8 @@ sidebar:
       url: "/concept_asset_user_data_section.html"
     - title: Sección de alertas relacionadas
       url: "/concept_asset_alerts_section.html"
+    - title: Virtualización del almacenamiento
+      url: "/concept_storage_virtualization.html"
     - title: Sugerencias y consejos para buscar activos
       url: "/concept_searching_assets.html"
   - title: Creación de informes

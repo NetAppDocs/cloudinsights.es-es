@@ -29,10 +29,48 @@ NOTE: Es posible que algunas de estas funciones no estén disponibles en la edic
 
 
 
-=== 675daaee26cb7a668008d96ba0afd8e2
+=== Instalación mejorada del operador de supervisión de Kubernetes
 
-394791778bc8c7c505ff97a4408cada8
+Instalación y configuración del link:task_config_telegraf_agent_k8s.html["Operador de supervisión Kubernetes de NetApp"] es más fácil que nunca con las siguientes mejoras:
 
+* Entorno Oracle link:telegraf_agent_k8s_config_options.html["ajustes de configuración"] se guardan en un único archivo de configuración autodocumentado.
+* Instrucciones paso a paso para cargar imágenes del operador de monitoreo de Kubernetes en su repositorio privado.
+* Fácil de actualizar con un solo comando para actualizar su supervisión de Kubernetes manteniendo configuraciones personalizadas.
+* Más protegidos: Las claves API gestionan los secretos de forma segura.
+* Fácil de integrar y poner en marcha con las herramientas de automatización de CI/CD.
+
+
+
+
+=== Virtualización del almacenamiento
+
+Cloud Insights puede diferenciar entre una cabina de almacenamiento que tenga almacenamiento local o virtualización de otras cabinas de almacenamiento. Esto le ofrece la capacidad de relacionar el coste y distinguir el rendimiento del interfaz hasta el back-end de la infraestructura.
+
+image:StorageVirtualization_StorageSummary.png["Página de destino de almacenamiento en la que se muestra información sobre almacenamiento virtual y respaldado"]
+
+
+
+=== Nuevos parámetros de Webhook
+
+Al crear un link:task_create_webhook.html["Webhook"] notificación, ahora puede incluir estos parámetros en su definición de webhook:
+
+* %%TriggeredOnKeys%%
+* %%TriggeredOnValues%%
+
+
+
+
+=== Informar de los datos de VP de Kubernetes
+
+La información sobre el volumen persistente (PV) de Kubernetes recopilada por Cloud Insights ahora se puede usar en informes, lo que permite el pago por uso, las tendencias, la previsión, los cálculos de TTF, Y otros informes empresariales sobre métricas para clústeres de Kubernetes, espacios de nombres, cargas de trabajo, etc.
+
+
+
+=== Monitores del sistema ONTAP predeterminados activados para nuevos clientes
+
+Muchos monitores del sistema ONTAP están activados (es decir, _resume_) de forma predeterminada en los nuevos entornos Cloud Insights. Anteriormente, la mayoría de los monitores tenían por defecto el estado _Paused_. Debido a que las necesidades de negocio varían de una empresa a otra, siempre recomendamos echar un vistazo a la link:task_system_monitors.html["monitores del sistema"] en su entorno y pausar o reanudar cada uno según sus necesidades de alerta.
+
+'''
 
 
 == Abril de 2023
