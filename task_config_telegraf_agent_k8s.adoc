@@ -27,26 +27,15 @@ El operador (NKMO) y los recopiladores de datos se descargan del Registro Cloud 
 
 == Antes de instalar el operador de supervisión de Kubernetes de NetApp
 
-[[nkmoversion]]
 .Requisitos previos:
-* Tenga en cuenta las siguientes versiones de componentes. Estas son las versiones actuales _required_ incluidas en el operador de supervisión de Kubernetes de NetApp. En particular, deberá tener en cuenta estas versiones si lo tiene <<using-a-custom-or-private-docker-repository,uso de un repositorio de docker personalizado o privado>>:
-+
-** Telegraf: 1.25.0
-** kube-rbac-proxy: v0.13.0
-** kube-state-metrics: v2.6.0
-** bit fluido: 1.9.8
-** exportador de kubernetes: v0.10
-
-
+* Si está utilizando un repositorio de Docker personalizado o privado, siga las instrucciones de la sección Uso de un repositorio de Docker personalizado o privado
 * La instalación del operador de NetApp Kubernetes Monitoring es compatible con la versión 1.20 o posterior de Kubernetes.
 * Cuando Cloud Insights supervisa el almacenamiento back-end y se utiliza Kubernetes con el tiempo de ejecución de contenedor Docker, Cloud Insights puede mostrar las asignaciones y métricas de Pod a VP al almacenamiento para NFS e iSCSI; los demás tiempos de ejecución solo muestran NFS.
-* Desde el 2022 de agosto, NetApp Kubernetes Monitoring Operator incluye soporte para la Política de seguridad de Pod (PSP). Debe <<actualizar,renovar>> Al último operador de NetApp Kubernetes Monitoring, si su entorno utiliza PSP.
-* Si se ejecuta en OpenShift 4.6 o superior, deberá seguir las *instrucciones de OpenShift* que aparecen a continuación, además de asegurarse de que se cumplen estos requisitos previos.
-* La supervisión solo se instala en nodos Linux
-+
-Cloud Insights admite la supervisión de nodos Kubernetes que ejecutan Linux, especificando un selector de nodos de Kubernetes que busca las siguientes etiquetas de Kubernetes en estas plataformas:
+* Desde el 2022 de agosto, NetApp Kubernetes Monitoring Operator incluye soporte para la Política de seguridad de Pod (PSP). Debes renovar al último operador de supervisión de Kubernetes de NetApp si tu entorno utiliza PSP.
+* Si está ejecutando en OpenShift 4,6 o superior, debe seguir las instrucciones de OpenShift que aparecen a continuación, además de asegurarse de que se cumplen estos requisitos previos.
+* La supervisión solo se instala en los nodos de Linux Cloud Insights admite la supervisión de los nodos de Kubernetes que ejecutan Linux, especificando un selector de nodos de Kubernetes que busque las siguientes etiquetas de Kubernetes en estas plataformas:
 
-+
+
 |===
 
 
@@ -59,14 +48,13 @@ Cloud Insights admite la supervisión de nodos Kubernetes que ejecutan Linux, es
 | Rancher + ganadero.io como plataforma de orquestación/Kubernetes | ganado.io/os = linux 
 |===
 * El operador de supervisión Kubernetes de NetApp y sus dependencias (telegraf, kube-state-Metrics, fluentbit, etc.) no son compatibles con los nodos que se ejecutan con la arquitectura Arm64.
-* Deben estar disponibles los siguientes comandos: _Curl, sudo, openssl, sha256sum,_ y _kubectl_. Para obtener los mejores resultados, añada estos comandos a la RUTA DE ACCESO. Tenga en cuenta que _kubectl_ debe configurarse con acceso a los siguientes objetos de kubernetes como mínimo: _Agentes, roles del clúster, agrupaciones en clúster, definiciones de recursos cliente, puestas en marcha, espacios de nombres, roles, enlaces de rol, secretos, cuentas de servicio,_ y _services_. Consulte link:nkmo_clusterrole_yaml.html["aquí"] para obtener un ejemplo de archivo .ylma con estos privilegios mínimos de clusterrole.
-* El host que utilizará para la instalación del operador de supervisión de Kubernetes de NetApp debe tener _kubectl_ configurado para comunicarse con el clúster K8s de destino y tener conectividad a Internet con el entorno de Cloud Insights. Si este host requiere que un proxy llegue a Cloud Insights, siga las instrucciones en <<configuring-proxy-support,Configurar el soporte del proxy>> sección.
-* El operador de supervisión de Kubernetes de NetApp instala sus propias métricas de estado kube para evitar conflictos con otras instancias.
-* Si está detrás de un proxy durante la instalación o cuando utilice el clúster K8s que se va a supervisar, siga las instrucciones del <<configuring-proxy-support,Configurar el soporte del proxy>> sección.
-* Debe tener permisos para crear roles en el clúster de Kubernetes y vinculaciones de roles.
+* Los siguientes comandos deben estar disponibles: Curl, kubectl. El comando docker es necesario para un paso de instalación opcional. Para obtener los mejores resultados, añada estos comandos a la RUTA DE ACCESO. Tenga en cuenta que kubectl debe configurarse con acceso a los siguientes objetos de kubernetes como mínimo: Agentes, clusterroles, clusterrolebindings, customresourcedefinitions, despliegues, espacios de nombres, roles, rolebindings, secretos, cuentas de servicio, y servicios. Vea aquí un ejemplo de archivo .yaml con estos privilegios mínimos de clusterrole.
+* El host que utilizará para la instalación del operador de supervisión de NetApp Kubernetes debe haber configurado kubectl para comunicarse con el clúster K8s de destino y tener conexión a Internet en el entorno Cloud Insights.
+* Si se encuentra detrás de un proxy durante la instalación, o cuando funciona el clúster K8s que se va a supervisar, siga las instrucciones de la sección Configurar soporte de proxy.
+* El operador de supervisión de Kubernetes de NetApp instala sus propias métricas de estado kube para evitar conflictos con otras instancias. Para obtener informes precisos de auditoría y datos, se recomienda encarecidamente sincronizar la hora en el equipo del agente mediante el Protocolo de hora de red (NTP) o el Protocolo de hora de red simple (SNTP).
+* Si va a volver a desplegar el Operador (es decir, lo está actualizando o reemplazando), no es necesario crear un token de API _new_; puede volver a utilizar el token anterior.
+* También tenga en cuenta que, si tiene instalado recientemente un operador de supervisión de Kubernetes de NetApp y usa un token de acceso de API renovable, los tokens que venzan se reemplazarán automáticamente por tokens de acceso de API nuevos o actualizados.
 
-
-Para una auditoría y un informe de datos precisos, se recomienda encarecidamente sincronizar el tiempo en el equipo del agente mediante *Protocolo de tiempo de red (NTP)* o *Protocolo simple de tiempo de red (SNTP)*.
 
 
 
@@ -76,7 +64,19 @@ Si usted está corriendo con un <<configuring-proxy-support,proxy>>, tenga un <<
 
 Si va a actualizar desde una instalación anterior, lea también <<actualizar,Actualizar>> información.
 
-Si desea comprobar los archivos de instalación antes de instalar el agente, lea acerca de <<verifying-kubernetes-checksums,Verificando sumas de comprobación de Kubernetes>>.
+
+
+== Configuración del operador
+
+En las versiones más recientes del operador, los ajustes más comúnmente modificados se pueden configurar en el recurso personalizado _AgentConfiguration_. Puede editar este recurso antes de desplegar el operador editando el archivo _operator-config.yaml_. Este archivo incluye ejemplos comentados de algunas configuraciones. Consulte la lista de link:telegraf_agent_k8s_config_options.html["ajustes disponibles"] para la versión más reciente del operador.
+
+También puede editar este recurso después de desplegar el operador mediante el siguiente comando:
+
+ kubectl -n netapp-monitoring edit AgentConfiguration
+Para determinar si la versión implementada del operador admite AgentConfiguration, ejecute el siguiente comando:
+
+ kubectl get crd agentconfigurations.monitoring.netapp.com
+Si ve un mensaje “Error from server (NotFound)”, su operador debe actualizarse antes de poder usar AgentConfiguration.
 
 
 
@@ -101,158 +101,126 @@ Para ajustar las variables, lleve a cabo los siguientes pasos en su sistema *ant
  export https_proxy=<proxy_server>:<proxy_port>
 .. Si el proxy que se está estableciendo tiene autenticación (nombre de usuario/contraseña), ejecute este comando:
 +
- export http_proxy= <proxy_username>:<proxy_password>@<proxy_server>:<proxy_port>
+ export http_proxy=<proxy_username>:<proxy_password>@<proxy_server>:<proxy_port>
 
 
 
 
 En el caso de que el proxy utilizado para el clúster de Kubernetes se comunique con el entorno de Cloud Insights, instale el operador de supervisión de Kubernetes de NetApp después de leer todas estas instrucciones.
 
-Para finalizar la configuración, realice los pasos siguientes en el sistema *después* ha instalado el operador de monitorización Kubernetes de NetApp.
-
-En primer lugar, abra el archivo _Agent-Monitoring-netapp_ para editar:
-
- kubectl -n netapp-monitoring edit agent agent-monitoring-netapp
-Busque la sección *SPEC:* de este archivo y agregue el código siguiente:
+Configure la sección proxy de AgentConfiguration en operator-config.yaml antes de implementar el operador de supervisión de Kubernetes de NetApp.
 
 [listing]
 ----
- proxy:
+proxy:
 
- # If an AU is enabled on your cluster for monitoring
- # by Cloud Insights, then isAuProxyEnabled should be set to true:
-  isAuProxyEnabled: <true or false>
+   server: <server for proxy>
+   port: <port for proxy>
+   username: <username for proxy>
+   password: <password for proxy>
 
- # If your Operator install is behind a corporate proxy,
- # isTelegrafProxyEnabled should be set to true:
-  isTelegrafProxyEnabled: <true or false>
+# In the noproxy section, enter a comma-separated list of
+# IP addresses and/or resolvable hostnames that should bypass
+# the proxy:
 
- # If LOGS_COLLECTION is enabled on your cluster for monitoring
- # by CI, then isFluentbitProxyEnabled should be set to true:
-  isFluentbitProxyEnabled: <true or false>
-
- # Set the following values according to your proxy login:
-  password: <password for proxy, optional>
-  port: <port for proxy>
-  server: <server for proxy>
-  username: <username for proxy, optional
-
- # In the noProxy section, enter a comma-separated list of
- # IP addresses and/or resolvable hostnames that should bypass
- # the proxy:
-  noProxy: <comma separated list>
+   noproxy: <comma separated list>
+   isTelegrafProxyEnabled: true
+   isFluentbitProxyEnabled: <true or false> # true if Events Log enabled
+   isCollectorsProxyEnabled: <true or false> # true if Network Performance and Map enabled
+   isAuProxyEnabled: <true or false> # true if AU enabled
 ----
 
 
 === Uso de un repositorio de Docker personalizado o privado
 
-De forma predeterminada, la configuración del operador de monitorización Kubernetes de NetApp extraerá imágenes de contenedores de los registros públicos. Si tiene un clúster de Kubernetes utilizado como objetivo de la supervisión, Además, ese clúster se configura para extraer solo imágenes de contenedor de un repositorio o registro de contenedores Docker personalizado o privado, debe configurar el acceso a los contenedores que necesita el operador de supervisión de Kubernetes de NetApp para que se puedan ejecutar los comandos necesarios.
+De forma predeterminada, el operador de supervisión de Kubernetes de NetApp extraerá imágenes de contenedor del repositorio de Cloud Insights. Si tiene un clúster de Kubernetes utilizado como destino para la supervisión, y ese clúster se configura para extraer solo imágenes de contenedor desde un repositorio de Docker privado o personalizado, debe configurar el acceso a los contenedores que necesita el operador de supervisión de Kubernetes de NetApp.
 
-Siga las siguientes instrucciones para posicionar las imágenes del contenedor previamente en su registro y modificar la configuración del operador de NetApp Kubernetes Monitoring para acceder a dichas imágenes. Sustituya el espacio de nombres de instalación elegido en los siguientes comandos si difiere del espacio de nombres predeterminado de “supervisión de netapp”.
+Ejecute «Image pull Snippet» desde el icono de instalación del operador de supervisión de NetApp. Este comando iniciará sesión en el repositorio de Cloud Insights, extraerá todas las dependencias de imágenes del operador y cerrará la sesión en el repositorio de Cloud Insights. Cuando se le solicite, introduzca la contraseña temporal del repositorio proporcionada. Este comando descarga todas las imágenes utilizadas por el operador, incluidas las funciones opcionales. Consulte a continuación las funciones para las que se utilizan estas imágenes.
 
-. Obtenga el secreto del docker:
-+
- kubectl -n netapp-monitoring get secret docker -o yaml
-. Copie y pegue el valor de _.dockerconfigjson:_ del resultado del comando anterior.
-. Descodificar el secreto del docker:
-+
- echo <paste from _.dockerconfigjson:_ output above> | base64 -d
+Funcionalidad del operador principal y supervisión de Kubernetes
+
+* supervisión de netapp
+* proxy-rbac-kube
+* métricas-estado-kube
+* telegraf
+* usuario raíz sin interrupciones
 
 
-El resultado de esto estará en el siguiente formato JSON:
+Registro de eventos
 
-....
-{ "auths":
-  {"docker.<cluster>.cloudinsights.netapp.com" :
-    {"username":"<tenant id>",
-     "password":"<password which is the CI API token>",
-     "auth"    :"<encoded username:password basic auth token. This is internal to docker>"}
-  }
-}
-....
-Inicie sesión en el repositorio docker:
+* bits fluidos
+* exportador de eventos de kubernetes
 
-....
-docker login docker.<cluster>.cloudinsights.netapp.com (from step #2) -u <username from step #2>
-password: <password from docker secret step above>
-....
-Tire de la imagen del operador docker desde Cloud Insights. Asegúrese de que el número de versión de _netapp-Monitoring_ sea actual:
 
-....
-docker pull docker.<cluster>.cloudinsights.netapp.com/netapp-monitoring:<version>
-docker pull docker.<cluster>.cloudinsights.netapp.com/distroless-root-user:<version>
-....
-Busque el campo _netapp-Monitoring_ <version> mediante el comando siguiente:
+Rendimiento de red y mapa
 
- kubectl -n netapp-monitoring describe deployment monitoring-operator | grep -i "image:" |grep netapp-monitoring
-Descargue todas las dependencias de código abierto en su registro de docker privado. Es necesario descargar las siguientes imágenes de código abierto. Consulte <<before-installing-the-netapp-kubernetes-monitoring-operator,Requisitos previos>> de la sección anterior para las versiones más actuales de estos componentes:
+* ci-net-observador
 
-....
-docker pull docker.<cluster>.cloudinsights.netapp.com/telegraf:<telegraf version>
-docker pull docker.<cluster>.cloudinsights.netapp.com/kube-rbac-proxy:<kube-rbac-proxy version>
-docker pull docker.<cluster>.cloudinsights.netapp.com/kube-state-metrics:<kube-state-metrics version>
-....
-Si el bit fluido está activado, también descargue:
 
-....
-docker pull docker.<cluster>.cloudinsights.netapp.com/fluent-bit:<fluent-bit version>
-docker pull docker.<cluster>.cloudinsights.netapp.com/kubernetes-event-exporter:<kubernetes-event-exporter version>
-....
-Introduzca la imagen del operador docker en el repositorio de su proveedor de servicios de empresa/local/privado de acuerdo con las políticas de su empresa. Asegúrese de que las rutas de acceso del directorio a estas imágenes del repositorio sean coherentes con las de docker.<cluster>.cloudinsights.netapp.com.
+Introduzca la imagen del operador docker en el repositorio de su proveedor de servicios de empresa/local/privado de acuerdo con las políticas de su empresa. Asegúrese de que las etiquetas de imagen y las rutas de acceso de directorio a estas imágenes del repositorio sean coherentes con las del repositorio de Cloud Insights.
 
-Edite la implementación del operador de supervisión y modifique todas las referencias de imagen para utilizar la nueva ubicación de repo de docker:
+Edite el despliegue de operador de supervisión en operator-deployment.yaml y modifique todas las referencias de imagen para utilizar su repositorio Docker privado.
 
 ....
 image: <docker repo of the enterprise/corp docker repo>/kube-rbac-proxy:<kube-rbac-proxy version>
 image: <docker repo of the enterprise/corp docker repo>/netapp-monitoring:<version>
 ....
-Edite la CR del agente para reflejar la nueva ubicación de repo de docker.
-
- kubectl -n netapp-monitoring edit agent agent-monitoring-netapp
-....
-docker-repo: <docker repo of the enterprise/corp docker repo>
-dockerRepoSecret: <optional: name of the docker secret of enterprise/corp docker repo, this secret should be already created on the k8s cluster in the same namespace>
-....
-En la sección _SPEC:_, realice los siguientes cambios:
+Edite AgentConfiguration en operator-config.yaml para reflejar la nueva ubicación de repositorio de Docker. Cree una nueva imagePullSecret para su repositorio privado, para más detalles consulte _https://kubernetes.io/docs/tasks/configure-pod-container/pull-image-private-registry/_
 
 ....
-spec:
-  telegraf:
-    - name: ksm
-      substitutions:
-        - key: k8s.gcr.io
-          value: <same as "docker-repo" field above>
+# An optional docker registry where you want docker images to be pulled from as compared to CI's docker registry
+# Please see documentation link here:
+dockerRepo: your.docker.repo/long/path/to/test
+# Optional: A docker image pull secret that maybe needed for your private docker registry
+dockerImagePullSecret: docker-secret-name
 ....
 
 
 === Instrucciones de OpenShift
 
-Si se ejecuta en OpenShift 4.6 o superior, debe cambiar la configuración de "modo privilegiado". Ejecute el siguiente comando para abrir el agente para editarlo. Si se utiliza un espacio de nombres distinto a "netapp-Monitoring", especifique ese espacio de nombres en la línea de comandos:
+Si se ejecuta en OpenShift 4,6 o superior, debe editar la configuración de AgentConfiguration en _operator-config.yaml_ para activar la configuración _runPrivileged_:
 
- kubectl edit agent agent-monitoring-netapp -n netapp-monitoring
-En el archivo, cambie _Privileged-mode: FALSE_ a _Privileged-mode: True_
-
+....
+# Set runPrivileged to true SELinux is enabled on your kubernetes nodes
+runPrivileged: true
+....
 OpenShift puede implementar un nivel de seguridad añadido que puede bloquear el acceso a algunos componentes de Kubernetes.
 
 
 
 == Instalación del operador de supervisión Kubernetes de NetApp
 
-image:NKMO_Install_Instructions.png["Instalación basada en el operador"]
+image:NKMO-Instructions-1.png[""]
+image:NKMO-Instructions-2.png[""]
 
 .Pasos para instalar el agente del operador de NetApp Kubernetes Monitoring en Kubernetes:
 . Introduzca un nombre de clúster y un espacio de nombres únicos. Si lo es <<actualizar,actualizar>> En el agente basado en scripts o en un operador de Kubernetes anterior, utilice el mismo nombre de clúster y espacio de nombres.
-. Una vez introducidos, puede copiar el fragmento de instalador de agentes
-. Haga clic en el botón para copiar este fragmento en el portapapeles.
-. Pegue el fragmento en una ventana _bash_ y ejecútelo. Tenga en cuenta que el fragmento tiene una clave única y es válido durante 24 horas.
-. La instalación se realiza automáticamente. Cuando finalice, haga clic en el botón _Complete Setup_.
+. Una vez introducidos, puede copiar el fragmento del comando de descarga en el portapapeles.
+. Pegue el fragmento en una ventana _bash_ y ejecútelo. Se descargarán los archivos de instalación del operador. Tenga en cuenta que el fragmento tiene una clave única y es válido durante 24 horas.
+. Si tiene un repositorio personalizado o privado, copie el fragmento opcional Image pull, péguelo en un shell _bash_ y ejecútelo. Una vez extraídas las imágenes, cópielas en tu repositorio privado. Asegúrese de mantener las mismas etiquetas y la misma estructura de carpetas. Actualice las rutas de acceso en _operator-deployment.yaml_, así como la configuración del repositorio de Docker en _operator-config.yaml_.
+. Si lo desea, revise las opciones de configuración disponibles, como la configuración de repositorio privado o proxy. Puedes leer más sobre link:telegraf_agent_k8s_config_options.html["opciones de configuración"].
+. Cuando esté listo, despliegue el Operador copiando el fragmento de aplicación kubectl, descargándolo y ejecutándolo.
+. La instalación se realiza automáticamente. Cuando haya terminado, haga clic en el botón _Next_.
+. Una vez finalizada la instalación, haga clic en el botón _Next_. Asegúrese también de eliminar o almacenar de forma segura el archivo _operator-secrets.yaml_.
 
 
+Más información acerca de <<configuring-proxy-support,configurando proxy>>.
 
-NOTE: La configuración está incompleta hasta que usted <<configuring-proxy-support,configure su proxy>>.
+Más información acerca de <<using-a-custom-or-private-docker-repository,utilizando un repositorio de docker personalizado/privado>>.
 
+La recogida de registros de EMS de Kubernetes se habilita de forma predeterminada cuando se instala el operador de supervisión de Kubernetes de NetApp. Para deshabilitar esta colección después de la instalación, haga clic en el botón *Modificar implementación* en la parte superior de la página de detalles del clúster de Kubernetes y anule la selección de “Recopilación de registros”.
 
-NOTE: Si dispone de un repositorio personalizado, debe seguir las instrucciones de <<using-a-custom-or-private-docker-repository,Uso de un repositorio de Docker personalizado/privado>>.
+image:K8s_Modify_Deployment_Screen.png["Pantalla Modificar Despliegue que muestra la casilla de verificación para la recopilación de registros"]
+
+Esta pantalla también muestra el estado actual de la recopilación de registros. A continuación se muestran los estados posibles:
+
+* Deshabilitado
+* Activado
+* Habilitado: Instalación en curso
+* Activado: Sin conexión
+* Activado: En línea
+* Error: La clave API tiene permisos insuficientes
+
 
 
 
@@ -301,16 +269,35 @@ Si el espacio de nombres de monitorización se utiliza con otros fines además d
 
 === Actualice al operador de supervisión Kubernetes de NetApp más reciente
 
-Para actualizaciones de instalación basadas en el operador, ejecute los siguientes comandos:
+Determine si existe una AgentConfiguration con el operador existente (si el espacio de nombres no es el valor predeterminado _netapp-monitoring_, sustituya el espacio de nombres adecuado):
 
-* Anote el nombre del clúster según lo reconoce Cloud Insights. Puede ver el nombre del clúster ejecutando el siguiente comando. Si el espacio de nombres no es el valor predeterminado (_netapp-Monitoring_), reemplace el espacio de nombres correspondiente:
+ kubectl -n netapp-monitoring get agentconfiguration netapp-monitoring-configuration
+Si existe una configuración de agente:
+
+* <<installing-the-netapp-kubernetes-monitoring-operator,Instale>> El último operador sobre el operador existente.
++
+** Asegúrese de que lo está <<using-a-custom-or-private-docker-repository,extracción de las imágenes de contenedor más recientes>> si utiliza un repositorio personalizado.
+
+
+
+
+Si la configuración de agente no existe:
+
+* Anote el nombre del clúster reconocido por Cloud Insights (si su espacio de nombres no es la supervisión de netapp predeterminada, sustituya el espacio de nombres adecuado):
 +
  kubectl -n netapp-monitoring get agent -o jsonpath='{.items[0].spec.cluster-name}'
+* Cree una copia de seguridad del Operador existente (si su espacio de nombres no es el control de netapp predeterminado, sustituya el espacio de nombres adecuado):
++
+ kubectl -n netapp-monitoring get agent -o yaml > agent_backup.yaml
+* <<to-remove-the-netapp-kubernetes-monitoring-operator,Desinstalar>> El operador existente.
+* <<installing-the-netapp-kubernetes-monitoring-operator,Instale>> El operador más reciente.
++
+** Utilice el mismo nombre de clúster.
+** Después de descargar los últimos archivos YAML del operador, transfiera cualquier personalización encontrada en agent_backup.yaml al operator-config.yaml descargado antes de implementar.
+** Asegúrese de que lo está <<using-a-custom-or-private-docker-repository,extracción de las imágenes de contenedor más recientes>> si utiliza un repositorio personalizado.
 
 
-<<to-remove-the-netapp-kubernetes-monitoring-operator,Desinstalar>> El operador actual.
 
-<<installing-the-netapp-kubernetes-monitoring-operator,Instale>> El operador más reciente. Utilice el mismo nombre de clúster y asegúrese de extraer nuevas imágenes de contenedor si ha configurado un repo personalizado.
 
 
 
@@ -384,19 +371,19 @@ El operador de supervisión NetApp Kubernetes instala el métrica del estado kub
 
 Utilice los siguientes vínculos para acceder a la información de estos contadores de métricas de estado de kube:
 
-. https://github.com/kubernetes/kube-state-metrics/blob/master/docs/configmap-metrics.md["Métricas de ConfigMap"]
-. https://github.com/kubernetes/kube-state-metrics/blob/master/docs/daemonset-metrics.md["DemonSet Metrics"]
-. https://github.com/kubernetes/kube-state-metrics/blob/master/docs/deployment-metrics.md["Métricas de puesta en marcha"]
-. https://github.com/kubernetes/kube-state-metrics/blob/master/docs/ingress-metrics.md["Métricas de entrada"]
-. https://github.com/kubernetes/kube-state-metrics/blob/master/docs/namespace-metrics.md["Métricas de espacio de nombres"]
-. https://github.com/kubernetes/kube-state-metrics/blob/master/docs/node-metrics.md["Métricas de nodo"]
-. https://github.com/kubernetes/kube-state-metrics/blob/master/docs/persistentvolume-metrics.md["Métricas de volúmenes persistentes"]
-. https://github.com/kubernetes/kube-state-metrics/blob/master/docs/persistentvolumeclaim-metrics.md["Métricas de reclamaciones de volumen persistente"]
-. https://github.com/kubernetes/kube-state-metrics/blob/master/docs/pod-metrics.md["Métricas de POD"]
-. https://github.com/kubernetes/kube-state-metrics/blob/master/docs/replicaset-metrics.md["Métricas replicaset"]
-. https://github.com/kubernetes/kube-state-metrics/blob/master/docs/secret-metrics.md["Métricas secretas"]
-. https://github.com/kubernetes/kube-state-metrics/blob/master/docs/service-metrics.md["Métricas de servicio"]
-. https://github.com/kubernetes/kube-state-metrics/blob/master/docs/statefulset-metrics.md["Métricas de Statilusionados Set"]
+. https://["Métricas de ConfigMap"]
+. https://["DemonSet Metrics"]
+. https://["Métricas de puesta en marcha"]
+. https://["Métricas de entrada"]
+. https://["Métricas de espacio de nombres"]
+. https://["Métricas de nodo"]
+. https://["Métricas de volúmenes persistentes"]
+. https://["Métricas de reclamaciones de volumen persistente"]
+. https://["Métricas de POD"]
+. https://["Métricas replicaset"]
+. https://["Métricas secretas"]
+. https://["Métricas de servicio"]
+. https://["Métricas de Statilusionados Set"]
 
 
 
@@ -446,16 +433,6 @@ El archivo de suma de comprobación firmado se puede verificar mediante el archi
 Una vez que todos los artefactos han sido verificados satisfactoriamente, la instalación del agente se puede iniciar ejecutando:
 
  sudo -E -H ./<installation_script_name> --install
-
-
-== Ajuste del operador
-
-Puede ajustar el operador de supervisión Kubernetes de NetApp para obtener un rendimiento óptimo ajustando ciertas variables para recursos personalizados. Para obtener instrucciones y listas de las variables que puede ajustar, consulte el archivo README incluido con el paquete de instalación. Después de instalar el operador, utilice el siguiente comando para ver el README:
-
- kubectl exec -c manager -it <operator-pod-name> -n <namespace> -- cat configs/substitution-vars/README.txt
-
-NOTE: La sintonización del operador no está disponible en la edición federal de Cloud Insights
-
 
 
 == Resolución de problemas

@@ -27,7 +27,7 @@ Una vez que la cuenta se haya configurado correctamente y registre la aplicació
 
 
 
-https://docs.microsoft.com/en-us/azure/active-directory/develop/howto-create-service-principal-portal[]
+https://[]
 
 
 

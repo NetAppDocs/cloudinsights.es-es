@@ -30,7 +30,7 @@ image:ActiveMQDCConfigWindows.png["Configuración de ActiveMQ"]
 
 == Configuración
 
-Puede encontrar información en la http://activemq.apache.org/getting-started.html["Documentación de ActiveMQ"]
+Puede encontrar información en la http://["Documentación de ActiveMQ"]
 
 
 
