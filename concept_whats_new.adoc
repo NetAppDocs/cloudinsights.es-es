@@ -33,7 +33,7 @@ NOTE: Es posible que algunas de estas funciones no estén disponibles en la edic
 
 Instalación y configuración del link:task_config_telegraf_agent_k8s.html["Operador de supervisión Kubernetes de NetApp"] es más fácil que nunca con las siguientes mejoras:
 
-* Entorno Oracle link:TBD["ajustes de configuración"] se guardan en un único archivo de configuración autodocumentado.
+* Entorno Oracle link:telegraf_agent_k8s_config_options.html["ajustes de configuración"] se guardan en un único archivo de configuración autodocumentado.
 * Instrucciones paso a paso para cargar imágenes del operador de monitoreo de Kubernetes en su repositorio privado.
 * Fácil de actualizar con un solo comando para actualizar su supervisión de Kubernetes manteniendo configuraciones personalizadas.
 * Más protegidos: Las claves API gestionan los secretos de forma segura.
@@ -79,7 +79,7 @@ Muchos monitores del sistema ONTAP están activados (es decir, _resume_) de form
 
 === Supervisión y asignación del rendimiento de Kubernetes
 
-5d6a6764c313767cd859950497830f19
+La link:concept_kubernetes_network_monitoring_and_map.html["_Rendimiento de la red de Kubernetes y Map_"] Esta función simplifica la solución de problemas mediante la asignación de dependencias entre cargas de trabajo de Kubernetes. Proporciona visibilidad en tiempo real de las latencias y anomalías del rendimiento de la red de Kubernetes para identificar problemas de rendimiento antes de que afecten a los usuarios. Esta funcionalidad ayuda a las organizaciones a reducir los costes generales mediante el análisis y la auditoría de los flujos de tráfico de Kubernetes.
 
 Características principales: • El mapa de carga de trabajo presenta los flujos y dependencias de las cargas de trabajo de Kubernetes y destaca los problemas de red y de rendimiento. • Supervisar el tráfico de red entre los pods de Kubernetes, las cargas de trabajo y los nodos; identifica la fuente del tráfico y los problemas de latencia. • Reduzca los costes generales analizando el tráfico de red entre zonas, entre regiones y entre zonas.
 

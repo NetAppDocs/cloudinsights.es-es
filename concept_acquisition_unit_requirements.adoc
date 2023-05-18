@@ -21,7 +21,7 @@ Debe instalar una unidad de adquisición (AU) para obtener información de los r
 | Componente | Requisitos de Linux | Requisitos de Windows 
 
 
-| De NetApp | 9eaf347efd9d5225664dc4c414a82eb2 | Un equipo que ejecuta una versión con licencia de una de las siguientes opciones: * Microsoft Windows 10 64 bits * Microsoft Windows Server 2012 * Microsoft Windows Server 2012 R2 * Microsoft Windows Server 2016 * Microsoft Windows Server 2019 * Microsoft Windows Server 2022 * Microsoft Windows 11 este equipo no debe ejecutar ningún otro software de nivel de aplicación. Se recomienda un servidor dedicado. 
+| De NetApp | Un equipo que ejecuta una versión con licencia de uno de los siguientes: * CentOS (64 bits): 7,2 a 7,9, Stream 8, Stream 9 * Debian (64 bits): 9 y 10 * Oracle Enterprise Linux (64 bits): 7,5 a 7,9, 8,1 a 8,4 * Red Hat Enterprise Linux (64 bits): 7,2 a 7,9, 8,1 a 9,1 * Rocky 9,0, 9,1 * Ubuntu Server: 18,04 y 20,04 LTS Este equipo no debería ejecutar ningún otro software de nivel de aplicación. Se recomienda un servidor dedicado. | Un equipo que ejecuta una versión con licencia de una de las siguientes opciones: * Microsoft Windows 10 64 bits * Microsoft Windows Server 2012 * Microsoft Windows Server 2012 R2 * Microsoft Windows Server 2016 * Microsoft Windows Server 2019 * Microsoft Windows Server 2022 * Microsoft Windows 11 este equipo no debe ejecutar ningún otro software de nivel de aplicación. Se recomienda un servidor dedicado. 
 
 
 | CPU | 2 núcleos de CPU | Igual 
@@ -63,3 +63,10 @@ Es posible empezar con una unidad de adquisición Cloud Insights con solo 8 GB d
 Para cada respuesta "Sí" anterior, se recomienda añadir 8 GB de memoria y 50 GB de espacio en disco a la unidad AU. Así pues, si ha respondido afirmativamente a ambos, deberá poner en marcha un sistema de memoria de 24 GB con 150 GB o más de espacio en disco. En Linux, el espacio en disco que se agregará a la ubicación del registro.
 
 Si quiere más preguntas de tamaño, póngase en contacto con el soporte de NetApp.
+
+
+
+== Requisito de edición federal adicional
+
+* Para instalaciones de unidades de adquisición en clusters de edición federal de Cloud Insights, el sistema operativo subyacente debe tener una buena fuente de entropía. En sistemas Linux esto se hace normalmente instalando _rng-tools_ o mediante la generación de números aleatorios (RNG) de hardware. Es responsabilidad del cliente asegurarse de que se cumple este requisito en la máquina de la unidad de adquisición.
+
