@@ -16,11 +16,7 @@ NOTE: La información _Reclaim ONTAP Cold Storage_ se considera como link:concep
 
 Para ver estos detalles, navegue a *Paneles de mando > Información* y eche un vistazo a la información _Reclaim ONTAP Cold Storage_. Tenga en cuenta que este Insight solo incluirá los almacenamientos afectados si Cloud Insights ha detectado almacenamiento en frío; de lo contrario, aparecerá un mensaje que indica que todos se borrarán.
 
-Tenga en cuenta que:
-
-* No se muestran los datos inactivos de menos de 30 días de antigüedad.
-* Los volúmenes constituyentes de una FlexGroup no se incluyen en los cálculos de datos inactivos (ya que la política del nivel no puede establecerse en los componentes).
-
+Tenga en cuenta que no se muestran los datos inactivos de menos de 30 días de antigüedad.
 
 image:Cold_Data_Insight_List.png["Lista de Insight que muestra 3 almacenamientos con datos fríos"]
 
