@@ -10862,18 +10862,11 @@
   <block id="930fd15ae62cafe82d62d6912f307087" category="paragraph">La descripción de Insight ofrece una indicación rápida de la cantidad de datos detectados como «inactivos» y del almacenamiento en el que residen los datos. La tabla también proporciona un recuento de cargas de trabajo con datos inactivos.</block>
   <block id="7cc631429c391f70b58e64999f7fbe48" category="inline-link-macro">Calculadora de TCO de NetApp</block>
   <block id="cdb12d4961181c6c0d6f14a1a17cfd87" category="paragraph">Al seleccionar un Insight de la lista se abre una página que muestra más detalles, incluidas recomendaciones para mover datos al cloud o reducir el ciclo de discos unificados, así como un ahorro estimado en costes y energía que podría obtener al implementar estas recomendaciones. La página incluso proporciona un enlace práctico <block ref="928b307e42240e05f4c78ed4745d6f3a" category="inline-link-macro-rx"></block> así que usted puede experimentar con los números.</block>
-  <block id="d4dcff57f0b29162c5b6b2c09678b2e2" category="inline-image-macro">Ejemplo de datos fríos</block>
-  <block id="3f7f21955dfa309fc0646bb3a937c6fb" category="paragraph"><block ref="3f7f21955dfa309fc0646bb3a937c6fb" category="inline-image-macro-rx" type="image"></block></block>
   <block id="a5048bf2003cf033b80e3fa2e33502f8" category="paragraph">En la página de Insight, expanda las *Recomendaciones* para explorar las siguientes opciones:</block>
   <block id="f77e48bcc98143a3f6bd8bcc492be286" category="list-text">Mueva cargas de trabajo no utilizadas (zombis) a un nivel de almacenamiento de menor coste (HDD).</block>
-  <block id="52119c89cf47d4da7004a38925cca6c7" category="paragraph">Utilizando el indicador zombie, el almacenamiento de datos de reserva y el número de días, encontrar la mayor cantidad de datos más inactivos y mover la carga de trabajo a un nivel de almacenamiento de menor coste (como un pool de almacenamiento que utiliza almacenamiento en disco duro). Una carga de trabajo se considera un “zombi” cuando IS no ha recibido ninguna solicitud de E/S significativa durante siete días o más.</block>
   <block id="c8abb3322f2d9026ffca3cbd29c6e9ba" category="list-text">Elimine las cargas de trabajo no utilizadas</block>
   <block id="42bb4c2dadbccfef009beef19eb60c44" category="paragraph">Verifique qué cargas de trabajo no están en uso y considere archivarlas o eliminarlas del sistema de almacenamiento.</block>
   <block id="30dc3fa30dc934a0d0aa98e3789e46c2" category="list-text">Considere la solución Fabric Pool de NetApp</block>
-  <block id="5338c9536e3c14268eb7568f06d418b6" category="paragraph">La solución Fabric Pool de NetApp organiza automáticamente en niveles los datos fríos en un almacenamiento en cloud de bajo coste, lo que aumenta la eficiencia de su nivel de rendimiento y ofrece protección de datos remota.</block>
-  <block id="394172dfa5bac3cc560f6f81bc64334d" category="paragraph">El gráfico y la tabla proporcionan información adicional sobre tendencias, además de permiten profundizar en las cargas de trabajo individuales.</block>
-  <block id="e8f788aa86e776dcd96d7f18cf2b3073" category="inline-image-macro">Cold_Data_Workload_Graph_and_Table</block>
-  <block id="18149ca5a604ec569675b78f1c8cfba7" category="paragraph"><block ref="18149ca5a604ec569675b78f1c8cfba7" category="inline-image-macro-rx" type="image"></block></block>
   <block id="db08e6b1d619064fa3fd2035f5926d18" category="paragraph">La información _Reclaim ONTAP Cold Storage_ proporciona datos sobre capacidad fría, ahorros potenciales de costes y energía, y elementos de acción recomendados para volúmenes en sistemas de ONTAP. <block ref="82cab8f639b07ead699dc071830d992e" category="inline-link-macro-rx"></block></block>
   <block id="3a4ab80b2583f296b4bc5d2e0c2c4b5d" category="admonition">Esta es una función _Preview_ y puede cambiar con el tiempo a medida que se realizan mejoras. <block ref="ee58f03d7eaea0665aa8a572992ca1b8" category="inline-link-macro-rx"></block> Acerca de las funciones de vista preliminar de Cloud Insights.</block>
   <block id="ec1ac4271fbf56890989ecb3a691d684" category="list-text">Vaya a *Menú &gt; Contenido &gt; Contenido del equipo &gt; Informes*</block>
@@ -11164,4 +11157,19 @@
   <block id="3242b3c34922ab4d5cbff714ffb3f35b" category="paragraph">_Revertir a predeterminado_ está disponible en la esquina superior derecha de un panel de control personalizado o la pantalla de la página de destino.</block>
   <block id="22d3924d22161b1ae53430a86affea68" category="inline-image-macro">Botón Volver al valor predeterminado</block>
   <block id="bf5be9dc856a4d42607ac85b1e6ff046" category="paragraph"><block ref="bf5be9dc856a4d42607ac85b1e6ff046" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="2499dbd8754ba0ea2e48f7f26299df85" category="paragraph">Tenga en cuenta que:</block>
+  <block id="aba1e07f8a596005af956e7d0d072235" category="list-text">No se muestran los datos inactivos de menos de 30 días de antigüedad.</block>
+  <block id="caacdebad7604a39622c94eec31be40b" category="list-text">Los volúmenes constituyentes de una FlexGroup no se incluyen en los cálculos de datos inactivos (ya que la política del nivel no puede establecerse en los componentes).</block>
+  <block id="c2022a18b75555c824458ee568cfdfca" category="inline-image-macro">Información de alimentación de datos fríos</block>
+  <block id="6a79fd430dc36a8f17aaf2f28988d6e6" category="paragraph"><block ref="6a79fd430dc36a8f17aaf2f28988d6e6" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="5259ae4afb5996ff48788b2fa720114c" category="section-title">Recomendaciones</block>
+  <block id="987152d50a80bdf0820a4f1fd1771f81" category="paragraph">Utilizando el indicador zombie, el almacenamiento de datos de reserva y el número de días, encontrar la mayor cantidad de datos más inactivos y mover la carga de trabajo a un nivel de almacenamiento de menor coste (como un pool de almacenamiento que utiliza almacenamiento en disco duro). Una carga de trabajo se considera un “zombi” cuando IS no ha recibido ninguna solicitud de E/S significativa durante 30 días o más.</block>
+  <block id="27130393c9a69c9ac4259ad677b7e09b" category="inline-link-macro">Solución Fabric Pool</block>
+  <block id="a7c5cd98f24711202e2a8089e206922c" category="paragraph">La de NetApp <block ref="6dfc63a251a9b042b77c667e40f20df9" category="inline-link-macro-rx"></block> organiza automáticamente en niveles los datos inactivos en almacenamiento en cloud de bajo coste, lo que aumenta la eficiencia del nivel de rendimiento y ofrece protección de datos remota.</block>
+  <block id="b0bad3786567c06c6ba5f9c05f89f0fb" category="section-title">Visualiza y explora</block>
+  <block id="f9a5f3e9d6c824797a0884341490f583" category="paragraph">Los gráficos y la tabla proporcionan información adicional sobre tendencias, así como permiten profundizar en las cargas de trabajo individuales.</block>
+  <block id="046d0c83fcc2f8749fd500daded4836a" category="inline-image-macro">Gráficos de resumen de datos fríos</block>
+  <block id="907a69f25ca7c9e8619e2c59a67ab607" category="inline-image-macro">Tabla de carga de trabajo de datos fríos</block>
+  <block id="e185f5cf502ca7079fb5eb3b60a77e41" category="paragraph"><block ref="e9ec82200521512971fafc4c0e21c2af" category="inline-image-macro-rx" type="image"></block>
+<block ref="d2dfbff86c21669b3c15073a169ec8ac" category="inline-image-macro-rx" type="image"></block></block>
 </blocks>
