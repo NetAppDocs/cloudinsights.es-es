@@ -5108,20 +5108,6 @@
   <block id="34727dd01aaa3e0d53fd68d429bbff53" category="doc">Recopilador de datos de NetApp Cloud Connection para ONTAP 9.9+</block>
   <block id="0803ffc49bb5d009027ad578d29858b8" category="paragraph">Este recopilador de datos crea una conexión con el cloud para admitir la recogida de datos de los sistemas ONTAP 9.9+ CVO, AFF y FAS.</block>
   <block id="35799672184c185a5b76dc14b0e32aa7" category="inline-link-macro">Base de conocimientos</block>
-  <block id="99135d7be2a5fb615612c7da87e284f9" category="paragraph">Cloud Insights recopila datos de ONTAP 9.9+ mediante una *conexión en nube*, lo que elimina la necesidad de instalar una unidad de adquisición externa, lo que simplifica la solución de problemas, el mantenimiento y la implementación inicial. La configuración de la conexión en la nube para el recopilador de datos ONTAP 9.9+ requiere que copie un *Código de emparejamiento* en el Administrador del sistema de ONTAP, que establecerá una conexión con el entorno de Cloud Insights. Una vez establecida la conexión, los datos recopilados son los mismos que si se recopilaron a través de una unidad de adquisición.</block>
-  <block id="72c287aa31792e43cc71160178046540" category="paragraph">Este recopilador de datos admite sistemas ONTAP 9.9+ de CVO, AFF y FAS.</block>
-  <block id="2a631e19719818429fd1edf9045b1163" category="inline-image-macro">Configuración de recopilador de datos de Cloud Agent</block>
-  <block id="686b6f246c6d71648125bb6df261eda5" category="paragraph"><block ref="686b6f246c6d71648125bb6df261eda5" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="b3f4b400496b1f1be79ceb4e94a91c9a" category="paragraph">Siga estos pasos para configurar la conexión:</block>
-  <block id="3e71c2acb888e5c54e107a6e20c6d734" category="list-text">Genere un token único que se utilizará para establecer la conexión con el sistema ONTAP.</block>
-  <block id="5aa319f21d7d467c78e0900ae3ce4fe7" category="list-text">Copie el código de emparejamiento, que incluye el token. Puede ver el código de emparejamiento haciendo clic en _[+] Revelve Code Snippet_.</block>
-  <block id="92d743a425aee6a9d199011e37f4a7a4" category="paragraph">Una vez que haya copiado el código de emparejamiento, la pantalla de configuración del recopilador de datos revelará un paso 6, que le pedirá que espere a que se establezca la conexión. No es necesario hacer nada más en esta pantalla hasta que se establezca la conexión.</block>
-  <block id="91984937f546d43518e93c72ed5b7c0f" category="inline-image-macro">Esperando conexión</block>
-  <block id="5e9af3de724d92d3056b1b1acbe5c289" category="paragraph"><block ref="5e9af3de724d92d3056b1b1acbe5c289" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="017330578692e5d7e9299cce45d52f9a" category="list-text">En una nueva pestaña del navegador, inicie sesión en ONTAP System Manager y desplácese hasta _Cluster &gt; Configuración &gt; conexiones cloud_.</block>
-  <block id="5e1ab5a21ba64b40d2b3a2b6b18b1d7d" category="list-text">Haga clic en _Add Cloud Connection_ y pegue el código de emparejamiento.</block>
-  <block id="da7eaf2bcf79794e261e4a33bfc75902" category="list-text">Vuelva a la pestaña Cloud Insights del navegador y espere a que se establezca la conexión. Una vez establecido, se revela un botón _Complete_.</block>
-  <block id="e01ce4b74a8ea3e86d2c3af5c67d14e0" category="list-text">Haga clic en _Complete_.</block>
   <block id="4715797e850d7872546c22d0a379ca4f" category="summary">Utilice una consulta para asignar varias aplicaciones o anotaciones a objetos o para eliminar varias aplicaciones o anotaciones de ellos.</block>
   <block id="de1cabd167f3864b78d24d3da683bd0c" category="doc">Asignar múltiples aplicaciones a o quitar varias aplicaciones de activos</block>
   <block id="b5fba9ff24d0045d1377a05a46b32f68" category="inline-link-macro">más grandes</block>
@@ -5160,8 +5146,6 @@
   <block id="0b27918290ff5323bea1e3b78a9cf04e" category="list-text">Archivo</block>
   <block id="ac70412e939d72a9234cdebb1af5867b" category="list-text">Ruta</block>
   <block id="51d68bd940901bf218b5d1798790ca09" category="list-text">La dirección IP desde la que se ejecutó la operación.</block>
-  <block id="bca1a19f88eb685d9344ee1f28f51dd2" category="inline-link-macro">en su lugar, esta página</block>
-  <block id="f57612bca660c9f1bc786c2d822f16a1" category="paragraph">Esta página está obsoleta y no se actualizará. Vaya a. <block ref="c5c1ccfedff026e54c070cb8b94b3e05" category="inline-link-macro-rx"></block>.</block>
   <block id="29b0e1bb2381801d4265a78527e6ea22" category="summary">Informes personalizados y predefinidos de sus datos con Cloud Insights.</block>
   <block id="e597f313c194b3080587aaf8e1fbb2c8" category="doc">Información general sobre informes de Cloud Insights</block>
   <block id="e6c80af8f4cc9c714980fc1bb28ff631" category="paragraph">La generación de informes Cloud Insights es una herramienta de inteligencia empresarial que permite ver informes predefinidos o crear informes personalizados.</block>
@@ -10623,7 +10607,6 @@
   <block id="5787741cafb89158f9880654c9e9b5a5" category="paragraph">Una vez finalizada la creación de su entorno, puede usar las credenciales de Cloud Central para iniciar sesión e iniciar una prueba gratuita de 30 días de Cloud Insights. Durante esta prueba se pueden explorar las funciones que Cloud Insights puede ofrecer.</block>
   <block id="1eb5ae63609e68a11106494d272615bf" category="cell">Gestión de clústeres</block>
   <block id="269ab41459ba8b3de391eb30b649d222" category="cell">Necesario para el bloqueo de usuarios CIFS/SMB.</block>
-  <block id="bcef352854994ddcd8d20e92b3fdd116" category="admonition">Este recopilador de datos ya no está disponible en Cloud Insights a partir del 4 de abril de 2023. Para obtener información sobre la transición a la recopilación de datos basada en AU, consulte <block ref="334c0315e59c6351d5f9bac4d495b3ee" category="inline-link-macro-rx"></block>.</block>
   <block id="0d04c76d344b77c4e10b41c28526be07" category="paragraph">Al seleccionar *Storage Manager Dashboard* de Team Content, se proporcionan varios informes que proporcionan información sobre su tráfico y almacenamiento.</block>
   <block id="bfc0aa4d9884a38d2f3079aa329eef54" category="inline-image-macro">Opciones de la consola de Storage Manager</block>
   <block id="8f6a27e4a5050011d91bc9e27e37e101" category="paragraph"><block ref="8f6a27e4a5050011d91bc9e27e37e101" category="inline-image-macro-rx" type="image"></block></block>
@@ -11170,4 +11153,5 @@
   <block id="e185f5cf502ca7079fb5eb3b60a77e41" category="paragraph"><block ref="e9ec82200521512971fafc4c0e21c2af" category="inline-image-macro-rx" type="image"></block>
 <block ref="d2dfbff86c21669b3c15073a169ec8ac" category="inline-image-macro-rx" type="image"></block></block>
   <block id="d752ee7de9162d5e0fa475e8a383ea29" category="paragraph">Tenga en cuenta que no se muestran los datos inactivos de menos de 30 días de antigüedad.</block>
+  <block id="27f435bf6cee52f54cff928bd45b8ee0" category="admonition">Este recopilador de datos ya no está disponible para su instalación en Cloud Insights a partir del 4 de abril de 2023 y se eliminará de todas las instalaciones de Cloud Insights el 25 de mayo de 2023. Para obtener información sobre la transición a la recopilación de datos basada en AU, consulte <block ref="334c0315e59c6351d5f9bac4d495b3ee" category="inline-link-macro-rx"></block>.</block>
 </blocks>
