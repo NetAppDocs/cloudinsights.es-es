@@ -38,9 +38,33 @@ Nota: Un número "días a lleno" de "0" (cero) indica que se estima que días a 
 
 == Protección de datos
 
-Seleccione la página *Data Protection* para ver las relaciones de SnapMirror. Haga clic en hasta la información del volumen de origen o de destino, o bien haga clic en el icono de engranaje para agregar columnas para los datos que desea ver.
+La página *Protección de datos* muestra el estado de los volúmenes protegidos por *Copias instantáneas* o *Políticas de SnapMirror*.
 
-image:DataProtectionDashboard_OverviewWidgets.png["Widgets del panel de control de protección de datos que muestran las descripciones locales y remotas"]
+En la sección _Local Protection Overview_, los gráficos proporcionan la siguiente información para los volúmenes protegidos por copias Snapshot:
+
+* El número de volúmenes protegidos por copias Snapshot, así como aquellos no protegidos.
+* El número de volúmenes que usan o superan el espacio de reserva para las copias Snapshot.
+* El número de volúmenes en rangos específicos de copias de Snapshot (es decir, menos de 10 copias, de 10 a 200, etc.).
+
+
+En la sección _Remote Protection Overview_, los gráficos proporcionan información relacionada con los volúmenes protegidos por políticas de SnapMirror:
+
+* Número de relaciones de SnapMirror en buen estado e incorrecto.
+* El número de relaciones de SnapMirror con retraso del objetivo de punto de recuperación (RPO) según el estado de desfase.
+* Número de relaciones protegidas por los tipos de protección de volumen de SnapMirror, como SnapMirror para volumen, relaciones de SVMDR, relaciones de SnapMirror de FlexGroup, relaciones de grupo de consistencia de continuidad empresarial de SnapMirror (SMBC), así como volúmenes no protegidos.
+* El número de relaciones que protegen los tipos de relaciones de SnapMirror, como Asynchronous Mirror, Asynchronous Vault, Asynchronous MirrorVault, StrictSync y Sync.
+
+
+image:DataProtectionDashboard_OverviewWidgets_.png["Widgets del panel de control de protección de datos que muestran las descripciones locales y remotas"]
+
+La cuadrícula _Clusters_ de la parte inferior de la página proporciona detalles relacionados con lo siguiente:
+
+* Volúmenes no protegidos por Snapshot.
+* Los volúmenes sobrepasan el espacio de reserva de snapshots.
+* Volúmenes no protegidos por las políticas de snapmirror y las relaciones de snapmirror experimentan retraso.
+* Relaciones de SnapMirror en mal estado.
+
+
 image:DataProtectionDashboard_ClusterList.png["Lista de clústeres de protección de datos"]
 
 
