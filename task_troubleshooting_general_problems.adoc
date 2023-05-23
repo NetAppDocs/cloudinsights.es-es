@@ -15,7 +15,7 @@ Consulte también link:task_troubleshooting_linux_acquisition_unit_problems.html
 
 
 
-== Problemas de inicio de sesión:
+== Problemas de inicio de sesión
 
 |===
 | *Problema:* | *Pruebe esto:* 

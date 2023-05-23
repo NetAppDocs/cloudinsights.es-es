@@ -10362,7 +10362,6 @@
   <block id="33d5b65987e920095c97ae5d99207a0e" category="inline-link-macro">Solución de problemas de la unidad de adquisición de Linux</block>
   <block id="62c67fa153e5c97540977071f595a3e2" category="inline-link-macro">Solución de problemas de la unidad de adquisición de Windows</block>
   <block id="06aca4757909dd673728a20d193d0656" category="paragraph">Consulte también <block ref="35efea8886727053938c867d4e4688d5" category="inline-link-macro-rx"></block> y.. <block ref="5e216da5f7cd032fff10ef75fa563a40" category="inline-link-macro-rx"></block>.</block>
-  <block id="b22cca9a93dc0eb73fc0c386fc686eb3" category="section-title">Problemas de inicio de sesión:</block>
   <block id="55117c7bec968b88df3f1dfc434eac84" category="cell">Cloud Insights cierra sesión cada 5 minutos</block>
   <block id="396149d67edd166e53b49c38f4b707ba" category="cell">Habilitar la aceptación de terceros para las cookies de NetApp y auth0 necesarias. Ejemplo: En Chrome, escriba "Chrome://settings/cookies" en la URL del navegador. Seleccione la opción "permitir todas las cookies". *O* Seleccione "Bloquear cookies de terceros" y añada excepciones para [*.]auth0.com y [*.]netapp.com. Nota: Asegúrese de seleccionar la opción "incluir cookies de terceros en este sitio" al crear una excepción.</block>
   <block id="e4ff2e59dd571d2bbd5a906b6fad2546" category="cell">Tengo una cuenta de Cloud Central pero no puedo iniciar sesión en Cloud Central.</block>
@@ -11175,4 +11174,5 @@
   <block id="5a68833b2f8ecb97cbb14d60c5b420a8" category="cell">Solo las cuotas estrictas (se establecen manualmente o se establecen mediante Trident) se mostrarán como las cuotas establecidas; si no se especifican cuotas duras, la capacidad de qtree será la capacidad de volumen interno.</block>
   <block id="1b6ed64bac10ec68f4d03a8505f91c8d" category="cell">Se configuran manualmente tanto una cuota blanda como una estricta en el mismo qtree, pero la capacidad total que muestra es la cuota rígida; ¿es correcto?</block>
   <block id="9c93ad73825174675cbb17fb678b3a8c" category="cell">Sí, si se especifica una cuota estricta, esta se mostrará como la capacidad total.</block>
+  <block id="37b418c8c2b422040e90081e18556979" category="section-title">Problemas de inicio de sesión</block>
 </blocks>
