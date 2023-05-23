@@ -53,7 +53,7 @@ Los siguientes son requisitos para la recopilación del rendimiento:
 * Se debe proporcionar un inicio de sesión de usuario para el servidor cimserver. El inicio de sesión debe tener acceso completo de lectura a la configuración y las propiedades de la matriz.
 * Espacio de nombres SMI-S. El valor predeterminado es root/ibm. Esto se puede configurar en el cimserver.
 * Requisitos de puerto: 5988 para HTTP, 5989 para HTTPS.
-* Consulte el siguiente enlace sobre cómo crear una cuenta para la recopilación del rendimiento de SMI-S: http://[]
+* Consulte el siguiente enlace sobre cómo crear una cuenta para la recopilación del rendimiento de SMI-S: http://publib.boulder.ibm.com/infocenter/tivihelp/v4r1/index.jsp?topic=%2Fcom.ibm.tpc_V41.doc%2Ffqz0_t_adding_cim_agent.html[]
 
 
 

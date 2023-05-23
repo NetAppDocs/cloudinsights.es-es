@@ -1659,8 +1659,8 @@ Cloud Insights incluye varios paneles diseñados previamente para ayudarle a com
 
 Puede encontrar más información sobre los datos avanzados de ONTAP en los siguientes enlaces:
 
-* https://[] (Nota: Tendrá que iniciar sesión en el soporte de NetApp).
-* https://[]
+* https://mysupport.netapp.com/site/tools/tool-eula/netapp-harvest[] (Nota: Tendrá que iniciar sesión en el soporte de NetApp).
+* https://nabox.org/faq/[]
 
 
 

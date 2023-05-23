@@ -18,7 +18,7 @@ NOTE: Esta página hace referencia a instrucciones de terceros, que podrían est
 
 == Ejemplo de Slack:
 
-* Vaya a. https://[] Y cree una nueva aplicación. Asigne un nombre significativo y seleccione el espacio de trabajo Slack.
+* Vaya a. https://api.slack.com/apps[] Y cree una nueva aplicación. Asigne un nombre significativo y seleccione el espacio de trabajo Slack.
 +
 image:Webhooks_Slack_Create_Webhook.png["Cree Slack Webhook"]
 
@@ -59,6 +59,6 @@ image:Webhooks_Slack_Notifications.png["Notificaciones de Webhook"]
 
 ==== Más información:
 
-* Para modificar el formato y el diseño del mensaje, consulte https://[]
-* Gestión de errores: https://[]
+* Para modificar el formato y el diseño del mensaje, consulte https://api.slack.com/messaging/composing[]
+* Gestión de errores: https://api.slack.com/messaging/webhooks#handling_errors[]
 

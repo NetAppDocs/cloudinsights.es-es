@@ -87,7 +87,7 @@ Las etiquetas de carga de trabajo son necesarias si desea que el mapa identifiqu
 +
 ** Se deriva de la etiqueta de carga de trabajo del pod
 ** Se esperaba una etiqueta en la carga de trabajo: App.kubernetes.io/component
-** Referencia de nombre de etiqueta: https://[]
+** Referencia de nombre de etiqueta: https://kubernetes.io/docs/concepts/overview/working-with-objects/common-labels/[]
 ** Etiquetas recomendadas:
 +
 *** front-end

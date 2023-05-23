@@ -14,7 +14,7 @@ Este recopilador de datos permite la recopilación de datos de servidores Apache
 .Requisitos previos
 * Debe tener su servidor Apache HTTP configurado y funcionando correctamente
 * Debe tener permisos sudo o de administrador en el host/máquina virtual del agente
-* Normalmente, el módulo Apache _mod_status_ se configura para exponer una página en la ubicación '/Server-status?auto' del servidor Apache. La opción _ExtendedStatus_ debe estar habilitada para poder recopilar todos los campos disponibles. Para obtener información acerca de cómo configurar el servidor, consulte la documentación del módulo Apache: https://[]
+* Normalmente, el módulo Apache _mod_status_ se configura para exponer una página en la ubicación '/Server-status?auto' del servidor Apache. La opción _ExtendedStatus_ debe estar habilitada para poder recopilar todos los campos disponibles. Para obtener información acerca de cómo configurar el servidor, consulte la documentación del módulo Apache: https://httpd.apache.org/docs/2.4/mod/mod_status.html#enable[]
 
 
 

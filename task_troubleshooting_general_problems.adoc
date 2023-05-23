@@ -24,7 +24,7 @@ Consulte también link:task_troubleshooting_linux_acquisition_unit_problems.html
 | Cloud Insights cierra sesión cada 5 minutos | Habilitar la aceptación de terceros para las cookies de NetApp y auth0 necesarias. Ejemplo: En Chrome, escriba "Chrome://settings/cookies" en la URL del navegador. Seleccione la opción "permitir todas las cookies". *O* Seleccione "Bloquear cookies de terceros" y añada excepciones para [*.]auth0.com y [*.]netapp.com. Nota: Asegúrese de seleccionar la opción "incluir cookies de terceros en este sitio" al crear una excepción. 
 
 
-| Tengo una cuenta de Cloud Central pero no puedo iniciar sesión en Cloud Central. | Abra una entrada desde https://[]. Seleccione la categoría “cloud.netapp.com > problemas de cuenta/inicio de sesión” o “cloud.netapp.com > problemas de Federación”. Esto se refiere específicamente a problemas o preguntas de Cloud Central. Para cualquier otro problema de soporte técnico de Cloud Insights, póngase en contacto con link:concept_requesting_support.html["Soporte de NetApp"]. 
+| Tengo una cuenta de Cloud Central pero no puedo iniciar sesión en Cloud Central. | Abra una entrada desde https://mysupport.netapp.com/site/help[]. Seleccione la categoría “cloud.netapp.com > problemas de cuenta/inicio de sesión” o “cloud.netapp.com > problemas de Federación”. Esto se refiere específicamente a problemas o preguntas de Cloud Central. Para cualquier otro problema de soporte técnico de Cloud Insights, póngase en contacto con link:concept_requesting_support.html["Soporte de NetApp"]. 
 
 
 | Me invité a Cloud Insights pero tengo un mensaje "no autorizado". | Compruebe que se ha registrado en una cuenta de Cloud Central o que su organización utiliza el inicio de sesión SSO con Cloud Central. Compruebe que la dirección de correo electrónico del perfil de Cloud Central coincide con la dirección que se muestra en el correo de bienvenida de Cloud Insights. Si no coincide, solicite una nueva invitación con la dirección de correo electrónico correcta. 
@@ -46,4 +46,4 @@ Si dispone de una suscripción activa a Cloud Insights, puede utilizar estas opc
 link:https://www.netapp.com/us/contact-us/support.aspx["Teléfono"]
 link:https://mysupport.netapp.com/site/cases/mine/create?serialNumber=95001014387268156333["Ticket de soporte"]
 
-Para obtener más información, consulte https://["Documentación de soporte de Cloud Insights"].
+Para obtener más información, consulte https://docs.netapp.com/us-en/cloudinsights/concept_requesting_support.html["Documentación de soporte de Cloud Insights"].
