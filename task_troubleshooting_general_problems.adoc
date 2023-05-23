@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task_troubleshooting_general_problems.html 
 summary: Consejos generales para la solución de problemas de Cloud Insights. 
-keywords: troubleshooting, problems, browser, login, log in, accessing, access to 
+keywords: troubleshooting, problems, browser, login, log in, accessing, access to, Trident, qtree, quota 
 ---
 = Solución de problemas generales de Cloud Insights
 :allow-uri-read: 
@@ -41,6 +41,29 @@ Consulte también link:task_troubleshooting_linux_acquisition_unit_problems.html
 
 | Otros errores de inicio de sesión | Pruebe el modo Incognito en Chrome, o borre el historial del navegador, las cookies y la caché. Pruebe con un perfil de navegador diferente (por ejemplo, Chrome - add person). 
 |===
+
+
+== Otros temas
+
+|===
+
+
+| *Pregunta:* | *Respuesta:* 
+
+
+| Las cuotas físicas de mis qtrees se muestran correctamente en las consultas, pero mis cuotas flexibles se muestran como la capacidad total del volumen. ¿Es correcto? | Solo las cuotas estrictas (se establecen manualmente o se establecen mediante Trident) se mostrarán como las cuotas establecidas; si no se especifican cuotas duras, la capacidad de qtree será la capacidad de volumen interno. 
+
+
+| Se configuran manualmente tanto una cuota blanda como una estricta en el mismo qtree, pero la capacidad total que muestra es la cuota rígida; ¿es correcto? | Sí, si se especifica una cuota estricta, esta se mostrará como la capacidad total. 
+|===
+
+
+== Recursos
+
+Se pueden encontrar consejos adicionales para la solución de problemas en la link:https://kb.netapp.com/Advice_and_Troubleshooting/Cloud_Services/Cloud_Insights["Base de conocimientos de NetApp"] (se requiere inicio de sesión de soporte).
+
+Puede encontrar información adicional de soporte en Cloud Insights link:concept_requesting_support.html["Soporte técnico"] página.
+
 Si dispone de una suscripción activa a Cloud Insights, puede utilizar estas opciones de soporte:
 
 link:https://www.netapp.com/us/contact-us/support.aspx["Teléfono"]

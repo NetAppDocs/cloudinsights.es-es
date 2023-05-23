@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: concept_troubleshooting_overview.html 
 summary: En esta sección encontrará consejos y trucos para ayudarle a solucionar problemas en su entorno de Cloud Insights. 
-keywords: troubleshootin 
+keywords:  
 ---
 = Resolución de problemas de Cloud Insights
 :allow-uri-read: 

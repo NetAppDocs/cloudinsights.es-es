@@ -11168,4 +11168,11 @@
   <block id="9354fc9fde4206bac6177054249907e9" category="list-text">Relaciones de SnapMirror en mal estado.</block>
   <block id="53a0194fe3f870afed16b77d60056dfb" category="paragraph"><block ref="53a0194fe3f870afed16b77d60056dfb" category="inline-image-macro-rx" type="image"></block></block>
   <block id="e4b936a4866074908ad57fac7de40e48" category="admonition">Este recopilador de datos ya no está disponible para su instalación en Cloud Insights a partir del 4 de abril de 2023 y se eliminará de todas las instalaciones de Cloud Insights el 25 de mayo de 2023. Para obtener información sobre la transición a la recopilación de datos basada en AU, consulte <block ref="334c0315e59c6351d5f9bac4d495b3ee" category="inline-link-macro-rx"></block>.</block>
+  <block id="6f482c482b4f6739bf91b49fb509e1fa" category="section-title">Otros temas</block>
+  <block id="38371752dff5ee84c99f5d61b5071683" category="cell">*Pregunta:*</block>
+  <block id="c0a6863442a128c06f6f664c5acfb867" category="cell">*Respuesta:*</block>
+  <block id="17cd9c18b0bda3836dcd76df6d7b3e6d" category="cell">Las cuotas físicas de mis qtrees se muestran correctamente en las consultas, pero mis cuotas flexibles se muestran como la capacidad total del volumen. ¿Es correcto?</block>
+  <block id="5a68833b2f8ecb97cbb14d60c5b420a8" category="cell">Solo las cuotas estrictas (se establecen manualmente o se establecen mediante Trident) se mostrarán como las cuotas establecidas; si no se especifican cuotas duras, la capacidad de qtree será la capacidad de volumen interno.</block>
+  <block id="1b6ed64bac10ec68f4d03a8505f91c8d" category="cell">Se configuran manualmente tanto una cuota blanda como una estricta en el mismo qtree, pero la capacidad total que muestra es la cuota rígida; ¿es correcto?</block>
+  <block id="9c93ad73825174675cbb17fb678b3a8c" category="cell">Sí, si se especifica una cuota estricta, esta se mostrará como la capacidad total.</block>
 </blocks>
