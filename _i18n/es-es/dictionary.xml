@@ -11175,4 +11175,6 @@
   <block id="1b6ed64bac10ec68f4d03a8505f91c8d" category="cell">Se configuran manualmente tanto una cuota blanda como una estricta en el mismo qtree, pero la capacidad total que muestra es la cuota rígida; ¿es correcto?</block>
   <block id="9c93ad73825174675cbb17fb678b3a8c" category="cell">Sí, si se especifica una cuota estricta, esta se mostrará como la capacidad total.</block>
   <block id="37b418c8c2b422040e90081e18556979" category="section-title">Problemas de inicio de sesión</block>
+  <block id="04e7b6395fd3a2be3a25869ea1196f3d" category="cell">Veo lo siguiente en mis registros inmediatamente después de instalar NetApp Kubernetes Monitoring Operator: [Error inputs.prometheus] en el plugin: Error al crear la solicitud HTTP a.<block ref="189319aba70d8b3a1cf8eef70b48f546" category="inline-link-rx"></block> Obtenga<block ref="189319aba70d8b3a1cf8eef70b48f546" category="inline-link-rx"></block> dial tcp: buscar kube-state-metrics.&lt;namespace&gt;.svc.cluster.local: no existe ese host</block>
+  <block id="d232f49a9877a99204dde54474c23ce6" category="cell">Este mensaje normalmente solo aparece cuando se instala un nuevo operador y el pod _telegraf-rs_ está activo antes de que el pod _ksm_ esté activo. Estos mensajes deben detenerse una vez que todos los pods se estén ejecutando.</block>
 </blocks>
