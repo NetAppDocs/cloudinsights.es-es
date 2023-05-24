@@ -42,7 +42,7 @@ image:ServiceMap_NKMO_Deployment_Options.png["Selección de la opción Mapa dura
 
 La asignación de carga de trabajo utiliza link:task_create_monitor.html["supervisiones"] para derivar información. Cloud Insights proporciona una serie de monitores de Kubernetes predeterminados (tenga en cuenta que estos pueden ser _Paused_ de forma predeterminada. Puede _Reanudar_ (es decir, habilitar) los monitores que desee), o puede crear monitores personalizados para objetos de kubernetes, que también utilizará el mapa de carga de trabajo.
 
-Puede crear alertas de métricas Cloud Insights en cualquiera de los tipos de objeto siguientes. Asegúrese de que el objeto está agrupado por id.
+Puede crear alertas de métricas Cloud Insights en cualquiera de los tipos de objeto siguientes. Asegúrese de que los datos están agrupados por el tipo de objeto predeterminado.
 
 * kubernetes
 * inicio de kubernetes

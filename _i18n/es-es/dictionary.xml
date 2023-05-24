@@ -11174,7 +11174,6 @@
   <block id="75d129f3fd06394d5b75cb67aea1f2d8" category="inline-image-macro">escribir en el cuadro buscar resalta las cargas de trabajo</block>
   <block id="5ddf6f9c2416ad391ccea53c53433147" category="paragraph"><block ref="5ddf6f9c2416ad391ccea53c53433147" category="inline-image-macro-rx" type="image"></block></block>
   <block id="642d357bd708eba3d8ac3744a27588a3" category="paragraph">La función de supervisión y mapa del rendimiento de red de Kubernetes simplifica la solución de problemas mediante la asignación de dependencias entre servicios de Kubernetes (también denominadas cargas de trabajo). Proporciona visibilidad en tiempo real de las latencias y anomalías del rendimiento de la red de Kubernetes para identificar problemas de rendimiento antes de que afecten a los usuarios. Esta funcionalidad ayuda a las organizaciones a reducir los costes generales mediante el análisis y la auditoría de los flujos de tráfico de Kubernetes.</block>
-  <block id="2e4063447ef8819aa5df170524b0bc11" category="paragraph">Puede crear alertas de métricas Cloud Insights en cualquiera de los tipos de objeto siguientes. Asegúrese de que el objeto está agrupado por id.</block>
   <block id="98f8d8a203eae9b3f98baf54dc4901f5" category="list-text">kubernetes</block>
   <block id="d725c339f86ba7e7be92e93dcf7902bc" category="list-text">inicio de kubernetes</block>
   <block id="caefb2c0b47809252c440b0c84abc26e" category="list-text">kubernetes.deployment</block>
@@ -11199,4 +11198,5 @@
   <block id="bc73b2df84aeadcf404198608adc15f8" category="paragraph">Por último, al seleccionar _Ir a la página de activos_ se abrirá la página de destino detallada del activo para la carga de trabajo.</block>
   <block id="1f77b1ef877148b891f2cb01d5adad8a" category="inline-image-macro">Página de Activos de Carga de Trabajo</block>
   <block id="208df78ccb496daba189129b4e1d9439" category="paragraph"><block ref="208df78ccb496daba189129b4e1d9439" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="2ec69e962ebca3d9f0e5279aa138f19a" category="paragraph">Puede crear alertas de métricas Cloud Insights en cualquiera de los tipos de objeto siguientes. Asegúrese de que los datos están agrupados por el tipo de objeto predeterminado.</block>
 </blocks>
