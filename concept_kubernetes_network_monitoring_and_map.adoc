@@ -70,11 +70,15 @@ image:Workload_Map_Slideout_with_Alert.png["Detalles de la diapositiva de las ca
 
 
 
-== Filtrado
+== Búsqueda y filtrado
 
 Al igual que sucede con otras funciones de Cloud Insights, puede establecer fácilmente filtros para centrarse en los objetos específicos o los atributos de carga de trabajo que desee.
 
 image:Workload_Map_Filtering.png["Filtrado de asignación de carga de trabajo"]
+
+Del mismo modo, al escribir una cadena en el campo _Find_ se resaltarán las cargas de trabajo coincidentes.
+
+image:Workload_Map_Find_Highlighting.png["escribir en el cuadro buscar resalta las cargas de trabajo"]
 
 
 

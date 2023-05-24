@@ -10724,7 +10724,6 @@
   <block id="ab65509e81982c2ab448e5662c4ee09d" category="paragraph">Los círculos mostrados en color indican una alerta de nivel crítico o de advertencia para la carga de trabajo. Pase el cursor sobre el círculo para ver un resumen del problema o haga clic en el círculo para abrir un panel deslizante con más detalles.</block>
   <block id="1c33583ae1317aec595232a0f94991fd" category="inline-image-macro">Detalles de la diapositiva de las cargas de trabajo con alertas</block>
   <block id="219e34cfe0519a78647d5d9fbcaf4c78" category="paragraph"><block ref="219e34cfe0519a78647d5d9fbcaf4c78" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="9a588db8471730dbfebac65cd5467ad8" category="section-title">Filtrado</block>
   <block id="a3b909b3fe9805c43492b38e32cc76dd" category="paragraph">Al igual que sucede con otras funciones de Cloud Insights, puede establecer fácilmente filtros para centrarse en los objetos específicos o los atributos de carga de trabajo que desee.</block>
   <block id="e4fe29302896c288d2a9ee7fe931c67b" category="inline-image-macro">Filtrado de asignación de carga de trabajo</block>
   <block id="45a01cb04b2dc86e6def6376c184f9a1" category="paragraph"><block ref="45a01cb04b2dc86e6def6376c184f9a1" category="inline-image-macro-rx" type="image"></block></block>
@@ -11177,4 +11176,8 @@
   <block id="37b418c8c2b422040e90081e18556979" category="section-title">Problemas de inicio de sesión</block>
   <block id="04e7b6395fd3a2be3a25869ea1196f3d" category="cell">Veo lo siguiente en mis registros inmediatamente después de instalar NetApp Kubernetes Monitoring Operator: [Error inputs.prometheus] en el plugin: Error al crear la solicitud HTTP a.<block ref="189319aba70d8b3a1cf8eef70b48f546" category="inline-link-rx"></block> Obtenga<block ref="189319aba70d8b3a1cf8eef70b48f546" category="inline-link-rx"></block> dial tcp: buscar kube-state-metrics.&lt;namespace&gt;.svc.cluster.local: no existe ese host</block>
   <block id="d232f49a9877a99204dde54474c23ce6" category="cell">Este mensaje normalmente solo aparece cuando se instala un nuevo operador y el pod _telegraf-rs_ está activo antes de que el pod _ksm_ esté activo. Estos mensajes deben detenerse una vez que todos los pods se estén ejecutando.</block>
+  <block id="8ec4bb0d2cdd89c1777e072a7f038e51" category="section-title">Búsqueda y filtrado</block>
+  <block id="71841f704ed10618ca86f31ee6b5d043" category="paragraph">Del mismo modo, al escribir una cadena en el campo _Find_ se resaltarán las cargas de trabajo coincidentes.</block>
+  <block id="75d129f3fd06394d5b75cb67aea1f2d8" category="inline-image-macro">escribir en el cuadro buscar resalta las cargas de trabajo</block>
+  <block id="5ddf6f9c2416ad391ccea53c53433147" category="paragraph"><block ref="5ddf6f9c2416ad391ccea53c53433147" category="inline-image-macro-rx" type="image"></block></block>
 </blocks>
