@@ -62,8 +62,6 @@ Al crear un link:task_create_webhook.html["Webhook"] notificación, ahora puede 
 
 === Informes sobre datos de Kubernetes
 
-Cloud Insights ahora puede crear informes sobre todos los datos de Kubernetes, incluidos los volúmenes fotovoltaicos, la RVP, la carga de trabajo, el clúster y el espacio de nombres.
-
 Los datos de Kubernetes recopilados por Cloud Insights, incluidos los volúmenes persistentes (VP), PVC, cargas de trabajo, clústeres y espacios de nombres, ahora se encuentran disponibles para su uso en informes, lo que permite el pago por uso, tendencias, previsión, cálculos de TTF, Y otros informes empresariales sobre métricas para Kubernetes.
 
 
