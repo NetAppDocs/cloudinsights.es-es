@@ -38,3 +38,23 @@ Tenga en cuenta lo siguiente:
 * Se informa de un error de recopilación de Active Directory como una advertencia; no afecta a la detección de Ransomware.
 * La lista de instalación primeros pasos ahora incluye una nueva fase _Configure email Notificaciones_.
 
+
+
+
+== Recepción de Notificaciones de Actualización de Agente y Recopilador de Datos
+
+* Ingrese el ID(s) de correo electrónico en “Alertas de salud de recopilación de datos”.
+* Se habilita la casilla de comprobación «Enable upgrade notifications».
+* Las notificaciones por correo electrónico de actualización de agente y recopilador de datos se envían a los ID de correo electrónico un día antes de la actualización planificada.
+
+
+
+
+== Resolución de problemas
+
+|===
+| *Problema:* | *Pruebe esto:* 
+
+
+| Los ID de correo electrónico están presentes en las “Alertas de salud del recopilador de datos”, sin embargo, no estoy recibiendo notificaciones. | Los correos electrónicos de notificación se envían desde el dominio NetApp Cloud Insights, es decir, desde _accounts@service.cloudinsights.netapp.com_. Algunas empresas bloquean los correos electrónicos entrantes si son de un dominio externo. Asegúrese de que las notificaciones externas de los dominios de NetApp Cloud Insights estén en la lista blanca. 
+|===
