@@ -14,9 +14,9 @@ Las directivas de respuesta activan acciones como la toma de instantáneas o la 
 
 NOTE: La seguridad de carga de trabajo no está disponible en la edición federal de Cloud Insights.
 
-Puede establecer políticas en dispositivos específicos o en todos los dispositivos. Para establecer una directiva de respuesta, seleccione *Admin > Directivas de respuesta automatizadas* y haga clic en el botón *+Policy+ correspondiente. Puede crear directivas para ataques o advertencias.
+Puede establecer políticas en dispositivos específicos o en todos los dispositivos. Para establecer una política de respuesta, seleccione *Admin > Políticas de respuesta automatizadas* y haga clic en el botón *+Policy* correspondiente. Puede crear directivas para ataques o advertencias.
 
-image:AutomatedAttackPolicy.png["Crear directiva de ataque"]
+image:Automated_Response_Screenshot.png["Crear directiva de ataque"]
 
 Se debe guardar la política con un nombre exclusivo.
 
