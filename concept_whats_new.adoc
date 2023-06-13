@@ -25,6 +25,61 @@ NOTE: Es posible que algunas de estas funciones no estén disponibles en la edic
 
 
 
+== Junio de 2023
+
+
+
+=== Compruebe su uso
+
+A partir de junio de 2023, Cloud Insights ofrece un desglose del uso de las unidades gestionadas en función del conjunto de funciones. Ahora, puedes ver y supervisar rápidamente el uso de las unidades gestionadas (MU) para tu infraestructura, así como el uso de MU vinculado a Kubernetes.
+
+image:Metering_Usage.png["Desgloses de uso de medición"]
+
+
+
+=== La supervisión de la red de Kubernetes y el mapa están disponibles para todos
+
+La link:concept_kubernetes_network_monitoring_and_map.html["_Rendimiento de la red de Kubernetes y Map_"] Simplifica la solución de problemas asignando dependencias entre cargas de trabajo de Kubernetes, proporcionando visibilidad en tiempo real de las latencias y anomalías del rendimiento de la red de Kubernetes para identificar los problemas de rendimiento antes de que afecten a los usuarios. Muchos clientes lo encontraron útil durante la vista previa, y ahora está disponible para que todo el mundo lo disfrute.
+
+
+
+=== Creación de informes
+
+El componente de informes de Cloud Insights se ha cambiado de nombre a «Análisis de Cloud Insights». Sin embargo, no se preocupe; la funcionalidad sigue siendo la misma.
+
+
+
+=== Cambios de recopilador/adquisición:
+
+Se han realizado los siguientes cambios en la unidad de adquisición/recopilación de datos:
+
+* Los UM de dominio de datos y cohesión se miden a 40 TiB: 1 MU.
+* Las unidades de adquisición ahora son compatibles con RHEL y Rocky 9,0 y 9,1.
+
+
+
+
+=== Nuevas consolas de aspectos básicos de ONTAP
+
+Las siguientes consolas de ONTAP Essentials se han disponible en entornos de vista previa, y ahora están disponibles para todos:
+
+* Panel de seguridad
+* Consola de protección de datos (incluye descripciones de protección local y remota)
+
+
+
+
+=== Monitores de sistema adicionales
+
+Los siguientes monitores del sistema se incluyen con Cloud Insights:
+
+* Servicio FCP de máquina virtual de almacenamiento no disponible
+* Servicio iSCSI de máquina virtual de almacenamiento no disponible
+
+
+'''
+
+
 == Mayo de 2023
 
 

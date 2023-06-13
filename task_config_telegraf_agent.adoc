@@ -50,6 +50,17 @@ NOTE: Si está utilizando un proxy, lea las instrucciones del proxy de su plataf
 
 
 
+=== Ubicaciones de registro
+
+Los mensajes de registro de Telegraf se redirigen de stdout a los siguientes archivos de registro por defecto:
+
+* RHEL/CentOS: /Var/log/telegraf/telegraf.log
+* Ubuntu/Debian: /Var/log/telegraf/telegraf.log
+* Windows: C:\Archivos de programa\telegraf\telegraf.log
+
+
+
+
 === Windows
 
 
