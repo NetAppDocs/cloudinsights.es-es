@@ -39,7 +39,7 @@ La siguiente tabla enumera las posibles opciones para el archivo AgentConfigurat
 | telegraf |  | Opciones de configuración que pueden personalizar la instalación de telegraf del Operador 
 
 
-|  | Intervalo de colección | Intervalo de recopilación de métricas, en segundos 
+|  | Intervalo de colección | Intervalo de recopilación de métricas, en segundos (Max=60s) 
 
 
 |  | DsCpuLimit | Límite de CPU para telegraf ds 
