@@ -5,7 +5,17 @@ keywords: webhook, notification, slack, integration
 summary: Cree monitores para alertar sobre los umbrales de rendimiento o inventario 
 ---
 = Notificación mediante Webanzuelos
+:toc: macro
+:hardbreaks:
+:toclevels: 1
 :allow-uri-read: 
+:toc: 
+:toclevels: 1
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:toc-position: content
 
 
 [role="lead"]

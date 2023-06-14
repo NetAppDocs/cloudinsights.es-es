@@ -5,7 +5,12 @@ keywords: alert, attack, ransomware, activity, security, abnormal
 summary: Workload Security crea alertas en caso de actividad de usuario anormal o ataque potencial. La página Alertas enumera estas actividades para una investigación rápida y fácil. 
 ---
 = Alertas
+:hardbreaks:
 :allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media
 
 
 [role="lead"]

@@ -5,14 +5,25 @@ summary: Modificar o eliminar una consulta
 keywords: query, queries, modify, edit, delete, remove 
 ---
 = Modificar o eliminar una consulta
+:toc: macro
+:hardbreaks:
+:toclevels: 1
 :allow-uri-read: 
+:toc: 
+:toclevels: 1
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:toc-position: content
 
+
+[role="lead]"]
+Puede cambiar los criterios asociados a una consulta cuando desee cambiar los criterios de búsqueda de los activos que esté consultando.
 
 
 
 == Modificar una consulta
-
-Puede cambiar los criterios asociados a una consulta cuando desee cambiar los criterios de búsqueda de los activos que esté consultando.
 
 .Pasos
 . Haga clic en *consultas* y seleccione *Mostrar todas las consultas*.

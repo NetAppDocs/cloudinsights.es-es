@@ -5,7 +5,17 @@ summary: Puede ver artículos de la base de conocimientos, conectarse a la comun
 keywords: support, knowledgebase, documentation, community, chat, videos, help, contact, intercom 
 ---
 = Solicitud de soporte
+:toc: macro
+:hardbreaks:
+:toclevels: 2
 :allow-uri-read: 
+:toc: 
+:toclevels: 2
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:toc-position: content
 
 
 

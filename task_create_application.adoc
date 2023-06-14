@@ -5,7 +5,17 @@ summary: Se crean reglas de anotación para aplicar anotaciones automáticamente
 keywords: application, create application, 
 ---
 = Creación de aplicaciones
+:toc: macro
+:hardbreaks:
+:toclevels: 1
 :allow-uri-read: 
+:toc: 
+:toclevels: 1
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:toc-position: content
 
 
 [role="lead"]

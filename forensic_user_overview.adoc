@@ -5,7 +5,12 @@ keywords: Forensic, user, user, activity
 summary: detalles forenses del usuario 
 ---
 = Descripción general del usuario forense
+:hardbreaks:
 :allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
 
 
 La información de cada usuario se proporciona en la sección Información general del usuario. Utilice estas vistas para comprender las características del usuario, las entidades asociadas y las actividades recientes.

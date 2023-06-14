@@ -5,7 +5,17 @@ summary: Cree, proteja y gobierne sus datos de multicloud híbrido desde un úni
 keywords: bluexp, cloud manager, cm, storage, data, services, integrated 
 ---
 = Cloud Insights forma parte de BlueXP
+:toc: macro
+:hardbreaks:
+:toclevels: 2
 :allow-uri-read: 
+:toc: 
+:toclevels: 2
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:toc-position: content
 
 
 [role="lead"]

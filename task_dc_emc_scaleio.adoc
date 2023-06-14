@@ -5,7 +5,17 @@ keywords: data collector, scaleIO, EMC, DELL
 summary: Configurar el recopilador DE datos Dell EMC ScaleIO. 
 ---
 = Recopilador DE datos Dell EMC ScaleIO
+:toc: macro
+:hardbreaks:
+:toclevels: 1
 :allow-uri-read: 
+:toc: 
+:toclevels: 1
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:toc-position: content
 
 
 [role="lead"]

@@ -5,9 +5,20 @@ summary: Primeros pasos con Cloud Insights.
 keywords: invite, roles, data collector, acquisition unit, AU 
 ---
 = Introducción a la recopilación de datos
+:toc: macro
+:hardbreaks:
+:toclevels: 2
 :allow-uri-read: 
+:toc: 
+:toclevels: 2
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:toc-position: content
 
 
+[role="lead"]
 Después de registrarse en Cloud Insights e iniciar sesión en su entorno por primera vez, se le guiarán los siguientes pasos con el fin de comenzar a recopilar y gestionar los datos.
 
 Los recopiladores de datos detectan información de sus orígenes de datos, como dispositivos de almacenamiento, switches de red y máquinas virtuales. La información recopilada se utiliza para análisis, validación, supervisión y resolución de problemas.

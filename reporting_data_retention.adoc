@@ -5,7 +5,17 @@ summary: Retención de datos de Cloud Insights para creación de informes
 keywords: reporting, cognos, data warehouse, dwh, managing, customizing, copying, retention 
 ---
 = Cómo se conservan los datos históricos para la creación de informes
+:toc: macro
+:hardbreaks:
+:toclevels: 2
 :allow-uri-read: 
+:toc: 
+:toclevels: 2
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:toc-position: content
 
 
 [role="lead"]

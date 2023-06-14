@@ -5,7 +5,17 @@ keywords: kubernetes, pods, clusters, nodes. troubleshooting, planning
 summary: La página de detalles del nodo de Kubernetes proporciona información sobre el almacenamiento PV back-end y Pod. 
 ---
 = Página de detalles del nodo de Kubernetes
+:toc: macro
+:hardbreaks:
+:toclevels: 1
 :allow-uri-read: 
+:toc: 
+:toclevels: 1
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:toc-position: content
 
 
 [role="lead"]

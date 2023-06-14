@@ -5,7 +5,17 @@ keywords: monitors, alerts, log, metric, system-defined, system, metric,
 summary: Cree monitores para alertar sobre los umbrales de rendimiento o inventario, así como las condiciones de métricas o registros. 
 ---
 = Alerta con monitores
+:toc: macro
+:hardbreaks:
+:toclevels: 1
 :allow-uri-read: 
+:toc: 
+:toclevels: 1
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:toc-position: content
 
 
 [role="lead"]

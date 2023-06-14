@@ -5,7 +5,17 @@ summary: 'Explicación de tiempo de vida (TTL) y reducción del muestreo'
 keywords: time-to-live, TTL, downsampling, downsample, 
 ---
 = Tiempo de vida (TTL) y datos de reducción de la muestra
+:toc: macro
+:hardbreaks:
+:toclevels: 1
 :allow-uri-read: 
+:toc: 
+:toclevels: 1
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:toc-position: content
 
 
 [role="lead"]

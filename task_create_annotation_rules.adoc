@@ -4,7 +4,17 @@ permalink: task_create_annotation_rules.html
 summary: Se crean reglas de anotación para aplicar anotaciones automáticamente a varios activos. 
 ---
 = Creación de reglas de anotación
+:toc: macro
+:hardbreaks:
+:toclevels: 1
 :allow-uri-read: 
+:toc: 
+:toclevels: 1
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:toc-position: content
 
 
 [role="lead"]

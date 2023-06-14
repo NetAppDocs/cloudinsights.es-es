@@ -5,7 +5,17 @@ summary: El servidor o equipo virtual que utilice como unidad de adquisición de
 keywords: AU, acquisition unit, RAU, requirements, sizing 
 ---
 = Requisitos de la unidad de adquisición
+:toc: macro
+:hardbreaks:
+:toclevels: 1
 :allow-uri-read: 
+:toc: 
+:toclevels: 1
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:toc-position: content
 
 
 [role="lead"]

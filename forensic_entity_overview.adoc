@@ -5,12 +5,15 @@ keywords: Forensic, entity, entity overview, entity behavior, entities
 summary: Página de entidades forenses 
 ---
 = Página de entidades forenses
+:toc: macro
 :hardbreaks:
 :allow-uri-read: 
+:toc: 
 :nofooter: 
 :icons: font
 :linkattrs: 
 :imagesdir: ./media/
+:toc-position: content
 
 
 La página entidades Forensics proporciona información detallada sobre la actividad de la entidad en su entorno.

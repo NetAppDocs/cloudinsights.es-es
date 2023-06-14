@@ -5,7 +5,17 @@ keywords: annotations, monitor, notes, tags
 summary: Realizar un seguimiento de los datos mediante anotaciones. 
 ---
 = Definición de anotaciones
+:toc: macro
+:hardbreaks:
+:toclevels: 2
 :allow-uri-read: 
+:toc: 
+:toclevels: 2
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:toc-position: content
 
 
 [role="lead"]

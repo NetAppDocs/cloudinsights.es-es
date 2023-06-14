@@ -5,7 +5,17 @@ summary: Descripción general de la sección de resumen de página de activos en
 keywords: asset, summary, landing page, topology 
 ---
 = Sección Resumen de páginas de activos
+:toc: macro
+:hardbreaks:
+:toclevels: 2
 :allow-uri-read: 
+:toc: 
+:toclevels: 2
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:toc-position: content
 
 
 [role="lead"]

@@ -5,7 +5,17 @@ summary: En esta sección encontrará consejos y trucos para ayudarle a solucion
 keywords:  
 ---
 = Resolución de problemas de Cloud Insights
+:toc: macro
+:hardbreaks:
+:toclevels: 1
 :allow-uri-read: 
+:toc: 
+:toclevels: 1
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:toc-position: content
 
 
 [role="lead"]

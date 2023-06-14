@@ -5,7 +5,12 @@ keywords: api, access, token, swagger
 summary: Workload Security incluye una potente API para la integración con otras aplicaciones, como CMDB. 
 ---
 = API de seguridad de cargas de trabajo
+:hardbreaks:
 :allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
 
 
 [role="lead"]

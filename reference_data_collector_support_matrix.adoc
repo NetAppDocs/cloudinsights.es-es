@@ -5,7 +5,17 @@ summary: La matriz de soporte del recopilador de datos contiene información det
 keywords: support matrix, vendor, NetApp, IBM, EMC, dell, HP, Hitachi, VMware, Huawei, OpenStack, 
 ---
 = Matriz de compatibilidad de recopiladores de datos de Cloud Insights
+:toc: macro
+:hardbreaks:
+:toclevels: 1
 :allow-uri-read: 
+:toc: 
+:toclevels: 1
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:toc-position: content
 
 
 [role="lead"]
