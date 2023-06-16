@@ -19,7 +19,7 @@ summary: El operador de supervisión de Kubernetes de NetApp tiene una serie de 
 
 
 [role="lead"]
-Se pueden personalizar la instalación y configuración del operador de supervisión de Kubernetes de NetApp.
+La link:task_config_telegraf_agent_k8s.html["Operador de supervisión Kubernetes de NetApp"] la instalación y configuración se pueden personalizar.
 
 La siguiente tabla enumera las posibles opciones para el archivo AgentConfiguration:
 
@@ -41,9 +41,6 @@ La siguiente tabla enumera las posibles opciones para el archivo AgentConfigurat
 
 
 |  | Proxy Format: Proxy: Servidor: Puerto: Nombre de usuario: Contraseña: NoProxy: IsTelegrafProxyEnabled: IsAuProxyEnabled: IsFluentbitProxyEnabled: IsCollectorProxyEnabled: | Opcional para que el cliente establezca el proxy. Esto suele ser el proxy corporativo de los clientes. 
-
-
-|  | UUID de agentUUID | Cadena identificada de forma única en todas las instalaciones del operador Cloud Insights. Esto suele ser configurado automáticamente por Cloud Insights. 
 
 
 | telegraf |  | Opciones de configuración que pueden personalizar la instalación de telegraf del Operador 
