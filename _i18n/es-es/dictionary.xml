@@ -11261,4 +11261,5 @@ También puede utilizar la opción “Agregar a filtro” en la pestaña Todas l
   <block id="c894bcc14d41b007df81ed9d077a249c" category="list-text">Reinicie AU.</block>
   <block id="cd949e1f65deb02e57f3144acb21e0aa" category="list-text">En Cloud Insights, vaya a *Admin &gt; Recopiladores de datos* y seleccione la pestaña *Unidades de adquisición*. Elija _restart_ en el menú “Tres puntos” a la derecha de la AU.</block>
   <block id="c35a33c9875991494585fbfbed175784" category="paragraph">La <block ref="f0d3e43e41da35ba651820db811551cd" category="inline-link-macro-rx"></block> la instalación y configuración se pueden personalizar.</block>
+  <block id="8d44687186d37f705aa7f2282722aeb5" category="sidebar">Opciones del operador de monitorización</block>
 </blocks>

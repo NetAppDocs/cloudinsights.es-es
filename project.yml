@@ -89,6 +89,8 @@ sidebar:
       url: "/kubernetes_landing_page.html"
     - title: Introducción al operador de monitorización
       url: "/task_config_telegraf_agent_k8s.html"
+    - title: Opciones del operador de monitorización
+      url: "/telegraf_agent_k8s_config_options.html"
     - title: Página del clúster de Kubernetes
       url: "/kubernetes_cluster_detail.html"
     - title: Supervisión y mapa de Kubernetes
