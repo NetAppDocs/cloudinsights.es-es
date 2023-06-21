@@ -124,6 +124,12 @@ La siguiente tabla enumera las posibles opciones para el archivo AgentConfigurat
 |  | etiquetas | una lista separada por comas de los recursos que kube-state-metrics debe capturar +++ ejemplo: cronjobs=[*],daemonsets=[*],despliegues=[*],ingresses=[*],jobs=[*],namespaces=[*],nodes=[*], persistentvolumeclaims=[*],persistentvolumes=[*],replicads=[* 
 
 
+|  | CpuLimit | Límite de CPU para la implementación de métricas de estado-kube 
+
+
+|  | MemLimit | Límite de MEM para el despliegue de métricas de estado-kube 
+
+
 | registros |  | Opciones de configuración que pueden personalizar la recopilación de registros y la instalación del operador 
 
 
