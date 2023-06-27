@@ -11284,4 +11284,8 @@ SUSE Linux Enterprise Server 15 SP3, SUSE Linux Enterprise Server 15 SP4 y SELin
 Este equipo no debe ejecutar ningún otro software de nivel de aplicación. Se recomienda un servidor dedicado.
 
 Se (Security Enhanced, seguridad mejorada) Linux no es compatible.</block>
+  <block id="45698e13b1c2f7241751839133834506" category="cell">Después de instalar el operador, los pods de telegraf-ds ingresan CrashLoopBackOff y los registros de pod indican “su: Error de autenticación”.</block>
+  <block id="61f9b982e510e8aa9a5efaee7290eb4a" category="cell">Edite el agentconfiguration de supervisión-configuración y establezca _dockerMetricCollectionEnabled_ en FALSE.  Para obtener más información, consulte el apartado del operador <block ref="74a91e6274b6ee5f9fd240fb978eb1d9" category="inline-link-macro-rx"></block>.</block>
+  <block id="a3f0ee128de7eabdc5dbd73136882ab6" category="cell">DockerMetricCollectionEnabled</block>
+  <block id="0710c2522c29e39ba719becf4972a9aa" category="cell">Recopilar métricas de Docker. De forma predeterminada, se establece en true y las métricas de docker se recopilarán para implementaciones k8s basadas en docker en las instalaciones. Para desactivar la recopilación de métricas de docker, defínala en FALSE.</block>
 </blocks>
