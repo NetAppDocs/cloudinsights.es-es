@@ -166,7 +166,6 @@
   <block id="d7aba68e0b82cfef5e7644a1a09648f2" category="inline-image-macro">Seleccione log para supervisar, defina un filtro y seleccione Group by Method, si lo desea</block>
   <block id="3da252deb38a2d58507e7ff50d6508f0" category="paragraph"><block ref="3da252deb38a2d58507e7ff50d6508f0" category="inline-image-macro-rx" type="image"></block></block>
   <block id="0625f5fb5e60f291ab595c8261238b23" category="section-title">Defina el comportamiento de resolución de alertas</block>
-  <block id="8728ea9412d646983052607068b25d61" category="inline-image-macro">Resolución de alertas</block>
   <block id="0c2055379a44f0c3e3fa1c66b6e90e9d" category="section-title">Seleccione el tipo de notificación y los destinatarios</block>
   <block id="89275c0783a0e53b681cf17404e53efd" category="paragraph">En la sección _Configurar notificación(s) de equipo_, puede elegir si desea avisar a su equipo por correo electrónico o mediante Webhook.</block>
   <block id="f5ea0637921e9f794d41cae2031b1d5c" category="inline-image-macro">Elija método de alerta</block>
@@ -10526,12 +10525,8 @@
   <block id="fc971fc699329bc531b4d65ff180a629" category="cell">Recibí una advertencia de que la API de disco devolvió más datos</block>
   <block id="3cd62817285774be5e17bfa3b11a6309" category="cell">Póngase en contacto con el servicio de soporte para obtener más datos.</block>
   <block id="8d3d5857627846ebb0bfd18533d81373" category="list-text">Resuelva al instante</block>
-  <block id="17b8d34f8d949597a55a6101ce83364d" category="list-text">Purgar después del período de retención de datos (consulte la página de ediciones para obtener más información). Tenga en cuenta que el monitor no tiene ninguna condición de resolución por definición, por lo que una alerta permanecerá _Active_ y suprimirá todas las alertas posteriores generadas por este monitor, hasta que haya pasado el período de retención de datos.</block>
-  <block id="befadb349d88b7326b91ea95e095647d" category="list-text">Resolver basado en la entrada de registro: Resuelva una alerta cuando se detecte la línea de registro como se describe en la siguiente definición, o realice una purga después del período de retención de datos</block>
   <block id="e9e214a6e16f6beca61f905fa6ce3ab9" category="inline-image-macro">Opciones de resolución de alertas</block>
   <block id="990eaf3ef2e3748beed4f15a2dc6d080" category="paragraph"><block ref="990eaf3ef2e3748beed4f15a2dc6d080" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="6dfab0f82f494a8fd5d9bb100e34504b" category="paragraph">/// * *resolver instantáneamente*: La alerta se resuelve inmediatamente sin que se requiera ninguna otra acción * *resolver en función del tiempo*: La alerta se resuelve después de que haya pasado el tiempo especificado * *resolver en función de la entrada de registro*: La alerta se resuelve cuando se ha producido una actividad de registro posterior. Por ejemplo, cuando un objeto se registra como "disponible".</block>
-  <block id="e0155eef58f15e0fa7e34b03a853acaa" category="paragraph"><block ref="0267d15c881fe01be2ed5e9baa605285" category="inline-image-macro-rx" type="image"></block>///</block>
   <block id="964a8b3315ffa6f99cb6f09543be37c8" category="paragraph">Para empezar a trabajar con Cloud Insights, tienes que registrarte en el portal *NetApp BlueXP* (antes llamado Cloud Central). Si ya tiene un inicio de sesión en Cloud Central de NetApp, puede iniciar una prueba gratuita de Cloud Insights con unos pasos rápidos.</block>
   <block id="21a763771df4e64b083a2b050ce81f09" category="inline-link">*BlueXP de NetApp*</block>
   <block id="79f4eac777cfb8f368485c1ed783c385" category="paragraph">Para empezar a usar los servicios cloud de NetApp, vaya a.<block ref="bb4bedb035450655c109a482f18f7a40" category="inline-link-rx"></block> Y haga clic en *Comenzar*.</block>
@@ -11284,8 +11279,6 @@ SUSE Linux Enterprise Server 15 SP3, SUSE Linux Enterprise Server 15 SP4 y SELin
 Este equipo no debe ejecutar ningún otro software de nivel de aplicación. Se recomienda un servidor dedicado.
 
 Se (Security Enhanced, seguridad mejorada) Linux no es compatible.</block>
-  <block id="45698e13b1c2f7241751839133834506" category="cell">Después de instalar el operador, los pods de telegraf-ds ingresan CrashLoopBackOff y los registros de pod indican “su: Error de autenticación”.</block>
-  <block id="61f9b982e510e8aa9a5efaee7290eb4a" category="cell">Edite el agentconfiguration de supervisión-configuración y establezca _dockerMetricCollectionEnabled_ en FALSE.  Para obtener más información, consulte el apartado del operador <block ref="74a91e6274b6ee5f9fd240fb978eb1d9" category="inline-link-macro-rx"></block>.</block>
-  <block id="a3f0ee128de7eabdc5dbd73136882ab6" category="cell">DockerMetricCollectionEnabled</block>
-  <block id="0710c2522c29e39ba719becf4972a9aa" category="cell">Recopilar métricas de Docker. De forma predeterminada, se establece en true y las métricas de docker se recopilarán para implementaciones k8s basadas en docker en las instalaciones. Para desactivar la recopilación de métricas de docker, defínala en FALSE.</block>
+  <block id="63c80d21f4266efe4883c2f6f1d26fc2" category="list-text">Purgar después del período de retención de datos (consulte la página de ediciones para obtener más información). Tenga en cuenta que el monitor no tiene ninguna condición de resolución por definición, por lo que una alerta permanecerá _active_ y suprimirá todas las alertas posteriores con _group_by_ coincidentes generadas por este monitor, hasta que haya pasado el período de retención de datos.</block>
+  <block id="46f506a87cfed781f4ca50c5456e5dea" category="list-text">Resolver según entrada de log: Resolver alerta cuando se detecta la línea de log como se describe en la siguiente definición o depurar después del período de retención de datos.</block>
 </blocks>
