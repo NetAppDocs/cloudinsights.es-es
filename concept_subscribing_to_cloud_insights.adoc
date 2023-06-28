@@ -78,6 +78,7 @@ El precio de Cloud Insights es por *Unidad gestionada*. El uso de las unidades a
 
 * 1 unidad gestionada = 2 hosts (cualquier máquina virtual o física)
 * 1 Unidad administrada = 4 TIB de capacidad sin formato de discos físicos o virtuales
+* 1 Unidad Gestionada = 4 vCPU de Kubentes
 
 
 Tenga en cuenta que los siguientes recopiladores de datos se miden en un TIB sin procesar diferente a la tasa de unidades administradas. Cada 40 TIB de capacidad sin formato en estos recopiladores de datos se carga como 1 Unidad administrada (MU):
@@ -97,7 +98,7 @@ Si su entorno incluye o se espera que incluya 1,000 o más unidades gestionadas,
 
 === Calcule su coste de suscripción
 
-Las calculadoras de suscripción le proporcionan un costo mensual estimado de Cloud Insights basado en el número de unidades gestionadas que estima que necesitará. Los valores actuales se rellenan previamente y puede ajustar esos valores para ayudarle a planificar el crecimiento futuro estimado. Puede ajustar los valores de Infraestructura, Kubernetes o ambos.
+Las calculadoras de suscripción le ayudan a estimar el coste de su suscripción a Cloud Insights en función del número de unidades gestionadas necesarias. Los valores actuales se rellenan previamente y puede ajustar esos valores para ayudarle a planificar el crecimiento futuro estimado. Puede ajustar los valores de Infraestructura, Kubernetes o ambos.
 
 El coste estimado del precio de venta cambiará en función de la duración de su suscripción.
 NOTA: Las calculadoras son solo para estimación. El precio exacto se establecerá al suscribirse.
@@ -148,6 +149,7 @@ El separador Resumen de Suscripción muestra lo siguiente:
 * Número de serie de suscripción
 * Uso de UM actual y «¿qué sucede si?» estimaciones de costes
 * Enlaces para modificar su suscripción
+* Vistas del uso de la unidad gestionada
 
 
 
