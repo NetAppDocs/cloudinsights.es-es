@@ -43,12 +43,6 @@ La link:concept_kubernetes_network_monitoring_and_map.html["_Rendimiento de la r
 
 
 
-=== Creación de informes
-
-El componente de informes de Cloud Insights se ha cambiado de nombre a «Análisis de Cloud Insights». Sin embargo, no se preocupe; la funcionalidad sigue siendo la misma.
-
-
-
 === Cambios de recopilador/adquisición:
 
 Se han realizado los siguientes cambios en la unidad de adquisición/recopilación de datos:
