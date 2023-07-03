@@ -222,7 +222,7 @@ Los resultados de búsqueda con y sin / serán diferentes
 | Algunos eventos de NFS no se ven en la interfaz de usuario de. | Compruebe lo siguiente: 1. Se debe ejecutar un recopilador de directorios de usuarios para el servidor AD con el conjunto de atributos POSIX con el atributo unixid habilitado desde la interfaz de usuario. 2. Cualquier usuario que haga acceso a NFS debe verse cuando se busca en la página de usuario desde UI 3. Los eventos sin formato (los eventos para los que aún no se ha detectado el usuario) no son compatibles con NFS 4. El acceso anónimo a la exportación de NFS no se supervisará. 5. Asegúrese de que la versión NFS se utiliza en menor valor que NFS4.1. 
 
 
-| Después de escribir algunas letras que contienen un carácter comodín como asterisco (\*) en los filtros de las páginas Forensics _All Activity_ o _entities_, las páginas se cargan muy lentamente. | Un asterisco (\*) en la cadena de búsqueda busca todo. Sin embargo, las cadenas comodín iniciales como _*<searchTerm>_ o _*<searchTerm>*_ resultarán en una consulta lenta.
+| Después de escribir algunas letras que contienen un carácter comodín como asterisco (*) en los filtros de las páginas Forensics _All Activity_ o _entities_, las páginas se cargan muy lentamente. | Un asterisco (\*) en la cadena de búsqueda busca todo. Sin embargo, las cadenas comodín iniciales como _*<searchTerm>_ o _*<searchTerm>*_ resultarán en una consulta lenta.
 Para obtener un mejor rendimiento, utilice cadenas de prefijo en su lugar, en el formato _<searchTerm>*_ (en otras palabras, agregue el asterisco (*) _after_ un término de búsqueda).
 Ejemplo: Utilice la cadena _testvolume*_, en lugar de _*testvolume_ o _*test*volume_.
 
