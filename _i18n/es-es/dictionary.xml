@@ -11168,7 +11168,6 @@ NOTA: Las calculadoras son solo para estimación. El precio exacto se establecer
   <block id="2d6f8cb777e4d6f5a232c7cc211f17a7" category="paragraph"><block ref="2d6f8cb777e4d6f5a232c7cc211f17a7" category="inline-image-macro-rx" type="image"></block></block>
   <block id="6300dcea0c6867921931afe8fd5ccb4b" category="section-title">La supervisión de la red de Kubernetes y el mapa están disponibles para todos</block>
   <block id="00f8e358a2df2f5a1f3b0492b0d11763" category="paragraph">La <block ref="bfbd4b14aa5d5e760ae10e06c192ceef" category="inline-link-macro-rx"></block> Simplifica la solución de problemas asignando dependencias entre cargas de trabajo de Kubernetes, proporcionando visibilidad en tiempo real de las latencias y anomalías del rendimiento de la red de Kubernetes para identificar los problemas de rendimiento antes de que afecten a los usuarios. Muchos clientes lo encontraron útil durante la vista previa, y ahora está disponible para que todo el mundo lo disfrute.</block>
-  <block id="cc833fa398edd8b5e8c8888354dea479" category="paragraph">El componente de informes de Cloud Insights se ha cambiado de nombre a «Análisis de Cloud Insights». Sin embargo, no se preocupe; la funcionalidad sigue siendo la misma.</block>
   <block id="05a035fa9dd41dc72ca47e19017a5669" category="section-title">Cambios de recopilador/adquisición:</block>
   <block id="fce2019180d27d21008b37f6d8133ab8" category="paragraph">Se han realizado los siguientes cambios en la unidad de adquisición/recopilación de datos:</block>
   <block id="799e9d9ce6893191f44a0124794ae43a" category="list-text">Los UM de dominio de datos y cohesión se miden a 40 TiB: 1 MU.</block>
@@ -11283,4 +11282,6 @@ Se (Security Enhanced, seguridad mejorada) Linux no es compatible.</block>
   <block id="c418d072678072a9d451ca92f8cbbcdd" category="list-text">1 Unidad Gestionada = 4 vCPU de Kubentes</block>
   <block id="72a8f3e5ddcd565deaadfe888f6ec6ad" category="paragraph">Las calculadoras de suscripción le ayudan a estimar el coste de su suscripción a Cloud Insights en función del número de unidades gestionadas necesarias. Los valores actuales se rellenan previamente y puede ajustar esos valores para ayudarle a planificar el crecimiento futuro estimado. Puede ajustar los valores de Infraestructura, Kubernetes o ambos.</block>
   <block id="e83566ec8beb942e786f102a35482e5d" category="list-text">Vistas del uso de la unidad gestionada</block>
+  <block id="5fe48850b2ef6a213ed01dde1958dfa4" category="section-title">Editar un informe existente</block>
+  <block id="5bd415396ca9b48afa3306c238307445" category="paragraph">Tenga en cuenta que la edición de archivos en su ubicación predeterminada corre el riesgo de que esos informes se sobrescriban en la siguiente actualización del catálogo de informes. Se recomienda guardar el informe editado con un nuevo nombre o almacenarlo en una ubicación no predeterminada.</block>
 </blocks>

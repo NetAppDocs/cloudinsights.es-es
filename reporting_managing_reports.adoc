@@ -88,6 +88,12 @@ image:Reporting_Open_From_Clipboard.png["Abrir un informe desde el portapapeles"
 
 
 
+== Editar un informe existente
+
+Tenga en cuenta que la edición de archivos en su ubicación predeterminada corre el riesgo de que esos informes se sobrescriban en la siguiente actualización del catálogo de informes. Se recomienda guardar el informe editado con un nuevo nombre o almacenarlo en una ubicación no predeterminada.
+
+
+
 == Resolución de problemas
 
 Aquí encontrará sugerencias para la solución de problemas con la creación de informes.
