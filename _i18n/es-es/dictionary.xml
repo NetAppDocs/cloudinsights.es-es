@@ -9844,7 +9844,6 @@
   <block id="74fc57ab5709f51d1937bb0914fee569" category="cell">Tiempo de espera de conexión HTTP (s)</block>
   <block id="6939a409597e034178c1b1a80d734f5d" category="cell">Tiempo de espera HTTP en segundos.</block>
   <block id="9d8dde207423e16514f1a132221a65a3" category="summary">Configuración del recopilador de datos REST de Dell EMC Isilon / PowerScale.</block>
-  <block id="9b7f99f4d867484d5fc5fad6f84567ba" category="paragraph">Cloud Insights utiliza el recopilador de datos DE REST de Dell EMC Isilon / PowerScale para adquirir datos de inventario y rendimiento del almacenamiento de Dell EMC Isilon o PowerScale.</block>
   <block id="c40dff11b6ddb88303480bb455edaf14" category="cell">Sistema de archivos OneFS</block>
   <block id="c593547a39a4d7895f41492d41fd6fa3" category="list-text">Una cuenta de usuario y una contraseña. Esta cuenta NO necesita ser admin/root, pero DEBE conceder un número sustancial de privilegios de sólo lectura a su cuenta de servicio; consulte la tabla siguiente</block>
   <block id="af44c06ccccd08beeff0d7957f243408" category="list-text">Dirección IP / Nombre de dominio completo del clúster Dell EMC Isilon / PowerScale</block>
@@ -11287,4 +11286,6 @@ Se (Security Enhanced, seguridad mejorada) Linux no es compatible.</block>
   <block id="6345c18147755da14a72a1bcc448c878" category="paragraph"><block ref="6345c18147755da14a72a1bcc448c878" category="inline-image-macro-rx" type="image"></block></block>
   <block id="bea93c5448a53dbeae5f078ae207efa5" category="paragraph"><block ref="416a8d7353098379fdb36ba6e8aa6da8" category="inline-image-macro-rx" type="image"></block>
 <block ref="abda75af4f4de4a9d5c96cfad5c94c77" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="ba538d1194e2af4196c883d4ad4d8417" category="paragraph">Cloud Insights utiliza el recopilador de datos DE REST de Dell EMC Isilon / PowerScale para adquirir datos de inventario y rendimiento del almacenamiento de Dell EMC Isilon o PowerScale. Este recopilador admite matrices que ejecutan OneFS 8,0.0+.</block>
+  <block id="6776f941038bab0f04ff47368b5bef54" category="list-text">Clúster Isilon/PowerScale que ejecuta OneFS 8.0.0 o posterior</block>
 </blocks>
