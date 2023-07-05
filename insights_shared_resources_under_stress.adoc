@@ -43,20 +43,20 @@ Se produce una *contención* o *saturación* cuando se determina que la tasa de 
 
 == Cargas de trabajo exigentes
 
-Para empezar a buscar cargas de trabajo exigentes e afectadas en sus recursos compartidos, haga clic en *Paneles > Recursos compartidos bajo estrés* en el menú Cloud Insights.
+Para empezar a buscar cargas de trabajo exigentes e impactadas en tus recursos compartidos, haz clic en *Paneles de Control > Insights* y selecciona *Recursos Compartidos bajo estrés* Insight.
 
-image:Shared_resources_Under_Stress_menu.png["Lista de cargas de trabajo"]
+image:InsightsMenu.png["Menú Información"]
 
-Cloud Insights muestra una lista de cualquier carga de trabajo en la que se ha detectado una saturación. Tenga en cuenta que Cloud Insights sólo mostrará cargas de trabajo donde se haya detectado al menos un recurso _exigente_ *y* al menos un recurso _impactado_.
+Cloud Insights muestra una lista de cualquier carga de trabajo en la que se ha detectado una saturación. Tenga en cuenta que Cloud Insights mostrará cargas de trabajo donde se ha detectado al menos un recurso _exigente_ *o* _recurso afectado_.
 
 Haga clic en una carga de trabajo para ver la página de detalles correspondiente. El gráfico superior muestra la actividad del recurso compartido (por ejemplo, un grupo de almacenamiento) en el que se produce la contención/saturación.
 
-image:Shared_resources_Under_Stress_SharedResource.png["Recurso compartido que muestra contención"]
+image:ResourceInsightShared.png["Recurso compartido que muestra contención"]
 
 A continuación, se muestran dos gráficos que muestran las cargas de trabajo _exigente_ y las cargas de trabajo que _afectan_ las cargas de trabajo más exigentes.
 
-image:Insights_Demanding_Workload_Chart.png["Gráfico de cargas de trabajo exigentes"]
-image:Insights_Impacted_Workload_Chart.png["Gráfico influyen en la carga de trabajo"]
+image:ResourceInsightDemanding.png["Gráfico de cargas de trabajo exigentes"]
+image:ResourceInsightImpacted-a.png["Gráfico influyen en la carga de trabajo"]
 
 Debajo de cada tabla hay una lista de cargas de trabajo y/o recursos que afectan o se ven afectados por la contención. Al hacer clic en un recurso (por ejemplo, una máquina virtual) se abre una página de detalles de ese recurso. Al hacer clic en una carga de trabajo, se abre una página de consulta en la que aparecen los pods implicados. Tenga en cuenta que si el enlace abre una consulta vacía, puede deberse a que el pod afectado ya no forma parte de la contención activa. Puede modificar el intervalo de tiempo de la consulta para ver la lista de POD en un intervalo de tiempo mayor o más específico.
 
