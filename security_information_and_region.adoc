@@ -41,7 +41,7 @@ Esto resume los datos de configuración proporcionados por el cliente que se uti
 
 * Secretos
 +
-Los secretos consisten en las credenciales utilizadas por la Unidad de adquisición de Cloud Insights para acceder a los servicios y dispositivos del cliente. Estas credenciales se cifran utilizando AES-256 y las claves privadas sólo se almacenan en las unidades de adquisición y nunca salen del entorno del cliente. Incluso los SRES privilegiados de Cloud Insights no pueden acceder a los secretos del cliente en texto simple debido a este diseño.
+Los secretos consisten en las credenciales utilizadas por la Unidad de adquisición de Cloud Insights para acceder a los servicios y dispositivos del cliente. Estas credenciales se cifran mediante un cifrado asimétrico fuerte, y las claves privadas se almacenan solo en las Unidades de adquisición y nunca salen del entorno del cliente. Incluso los SRES privilegiados de Cloud Insights no pueden acceder a los secretos del cliente en texto simple debido a este diseño.
 
 * Datos funcionales
 +
