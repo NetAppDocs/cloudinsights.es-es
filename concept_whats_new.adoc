@@ -39,7 +39,7 @@ image:Recent_Changes_Example.png["Ejemplo de cambios recientes"]
 
 === Mejoras del operador
 
-Se han realizado las siguientes mejoras en link:/telegraf_agent_k8s_config_options.html["Operador de Kubernetes"] instalación:
+Se han realizado las siguientes mejoras en link:telegraf_agent_k8s_config_options.html["Operador de Kubernetes"] instalación:
 
 * Opción para omitir la recopilación de métricas de Docker
 * Posibilidad de añadir y personalizar toleraciones a telegraf Daemonsets y Replicasets
@@ -63,7 +63,7 @@ image:Operator_Public_Image_Key.png["Descargue la clave pública"]
 
 === Agregación, Formato Condicional y más para consultas
 
-La agregación, la selección de unidades, el formato condicional y el cambio de nombre de columna son algunas de las características más útiles de un widget de tabla de panel de control, y ahora esas mismas características están disponibles para link:/task_create_query.html["Consultas"].
+La agregación, la selección de unidades, el formato condicional y el cambio de nombre de columna son algunas de las características más útiles de un widget de tabla de panel de control, y ahora esas mismas características están disponibles para link:task_create_query.html["Consultas"].
 
 image:Query_Page_Aggregation_etc.png["Resultados de la página de consulta que muestran agregación, formato condicional, visualización de unidades y cambio de nombre de columna"]
 

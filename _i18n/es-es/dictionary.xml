@@ -11311,7 +11311,6 @@ Se (Security Enhanced, seguridad mejorada) Linux no es compatible.</block>
   <block id="f7796a8f8185c8c1d264bce4bad25eee" category="inline-image-macro">Ejemplo de cambios recientes</block>
   <block id="57c43929c060c6b6731a95fee2e6ac4b" category="paragraph"><block ref="57c43929c060c6b6731a95fee2e6ac4b" category="inline-image-macro-rx" type="image"></block></block>
   <block id="7106bac801506d89011c164f7281f183" category="section-title">Mejoras del operador</block>
-  <block id="c6d80de9d1332fa033db27b32896a7ca" category="paragraph">Se han realizado las siguientes mejoras en <block ref="89b3ece041fc6e3eaf91d1f18cb70562" category="inline-link-macro-rx"></block> instalación:</block>
   <block id="2a81267b1c9c4611addccc58ffea4ce5" category="list-text">Opción para omitir la recopilación de métricas de Docker</block>
   <block id="62643d895d41437dc1854e6321bbca7d" category="list-text">Posibilidad de añadir y personalizar toleraciones a telegraf Daemonsets y Replicasets</block>
   <block id="4157bbc9478996de33c632d1be8b4617" category="section-title">Insight: Recupere el almacenamiento de datos fríos</block>
@@ -11322,7 +11321,6 @@ Se (Security Enhanced, seguridad mejorada) Linux no es compatible.</block>
   <block id="b48c3957268aba1d2cb9774cdfb76b1a" category="inline-image-macro">Descargue la clave pública</block>
   <block id="241e648e3eaa9f9b228db06a6cf403f7" category="paragraph"><block ref="241e648e3eaa9f9b228db06a6cf403f7" category="inline-image-macro-rx" type="image"></block></block>
   <block id="659e26ba67b278fd61383664fb1ed670" category="section-title">Agregación, Formato Condicional y más para consultas</block>
-  <block id="7d7ce3fd83ffcf864f9c0285f8d8b6ab" category="paragraph">La agregación, la selección de unidades, el formato condicional y el cambio de nombre de columna son algunas de las características más útiles de un widget de tabla de panel de control, y ahora esas mismas características están disponibles para <block ref="f011edc734cda8dc5136e8e133afbd9b" category="inline-link-macro-rx"></block>.</block>
   <block id="2b88de4b6bcbafe41a9b2e66846672ee" category="paragraph">Estas funciones ya están disponibles para datos de tipo de integración (Kubernetes, Métricas avanzadas de ONTAP, etc.) y próximamente estarán disponibles para objetos de Infraestructura (almacenamiento, volumen, switch, etc.).</block>
   <block id="2b4c43183ba48840a9a245b4b11ed0f1" category="section-title">API para auditoría</block>
   <block id="8b0aa17c3cd1f148c8d84b8d9eade119" category="paragraph">Ahora puedes usar una API para consultar o exportar eventos auditados. Vaya a Admin &gt; API Access y seleccione el enlace _API Documentation_ para obtener más información.</block>
@@ -11359,4 +11357,6 @@ persistentvolumeclaims=[*],persistentvolumes=[*],pods=[*],replicasets=[*],resour
   <block id="8776d1f0ee4232b1c2ff5bc38e4b2603" category="cell">toleraciones-exportador-de-eventos</block>
   <block id="bac5ce71f32beb834c27a988cad33543" category="cell">toleraciones adicionales de evento-exportador.</block>
   <block id="287ab13fa00dc2700e0567bc50f5a663" category="cell">l4-toleraciones</block>
+  <block id="259addbbe43276d62a91ef44d4dd55a8" category="paragraph">Se han realizado las siguientes mejoras en <block ref="b13d2921c99b8ae4a991204f54e7f54b" category="inline-link-macro-rx"></block> instalación:</block>
+  <block id="e69cca83cc71ef5f7c5439d8944e108d" category="paragraph">La agregación, la selección de unidades, el formato condicional y el cambio de nombre de columna son algunas de las características más útiles de un widget de tabla de panel de control, y ahora esas mismas características están disponibles para <block ref="2b0568ca01fc8a058b93978c376cc13e" category="inline-link-macro-rx"></block>.</block>
 </blocks>
