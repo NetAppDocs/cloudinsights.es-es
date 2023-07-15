@@ -25,6 +25,72 @@ NOTE: Es posible que algunas de estas funciones no estén disponibles en la edic
 
 
 
+== Julio de 2023
+
+
+
+=== Mostrar cambios recientes
+
+Las páginas de destino de Data Collector ahora incluyen una lista de cambios recientes. Solo tiene que hacer clic en el botón «Cambios recientes» situado en la parte inferior de cualquier página de destino del recopilador de datos para mostrar los cambios recientes del recopilador de datos.
+
+image:Recent_Changes_Example.png["Ejemplo de cambios recientes"]
+
+
+
+=== Mejoras del operador
+
+Se han realizado las siguientes mejoras en link:/telegraf_agent_k8s_config_options.html["Operador de Kubernetes"] instalación:
+
+* Opción para omitir la recopilación de métricas de Docker
+* Posibilidad de añadir y personalizar toleraciones a telegraf Daemonsets y Replicasets
+
+
+
+
+=== Insight: Recupere el almacenamiento de datos fríos
+
+La link:insights_reclaim_ontap_cold_storage.html["Recupere el conocimiento del almacenamiento de datos fríos de ONTAP"] Ahora admite FlexGroups, y ahora está disponible para todos los clientes.
+
+
+
+=== Firma de imagen del operador
+
+Para los clientes que utilizan un repositorio privado para su operador de supervisión de Kubernetes de NetApp, ahora puede copiar la clave pública de firma de imagen durante la instalación del operador, lo que le permite confirmar la autenticidad del software descargado. Seleccione el botón _Copiar clave pública de firma de imagen_ durante el paso opcional _Cargar la imagen del operador en su repositorio privado_.
+
+image:Operator_Public_Image_Key.png["Descargue la clave pública"]
+
+
+
+=== Agregación, Formato Condicional y más para consultas
+
+La agregación, la selección de unidades, el formato condicional y el cambio de nombre de columna son algunas de las características más útiles de un widget de tabla de panel de control, y ahora esas mismas características están disponibles para link:/task_create_query.html["Consultas"].
+
+image:Query_Page_Aggregation_etc.png["Resultados de la página de consulta que muestran agregación, formato condicional, visualización de unidades y cambio de nombre de columna"]
+
+Estas funciones ya están disponibles para datos de tipo de integración (Kubernetes, Métricas avanzadas de ONTAP, etc.) y próximamente estarán disponibles para objetos de Infraestructura (almacenamiento, volumen, switch, etc.).
+
+
+
+=== API para auditoría
+
+Ahora puedes usar una API para consultar o exportar eventos auditados. Vaya a Admin > API Access y seleccione el enlace _API Documentation_ para obtener más información.
+
+image:Audit_API_Swagger.png["API Swagger para auditoría, width=400"]
+
+
+
+=== Recopilador de datos: Economía Trident
+
+Cloud Insights ahora es compatible con el controlador de economía Trident, y obtiene estos beneficios:
+
+* Consigue visibilidad de las métricas de rendimiento y la asignación de qtrees de pod-to-ONTAP.
+* Proporciona una solución de problemas fluida y una navegación sencilla desde los pods de Kubernetes hasta el almacenamiento back-end
+* Detecte de forma proactiva los problemas de rendimiento de backend con los monitores
+
+
+'''
+
+
 == Junio de 2023
 
 

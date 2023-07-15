@@ -44,6 +44,54 @@ La lista de resultados de la consulta muestra un número de columnas predetermin
 
 image:QuerySelectColumns.png["Seleccione columnas"]
 
+
+
+== Seleccione Agregación, Unidades, Formato condicional
+
+
+
+=== Agregación y Unidades
+
+Para las columnas de valor, puede refinar aún más los resultados de la consulta eligiendo cómo se agregan los valores mostrados, así como seleccionando las unidades en las que se muestran esos valores. Estas opciones se encuentran seleccionando el menú “Tres puntos” en la esquina superior de una columna.
+
+image:Query_Page_Aggregation_etc.png["Resultados de la página de consulta que muestran agregación, formato condicional, visualización de unidades y cambio de nombre de columna"]
+
+
+
+==== Unidades
+
+Puede seleccionar las unidades en las que se mostrarán los valores. Por ejemplo, si la columna Seleccionado muestra capacidad bruta y los valores se muestran en GiB, pero prefiere mostrarlos como TiB, simplemente seleccione TiB en el menú desplegable Unit Display.
+
+
+
+==== Agregación
+
+Por el mismo token, si los valores mostrados se agregan a partir de los datos subyacentes como “promedio”, Pero prefiere mostrar la suma de todos los valores, seleccione “Suma” en la lista desplegable _Agrupar por_ (si desea que los valores agrupados muestren las sumas) o en la lista desplegable _Time Aggregate by_ (si desea que los valores de fila muestren las sumas de los datos subyacentes).
+
+Puede optar por agregar puntos de datos agrupados por _Avg, Max, Min o Sum_.
+
+Puede agregar datos de fila individuales por _promedio, último punto de datos adquirido, máximo, mínimo o suma_.
+
+
+
+==== Formato Condicional
+
+El formato condicional le permite resaltar umbrales de nivel de advertencia y nivel crítico en la lista de resultados de la consulta, lo que proporciona visibilidad instantánea a los valores atípicos y puntos de datos excepcionales.
+
+image:Query_Page_Conditional_Formatting.png["Formato Condicional en la Página Consulta"]
+
+El formato condicional se define por separado para cada columna. Por ejemplo, puede elegir un conjunto de umbrales para una columna Capacidad y otro conjunto para una columna Rendimiento.
+
+
+
+==== Cambiar nombre de columna
+
+Cambiar el nombre de una columna cambia el nombre mostrado en la lista de resultados de la consulta. El nuevo nombre de columna también se muestra en el archivo resultante si exporta la lista de consultas a .CSV.
+
+
+
+=== Ahorre
+
 Después de configurar la consulta para que le muestre los resultados que desea, puede hacer clic en el botón *Guardar* para guardar la consulta para su uso futuro. Déle un nombre significativo y único.
 
 
