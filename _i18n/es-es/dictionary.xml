@@ -11358,5 +11358,5 @@ persistentvolumeclaims=[*],persistentvolumes=[*],pods=[*],replicasets=[*],resour
   <block id="287ab13fa00dc2700e0567bc50f5a663" category="cell">l4-toleraciones</block>
   <block id="259addbbe43276d62a91ef44d4dd55a8" category="paragraph">Se han realizado las siguientes mejoras en <block ref="b13d2921c99b8ae4a991204f54e7f54b" category="inline-link-macro-rx"></block> instalación:</block>
   <block id="e69cca83cc71ef5f7c5439d8944e108d" category="paragraph">La agregación, la selección de unidades, el formato condicional y el cambio de nombre de columna son algunas de las características más útiles de un widget de tabla de panel de control, y ahora esas mismas características están disponibles para <block ref="2b0568ca01fc8a058b93978c376cc13e" category="inline-link-macro-rx"></block>.</block>
-  <block id="e8b13bb5980b04b84716acf64b3b0abb" category="paragraph">Edite el despliegue de operador de supervisión en operator-config.yaml y modifique todas las referencias de imagen para utilizar su repositorio Docker privado.</block>
+  <block id="8b4599b5810466dc4e8956fc5bc3c54c" category="paragraph">Edite el despliegue de operador de supervisión en operator-deployment.yaml y modifique todas las referencias de imagen para utilizar su repositorio Docker privado.</block>
 </blocks>
