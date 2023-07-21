@@ -185,6 +185,47 @@ A continuación se enumeran los requisitos para configurar y utilizar este recop
 |===
 
 
+== Métricas de potencia de ONTAP
+
+Varios modelos de ONTAP proporcionan métricas de potencia para Cloud Insights que se pueden utilizar para supervisión o alertas. Las listas de modelos compatibles y no compatibles a continuación no son exhaustivas, pero deben proporcionar alguna orientación; en general, si un modelo está en la misma familia que uno de la lista, el soporte debe ser el mismo.
+
+Modelos compatibles:
+
+A200
+A220
+A250
+A300
+A320
+A400
+A700
+A700s
+A800
+A900
+C190
+FAS2240-4
+FAS2552
+FAS2650
+FAS2720
+FAS2750
+FAS8200
+FAS8300
+FAS8700
+FAS9000
+
+Modelos no admitidos:
+
+FAS2620
+FAS3250
+FAS3270
+FAS500f
+FAS6280
+FAS/AFF 8020
+FAS/AFF 8040
+FAS/AFF 8060
+FAS/AFF 8080
+
+
+
 == Una nota sobre los permisos
 
 Dado que varios paneles ONTAP de Cloud Insights se basan en contadores ONTAP avanzados, debe activar *Advanced Counter Data Collection* en la sección Configuración avanzada del recopilador de datos.
