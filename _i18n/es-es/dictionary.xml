@@ -11359,4 +11359,23 @@ persistentvolumeclaims=[*],persistentvolumes=[*],pods=[*],replicasets=[*],resour
   <block id="e69cca83cc71ef5f7c5439d8944e108d" category="paragraph">La agregación, la selección de unidades, el formato condicional y el cambio de nombre de columna son algunas de las características más útiles de un widget de tabla de panel de control, y ahora esas mismas características están disponibles para <block ref="2b0568ca01fc8a058b93978c376cc13e" category="inline-link-macro-rx"></block>.</block>
   <block id="8b4599b5810466dc4e8956fc5bc3c54c" category="paragraph">Edite el despliegue de operador de supervisión en operator-deployment.yaml y modifique todas las referencias de imagen para utilizar su repositorio Docker privado.</block>
   <block id="3aabe2789e92746b5404b30428bb4f9e" category="paragraph">Si usa un proxy para una o ambas, para instalar el monitor operativo de Kubernetes de NetApp, primero debe asegurarse de que el proxy esté configurado para permitir una buena comunicación con su entorno de Cloud Insights. Por ejemplo, desde los servidores/VM desde los que desea instalar el Operador, debe poder acceder a Cloud Insights y poder descargar archivos binarios de Cloud Insights.</block>
+  <block id="9de497f607f8a73311408d3d7b337399" category="cell">Veo mensajes de error repetidos parecidos a los siguientes en mis registros de Telegraf:
+
+ ¡E! [Agent] Error al escribir en output.http: Post <block ref="95209f65da8fece27c962b4b503ef61a" category="inline-link-rx"></block> Se ha excedido la fecha límite de contexto (se ha excedido el tiempo de espera del cliente al esperar cabeceras)</block>
+  <block id="34e1dafcca7166ebef6820ec79ddd7cf" category="cell">Edite cada archivo de configuración de Telegraf (es decir, /etc/telegraf/telegraf.d/*.conf) y aumente el tiempo de espera para los plugins de salida de Telegraf.  Por ejemplo, en cada archivo .conf, reemplace todas las instancias de...
+
+[[output.http]]
+...
+tiempo de espera = «5s»
+...
+
+
+...con lo siguiente:
+
+[[output.http]]
+...
+tiempo de espera = «10s»
+...
+
+A continuación, reinicie Telegraf.</block>
 </blocks>
