@@ -3201,7 +3201,6 @@
   <block id="2855135907eef979db329ca6aebe0464" category="section-title">Directrices antes de ejecutar el simulador:</block>
   <block id="d786b68b9cf5f686784afa64b69b3bce" category="list-text">Asegúrese de que los archivos cifrados no están vacíos.</block>
   <block id="dc77d098f1840a6fa69f5b878fac260d" category="list-text">Asegúrese de cifrar &gt; 50 archivos. Se ignorará un pequeño número de archivos.</block>
-  <block id="dfabdab4d722d2b248490b96ddf9add5" category="list-text">No ejecute un ataque varias veces con el mismo usuario. Después de varias veces, CS aprenderá este comportamiento de usuario y asumirá que es el comportamiento normal del usuario.</block>
   <block id="7a5e4b833809f504d9c40568ed0a5cec" category="list-text">No cifre los archivos que acaba de crear el mismo usuario. El cambio de un archivo que acaba de crear un usuario no se considera una actividad arriesgada. En su lugar, utilice los archivos creados por otro usuario O espere unas horas entre crear los archivos y cifrarlos.</block>
   <block id="3eee06b6e6c02b14b6bf0a76a8e1ee71" category="section-title">Prepare el sistema</block>
   <block id="0864c33fc7e49f7b5dabd2b27c2805d5" category="paragraph">En primer lugar, monte el volumen objetivo en la máquina. Puede montar un montaje NFS o una exportación CIFS.</block>
@@ -6337,7 +6336,6 @@
   <block id="2c4a65782f3fcd193e8e3aab503fa515" category="section-title">Política de retención</block>
   <block id="77422aee0786be7f7c1880b7b0954687" category="cell">Pruebe lo siguiente:</block>
   <block id="eb75aeb3b4b2b9734ba3e52f5483f0b2" category="inline-link-macro">Documentación de ONTAP</block>
-  <block id="5aec7bee9bf7098941b7fab790f89ec8" category="cell">No No hay ningún período de purgado/archivado establecido para instantáneas CS. El usuario debe definir la política de purgado para las instantáneas CS. Consulte la <block ref="e3477019d6e8e26c6e36a5c10c372344" category="inline-link-macro-rx"></block> sobre cómo configurar las directivas.</block>
   <block id="97142806b6f8ba5285f1650e6822a478" category="cell">¿Qué sucederá si se alcanza el número máximo de snapshots en ONTAP?</block>
   <block id="c718437c95f9699cf92562f47fc2c706" category="inline-link-macro">Configurando política de eliminación de Snapshot</block>
   <block id="a2649cdb2384d3388d38543a8ba844c7" category="cell">Asegúrese de que la función que se utiliza para crear instantáneas tiene un vínculo: https://docs.netapp.com/us-en/cloudinsights/task_add_collector_svm.html#a-note-about-permissions[proper derechos asignados]. Asegúrese de que _csrole_ se crea con derechos de acceso adecuados para tomar instantáneas: Security login role create -vserver &lt;vservername&gt; -role csrole -cmddirname "volume snapshot" -access all</block>
@@ -10331,9 +10329,6 @@
   <block id="8771316aacd1c4b06854e0e9f30a545c" category="list-text">Tipo de ataque (ransomware, sabotaje) e ID de alerta (asignado por seguridad de carga de trabajo)</block>
   <block id="37fa3057780441193fd46b687aef4974" category="paragraph">Workload Security protege los datos al tomar automáticamente una instantánea cuando se detecta una actividad maliciosa, garantizando que se realiza un backup de los datos de forma segura.</block>
   <block id="106f889ad7fb5a787f85bc5d8d8471ec" category="paragraph">Las alertas y advertencias se conservan durante 13 meses. Se eliminarán alertas y advertencias de más de 13 meses. Si se elimina el entorno Workload Security, también se eliminan todos los datos asociados con el entorno.</block>
-  <block id="431fef516df90830b5c1c21b6ce07235" category="cell">En las instantáneas que toma Workload Security (CS), ¿hay algún periodo de purgado/archivado para snapshots CS?</block>
-  <block id="e6fb05f0da5acc86f543947f4c4e697e" category="cell">Existe una situación en la que ONTAP toma instantáneas cada hora al día. ¿Las instantáneas de seguridad de carga de trabajo (CS) lo afectarán? ¿Tomará la instantánea CS la hora? ¿Se detendrá la instantánea predeterminada por hora?</block>
-  <block id="726c7f3f596062ccd907feb3815a05e0" category="cell">Las instantáneas de seguridad de carga de trabajo no afectarán a los snapshots de hora. LAS instantáneas DE CS no ocupan el espacio de la instantánea por hora y deben continuar como antes. La copia de Snapshot por hora predeterminada no se detendrá.</block>
   <block id="dbc12ef69e34122bf8f4ac6b397d0011" category="cell">Si se alcanza el número máximo de instantáneas, la toma posterior de instantáneas fallará y Workload Security mostrará un mensaje de error indicando que la instantánea está llena. El usuario tiene que definir políticas de Snapshot para eliminar las snapshots más antiguas. De lo contrario, no se harán snapshots. En ONTAP 9.3 y versiones anteriores, un volumen puede contener hasta 255 copias snapshot. A partir de la versión 9.4 de ONTAP, un volumen puede contener hasta 1023 copias snapshot. Consulte la documentación de ONTAP para obtener información acerca de <block ref="be93a0e4b8c5168a6ec2dc10f7f34d59" category="inline-link-macro-rx"></block>.</block>
   <block id="58eb0692e2d7399b3579ee5ce166cc58" category="cell">Workload Security no puede tomar instantáneas en absoluto.</block>
   <block id="06319d1baa3128a2dcdf122c600b751e" category="cell">Las copias Snapshot fallan en alertas antiguas en las SVM que se quitaron de Workload Security y, posteriormente, se vuelven a añadir. Para las alertas nuevas que ocurren después de que se vuelve a añadir la SVM, se hacen snapshots.</block>
@@ -11412,4 +11407,7 @@ FAS/AFF 8040
 FAS/AFF 8060
 FAS/AFF 8080</block>
   <block id="be7979b5db831ae076c107584fa4f37c" category="sidebar">Supervisión de red y mapa</block>
+  <block id="8d41e3bd6529669109fc47034b6cec4c" category="cell">Existe una situación en la que ONTAP toma instantáneas cada hora al día. ¿Le afectarán las instantáneas de seguridad de carga de trabajo (WS)? ¿La instantánea de WS tomará el lugar de la instantánea cada hora? ¿Se detendrá la instantánea predeterminada por hora?</block>
+  <block id="9abb3d91142b5821f0ea7a72b15b21d3" category="cell">Las instantáneas de seguridad de carga de trabajo no afectarán a los snapshots de hora. Las instantáneas de WS no tomarán el espacio de instantáneas por hora y eso debería continuar como antes. La copia de Snapshot por hora predeterminada no se detendrá.</block>
+  <block id="9cdd30f36b5b67d9fc64c9bd48e9fac8" category="list-text">No ejecute un ataque varias veces con el mismo usuario. Después de algunas veces, Workload Security aprenderá el comportamiento de este usuario y asumirá que es el comportamiento normal del usuario.</block>
 </blocks>

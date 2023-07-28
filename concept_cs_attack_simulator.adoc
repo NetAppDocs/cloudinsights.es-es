@@ -47,7 +47,7 @@ Consulte a continuación las instrucciones para link:#create-files-programmatica
 
 . Asegúrese de que los archivos cifrados no están vacíos.
 . Asegúrese de cifrar > 50 archivos. Se ignorará un pequeño número de archivos.
-. No ejecute un ataque varias veces con el mismo usuario. Después de varias veces, CS aprenderá este comportamiento de usuario y asumirá que es el comportamiento normal del usuario.
+. No ejecute un ataque varias veces con el mismo usuario. Después de algunas veces, Workload Security aprenderá el comportamiento de este usuario y asumirá que es el comportamiento normal del usuario.
 . No cifre los archivos que acaba de crear el mismo usuario. El cambio de un archivo que acaba de crear un usuario no se considera una actividad arriesgada. En su lugar, utilice los archivos creados por otro usuario O espere unas horas entre crear los archivos y cifrarlos.
 
 
