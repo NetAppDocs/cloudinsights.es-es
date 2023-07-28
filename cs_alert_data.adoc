@@ -141,9 +141,6 @@ Las alertas y advertencias se conservan durante 13 meses. Se eliminarán alertas
 | Problema: | Pruebe lo siguiente: 
 
 
-| En las instantáneas que toma Workload Security (CS), ¿hay algún periodo de purgado/archivado para snapshots CS? | No No hay ningún período de purgado/archivado establecido para instantáneas CS. El usuario debe definir la política de purgado para las instantáneas CS. Consulte la link:https://library.netapp.com/ecmdocs/ECMP1196819/html/GUID-27D0E37F-5AF1-4AF9-BDEB-9A4B7AF3B4A9.html["Documentación de ONTAP"] sobre cómo configurar las directivas. 
-
-
 | Existe una situación en la que ONTAP toma instantáneas cada hora al día. ¿Las instantáneas de seguridad de carga de trabajo (CS) lo afectarán? ¿Tomará la instantánea CS la hora? ¿Se detendrá la instantánea predeterminada por hora? | Las instantáneas de seguridad de carga de trabajo no afectarán a los snapshots de hora. LAS instantáneas DE CS no ocupan el espacio de la instantánea por hora y deben continuar como antes. La copia de Snapshot por hora predeterminada no se detendrá. 
 
 
