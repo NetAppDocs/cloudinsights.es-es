@@ -25,6 +25,70 @@ NOTE: Es posible que algunas de estas funciones no estén disponibles en la edic
 
 
 
+== Agosto de 2023
+
+
+
+=== Menús mejorados
+
+Hemos actualizado el menú de navegación de la izquierda para respaldar mejor los flujos de trabajo de nuestros clientes. Los nuevos elementos de nivel superior, como _Kubernetes_, proporcionan acceso acelerado a lo que el cliente necesita, y una consola de administradores consolidada soporta el rol de propietario de inquilino.
+
+A continuación se muestran algunos ejemplos adicionales de los cambios:
+
+* El menú de nivel superior _Observability_ muestra la detección de datos, alertas y consultas de registro
+* La funcionalidad de acceso a la API para la observabilidad y la seguridad de la carga de trabajo se encuentran en un menú
+* Del mismo modo para la funcionalidad de Observabilidad y Seguridad de la Carga de Trabajo 'Notificaciones', ahora también en un solo menú
+
+
+image:NewLeftNavMenu.png["Se ha actualizado el menú de navegación izquierdo"]
+
+Aquí hay una breve lista de las características que puede encontrar en cada menú:
+
+Observabilidad:
+
+* Explorar (paneles, consultas métricas, informes de infraestructura)
+* Alertas (Monitores y Alertas)
+* Colectores (recolectores de datos y unidades de adquisición)
+* Consultas de registro
+* Enriquecer (Reglas de anotaciones y anotaciones, Aplicaciones, Resolución de dispositivos)
+* Creación de informes
+
+
+Kubernetes:
+
+* Exploración en cluster y Mapa de red
+
+
+Seguridad de carga de trabajo:
+
+* Alertas
+* Ciencia forense
+* Colectores
+* Normativas
+
+
+Aspectos básicos de ONTAP:
+
+* Protección de datos
+* Seguridad
+* Alertas
+* De almacenamiento
+* Redes
+* Cargas de trabajo
+*VMware
+
+
+Admin.:
+
+* Acceso API
+* Auditoría
+* Notificaciones
+* Información sobre suscripciones
+* Gestión de usuarios
+
+
+
+
 == Julio de 2023
 
 
