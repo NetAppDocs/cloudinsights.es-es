@@ -29,6 +29,54 @@ NOTE: Es posible que algunas de estas funciones no estén disponibles en la edic
 
 
 
+=== Recopilación de registros de Isilon/PowerScale y datos analíticos avanzados
+
+Los recopiladores REST Isilon REST y PowerScale incluyen las siguientes mejoras:
+
+* Los eventos de registro de Isilon están disponibles para su uso en consultas y alertas
+* Los atributos analíticos avanzados de Isilon están disponibles para su uso en consultas, paneles de control y alertas:
++
+** emc_isilon.cluster
+** emc_isilon.node
+** emc_isilon.node_disk
+** emc_isilon.net_iface
+
+
+
+
+Estos están habilitados de forma predeterminada para los usuarios de los recopiladores REST DE Isilon y/o PowerScale. NetApp anima a los usuarios del recopilador basado en CLI de Isilon a migrar al nuevo recopilador basado en API de REST para recibir mejoras como las anteriores.
+
+
+
+=== Mapa de cargas de trabajo mejorado
+
+El mapa de carga de trabajo es más utilizable y menos ruidoso; agrupa todos los servicios externos similares en un nodo si se comunican con las mismas cargas de trabajo, lo que reduce la complejidad del gráfico y facilita la comprensión de cómo se interconectan los servicios.
+
+Al seleccionar un nodo agrupado, se mostrará una tabla detallada con las métricas de tráfico de red para cada servicio externo relevante para ese nodo.
+
+
+
+=== Ajuste del uso de la unidad gestionada de Kubernetes
+
+En caso de que un recurso informático en tu entorno de clúster de Kubernetes cuente tanto con el operador de supervisión de Kubernetes de NetApp como con un recopilador de datos de infraestructura subyacente (por ejemplo, VMware), el uso de estos recursos se ajustará para garantizar el recuento de unidades gestionadas más eficiente. Puedes ver los ajustes de MU de Kubernetes en la página Admin > Subscription, tanto en las pestañas Summary como Usage.
+
+Separador Resumen:
+image:MU_Adjustments_K8s.png["k8s Ajuste de UM mostrado en la calculadora de estimación"]
+
+Pestaña Uso:
+image:MU_Adjustments_K8s_Usage_Tab.png["k8s Ajuste de UM que se muestra en la ficha Uso"]
+
+
+
+=== Cambios de recopilador/adquisición:
+
+Se han realizado los siguientes cambios en la unidad de adquisición/recopilación de datos:
+
+* Las unidades de adquisición ahora admiten RHEL 8,7.
+
+
+
+
 === Menús mejorados
 
 Hemos actualizado el menú de navegación de la izquierda para respaldar mejor los flujos de trabajo de nuestros clientes. Los nuevos elementos de nivel superior, como _Kubernetes_, proporcionan acceso acelerado a lo que el cliente necesita, y una consola de administradores consolidada soporta el rol de propietario de inquilino.
