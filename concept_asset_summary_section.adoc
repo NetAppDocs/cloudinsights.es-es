@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: concept_asset_summary_section.html 
 summary: Descripción general de la sección de resumen de página de activos en Cloud Insights. 
-keywords: asset, summary, landing page, topology 
+keywords: asset, summary, landing page, topology, auto, refresh 
 ---
 = Sección Resumen de páginas de activos
 :toc: macro
@@ -20,6 +20,8 @@ keywords: asset, summary, landing page, topology
 
 [role="lead"]
 La sección Resumen de una página de activos muestra información general sobre un activo, incluido si hay alguna métrica o política de rendimiento que le preocupen. Las áreas con problemas potenciales se indican mediante un círculo rojo.
+
+La información de la sección de resumen, así como en cualquier tabla o widgets personalizados de la página de activos, se actualiza automáticamente en función del intervalo de tiempo seleccionado. Puede ver la tasa de actualización actual en la esquina superior derecha de la sección Resumen, las tablas y cualquier widget personalizado.
 
 image:Summary_Section_Example.png[""]
 

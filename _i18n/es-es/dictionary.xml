@@ -6454,7 +6454,6 @@
   <block id="94b45e8398089264f0050004fb043bc4" category="cell">Lista de nombres o ID de clúster separados por comas para excluirlos al realizar el sondeo.</block>
   <block id="27a216601981d13fcf078fa6774638a5" category="summary">La sección Vista de experto de una página de activos es una herramienta eficaz para la solución de problemas o la supervisión.</block>
   <block id="b7020f7cb2b885f482e520e38265e6b0" category="doc">Vista de experto</block>
-  <block id="6769810373d64f6178c70417f3100129" category="paragraph">La sección Vista de experto de una página de activos permite ver una muestra de rendimiento del activo base basada en cualquier número de métricas aplicables en contexto con un período de tiempo elegido en el gráfico de rendimiento y cualquier activo relacionado con él.</block>
   <block id="a095544b81060891734744ad5bd2a5c3" category="section-title">Uso de la sección Vista experta</block>
   <block id="62329137e14077120c0de9e866ecae4b" category="paragraph">A continuación se muestra un ejemplo de la sección Expert View en una página de activos de almacenamiento:</block>
   <block id="beaa4bde61b31a115ee598bebfa3f120" category="inline-image-macro">Ejemplo de Vista de experto</block>
@@ -12933,4 +12932,7 @@ VMware vCenter Server 8.0.1, compilación 21860503</block>
   <block id="6eaf2b51f37d7f4d356ffe2a342af267" category="paragraph">Pestaña Uso:
 <block ref="09c99a3559c7afea569b832bd175894f" category="inline-image-macro-rx" type="image"></block></block>
   <block id="f4e0f73d094f0d65c6a05d5a032c2723" category="list-text">Las unidades de adquisición ahora admiten RHEL 8,7.</block>
+  <block id="01149343ed19ae68ec1c689ec3722a5c" category="paragraph">La sección Vista de experto de una página de activos permite ver una muestra de rendimiento del activo base basada en cualquier número de métricas aplicables en contexto con un período de tiempo elegido en el gráfico de rendimiento y cualquier activo relacionado con él.  Los datos de los gráficos se actualizan automáticamente a medida que los recopiladores de datos sondean y se adquieren datos actualizados.</block>
+  <block id="05c3e307f6dc616e1f39e3e2b33522d0" category="paragraph">La información de una sección de resumen de la página de activos, así como en cualquier tabla o widgets personalizados de la página, se actualiza automáticamente en función del intervalo de tiempo seleccionado. La tasa de actualización actual se muestra en la esquina superior derecha de la sección Resumen y en las tablas o widgets relevantes de la página.</block>
+  <block id="a529577c999092a8f244f1064ee16c6e" category="paragraph">La información de la sección de resumen, así como en cualquier tabla o widgets personalizados de la página de activos, se actualiza automáticamente en función del intervalo de tiempo seleccionado. Puede ver la tasa de actualización actual en la esquina superior derecha de la sección Resumen, las tablas y cualquier widget personalizado.</block>
 </blocks>

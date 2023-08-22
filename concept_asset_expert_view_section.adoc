@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: concept_asset_expert_view_section.html 
 summary: La sección Vista de experto de una página de activos es una herramienta eficaz para la solución de problemas o la supervisión. 
-keywords: asset page, expert view, metrics, greedy, degraded, correlated, contributors, chart, 
+keywords: asset page, expert view, metrics, greedy, degraded, correlated, contributors, chart, refresh 
 ---
 = Vista de experto
 :toc: macro
@@ -19,7 +19,7 @@ keywords: asset page, expert view, metrics, greedy, degraded, correlated, contri
 
 
 [role="lead"]
-La sección Vista de experto de una página de activos permite ver una muestra de rendimiento del activo base basada en cualquier número de métricas aplicables en contexto con un período de tiempo elegido en el gráfico de rendimiento y cualquier activo relacionado con él.
+La sección Vista de experto de una página de activos permite ver una muestra de rendimiento del activo base basada en cualquier número de métricas aplicables en contexto con un período de tiempo elegido en el gráfico de rendimiento y cualquier activo relacionado con él.  Los datos de los gráficos se actualizan automáticamente a medida que los recopiladores de datos sondean y se adquieren datos actualizados.
 
 
 

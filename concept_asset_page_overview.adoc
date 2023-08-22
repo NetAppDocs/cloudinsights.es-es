@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: concept_asset_page_overview.html 
 summary: Las páginas de activos se pueden mostrar para la mayoría de los tipos de objeto. 
-keywords: asset page, objects, landing page, Virtual machine, VM, Storage Virtual Machine, SVM, Volume, Internal volume, Host, Hypervisor, pool, Storage, Datastore, Application, node, Qtree, Disk, VMDK, Port, Switch, Fabric 
+keywords: asset page, objects, landing page, Virtual machine, VM, Storage Virtual Machine, SVM, Volume, Internal volume, Host, Hypervisor, pool, Storage, Datastore, Application, node, Qtree, Disk, VMDK, Port, Switch, Fabric, refresh 
 ---
 = Descripción general de la página de activos
 :toc: macro
@@ -69,6 +69,8 @@ Puede cambiar el segmento de tiempo de los datos mostrados mediante una opción 
 
 
 El intervalo de tiempo personalizado le permite seleccionar hasta 31 días consecutivos. También puede establecer la hora de inicio y la hora de finalización del día para este intervalo. La hora de inicio predeterminada es 12:00 AM del primer día seleccionado y la hora de finalización predeterminada es 11:59 PM del último día seleccionado. Al hacer clic en aplicar se aplicará el intervalo de tiempo personalizado a la página del activo.
+
+La información de una sección de resumen de la página de activos, así como en cualquier tabla o widgets personalizados de la página, se actualiza automáticamente en función del intervalo de tiempo seleccionado. La tasa de actualización actual se muestra en la esquina superior derecha de la sección Resumen y en las tablas o widgets relevantes de la página.
 
 
 
