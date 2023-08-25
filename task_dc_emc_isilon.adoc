@@ -110,4 +110,4 @@ Algunas cosas para intentar si tiene problemas con este recopilador de datos:
 
 | "Error interno" con mensajes de error "error al ejecutar Command <Your command> con permiso: <Your current permission>. Problema de permisos de ejecución de comandos sudo” | Verifique que el usuario tenga permisos sudo para ejecutar el siguiente comando en el dispositivo 
 |===
-Puede encontrar información adicional en link:concept_requesting_support.html["Soporte técnico"] o en la link:https://docs.netapp.com/us-en/cloudinsights/CloudInsightsDataCollectorSupportMatrix.pdf["Matriz de compatibilidad de recopilador de datos"].
+Puede encontrar información adicional en link:concept_requesting_support.html["Soporte técnico"] o en la link:reference_data_collector_support_matrix.html["Matriz de compatibilidad de recopilador de datos"].

@@ -129,4 +129,4 @@ Algunas cosas para intentar si tiene problemas con este recopilador de datos:
 
 | Error: * No se puede ejecutar el programa * error al ejecutar el comando | * Desde la Unidad de adquisición de Cloud Insights abra un archivo CMD * Open CLI.CFG en el directorio/lib home de la CLI y compruebe la propiedad JAVA_INSTALL, edite el valor para que coincida con su entorno * Mostrar versión Java instalada en esta máquina, tecleando: "java -version" * hacer ping a la dirección IP del dispositivo de almacenamiento IBM especificado en el comando CLI emitido. * Si todo lo anterior funcionaba bien, entonces ejecute manualmente un comando CLI 
 |===
-Puede encontrar información adicional en link:concept_requesting_support.html["Soporte técnico"] o en la link:https://docs.netapp.com/us-en/cloudinsights/CloudInsightsDataCollectorSupportMatrix.pdf["Matriz de compatibilidad de recopilador de datos"].
+Puede encontrar información adicional en link:concept_requesting_support.html["Soporte técnico"] o en la link:reference_data_collector_support_matrix.html["Matriz de compatibilidad de recopilador de datos"].

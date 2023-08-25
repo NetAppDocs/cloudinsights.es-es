@@ -166,4 +166,4 @@ Algunas cosas para intentar si tiene problemas con este recopilador de datos:
 
 | Error: No se han informado datos de rendimiento de director | • Compruebe que los monitores de rendimiento del sistema se ejecutan correctamente • Póngase en contacto con el servicio de soporte de EMC para activar la actualización de los archivos de registro del monitor de rendimiento del sistema 
 |===
-Puede encontrar información adicional en link:concept_requesting_support.html["Soporte técnico"] o en la link:https://docs.netapp.com/us-en/cloudinsights/CloudInsightsDataCollectorSupportMatrix.pdf["Matriz de compatibilidad de recopilador de datos"].
+Puede encontrar información adicional en link:concept_requesting_support.html["Soporte técnico"] o en la link:reference_data_collector_support_matrix.html["Matriz de compatibilidad de recopilador de datos"].

@@ -108,4 +108,4 @@ Algunas cosas para intentar si tiene problemas con este recopilador de datos:
 
 | "Error de conexión" con mensajes de error "no se ha podido crear una instancia de una conexión SSH al almacenamiento" o "no se ha podido crear una instancia de una conexión a VirtualCenter" | Causas posibles: * Credenciales incorrectas. * Dirección IP incorrecta. * Problema de red. * El almacenamiento puede estar inactivo o no responder. Posibles soluciones: * Verificar credenciales y dirección IP introducidos. * Intente comunicarse con el almacenamiento mediante SSH Client. 
 |===
-Puede encontrar información adicional en link:concept_requesting_support.html["Soporte técnico"] o en la link:https://docs.netapp.com/us-en/cloudinsights/CloudInsightsDataCollectorSupportMatrix.pdf["Matriz de compatibilidad de recopilador de datos"].
+Puede encontrar información adicional en link:concept_requesting_support.html["Soporte técnico"] o en la link:reference_data_collector_support_matrix.html["Matriz de compatibilidad de recopilador de datos"].

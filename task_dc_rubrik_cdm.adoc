@@ -102,4 +102,4 @@ Algunas cosas para intentar si tiene problemas con este recopilador de datos:
 
 | Recibí una advertencia de que la API de disco devolvió más datos | Póngase en contacto con el servicio de soporte para obtener más datos. 
 |===
-Puede encontrar información adicional en link:concept_requesting_support.html["Soporte técnico"] o en la link:https://docs.netapp.com/us-en/cloudinsights/CloudInsightsDataCollectorSupportMatrix.pdf["Matriz de compatibilidad de recopilador de datos"].
+Puede encontrar información adicional en link:concept_requesting_support.html["Soporte técnico"] o en la link:reference_data_collector_support_matrix.html["Matriz de compatibilidad de recopilador de datos"].

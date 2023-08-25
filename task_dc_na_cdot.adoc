@@ -316,4 +316,4 @@ Algunas cosas para intentar si tiene problemas con este recopilador de datos:
 
 | Error de “error al recopilar el rendimiento de ZAPI” | Esto se debe normalmente a que perf stat no se está ejecutando. Pruebe el siguiente comando en cada nodo: > _system node systemshell -node * -command “spmctl -h cmd –stop; spmctl -h cmd –exec”_ 
 |===
-Puede encontrar información adicional en link:concept_requesting_support.html["Soporte técnico"] o en la link:https://docs.netapp.com/us-en/cloudinsights/CloudInsightsDataCollectorSupportMatrix.pdf["Matriz de compatibilidad de recopilador de datos"].
+Puede encontrar información adicional en link:concept_requesting_support.html["Soporte técnico"] o en la link:reference_data_collector_support_matrix.html["Matriz de compatibilidad de recopilador de datos"].

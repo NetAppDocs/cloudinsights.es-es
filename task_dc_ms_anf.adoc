@@ -80,4 +80,4 @@ Introduzca los datos en los campos del recopilador de datos de acuerdo con la ta
 * Si el acceso de Reader provoca un error en la recopilación de rendimiento, intente conceder acceso de colaborador en un nivel de grupo de recursos.
 
 
-Se puede encontrar información adicional sobre este colector de datos en la link:concept_requesting_support.html["Soporte técnico"] o en la link:https://docs.netapp.com/us-en/cloudinsights/CloudInsightsDataCollectorSupportMatrix.pdf["Matriz de compatibilidad de recopilador de datos"].
+Se puede encontrar información adicional sobre este colector de datos en la link:concept_requesting_support.html["Soporte técnico"] o en la link:reference_data_collector_support_matrix.html["Matriz de compatibilidad de recopilador de datos"].

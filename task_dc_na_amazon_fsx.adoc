@@ -149,4 +149,4 @@ Algunas cosas para intentar si tiene problemas con este recopilador de datos:
 
 | Errores de conexión adicionales: La respuesta ZAPI tiene el código de error 13001, “la base de datos no está abierta” el código DE error ZAPI es 60 y la respuesta contiene “la API no terminó a tiempo” la respuesta ZAPI contiene “initialize_Session() devolvió un entorno NULL” el código DE error ZAPI es 14007 y la respuesta contiene “el nodo no está en buen estado” | Compruebe la red, el número de puerto y la dirección IP. El usuario también debe intentar ejecutar un comando desde la línea de comandos desde la máquina AU. 
 |===
-Puede encontrar información adicional en link:concept_requesting_support.html["Soporte técnico"] o en la link:https://docs.netapp.com/us-en/cloudinsights/CloudInsightsDataCollectorSupportMatrix.pdf["Matriz de compatibilidad de recopilador de datos"].
+Puede encontrar información adicional en link:concept_requesting_support.html["Soporte técnico"] o en la link:reference_data_collector_support_matrix.html["Matriz de compatibilidad de recopilador de datos"].

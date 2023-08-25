@@ -216,4 +216,4 @@ Algunas cosas para intentar si tiene problemas con este recopilador de datos:
 
 | Error de “no se ha podido conectar con vFiler” | Compruebe que la adquisición de las capacidades de usuario incluye lo siguiente como mínimo: api-* Security-api-vfiler login-http-admin confirma que el servidor de almacenamiento está ejecutando la versión mínima de ONAPI 1.7. 
 |===
-Puede encontrar información adicional en link:concept_requesting_support.html["Soporte técnico"] o en la link:https://docs.netapp.com/us-en/cloudinsights/CloudInsightsDataCollectorSupportMatrix.pdf["Matriz de compatibilidad de recopilador de datos"].
+Puede encontrar información adicional en link:concept_requesting_support.html["Soporte técnico"] o en la link:reference_data_collector_support_matrix.html["Matriz de compatibilidad de recopilador de datos"].

@@ -167,4 +167,4 @@ Algunas cosas para intentar si tiene problemas con este recopilador de datos:
 
 | Reciba un mensaje que indica que más de 1 nodo ha iniciado sesión en el puerto Access Gateway | Compruebe que el dispositivo NPV funciona correctamente y que se esperan todos los WWN conectados. No adquiera directamente el dispositivo NPV. En lugar de ello, la adquisición del switch de estructura principal recopilará los datos del dispositivo NPV. 
 |===
-Puede encontrar información adicional en link:concept_requesting_support.html["Soporte técnico"] o en la link:https://docs.netapp.com/us-en/cloudinsights/CloudInsightsDataCollectorSupportMatrix.pdf["Matriz de compatibilidad de recopilador de datos"].
+Puede encontrar información adicional en link:concept_requesting_support.html["Soporte técnico"] o en la link:reference_data_collector_support_matrix.html["Matriz de compatibilidad de recopilador de datos"].

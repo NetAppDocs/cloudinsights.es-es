@@ -112,4 +112,4 @@ Algunas cosas para intentar si tiene problemas con este recopilador de datos:
 
 | "Error al conectar " o "credenciales de inicio de sesión no válidas" con mensajes de error "no se pudo comunicar con el dispositivo:" | * Compruebe la dirección IP * Compruebe el nombre de usuario y la contraseña * confirme la conexión con el cliente SSH alternativo 
 |===
-Puede encontrar información adicional en link:concept_requesting_support.html["Soporte técnico"] o en la link:https://docs.netapp.com/us-en/cloudinsights/CloudInsightsDataCollectorSupportMatrix.pdf["Matriz de compatibilidad de recopilador de datos"].
+Puede encontrar información adicional en link:concept_requesting_support.html["Soporte técnico"] o en la link:reference_data_collector_support_matrix.html["Matriz de compatibilidad de recopilador de datos"].

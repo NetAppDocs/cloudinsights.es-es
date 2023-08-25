@@ -157,4 +157,4 @@ Algunas cosas para intentar si tiene problemas con este recopilador de datos:
 
 | Error: VirtualCenter en IP tiene un certificado no conforme que JVM requiere | Soluciones posibles: * Recomendado: Vuelva a generar el certificado para Virtual Center utilizando una clave RSA más fuerte (por ejemplo, de 1024 bits). * No recomendado: Modifique la configuración de JVM java.security para aprovechar la restricción jdk.certpath.disabledAlgoritms para permitir la clave RSA de 512 bits. Consulte las notas de la versión de JDK 7 Update 40 en "http://www.oracle.com/technetwork/java/javase/7u40-relnotes-2004172.html"[] 
 |===
-Puede encontrar información adicional en link:concept_requesting_support.html["Soporte técnico"] o en la link:https://docs.netapp.com/us-en/cloudinsights/CloudInsightsDataCollectorSupportMatrix.pdf["Matriz de compatibilidad de recopilador de datos"].
+Puede encontrar información adicional en link:concept_requesting_support.html["Soporte técnico"] o en la link:reference_data_collector_support_matrix.html["Matriz de compatibilidad de recopilador de datos"].

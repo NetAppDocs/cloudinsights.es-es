@@ -96,4 +96,4 @@ Para recopilar datos de inventario, debe contar con lo siguiente:
 
 | Intervalo de sondeo de rendimiento (s) | Intervalo entre sondeos de rendimiento. El valor predeterminado es 900. 
 |===
-Puede encontrar información adicional en link:concept_requesting_support.html["Soporte técnico"] o en la link:https://docs.netapp.com/us-en/cloudinsights/CloudInsightsDataCollectorSupportMatrix.pdf["Matriz de compatibilidad de recopilador de datos"].
+Puede encontrar información adicional en link:concept_requesting_support.html["Soporte técnico"] o en la link:reference_data_collector_support_matrix.html["Matriz de compatibilidad de recopilador de datos"].

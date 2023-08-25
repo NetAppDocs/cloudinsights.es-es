@@ -144,4 +144,4 @@ Los siguientes términos se aplican a objetos o referencias que puede encontrar 
 
 == Resolución de problemas
 
-Puede encontrar información adicional sobre este recopilador de datos en link:concept_requesting_support.html["Soporte técnico"] o en la link:https://docs.netapp.com/us-en/cloudinsights/CloudInsightsDataCollectorSupportMatrix.pdf["Matriz de compatibilidad de recopilador de datos"].
+Puede encontrar información adicional sobre este recopilador de datos en link:concept_requesting_support.html["Soporte técnico"] o en la link:reference_data_collector_support_matrix.html["Matriz de compatibilidad de recopilador de datos"].

@@ -130,4 +130,4 @@ Algunas cosas para intentar si tiene problemas con este recopilador de datos:
 
 | Error: "No se puede iniciar el comando porque no se ejecutó en el nodo de configuración". | El comando debe ejecutarse en el nodo de configuración. 
 |===
-Se puede encontrar información adicional sobre este colector de datos en la link:concept_requesting_support.html["Soporte técnico"] o en la link:https://docs.netapp.com/us-en/cloudinsights/CloudInsightsDataCollectorSupportMatrix.pdf["Matriz de compatibilidad de recopilador de datos"].
+Se puede encontrar información adicional sobre este colector de datos en la link:concept_requesting_support.html["Soporte técnico"] o en la link:reference_data_collector_support_matrix.html["Matriz de compatibilidad de recopilador de datos"].

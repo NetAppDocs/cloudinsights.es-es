@@ -114,4 +114,4 @@ Algunas cosas para intentar si tiene problemas con este recopilador de datos:
 
 | "Credenciales de inicio de sesión no válidas" con mensajes de error "la directiva no permite" o "no está autorizado" | Valide la cuenta de usuario y la contraseña de Pure a través de la interfaz http de Pure 
 |===
-Puede encontrar información adicional en link:concept_requesting_support.html["Soporte técnico"] o en la link:https://docs.netapp.com/us-en/cloudinsights/CloudInsightsDataCollectorSupportMatrix.pdf["Matriz de compatibilidad de recopilador de datos"].
+Puede encontrar información adicional en link:concept_requesting_support.html["Soporte técnico"] o en la link:reference_data_collector_support_matrix.html["Matriz de compatibilidad de recopilador de datos"].
