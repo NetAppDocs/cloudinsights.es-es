@@ -493,4 +493,4 @@ Algunas cosas que debe intentar si tiene problemas para configurar un agente:
 
 | Ya tengo un agente instalado pero no utilizando el instalador de Cloud Insights | Elimine el agente anterior y ejecute la instalación del agente de Cloud Insights para asegurarse de que los valores predeterminados del archivo de configuración son correctos. Cuando termine, haga clic en *continuar* o *Finalizar*. 
 |===
-Puede encontrar información adicional en link:concept_requesting_support.html["Soporte técnico"] o en la link:https://docs.netapp.com/us-en/cloudinsights/CloudInsightsDataCollectorSupportMatrix.pdf["Matriz de compatibilidad de recopilador de datos"].
+Puede encontrar información adicional en link:concept_requesting_support.html["Soporte técnico"] o en la link:reference_data_collector_support_matrix.html["Matriz de compatibilidad de recopilador de datos"].

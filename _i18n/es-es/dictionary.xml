@@ -2643,7 +2643,6 @@
   <block id="4b728fe0674da6a6020b7dfe0a399d2a" category="cell">Compruebe que la adquisición de las capacidades de usuario incluye lo siguiente como mínimo: api-* Security-api-vfiler login-http-admin confirma que el servidor de almacenamiento está ejecutando la versión mínima de ONAPI 1.7.</block>
   <block id="db5eb84117d06047c97c9a0191b5fffe" category="inline-link-macro">Soporte técnico</block>
   <block id="5ea8c0bc0f3ff2ad5a8ecd87179c69f1" category="inline-link-macro">Matriz de compatibilidad de recopilador de datos</block>
-  <block id="b13fdf15118fa90916588b42c9eab20f" category="paragraph">Puede encontrar información adicional en <block ref="d34993add17c6dd464dba2ccd7f99cbb" category="inline-link-macro-rx"></block> o en la <block ref="6bcd41b5488d3cd417d31b80921f5af9" category="inline-link-macro-rx"></block>.</block>
   <block id="c8722d0a5f0f718756806afb0f63faf3" category="section-title">Cosas que tomar en cuenta antes de empezar</block>
   <block id="228b6b559614ae017988e0b66c4ab82c" category="list-text">El script de simulación de ransomware sólo funciona en Linux.</block>
   <block id="7507a6fc6500d36cd4c727aec7187901" category="section-title">Tener al menos 1,000 archivos de ejemplo</block>
@@ -2831,7 +2830,6 @@
   <block id="e7b809ea601402c055868515a7ce561d" category="cell">Puerto TCP utilizado para conectarse a InfiniBox Server. El valor predeterminado es 443.</block>
   <block id="e6b366c925b4cac6b44a37f5f479307f" category="cell">Intervalo de sondeo de inventario</block>
   <block id="4a1e05c00e7e16cfebd87e460e7fb268" category="cell">Intervalo entre sondeos de inventario. El valor predeterminado es 60 minutos.</block>
-  <block id="38e5a763fdbf601806f64af07cf45787" category="paragraph">Se puede encontrar información adicional sobre este colector de datos en la <block ref="d34993add17c6dd464dba2ccd7f99cbb" category="inline-link-macro-rx"></block> o en la <block ref="6bcd41b5488d3cd417d31b80921f5af9" category="inline-link-macro-rx"></block>.</block>
   <block id="ab8efa06dd0a715813bb7f2f966f8416" category="section-title">Eliminar un agente</block>
   <block id="bd98e76dea3cb70b874e1abcc40bd2a0" category="admonition">Al eliminar un agente se eliminan todos los recopiladores de datos asociados al agente. Si planea configurar los recopiladores de datos con un agente diferente, debe crear una copia de seguridad de las configuraciones de recopilador de datos antes de eliminar el agente.</block>
   <block id="135b308ed83c53f1516b7c754566d1c4" category="list-title">Antes de empezar</block>
@@ -8767,7 +8765,6 @@
   <block id="533e65443960283ff24073ad80db0e3d" category="paragraph"><block ref="533e65443960283ff24073ad80db0e3d" category="inline-image-macro-rx" type="image"></block></block>
   <block id="1c52cf8dba7f709e8910813b93418d94" category="section-title">Matriz de compatibilidad de recopiladores de datos de Cloud Insights</block>
   <block id="d59e2e05079f7c9c24f5bbba7c6e3547" category="inline-link-macro">*Matriz de compatibilidad con recopiladores de datos Cloud Insights*, role="external"</block>
-  <block id="34a28f543ea4981287965bd3ea1448ef" category="paragraph">Puede ver o descargar información y detalles sobre recopiladores de datos compatibles en la <block ref="4928518ab1eaba703f07b7f823f64b48" category="inline-link-macro-rx"></block>.</block>
   <block id="ab7edf5d95e4001229e2908ae791460a" category="section-title">Centro de aprendizaje</block>
   <block id="b81816f08eee3d7d65d91572590180d0" category="paragraph">Con independencia de su suscripción, *Ayuda &gt; Soporte* enlaza con varias ofertas de cursos de NetApp University para ayudarle a sacar el máximo partido a Cloud Insights. ¡Acomételos!</block>
   <block id="8eb996cf95107ce6a0a76700629efd1d" category="summary">Configuración del recopilador de datos de la familia de dispositivos VMAX y PowerMax de Dell EMC.</block>
@@ -12937,4 +12934,5 @@ VMware vCenter Server 8.0.1, compilación 21860503</block>
   <block id="a86bd6cf348747cd34bce0fd7d6a84a9" category="paragraph">Se puede encontrar información adicional sobre este colector de datos en la <block ref="d34993add17c6dd464dba2ccd7f99cbb" category="inline-link-macro-rx"></block> o en la <block ref="9dd2beb67fe62b2f58f66806d3cbe842" category="inline-link-macro-rx"></block>.</block>
   <block id="47c66df8007a6168673191bfaef7dfab" category="paragraph">Puede encontrar información adicional en <block ref="d34993add17c6dd464dba2ccd7f99cbb" category="inline-link-macro-rx"></block> o en la <block ref="9dd2beb67fe62b2f58f66806d3cbe842" category="inline-link-macro-rx"></block>.</block>
   <block id="e07849f7cb6b62fcc60bd889bb8954df" category="paragraph">Puede encontrar información adicional sobre este recopilador de datos en <block ref="d34993add17c6dd464dba2ccd7f99cbb" category="inline-link-macro-rx"></block> o en la <block ref="9dd2beb67fe62b2f58f66806d3cbe842" category="inline-link-macro-rx"></block>.</block>
+  <block id="4a186b8a397cc2aad62c7d9c7e9d9a66" category="paragraph">Puede ver o descargar información y detalles sobre recopiladores de datos compatibles en la <block ref="1300170f2732d2d2d53f76de553810b4" category="inline-link-macro-rx"></block>.</block>
 </blocks>
