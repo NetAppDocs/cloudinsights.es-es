@@ -977,9 +977,6 @@
   <block id="688a6828f5a23c0464c7c77887f34d29" category="paragraph">Además de consultar los activos de inventario y sus métricas de rendimiento asociadas, también puede consultar métricas de *datos de integración*, como las generadas por Kubernetes o Docker, o proporcionadas con ONTAP Advanced Metrics.</block>
   <block id="1ef2bc789e2222bd0185009ea74b515d" category="inline-image-macro">Ejemplo de filtro de consulta de integración</block>
   <block id="4e4315d948ef3fd3aad9be88a442863d" category="paragraph"><block ref="4e4315d948ef3fd3aad9be88a442863d" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="8c8b20c16b839b518d90f5b38558a3cb" category="summary">Configuración de Cloud Insights con la telemetría streaming de ONTAP de NetApp</block>
-  <block id="93254a992ce8a5bbebb5d43f09f243d7" category="doc">Telemetría de streaming ONTAP de NetApp</block>
-  <block id="458a37db2666885e234720ccdea58253" category="paragraph">Para obtener información actualizada, consulte <block ref="16021e77167161423bb6653c8cf910d8" category="inline-link-macro-rx"></block> página recopilador de datos.</block>
   <block id="16418fb6362362bf39641dbe5e3e3d86" category="summary">Realizar un seguimiento de los datos mediante anotaciones.</block>
   <block id="a4fc68910b46a271a6cd312a5c66e1bb" category="paragraph">A la hora de personalizar Cloud Insights para realizar un seguimiento de los datos según sus requisitos corporativos, puede definir notas especializadas, llamadas anotaciones y asignarlas a sus activos.</block>
   <block id="407dc792025a10c7ad65e372a7704eb6" category="paragraph">Puede asignar anotaciones a activos con información como la finalización de la vida útil de los activos, el centro de datos, la ubicación de creación, el nivel de almacenamiento o el nivel de servicio de volumen.</block>
@@ -12935,4 +12932,11 @@ VMware vCenter Server 8.0.1, compilación 21860503</block>
   <block id="47c66df8007a6168673191bfaef7dfab" category="paragraph">Puede encontrar información adicional en <block ref="d34993add17c6dd464dba2ccd7f99cbb" category="inline-link-macro-rx"></block> o en la <block ref="9dd2beb67fe62b2f58f66806d3cbe842" category="inline-link-macro-rx"></block>.</block>
   <block id="e07849f7cb6b62fcc60bd889bb8954df" category="paragraph">Puede encontrar información adicional sobre este recopilador de datos en <block ref="d34993add17c6dd464dba2ccd7f99cbb" category="inline-link-macro-rx"></block> o en la <block ref="9dd2beb67fe62b2f58f66806d3cbe842" category="inline-link-macro-rx"></block>.</block>
   <block id="4a186b8a397cc2aad62c7d9c7e9d9a66" category="paragraph">Puede ver o descargar información y detalles sobre recopiladores de datos compatibles en la <block ref="1300170f2732d2d2d53f76de553810b4" category="inline-link-macro-rx"></block>.</block>
+  <block id="4099aa818be44a204ef7ec3ba69b96c7" category="inline-link-macro">agregados para ver</block>
+  <block id="6046897f8c0f41425f2e47227c5932e8" category="paragraph">Si el clúster que se va a supervisar contiene recursos personalizados que no tienen un ClusterRole que <block ref="c09eb6051f010e6e01a634a8b6a5c304" category="inline-link-macro-rx"></block>, Tendrá que conceder manualmente el acceso del operador a estos recursos para supervisarlos con registros de eventos.</block>
+  <block id="8f0ae9ae8e0fd7f3e8fe6ff175a59943" category="list-text">Edite _operator-additional-permissions.yaml_ antes de instalar, o después de instalar, edite el recurso _ClusterRole/&lt;namespace&gt;-additional-permissions_</block>
+  <block id="8a75e64ac585bb8eb6efae44768cfc8e" category="list-text">Cree una nueva regla para los apiGroups y recursos deseados con los verbos [“get”, “watch”, “list”]. Consulte \https://kubernetes.io/docs/reference/access-authn-authz/rbac/</block>
+  <block id="5aa700b8892918bb447b666e3ba9b2a8" category="list-text">Aplique los cambios al clúster</block>
+  <block id="4f05106cca363b0f3c492314ab777534" category="cell">Faltan datos _involved dobject_ para algunos registros de eventos.</block>
+  <block id="2420d7dae924d9613e0f888211903abc" category="cell">Asegúrese de haber seguido los pasos de la <block ref="abccd48aba555dd896a8cc74442f4360" category="inline-xref-macro-rx"></block> sección anterior.</block>
 </blocks>
