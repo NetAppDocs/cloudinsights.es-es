@@ -212,17 +212,6 @@ Más información acerca de Kubernetes link:https://kubernetes.io/docs/concepts/
 
 
 
-=== Permisos
-
-Si el clúster que se va a supervisar contiene recursos personalizados que no tienen un ClusterRole que link:https://kubernetes.io/docs/reference/access-authn-authz/rbac/#aggregated-clusterroles["agregados para ver"], Tendrá que conceder manualmente el acceso del operador a estos recursos para supervisarlos con registros de eventos.
-
-. Edite _operator-additional-permissions.yaml_ antes de instalar, o después de instalar, edite el recurso _ClusterRole/<namespace>-additional-permissions_
-. Cree una nueva regla para los apiGroups y recursos deseados con los verbos [“get”, “watch”, “list”]. Consulte \https://kubernetes.io/docs/reference/access-authn-authz/rbac/
-. Aplique los cambios al clúster
-
-
-
-
 == Instalación del operador de supervisión Kubernetes de NetApp
 
 image:NKMO-Instructions-1.png[""]
@@ -570,8 +559,5 @@ tiempo de espera = «10s»
 ...
 
 A continuación, reinicie Telegraf. 
-
-
-| Faltan datos _involved dobject_ para algunos registros de eventos. | Asegúrese de haber seguido los pasos de la <<permissions,Permisos>> sección anterior. 
 |===
 Puede encontrar información adicional en link:concept_requesting_support.html["Soporte técnico"] o en la link:reference_data_collector_support_matrix.html["Matriz de compatibilidad de recopilador de datos"].
