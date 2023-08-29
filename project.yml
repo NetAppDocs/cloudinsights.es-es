@@ -245,6 +245,8 @@ sidebar:
       url: "/cs_automated_response_policies.html"
     - title: Integración de protección de ransomware autónoma de ONTAP
       url: "/concept_cs_integration_with_ontap_arp.html"
+    - title: Integración denegada de acceso a ONTAP
+      url: "/concept_ws_integration_with_ontap_access_denied.html"
     - title: Bloquear el acceso del usuario
       url: "/cs_restrict_user_access.html"
     - title: Simulación de un ataque de ransomware
