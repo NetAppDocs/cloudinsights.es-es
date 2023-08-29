@@ -205,7 +205,7 @@ sidebar:
       url: "/reporting_schema_diagrams.html"
     - title: Tablas de esquema
       url: "/reference_schemas.html"
-  - title: Seguridad de carga de trabajo de almacenamiento
+  - title: Seguridad de cargas de trabajo
     entries:
     - title: Acerca de Workload Security
       url: "/cs_intro.html"
