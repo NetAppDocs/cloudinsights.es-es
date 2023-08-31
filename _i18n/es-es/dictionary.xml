@@ -9763,7 +9763,6 @@
   <block id="8d490c030112e962535224e18e452ee2" category="paragraph">Si utiliza un usuario personalizado (por ejemplo, _csuser_) con permisos proporcionados al usuario, siga los pasos que se indican a continuación para otorgar permisos a Seguridad de carga de trabajo para recopilar información relacionada con ARP desde ONTAP.</block>
   <block id="56684562f1f82eb99e69650845acd6ad" category="paragraph">En caso de que una SVM no esté supervisada por Workload Security, pero hay eventos de ARP generados por ONTAP, los eventos serán recibidos y mostrados por Workload Security. Sin embargo, la información forense relacionada con la alerta, así como la asignación de usuarios, no se capturará ni se mostrará.</block>
   <block id="bd8fcf14aeb2fa880d8470e2c4fee0a5" category="cell">Cuando ONTAP envía el evento _Ransomware Detected_ a Seguridad de carga de trabajo de Cloud Insights (por ejemplo, Seguridad de carga de trabajo), se envía el correo electrónico. El evento contiene una lista de ataques y sus marcas de tiempo. La interfaz de usuario de Workload Security muestra la Marca de tiempo de alerta del primer archivo atacado. ONTAP envía el evento _Ransomware Detected_ a Cloud Insights cuando se codifican ciertos archivos. Por lo tanto, es posible que haya una diferencia entre la hora en que se muestra la alerta en la interfaz de usuario y la hora en la que se envía el correo electrónico.</block>
-  <block id="8d480c386a79b0bc67bd88ac44cd794f" category="sidebar">Seguridad de carga de trabajo de almacenamiento</block>
   <block id="9655cd831b69781db448703e74b15bf4" category="sidebar">Acerca de Workload Security</block>
   <block id="db6129c16869ab28d6476f3e30e7d24e" category="sidebar">Introducción a Workload Security</block>
   <block id="fe6cdf9e3b45ba510d852c0481680e2f" category="sidebar">Configuración de un agente de seguridad de carga de trabajo</block>
@@ -11006,125 +11005,6 @@ telégrafo:
     ...
 ...</block>
   <block id="4511f2a211688512da3a86b3400de7ff" category="paragraph">Modelos y versiones compatibles con este recopilador de datos:</block>
-  <block id="7ab5521b32fba28cefe0f978f2a356cb" category="cell">MU1 KG (3.1.1 LB)
-MU1 KG (3.1.1 LB) P10
-MU3 KG (3.1.2 LB) P16
-MU1 KG (3.1.3 LB) P07
-MU2 KG (3.1.3 LB)
-MU3 KG (3.1.3 LB)
-MU3 KG (3.2.1 LB) P17
-MU5 KG (3.2.1 LB) P49
-MU2 KG (3.2.2 LB) P14
-MU4 KG (3.2.2 LB) P56
-MU6 KG (3.2.2 LB) P96
-MU6 KG (3.2.2 LB) P99
-3.2.2 P03
-MU1 KG (3.3.1 LB) P09
-MU2 KG (3.3.1 LB) P30
-MU2 KG (3.3.1 LB) P32
-MU5 KG (3.3.1 LB) P126
-MU5 KG (3.3.1 LB) P132
-MU1 KG (3.3.2 LB)
-MU1 KG (3.3.2 LB) P04
-3.3.2 P01
-4.4.1 Tipo de versión: Versión de soporte estándar
-4.5.11 Tipo de versión: Versión de soporte ampliado
-4.5.3 Tipo de versión: Versión de soporte ampliado
-4.5.7 Tipo de versión: Versión de soporte ampliado
-9.5.8 Tipo de versión: Versión de soporte ampliado
-P02
-P04
-P05
-P08
-P09
-P103
-P106
-P107
-P11
-P111
-P113
-P115
-P118
-P119
-P127
-P13
-P131
-P132
-P133
-P135
-P138
-P139
-P140
-P141
-P142
-P146
-P148
-P149
-P15
-P150
-P151
-P152
-P153
-P154
-P155
-P156
-P157
-P160
-P161
-P162
-P164
-P165
-P166
-P167
-P168
-P170
-P172
-P173
-P175
-P177
-P18
-P180
-P19
-P22
-P23
-P25
-P27
-P29
-P30
-P32
-P34
-P36
-P37
-P39
-P40
-P41
-P42
-P45
-P48
-P49
-P50
-P51
-P52
-P53
-P56
-P57
-P59
-P60
-P70
-P71
-P72
-P73
-P75
-P76
-P78
-P80
-P85
-P90
-P93
-P94
-P96
-P98
-P99</block>
   <block id="2c27d357495661792f689f1125b5c6ba" category="cell">HPE Alletra 9080
 HPE_3PAR 20450
 HPE_3PAR 20800
@@ -11548,26 +11428,6 @@ v8,0.0,7
 v8,1.2,0
 v8,2.2,0</block>
   <block id="1637df9cd961b86fbeb0fabf80ba05a6" category="cell">API de REST DE EMC Isilon y PowerScale</block>
-  <block id="5dde3b080c893187156e20414f9764d5" category="cell">A200
-A2000
-A300
-F200
-F800
-F900
-H400
-H500
-H600
-H700
-Mensaje de syslogd@ersk
-NL400
-NL410
-S210
-SIMULADOR
-X200
-X210
-X400
-X410
-infinity_hba_bay_to_unit: no hay dispositivo pass7</block>
   <block id="89555faebdb0be850c8096d96c21889b" category="cell">9.1.0.10
 9.1.0.12
 9.1.0.16
@@ -11620,8 +11480,6 @@ PowerStore 9200T</block>
 5,1.SP4.P3(h.109)
 5,1.SP4.P4 (h.97)</block>
   <block id="5ea93ac7e9175685461a3aa7ecd6678d" category="cell">API REST DE RecoverPoint</block>
-  <block id="9ecd3117b1265682a0ebf5bfab4e6f3a" category="cell">2,5
-3,5</block>
   <block id="d10754452cfaa4a1e9127718e2623244" category="cell">R2_6.11000.113
 R2_6.11000.115
 R3_0.1400.101
@@ -11629,29 +11487,6 @@ R3_5.1200.104
 R3_6.500.113
 R3_6.700.103</block>
   <block id="ef2bf1c7f778e627ac9f8b235393cefc" category="cell">API REST de EMC ScaleIO y PowerFlex</block>
-  <block id="ddf9e700baf694bd0e06ea3257f1a7f3" category="cell">V10,0.0,0
-V10,0.1,0
-V7,6.2,67
-V8,3.0,22
-V8,3.0,6
-V8,4.0,7
-V8,4.0,9
-V9,1.0,18
-V9,1.0,5
-V9,1.0,6
-V9,2.0,0
-V9,2.1,0
-V9,2.1,1
-V9,2.1,2
-V9,2.2,0
-V9,2.3,0
-V9,2.3,1
-V9,2.3,4
-V9,2.3,5
-V9,2.3,6
-V9,2.4,1
-V9,2.4,2
-no disponible</block>
   <block id="ced36b4cd1a263f511a018469d008a9a" category="cell">DMX3-24
 DMX4-24
 PMax2000
@@ -11737,10 +11572,6 @@ VMAX950F</block>
 6079.125.0 build 53 build 53
 6079.175.0 build 0 build 0</block>
   <block id="248a2ada600649dd9a0defecae5a2871" category="cell">API de Dell Unisphere</block>
-  <block id="9fce28a0e666c8b62bc169497c0f3166" category="cell">7,1.76-4
-7,1.80-3
-7,33
-8,1.9-232</block>
   <block id="650583531a5dada75e2debcf9178eb89" category="cell">VNX5300
 VNX5400
 VNX5700
@@ -12117,12 +11948,6 @@ F6304</block>
 7.0.14.20</block>
   <block id="47f7060be7cf2bba280a7fc28fd9a923" category="cell">API REST DE Infinidat</block>
   <block id="ec736ea56f7a370661ecd61258754f69" category="cell">API de REST DE Microsoft Azure Compute</block>
-  <block id="e6dd9171dfadb6c8f73da254cca36935" category="cell">Versión de ONTAPI=1,12
-Versión de ONTAPI=1,14
-Versión de ONTAPI=1,17
-Versión de ONTAPI=1,19
-Versión de ONTAPI=1,20
-Versión de ONTAPI=1,21</block>
   <block id="f3cb24609643314e7a0326c5f8011a9e" category="cell">FAS2040
 FAS2050
 FAS2220
@@ -12175,226 +12000,7 @@ Data ONTAP versión 8.2.5 7-Mode</block>
   <block id="b25d1f10591ecf26b3978de4f3228bc7" category="cell">ZAPI NetApp 7-Mode</block>
   <block id="837e5317f8f1d06276bea49ab62e99d9" category="cell">ZAPI</block>
   <block id="63713dccbc1364b72d1a00c589b34dda" category="cell">API de REST de Cloud Volumes Service</block>
-  <block id="499749d8860f3be8018f2197936fe4df" category="cell">NetApp Release 9.11.0P1: Mar Mar 22 17:41:04 UTC 2022
-NetApp Release 9.11.1P3: Jue Sep 29 16:06:51 UTC 2022
-NetApp Release 9.11.1P5: Sáb Dic 10 23:54:17 UTC 2022
-NetApp Release 9.11.1P6: Vie Ene 27 03:16:05 UTC 2023
-NetApp Release 9.11.1P7: Jue Mar 09 11:22:24 UTC 2023
-NetApp Release 9.11.1P9: Vie Abr 28 03:24:07 UTC 2023
-NetApp Release 9.12.1P4: Mar Jun 06 20:41:34 UTC 2023</block>
   <block id="502de0ca02b6a1c74a8a9c374793c768" category="cell">API de NetApp ONTAP</block>
-  <block id="f50a061006ab57625d218533327934ec" category="cell">Data ONTAP Release 9.12.1P2: Mié Abr 05 19:57:43 UTC 2023 (Lenovo)
-NetApp versión 8,2.3P5 Modo Cluster: Jueves, julio de 16 21:51:07 PDT 2015
-NetApp Release 8,3.1: Mon Aug 31 12:42:08 UTC 2015
-NetApp Release 8,3.1P2: Mié Dic 09 03:10:24 UTC 2015
-NetApp Release 8,3.2: Mié Feb 24 03:29:11 UTC 2016
-NetApp Release 8,3.2P12: Mon Aug 14 02:57:01 UTC 2017
-NetApp Release 8,3.2P2: Mon May 23 13:45:25 UTC 2016
-NetApp Release 8,3.2P5: Mar Ago 23 12:36:56 UTC 2016
-NetApp Release 8,3: LUN Mar 09 23:01:28 PDT 2015
-NetApp Release 9.10.0: Jue Ago 19 01:19:53 UTC 2021
-NetApp Release 9.10.1: Sáb Ene 15 10:49:44 UTC 2022
-NetApp Release 9.10.1: Sáb Ene 15 15:04:44 UTC 2022
-NetApp Release 9.10.1P10: Sun Dec 18 16:24:34 UTC 2022
-NetApp Release 9.10.1P11: Jue Feb 23 06:55:33 UTC 2023
-NetApp Release 9.10.1P12: Jue Apr 13 00:30:59 UTC 2023
-NetApp Release 9.10.1P13: LUN Jun 19 06:30:54 UTC 2023
-NetApp Release 9.10.1P1: Dom Feb 20 04:09:09 UTC 2022
-NetApp Release 9.10.1P2: Dom Mar 13 07:13:58 UTC 2022
-NetApp Release 9.10.1P3: Mar Abr 19 17:44:44 UTC 2022
-NetApp Release 9.10.1P4: Mon May 09 22:11:44 UTC 2022
-NetApp Release 9.10.1P5: Dom Jun 19 14:49:57 UTC 2022
-NetApp Release 9.10.1P6: Vie Jul 01 12:06:33 UTC 2022
-NetApp Release 9.10.1P7: Mar Ago 02 08:59:50 UTC 2022
-NetApp Release 9.10.1P8: Mar Sep 13 14:10:13 UTC 2022
-NetApp Release 9.10.1P9: Jue Nov 03 23:29:00 UTC 2022
-NetApp Release 9.10.1RC1: Mié Oct 27 02:46:19 UTC 2021
-NetApp Release 9.11.0P1: Mar Mar 22 17:41:04 UTC 2022
-NetApp Release 9.11.1: Mar Jul 12 04:38:28 UTC 2022
-NetApp Release 9.11.1: Mar Jul 12 10:21:46 UTC 2022
-NetApp Release 9.11.1P10: Jue May 25 12:28:26 UTC 2023
-NetApp Release 9.11.1P1: Mar Ago 09 13:13:19 UTC 2022
-NetApp Release 9.11.1P2: LUN Sep 05 03:40:01 UTC 2022
-NetApp Release 9.11.1P3: Jue Sep 29 16:06:51 UTC 2022
-NetApp Release 9.11.1P4: Jue Oct 27 11:37:48 UTC 2022
-NetApp Release 9.11.1P5: Sáb Dic 10 23:54:17 UTC 2022
-NetApp Release 9.11.1P6: Vie Ene 27 03:16:05 UTC 2023
-NetApp Release 9.11.1P7: Jue Mar 09 11:22:24 UTC 2023
-NetApp Release 9.11.1P8: Vie Abr 07 00:02:50 UTC 2023
-NetApp Release 9.11.1P9: Vie Abr 28 03:24:07 UTC 2023
-NetApp Release 9.11.1RC1: Mié Abr 27 06:57:10 UTC 2022
-NetApp Release 9.11.1X12: Jue Mar 24 16:38:36 UTC 2022
-NetApp Release 9.11.1X26: Jue Jun 02 09:48:39 UTC 2022
-NetApp Release 9.12.1: Mié Feb 01 01:10:18 UTC 2023
-NetApp Release 9.12.1P1: Mié Feb 22 18:22:20 UTC 2023
-NetApp Release 9.12.1P2: Mié Abr 05 14:58:46 UTC 2023
-NetApp Release 9.12.1P2: Mié Abr 05 19:57:43 UTC 2023
-NetApp Release 9.12.1P3: Mar Mayo 02 13:02:11 UTC 2023
-NetApp Release 9.12.1P4: Mar Jun 06 20:41:34 UTC 2023
-NetApp Release 9.12.1RC1: Vie Nov 04 11:45:36 UTC 2022
-NetApp Release 9.12.1RC1: Mié Nov 09 01:14:48 UTC 2022
-NetApp Release 9.13.0: Mar Feb 07 21:20:29 UTC 2023
-NetApp Release 9.13.0P1: LUN Mar 27 03:33:38 UTC 2023
-NetApp Release 9.13.0P2: Mar Abr 11 15:05:31 UTC 2023
-NetApp Release 9.13.0P3: Mié Mayo 17 16:31:25 UTC 2023
-NetApp Release 9.13.1: Mon Jun 19 13:36:41 UTC 2023
-NetApp Release 9.13.1RC1: Mié Abr 26 15:07:24 UTC 2023
-NetApp Release 9.13.1X19: LUN Apr 03 20:51:32 UTC 2023
-NetApp Release 9.13.1X25: Mié Abr 26 15:07:24 UTC 2023
-NetApp Release 9.13.1X33: LUN May 29 12:34:33 UTC 2023
-NetApp Release 9.13.1X34: Jue Jun 08 10:20:00 UTC 2023
-NetApp Release 9.13.1X35: LUN Jun 12 12:12:13 UTC 2023
-NetApp Release 9.13.1X36: Jue Jun 15 13:39:29 UTC 2023
-NetApp Release 9,1: Vie Dec 23 04:09:51 UTC 2016
-NetApp Release 9.1P10: Mar Nov 14 18:03:02 UTC 2017
-NetApp Release 9.1P11: Jue Dec 21 15:05:39 UTC 2017
-NetApp Release 9.1P12: LUN Mar 05 17:39:31 UTC 2018
-NetApp Release 9.1P14: Mié Jun 27 09:15:16 UTC 2018
-NetApp Release 9.1P15: Jue Ago 30 08:19:59 UTC 2018
-NetApp Release 9.1P17: Jue Feb 28 08:05:25 UTC 2019
-NetApp Release 9.1P19: Mon May 27 09:09:01 UTC 2019
-NetApp Release 9.1P1: Mar Feb 14 13:14:46 UTC 2017
-NetApp Release 9.1P20: LUN Oct 28 14:37:28 UTC 2019
-NetApp Release 9.1P5: Dom Jun 11 02:26:58 UTC 2017
-NetApp Release 9.1P7: LUN Ago 14 10:27:14 UTC 2017
-NetApp Release 9.1P8: Mié Ago 30 13:33:41 UTC 2017
-NetApp Release 9.3P10: Sáb Dic 15 04:24:49 UTC 2018
-NetApp Release 9.3P12: Mon Apr 01 23:33:10 UTC 2019
-NetApp Release 9.3P13: LUN 27 19 de mayo: 26:00 UTC 2019
-NetApp Release 9.3P14: Mié Jul 10 14:38:46 UTC 2019
-NetApp Release 9.3P15: Mar Jul 16 19:40:35 UTC 2019
-NetApp Release 9.3P18: Mon Dec 30 10:39:53 UTC 2019
-NetApp Release 9.3P19: Vie Jul 10 12:47:52 UTC 2020
-NetApp Release 9.3P1: Mon Jan 22 18:01:29 UTC 2018
-NetApp Release 9.3P20: Mié Sep 23 21:44:43 UTC 2020
-NetApp Release 9.3P21: LUN Ene 11 17:25:42 UTC 2021
-NetApp Release 9.3P2: Vie Mar 02 01:02:58 UTC 2018
-NetApp Release 9.3P2: Jue Mar 01 16:53:13 UTC 2018
-NetApp Release 9.3P4: Vie Abr 27 19:34:03 UTC 2018
-NetApp Release 9.3P6: Jue Jun 14 20:21:25 UTC 2018
-NetApp Release 9.3P7: Mié Jul 25 10:11:10 UTC 2018
-NetApp Release 9.3P8: LUN Sep 03 20:01:35 UTC 2018
-NetApp Release 9.3P9: Jue Oct 25 07:42:13 UTC 2018
-NetApp Release 9.4P2: Mar Ago 21 00:00:08 UTC 2018
-NetApp Release 9.4P3: Jue Oct 11 22:23:50 UTC 2018
-NetApp Release 9.4P4: Jue Nov 01 15:18:22 UTC 2018
-NetApp Release 9.4P6: Vie Feb 22 09:43:14 UTC 2019
-NetApp Release 9.4RC1: Jue Apr 26 09:13:57 UTC 2018
-NetApp Release 9,5: Thu Dec 13 20:41:33 UTC 2018
-NetApp Release 9.5P10: Vie Dec 13 16:01:45 UTC 2019
-NetApp Release 9.5P12: Vie Abr 10 18:20:31 UTC 2020
-NetApp Release 9.5P13: Mar Mayo 19 02:45:36 UTC 2020
-NetApp Release 9.5P14: LUN Ago 17 05:32:42 UTC 2020
-NetApp Release 9.5P15: Mar Nov 17 07:31:22 UTC 2020
-NetApp Release 9.5P16: Mar Ene 12 10:52:07 UTC 2021
-NetApp Release 9.5P17: Mié Mayo 12 20:42:52 UTC 2021
-NetApp Release 9.5P18: Mié Ago 11 19:17:30 UTC 2021
-NetApp Release 9.5P19: Sáb Nov 27 06:39:07 UTC 2021
-NetApp Release 9.5P1: Mar Feb 19 21:38:50 UTC 2019
-NetApp Release 9.5P2: Jue Mar 14 13:59:39 UTC 2019
-NetApp Release 9.5P3: Mar Abr 16 18:33:13 UTC 2019
-NetApp Release 9.5P3: Mar Abr 16 22:44:27 UTC 2019
-NetApp Release 9.5P4: Mar Mayo 07 03:16:26 UTC 2019
-NetApp Release 9.5P5: Vie Jun 14 15:33:34 UTC 2019
-NetApp Release 9.5P6: Mié Jul 10 18:43:50 UTC 2019
-NetApp Release 9.5P6: Mié Jul 10 22:58:11 UTC 2019
-NetApp Release 9.5P7: Mar Ago 06 00:37:41 UTC 2019
-NetApp Release 9.5P8: Vie Sep 20 19:03:08 UTC 2019
-NetApp Release 9.5P9: LUN Oct 28 09:18:10 UTC 2019
-NetApp Release 9,6: Mié Jul 10 10:10:43 UTC 2019
-NetApp Release 9,6: Mié Jul 10 16:25:33 UTC 2019
-NetApp Release 9.6P11: Vie Oct 16 23:13:09 UTC 2020
-NetApp Release 9.6P14: Mon Apr 05 15:34:55 UTC 2021
-NetApp Release 9.6P15: Mon May 31 02:25:27 UTC 2021
-NetApp Release 9.6P18: Mar Abr 05 11:08:11 UTC 2022
-NetApp Release 9.6P2: Vie Jul 19 06:06:59 UTC 2019
-NetApp Release 9.6P3: Dom Sep 22 08:26:36 UTC 2019
-NetApp Release 9.6P4: Jue Nov 07 01:50:36 UTC 2019
-NetApp Release 9.6P5: Vie Dec 13 18:21:56 UTC 2019
-NetApp Release 9.6RC1: Sábado 11 05 de mayo: 58:14 UTC 2019
-NetApp Release 9.6X11: Dom Mar 10 12:15:04 UTC 2019
-NetApp Release 9,7: Thu Jan 09 17:11:21 UTC 2020
-NetApp Release 9.7P10: Jue Dec 10 00:55:43 UTC 2020
-NetApp Release 9.7P11: Mar Ene 12 18:41:08 UTC 2021
-NetApp Release 9.7P11: Mar Ene 12 23:00:49 UTC 2021
-NetApp Release 9.7P12: Mar Mar 02 23:38:44 UTC 2021
-NetApp Release 9.7P13: Jue Apr 15 02:06:46 UTC 2021
-NetApp Release 9.7P14: Jue Jun 10 22:54:31 UTC 2021
-NetApp Release 9.7P15: Vie Ago 06 19:56:41 UTC 2021
-NetApp Release 9.7P16: Vie Sep 10 22:33:12 UTC 2021
-NetApp Release 9.7P17: Sáb Nov 27 13:49:53 UTC 2021
-NetApp Release 9.7P18: Jue Mar 10 09:57:16 UTC 2022
-NetApp Release 9.7P19: Mon May 23 20:55:08 UTC 2022
-NetApp Release 9.7P1: Jue Feb 27 01:25:24 UTC 2020
-NetApp Release 9.7P20: Jue Ago 11 13:20:52 UTC 2022
-NetApp Release 9.7P21: Vie Dec 23 11:52:44 UTC 2022
-NetApp Release 9.7P22: LUN Mar 27 14:06:51 UTC 2023
-NetApp Release 9.7P2: Dom Mar 22 21:50:44 UTC 2020
-NetApp Release 9.7P3: Vie Abr 17 14:37:51 UTC 2020
-NetApp Release 9.7P4: Sábado 23 00 de mayo: 43:42 UTC 2020
-NetApp Release 9.7P5: Mar Jun 23 04:02:30 UTC 2020
-NetApp Release 9.7P6: Mar Jul 28 04:06:27 UTC 2020
-NetApp Release 9.7P7: Jue Ago 27 20:57:05 UTC 2020
-NetApp Release 9.7P8: Jue Oct 15 04:11:57 UTC 2020
-NetApp Release 9.7P9: Vie Nov 06 01:13:45 UTC 2020
-NetApp Release 9.7RC1: Vie Nov 22 07:39:07 UTC 2019
-NetApp Release 9.7X17: Sáb Nov 16 22:06:11 UTC 2019
-NetApp Release 9,8: Mié Dic 09 06:17:24 UTC 2020
-NetApp Release 9.8P10: Vie Feb 04 19:51:21 UTC 2022
-NetApp Release 9.8P11: Sáb Mar 12 10:19:15 UTC 2022
-NetApp Release 9.8P11D2: Jue Apr 14 12:50:07 UTC 2022
-NetApp Release 9.8P12: Vie May 13 00:04:00 UTC 2022
-NetApp Release 9.8P13: Vie Jul 15 22:40:56 UTC 2022
-NetApp Release 9.8P14: Mar Ago 23 15:29:48 UTC 2022
-NetApp Release 9.8P15: Mié Nov 23 09:29:16 UTC 2022
-NetApp Release 9.8P16: Vie Dec 02 02:05:05 UTC 2022
-NetApp Release 9.8P16: Jue Dec 01 20:42:37 UTC 2022
-NetApp Release 9.8P17: Vie Feb 24 15:11:05 UTC 2023
-NetApp Release 9.8P18: Mié Mar 29 13:19:30 UTC 2023
-NetApp Release 9.8P19: Jue May 11 12:52:01 UTC 2023
-NetApp Release 9.8P19: Jue May 11 17:26:53 UTC 2023
-NetApp Release 9.8P1: Jue Jan 21 01:11:31 UTC 2021
-NetApp Release 9.8P2: Mar Feb 16 03:49:46 UTC 2021
-NetApp Release 9.8P3: Sáb Mar 27 08:43:48 UTC 2021
-NetApp Release 9.8P4: Mon May 03 09:22:00 UTC 2021
-NetApp Release 9.8P5: Jue Jun 10 21:52:01 UTC 2021
-NetApp Release 9.8P6: Mar Ago 03 16:21:11 UTC 2021
-NetApp Release 9.8P7: Mar Sep 14 18:38:58 UTC 2021
-NetApp Release 9.8P8: Jue Oct 21 19:21:56 UTC 2021
-NetApp Release 9.8P9: Mié Dic 22 09:39:04 UTC 2021
-NetApp Release 9.8RC1: Sáb Oct 31 11:13:09 UTC 2020
-NetApp Release 9,9.0: Vie Feb 05 11:29:21 UTC 2021
-NetApp Release 9,9.1: Sun Jun 13 06:06:29 UTC 2021
-NetApp Release 9,9.1: Sun Jun 13 11:45:05 UTC 2021
-NetApp Release 9,9.1P10: Vie May 27 16:22:46 UTC 2022
-NetApp Release 9,9.1P11: Mar Ago 02 19:12:28 UTC 2022
-NetApp Release 9,9.1P12: Vie Sep 16 20:50:11 UTC 2022
-NetApp Release 9,9.1P13: Vie Nov 18 17:29:45 UTC 2022
-NetApp Release 9,9.1P14: Vie Jan 27 21:45:51 UTC 2023
-NetApp Release 9,9.1P15: Mon Mar 27 12:31:36 UTC 2023
-NetApp Release 9,9.1P16: Jue May 25 01:06:07 UTC 2023
-NetApp Release 9,9.1P1: Vie Jul 02 20:21:27 UTC 2021
-NetApp Release 9,9.1P2: Jue Ago 19 13:53:06 UTC 2021
-NetApp Release 9,9.1P3: Sáb Sep 25 13:10:46 UTC 2021
-NetApp Release 9,9.1P3: Mié Sep 29 12:55:55 UTC 2021
-NetApp Release 9,9.1P4: LUN Oct 11 09:20:31 UTC 2021
-NetApp Release 9,9.1P5: Sáb Nov 20 12:17:23 UTC 2021
-NetApp Release 9,9.1P6: Mar Dic 21 13:38:22 UTC 2021
-NetApp Release 9,9.1P7: Sáb Ene 29 01:25:00 UTC 2022
-NetApp Release 9,9.1P8: Mar Mar 15 22:46:53 UTC 2022
-NetApp Release 9,9.1P9: Mié Abr 20 00:42:19 UTC 2022
-NetApp Lanzamiento Bluepaddle__9,7.0: Vie Nov 22 07:39:07 UTC 2019
-Lanzamiento de NetApp Dirtwolf__9,8.0: Mar Ene 18 07:07:03 UTC 2022
-NetApp Release Lighthouse__9.13.1: Mon Jun 19 07:42:08 UTC 2023
-NetApp Lanzamiento Faro__9.13.1: Dom Jun 18 05:17:33 UTC 2023
-NetApp Lanzamiento Longboard__9,0.1: Sáb Jun 04 09:45:33 UTC 2016
-NetApp Release Metropolitan__9.11.1: Mar Jul 12 04:38:28 UTC 2022
-NetApp Release Metropolitan__9.11.1: Mié Abr 27 01:48:31 UTC 2022
-Lanzamiento de NetApp Stormking__9.10.1: Dom Mar 13 02:23:34 UTC 2022
-NetApp Lanzamiento Yellowdog__9.12.1: Mon Nov 28 22:02:55 UTC 2022
-NetApp Lanzamiento Yellowdog__9.12.1: Mar Ene 31 19:19:43 UTC 2023
-NetApp Lanzamiento Yellowdog__9.12.1: Mar Nov 08 20:32:25 UTC 2022
-NetApp Lanzamiento Yellowdog__9.12.1: Mié Oct 05 05:47:17 UTC 2022</block>
   <block id="4a07a61fa2c711c9fc5bae0b8a8057fe" category="cell">AFF-A150
 AFF-A200
 AFF-A220
@@ -12444,186 +12050,6 @@ FAS9500
 FASDvM300
 SIMBOX
 V6240</block>
-  <block id="76fe5692a92f8f0664c53254f69ec92c" category="cell">8,2.3P5 Clustered Data ONTAP
-Clustered Data ONTAP 8.3.0
-Clustered Data ONTAP 8.3.1
-8,3.1P2 Clustered Data ONTAP
-Clustered Data ONTAP 8.3.2
-8,3.2P12 Clustered Data ONTAP
-8,3.2P2 Clustered Data ONTAP
-8,3.2P5 Clustered Data ONTAP
-Clustered Data ONTAP 9.0.1
-Clustered Data ONTAP 9.1.0
-9,1.0P1 Clustered Data ONTAP
-9,1.0P10 Clustered Data ONTAP
-9,1.0P11 Clustered Data ONTAP
-9,1.0P12 Clustered Data ONTAP
-9,1.0P14 Clustered Data ONTAP
-9,1.0P15 Clustered Data ONTAP
-9,1.0P17 Clustered Data ONTAP
-9,1.0P19 Clustered Data ONTAP
-9,1.0P20 Clustered Data ONTAP
-9,1.0P5 Clustered Data ONTAP
-9,1.0P7 Clustered Data ONTAP
-9,1.0P8 Clustered Data ONTAP
-Clustered Data ONTAP 9.10.0
-Clustered Data ONTAP 9.10.1
-9.10.1P1 Clustered Data ONTAP
-9.10.1P10 Clustered Data ONTAP
-9.10.1P11 Clustered Data ONTAP
-9.10.1P12 Clustered Data ONTAP
-9.1P13 Clustered Data ONTAP
-9.10.1P2 Clustered Data ONTAP
-9.10.1P3 Clustered Data ONTAP
-9.10.1P4 Clustered Data ONTAP
-9.10.1P5 Clustered Data ONTAP
-9.10.1P6 Clustered Data ONTAP
-9.10.1P7 Clustered Data ONTAP
-9.10.1P8 Clustered Data ONTAP
-9.10.1P9 Clustered Data ONTAP
-9.11.0P1 Clustered Data ONTAP
-Clustered Data ONTAP 9.11.1
-9.11.1P1 Clustered Data ONTAP
-9.11.1P10 Clustered Data ONTAP
-9.11.1P2 Clustered Data ONTAP
-9.11.1P3 Clustered Data ONTAP
-9.11.1P4 Clustered Data ONTAP
-9.11.1P5 Clustered Data ONTAP
-9.11.1P6 Clustered Data ONTAP
-9.11.1P7 Clustered Data ONTAP
-9.11.1P8 Clustered Data ONTAP
-9.11.1P9 Clustered Data ONTAP
-9.11.1X12 Clustered Data ONTAP
-9.11.1 x 26 Clustered Data ONTAP
-Clustered Data ONTAP 9.12.1
-9.12.1P1 Clustered Data ONTAP
-9.12.1P2 Clustered Data ONTAP
-9.12.1P3 Clustered Data ONTAP
-9.12.1P4 Clustered Data ONTAP
-Clustered Data ONTAP 9.13.0
-9.13.0P1 Clustered Data ONTAP
-9.13.0P2 Clustered Data ONTAP
-9.13.0P3 Clustered Data ONTAP
-Clustered Data ONTAP 9.13.1
-9.13.1X19 Clustered Data ONTAP
-9.13.1X25 Clustered Data ONTAP
-9.13.1X33 Clustered Data ONTAP
-9.13.1X34 Clustered Data ONTAP
-9.13.1X35 Clustered Data ONTAP
-9.13.1X36 Clustered Data ONTAP
-9,3.0P1 Clustered Data ONTAP
-9,3.0P10 Clustered Data ONTAP
-9,3.0P12 Clustered Data ONTAP
-9,3.0P13 Clustered Data ONTAP
-9,3.0P14 Clustered Data ONTAP
-9,3.0P15 Clustered Data ONTAP
-9,3.0P18 Clustered Data ONTAP
-9,3.0P19 Clustered Data ONTAP
-9,3.0P2 Clustered Data ONTAP
-9,3.0P20 Clustered Data ONTAP
-9,3.0P21 Clustered Data ONTAP
-9,3.0P4 Clustered Data ONTAP
-9,3.0P6 Clustered Data ONTAP
-9,3.0P7 Clustered Data ONTAP
-9,3.0P8 Clustered Data ONTAP
-9,3.0P9 Clustered Data ONTAP
-Clustered Data ONTAP 9.4.0
-9,4.0P2 Clustered Data ONTAP
-9,4.0P3 Clustered Data ONTAP
-9,4.0P4 Clustered Data ONTAP
-9,4.0P6 Clustered Data ONTAP
-Clustered Data ONTAP 9.5.0
-9,5.0P1 Clustered Data ONTAP
-9,5.0P10 Clustered Data ONTAP
-9,5.0P12 Clustered Data ONTAP
-9,5.0P13 Clustered Data ONTAP
-9,5.0P14 Clustered Data ONTAP
-9,5.0P15 Clustered Data ONTAP
-9,5.0P16 Clustered Data ONTAP
-9,5.0P17 Clustered Data ONTAP
-9,5.0P18 Clustered Data ONTAP
-9,5.0P19 Clustered Data ONTAP
-9,5.0P2 Clustered Data ONTAP
-9,5.0P3 Clustered Data ONTAP
-9,5.0P4 Clustered Data ONTAP
-9,5.0P5 Clustered Data ONTAP
-9,5.0P6 Clustered Data ONTAP
-9,5.0P7 Clustered Data ONTAP
-9,5.0P8 Clustered Data ONTAP
-9,5.0P9 Clustered Data ONTAP
-Clustered Data ONTAP 9.6.0
-9,6.0P11 Clustered Data ONTAP
-9,6.0P14 Clustered Data ONTAP
-9,6.0P15 Clustered Data ONTAP
-9,6.0P18 Clustered Data ONTAP
-9,6.0P2 Clustered Data ONTAP
-9,6.0P3 Clustered Data ONTAP
-9,6.0P4 Clustered Data ONTAP
-9,6.0P5 Clustered Data ONTAP
-9,6.0X11 Clustered Data ONTAP
-Clustered Data ONTAP 9.7.0
-9,7.0P1 Clustered Data ONTAP
-9,7.0P10 Clustered Data ONTAP
-9,7.0P11 Clustered Data ONTAP
-9,7.0P12 Clustered Data ONTAP
-9,7.0P13 Clustered Data ONTAP
-9,7.0P14 Clustered Data ONTAP
-9,7.0P15 Clustered Data ONTAP
-9,7.0P16 Clustered Data ONTAP
-9,7.0P17 Clustered Data ONTAP
-9,7.0P18 Clustered Data ONTAP
-9,7.0P19 Clustered Data ONTAP
-9,7.0P2 Clustered Data ONTAP
-9,7.0P20 Clustered Data ONTAP
-9,7.0P21 Clustered Data ONTAP
-9,7.0P22 Clustered Data ONTAP
-9,7.0P3 Clustered Data ONTAP
-9,7.0P4 Clustered Data ONTAP
-9,7.0P5 Clustered Data ONTAP
-9,7.0P6 Clustered Data ONTAP
-9,7.0P7 Clustered Data ONTAP
-9,7.0P8 Clustered Data ONTAP
-9,7.0P9 Clustered Data ONTAP
-Clustered Data ONTAP 9,7.0X17
-Clustered Data ONTAP 9.8.0
-9,8.0P1 Clustered Data ONTAP
-9,8.0P10 Clustered Data ONTAP
-9,8.0P11 Clustered Data ONTAP
-9,8.0P11D2 Clustered Data ONTAP
-9,8.0P12 Clustered Data ONTAP
-9,8.0P13 Clustered Data ONTAP
-9,8.0P14 Clustered Data ONTAP
-9,8.0P15 Clustered Data ONTAP
-9,8.0P16 Clustered Data ONTAP
-9,8.0P17 Clustered Data ONTAP
-9,8.0P18 Clustered Data ONTAP
-9,8.0P19 Clustered Data ONTAP
-9,8.0P2 Clustered Data ONTAP
-9,8.0P3 Clustered Data ONTAP
-9,8.0P4 Clustered Data ONTAP
-9,8.0P5 Clustered Data ONTAP
-9,8.0P6 Clustered Data ONTAP
-9,8.0P7 Clustered Data ONTAP
-9,8.0P8 Clustered Data ONTAP
-9,8.0P9 Clustered Data ONTAP
-Clustered Data ONTAP 9.9.0
-Clustered Data ONTAP 9.9.1
-9,9.1P1 Clustered Data ONTAP
-9,9.1P10 Clustered Data ONTAP
-9,9.1P11 Clustered Data ONTAP
-9,9.1P12 Clustered Data ONTAP
-9,9.1P13 Clustered Data ONTAP
-9,9.1P14 Clustered Data ONTAP
-9,9.1P15 Clustered Data ONTAP
-9,9.1P16 Clustered Data ONTAP
-9,9.1P2 Clustered Data ONTAP
-9,9.1P3 Clustered Data ONTAP
-9,9.1P4 Clustered Data ONTAP
-9,9.1P5 Clustered Data ONTAP
-9,9.1P6 Clustered Data ONTAP
-9,9.1P7 Clustered Data ONTAP
-9,9.1P8 Clustered Data ONTAP
-9,9.1P9 Clustered Data ONTAP</block>
   <block id="e0e5e88bf87543da85f0d903d2d6fe42" category="cell">H410S-2
  H610S-2
  H610S-4
@@ -12932,24 +12358,250 @@ VMware vCenter Server 8.0.1, compilación 21860503</block>
   <block id="47c66df8007a6168673191bfaef7dfab" category="paragraph">Puede encontrar información adicional en <block ref="d34993add17c6dd464dba2ccd7f99cbb" category="inline-link-macro-rx"></block> o en la <block ref="9dd2beb67fe62b2f58f66806d3cbe842" category="inline-link-macro-rx"></block>.</block>
   <block id="e07849f7cb6b62fcc60bd889bb8954df" category="paragraph">Puede encontrar información adicional sobre este recopilador de datos en <block ref="d34993add17c6dd464dba2ccd7f99cbb" category="inline-link-macro-rx"></block> o en la <block ref="9dd2beb67fe62b2f58f66806d3cbe842" category="inline-link-macro-rx"></block>.</block>
   <block id="4a186b8a397cc2aad62c7d9c7e9d9a66" category="paragraph">Puede ver o descargar información y detalles sobre recopiladores de datos compatibles en la <block ref="1300170f2732d2d2d53f76de553810b4" category="inline-link-macro-rx"></block>.</block>
-  <block id="fbfc60b12bca0c131c59f525f76f22bf" category="summary">Seguridad de carga de trabajo se integra con ONTAP para recibir eventos de acceso denegado y proporcionar una capa de análisis y respuestas automáticas adicionales.</block>
-  <block id="3ba4371c57b90b9ee49e030d7db47a1f" category="doc">Integración con acceso ONTAP denegado</block>
-  <block id="c1aef2a1ae85a8f2d2f2972297da3d60" category="paragraph">La función Acceso denegado de ONTAP utiliza análisis de carga de trabajo en entornos NAS (NFS y SMB) para detectar y advertir de forma proactiva sobre operaciones de archivos fallidas (por ejemplo, un usuario que intenta realizar una operación para la cual no tiene permiso). Estas notificaciones fallidas de operación de archivos, especialmente en el caso de fallas relacionadas con la seguridad, ayudarán aún más a bloquear los ataques internos en las primeras etapas.</block>
-  <block id="b849ca242cbc590016b269c1ee91cc29" category="paragraph">La seguridad de carga de trabajo se integra con ONTAP para recibir eventos de acceso denegado y proporcionar una capa de respuesta analítica y automática adicional.</block>
-  <block id="5b3261ec26222327253513a1f5b85ba6" category="list-text">Versión mínima de ONTAP: 9.13.0</block>
-  <block id="7238e9f6faa9a8bf2a1c0b55cb039588" category="list-text">La función Acceso denegado está desactivada de forma predeterminada. Un administrador de seguridad de carga de trabajo puede habilitar esta función al agregar un nuevo recopilador o editar un recopilador existente. Para activar, en Seguridad de carga de trabajo &gt; Recopiladores, agregue o edite el recopilador deseado y active la casilla de verificación _Monitor Access Deneged Events_ en Configuración avanzada.</block>
-  <block id="a808fab09e2c9ae5a63f5e049dab0688" category="inline-image-macro">Activación de acceso denegado</block>
-  <block id="6dbaec8d589ae936fddaa5da8e4136bc" category="paragraph"><block ref="6dbaec8d589ae936fddaa5da8e4136bc" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="ccce4bc08fadbf62adda903ef18b3a71" category="paragraph">Si el recopilador se añade con las credenciales de administración del clúster, no se necesitan permisos nuevos.</block>
-  <block id="7e94086884e2780e5b6c9f81ac89dc5b" category="paragraph">Si el recopilador se agrega utilizando un usuario personalizado (por ejemplo, _csuser_) con permisos otorgados al usuario, siga los pasos a continuación para otorgar permisos a Seguridad de carga de trabajo para registrarse con el evento ONTAP para acceso denegado .</block>
-  <block id="fe6df009bfa9d725b811d49cdb8b4e7c" category="paragraph">Para _csuser_ con las credenciales del clúster, ejecute los siguientes comandos desde la línea de comandos de ONTAP:</block>
-  <block id="02efd7604209ddbbd8e84d4f61b73a6e" category="paragraph">Para _csuser_ con las credenciales de SVM, ejecute los siguientes comandos desde la línea de comandos de ONTAP:</block>
-  <block id="18eb08209dff281929039b467a472f31" category="paragraph">Nota: En los comandos anteriores, _csrole_ es el rol personalizado y _csuser_ es el usuario personalizado de ONTAP.</block>
-  <block id="d0aae2eaa03ecabb8c086f9955d726c7" category="section-title">Evento de acceso denegado de muestra</block>
-  <block id="428ed0ed1c01699e6322b706684fdb11" category="paragraph">Un evento de acceso denegado de muestra aparecerá como se muestra en las imágenes a continuación. También puede ver la lista de permisos deseados que el usuario no tenía para una operación en particular en la columna _Actividad deseada_ que puede mostrar opcionalmente.</block>
-  <block id="d41ccaf6090623996b7a77e9f74f06bf" category="inline-image-macro">Acceso denegado a evento de muestra</block>
-  <block id="66dcd3eccaf1048a46b7727780eeb9cd" category="inline-image-macro">Evento de muestra denegado de acceso que muestra columnas de actividad denegada</block>
-  <block id="143f93c0a250d7b4c81e78e2cb154211" category="paragraph"><block ref="ee0b481ebed31d6775d42686b376f648" category="inline-image-macro-rx" type="image"></block>
-<block ref="f913a701b0e25c9f7bd9dfbc47afd16c" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="1c31d515d2e78422350a8dfc6a331a38" category="sidebar">Integración denegada de acceso a ONTAP</block>
+  <block id="c00642d871f5ba7dbc50bbe96271824a" category="cell">MU1 KG (3.1.1 LB)
+MU3 KG (3.1.2 LB)
+MU1 KG (3.1.3 LB)
+MU2 KG (3.1.3 LB)
+MU3 KG (3.1.3 LB)
+MU3 KG (3.2.1 LB)
+MU5 KG (3.2.1 LB)
+3.2.2
+MU2 KG (3.2.2 LB)
+MU4 KG (3.2.2 LB)
+MU6 KG (3.2.2 LB)
+MU1 KG (3.3.1 LB)
+MU2 KG (3.3.1 LB)
+MU5 KG (3.3.1 LB)
+3.3.2
+MU1 KG (3.3.2 LB)
+4.4.1 Tipo de versión: Versión de soporte estándar
+4.5.11 Tipo de versión: Versión de soporte ampliado
+4.5.3 Tipo de versión: Versión de soporte ampliado
+4.5.7 Tipo de versión: Versión de soporte ampliado
+9.5.8 Tipo de versión: Versión de soporte ampliado</block>
+  <block id="51b625d6addc0e43e8a47ac5aa049060" category="cell">A200
+A2000
+A300
+F200
+F800
+F900
+H400
+H500
+H600
+H700
+NL400
+NL410
+S210
+X200
+X210
+X400
+X410</block>
+  <block id="80ab59f6aabf4af4349282653e17c8da" category="cell">V10,0.0,0
+V10,0.1,0
+V7,6.2,67
+V8,3.0,22
+V8,3.0,6
+V8,4.0,7
+V8,4.0,9
+V9,1.0,18
+V9,1.0,5
+V9,1.0,6
+V9,2.0,0
+V9,2.1,0
+V9,2.1,1
+V9,2.1,2
+V9,2.2,0
+V9,2.3,0
+V9,2.3,1
+V9,2.3,4
+V9,2.3,5
+V9,2.3,6
+V9,2.4,1
+V9,2.4,2</block>
+  <block id="8f18d2f14650495a35607299888487dd" category="cell">1,12
+1,14
+1,17
+1,19
+1,20
+1,21</block>
+  <block id="0e81c94ca82abcdceefe92f03e92b4da" category="cell">8,2.3P5
+8.3.0
+8.3.1
+8,3.1P2
+8.3.2
+8,3.2P12
+8,3.2P2
+8,3.2P5
+9.0.1
+9.1.0
+9,1.0P1
+9,1.0P10
+9,1.0P11
+9,1.0P12
+9,1.0P14
+9,1.0P15
+9,1.0P17
+9,1.0P19
+9,1.0P20
+9,1.0P5
+9,1.0P7
+9,1.0P8
+9.10.0
+9.10.1
+9.10.1P1
+9.10.1P10
+9.10.1P11
+9.10.1P12
+9.10.1P13
+9.10.1P2
+9.10.1P3
+9.10.1P4
+9.10.1P5
+9.10.1P6
+9.10.1P7
+9.10.1P8
+9.10.1P9
+9.11.0P1
+9.11.1
+9.11.1P1
+9.11.1P10
+9.11.1P2
+9.11.1P3
+9.11.1P4
+9.11.1P5
+9.11.1P6
+9.11.1P7
+9.11.1P8
+9.11.1P9
+9.11.1X12
+9.11.1X26
+9.12.1
+12.1P1
+9.12.1P2
+9.12.1P3
+9.12.1P4
+9.13.0
+9.13.0P1
+9.13.0P2
+9.13.0P3
+9.13.1
+9.13.1X19
+9.13.1X25
+9.13.1X33
+9.13.1X34
+9.13.1X35
+9.13.1X36
+9,3.0P1
+9,3.0P10
+9,3.0P12
+9,3.0P13
+9,3.0P14
+9,3.0P15
+9,3.0P18
+9,3.0P19
+9,3.0P2
+9,3.0P20
+9,3.0P21
+9,3.0P4
+9,3.0P6
+9,3.0P7
+9,3.0P8
+9,3.0P9
+9.4.0
+9,4.0P2
+9,4.0P3
+9,4.0P4
+9,4.0P6
+9.5.0
+9,5.0P1
+9,5.0P10
+9,5.0P12
+9,5.0P13
+9,5.0P14
+9,5.0P15
+9,5.0P16
+9,5.0P17
+9,5.0P18
+9,5.0P19
+9,5.0P2
+9,5.0P3
+9,5.0P4
+9,5.0P5
+9,5.0P6
+9,5.0P7
+9,5.0P8
+9,5.0P9
+9.6.0
+9,6.0P11
+9,6.0P14
+9,6.0P15
+9,6.0P18
+9,6.0P2
+9,6.0P3
+9,6.0P4
+9,6.0P5
+9,6.0X11
+9.7.0
+9,7.0P1
+9,7.0P10
+9,7.0P11
+9,7.0P12
+9,7.0P13
+9,7.0P14
+9,7.0P15
+9,7.0P16
+9,7.0P17
+9,7.0P18
+9,7.0P19
+9,7.0P2
+9,7.0P20
+9,7.0P21
+9,7.0P22
+9,7.0P3
+9,7.0P4
+9,7.0P5
+9,7.0P6
+9,7.0P7
+9,7.0P8
+9,7.0P9
+9,7.0X17
+9.8.0
+9,8.0P1
+9,8.0P10
+9,8.0P11
+9,8.0P11D2
+9,8.0P12
+9,8.0P13
+9,8.0P14
+9,8.0P15
+9,8.0P16
+9,8.0P17
+9,8.0P18
+9,8.0P19
+9,8.0P2
+9,8.0P3
+9,8.0P4
+9,8.0P5
+9,8.0P6
+9,8.0P7
+9,8.0P8
+9,8.0P9
+9.9.0
+9.9.1
+9,9.1P1
+9,9.1P10
+9,9.1P11
+9,9.1P12
+9,9.1P13
+9,9.1P14
+9,9.1P15
+9,9.1P16
+9,9.1P2
+9,9.1P3
+9,9.1P4
+9,9.1P5
+9,9.1P6
+9,9.1P7
+9,9.1P8
+9,9.1P9</block>
 </blocks>
