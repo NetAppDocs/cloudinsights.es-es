@@ -265,12 +265,12 @@ sidebar:
       url: "/task_troubleshooting_windows_acquisition_unit_problems.html"
     - title: Investigando errores de recopiladores de datos
       url: "/task_research_failed_collector.html"
+  - title: Matriz de compatibilidad de recopilador de datos
+    url: "/reference_data_collector_support_matrix.html"
   - title: Referencia y asistencia técnica
     entries:
     - title: Solicitud de soporte
       url: "/concept_requesting_support.html"
-    - title: Matriz de compatibilidad de recopilador de datos
-      url: "/reference_data_collector_support_matrix.html"
     - title: 'Referencia de recopiladores de datos: Infraestructura'
       entries:
       - title: Información general de referencia de proveedores

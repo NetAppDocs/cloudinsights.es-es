@@ -33,6 +33,9 @@ NOTE: A menos que se indique lo contrario, la información de esta página gener
 
 Para obtener una comparación completa de las características disponibles en las ediciones básica y premium de Cloud Insights, consulte la link:https://bluexp.netapp.com/cloud-insights-pricing["Precios de Cloud Insights"] página.
 
+
+WARNING: Los entornos Cloud Insights Basic Edition inactivos se eliminan y se reclaman sus recursos. Un entorno se considera inactivo si no hay actividad del usuario durante 30 días consecutivos, de si no hay datos ingeridos durante 7 días consecutivos. Cloud Insights enviará una notificación y proporcionará un período de gracia de cuatro días antes de la eliminación de un entorno.
+
 Mientras utiliza Cloud Insights, si ve un icono de candado image:padlock.png["Candado"]Significa que la función no está disponible en la edición actual o está disponible en formato limitado. Actualice para obtener acceso completo a la función.
 
 
