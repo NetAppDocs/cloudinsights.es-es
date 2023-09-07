@@ -21,9 +21,7 @@ summary: El Explorador de registros es una herramienta eficaz para investigar pr
 [role="lead"]
 El Explorador de registros de Cloud Insights es una herramienta eficaz para consultar registros del sistema. Además de ayudar con las investigaciones, también puede guardar una consulta de registro en un monitor para proporcionar alertas cuando se activan esos activadores de registro específicos.
 
-Para comenzar a explorar registros, haga clic en *consultas > +Nueva consulta de registro*.
-
-image:LogExplorerMenu.png["Menú de consultas de registro, 480"]
+Para comenzar a explorar los registros, haga clic en *Log Queries > +New Log Query*.
 
 Seleccione un registro disponible de la lista.
 
@@ -43,58 +41,91 @@ image:LogExplorer_QueryForFailed.png["Ejemplo de consulta que muestra el filtro"
 
 
 
-== Gráfico de registros
+== Filtrado
 
-El gráfico muestra el número de entradas de registro, agrupadas en _buckets_, que se basan en el intervalo de tiempo del panel seleccionado. Los cucharones para cada intervalo de tiempo son los siguientes:
+
+
+=== Incluir/Excluir
+
+Al filtrar los registros, puede elegir entre *incluir* (es decir, “Filtrar”) o *excluir* las cadenas que escriba. Las cadenas excluidas se muestran en el filtro completado como NO <string>.
+
+image:Log_Advanced_Query_Filter_Exclude.png["Filtro de registro que muestra la opción Excluir"]
+
+Los filtros basados en comodines o expresiones (por ejemplo, NO, O bien, "Ninguno", etc.) se muestran en azul oscuro en el campo de filtro. Los elementos seleccionados directamente de la lista se muestran en azul claro.
+
+
+NOTE: En cualquier momento, puede hacer clic en _Crear un Monitor de registro_ para crear un monitor nuevo basado en el filtro actual.
+
+
+
+=== Filtrado avanzado
+
+Cuando esté filtrando valores de texto o lista en consultas o widgets de panel, cuando comience a escribir, se le mostrará la opción de crear un filtro * comodín* basado en el texto actual. Si selecciona esta opción, se devolverán todos los resultados que coincidan con la expresión comodín. También puede crear expresiones utilizando NOT, AND, OR, o BIEN puede seleccionar la opción Ninguno para filtrar valores nulos.
+
+
+NOTE: Asegúrese de guardar su consulta temprano y con frecuencia mientras crea su filtro. La consulta avanzada es una entrada de cadena de formato libre, y los errores de análisis pueden ocurrir a medida que se crea.
+
+Echa un vistazo a esta imagen de pantalla que muestra los resultados filtrados para una consulta avanzada del registro _logs.kubernetes.event_. Hay muchas cosas en esta página, que se explica debajo de la imagen:
+
+image:Log_Advanced_Query_ScreenExplained.png["Se explica la pantalla Consulta avanzada"]
+
+. Esta cadena de consulta avanzada filtra lo siguiente:
++
+** Filtro para entradas de registro con un _REASON_ que incluye la palabra “FAILED”, pero no nada con el motivo específico de “FailedMount”.
+** Incluya cualquiera de esas entradas que también incluya un _metadata.namespace_ que incluya la palabra “monitoreo”, pero excluya los espacios de nombres específicos de “monitoreo de CM” o “monitoreo por ejemplo”.
++
+Tenga en cuenta que, en el caso anterior, ya que tanto la monitorización CM como la monitorización por ejemplo contienen un guión ('-), las cadenas deben incluirse entre comillas dobles o se mostrará un error de análisis. Las cadenas que no incluyen guiones, espacios, etc. no necesitan estar entre comillas. En caso de duda, intente poner la cadena entre comillas.
+
+
+
+. Los resultados del filtro actual, incluidos los valores de filtro por Y el filtro de consulta avanzada. La lista se puede ordenar por cualquier columna mostrada. Para mostrar columnas adicionales, seleccione el icono de engranaje.
+. Se amplió el gráfico para mostrar solo los resultados del registro que se produjeron dentro de un período de tiempo específico. El intervalo de tiempo que se muestra aquí refleja el nivel de zoom actual. Seleccione el botón _Restablecer zoom_ para restablecer el nivel de zoom al rango de tiempo actual de Cloud Insights.
+. Los resultados del gráfico se han agrupado por el campo _SOURCE_. El gráfico muestra los resultados de cada columna agrupados en colores. Si pasa el ratón sobre una columna del gráfico, se mostrarán algunos detalles sobre las entradas específicas.
++
+image:Log_Advanced_Query_Group_Detail.png["Detalles de salto agrupado"]
+
+
+
+
+
+==== Filtros de refinado
+
+Puede utilizar lo siguiente para refinar el filtro:
 
 |===
 
 
-| Intervalo de tiempo del panel de control | Tamaño del cucharón 
+| Filtro | Qué hace 
 
 
-| Últimos 15 minutos | 10 segundos 
+| * (Asterisk) | le permite buscar todo 
 
 
-| Últimos 30 minutos | 15 segundos 
+| ? (signo de interrogación) | le permite buscar un número específico de caracteres 
 
 
-| Últimos 60 minutos | 30 segundos 
+| O. | permite especificar varias entidades 
 
 
-| Últimas 2 horas | 1 minuto 
+| NO | permite excluir el texto de los resultados de la búsqueda 
 
 
-| Últimas 3 horas | 5 minutos 
+| _Ninguno_ | Busca valores NULL en todos los campos 
 
 
-| Últimas 6 horas | 5 minutos 
-
-
-| Últimas 12 horas | 10 minutos 
-
-
-| Últimas 24 horas | 15 minutos 
-
-
-| Últimos 2 días | 30 minutos 
-
-
-| Últimos 3 días | 45 minutos 
-
-
-| Últimos 7 días | 2 horas 
-
-
-| Últimos 30 días | 1 día 
+| No * | Busca valores NULL en los campos _text-only_ 
 |===
-Para ampliar el gráfico, sólo tiene que arrastrar los controles deslizantes desde cualquier lado. Para desplazarse por el área ampliada, haga clic y mantenga pulsado en el área blanca y desplácese hacia la izquierda o hacia la derecha. Haga clic en _Reset Zoom_ para restablecer el nivel de zoom.
+Si una cadena de filtro se debe escribir entre comillas dobles, Insight trata todo entre el primer y el último presupuesto como una coincidencia exacta. Todos los caracteres especiales o operadores incluidos en las comillas se tratarán como literales. Por ejemplo, el filtrado para "*" devolverá resultados que sean un asterisco literal; en este caso, el asterisco no será tratado como comodín. Los operadores O Y NO también se tratarán como cadenas literales cuando se incluyen entre comillas dobles.
 
-image:LogExplorer_Zoom_2.png["Amplíe el zoom arrastrando los lados del gráfico"]
+Puede combinar un filtro simple con un filtro de consulta avanzado; el filtro resultante es una “Y” de los dos.
 
-Tenga en cuenta que al ampliar el gráfico o desplazarse por la tabla, la actualización automática del panel se detendrá y el intervalo de tiempo mostrará el tiempo congelado. Para reanudar la actualización, haga clic en el botón _Reanudar_ image:ResumeButton.png[""]. Esto también restablecerá el nivel de zoom.
 
-En cualquier momento, puede hacer clic en _Crear un Monitor de registro_ para crear un monitor nuevo basado en el filtro actual.
+
+=== Leyenda del gráfico
+
+El _Legend_ debajo de la tabla tiene algunas sorpresas también. Para cada resultado (basado en el filtro actual) que se muestra en la leyenda, tiene una opción para mostrar solo los resultados de esa línea (Agregar filtro) o para mostrar cualquier resultado QUE NO SEA para esa línea (Agregar filtro excluido). El gráfico y la lista Entradas de registro se actualizan para mostrar los resultados según su selección.  Para eliminar este filtro, abra de nuevo la leyenda y seleccione [X] para borrar el filtro basado en leyenda.
+
+image:Log_Advanced_Query_Legend.png["Advanced Query Legen que muestra “Agregar filtro” para el primer resultado"]
 
 
 

@@ -2868,9 +2868,6 @@
   <block id="a042a0a750858e6060db4dfe64a00752" category="summary">El Explorador de registros es una herramienta eficaz para investigar problemas a través de diferentes registros del sistema.</block>
   <block id="f605eb6ac9043e9f1502d006629b9dc3" category="doc">Explorador de registros</block>
   <block id="8525c63db9fcf944b97e51df898b6440" category="paragraph">El Explorador de registros de Cloud Insights es una herramienta eficaz para consultar registros del sistema. Además de ayudar con las investigaciones, también puede guardar una consulta de registro en un monitor para proporcionar alertas cuando se activan esos activadores de registro específicos.</block>
-  <block id="72ab1611127dabda382ded8d35eabd5f" category="paragraph">Para comenzar a explorar registros, haga clic en *consultas &gt; +Nueva consulta de registro*.</block>
-  <block id="5e618eb9ef1c438e7d5d6afda86417f3" category="inline-image-macro">Menú de consultas de registro, 480</block>
-  <block id="d93346d5cd40cfc415b92ee8b9831053" category="paragraph"><block ref="d93346d5cd40cfc415b92ee8b9831053" category="inline-image-macro-rx" type="image"></block></block>
   <block id="bf74dd0ba8bacde3d960739103ba63c6" category="paragraph">Seleccione un registro disponible de la lista.</block>
   <block id="0aa526404a7affc36dc5d2429d255945" category="inline-image-macro">Seleccione su registro</block>
   <block id="dc2dd49825ec74e1ca580d41456c912b" category="paragraph"><block ref="dc2dd49825ec74e1ca580d41456c912b" category="inline-image-macro-rx" type="image"></block></block>
@@ -2880,10 +2877,7 @@
   <block id="4fc206dee5c28b63ff442e3ed9df6b96" category="paragraph">Los resultados se muestran en un gráfico que muestra el número de instancias de registro de cada período de tiempo mostrado. Debajo del gráfico están las entradas de registro temconsigo mismo. El gráfico y las entradas se actualizan automáticamente en función del intervalo de tiempo seleccionado.</block>
   <block id="8ef03d84e3fb3a5e09cc1a40b1e60f8d" category="inline-image-macro">Ejemplo de consulta que muestra el filtro</block>
   <block id="a5841d3432662ae9190489b4bf13e03c" category="paragraph"><block ref="a5841d3432662ae9190489b4bf13e03c" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="6525698622e5d4dd87d39bc69750d2e3" category="section-title">Gráfico de registros</block>
-  <block id="5ca1a83f7b7763185645c408d9237058" category="paragraph">El gráfico muestra el número de entradas de registro, agrupadas en _buckets_, que se basan en el intervalo de tiempo del panel seleccionado. Los cucharones para cada intervalo de tiempo son los siguientes:</block>
   <block id="a311182bfffa770574efa58415204e5e" category="cell">Intervalo de tiempo del panel de control</block>
-  <block id="1a07cd9ad36405911f4a827c02141cb5" category="cell">Tamaño del cucharón</block>
   <block id="a926f64f96f29ebfa9e64241032a55b2" category="cell">Últimos 15 minutos</block>
   <block id="19835cec9600eb5f9fc332ed671fc46a" category="cell">10 segundos</block>
   <block id="0fd65d7e147096c119c6900ed5b5a8cd" category="cell">Últimos 30 minutos</block>
@@ -2900,17 +2894,10 @@
   <block id="91cffeca95beab0e4685fd8b11a50803" category="cell">Últimas 24 horas</block>
   <block id="0d109f2a2e5b1f92e8b4de51b6bd9363" category="cell">15 minutos</block>
   <block id="caec3712d5844af129c76f18ea0bfcf2" category="cell">Últimos 2 días</block>
-  <block id="06cdf20b6eaa0ae9f8c50b0f6158589f" category="cell">30 minutos</block>
   <block id="0ad331ed80e13a88f270d542cb3fbb40" category="cell">Últimos 3 días</block>
-  <block id="90085ccde7a8c066e1f3a5b7580ef07d" category="cell">45 minutos</block>
   <block id="4b299435d7b213389dfcb754217ab570" category="cell">Últimos 7 días</block>
   <block id="5ce155ac62ee03701f7a117676333008" category="cell">2 horas</block>
   <block id="015a82ad52283ebee50f2819fc99d3eb" category="cell">Últimos 30 días</block>
-  <block id="0d730df753ae6a369323fe6dc1641eb2" category="cell">1 día</block>
-  <block id="0aa0ba82527e49e5c56d1dfce41fc246" category="paragraph">Para ampliar el gráfico, sólo tiene que arrastrar los controles deslizantes desde cualquier lado. Para desplazarse por el área ampliada, haga clic y mantenga pulsado en el área blanca y desplácese hacia la izquierda o hacia la derecha. Haga clic en _Reset Zoom_ para restablecer el nivel de zoom.</block>
-  <block id="51e0a539e27933abd9022ece5ebb9dc0" category="inline-image-macro">Amplíe el zoom arrastrando los lados del gráfico</block>
-  <block id="03bbd7f405795c5f2f9e6b2aa10a9485" category="paragraph"><block ref="03bbd7f405795c5f2f9e6b2aa10a9485" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="9861da4e593f0d876c27ae2472947ec7" category="paragraph">Tenga en cuenta que al ampliar el gráfico o desplazarse por la tabla, la actualización automática del panel se detendrá y el intervalo de tiempo mostrará el tiempo congelado. Para reanudar la actualización, haga clic en el botón _Reanudar_ <block ref="aba9fdfd6cc8b6ea17b1ffd7798083ed" category="inline-image-macro-rx" type="image"></block>. Esto también restablecerá el nivel de zoom.</block>
   <block id="d376c886c5ff2fc65131f62ba9752f91" category="paragraph">En cualquier momento, puede hacer clic en _Crear un Monitor de registro_ para crear un monitor nuevo basado en el filtro actual.</block>
   <block id="5498a5f4896f117c2848f41304cec816" category="section-title">Detalles del registro</block>
   <block id="359af7e1e51e6ea2bf3b35d99ff965eb" category="paragraph">Al hacer clic en cualquier parte de una entrada de registro de la lista, se abrirá un panel de detalles para esa entrada. Aquí podrá encontrar más información sobre el evento.</block>
@@ -12464,4 +12451,30 @@ V9,2.4,2</block>
 9,9.1P8
 9,9.1P9</block>
   <block id="c33b15606594c79bf9d409ec6f7e05b0" category="admonition">Los entornos Cloud Insights Basic Edition inactivos se eliminan y se reclaman sus recursos. Un entorno se considera inactivo si no hay actividad del usuario durante 30 días consecutivos, de si no hay datos ingeridos durante 7 días consecutivos. Cloud Insights enviará una notificación y proporcionará un período de gracia de cuatro días antes de la eliminación de un entorno.</block>
+  <block id="12a4857a4dbeb827f3ccc062e3e95447" category="paragraph">Para comenzar a explorar los registros, haga clic en *Log Queries &gt; +New Log Query*.</block>
+  <block id="9a588db8471730dbfebac65cd5467ad8" category="section-title">Filtrado</block>
+  <block id="c372ce68f746709e625ff6a439caabb9" category="section-title">Incluir/Excluir</block>
+  <block id="2787899688f12e7489007de8b12213d5" category="paragraph">Al filtrar los registros, puede elegir entre *incluir* (es decir, “Filtrar”) o *excluir* las cadenas que escriba. Las cadenas excluidas se muestran en el filtro completado como NO &lt;string&gt;.</block>
+  <block id="1734ff7c4f75b54c961ad7d4359787e1" category="inline-image-macro">Filtro de registro que muestra la opción Excluir</block>
+  <block id="405c7a3556714c3c384503dcad4e730a" category="paragraph"><block ref="405c7a3556714c3c384503dcad4e730a" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="53fe9d76b1ba589991576c0208798009" category="section-title">Filtrado avanzado</block>
+  <block id="110b3aa692108cdd731e2a20e7fab59a" category="paragraph">Cuando esté filtrando valores de texto o lista en consultas o widgets de panel, cuando comience a escribir, se le mostrará la opción de crear un filtro * comodín* basado en el texto actual. Si selecciona esta opción, se devolverán todos los resultados que coincidan con la expresión comodín. También puede crear expresiones utilizando NOT, AND, OR, o BIEN puede seleccionar la opción Ninguno para filtrar valores nulos.</block>
+  <block id="ca6fcfb5b3944c9f5e1fc9d91e8b5fc9" category="admonition">Asegúrese de guardar su consulta temprano y con frecuencia mientras crea su filtro. La consulta avanzada es una entrada de cadena de formato libre, y los errores de análisis pueden ocurrir a medida que se crea.</block>
+  <block id="6682349270b7766210b24eb769ff2f4b" category="paragraph">Echa un vistazo a esta imagen de pantalla que muestra los resultados filtrados para una consulta avanzada del registro _logs.kubernetes.event_. Hay muchas cosas en esta página, que se explica debajo de la imagen:</block>
+  <block id="1e7fa24e8c554b3ada8b33899f9054fb" category="inline-image-macro">Se explica la pantalla Consulta avanzada</block>
+  <block id="67e358a5c19a682585f241c67623688b" category="paragraph"><block ref="67e358a5c19a682585f241c67623688b" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="46a8b17ae4f06cb7ca1032e9fd81030d" category="list-text">Esta cadena de consulta avanzada filtra lo siguiente:</block>
+  <block id="8cc6fe8efec4a3d6fc5ed7b779e8c094" category="list-text">Filtro para entradas de registro con un _REASON_ que incluye la palabra “FAILED”, pero no nada con el motivo específico de “FailedMount”.</block>
+  <block id="0d08e6b786ad26cf3562710d1355fea7" category="list-text">Incluya cualquiera de esas entradas que también incluya un _metadata.namespace_ que incluya la palabra “monitoreo”, pero excluya los espacios de nombres específicos de “monitoreo de CM” o “monitoreo por ejemplo”.</block>
+  <block id="2b54fd64a2706073e8bc271891bd6d2d" category="paragraph">Tenga en cuenta que, en el caso anterior, ya que tanto la monitorización CM como la monitorización por ejemplo contienen un guión ('-), las cadenas deben incluirse entre comillas dobles o se mostrará un error de análisis. Las cadenas que no incluyen guiones, espacios, etc. no necesitan estar entre comillas. En caso de duda, intente poner la cadena entre comillas.</block>
+  <block id="af949190b79fd7ebdb106c82bad91ccd" category="list-text">Los resultados del filtro actual, incluidos los valores de filtro por Y el filtro de consulta avanzada. La lista se puede ordenar por cualquier columna mostrada. Para mostrar columnas adicionales, seleccione el icono de engranaje.</block>
+  <block id="b61d5955be1f96c1051d023bbbb0885a" category="list-text">Se amplió el gráfico para mostrar solo los resultados del registro que se produjeron dentro de un período de tiempo específico. El intervalo de tiempo que se muestra aquí refleja el nivel de zoom actual. Seleccione el botón _Restablecer zoom_ para restablecer el nivel de zoom al rango de tiempo actual de Cloud Insights.</block>
+  <block id="e9c3a605437c1d21260249137747effc" category="list-text">Los resultados del gráfico se han agrupado por el campo _SOURCE_. El gráfico muestra los resultados de cada columna agrupados en colores. Si pasa el ratón sobre una columna del gráfico, se mostrarán algunos detalles sobre las entradas específicas.</block>
+  <block id="ddebec2cff3de7b17694a2b5c55254a5" category="inline-image-macro">Detalles de salto agrupado</block>
+  <block id="540bd2dacf8012f1036c7cbb4c950e57" category="paragraph"><block ref="540bd2dacf8012f1036c7cbb4c950e57" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="1c9bb5a9e84c262c583c25b07c1af190" category="paragraph">Puede combinar un filtro simple con un filtro de consulta avanzado; el filtro resultante es una “Y” de los dos.</block>
+  <block id="b761d7a9aa49f18da68cf21ea910b857" category="section-title">Leyenda del gráfico</block>
+  <block id="772a480c61e419a52923d1da92b228e7" category="paragraph">El _Legend_ debajo de la tabla tiene algunas sorpresas también. Para cada resultado (basado en el filtro actual) que se muestra en la leyenda, tiene una opción para mostrar solo los resultados de esa línea (Agregar filtro) o para mostrar cualquier resultado QUE NO SEA para esa línea (Agregar filtro excluido). El gráfico y la lista Entradas de registro se actualizan para mostrar los resultados según su selección.  Para eliminar este filtro, abra de nuevo la leyenda y seleccione [X] para borrar el filtro basado en leyenda.</block>
+  <block id="d14acaf1ab19304c31907532625c28a1" category="inline-image-macro">Advanced Query Legen que muestra “Agregar filtro” para el primer resultado</block>
+  <block id="342c7491dc2f013cbb7933ea5b7db958" category="paragraph"><block ref="342c7491dc2f013cbb7933ea5b7db958" category="inline-image-macro-rx" type="image"></block></block>
 </blocks>
