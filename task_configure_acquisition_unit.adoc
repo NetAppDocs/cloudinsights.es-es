@@ -200,7 +200,10 @@ Si va a desinstalar una unidad de adquisición *Linux*:
 
 
 NOTE: No puede suprimir una unidad de adquisición (AU) que tenga recopiladores de datos conectados. Mueva todos los recopiladores de datos de la AU a otra AU (edite el recopilador y simplemente seleccione una AU diferente) antes de eliminar la AU original.
-'''
+
+Se está utilizando una unidad de adquisición con una estrella junto a ella para la resolución del dispositivo. Antes de eliminar esta AU, debe seleccionar otra AU para utilizar en Resolución de dispositivo. Pase el ratón sobre una unidad de asignación diferente y abra el menú de tres puntos para seleccionar Usar para resolución de dispositivo.
+
+image:AU_for_Device_Resolution.png["AU Se utiliza para la resolución del dispositivo"]
 
 
 
