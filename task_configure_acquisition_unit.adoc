@@ -198,9 +198,10 @@ Si va a desinstalar una unidad de adquisición *Linux*:
 . Haga clic en el botón Opciones situado a la derecha de la unidad de adquisición que desea desinstalar y seleccione _Delete_. Sólo puede eliminar una unidad de adquisición si no hay recopiladores de datos asignados.
 
 
-NOTA:no puede eliminar la unidad de adquisición predeterminada. Seleccione otra unidad de datos como predeterminada antes de eliminar la antigua.
 
+NOTE: No puede suprimir una unidad de adquisición (AU) que tenga recopiladores de datos conectados. Mueva todos los recopiladores de datos de la AU a otra AU (edite el recopilador y simplemente seleccione una AU diferente) antes de eliminar la AU original.
 '''
+
 
 
 == Reinstalación de una unidad de adquisición
