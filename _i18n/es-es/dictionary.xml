@@ -12404,4 +12404,33 @@ V9,2.4,2</block>
   <block id="8a75e64ac585bb8eb6efae44768cfc8e" category="list-text">Cree una nueva regla para los apiGroups y recursos deseados con los verbos [“get”, “watch”, “list”]. Consulte \https://kubernetes.io/docs/reference/access-authn-authz/rbac/</block>
   <block id="5aa700b8892918bb447b666e3ba9b2a8" category="list-text">Aplique los cambios al clúster</block>
   <block id="4973faad22ed5aa285bded803704fa6f" category="paragraph">Nota: Si desea eliminar los permisos añadidos anteriormente, los cambios no surtirán efecto hasta que se reinicie el pod _event-exporter_.</block>
+  <block id="4ae43ffefdaf3c2343be08c2c231978f" category="section-title">Septiembre de 2023</block>
+  <block id="34e28a7e0863af99d5c1703dc6cda717" category="section-title">Encuentre fácilmente lo que desea en los registros</block>
+  <block id="fcf6af69900c1559042fbe3fe72c94a1" category="inline-link-macro">mejoras</block>
+  <block id="d79e17684f1a24c58bb32d08bef3a3ff" category="paragraph">La consulta de registro (*Observabilidad &gt; Consultas de registro &gt; +Nueva consulta de registro*) incluye un número de <block ref="86ca1f2cb3e438ee4c22e212690c972d" category="inline-link-macro-rx"></block> para hacer la exploración de registros más fácil y más informativa.</block>
+  <block id="848fb0e63e13a4434909fdea6458ed6d" category="section-title">Incluir/Excluir</block>
+  <block id="e60e1b57ed4e38e138695033de1e9d1e" category="paragraph">Al filtrar por un valor, puede elegir fácilmente si desea incluir * o * excluir * resultados que coincidan con el filtro. Al seleccionar Excluir, se crea un filtro que NO ES &lt;value&gt;. Puede combinar los valores Incluir y Excluir en un único filtro.</block>
+  <block id="0792509c03d281def53e2cbb6d7f07df" category="inline-image-macro">Filtro que muestra el botón de opción Excluir</block>
+  <block id="ba1b079c59ef8c16f8f957aa0df9c4de" category="paragraph"><block ref="ba1b079c59ef8c16f8f957aa0df9c4de" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="b45c0ca13c55b7f66782e958a84142d4" category="section-title">Consulta avanzada</block>
+  <block id="95f02ff52db65fe00fc8634318fba90e" category="paragraph">*Consulta avanzada* te da la oportunidad de crear filtros de “forma libre”, combinando o excluyendo valores usando Y, NO, O, comodines, etc.</block>
+  <block id="b0afc67d027a88643736219f858d2596" category="inline-image-macro">Consulta de registro de ejemplo que ilustra las funciones AND, NOT y OR</block>
+  <block id="c6d89674714a140b24e4a9d11d190824" category="paragraph"><block ref="c6d89674714a140b24e4a9d11d190824" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="190febc1a687d2e28053104a1cffd7c7" category="paragraph">La “Filtrar por” y la “Consulta Avanzada” son “Y juntas” para formar una sola consulta. Los resultados se muestran en la lista de resultados y en el gráfico.</block>
+  <block id="82b7b893771cf0e9f3adb5b42ae6ee7e" category="section-title">Agrupación en el gráfico</block>
+  <block id="496613147f6975d1aa2dac2ceaa46634" category="paragraph">Cuando selecciona un atributo de registro para *Agrupar por*, la lista y el gráfico muestran los resultados del filtro actual. En el gráfico, las columnas se agrupan en colores. Si pasa el ratón sobre una columna del gráfico, se mostrarán detalles sobre las entradas específicas, de forma similar a la información general que se muestra al expandir la leyenda del gráfico.  En la leyenda, también puede elegir establecer un filtro Incluir o Excluir para una agrupación específica.</block>
+  <block id="44f9aec87f1c51a61aeca11ad9786542" category="inline-image-macro">Ejemplo de Grupo de Consultas de Log que muestra columnas apiladas en el gráfico</block>
+  <block id="e9523ec897a9823fb02ccbd1944b7f3f" category="paragraph"><block ref="e9523ec897a9823fb02ccbd1944b7f3f" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="0a80f4dd9b1327eb6d1bd68998aa54c3" category="section-title">Panel de detalles de registro flotante</block>
+  <block id="91d94db59fc7134cda265c7016d2dd86" category="paragraph">Al explorar los registros mediante la consulta de registro, al seleccionar una entrada de la lista se abre un panel de detalles para esa entrada. Ahora puede optar por mostrar ese panel deslizante flotante (es decir, que se muestra en el resto de la pantalla) o en la página (es decir, que se muestra como su propio marco dentro de la página). Para alternar entre estas vistas, seleccione el botón “En página / Flotante” en la esquina superior derecha del panel.</block>
+  <block id="fb8b0b641df922f8eab6bd7c3c4a1131" category="inline-image-macro">Panel deslizante en la página con el botón resaltado</block>
+  <block id="e8d14fa9be7f94fb8271ac286e2294a8" category="paragraph"><block ref="e8d14fa9be7f94fb8271ac286e2294a8" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="d5f3e5dd25b324aa763247302dd4e5ba" category="section-title">Contraer el menú</block>
+  <block id="21425fa36b8a56c29ff0c7d71c2109fa" category="paragraph">Puede contraer el menú de navegación Cloud Insights del lado izquierdo seleccionando el botón “Minimizar” debajo del menú. Mientras el menú está minimizado, pase el ratón sobre un icono para ver qué sección se abre; al seleccionar el icono se abre el menú y le llevará directamente a esa sección.</block>
+  <block id="063ac5c87e9ce20ce0f904d0551f0a18" category="inline-image-macro">Minimice el menú</block>
+  <block id="a42f1d09ea5508165ffbb74fd0d019d7" category="paragraph"><block ref="a42f1d09ea5508165ffbb74fd0d019d7" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="36ffaf16e7982bb87a23ee56b05db6df" category="section-title">Mejoras en Data Collector</block>
+  <block id="8c5de4bef31a79ea191d0f5740fcd0d7" category="paragraph">Cloud Insights ha hecho que sea más fácil mostrar y encontrar información del recopilador de datos:</block>
+  <block id="203714762dd5efde1be30c09220249eb" category="list-text">*El procesamiento de listas de recopiladores de datos* es más eficiente, lo que significa que el tiempo que se tarda en mostrar y navegar por estas listas se reduce considerablemente. Si tiene un entorno grande con muchos recopiladores de datos, verá una mejora significativa al enumerar sus recopiladores de datos.</block>
+  <block id="213f6f47f9ff1cc9f4851725d89b4a7e" category="list-text">La matriz de soporte * Data Collector ha pasado de un archivo .PDF a una página basada en .HTML, de navegación más rápida y fácil de mantener. Consulte la nueva matriz aquí:<block ref="8ac5ec571a7bfa27b3b068af3462bfb9" category="inline-link-rx"></block></block>
 </blocks>

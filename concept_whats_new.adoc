@@ -25,6 +25,71 @@ NOTE: Es posible que algunas de estas funciones no estén disponibles en la edic
 
 
 
+== Septiembre de 2023
+
+
+
+=== Encuentre fácilmente lo que desea en los registros
+
+La consulta de registro (*Observabilidad > Consultas de registro > +Nueva consulta de registro*) incluye un número de link:concept_log_explorer.html#advanced-filtering["mejoras"] para hacer la exploración de registros más fácil y más informativa.
+
+
+
+==== Incluir/Excluir
+
+Al filtrar por un valor, puede elegir fácilmente si desea incluir * o * excluir * resultados que coincidan con el filtro. Al seleccionar Excluir, se crea un filtro que NO ES <value>. Puede combinar los valores Incluir y Excluir en un único filtro.
+
+image:Log_Query_Exclude_Filter.png["Filtro que muestra el botón de opción Excluir"]
+
+
+
+==== Consulta avanzada
+
+*Consulta avanzada* te da la oportunidad de crear filtros de “forma libre”, combinando o excluyendo valores usando Y, NO, O, comodines, etc.
+
+image:Log_Advanced_Query_Example.png["Consulta de registro de ejemplo que ilustra las funciones AND, NOT y OR"]
+
+La “Filtrar por” y la “Consulta Avanzada” son “Y juntas” para formar una sola consulta. Los resultados se muestran en la lista de resultados y en el gráfico.
+
+
+
+==== Agrupación en el gráfico
+
+Cuando selecciona un atributo de registro para *Agrupar por*, la lista y el gráfico muestran los resultados del filtro actual. En el gráfico, las columnas se agrupan en colores. Si pasa el ratón sobre una columna del gráfico, se mostrarán detalles sobre las entradas específicas, de forma similar a la información general que se muestra al expandir la leyenda del gráfico.  En la leyenda, también puede elegir establecer un filtro Incluir o Excluir para una agrupación específica.
+
+image:Log_Query_Group_By_Chart.png["Ejemplo de Grupo de Consultas de Log que muestra columnas apiladas en el gráfico"]
+
+
+
+=== Panel de detalles de registro flotante
+
+Al explorar los registros mediante la consulta de registro, al seleccionar una entrada de la lista se abre un panel de detalles para esa entrada. Ahora puede optar por mostrar ese panel deslizante flotante (es decir, que se muestra en el resto de la pantalla) o en la página (es decir, que se muestra como su propio marco dentro de la página). Para alternar entre estas vistas, seleccione el botón “En página / Flotante” en la esquina superior derecha del panel.
+
+image:Log_Query_Floating_Detail_Panel.png["Panel deslizante en la página con el botón resaltado"]
+
+
+
+=== Contraer el menú
+
+Puede contraer el menú de navegación Cloud Insights del lado izquierdo seleccionando el botón “Minimizar” debajo del menú. Mientras el menú está minimizado, pase el ratón sobre un icono para ver qué sección se abre; al seleccionar el icono se abre el menú y le llevará directamente a esa sección.
+
+image:CI_Menu_Minimize_Button.png["Minimice el menú"]
+
+
+
+=== Mejoras en Data Collector
+
+Cloud Insights ha hecho que sea más fácil mostrar y encontrar información del recopilador de datos:
+
+* *El procesamiento de listas de recopiladores de datos* es más eficiente, lo que significa que el tiempo que se tarda en mostrar y navegar por estas listas se reduce considerablemente. Si tiene un entorno grande con muchos recopiladores de datos, verá una mejora significativa al enumerar sus recopiladores de datos.
+
+
+* La matriz de soporte * Data Collector ha pasado de un archivo .PDF a una página basada en .HTML, de navegación más rápida y fácil de mantener. Consulte la nueva matriz aquí: https://docs.netapp.com/us-en/cloudinsights/reference_data_collector_support_matrix.html[]
+
+
+'''
+
+
 == Agosto de 2023
 
 
