@@ -12398,4 +12398,10 @@ V9,2.4,2</block>
   <block id="6ca3f10b5393d86f93fd0734db3cecd7" category="paragraph">Se está utilizando una unidad de adquisición con una estrella junto a ella para la resolución del dispositivo. Antes de eliminar esta AU, debe seleccionar otra AU para utilizar en Resolución de dispositivo. Pase el ratón sobre una unidad de asignación diferente y abra el menú de tres puntos para seleccionar Usar para resolución de dispositivo.</block>
   <block id="c5e5e7a28ba316db52d09e89bd288fc9" category="inline-image-macro">AU Se utiliza para la resolución del dispositivo</block>
   <block id="793f9fde8e6064cae75d4cbfd2efe0fb" category="paragraph"><block ref="793f9fde8e6064cae75d4cbfd2efe0fb" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="4099aa818be44a204ef7ec3ba69b96c7" category="inline-link-macro">agregados para ver</block>
+  <block id="6046897f8c0f41425f2e47227c5932e8" category="paragraph">Si el clúster que se va a supervisar contiene recursos personalizados que no tienen un ClusterRole que <block ref="c09eb6051f010e6e01a634a8b6a5c304" category="inline-link-macro-rx"></block>, Tendrá que conceder manualmente el acceso del operador a estos recursos para supervisarlos con registros de eventos.</block>
+  <block id="8f0ae9ae8e0fd7f3e8fe6ff175a59943" category="list-text">Edite _operator-additional-permissions.yaml_ antes de instalar, o después de instalar, edite el recurso _ClusterRole/&lt;namespace&gt;-additional-permissions_</block>
+  <block id="8a75e64ac585bb8eb6efae44768cfc8e" category="list-text">Cree una nueva regla para los apiGroups y recursos deseados con los verbos [“get”, “watch”, “list”]. Consulte \https://kubernetes.io/docs/reference/access-authn-authz/rbac/</block>
+  <block id="5aa700b8892918bb447b666e3ba9b2a8" category="list-text">Aplique los cambios al clúster</block>
+  <block id="4973faad22ed5aa285bded803704fa6f" category="paragraph">Nota: Si desea eliminar los permisos añadidos anteriormente, los cambios no surtirán efecto hasta que se reinicie el pod _event-exporter_.</block>
 </blocks>

@@ -204,6 +204,19 @@ Más información acerca de Kubernetes link:https://kubernetes.io/docs/concepts/
 
 
 
+=== Permisos
+
+Si el clúster que se va a supervisar contiene recursos personalizados que no tienen un ClusterRole que link:https://kubernetes.io/docs/reference/access-authn-authz/rbac/#aggregated-clusterroles["agregados para ver"], Tendrá que conceder manualmente el acceso del operador a estos recursos para supervisarlos con registros de eventos.
+
+. Edite _operator-additional-permissions.yaml_ antes de instalar, o después de instalar, edite el recurso _ClusterRole/<namespace>-additional-permissions_
+. Cree una nueva regla para los apiGroups y recursos deseados con los verbos [“get”, “watch”, “list”]. Consulte \https://kubernetes.io/docs/reference/access-authn-authz/rbac/
+. Aplique los cambios al clúster
+
+
+Nota: Si desea eliminar los permisos añadidos anteriormente, los cambios no surtirán efecto hasta que se reinicie el pod _event-exporter_.
+
+
+
 == Instalación del operador de supervisión Kubernetes de NetApp
 
 image:NKMO-Instructions-1.png[""]
