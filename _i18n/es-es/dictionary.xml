@@ -10184,7 +10184,6 @@
   <block id="a2792f9c8cd4eac5285b213778bf54bd" category="paragraph"><block ref="a2792f9c8cd4eac5285b213778bf54bd" category="inline-image-macro-rx" type="image"></block></block>
   <block id="ea06c8a4bc5e070206dea22d4c09ea4a" category="list-text">Entorno Oracle <block ref="9d0f209eaf780338551d5fb55073783e" category="inline-link-macro-rx"></block> se guardan en un único archivo de configuración autodocumentado.</block>
   <block id="4626ec11333b1630cfeee22687c063f2" category="paragraph">La <block ref="bfbd4b14aa5d5e760ae10e06c192ceef" category="inline-link-macro-rx"></block> Esta función simplifica la solución de problemas mediante la asignación de dependencias entre cargas de trabajo de Kubernetes. Proporciona visibilidad en tiempo real de las latencias y anomalías del rendimiento de la red de Kubernetes para identificar problemas de rendimiento antes de que afecten a los usuarios. Esta funcionalidad ayuda a las organizaciones a reducir los costes generales mediante el análisis y la auditoría de los flujos de tráfico de Kubernetes.</block>
-  <block id="17cf4a6ff78f85ddfaf7692d70368ade" category="cell">Un equipo que ejecuta una versión con licencia de uno de los siguientes: * CentOS (64 bits): 7,2 a 7,9, Stream 8, Stream 9 * Debian (64 bits): 9 y 10 * Oracle Enterprise Linux (64 bits): 7,5 a 7,9, 8,1 a 8,4 * Red Hat Enterprise Linux (64 bits): 7,2 a 7,9, 8,1 a 9,1 * Rocky 9,0, 9,1 * Ubuntu Server: 18,04 y 20,04 LTS Este equipo no debería ejecutar ningún otro software de nivel de aplicación. Se recomienda un servidor dedicado.</block>
   <block id="da9f9625eb860a1ad92687973f4b6f55" category="section-title">Requisito de edición federal adicional</block>
   <block id="dff4dc08edcbd6b7929f7f987fa14f17" category="list-text">Para instalaciones de unidades de adquisición en clusters de edición federal de Cloud Insights, el sistema operativo subyacente debe tener una buena fuente de entropía. En sistemas Linux esto se hace normalmente instalando _rng-tools_ o mediante la generación de números aleatorios (RNG) de hardware. Es responsabilidad del cliente asegurarse de que se cumple este requisito en la máquina de la unidad de adquisición.</block>
   <block id="4b051b13595634958e002ebbf8d92506" category="summary">Cloud Insights puede proporcionar vistas del almacenamiento virtualizado de interfaz y back-end.</block>
@@ -12433,4 +12432,14 @@ V9,2.4,2</block>
   <block id="8c5de4bef31a79ea191d0f5740fcd0d7" category="paragraph">Cloud Insights ha hecho que sea más fácil mostrar y encontrar información del recopilador de datos:</block>
   <block id="203714762dd5efde1be30c09220249eb" category="list-text">*El procesamiento de listas de recopiladores de datos* es más eficiente, lo que significa que el tiempo que se tarda en mostrar y navegar por estas listas se reduce considerablemente. Si tiene un entorno grande con muchos recopiladores de datos, verá una mejora significativa al enumerar sus recopiladores de datos.</block>
   <block id="213f6f47f9ff1cc9f4851725d89b4a7e" category="list-text">La matriz de soporte * Data Collector ha pasado de un archivo .PDF a una página basada en .HTML, de navegación más rápida y fácil de mantener. Consulte la nueva matriz aquí:<block ref="8ac5ec571a7bfa27b3b068af3462bfb9" category="inline-link-rx"></block></block>
+  <block id="76bcb8d1f49c96aae75d78c035df4a9b" category="cell">Un equipo que ejecuta una versión con licencia de uno de los siguientes:
+
+* CentOS (64 bits): 7,2 a 7,9, Stream 8, Stream 9
+* Debian (64 bits): 9 y 10
+* Oracle Enterprise Linux (64 bits): 7,5 a 7,9, 8,1 a 8,4
+* Red Hat Enterprise Linux (64 bits): 7,2 a 7,9, 8,1 a 8,7, 9,1
+* Rocky 9,0, 9,1
+* Servidor Ubuntu: 18,04 y 20,04 LTS
+
+Este equipo no debe ejecutar ningún otro software de nivel de aplicación. Se recomienda un servidor dedicado.</block>
 </blocks>
