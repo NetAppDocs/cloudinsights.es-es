@@ -373,40 +373,193 @@ A continuación, se incluyen los monitores del sistema que se incluyen actualmen
 |===
 
 
-| Nombre del monitor | Gravedad | Descripción del monitor 
+| Nombre del monitor | Descripción | Acciones correctivas | Gravedad/Umbral 
 
 
-| POD creado | Informativo | Esta alerta ocurre cuando se crea un POD. 
+| Latencia de volumen persistente alta | Las altas latencias de volumen persistente implican que las propias aplicaciones pueden sufrir y no pueden realizar sus tareas. La supervisión de las latencias de volumen persistente es crucial para mantener un rendimiento consistente de las aplicaciones. A continuación se muestran latencias en función del tipo de medio: Unidades SSD de hasta 1-2 milisegundos; SAS de hasta 8-10 milisegundos y unidades de disco duro SATA de 17-20 milisegundos. | **Acciones inmediatas**
+	Si se incumple el umbral crítico, considere las acciones inmediatas para minimizar la interrupción del servicio:
+		Si el volumen tiene asignada una política de calidad de servicio, evalúe sus umbrales límite en caso de que provoque que la carga de trabajo del volumen se acelere.
+		**Acciones a hacer pronto**
+	Si se incumple el umbral de advertencia, planifique las siguientes acciones inmediatas:
+		1. Si también está experimentando una alta utilización del pool de almacenamiento, mueva el volumen a otro pool de almacenamiento.
+	2. Si el volumen tiene asignada una política de calidad de servicio, evalúe sus umbrales de límite en caso de que estén causando la aceleración de la carga de trabajo del volumen.
+	3. Si la controladora también está experimentando una alta utilización, mueva el volumen a otra controladora o reduzca la carga de trabajo total de la controladora. | Advertencia @ > 6.000 μs
+	Crítico @ > 12.000 μs 
 
 
-| POD eliminado | Informativo | Esta alerta se produce cuando se elimina un POD. 
+| Saturación de memoria de cluster alta | La saturación de memoria asignable al cluster es alta.
+	La saturación de CPU del clúster se calcula como la suma del uso de memoria dividida por la suma de la memoria asignable en los K8s nodos. | Añada nodos.
+	Corrija los nodos no programados.
+	Ajuste el tamaño de los pods para liberar memoria en los nodos. | Advertencia @ > 80 %
+	Crítico @ > 90 % 
 
 
-| Demonset creado | Informativo | Esta alerta se produce cuando se crea un Demonset. 
+| Error en la conexión DEL POD | Esta alerta se produce cuando se produce un error en un archivo adjunto de volumen con POD. |  | Advertencia 
 
 
-| Desinicio eliminado | Informativo | Esta alerta se produce cuando se elimina un Demonset. 
+| Alta tasa de retransmisión | Alta velocidad de retransmisión TCP | Comprobar congestión de red: Identifique cargas de trabajo que consumen mucho ancho de banda de red.
+	Compruebe si hay un uso elevado de la CPU del Pod.
+	Compruebe el rendimiento de la red de hardware. | Advertencia @ > 10 %
+	Crítico @ > 25 % 
 
 
-| Replicaset creado | Informativo | Esta alerta se produce cuando se crea un replicaset. 
+| Alta capacidad del sistema de archivos de nodo | Alta capacidad del sistema de archivos de nodo | - Aumentar el tamaño de los discos de nodo para asegurarse de que haya suficiente espacio para los archivos de aplicación.
+- Disminuir el uso del archivo de aplicación. | Advertencia @ > 80 %
+ Crítico @ > 90 % 
 
 
-| Replicaset eliminado | Informativo | Esta alerta se produce cuando se elimina un replicaset. 
+| Fluctuación de red de carga de trabajo alta | Alta fluctuación de TCP (variaciones de tiempo de respuesta/latencia elevada) | Compruebe si hay congestión de la red. Identifique las cargas de trabajo que consumen un gran ancho de banda de la red.
+Compruebe si hay un uso elevado de la CPU del Pod.
+Compruebe el rendimiento de la red de hardware | Advertencia @ > 30 ms
+ Crítico @ > 50 ms 
 
 
-| Implementación creada | Informativo | Esta alerta se produce cuando se crea una implementación. 
+| Rendimiento de volumen persistente | Es posible utilizar los umbrales DE MBPS en volúmenes persistentes para alertar a un administrador cuando los volúmenes persistentes superan las expectativas de rendimiento predefinidas, lo que puede afectar a otros volúmenes persistentes. Si se activa esta supervisión, se generarán alertas adecuadas para el perfil de rendimiento típico de los volúmenes persistentes en SSD. Esta supervisión cubrirá todos los volúmenes persistentes de tu entorno. Los valores de umbral crítico y de advertencia se pueden ajustar en función de sus objetivos de supervisión duplicando este monitor y estableciendo los umbrales adecuados para su clase de almacenamiento. Una supervisión duplicada puede dirigirse aún más a un subconjunto de los volúmenes persistentes del entorno. | **Acciones inmediatas**
+Si se incumple el umbral crítico, planifique acciones inmediatas para minimizar la interrupción del servicio:
+1. Introduzca los límites de QoS MBPS para el volumen.
+2. Revise la aplicación que impulsa la carga de trabajo en el volumen para detectar anomalías.
+**Acciones a hacer pronto**
+Si se incumple el umbral de advertencia, planifique tomar las siguientes medidas inmediatas:
+1. Introduzca los límites de QoS MBPS para el volumen.
+2. Revise la aplicación que impulsa la carga de trabajo en el volumen para detectar anomalías. | Advertencia @ > 10.000 MB/s.
+ Crítica @ > 15.000 MB/s 
 
 
-| FALLO del POD | ADVERTENCIA | Esta alerta se produce cuando falla un POD. 
+| Contenedor en riesgo de muerte de OOM | Los límites de memoria del contenedor están demasiado bajos. El contenedor está en riesgo de ser desalojado (sin memoria). | Aumente los límites de memoria del contenedor. | Advertencia @ > 95 % 
 
 
-| Error en la conexión DEL POD | ADVERTENCIA | Esta alerta se produce cuando se produce un error en un archivo adjunto de volumen con POD. 
+| Carga de trabajo inactiva | La carga de trabajo no tiene pods en buen estado. |  | Crítico @ < 1 
 
 
-| Error en el enlace de reclamación de volumen persistente | ADVERTENCIA | Esta alerta se produce cuando se produce un error de enlace en una RVP. 
+| Error en el enlace de reclamación de volumen persistente | Esta alerta se produce cuando se produce un error de enlace en una RVP. |  | Advertencia 
 
 
-| Montaje con fallos DE POD | ADVERTENCIA | Esta alerta se produce cuando falla un montaje en un POD. 
+| Límites de ResourceQuota Mem a punto de superarse | Los límites de memoria para el espacio de nombres están a punto de superar ResourceQuota |  | Advertencia @ > 80 %
+ Crítico @ > 90 % 
+
+
+| Solicitudes de miembros de ResourceQuota a punto de superar | Las solicitudes de memoria para Namespace están a punto de superar ResourceQuota |  | Advertencia @ > 80 %
+ Crítico @ > 90 % 
+
+
+| Fallo al crear el nodo | No se pudo programar el nodo debido a un error de configuración. | Compruebe el registro de eventos de Kubernetes para conocer la causa del fallo de configuración. | Crítico 
+
+
+| Fallo en la recuperación de volumen persistente | El volumen no superó la recuperación automática. |  | Advertencia @ > 0 B 
+
+
+| Limitación de CPU del contenedor | Los límites de CPU del contenedor están establecidos demasiado bajos. Los procesos del contenedor se ralentizan. | Aumente los límites de CPU del contenedor. | Advertencia @ > 95 %
+ Crítico @ > 98 % 
+
+
+| Fallo al suprimir el equilibrador de carga de servicio |  |  | Advertencia 
+
+
+| IOPS de volumen persistente | Es posible utilizar los umbrales de IOPS en volúmenes persistentes para alertar a un administrador cuando los volúmenes persistentes superan las expectativas de rendimiento predefinidas. Si se activa esta supervisión, se generarán alertas adecuadas para el perfil de IOPS típico de los volúmenes de persistencia. Esta supervisión cubrirá todos los volúmenes persistentes de tu entorno. Los valores de umbral crítico y de advertencia se pueden ajustar en función de sus objetivos de supervisión duplicando este monitor y estableciendo umbrales adecuados para su carga de trabajo. | **Acciones inmediatas**
+Si se incumple el umbral crítico, planifique las acciones inmediatas para minimizar la interrupción del servicio :
+1. Introduzca los límites de IOPS de calidad de servicio para el volumen.
+2. Revise la aplicación que impulsa la carga de trabajo en el volumen para detectar anomalías.
+**Acciones a hacer pronto**
+Si se incumple el umbral de advertencia, planifique las siguientes acciones inmediatas:
+1. Introduzca los límites de IOPS de calidad de servicio para el volumen.
+2. Revise la aplicación que impulsa la carga de trabajo en el volumen para detectar anomalías. | Advertencia @ > 20.000 E/S
+ Crítica a > 25.000 IO/s. 
+
+
+| Fallo al actualizar el equilibrador de carga de servicio |  |  | Advertencia 
+
+
+| Montaje con fallos DE POD | Esta alerta se produce cuando falla un montaje en un POD. |  | Advertencia 
+
+
+| Presión PID del nodo | Los identificadores de proceso disponibles en el nodo (Linux) están por debajo de un umbral de expulsión. | Busque y corrija los pods que generan muchos procesos y eliminan por completo el nodo de los ID de proceso disponibles.
+Configure PodPidsLimit para proteger su nodo frente a pods o contenedores que generen demasiados procesos. | Crítico @ > 0 
+
+
+| Error de extracción de imagen de POD | Kubernetes no pudo extraer la imagen del contenedor de pod. | - Asegúrese de que la imagen del pod se deletrea correctamente en la configuración del pod.
+- Comprobar etiqueta de imagen existe en su registro.
+- Verificar las credenciales para el registro de imágenes.
+- Verificar problemas de conectividad del registro.
+- Verifique que no está alcanzando los límites de tasa impuestos por los proveedores de registro público. | Advertencia 
+
+
+| Trabajo en ejecución demasiado largo | El trabajo se está ejecutando durante demasiado tiempo |  | Advertencia a > 1 hora
+ Crítico a > 5 hora 
+
+
+| Memoria de nodo alta | El uso de memoria del nodo es alto | Añada nodos.
+Corrija los nodos no programados.
+Ajuste el tamaño de los pods para liberar memoria en los nodos. | Advertencia @ > 85 %
+ Crítico @ > 90 % 
+
+
+| Límites de CPU de ResourceQuota a punto de superarse | Los límites de CPU para el espacio de nombres están a punto de superar ResourceQuota |  | Advertencia @ > 80 %
+ Crítico @ > 90 % 
+
+
+| Retroceso de bucle de caída de POD | El pod se ha bloqueado e intentó reiniciarse varias veces. |  | Crítico @ > 3 
+
+
+| CPU de nodo alta | El uso de CPU del nodo es alto. | Añada nodos.
+Corrija los nodos no programados.
+Ajuste el tamaño de los pods para liberar la CPU en los nodos. | Advertencia @ > 80 %
+ Crítico @ > 90 % 
+
+
+| RTT de latencia de red de carga de trabajo alta | Alta latencia RTT (tiempo de ida y vuelta) de TCP | Comprobar congestión de red ▒ Identificar cargas de trabajo que consumen mucho ancho de banda de red.
+Compruebe si hay un uso elevado de la CPU del Pod.
+Compruebe el rendimiento de la red de hardware. | Advertencia @ > 150 ms
+ Crítico @ > 300 ms 
+
+
+| Error de trabajo | El trabajo no se ha completado correctamente debido a un bloqueo o reinicio del nodo, agotamiento de recursos, tiempo de espera del trabajo o fallo de programación del pod. | Compruebe los registros de eventos de Kubernetes para ver las causas del fallo. | Advertencia @ > 1 
+
+
+| Volumen persistente lleno en unos pocos días | El volumen persistente se quedará sin espacio en unos pocos días | -Aumentar el tamaño del volumen para asegurarse de que haya suficiente espacio para los archivos de aplicación.
+-Reducir la cantidad de datos almacenados en las aplicaciones. | Advertencia @ < 8 día
+ Crítica @ < 3 día 
+
+
+| Presión de memoria del nodo | El nodo se está quedando sin memoria. La memoria disponible ha alcanzado el umbral de expulsión. | Añada nodos.
+Corrija los nodos no programados.
+Ajuste el tamaño de los pods para liberar memoria en los nodos. | Crítico @ > 0 
+
+
+| Nodo no preparado | El nodo se ha despreparado durante 5 minutos | Compruebe que el nodo tiene suficientes recursos de CPU, memoria y disco.
+Compruebe la conectividad de red del nodo.
+Compruebe los registros de eventos de Kubernetes para ver las causas del fallo. | Crítico @ < 1 
+
+
+| Capacidad de volumen persistente alta | La capacidad utilizada del back-end de volumen persistente es alta. | - Aumentar el tamaño del volumen para asegurarse de que haya suficiente espacio para los archivos de la aplicación.
+- Reducir la cantidad de datos almacenados en las aplicaciones. | Advertencia @ > 80 %
+ Crítico @ > 90 % 
+
+
+| Fallo al crear el equilibrador de carga de servicio | Fallo al crear el equilibrador de carga de servicio |  | Crítico 
+
+
+| Discrepancia de réplica de carga de trabajo | Algunos pods no están disponibles actualmente para un Deployment o DaemonSet. |  | Advertencia @ > 1 
+
+
+| Solicitudes de CPU de ResourceQuota a punto de superarse | Las solicitudes de CPU para Namespace están a punto de superar ResourceQuota |  | Advertencia @ > 80 %
+ Crítico @ > 90 % 
+
+
+| Alta tasa de retransmisión | Alta velocidad de retransmisión TCP | Comprobar congestión de red: Identifique cargas de trabajo que consumen mucho ancho de banda de red.
+Compruebe si hay un uso elevado de la CPU del Pod.
+Compruebe el rendimiento de la red de hardware. | Advertencia @ > 10 %
+ Crítico @ > 25 % 
+
+
+| Presión de disco de nodo | El espacio en disco y los inodos disponibles en el sistema de archivos raíz del nodo o en el sistema de archivos de imagen han cumplido un umbral de expulsión. | - Aumentar el tamaño de los discos de nodo para asegurarse de que haya suficiente espacio para los archivos de aplicación.
+- Disminuir el uso del archivo de aplicación. | Crítico @ > 0 
+
+
+| Saturación de CPU del clúster alta | La saturación de CPU asignable al cluster es alta.
+La saturación de CPU del clúster se calcula como la suma del uso de CPU dividida por la suma de CPU asignable en los K8s nodos. | Añada nodos.
+Corrija los nodos no programados.
+Ajuste el tamaño de los pods para liberar la CPU en los nodos. | Advertencia @ > 80 %
+ Crítico @ > 90 % 
 |===
 <<top,Volver al inicio>>
 
