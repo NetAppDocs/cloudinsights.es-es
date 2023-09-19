@@ -159,6 +159,12 @@ persistentvolumeclaims=[*],persistentvolumes=[*],pods=[*],replicasets=[*],resour
 |  | DnsMode | TCP/UDP, modo para DNS 
 
 
+|  | toleraciones de bits fluidas | toleraciones adicionales de fluent-bit-ds. 
+
+
+|  | toleraciones-exportador-de-eventos | toleraciones adicionales de evento-exportador. 
+
+
 | asignación de carga de trabajo |  | Opciones de configuración que pueden personalizar la recopilación de mapas de carga de trabajo y la instalación del operador 
 
 
@@ -183,13 +189,7 @@ persistentvolumeclaims=[*],persistentvolumes=[*],pods=[*],replicasets=[*],resour
 |  | Habilitar DNSLookup | True/false, active la búsqueda de DNS 
 
 
-|  | toleraciones de bits fluidas | toleraciones adicionales de fluent-bit-ds. 
-
-
-|  | toleraciones-exportador-de-eventos | toleraciones adicionales de evento-exportador. 
-
-
-| asignación de carga de trabajo |  | l4-toleraciones 
+|  | l4-toleraciones | net-observer-l4-ds toleraciones adicionales. 
 |===
 
 

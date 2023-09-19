@@ -12442,4 +12442,5 @@ V9,2.4,2</block>
 * Servidor Ubuntu: 18,04 y 20,04 LTS
 
 Este equipo no debe ejecutar ningún otro software de nivel de aplicación. Se recomienda un servidor dedicado.</block>
+  <block id="bef6178937f26cf5776d5c67e6c1d23c" category="cell">net-observer-l4-ds toleraciones adicionales.</block>
 </blocks>
