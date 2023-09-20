@@ -180,7 +180,7 @@ persistentvolumeclaims=[*],persistentvolumes=[*],pods=[*],replicasets=[*],resour
 |  | MemRequest | solicitud de mem para ds de observador neto 
 
 
-|  | MetricAgreegationInterval | intervalo de agregación de métricas, en segundos 
+|  | MetricAggregationInterval | intervalo de agregación de métricas, en segundos 
 
 
 |  | BpfPollInterval | Intervalo de sondeo de BPF, en segundos 
