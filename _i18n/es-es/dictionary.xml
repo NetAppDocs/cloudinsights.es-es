@@ -3853,8 +3853,6 @@
   <block id="b1753b5e08c7b339c92f3054363e10bb" category="paragraph">Durante el proceso de registro, es posible elegir la región global donde se alojará el entorno de Cloud Insights. Para obtener más información, lea acerca de Cloud Insights <block ref="286a302a1ee50fd59eb368d3d9779037" category="inline-link-macro-rx"></block>.</block>
   <block id="fd8da5ef10133e4ba884d6f85e21c49d" category="cell">Conservación de datos</block>
   <block id="374616a0b786e9bffadc7f28e68d6c59" category="cell">7 días</block>
-  <block id="4ad5aab71ddf80b1c8c2c18804db012d" category="cell">90 días</block>
-  <block id="025025548582d3777fd0b072c16e2656" category="cell">13 meses</block>
   <block id="b42c726529f30f475409276e435fe377" category="cell">Inicio de sesión único (SSO)</block>
   <block id="d618d9be50e37adf260935938e49af96" category="inline-image-macro">Candado</block>
   <block id="b6dea3b24cc18d2214ac0d7ea31d17ec" category="paragraph">Mientras utiliza Cloud Insights, si ve un icono de candado <block ref="3d68554889a6297f572b65a3534d0ef0" category="inline-image-macro-rx" type="image"></block>Significa que la función no está disponible en la edición actual o está disponible en formato limitado. Actualice para obtener acceso completo a la función.</block>
@@ -9221,14 +9219,9 @@
   <block id="1d9d1091c95c8c6a906de486d03c6a5a" category="cell">Desactive el cifrado de AD Server antes de configurar un recopilador de directorios de usuarios. Una vez que se haya recuperado el detalle del usuario, estará allí por 13 meses. Si el servidor AD se desconecta después de obtener los detalles del usuario, los usuarios recién agregados en AD no se obtendrán. Para recuperar de nuevo, el recopilador de directorios de usuarios debe estar conectado a AD.</block>
   <block id="ddae1da9e7e7b7bc5250e69e20396758" category="cell">Los datos de Active Directory están presentes en CloudInsights Security. Desea eliminar toda la información de usuario de CloudInsights.</block>
   <block id="cda875edf30beb4d722b276eaf998869" category="cell">No SÓLO es posible eliminar la información de usuario de Active Directory de CloudInsights Security. Para eliminar el usuario, el arrendatario completo debe ser eliminado.</block>
-  <block id="4a4a6b257377a1be5e4488cf0a12459b" category="summary">Explicación de tiempo de vida (TTL) y reducción del muestreo</block>
-  <block id="ded51882afc1e18389057617d96454cb" category="doc">Tiempo de vida (TTL) y datos de reducción de la muestra</block>
   <block id="6ced38f7d8372fb9ae8761297e3a7cee" category="paragraph">Dado que Cloud Insights conserva los datos durante un período determinado (por edición), existe la posibilidad de procesar miles de puntos de datos. Por lo tanto, los datos pueden reducirse antes de mostrarse en gráficos y tablas.</block>
-  <block id="9f006f2f14b484069511ef4a3f5315b3" category="section-title">Retención de datos (tiempo de actividad)</block>
   <block id="997ee7d33c8902a31e71ef5f06a181ea" category="paragraph">Cloud Insights conserva los datos durante un período de tiempo determinado por la edición suscrita activa. La retención de datos también se conoce como tiempo de vida o TTL.</block>
   <block id="226c03c443192cffffa4a924b4ccffde" category="cell">Edición</block>
-  <block id="433a6d1dc9f59395173b9c44da198568" category="cell">TTL</block>
-  <block id="c6de11ce9bf3311bd827033947947ad4" category="paragraph">Las suscripciones Premium Edition con al menos 500 unidades administradas (MU) también conservan los datos de Business Intelligence e Informes durante el período de 13 meses.</block>
   <block id="876f04f443f4acb1176812eb95c5206c" category="section-title">Reducción del muestreo de datos</block>
   <block id="832befb5fcd1bf513bc9413c7b9a2e13" category="paragraph">*Downsampling* proporciona una aproximación estadística de sus datos en gráficos, que le proporciona una visión general eficiente de los datos sin tener que mostrar cada punto de datos, manteniendo al mismo tiempo una visión precisa de los datos recopilados.</block>
   <block id="b75dadfce21049a86b69409a71f9d89d" category="section-title">¿Por qué es necesario reducir el muestreo?</block>
@@ -12730,4 +12723,9 @@ A continuación, reinicie Telegraf.</block>
   <block id="efe4baadff5bd15b524eb5bdb921fc23" category="sidebar">Antes de instalar o actualizar el operador</block>
   <block id="0fa09a2babfce9f13e5281cf6d3521b9" category="sidebar">Instalación del operador de monitorización</block>
   <block id="1de805c2687b2c30b46a937270519488" category="cell">MetricAggregationInterval</block>
+  <block id="fb16f782ec011ac7ae93ce05210079df" category="summary">Time-to-Live (TTL) - es decir, retención de datos y reducción de muestreo explicados</block>
+  <block id="782b9b68a916b155b0332eb5fb675b34" category="doc">Retención de datos y reducción de la muestra</block>
+  <block id="8ba5588aa6038b7e374c4f0c61705cf9" category="section-title">Retención de datos (también conocida como Tiempo real)</block>
+  <block id="ed0c9b5fb2f44a77915d0ce45d0c501c" category="cell">90 días</block>
+  <block id="33d8f1359dfc1ccc57d04578cc9e1907" category="paragraph">Las suscripciones Premium Edition con al menos 500 unidades gestionadas (MU) conservan los datos de Business Intelligence y Reporting durante 13 meses.</block>
 </blocks>
