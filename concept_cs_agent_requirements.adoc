@@ -38,9 +38,7 @@ Ubuntu 20 a 22 64 bits
 Rocky 8.x de 64 bits, Rocky 9.x de 64 bits, SELinux
 SUSE Linux Enterprise Server 15 SP3, SUSE Linux Enterprise Server 15 SP4 y SELinux en SUSE 15 SP3
 
-Este equipo no debe ejecutar ningún otro software de nivel de aplicación. Se recomienda un servidor dedicado.
-
-Se (Security Enhanced, seguridad mejorada) Linux no es compatible. 
+Este equipo no debe ejecutar ningún otro software de nivel de aplicación. Se recomienda un servidor dedicado. 
 
 
 | Comandos | para la instalación es necesario descomprimir. Además, se requiere el comando 'efectuar su –' para la instalación, la ejecución de scripts y la desinstalación. 
