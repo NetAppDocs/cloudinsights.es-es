@@ -12507,7 +12507,6 @@ La saturación de CPU del clúster se calcula como la suma del uso de CPU dividi
   <block id="a0eda368f17db54a54c6f0246fd5c816" category="paragraph"><block ref="a0eda368f17db54a54c6f0246fd5c816" category="inline-image-macro-rx" type="image"></block></block>
   <block id="eaee203e2e728070e3c454936f257fdf" category="paragraph">El operador y los recopiladores de datos se descargan del registro de Docker de Cloud Insights. Una vez instalado, NKMO gestiona los colectores compatibles con el operador implementados en los nodos del clúster de Kubernetes para adquirir datos, incluida la gestión del ciclo de vida de dichos colectores. Después de esta cadena, los datos se adquieren de los colectores y se envían a Cloud Insights.</block>
   <block id="3e4299c002d64ba4e1a384acbdafad4c" category="inline-link-macro">*Antes de instalar o actualizar*</block>
-  <block id="f8d86927776a602d23bcf32f5dc5ea76" category="admonition">Lea la <block ref="0b7fc724dd1c400c20e2b859e6c06230" category="inline-link-macro-rx"></block> Documentación antes de instalar o actualizar el operador de supervisión de Kubernetes de NetApp.</block>
   <block id="20e38ff1d741d05cb351043049612af2" category="section-title">Actualice al operador de supervisión Kubernetes de NetApp más reciente</block>
   <block id="59f9e8b92a6bc55e991031f0b5fea324" category="paragraph">Determine si existe una AgentConfiguration con el operador existente (si el espacio de nombres no es el valor predeterminado _netapp-monitoring_, sustituya el espacio de nombres adecuado):</block>
   <block id="bb5c0afa0b80550de02b1ac19c1226b4" category="paragraph">Si existe una configuración de agente:</block>
@@ -12726,4 +12725,12 @@ Rocky 8.x de 64 bits, Rocky 9.x de 64 bits, SELinux
 SUSE Linux Enterprise Server 15 SP3, SUSE Linux Enterprise Server 15 SP4 y SELinux en SUSE 15 SP3
 
 Este equipo no debe ejecutar ningún otro software de nivel de aplicación. Se recomienda un servidor dedicado.</block>
+  <block id="4099aa818be44a204ef7ec3ba69b96c7" category="inline-link-macro">agregados para ver</block>
+  <block id="6046897f8c0f41425f2e47227c5932e8" category="paragraph">Si el clúster que se va a supervisar contiene recursos personalizados que no tienen un ClusterRole que <block ref="c09eb6051f010e6e01a634a8b6a5c304" category="inline-link-macro-rx"></block>, Tendrá que conceder manualmente el acceso del operador a estos recursos para supervisarlos con registros de eventos.</block>
+  <block id="8f0ae9ae8e0fd7f3e8fe6ff175a59943" category="list-text">Edite _operator-additional-permissions.yaml_ antes de instalar, o después de instalar, edite el recurso _ClusterRole/&lt;namespace&gt;-additional-permissions_</block>
+  <block id="8a75e64ac585bb8eb6efae44768cfc8e" category="list-text">Cree una nueva regla para los apiGroups y recursos deseados con los verbos [“get”, “watch”, “list”]. Consulte \https://kubernetes.io/docs/reference/access-authn-authz/rbac/</block>
+  <block id="5aa700b8892918bb447b666e3ba9b2a8" category="list-text">Aplique los cambios al clúster</block>
+  <block id="449735a59883598ca6b4afe7cb57336a" category="admonition">Lea la <block ref="98b00674e05edc386cc19257d013cae8" category="inline-link-macro-rx"></block> Documentación antes de instalar o actualizar el operador de supervisión de Kubernetes de NetApp.</block>
+  <block id="4f05106cca363b0f3c492314ab777534" category="cell">Faltan datos _involved dobject_ para algunos registros de eventos.</block>
+  <block id="67ee92e19812baa7cedb346320ca0182" category="cell">Asegúrese de haber seguido los pasos de la <block ref="d9283cdb1b027ed2a61fa92c8dc3e314" category="inline-link-macro-rx"></block> sección anterior.</block>
 </blocks>

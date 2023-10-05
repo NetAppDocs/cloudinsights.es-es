@@ -32,7 +32,7 @@ El operador y los recopiladores de datos se descargan del registro de Docker de 
 == Antes de instalar el operador de supervisión de Kubernetes de NetApp
 
 
-IMPORTANT: Lea la link:/pre-requisites_for_k8s_operator.html["*Antes de instalar o actualizar*"] Documentación antes de instalar o actualizar el operador de supervisión de Kubernetes de NetApp.
+IMPORTANT: Lea la link:pre-requisites_for_k8s_operator.html["*Antes de instalar o actualizar*"] Documentación antes de instalar o actualizar el operador de supervisión de Kubernetes de NetApp.
 
 
 
@@ -523,5 +523,8 @@ tiempo de espera = «10s»
 ...
 
 A continuación, reinicie Telegraf. 
+
+
+| Faltan datos _involved dobject_ para algunos registros de eventos. | Asegúrese de haber seguido los pasos de la link:pre-requisites_for_k8s_operator.html["Permisos"] sección anterior. 
 |===
 Puede encontrar información adicional en link:concept_requesting_support.html["Soporte técnico"] o en la link:reference_data_collector_support_matrix.html["Matriz de compatibilidad de recopilador de datos"].

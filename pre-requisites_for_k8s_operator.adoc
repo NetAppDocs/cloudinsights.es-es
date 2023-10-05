@@ -193,6 +193,17 @@ OpenShift puede implementar un nivel de seguridad añadido que puede bloquear el
 
 
 
+=== Permisos
+
+Si el clúster que se va a supervisar contiene recursos personalizados que no tienen un ClusterRole que link:https://kubernetes.io/docs/reference/access-authn-authz/rbac/#aggregated-clusterroles["agregados para ver"], Tendrá que conceder manualmente el acceso del operador a estos recursos para supervisarlos con registros de eventos.
+
+. Edite _operator-additional-permissions.yaml_ antes de instalar, o después de instalar, edite el recurso _ClusterRole/<namespace>-additional-permissions_
+. Cree una nueva regla para los apiGroups y recursos deseados con los verbos [“get”, “watch”, “list”]. Consulte \https://kubernetes.io/docs/reference/access-authn-authz/rbac/
+. Aplique los cambios al clúster
+
+
+
+
 === Toleraciones y daños
 
 Los DaemonSets _telegraf_, _fluent-bit_ y _net-observer_ deben programar un pod en cada nodo del cluster para recopilar correctamente los datos en todos los nodos. El operador ha sido configurado para tolerar algunos *taints* bien conocidos. Si ha configurado cualquier daño personalizado en sus nodos, evitando así que los pods se ejecuten en cada nodo, puede crear una *tolerancia* para esos daños link:telegraf_agent_k8s_config_options.html["En el campo _AgentConfiguration_"]. Si ha aplicado daños personalizados a todos los nodos del cluster, también debe agregar las toleraciones necesarias al despliegue del operador para permitir que el pod del operador se programe y ejecute.
