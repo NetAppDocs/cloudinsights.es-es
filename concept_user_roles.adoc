@@ -263,3 +263,20 @@ Sin embargo, no active _SSO User Auto-Provisioning_ si alguno de estos casos es 
 * La organización tiene más de un inquilino Cloud Insights
 * La organización no desea que ningún usuario del dominio federado tenga algún nivel de acceso automático al inquilino Cloud Insights. _En este momento, no tenemos la capacidad de usar grupos para controlar el acceso a funciones con esta opción_.
 
+
+
+
+== Restricción del acceso por dominio
+
+Cloud Insights puede restringir el acceso de los usuarios solo a los dominios que especifique. En la página *Admin > User Management*, selecciona “Restringir dominios”.
+
+image:Restrict_Domains_Modal.png["Restringir dominios a solo dominios predeterminados, valores por defecto más dominios adicionales que especifique o sin restricciones"]
+
+Se le presentan las siguientes opciones:
+
+* Sin restricciones: Cloud Insights permanece accesible para los usuarios independientemente de su dominio.
+* Limitar el acceso a los dominios predeterminados: Los dominios predeterminados son los que utilizan los propietarios de las cuentas del entorno de Cloud Insights. Estos dominios son siempre accesibles.
+* Limite el acceso a los valores por defecto más los dominios que especifique. Enumere los dominios que desee tener acceso a su entorno de Cloud Insights, además de los dominios predeterminados.
+
+
+image:Restrict_Domains_Tooltip.png[""]

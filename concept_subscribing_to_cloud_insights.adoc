@@ -53,7 +53,7 @@ NOTE: Si necesita tiempo adicional para evaluar Cloud Insights y su prueba está
 
 
 
-== Prueba a través de AWS Marketplace
+=== Prueba a través de AWS Marketplace
 
 También puede inscribirse para una prueba gratuita a través de AWS Marketplace. La prueba gratuita de AWS Marketplace te da acceso a Cloud Insights durante un periodo de prueba de 33 días y permite hasta 499 <<pricing,Unidades administradas>> (Mus).
 
@@ -63,9 +63,41 @@ La prueba gratuita de AWS Marketplace no se puede ampliar. En cualquier momento 
 
 
 
-=== ¿Qué pasa si mi prueba ha caducado?
+==== ¿Qué pasa si mi prueba ha caducado?
 
 Si su prueba gratuita ha caducado y aún no se ha suscrito a Cloud Insights, tendrá una funcionalidad limitada hasta que se suscriba.
+
+
+
+== Pruebas de módulos
+
+Disponible próximamente
+
+
+NOTE: La prueba de módulo se considera funcionalidad de vista previa y, por lo tanto, está sujeta a cambios.
+
+Además de su prueba inicial de Cloud Insights, también puede aprovechar *Pruebas de módulos*. Por ejemplo, si ya está suscrito a Observabilidad de la Infraestructura pero está agregando Kubernetes a su entorno, entrará automáticamente en una prueba de 30 días de Observabilidad de Kubernetes, a partir del momento en que instale el Operador de Supervisión de Kubernetes de NetApp. Solo se te cobrará por el uso de la unidad gestionada por Kubernetes Observability al final del período de prueba.
+
+
+NOTE: Tenga en cuenta que se le cobrará por el nuevo uso de la unidad administrada (MU) después del período de prueba, así que asegúrese de planificar en consecuencia. Cuando finalice la prueba del módulo, se le notificará si necesitará agregar más unidades de medida para evitar la interrupción del servicio.
+
+Puede supervisar el uso de la unidad administrada en la página *Admin > Suscripción* de la pestaña *Uso*.
+
+image:Module_Trials_UsageTab.png["Pantalla Uso de UM"]
+
+
+
+=== Estimator
+
+Durante una prueba de módulo, no se cambia el uso de MU para los recursos consumidos para el módulo, pero puedes abrir el *Estimator* (en la pestaña _Summary_) para ver cómo se cargarán las MU después de la prueba, así como jugar con escenarios “What if” con el número de MU que puedas necesitar en el futuro. Restablezca los números saliendo de Estimator.
+
+image:Module_Trials_Estimator.png["Estimator"]
+
+Seleccione la casilla de verificación situada junto a un módulo para agregar o eliminar las UM del módulo completo del coste estimado.
+
+El Estimator también le permite ver cómo se acumulan los números para un complemento, donde mantiene el plazo de suscripción actual y aumenta el número de unidades administradas con licencia, o una opción de renovación para una suscripción de renovación que compraría cuando se suscribiera actualmente el término finaliza.
+
+Tenga en cuenta que los clientes solo pueden optar a una prueba de módulo una vez por suscripción.
 
 
 
