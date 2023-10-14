@@ -25,6 +25,35 @@ NOTE: Es posible que algunas de estas funciones no estén disponibles en la edic
 
 
 
+== Octubre de 2023
+
+
+
+=== Pruebas de módulos
+
+Además de su prueba inicial de Cloud Insights, también puede aprovechar link:/concept_subscribing_to_cloud_insights.html#module-trials["Pruebas de módulos"]. Por ejemplo, si ya está suscrito a Infrastructure Observability pero está añadiendo Kubernetes a su entorno, entrará automáticamente en una prueba de 30 días de Kubernetes Observability. Solo se te cobrará por el uso de la unidad gestionada por Kubernetes Observability al final del período de prueba.
+
+
+
+=== Restrinja el acceso a los dominios especificados
+
+Los administradores y los propietarios de cuentas ahora tienen la capacidad de link:/concept_user_roles.html#restricting-access-by-domain["Restrinja el acceso a Cloud Insights"] para enviar los dominios de correo electrónico que especifiquen. Vaya a *Admin > User Management* y seleccione el botón _Restringir Dominios_.
+
+image:Restrict_Domains_Modal.png["Modo Restringir Dominios"]
+
+
+
+=== Actualizaciones del recopilador de datos
+
+Se han realizado los siguientes cambios en la unidad de adquisición/recopilación de datos:
+
+* *Isilon / PowerScale REST*: Se han añadido varios atributos y métricas nuevos a las capacidades de análisis mejoradas de Cloud Insights bajo el nombre _emc_isilon.node_pool.*_. Estos contadores y atributos permitirán a los usuarios crear consolas y supervisiones para el consumo de capacidad _node_pool_; los usuarios con clústeres de Isilon creados a partir de modelos de nodos de hardware distintos tendrán varios pools de nodos y comprender el consumo de capacidad total de HDD/SSD en el nivel de pool de nodos resulta útil para la supervisión y la planificación.
+* *Rubrik* Soporte de autenticación de “cuenta de servicio”: El recopilador de RUBRIK de Cloud Insights ahora admite la autenticación básica HTTP tradicional (nombre de usuario y contraseña), y el enfoque de cuenta de servicio de RUBRIK, que requiere un nombre de usuario + secreto + identificador de organización.
+
+
+'''
+
+
 == Septiembre de 2023
 
 
