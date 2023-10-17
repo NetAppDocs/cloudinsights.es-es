@@ -21,7 +21,7 @@ keywords: event, checker, rate, sizing, cloud secure
 [role="lead"]
 El comprobador de tasa de eventos se utiliza para comprobar la tasa de eventos combinada de NFS/SMB en la SVM antes de instalar un recopilador de datos de SVM de ONTAP, a fin de ver cuántas SVM podrá supervisar un equipo de agente. Utilice el Comprobador de tasa de eventos como guía de tamaño para ayudar a planificar su entorno de seguridad.
 
-Un agente puede admitir hasta 50 recopiladores de datos.
+Un agente puede admitir hasta un máximo de 50 recopiladores de datos.
 
 
 
@@ -42,7 +42,7 @@ Pasos:
  /opt/netapp/cloudsecure/agent/install/svm_event_rate_checker.sh
 . Esta secuencia de comandos requiere que se instale _sshpass_ en la máquina linux. Hay dos formas de instalarlo:
 +
-.. Ejecute el comando de seguimiento de datos:
+.. Ejecute el siguiente comando:
 +
  linux_prompt> yum install sshpass
 .. Si esto no funciona, descargue _sshpass_ en el equipo linux desde la web y ejecute el siguiente comando:
@@ -61,7 +61,7 @@ Cada recopilador de datos de SVM de ONTAP se puede asociar a una única SVM, lo 
 
 Tenga en cuenta lo siguiente:
 
-A) Use esta tabla como guía general de tamaño:
+A) Utilice esta tabla como guía de tamaño general. Puede aumentar el número de núcleos y/o memoria para aumentar el número de recopiladores de datos admitidos, hasta un máximo de 50 recopiladores de datos:
 
 |===
 

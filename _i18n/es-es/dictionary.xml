@@ -1441,7 +1441,6 @@
   <block id="b3431d54476e0f70ea6fc00bae48572b" category="summary">Este script se puede ejecutar para comprobar la tasa de eventos en la SVM antes de instalar una máquina virtual de almacenamiento DSC de ONTAP</block>
   <block id="2723c4d559ff96bb42870d86c109708e" category="doc">Comprobador de tasa de eventos de SVM (guía de ajuste de tamaño del agente)</block>
   <block id="0a2bd44573247d8e7748ce7d2d2a4b8f" category="paragraph">El comprobador de tasa de eventos se utiliza para comprobar la tasa de eventos combinada de NFS/SMB en la SVM antes de instalar un recopilador de datos de SVM de ONTAP, a fin de ver cuántas SVM podrá supervisar un equipo de agente. Utilice el Comprobador de tasa de eventos como guía de tamaño para ayudar a planificar su entorno de seguridad.</block>
-  <block id="ee884395b0c6bb018cd831452f073916" category="paragraph">Un agente puede admitir hasta 50 recopiladores de datos.</block>
   <block id="3b31c3fb3c507b79d3f86f2b1e3392f5" category="section-title">Exigencias legales:</block>
   <block id="70087224b93e8179deda7438fae8e843" category="list-text">IP del clúster</block>
   <block id="baf16fe3173b840f1197987b16b3a8fc" category="list-text">Nombre de usuario y contraseña de administrador del clúster</block>
@@ -1450,13 +1449,11 @@
   <block id="98349559eceadcec0dc76cadc5fbcc36" category="list-text">Instale el agente siguiendo las instrucciones de CloudSecure.</block>
   <block id="2ec48fb989cd0668ab2b0f0b34915834" category="list-text">Una vez instalado el agente, ejecute el script _Server_data_rate_checker.sh_ como usuario sudo:</block>
   <block id="7ad6363059d1736f3a11960eab53e364" category="list-text">Esta secuencia de comandos requiere que se instale _sshpass_ en la máquina linux. Hay dos formas de instalarlo:</block>
-  <block id="6cf31abcd39b8549a7f488c6aa8b2fef" category="list-text">Ejecute el comando de seguimiento de datos:</block>
   <block id="de60349d54fe34d614b0fb4793843635" category="list-text">Si esto no funciona, descargue _sshpass_ en el equipo linux desde la web y ejecute el siguiente comando:</block>
   <block id="22716ce17ab9464ee020ed67252afe9c" category="list-text">Introduzca los valores correctos cuando se le solicite. Consulte a continuación un ejemplo.</block>
   <block id="cd0c9650e0d2fb93465de9f54297b6d5" category="list-text">La secuencia de comandos tardará aproximadamente 5 minutos en ejecutarse.</block>
   <block id="cf34f3fb7645134a13186593549fa644" category="list-text">Una vez finalizada la ejecución, el script imprimirá la tasa de evento desde la SVM. Puede comprobar la tasa de eventos por SVM en la salida de la consola:</block>
   <block id="6db04e87dfe97bac4b4b718639579432" category="list-text">Cada recopilador de datos de SVM de ONTAP se puede asociar a una única SVM, lo que significa que cada recopilador de datos podrá recibir el número de eventos que genera una única SVM.</block>
-  <block id="81b0a686a7f070f4718258f6f1c90eea" category="paragraph">A) Use esta tabla como guía general de tamaño:</block>
   <block id="276e994cf948a6c752060d65f4332540" category="cell">Configuración de máquina de agente</block>
   <block id="4d12a2dc5213f7dd37735a4de1c0ab8e" category="cell">Número de recolectores de datos de SVM</block>
   <block id="71df4650d5b6e7efed16bede01137899" category="cell">Velocidad máxima de eventos que el equipo del agente puede manejar</block>
@@ -12764,4 +12761,7 @@ Este equipo no debe ejecutar ningún otro software de nivel de aplicación. Se r
   <block id="1c1bebc9155c93bfe8263d7dd59e4d97" category="inline-xref">retire el operador antiguo</block>
   <block id="3aadd91c93bca2d335851fd692f310be" category="inline-xref">instale la nueva</block>
   <block id="e7d6cf6485500824df0535ac307eb301" category="cell">A partir del 12 de octubre de 2023, Cloud Insights ha reestructurado el operador para servir mejor a nuestros usuarios; para que esos cambios se adopten plenamente, debe hacerlo <block ref="860504374016936ed59489a365e20672" category="inline-xref-macro-rx"></block> y.. <block ref="d0e6f11bd593aa32efc140a3c31c51b6" category="inline-xref-macro-rx"></block>.</block>
+  <block id="40202f910a40e1ff8a02506c288b507e" category="paragraph">Un agente puede admitir hasta un máximo de 50 recopiladores de datos.</block>
+  <block id="337d79852891a37d41285c9101c3fff4" category="list-text">Ejecute el siguiente comando:</block>
+  <block id="94870525f3ad4e44c2a59a8a8c218033" category="paragraph">A) Utilice esta tabla como guía de tamaño general. Puede aumentar el número de núcleos y/o memoria para aumentar el número de recopiladores de datos admitidos, hasta un máximo de 50 recopiladores de datos:</block>
 </blocks>
