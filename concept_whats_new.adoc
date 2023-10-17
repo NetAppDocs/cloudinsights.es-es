@@ -31,13 +31,13 @@ NOTE: Es posible que algunas de estas funciones no estén disponibles en la edic
 
 === Pruebas de módulos
 
-Además de su prueba inicial de Cloud Insights, también puede aprovechar link:/concept_subscribing_to_cloud_insights.html#module-trials["Pruebas de módulos"]. Por ejemplo, si ya está suscrito a Infrastructure Observability pero está añadiendo Kubernetes a su entorno, entrará automáticamente en una prueba de 30 días de Kubernetes Observability. Solo se te cobrará por el uso de la unidad gestionada por Kubernetes Observability al final del período de prueba.
+Además de su prueba inicial de Cloud Insights, también puede aprovechar link:concept_subscribing_to_cloud_insights.html#module-trials["Pruebas de módulos"]. Por ejemplo, si ya está suscrito a Infrastructure Observability pero está añadiendo Kubernetes a su entorno, entrará automáticamente en una prueba de 30 días de Kubernetes Observability. Solo se te cobrará por el uso de la unidad gestionada por Kubernetes Observability al final del período de prueba.
 
 
 
 === Restrinja el acceso a los dominios especificados
 
-Los administradores y los propietarios de cuentas ahora tienen la capacidad de link:/concept_user_roles.html#restricting-access-by-domain["Restrinja el acceso a Cloud Insights"] para enviar los dominios de correo electrónico que especifiquen. Vaya a *Admin > User Management* y seleccione el botón _Restringir Dominios_.
+Los administradores y los propietarios de cuentas ahora tienen la capacidad de link:concept_user_roles.html#restricting-access-by-domain["Restrinja el acceso a Cloud Insights"] para enviar los dominios de correo electrónico que especifiquen. Vaya a *Admin > User Management* y seleccione el botón _Restringir Dominios_.
 
 image:Restrict_Domains_Modal.png["Modo Restringir Dominios"]
 
