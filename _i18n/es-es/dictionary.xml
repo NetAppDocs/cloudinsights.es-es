@@ -5774,11 +5774,6 @@
   <block id="ee5c6c936b3e5e6b3191a941d5161f88" category="doc">Identificación de dispositivos inactivos</block>
   <block id="dedb4128ca8f8589aeee2da1198fdc45" category="paragraph">Identificar los activos de los que dispone y quién los utiliza es fundamental para “dimensionar correctamente” y liberar infraestructura no utilizada. Puede reasignar o retirar recursos infrautilizados fácilmente y evitar compras innecesarias.</block>
   <block id="89335488274d94cea3defd958dbbabbe" category="paragraph">Siga estos pasos para identificar activos inactivos.</block>
-  <block id="74f2d5af3d35830fbffe4e065b028732" category="list-text">En el menú Cloud Insights, haga clic en *consultas &gt; Nueva consulta*</block>
-  <block id="355d0fe6f460ad7e9e4be906a083f7e4" category="list-text">En la<block ref="9116737835cb1f4d8af2c2aac1d48819" prefix=" " category="inline-code"></block> seleccione el tipo de activo que desea consultar</block>
-  <block id="08b0a890022d521dd17d275bcefd82ef" category="list-text">Haga clic en *+ &gt; es activo*</block>
-  <block id="cc1d1782b616d7d5b18a8e83247f82c9" category="list-text">Haga clic en *cualquiera* y cámbielo a *no*</block>
-  <block id="d6badef7150cd45268b7ee1f29045a26" category="paragraph">El sistema muestra una lista de activos inactivos del tipo de dispositivo seleccionado.</block>
   <block id="aca759ec023e2e4c6156b1c2ced1b16b" category="summary">Adición de recopiladores de datos</block>
   <block id="fc5aca4e5185f241f9160502eac0b160" category="doc">Configuración del recopilador de datos de ONTAP de NetApp</block>
   <block id="3b37597c3ea4000c791420b6b40843f4" category="list-text">Se debe configurar un agente para recopilar datos</block>
@@ -12766,4 +12761,8 @@ Este equipo no debe ejecutar ningún otro software de nivel de aplicación. Se r
   <block id="025025548582d3777fd0b072c16e2656" category="cell">13 meses</block>
   <block id="a4d110a0ddc628e94b4e9223300af49b" category="inline-link-macro">Ediciones y precios</block>
   <block id="8a5a5004d445ce710c5fb829b859257b" category="paragraph">Una lista completa de características disponibles en cada edición está disponible en Cloud Insights <block ref="9f9283f57379e70b90560c22a58eac88" category="inline-link-macro-rx"></block> página.</block>
+  <block id="62a2ac40719f6cb31d5e1ad43d9d8a19" category="list-text">Navegue hasta *Explorar -&gt; +Nueva Consulta de Métrica*.</block>
+  <block id="9ec73c52f582999e7cc8d920ca844c81" category="list-text">Seleccione _Storage_ en la lista desplegable.</block>
+  <block id="4c6af067d4990a4c05731f55b8095467" category="list-text">Haga clic en el engranaje y agregue _isActive_ como columna.</block>
+  <block id="49eec5d17a233960170b22a7e35d15a7" category="paragraph">Las filas que muestran una comprobación están activas. X indica los dispositivos inactivos.</block>
 </blocks>
