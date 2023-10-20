@@ -95,5 +95,8 @@ Algunas cosas para intentar si tiene problemas con este recopilador de datos:
 
 
 | Error: Error en la autenticación del usuario. | Asegúrese de que sus credenciales para este dispositivo son correctas. 
+
+
+| Inventory recent status: Datos inesperados recuperados -Array informó 0 volume | Normalmente indica un problema de autorización (no autenticación). Asegúrese de que sus credenciales sean correctas y que el nombre de usuario pueda enumerar todos los volúmenes y ver sus atributos. 
 |===
 Puede encontrar información adicional en link:concept_requesting_support.html["Soporte técnico"] o en la link:reference_data_collector_support_matrix.html["Matriz de compatibilidad de recopilador de datos"].

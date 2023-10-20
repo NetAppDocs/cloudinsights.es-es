@@ -12765,4 +12765,6 @@ Este equipo no debe ejecutar ningún otro software de nivel de aplicación. Se r
   <block id="9ec73c52f582999e7cc8d920ca844c81" category="list-text">Seleccione _Storage_ en la lista desplegable.</block>
   <block id="4c6af067d4990a4c05731f55b8095467" category="list-text">Haga clic en el engranaje y agregue _isActive_ como columna.</block>
   <block id="49eec5d17a233960170b22a7e35d15a7" category="paragraph">Las filas que muestran una comprobación están activas. X indica los dispositivos inactivos.</block>
+  <block id="94199173f712baeb6cb5de3780bf07fa" category="cell">Inventory recent status: Datos inesperados recuperados -Array informó 0 volume</block>
+  <block id="7e7b57722f915378d4f91beba7dfeeda" category="cell">Normalmente indica un problema de autorización (no autenticación). Asegúrese de que sus credenciales sean correctas y que el nombre de usuario pueda enumerar todos los volúmenes y ver sus atributos.</block>
 </blocks>
