@@ -37,7 +37,7 @@ NOTE: La seguridad de carga de trabajo no está disponible en la edición federa
 == Pasos para instalar el agente
 
 . Inicie sesión como administrador o propietario de cuenta en su entorno de seguridad de carga de trabajo.
-. En el menú *Seguridad*, seleccione *Administración > colectores de datos > agentes > +Agente*
+. Selecciona *Colectores > Agentes > +Agente*
 +
 El sistema muestra la página Agregar un agente:
 

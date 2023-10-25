@@ -2623,7 +2623,7 @@ Al configurar los siguientes recopiladores de datos, puede filtrar para incluir 
 
 === Recolectores de datos de edición masiva
 
-* Puede editar información para varios recopiladores de datos al mismo tiempo. En la página *Admin > colectores de datos*, seleccione los recopiladores de datos que desea modificar marcando la casilla situada a la izquierda de cada uno y haga clic en el botón *acciones masivas*. Seleccione *Editar* y modifique los campos necesarios.
+* Puede editar información para varios recopiladores de datos al mismo tiempo. En la página *Observabilidad > Colectores*, seleccione los recopiladores de datos que desee modificar marcando la casilla a la izquierda de cada uno y haga clic en el botón *Acciones masivas*. Seleccione *Editar* y modifique los campos necesarios.
 +
 Los recopiladores de datos seleccionados deben ser del mismo proveedor y modelo, y residir en la misma unidad de adquisición.
 

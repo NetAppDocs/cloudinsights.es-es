@@ -40,7 +40,7 @@ Las credenciales del recopilador de datos se cifran cuando se introducen en Clou
 
 == Configuración del recopilador de datos
 
-* En el menú Cloud Insights, haga clic en *Admin > colectores de datos* y haga clic en el botón *+ colector de datos*. Puede elegir mostrar todos los recopiladores de datos o filtrar para mostrar sólo los recopiladores de datos disponibles en función de su suscripción.
+* En el menú Cloud Insights, haga clic en *Observabilidad > Recopiladores* y haga clic en el botón *+ Recopilador de datos*. Puede elegir mostrar todos los recopiladores de datos o filtrar para mostrar sólo los recopiladores de datos disponibles en función de su suscripción.
 
 
 * Dependiendo del tipo de recopilador de datos que elija, los pasos de instalación variarán.

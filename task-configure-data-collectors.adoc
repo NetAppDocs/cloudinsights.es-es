@@ -28,7 +28,7 @@ Puede configurar recopiladores de datos en el entorno de Cloud Insights para rec
 
 
 .Pasos
-. En el menú Cloud Insights, haga clic en *Admin > colectores de datos*
+. En el menú Cloud Insights, haga clic en *Observabilidad > Colectores*
 +
 El sistema muestra los colectores de datos disponibles dispuestos por el proveedor.
 

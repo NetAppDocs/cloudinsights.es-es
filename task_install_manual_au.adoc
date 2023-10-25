@@ -167,10 +167,10 @@ ls -al /var/lib/netapp/cloudinsights/acq/datasources.war
  -rw-rw---- 1 test-user2 test-group1  3420067 Mar 10 17:20 netapp_ontap.jar
 
 
-. Nota: Si planea administrar AU con diferentes usuarios personalizados, asegúrese de que los permisos de grupo estén configurados para leer y escribir tanto para el propietario como para el grupo (_chmod 660 …_)
+. Nota: Si planea registrar AU usando diferentes usuarios personalizados, asegúrese de que los permisos de grupo estén configurados para leer y escribir tanto para el propietario como para el grupo (_chmod 660 …_)
 . Reinicie AU.
 +
-.. En Cloud Insights, vaya a *Admin > Recopiladores de datos* y seleccione la pestaña *Unidades de adquisición*. Elija _restart_ en el menú “Tres puntos” a la derecha de la AU.
+.. En Cloud Insights, navegue hasta *Observabilidad > Colectores* y seleccione la pestaña *Unidades de adquisición*. Elija _restart_ en el menú “Tres puntos” a la derecha de la AU.
 
 
 

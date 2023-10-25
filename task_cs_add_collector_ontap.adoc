@@ -32,7 +32,7 @@ Necesita la siguiente información para configurar este recopilador de datos:
 
 .Pasos para la configuración
 . Inicie sesión como administrador o propietario de cuenta en su entorno de seguridad de carga de trabajo.
-. Haga clic en *Admin > colectores de datos > +colectores de datos*
+. Haga clic en *Observabilidad > Colectores > +Colectores de datos*
 +
 El sistema muestra los colectores de datos disponibles.
 
@@ -49,7 +49,7 @@ El sistema muestra la página de configuración de la SVM Add Data Collector: ON
 
 
 .Después de terminar
-* Haga clic en *Admin > colectores de datos* para comprobar el estado del recopilador configurado.
+* Haga clic en *Workload Security > Collectors* para comprobar el estado del recopilador que configuró.
 +
 Normalmente hay un retraso antes de que se muestre el estado del recopilador.
 

@@ -28,7 +28,8 @@ La función Seguridad de carga de trabajo se configura para recopilar atributos 
 
 
 .Pasos para configurar un recopilador de directorios de usuarios
-. En el menú Workload Security (Seguridad de carga de trabajo), haga clic en: *Admin > colectores de datos > colectores de directorios de usuarios > + colector de directorios de usuarios* y seleccione *servidor de directorio LDAP*
+. En el menú Seguridad de carga de trabajo, haga clic en:
+*Colectores > Colectores de directorios de usuarios > + Coleccionista de directorios de usuarios* y seleccione *Servidor de directorios LDAP*
 +
 El sistema muestra la pantalla Agregar directorio de usuario.
 

@@ -25,7 +25,7 @@ Cloud Insights utiliza este recopilador de datos para recopilar métricas de JVM
 
 == Instalación
 
-. En *Admin > colectores de datos*, haga clic en *+colector de datos*. En *Servicios*, elija JVM.
+. En *Observabilidad > Colectores*, haz clic en *+Recopilador de datos*. En *Servicios*, elija JVM.
 +
 Seleccione el sistema operativo o la plataforma en la que está instalado el agente Telegraf.
 

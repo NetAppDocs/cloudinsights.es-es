@@ -28,7 +28,8 @@ Workload Security se puede configurar para recopilar atributos de usuario desde 
 
 
 .Pasos para configurar un recopilador de directorios de usuarios
-. En el menú Workload Security (Seguridad de carga de trabajo), haga clic en: *Admin > colectores de datos > colectores de directorios de usuarios > + colector de directorio de usuario* y seleccione *Active Directory*
+. En el menú Seguridad de carga de trabajo, haga clic en:
+*Colectores > Colectores de directorios de usuarios > + Coleccionista de directorios de usuarios* y seleccione *Active Directory*
 +
 El sistema muestra la pantalla Agregar directorio de usuario.
 

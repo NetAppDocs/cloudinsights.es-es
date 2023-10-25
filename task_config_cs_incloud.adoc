@@ -70,7 +70,7 @@ Siga estos pasos para configurar el equipo que se utilizará como agente de segu
 == Instale el agente de seguridad de carga de trabajo
 
 . Inicie sesión como administrador o propietario de cuenta en su entorno de Cloud Insights.
-. Vaya a Workload Security *Admin > Colectores de datos* y haga clic en la ficha *Agents*.
+. Navegue a Workload Security *Collectors* y haga clic en la pestaña *Agentes*.
 . Haga clic en *+Agent* y especifique RHEL como plataforma de destino.
 . Copie el comando instalación del agente.
 . Pegue el comando Agent Installation en la instancia de RHEL EC2 en la que ha iniciado sesión. De esta forma se instala el agente de seguridad de la carga de trabajo, proporcionando todo el link:concept_cs_agent_requirements.html["Requisitos previos del agente"] son cumplidos.

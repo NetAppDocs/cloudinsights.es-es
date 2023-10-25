@@ -25,7 +25,7 @@ Cloud Insights recopila métricas del nodo en el que instala un agente.
 
 == Instalación
 
-. En *Admin > colectores de datos*, elija un sistema operativo/plataforma. Tenga en cuenta que instalar cualquier recopilador de datos de integración (Kubernetes, Docker, Apache, etc.) también configurará la recogida de datos de nodos.
+. En *Observabilidad > Colectores*, elige un sistema operativo/plataforma. Tenga en cuenta que instalar cualquier recopilador de datos de integración (Kubernetes, Docker, Apache, etc.) también configurará la recogida de datos de nodos.
 . Siga las instrucciones para configurar el agente. Las instrucciones varían en función del tipo de sistema operativo o plataforma que utilice para recopilar datos.
 
 

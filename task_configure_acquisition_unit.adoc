@@ -36,7 +36,7 @@ NOTE: Para obtener informes precisos de auditoría y datos, se recomienda encare
 
 .Pasos para la instalación de la unidad de adquisición de Linux
 . Inicie sesión como administrador o propietario de cuenta en su entorno de Cloud Insights.
-. Haga clic en *Admin > colectores de datos > unidades de adquisición > +Unidad de adquisición*
+. Haga clic en *AObservabilidad > Colectores > Unidades de adquisición > +Unidad de adquisición*
 +
 El sistema muestra el cuadro de diálogo _Install Acquisition Unit_ (instalar unidad de adquisición). Elija Linux.
 
@@ -52,7 +52,7 @@ image:NewLinuxAUInstall.png["Instrucciones AU de Linux"]
 
 
 .Después de terminar
-* Haga clic en *Admin > colectores de datos > unidades de adquisición* para comprobar el estado de las unidades de adquisición.
+* Haga clic en *Observabilidad > Colectores > Unidades de adquisición* para comprobar el estado de las Unidades de adquisición.
 * Puede acceder a los registros de la unidad de adquisición en /var/log/netapp/cloudseaestadísticas/acq/acq.log
 * Utilice la siguiente secuencia de comandos para controlar la unidad de adquisición:
 +
@@ -112,7 +112,7 @@ Si tiene Seguridad de carga de trabajo en su entorno, las direcciones URL de ext
 .Pasos para la instalación de la unidad de adquisición de Windows
 . Inicie sesión en el servidor de la unidad de adquisición/VM como usuario con permisos de administrador.
 . En ese servidor, abra una ventana del explorador e inicie sesión en el entorno de Cloud Insights como Administrador o propietario de la cuenta.
-. Haga clic en *Admin > colectores de datos > unidades de adquisición > +Unidad de adquisición* .
+. Haga clic en *Observabilidad > Colectores > Unidades de adquisición > +Unidad de adquisición* .
 +
 El sistema muestra el cuadro de diálogo _Install Acquisition Unit_ (instalar unidad de adquisición). Seleccione Windows.
 
@@ -130,7 +130,7 @@ image::NewWindowsAUInstall.png[Instalación AU de Windows]
 
 
 .Después de terminar
-* Haga clic en *Admin > colectores de datos > unidades de adquisición* para comprobar el estado de las unidades de adquisición.
+* Haga clic en * > Observabilidad > Colectores > Unidades de adquisición* para comprobar el estado de las unidades de adquisición.
 * Puede acceder al registro de la unidad de adquisición en <install dir>\Cloud Insights\Unidad de adquisición\log\acq.log
 * Utilice la siguiente secuencia de comandos para detener, iniciar, reiniciar o comprobar el estado de la unidad de adquisición:
 +
@@ -194,7 +194,7 @@ Si va a desinstalar una unidad de adquisición *Linux*:
 
 *Después de* desinstalar la unidad AU:
 
-. En Cloud Insights, vaya a *Administración > colectores de datos* y seleccione la pestaña *unidades de adquisición*.
+. En Cloud Insights, vaya a *Observabilidad > Colectores y seleccione la pestaña *Unidades de adquisición*.
 . Haga clic en el botón Opciones situado a la derecha de la unidad de adquisición que desea desinstalar y seleccione _Delete_. Sólo puede eliminar una unidad de adquisición si no hay recopiladores de datos asignados.
 
 
@@ -216,12 +216,12 @@ Debe haber configurado una unidad de adquisición temporal en un servidor/equipo
 
 .Pasos
 . Inicie sesión en el servidor de la unidad de adquisición/VM y desinstale el software AU.
-. Inicie sesión en su entorno Cloud Insights y vaya a *Administración > colectores de datos*.
+. Inicie sesión en su entorno de Cloud Insights y vaya a *Observabilidad > Colectores*.
 . Para cada recopilador de datos, haga clic en el menú Opciones de la derecha y seleccione _Edit_. Asigne el recopilador de datos a la unidad de adquisición temporal y haga clic en *Guardar*.
 +
 También puede seleccionar varios recopiladores de datos del mismo tipo y hacer clic en el botón *acciones masivas*. Seleccione _Edit_ y asigne los recopiladores de datos a la unidad de adquisición temporal.
 
-. Después de que todos los recopiladores de datos se hayan trasladado a la unidad de adquisición temporal, vaya a *Admin > colectores de datos* y seleccione la ficha *unidades de adquisición*.
+. Una vez que todos los recopiladores de datos se hayan movido a la Unidad de adquisición temporal, vaya a *Observabilidad > Colectores* y seleccione la pestaña *Unidades de adquisición*.
 . Haga clic en el botón Opciones situado a la derecha de la unidad de adquisición que desea volver a instalar y seleccione _Delete_. Sólo puede eliminar una unidad de adquisición si no hay recopiladores de datos asignados.
 . Ahora puede volver a instalar el software de la unidad de adquisición en el servidor/VM original. Haga clic en *+Unidad de adquisición* y siga las instrucciones anteriores para instalar la unidad de adquisición.
 . Una vez reinstalada la Unidad de adquisición, vuelva a asignar los recopiladores de datos a la Unidad de adquisición.
