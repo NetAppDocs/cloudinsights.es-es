@@ -32,7 +32,7 @@ Puede configurar recopiladores de datos en el entorno de Cloud Insights para rec
 +
 El sistema muestra los colectores de datos disponibles dispuestos por el proveedor.
 
-. Haga clic en *+ Collector* en el proveedor requerido y seleccione el recopilador de datos que desea configurar.
+. Haga clic en *+ Collector* y seleccione el recopilador de datos que desea configurar.
 +
 En el cuadro de diálogo puede configurar el recopilador de datos y agregar una unidad de adquisición.
 
