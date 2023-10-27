@@ -27,7 +27,7 @@ El recopilador de datos de OpenStack (API DE REST/KVM) adquiere datos de inventa
 
 * La dirección IP de la controladora OpenStack
 * Credencial de rol de administrador de OpenStack y acceso sudo al hipervisor KVM de Linux. Si no está utilizando la cuenta de administrador o privilegios equivalentes del administrador, necesitará usar la prueba y el error para identificar las directivas predeterminadas para relajarse para el ID de usuario del recopilador de datos.
-* El módulo OpenStack Ceilometer debe instalarse y configurarse para la recogida de rendimiento. La configuración del Ceilometer se realiza editando el archivo nova.conf para cada hipervisor y, a continuación, reiniciando el servicio de computación Nova en cada hipervisor. La opción cambia de nombre para diferentes versiones de OpenStack:
+* El módulo OpenStack Gnocchi debe instalarse y configurarse para recopilar rendimiento. La configuración de Gnocchi se realiza editando el archivo nova.conf para cada hipervisor y luego reiniciando el servicio Nova Compute en cada hipervisor. La opción cambia de nombre para diferentes versiones de OpenStack:
 +
 ** Icehouse
 ** Juno
@@ -45,7 +45,7 @@ El recopilador de datos de OpenStack (API DE REST/KVM) adquiere datos de inventa
 ** 22 para SSH KVM
 ** 8774 para Nova Compute Service
 ** 8776 para Cinder Block Service
-** 8777 para el servicio de rendimiento Ceilometer
+** 8777 para Gnocchi Performance Service
 ** 9292 para el servicio Glance Image Service *Nota* el puerto se enlaza al servicio específico y el servicio puede ejecutarse en el controlador u otro host en entornos más grandes.
 
 
