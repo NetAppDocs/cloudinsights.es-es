@@ -29,6 +29,16 @@ NOTE: Es posible que algunas de estas funciones no estén disponibles en la edic
 
 
 
+=== Seguridad de cargas de trabajo mejorada
+
+La seguridad de la carga de trabajo se ha mejorado con lo siguiente:
+
+* *Acceso denegado*: La seguridad de la carga de trabajo se integra con ONTAP para recibir eventos de “Acceso denegado” y proporcionar una capa adicional de análisis y respuestas automáticas.
+* Lista blanca *Tipos de archivos permitidos*: Si se detecta un ataque de ransomware para una extensión de archivo conocida, esa extensión de archivo se puede incluir en la lista blanca para evitar alertas innecesarias. - link:/ws_allowed_file_types.html["Leer más"]
+
+
+
+
 === Pruebas de módulos
 
 Además de su prueba inicial de Cloud Insights, también puede aprovechar link:concept_subscribing_to_cloud_insights.html#module-trials["Pruebas de módulos"]. Por ejemplo, si ya está suscrito a Infrastructure Observability pero está añadiendo Kubernetes a su entorno, entrará automáticamente en una prueba de 30 días de Kubernetes Observability. Solo se te cobrará por el uso de la unidad gestionada por Kubernetes Observability al final del período de prueba.
