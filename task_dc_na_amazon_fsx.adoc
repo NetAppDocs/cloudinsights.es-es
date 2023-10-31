@@ -120,6 +120,8 @@ Este recopilador de datos recopila las siguientes métricas avanzadas de FSX par
 * workload_volume
 
 
+Tenga en cuenta que los comandos de la CLI de FSx recuperan algunos valores de capacidad que FSx prohíbe a través de la API. Como Cloud Insights intenta recuperar los datos de FSx a través de la API, ciertos valores de capacidad (como los de los pools de almacenamiento) pueden ser diferentes en Cloud Insights de los que tienen en el mismo FSx. Si quiere más información, póngase en contacto con su representante de Amazon.
+
 
 
 == Resolución de problemas

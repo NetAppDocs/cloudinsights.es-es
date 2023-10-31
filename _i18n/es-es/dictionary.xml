@@ -12806,4 +12806,5 @@ Debe ser «exportador-de-centro-eventos-netapp» o «exportador-de-eventos».  A
 ....
 
 Alternativamente, uno también puede <block ref="eb03b2f692ebf826fa07016cc9fa15a6" category="inline-xref-macro-rx"></block> y.. <block ref="2be7be71447d2c340aab35ab29970e30" category="inline-xref-macro-rx"></block> el agente.</block>
+  <block id="548f0024784a56dbfee8711265bd0855" category="paragraph">Tenga en cuenta que los comandos de la CLI de FSx recuperan algunos valores de capacidad que FSx prohíbe a través de la API. Como Cloud Insights intenta recuperar los datos de FSx a través de la API, ciertos valores de capacidad (como los de los pools de almacenamiento) pueden ser diferentes en Cloud Insights de los que tienen en el mismo FSx. Si quiere más información, póngase en contacto con su representante de Amazon.</block>
 </blocks>
