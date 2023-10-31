@@ -534,9 +534,12 @@ A continuación, reinicie Telegraf.
 
 Debe ser «exportador-de-centro-eventos-netapp» o «exportador-de-eventos».  A continuación, edite el agente de supervisión `kubectl -n netapp-monitoring edit agent`, Y establezca el valor de LOG_FILE para reflejar el nombre de pod de evento-exportador adecuado que se encuentra en el paso anterior.  Más concretamente, EL ARCHIVO_REGISTRO debe establecerse en «/var/log/containers/netapp-ci-event-exporter.log» o «/var/log/containers/event-exporter*.log»
 
-    - Clave: LOG_FILE
-      valores:
-      - /var/log/containers/netapp-ci-event-exporter*.log
+....
+ - Clave: LOG_FILE
+   valores:
+   - /var/log/containers/netapp-ci-event-exporter*.log
+....
+
 Alternativamente, uno también puede <<uninstalling,desinstalar>> y.. <<installing-the-netapp-kubernetes-monitoring-operator,vuelva a instalar>> el agente. 
 |===
 Puede encontrar información adicional en link:concept_requesting_support.html["Soporte técnico"] o en la link:reference_data_collector_support_matrix.html["Matriz de compatibilidad de recopilador de datos"].
