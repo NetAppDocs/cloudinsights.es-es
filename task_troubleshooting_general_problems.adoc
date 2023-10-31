@@ -65,6 +65,11 @@ Consulte también link:task_troubleshooting_linux_acquisition_unit_problems.html
 
 
 | Se configuran manualmente tanto una cuota blanda como una estricta en el mismo qtree, pero la capacidad total que muestra es la cuota rígida; ¿es correcto? | Sí, si se especifica una cuota estricta, esta se mostrará como la capacidad total. 
+
+
+| Al introducir una hora de programación de un informe Cognos, a veces termino con una “m” extra en la hora programada. Por ejemplo, si escribo la hora como “02:15 PM”, puede agregar un carácter adicional: “02:15 PMM” (o PMM). Cuando hago clic afuera, cambia a “2:15 AM”.
+
+Puedo guardar el informe, pero cuando vuelvo a abrir el informe guardado, la hora de programación aparece como AM (es decir, por la mañana), independientemente de si he introducido AM o PM en la hora programada. | Vuelva a introducir la hora programada, teniendo cuidado de no introducir los caracteres AM o PM completos; basta con escribir A para AM o P para PM. Si no se muestra el carácter adicional, la hora de programación se establecerá correctamente. 
 |===
 
 
