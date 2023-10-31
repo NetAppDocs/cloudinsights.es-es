@@ -526,5 +526,11 @@ A continuación, reinicie Telegraf.
 
 
 | ¿Por qué veo que funcionan dos pods del operador de supervisión, uno llamado netapp-ci-monitoring-operator-<pod> y otro llamado monitoring-operator-<pod>? | A partir del 12 de octubre de 2023, Cloud Insights ha reestructurado el operador para servir mejor a nuestros usuarios; para que esos cambios se adopten plenamente, debe hacerlo <<uninstalling,retire el operador antiguo>> y.. <<installing-the-netapp-kubernetes-monitoring-operator,instale la nueva>>. 
+
+
+| Los eventos de My kubernetes dejaron de generar informes inesperadamente para Cloud Insights. | Recupere el nombre del pod `kubectl -n netapp-monitoring get pods 
+
+
+| exportador de eventos grep | awk '{print $1}' 
 |===
 Puede encontrar información adicional en link:concept_requesting_support.html["Soporte técnico"] o en la link:reference_data_collector_support_matrix.html["Matriz de compatibilidad de recopilador de datos"].

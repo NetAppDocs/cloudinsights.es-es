@@ -12588,8 +12588,6 @@ kubectl get all -n &lt;namespace&gt; | grep -i psp (debe mostrar que no se encue
 ----
 
 • Net-Observer requiere que la versión del kernel de Linux sea al menos 4.18.0. Compruebe la versión del núcleo con el comando “uname -r” y asegúrese de que son &gt;= 4.18.0</block>
-  <block id="43eb2ebe757bb3f2957ebacdbe1e409c" category="cell">Los pods de observador de red en el espacio de nombres NKMO se encuentran en CrashLoopBackOff en el entorno OpenShift 4</block>
-  <block id="c16b414538506d32ed8a234fa2331767" category="cell">Actualmente no se admite esta operación. Esté atento a la adición de soporte en una futura actualización.</block>
   <block id="c37dcb848a7244594adc1af67cc44fb5" category="cell">Los pods se ejecutan en el espacio de nombres NKMO (predeterminado: Supervisión de netapp), pero no se muestran datos en la interfaz de usuario para el mapa de carga de trabajo o métricas de Kubernetes en consultas</block>
   <block id="b301a7b156c241fb466de1bca776811c" category="cell">Compruebe la configuración de hora en los nodos del clúster K8S. Para obtener informes precisos de auditoría y datos, se recomienda encarecidamente sincronizar la hora en el equipo del agente mediante el Protocolo de hora de red (NTP) o el Protocolo de hora de red simple (SNTP).</block>
   <block id="4ded7a1a9e117c3e40fb8fd746b0652d" category="cell">Algunos de los pods de observador de red en el espacio de nombres NKMO están en estado Pendiente</block>
@@ -12792,4 +12790,8 @@ Consulte la sección referencia de proveedores del recopilador de datos de la do
   <block id="ed2b4bf5978e7c4c0546efaff8756311" category="paragraph">La seguridad de la carga de trabajo se ha mejorado con lo siguiente:</block>
   <block id="b1f51a36e1f83c62064c47e5488e10c9" category="list-text">*Acceso denegado*: La seguridad de la carga de trabajo se integra con ONTAP para recibir eventos de “Acceso denegado” y proporcionar una capa adicional de análisis y respuestas automáticas.</block>
   <block id="b96f76a4321a90cf4dd8cf2472f58624" category="list-text">Lista blanca *Tipos de archivos permitidos*: Si se detecta un ataque de ransomware para una extensión de archivo conocida, esa extensión de archivo se puede incluir en la lista blanca para evitar alertas innecesarias. - <block ref="9ca779e4c57ed180231e35c02d12040d" category="inline-link-macro-rx"></block></block>
+  <block id="23cda888e57eaac9d48f4167127da1b8" category="cell">Los eventos de My kubernetes dejaron de generar informes inesperadamente para Cloud Insights.</block>
+  <block id="530877d75874db688a349c68f4d664d6" category="cell">Recupere el nombre del pod `kubectl -n netapp-monitoring get pods</block>
+  <block id="40de8508a016cb1e936ce464cfc06e93" category="cell">exportador de eventos grep</block>
+  <block id="60154ad86ed086052b09e30faded046b" category="cell">awk '{print $1}'</block>
 </blocks>
