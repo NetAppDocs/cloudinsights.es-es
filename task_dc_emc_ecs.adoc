@@ -19,7 +19,7 @@ summary: Configurar el recopilador de datos de ECS.
 
 
 [role="lead"]
-Este recopilador de datos adquiere datos de inventario y rendimiento de los sistemas de almacenamiento de EMC ECS. Para la configuración, el recopilador de datos requiere una dirección IP del servidor ECS y una cuenta de dominio de nivel administrativo.
+Este recopilador de datos adquiere datos de inventario y rendimiento de los sistemas de almacenamiento de EMC ECS. Para la configuración, el recopilador de datos requiere una dirección IP o un nombre de host del clúster ECS, así como un nombre de usuario y una contraseña.
 
 
 NOTE: EMC ECS de Dell se evalúa según una tasa de TB sin procesar y de unidad gestionada diferente. Cada 40 TB de capacidad de ECS sin formato se carga como 1 link:concept_subscribing_to_cloud_insights.html#pricing["Unidad administrada (UM)"].
@@ -52,11 +52,9 @@ Nota: Sólo son asignaciones de terminología comunes y es posible que no repres
 
 == Requisitos
 
-* Dirección IP de la consola de administración de ECS
-* Cuenta de dominio de nivel administrativo para el sistema ECS
-* Puerto 443 (HTTPS). Requiere conectividad saliente al puerto TCP 443 del sistema ECS.
-* Para obtener rendimiento, nombre de usuario y contraseña de solo lectura para acceso a ssh/scp.
-* Para el rendimiento, se necesita el puerto 22.
+* Dirección IP o nombre de host del cluster ECS
+* Nombre de usuario y contraseña para el sistema ECS
+* Puerto 4443 (HTTPS).  Requiere conectividad saliente con el puerto TCP 4443 del sistema ECS.
 
 
 
@@ -74,7 +72,7 @@ Nota: Sólo son asignaciones de terminología comunes y es posible que no repres
 | Puerto de host ECS | Puerto utilizado para la comunicación con el host ECS 
 
 
-| ID de proveedor de ECS | ID de proveedor de ECS 
+| ID Usuario ECS | ID de usuario de ECS 
 
 
 | Contraseña | Contraseña utilizada para ECS 
@@ -94,4 +92,31 @@ Nota: Sólo son asignaciones de terminología comunes y es posible que no repres
 
 == Resolución de problemas
 
+Algunas cosas para intentar si tiene problemas con este recopilador de datos:
+
+
+
+==== Inventario
+
+[cols="2*"]
+|===
+| Problema: | Pruebe lo siguiente: 
+
+
+| Error: Error en la autenticación del usuario. | Asegúrese de que sus credenciales para este dispositivo son correctas. 
+|===
+
+
+==== Rendimiento
+
+[cols="2*"]
+|===
+| Problema: | Pruebe lo siguiente: 
+
+
+| Error: No se han recogido suficientes datos. | • Compruebe la Marca de hora de la colección en el archivo de registro y modifique el intervalo de sondeo en consecuencia • espere más tiempo 
+
+
+| Error: El intervalo de sondeo de rendimiento es demasiado grande. | Compruebe la Marca de hora de la colección en el archivo de registro ${logfile} y modifique el intervalo de sondeo en consecuencia 
+|===
 Puede encontrar información adicional en link:concept_requesting_support.html["Soporte técnico"] o en la link:reference_data_collector_support_matrix.html["Matriz de compatibilidad de recopilador de datos"].

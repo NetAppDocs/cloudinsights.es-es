@@ -4233,21 +4233,15 @@
   <block id="701fda79498070ea91a9c98bbdd1dd4e" category="cell">Advertencia de paso crítico</block>
   <block id="97d56c15017ad32b1cbc85383d592281" category="summary">Configurar el recopilador de datos de ECS.</block>
   <block id="696067539a48ac7ca42724de79fbd051" category="doc">Configuración del recopilador de datos de EMC ECS</block>
-  <block id="0dd54ea5de1f0186d88f6171945bf17a" category="paragraph">Este recopilador de datos adquiere datos de inventario y rendimiento de los sistemas de almacenamiento de EMC ECS. Para la configuración, el recopilador de datos requiere una dirección IP del servidor ECS y una cuenta de dominio de nivel administrativo.</block>
   <block id="19792527671b24c9f2cb8807d21fea2a" category="inline-link-macro">Unidad administrada (UM)</block>
   <block id="d157607d4f3b74d5627170cf0c710ee9" category="admonition">EMC ECS de Dell se evalúa según una tasa de TB sin procesar y de unidad gestionada diferente. Cada 40 TB de capacidad de ECS sin formato se carga como 1 <block ref="1802ea889a272a3510701d2ff63bbea6" category="inline-link-macro-rx"></block>.</block>
   <block id="babd4a2879d509662ea2e8a9168f34ed" category="paragraph">Cloud Insights adquiere la siguiente información de inventario del recopilador de datos de ECS. Para cada tipo de activo adquirido, se muestra la terminología más común utilizada para este activo. Al ver o solucionar problemas de este recopilador de datos, tenga en cuenta la siguiente terminología:</block>
   <block id="6252d0571760e3d285e2e41a2b1e7743" category="cell">Inquilino</block>
   <block id="30edf70db68aa84f05d3e72326807b0c" category="cell">Cucharón</block>
-  <block id="f3d2ef1b407f9dac845144f7222446b0" category="list-text">Dirección IP de la consola de administración de ECS</block>
-  <block id="d53717de9f42bb927d66332c1b99aa0a" category="list-text">Cuenta de dominio de nivel administrativo para el sistema ECS</block>
-  <block id="b28ad04cb96e374334fe66f0c126a953" category="list-text">Puerto 443 (HTTPS). Requiere conectividad saliente al puerto TCP 443 del sistema ECS.</block>
   <block id="7a03f89966abe32a9145c5711baac2c6" category="cell">Host ECS</block>
   <block id="60103158e1fa8a921007c1692b656462" category="cell">Dirección IP o nombre de dominio completo del sistema ECS</block>
   <block id="2ef0586f8254b68b62f3912e0765fb08" category="cell">Puerto de host ECS</block>
   <block id="55f849af32f2bc9f6a84120627639721" category="cell">Puerto utilizado para la comunicación con el host ECS</block>
-  <block id="2e610591aff0a1797343c00ad6a93ae8" category="cell">ID de proveedor de ECS</block>
-  <block id="b523f7997888942f06b8d3a5bcbc4a29" category="cell">ID de proveedor de ECS</block>
   <block id="0750f8ac8a07b8a8acba23993fc3de34" category="cell">Contraseña utilizada para ECS</block>
   <block id="2d74084218f04becb882422545c77d5f" category="cell">El valor predeterminado es 360 minutos.</block>
   <block id="591d64253ebae6d71d70584704dad38d" category="doc">Configurar un recopilador de servidor de directorio LDAP</block>
@@ -12794,4 +12788,10 @@ Consulte la sección referencia de proveedores del recopilador de datos de la do
   <block id="530877d75874db688a349c68f4d664d6" category="cell">Recupere el nombre del pod `kubectl -n netapp-monitoring get pods</block>
   <block id="40de8508a016cb1e936ce464cfc06e93" category="cell">exportador de eventos grep</block>
   <block id="60154ad86ed086052b09e30faded046b" category="cell">awk '{print $1}'</block>
+  <block id="51a7a0a9ece41f3000834202c4f9b529" category="paragraph">Este recopilador de datos adquiere datos de inventario y rendimiento de los sistemas de almacenamiento de EMC ECS. Para la configuración, el recopilador de datos requiere una dirección IP o un nombre de host del clúster ECS, así como un nombre de usuario y una contraseña.</block>
+  <block id="f62de35c42266dd92c1a10e3daf56fd2" category="list-text">Dirección IP o nombre de host del cluster ECS</block>
+  <block id="2ed72e68497591d0803bef6bc9c16f79" category="list-text">Nombre de usuario y contraseña para el sistema ECS</block>
+  <block id="4b10979e526e6c6ecbe9f247ba883305" category="list-text">Puerto 4443 (HTTPS).  Requiere conectividad saliente con el puerto TCP 4443 del sistema ECS.</block>
+  <block id="e3bd341282cc459a09900310d9ce8e73" category="cell">ID Usuario ECS</block>
+  <block id="b0ee45b6cf0875310e7eca0039f3378c" category="cell">ID de usuario de ECS</block>
 </blocks>
