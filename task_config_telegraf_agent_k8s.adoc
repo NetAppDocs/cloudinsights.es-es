@@ -468,9 +468,6 @@ Capture o anote el resultado de los siguientes comandos y póngase en contacto c
 • Net-Observer requiere que la versión del kernel de Linux sea al menos 4.18.0. Compruebe la versión del núcleo con el comando “uname -r” y asegúrese de que son >= 4.18.0 
 
 
-| Los pods de observador de red en el espacio de nombres NKMO se encuentran en CrashLoopBackOff en el entorno OpenShift 4 | Actualmente no se admite esta operación. Esté atento a la adición de soporte en una futura actualización. 
-
-
 | Los pods se ejecutan en el espacio de nombres NKMO (predeterminado: Supervisión de netapp), pero no se muestran datos en la interfaz de usuario para el mapa de carga de trabajo o métricas de Kubernetes en consultas | Compruebe la configuración de hora en los nodos del clúster K8S. Para obtener informes precisos de auditoría y datos, se recomienda encarecidamente sincronizar la hora en el equipo del agente mediante el Protocolo de hora de red (NTP) o el Protocolo de hora de red simple (SNTP). 
 
 
