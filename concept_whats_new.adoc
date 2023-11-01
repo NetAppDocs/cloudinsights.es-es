@@ -34,7 +34,7 @@ NOTE: Es posible que algunas de estas funciones no estén disponibles en la edic
 La seguridad de la carga de trabajo se ha mejorado con lo siguiente:
 
 * *Acceso denegado*: La seguridad de la carga de trabajo se integra con ONTAP para recibir eventos de “Acceso denegado” y proporcionar una capa adicional de análisis y respuestas automáticas.
-* Lista blanca *Tipos de archivos permitidos*: Si se detecta un ataque de ransomware para una extensión de archivo conocida, esa extensión de archivo se puede incluir en la lista blanca para evitar alertas innecesarias. - link:/ws_allowed_file_types.html["Leer más"]
+* *Tipos de archivos permitidos*: Si se detecta un ataque de ransomware para una extensión de archivo conocida, esa extensión de archivo se puede agregar a un link:ws_allowed_file_types.html["tipos de archivo permitidos"] lista para evitar alertas innecesarias.
 
 
 
