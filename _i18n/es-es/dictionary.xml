@@ -12814,4 +12814,5 @@ Puedo guardar el informe, pero cuando vuelvo a abrir el informe guardado, la hor
   <block id="702a15850842eff4dc2587a96c210640" category="list-text">Requisitos del puerto: 443</block>
   <block id="6106de3fb9edc97d16b4426ca0ae0dc8" category="paragraph">Tenga en cuenta que los comandos de la CLI de FSx y la API recuperan algunos valores de capacidad que ZAPI de Cloud Insights no recopila, por lo que ciertos valores de capacidad (como los para pools de almacenamiento) pueden ser diferentes en Cloud Insights de los que están en el mismo FSx.</block>
   <block id="6dac8d8f7e40ada8d5686e3e8192f90f" category="paragraph">Para obtener información sobre la instalación en Kubernetes, consulte <block ref="36dbd85d6f83f853e5478a62019a359b" category="inline-link-macro-rx"></block>.</block>
+  <block id="4f39aea7decea72af93c7cb4ba3fe487" category="admonition">Si tiene la Edición Federal de Cloud Insights, las instrucciones de instalación y configuración pueden ser diferentes a las instrucciones de esta página. Sigue las instrucciones en Cloud Insights para instalar el operador de supervisión de Kubernetes de NetApp.</block>
 </blocks>

@@ -21,6 +21,9 @@ summary: Cloud Insights es compatible con Telegraf como su agente para la recopi
 [role="lead"]
 Cloud Insights ofrece la *NetApp Kubernetes Monitoring Operator* (NKMO) para la recogida de Kubernetes. Cuando se añade un recopilador de datos, solo tiene que elegir el icono "Kubernetes".
 
+
+NOTE: Si tiene la Edición Federal de Cloud Insights, las instrucciones de instalación y configuración pueden ser diferentes a las instrucciones de esta página. Sigue las instrucciones en Cloud Insights para instalar el operador de supervisión de Kubernetes de NetApp.
+
 image:kubernetes_tile.png["Recuadro del recopilador de datos de Kubernetes"]
 
 
