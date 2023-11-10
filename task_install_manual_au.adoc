@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: task_install_manual_au.html 
-keywords: Acquisition Unit, AU, install, configure, Linux, add, remove, uninstall, delete, deleting, move, moving 
+keywords: Acquisition Unit, AU, install, configure, Linux, add, remove, uninstall, delete, deleting, move, moving, manual, AU, Patch 
 summary: Cloud Insights se puede configurar para que el software AU se actualice manualmente, lo que proporciona más control sobre el software instalado en su entorno. 
 ---
 = Instalación manual del software de la unidad de adquisición
@@ -27,14 +27,14 @@ El proceso es similar para Linux y Windows.
 
 
 
-=== Realización de una NUEVA instalación de AU en Linux:
+== Realización de una NUEVA instalación de AU en Linux:
 
 . En Cloud Insights, cree un token de API.
 +
 .. Navegue hasta *Admin > API Access* y seleccione *+API Access Token*.
 +
 ... Establezca un *Nombre* y *Descripción* que sean fáciles de identificar
-... Tipo: *Unidad de Adquisición*
+... Tipo: Elija *Unidad de adquisición* y *Recopilación de datos*
 ... Permisos: *Leer/Escribir*
 ... Seleccione los valores deseados de *Expiración* y *Renovación automática*
 
@@ -109,68 +109,90 @@ Nota: Si no desea utilizar un usuario y un grupo personalizados, puede usar el u
 
 
 
-En este punto, el software AU está instalado en el sistema y es accesible por el usuario personalizado y el grupo. Sin embargo, no tiene la capacidad de agregar recopiladores de datos. Para hacerlo manualmente, debe copiar el archivo datasources.war en la ubicación correcta.
+En este punto, el software AU está instalado en el sistema y es accesible por el usuario personalizado y el grupo. Sin embargo, no tiene la capacidad de agregar recopiladores de datos. Para hacerlo manualmente, lea las siguientes instrucciones. Si sólo desea instalar un parche, consulte <<downloading-a-patch,Parche>> a continuación.
 
-. Navegue a la ubicación de origen de datasources.war y verifique el archivo zip allí:
-+
-....
-cd /opt/netapp/cloudinsights/acq
-ls -al
-…
--rw-rw----  1 test-user1 test-group1 282103053 Mar 12 12:27 datasources-war-<version>>.zip
-…
-....
-. Tenga en cuenta los permisos de la carpeta datasources.war por defecto:
-+
-....
-ls -al /var/lib/netapp/cloudinsights/acq/
-…
-drwxrwx--- 2 test-user1 test-group-1  4096 Feb 16 10:10 datasources.war
-…
-....
+
+
+== Instalación manual de recopiladores de datos
+
+Descargue la última datasources.war con la API /collector/patch/datasourceswar/latest:
+
+image:API_Manual_Download_datasources.png["API para recuperar los últimos datasources.war"]
+
+Nota: Si no está descargando la versión más reciente, confirme con NetApp la versión que se debe especificar para la descarga.
+
+Haga clic en Descargar archivo. Si realiza estos pasos en un sistema distinto al sistema AU, copie el paquete zip datasources.war descargado en el sistema AU.
+
+Asegúrese de que el paquete zip datasources.war se copia en el siguiente directorio: /Var/lib/netapp/cloudinsights/acq/download
+
+Desplácese hasta /var/lib/netapp/cloudinsights/acq/download directory for datasources.war y verifique el archivo zip allí:
+
 . Debe cambiar a (o cerrar sesión root e iniciar sesión con) el usuario personalizado para los siguientes pasos.
 +
  su <custom user>
 +
-.. Nota: Si está utilizando el usuario y el grupo “cisys” por defecto, no es necesario realizar este paso.
-.. Nota: El usuario personalizado puede ser cualquier usuario que sea miembro de un grupo personalizado que haya proporcionado a cloudinsights-install.sh durante la instalación de AU, y puede ser el mismo o diferente del usuario personalizado que proporcionó durante la instalación de AU.
+Nota: Si está utilizando el usuario y el grupo “cisys” por defecto, no es necesario realizar este paso.
 
++
+Nota: El usuario personalizado puede ser cualquier usuario que sea miembro de un grupo personalizado que haya proporcionado a cloudinsights-install.sh durante la instalación de AU, y puede ser el mismo o diferente del usuario personalizado que proporcionó durante la instalación de AU.
 
-. Cree una carpeta de trabajo y ajústela a los mismos permisos:
+. Realice lo siguiente:
 +
 ....
-mkdir /var/lib/netapp/cloudinsights/acq/download
-chmod 770 /var/lib/netapp/cloudinsights/acq/download
-ls -al /var/lib/netapp/cloudinsights/acq
+chmod 770 /var/lib/netapp/cloudinsights/acq/download/datasources-war-<version>.zip
+ls -al /var/lib/netapp/cloudinsights/acq/download
 …
-drwxrwx--- 2 test-user2 test-group-1  4096 Feb 16 10:10 datasources.war
+drwxrwx--- 2 test-user2 test-group-1  4096 Feb 16 10:10 datasources-war-<version>.zip
 …
 ....
 +
-.. Nota: Si utiliza el usuario y el grupo “cisys”, estos se mostrarán en la salida anterior.
+Nota: Si utiliza el usuario y el grupo “cisys”, estos se mostrarán en la salida anterior.
+
++
+Nota: Si planea instalar con diferentes usuarios personalizados, asegúrese de que los permisos de grupo estén configurados para leer y escribir tanto para el propietario como para el grupo (chmod 660 …)
+
+. Reinicie AU. En Cloud Insights, acceda a Observabilidad > Colectores y seleccione la pestaña Unidades de adquisición. Elige Reiniciar desde el menú “Tres puntos” a la derecha de la AU.
 
 
-. Copie _datasources-war-<version>.zip_ en la carpeta de trabajo. Por ejemplo:
+
+
+== Descarga de un parche
+
+Descargue el parche mediante la API /collector/patch/file/{version}:
+
+image:API_Manual_Download_patch.png["API para recuperar el parche"]
+
+Nota: Confirme con NetApp la versión que se debe especificar para la descarga.
+
+Haga clic en Descargar archivo. Si realiza estos pasos en un sistema distinto al sistema AU, copie el paquete zip de parches descargado en el sistema AU.
+
+Asegúrese de que el paquete zip del parche se haya copiado en el siguiente directorio: /Var/lib/netapp/cloudinsights/acq/download
+
+Desplácese hasta el directorio /var/lib/netapp/cloudinsights/acq/download para obtener la revisión y verifique el archivo .zip en él:
+
+. Debe cambiar a (o cerrar sesión root e iniciar sesión con) el usuario personalizado para los siguientes pasos.
 +
- cp /opt/netapp/cloudinsights/acq/ TBD/var/lib/netapp/cloudinsights/acq/download
-. Cambie a la carpeta de descarga y descomprima el archivo:
+ su <custom user>
 +
- cd /var/lib/netapp/cloudinsights/acq/download
+Nota: Si está utilizando el usuario y el grupo “cisys” por defecto, no es necesario realizar este paso.
+
++
+Nota: El usuario personalizado puede ser cualquier usuario que sea miembro de un grupo personalizado que haya proporcionado a cloudinsights-install.sh durante la instalación de AU, y puede ser el mismo o diferente del usuario personalizado que proporcionó durante la instalación de AU.
+
+. Realice lo siguiente:
 +
 ....
-unzip datasources-war-<version>.zip -d /var/lib/netapp/cloudinsights/acq/datasources.war/
-ls -al /var/lib/netapp/cloudinsights/acq/datasources.war
+chmod 770 /var/lib/netapp/cloudinsights/acq/download/<patch_file_name>.zip
+ls -al /var/lib/netapp/cloudinsights/acq/download
+…
+drwxrwx--- 2 test-user2 test-group-1  4096 Feb 16 10:10 <patch_file_name>.zip
+…
 ....
 +
-.. asegúrese de que el usuario, el grupo y los permisos son correctos en todos los archivos:
+Nota: Si utiliza el usuario y el grupo “cisys”, estos se mostrarán en la salida anterior.
+
 +
- -rw-rw---- 1 test-user2 test-group1  3420067 Mar 10 17:20 netapp_ontap.jar
+Nota: Si planea instalar con diferentes usuarios personalizados, asegúrese de que los permisos de grupo estén configurados para leer y escribir tanto para el propietario como para el grupo (chmod 660 …)
 
-
-. Nota: Si planea registrar AU usando diferentes usuarios personalizados, asegúrese de que los permisos de grupo estén configurados para leer y escribir tanto para el propietario como para el grupo (_chmod 660 …_)
-. Reinicie AU.
-+
-.. En Cloud Insights, navegue hasta *Observabilidad > Colectores* y seleccione la pestaña *Unidades de adquisición*. Elija _restart_ en el menú “Tres puntos” a la derecha de la AU.
-
-
+. Reinicie AU. En Cloud Insights, acceda a Observabilidad > Colectores y seleccione la pestaña Unidades de adquisición. Elige Reiniciar desde el menú “Tres puntos” a la derecha de la AU.
 
