@@ -25,6 +25,33 @@ NOTE: Es posible que algunas de estas funciones no estén disponibles en la edic
 
 
 
+== Noviembre de 2023
+
+
+
+=== Información de soporte del nodo de almacenamiento
+
+En la página de inicio de un nodo de almacenamiento, la sección _User Data_ proporciona información de un vistazo sobre la oferta de soporte, el estado actual, el estado del soporte y la fecha de finalización de la garantía. Tenga en cuenta que Cloud Insights solo publica automáticamente esta información para los dispositivos NetApp. Tenga en cuenta también que estos campos de soporte son anotaciones, por lo que se pueden utilizar en consultas y paneles de control.
+
+image:StorageNodeSupportData.png["Información de soporte del nodo de almacenamiento"]
+
+
+
+=== Asignar etiquetas de VMware a anotaciones de Cloud Insights
+
+La link:task_dc_vmware.html#mapping-vmware-tags-to-cloud-insights-annotations["VMware"] Data Collector le permite completar anotaciones de texto de Cloud Insights con etiquetas del mismo nombre que están configuradas en VMware.
+
+
+
+=== Mejoras en la fiabilidad del recopilador de CLI de Brocade para FOS 9,1.1c y posterior firmware
+
+En algunos switches Fibre Channel de Brocade que ejecutan el firmware 9,1.1c, la salida de ciertos comandos de la CLI puede anteponerse con el texto del banner de inicio de sesión «motd» o con advertencias para que los usuarios cambien las contraseñas predeterminadas. Se ha mejorado el recopilador de CLI de Brocade para ignorar estos dos tipos de texto extraño.
+
+Antes de esta mejora, es probable que solo los switches FOS 9,1.1c sin estructuras virtuales presentes se detectaran con este tipo de recopilador.
+
+'''
+
+
 == Octubre de 2023
 
 

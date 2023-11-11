@@ -136,6 +136,21 @@ En la pantalla de configuración avanzada, marque la casilla *VM Performance* pa
 |===
 
 
+== Asignar etiquetas de VMware a anotaciones de Cloud Insights
+
+El recopilador de datos de VMware permite completar anotaciones de Cloud Insights con etiquetas configuradas en VMware. Las anotaciones deben tener el mismo nombre que las etiquetas de VMware. Cloud Insights siempre rellenará anotaciones con el mismo nombre de tipo de texto y hará un "mejor intento" para rellenar anotaciones de otros tipos (número, booleano, etc.). Si la anotación es de un tipo diferente y el recopilador de datos no la rellena, puede que sea necesario eliminar la anotación y volver a crearla como un tipo de texto.
+
+Tenga en cuenta que las etiquetas de VMware pueden distinguir entre mayúsculas y minúsculas, mientras que las etiquetas de Cloud Insights no distinguen entre mayúsculas y minúsculas. De modo que si creas una anotación llamada «PROPIETARIO» en Cloud Insights y etiquetas denominadas «PROPIETARIO», «propietario» y «propietario» en VMware, todas esas variaciones de «propietario» se asignarían a la anotación de «propietario» DE Cloud Insight.
+
+Tenga en cuenta lo siguiente:
+
+* Actualmente, Cloud Insights solo publica automáticamente información de soporte para dispositivos NetApp.
+* Dado que esta información de soporte se mantiene en forma de anotación, puede consultarla o utilizarla en paneles de control.
+* Si un usuario sobrescribe o vacía el valor de la anotación, el valor se rellena automáticamente de nuevo cuando Cloud Insights actualiza las anotaciones, lo que hace una vez al día.
+
+
+
+
 == Resolución de problemas
 
 Algunas cosas para intentar si tiene problemas con este recopilador de datos:
