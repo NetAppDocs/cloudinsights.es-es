@@ -48,8 +48,8 @@ La herramienta SecurityAdmin le permite administrar opciones de seguridad para C
 Después de la instalación de AU, la herramienta SecurityAdmin se encuentra en el sistema de unidades de adquisición en cualquiera de estas ubicaciones:
 
 ....
-Windows - C:\Program Files\SANscreen\securityadmin\bin\securityadmin.bat
-Linux - /bin/oci-securityadmin.sh
+Windows: C:\Program Files\Cloud Insights\Acquisition Unit\acq\securityadmin\bin\securityadmin.bat
+Linux: /opt/netapp/cloudinsights/securityadmin/bin/securityadmin.sh
 ....
 
 
@@ -70,8 +70,8 @@ Crea un archivo zip de copia de seguridad del almacén que contiene todas las co
 
 +
 ....
-Windows - C:\Program Files\SANscreen\backup\vault
-Linux - /var/log/netapp/oci/backup/vault
+Windows: C:\Program Files\Cloud Insights\Acquisition Unit\backup\vault
+Linux: /var/log/netapp/cloudinsights/backup/vault
 ....
 +
 Se recomienda que las copias de seguridad de vault se mantengan seguras, ya que incluyen información confidencial.
