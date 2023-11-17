@@ -29,6 +29,12 @@ NOTE: Es posible que algunas de estas funciones no estén disponibles en la edic
 
 
 
+=== Seguridad de la carga de trabajo: Poner en pausa/reanudar un recopilador
+
+En Seguridad de carga de trabajo, puede pausar un recopilador de datos si el recopilador está en estado _Running_ o _Error_. Abra el menú de tres puntos para el recopilador y seleccione PAUSE. Mientras el recopilador está en pausa, no se recopilan datos desde ONTAP y no se envía ningún dato del recopilador a ONTAP. Seleccione Reanudar para comenzar a recopilar de nuevo.
+
+
+
 === Información de soporte del nodo de almacenamiento
 
 En la página de inicio de un nodo de almacenamiento, la sección _User Data_ proporciona información de un vistazo sobre la oferta de soporte, el estado actual, el estado del soporte y la fecha de finalización de la garantía. Tenga en cuenta que Cloud Insights solo publica automáticamente esta información para los dispositivos NetApp. Tenga en cuenta también que estos campos de soporte son anotaciones, por lo que se pueden utilizar en consultas y paneles de control.

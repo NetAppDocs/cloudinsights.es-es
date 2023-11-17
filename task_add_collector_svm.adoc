@@ -218,6 +218,42 @@ En las versiones de ONTAP anteriores a 9.9.1, no es necesario definir _data-fpol
 
 
 
+== Reproducir-Pausa del recopilador de datos
+
+Ahora se muestran 2 nuevas operaciones en el menú kebab del colector (PAUSA y REANUDACIÓN).
+
+Si el recopilador de datos se encuentra en estado _Running_ o _Error_, puede pausar la recopilación. Abra el menú de tres puntos para el recopilador y seleccione PAUSE. Mientras el recopilador está en pausa, no se recopilan datos desde ONTAP y no se envía ningún dato del recopilador a ONTAP. Esto significa que no fluirán eventos de Fpolicy de ONTAP al recopilador de datos y de allí a Cloud Insights.
+
+Tenga en cuenta que si se crean volúmenes nuevos, etc. en ONTAP mientras el recopilador está en pausa, la seguridad de la carga de trabajo no recopilará los datos y esos volúmenes, etc., no se reflejará en las consolas ni las tablas.
+
+Tenga en cuenta lo siguiente:
+
+|===
+| # | Comportamiento pausado del recolector 
+
+
+| 1 | La purga de snapshots no se producirá de acuerdo con la configuración configurada en un recopilador en pausa. 
+
+
+| 2 | Los eventos de EMS (como ARP de ONTAP) no se procesarán en un recopilador en pausa. Esto significa que si ONTAP identifica un ataque de ransomware, la seguridad de carga de trabajo Cloud Insights no podrá adquirir ese evento. 
+
+
+| 3 | NO se enviarán correos electrónicos de notificaciones de estado para un recopilador en pausa. 
+
+
+| 4 | Las acciones manuales o automáticas (como Instantánea o Bloqueo de usuarios) no se admitirán en un recopilador en pausa. 
+
+
+| 5 | En las actualizaciones de agente o recopilador, la VM del agente se reinicia o reinicia el servicio del agente, un recopilador en pausa permanecerá en estado _Paused_. 
+
+
+| 6 | Si el recopilador de datos está en estado _Error_, el recopilador no se puede cambiar al estado _Paused_. El botón Pausa solo se activará si el estado del recopilador es _Running_. 
+
+
+| 7 | Si el agente está desconectado, el recopilador no se puede cambiar al estado _Paused_. El recopilador pasará al estado _STOP_ y el botón Pause se desactivará. 
+|===
+
+
 == Resolución de problemas
 
 Los problemas conocidos y sus resoluciones se describen en la siguiente tabla.

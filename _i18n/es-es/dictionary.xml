@@ -12841,4 +12841,23 @@ Puedo guardar el informe, pero cuando vuelvo a abrir el informe guardado, la hor
   <block id="f528aa737a09ffef3755a1a747557c7a" category="list-text">Actualmente, Cloud Insights solo publica automáticamente información de soporte para dispositivos NetApp.</block>
   <block id="8455a8bde7347555ff461cd652af2821" category="list-text">Dado que esta información de soporte se mantiene en forma de anotación, puede consultarla o utilizarla en paneles de control.</block>
   <block id="8ed3dc52c7734ad3388658bf20175200" category="list-text">Si un usuario sobrescribe o vacía el valor de la anotación, el valor se rellena automáticamente de nuevo cuando Cloud Insights actualiza las anotaciones, lo que hace una vez al día.</block>
+  <block id="b63d58d10a7cf952ba50c71631f55b80" category="section-title">Seguridad de la carga de trabajo: Poner en pausa/reanudar un recopilador</block>
+  <block id="84a9e424bdf106d03d3d28925f9d139f" category="paragraph">En Seguridad de carga de trabajo, puede pausar un recopilador de datos si el recopilador está en estado _Running_ o _Error_. Abra el menú de tres puntos para el recopilador y seleccione PAUSE. Mientras el recopilador está en pausa, no se recopilan datos desde ONTAP y no se envía ningún dato del recopilador a ONTAP. Seleccione Reanudar para comenzar a recopilar de nuevo.</block>
+  <block id="27f986eca60850ba6afaf4deb6c8be29" category="section-title">Reproducir-Pausa del recopilador de datos</block>
+  <block id="fc0a37407f79a45598558116e07830ba" category="paragraph">Ahora se muestran 2 nuevas operaciones en el menú kebab del colector (PAUSA y REANUDACIÓN).</block>
+  <block id="a1f56413bb240260818b1874baafc3b6" category="paragraph">Si el recopilador de datos se encuentra en estado _Running_ o _Error_, puede pausar la recopilación. Abra el menú de tres puntos para el recopilador y seleccione PAUSE. Mientras el recopilador está en pausa, no se recopilan datos desde ONTAP y no se envía ningún dato del recopilador a ONTAP. Esto significa que no fluirán eventos de Fpolicy de ONTAP al recopilador de datos y de allí a Cloud Insights.</block>
+  <block id="12a77ef251456c14c7516a531e07f62b" category="paragraph">Tenga en cuenta que si se crean volúmenes nuevos, etc. en ONTAP mientras el recopilador está en pausa, la seguridad de la carga de trabajo no recopilará los datos y esos volúmenes, etc., no se reflejará en las consolas ni las tablas.</block>
+  <block id="01abfc750a0c942167651c40d088531d" category="cell">#</block>
+  <block id="a466ef2a0eac5ccca070b3013eaba386" category="cell">Comportamiento pausado del recolector</block>
+  <block id="c4ca4238a0b923820dcc509a6f75849b" category="cell">1</block>
+  <block id="ac08b45e1e6b3f3cb0a5ffc7cb738447" category="cell">La purga de snapshots no se producirá de acuerdo con la configuración configurada en un recopilador en pausa.</block>
+  <block id="301be6cbe57eeb518e76a0dacc06942b" category="cell">Los eventos de EMS (como ARP de ONTAP) no se procesarán en un recopilador en pausa. Esto significa que si ONTAP identifica un ataque de ransomware, la seguridad de carga de trabajo Cloud Insights no podrá adquirir ese evento.</block>
+  <block id="eccbc87e4b5ce2fe28308fd9f2a7baf3" category="cell">3</block>
+  <block id="7e41836b686c17a31fd348a24ad244d1" category="cell">NO se enviarán correos electrónicos de notificaciones de estado para un recopilador en pausa.</block>
+  <block id="3683774ed8a4e1ec359bda17c740e07d" category="cell">Las acciones manuales o automáticas (como Instantánea o Bloqueo de usuarios) no se admitirán en un recopilador en pausa.</block>
+  <block id="e4da3b7fbbce2345d7772b0674a318d5" category="cell">5</block>
+  <block id="fa80f305470263b5f75374e020afeacd" category="cell">En las actualizaciones de agente o recopilador, la VM del agente se reinicia o reinicia el servicio del agente, un recopilador en pausa permanecerá en estado _Paused_.</block>
+  <block id="1679091c5a880faf6fb5e6087eb1b2dc" category="cell">6</block>
+  <block id="90328fccc937505ade5c16d577869c88" category="cell">Si el recopilador de datos está en estado _Error_, el recopilador no se puede cambiar al estado _Paused_. El botón Pausa solo se activará si el estado del recopilador es _Running_.</block>
+  <block id="59a5587328a48d1f89316c0bf4e4be6f" category="cell">Si el agente está desconectado, el recopilador no se puede cambiar al estado _Paused_. El recopilador pasará al estado _STOP_ y el botón Pause se desactivará.</block>
 </blocks>
