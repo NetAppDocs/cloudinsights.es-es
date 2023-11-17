@@ -3796,7 +3796,6 @@
   <block id="8d4a361a3f25b78818c569d8f15cf4a6" category="list-text">una secuencia de comandos de instalación</block>
   <block id="b015398c226e1e3576258432ece31819" category="list-text">un archivo de entorno</block>
   <block id="004cac3ce7d67014b5fadcffaf9b5b70" category="list-text">Archivos YAML</block>
-  <block id="2f5e8cecf93bcfa467580ff86ae3e64a" category="list-text">un archivo de suma de comprobación firmado (que termina en sha256.firmadas o sha256.ps1)</block>
   <block id="e1f4fa985535cfb2dd4b3f50c918b7eb" category="list-text">Un archivo PEM (netapp_cert.pem) para la verificación de firmas</block>
   <block id="4f1c754cd67cd57cebe0be2f5e8638a4" category="paragraph">La secuencia de comandos de instalación, el archivo de entorno y los archivos YAML se pueden verificar mediante inspección visual.</block>
   <block id="7c9f5399bb10652ab7e06778c4de02e1" category="paragraph">El archivo PEM puede verificarse confirmando que su huella digital es la siguiente:</block>
@@ -3805,9 +3804,7 @@
   <block id="d8f6d626cfe2a4f97d97ff93d95db51b" category="section-title">Generar valor de suma de comprobación</block>
   <block id="d1703bc5bb53c90ffbbae52dfe829603" category="paragraph">Para generar el valor de suma de comprobación, ejecute el siguiente comando en su plataforma adecuada:</block>
   <block id="9374ddadb9776b458a2963573b22f63d" category="list-text">RHEL/Ubuntu:</block>
-  <block id="2759aa04a78ddf03f5db1a25acdca496" category="section-title">Verifique la suma de comprobación con el archivo PEM</block>
   <block id="76dfc651463ab4e67ce2140b8aadb473" category="paragraph">El archivo de suma de comprobación firmado se puede verificar mediante el archivo PEM:</block>
-  <block id="fbc384836aa7cdd1a408df0773faf595" category="list-text">Windows (después de instalar el certificado a través del certificado de importación anterior):</block>
   <block id="b59ea01f26635c31c3c1df660848f6c8" category="section-title">Instale el paquete descargado</block>
   <block id="6c32334bfce9f857b0fdbdca68040a0b" category="paragraph">Una vez que todos los artefactos han sido verificados satisfactoriamente, la instalación del agente se puede iniciar ejecutando:</block>
   <block id="19032097e8464bc9b326d59737b0bdbc" category="paragraph">Algunas cosas que debe intentar si tiene problemas para configurar un agente:</block>
@@ -12900,4 +12897,7 @@ Formato de clave pública - PEM, DER-encoded X,509 SubjectPublicKeyInfo RFC 5280
   <block id="b738fcd06367fb3c33e6d367c3e7c7ba" category="paragraph">Si establece la opción _preEncrypted_ en _True_, cualquier contraseña que pase a través del comando API se tratará como *ya cifrada*; la API no volverá a cifrar la(s) contraseña(s). Al crear su API, simplemente pegue la contraseña cifrada previamente en la ubicación adecuada.</block>
   <block id="d9d5abe9014e781e9e8b7465a4527c53" category="inline-image-macro">Ejemplo de API, width=600</block>
   <block id="adf35aae3d2f06ba0ccf5e21b031b3d6" category="paragraph"><block ref="adf35aae3d2f06ba0ccf5e21b031b3d6" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="9f32134bbefffdc9df70a2d73c2df6a6" category="list-text">un archivo de suma de comprobación (que termina en sha256.signed o sha256.ps1)</block>
+  <block id="aacd43790bd404cab1a350cb047a9a9d" category="section-title">Verifique la suma de comprobación</block>
+  <block id="43e3c65a555911ad6d7235d9e9206e4c" category="paragraph">Extraiga la suma de comprobación esperada del archivo de suma de comprobación</block>
 </blocks>
