@@ -90,11 +90,7 @@ Si no puede utilizar el usuario administrador de administración de clústeres p
 Para crear un nuevo usuario, inicie sesión en ONTAP con el nombre de usuario/contraseña del administrador de administración del clúster y ejecute los siguientes comandos en el servidor ONTAP:
 
 ....
-security login role create -role csrole -cmddirname DEFAULT -access none
-security login role create -role csrole -cmddirname "network interface" -access readonly
-security login role create -role csrole -cmddirname version -access readonly
-security login role create -role csrole -cmddirname volume -access readonly
-security login role create -role csrole -cmddirname vserver -access readonly
+security login role create -role csrole -cmddirname DEFAULT -access readonly
 security login role create -role csrole -cmddirname "vserver fpolicy" -access all
 security login role create -role csrole -cmddirname "volume snapshot" -access all -query "-snapshot cloudsecure_*"
 security login role create -role csrole -cmddirname "event catalog" -access all
@@ -114,11 +110,7 @@ Si no puede utilizar el usuario administrador de administración de clústeres p
 Para crear el nuevo usuario, inicie sesión en ONTAP con el nombre de usuario/contraseña del administrador de administración del clúster y ejecute los siguientes comandos en el servidor ONTAP. Para facilitar la operación, copie estos comandos en un editor de texto y sustituya la <vservername> por su nombre Vserver antes y ejecute estos comandos en ONTAP:
 
 ....
-security login role create -vserver <vservername> -role csrole -cmddirname DEFAULT -access none
-security login role create -vserver <vservername> -role csrole -cmddirname "network interface" -access readonly
-security login role create -vserver <vservername> -role csrole -cmddirname version -access readonly
-security login role create -vserver <vservername> -role csrole -cmddirname volume -access readonly
-security login role create -vserver <vservername> -role csrole -cmddirname vserver -access readonly
+security login role create -vserver <vservername> -role csrole -cmddirname DEFAULT -access readonly
 security login role create -vserver <vservername> -role csrole -cmddirname "vserver fpolicy" -access all
 security login role create -vserver <vservername> -role csrole -cmddirname "volume snapshot" -access all
 security login create -user-or-group-name csuser -application ontapi -authmethod password -role csrole -vserver <vservername>
