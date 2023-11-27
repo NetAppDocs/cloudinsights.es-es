@@ -51,6 +51,12 @@ Lea esta información antes de instalar y actualizar su operador de supervisión
 * El operador de supervisión de Kubernetes de NetApp instala sus propias métricas de estado kube para evitar conflictos con otras instancias. Para obtener informes precisos de auditoría y datos, se recomienda encarecidamente sincronizar la hora en el equipo del agente mediante el Protocolo de hora de red (NTP) o el Protocolo de hora de red simple (SNTP).
 * Si va a volver a desplegar el Operador (es decir, lo está actualizando o reemplazando), no es necesario crear un token de API _new_; puede volver a utilizar el token anterior.
 * También tenga en cuenta que, si tiene instalado recientemente un operador de supervisión de Kubernetes de NetApp y usa un token de acceso de API renovable, los tokens que venzan se reemplazarán automáticamente por tokens de acceso de API nuevos o actualizados.
+* Monitorización de red:
++
+** Requiere Linux kernel versión 4.18.0 y superior
+** No se admite el SO de fotones.
+
+
 
 
 

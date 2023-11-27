@@ -6200,7 +6200,6 @@
   <block id="36b415ace97b614344903d1d039cc60d" category="cell">2 núcleos de CPU</block>
   <block id="c90a13d8ec8fe53c6bb33fe10af6f2fe" category="cell">Igual</block>
   <block id="83626eda7582435cdf0eb139d5cc8972" category="cell">8 GB DE MEMORIA RAM</block>
-  <block id="474b549bf76599f904f9c951a609a127" category="cell">50 GB para Linux, el espacio en disco se debe asignar de esta manera: /Opt/netapp 10 GB /var/log/netapp 40 GB /tmp al menos 1 GB disponible durante la instalación</block>
   <block id="6aaa2ffc817cac34a806a149bee36350" category="cell">50 GB</block>
   <block id="2f704538f6c9d6459a97314be98124e2" category="inline-link-macro">Recopilador de datos</block>
   <block id="e3277885339370179f3086f0f0ab17cc" category="cell">Se requiere una conexión Ethernet de 100 Mbps/1 Gbps, una dirección IP estática y conectividad de puerto 80 o 443 desde la unidad de adquisición a *.cloudinsights.netapp.com o el entorno Cloud Insights (por ejemplo, \https://&lt;environment_id&gt;.c01.cloudinsights.netapp.com). Para conocer los requisitos entre la unidad de adquisición y cada colector de datos, consulte las instrucciones para <block ref="be56515064596049a4b61d9d1a149cf9" category="inline-link-macro-rx"></block>. Si su organización requiere el uso de proxy para el acceso a Internet, es posible que tenga que comprender el comportamiento del proxy de su empresa y buscar ciertas excepciones para que Cloud Insights funcione. Por ejemplo, ¿bloquea su organización el acceso de forma predeterminada y sólo permite el acceso a sitios o dominios web específicos mediante excepción? Si es así, necesitará obtener el siguiente dominio agregado a la lista de excepciones: *.cloudinsights.netapp.com para obtener más información, listo sobre Proxies <block ref="c8de79af776ad5401fc2435a47b93554" category="inline-link-macro-rx"></block> o. <block ref="72aa87d84bbc45ebd36bcd7399b0482e" category="inline-link-macro-rx"></block>.</block>
@@ -12901,4 +12900,12 @@ Formato de clave pública - PEM, DER-encoded X,509 SubjectPublicKeyInfo RFC 5280
   <block id="682ba587c3d6c301fba76aadc4ddd8af" category="cell">Contraseña utilizada para iniciar sesión en el dispositivo ScaleIO/PowerFlex</block>
   <block id="9f3d8c0615d1ceba9f0f905f22c7d950" category="cell">Se permite que el usuario busque en el directorio. Por ejemplo: _username@companyname.com_ o _username@domainname.com_
 Además, se requiere el permiso de solo lectura de dominio.</block>
+  <block id="dada9839975856f2fd06228d265fea07" category="list-text">Monitorización de red:</block>
+  <block id="50e4ed16bb9f1a58d102b41d11b009d5" category="list-text">Requiere Linux kernel versión 4.18.0 y superior</block>
+  <block id="7ae2ba2018b8e11d966acfdd0fce7a55" category="list-text">No se admite el SO de fotones.</block>
+  <block id="e51abfd3fc3e12a9fe8f5f800312a852" category="cell">50 GB (se recomiendan 100 GB)
+Para Linux, el espacio en disco se debe asignar de esta manera:
+/Opt/netapp 10 GB (20 GB para entornos de gran tamaño)
+/Var/log/netapp 40 GB (80 GB para entornos grandes)
+/Tmp Al menos 1 GB disponibles durante la instalación</block>
 </blocks>

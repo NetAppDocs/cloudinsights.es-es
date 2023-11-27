@@ -49,7 +49,11 @@ Este equipo no debe ejecutar ningún otro software de nivel de aplicación. Se r
 | Memoria | 8 GB DE MEMORIA RAM | Igual 
 
 
-| Espacio disponible en disco | 50 GB para Linux, el espacio en disco se debe asignar de esta manera: /Opt/netapp 10 GB /var/log/netapp 40 GB /tmp al menos 1 GB disponible durante la instalación | 50 GB 
+| Espacio disponible en disco | 50 GB (se recomiendan 100 GB)
+Para Linux, el espacio en disco se debe asignar de esta manera:
+/Opt/netapp 10 GB (20 GB para entornos de gran tamaño)
+/Var/log/netapp 40 GB (80 GB para entornos grandes)
+/Tmp Al menos 1 GB disponibles durante la instalación | 50 GB 
 
 
 | Red | Se requiere una conexión Ethernet de 100 Mbps/1 Gbps, una dirección IP estática y conectividad de puerto 80 o 443 desde la unidad de adquisición a *.cloudinsights.netapp.com o el entorno Cloud Insights (por ejemplo, \https://<environment_id>.c01.cloudinsights.netapp.com). Para conocer los requisitos entre la unidad de adquisición y cada colector de datos, consulte las instrucciones para link:data_collector_list.html["Recopilador de datos"]. Si su organización requiere el uso de proxy para el acceso a Internet, es posible que tenga que comprender el comportamiento del proxy de su empresa y buscar ciertas excepciones para que Cloud Insights funcione. Por ejemplo, ¿bloquea su organización el acceso de forma predeterminada y sólo permite el acceso a sitios o dominios web específicos mediante excepción? Si es así, necesitará obtener el siguiente dominio agregado a la lista de excepciones: *.cloudinsights.netapp.com para obtener más información, listo sobre Proxies link:task_troubleshooting_linux_acquisition_unit_problems.html#considerations-about-proxies-and-firewalls["aquí"] o. link:task_troubleshooting_windows_acquisition_unit_problems.html#considerations-about-proxies-and-firewalls["aquí"]. | Igual 
