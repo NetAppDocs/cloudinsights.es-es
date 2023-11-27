@@ -9105,7 +9105,6 @@
   <block id="864914e40a7ee3d290b244de196d4f2e" category="cell">Dirección IP o nombre de dominio completo (FQDN) del servidor que aloja el directorio activo</block>
   <block id="592b09bd3291d67037bc036b0c714470" category="cell">Nombre del bosque</block>
   <block id="7d29f1962bf2529a2067967e962ee3dd" category="cell">Nivel de bosque de la estructura de directorios. El nombre del bosque permite los dos formatos siguientes: _X. y.y.z_ =&gt; nombre de dominio directo como lo tiene en su SVM. [Ejemplo: hq.companyname.com] _DC=x,DC=y,DC=z_ =&gt; nombres distintivos relativos [ejemplo: DC=hq,DC= companyname,DC=com] o puede especificar como lo siguiente: _OU=engineering,DC=hq,DC= companyname,DC=com_ [para filtrar por ingeniería de OU específica] _CN=nombre de usuario,OU=engineering,DC=companyname, DC=netapp, DC=com_ [para obtener sólo un usuario específico de &lt;username&gt; de OU &lt;engineering&gt;] _CN=usuarios de Acrobat,CN=usuarios,DC=nombre de confianza de la organización de Acrobat = c,DC de la organización de Active Directory.</block>
-  <block id="c84f7a37a2691cf36f1774d52de72e5c" category="cell">Se permite que el usuario busque en el directorio. Por ejemplo: _username@companyname.com_ o _username@domainname.com_</block>
   <block id="c916f7fd609e8e5f547cb1e93d5a81b8" category="paragraph">Introduzca los siguientes atributos requeridos de Directory Server si se han modificado los nombres de atributo predeterminados en Active Directory. En la mayoría de los casos, estos nombres de atributos se modifican en Active Directory, en cuyo caso simplemente puede continuar con el nombre de atributo predeterminado.</block>
   <block id="1c2684566717c78cd97248bd9b26c55b" category="cell">SID</block>
   <block id="6381c8768508bc58d1e5d1539f373995" category="cell">objectsid</block>
@@ -12900,4 +12899,6 @@ Formato de clave pública - PEM, DER-encoded X,509 SubjectPublicKeyInfo RFC 5280
   <block id="4fd45e6b48ed24b4e3dbd4f7522cab8c" category="cell">Direcciones IP o FQDN de puertas de enlace ScaleIO/PowerFlex, separadas por coma (,) o punto y coma (;)</block>
   <block id="68d34ea912eb8ba5af30d244ed0f9227" category="cell">Nombre de usuario administrador utilizado para iniciar sesión en el dispositivo ScaleIO/PowerFlex</block>
   <block id="682ba587c3d6c301fba76aadc4ddd8af" category="cell">Contraseña utilizada para iniciar sesión en el dispositivo ScaleIO/PowerFlex</block>
+  <block id="9f3d8c0615d1ceba9f0f905f22c7d950" category="cell">Se permite que el usuario busque en el directorio. Por ejemplo: _username@companyname.com_ o _username@domainname.com_
+Además, se requiere el permiso de solo lectura de dominio.</block>
 </blocks>
