@@ -94,7 +94,7 @@ Lista alfabética de recopiladores de datos compatibles con Cloud Insights:
 | link:task_dc_emc_recoverpoint.html["RecoverPoint de Dell EMC"] | De almacenamiento 
 
 
-| link:task_dc_emc_scaleio.html["Dell EMC ScaleIO"] | De almacenamiento 
+| link:task_dc_emc_scaleio.html["ScaleIO/PowerFlex de Dell EMC "] | De almacenamiento 
 
 
 | link:task_dc_emc_unity.html["Dell EMC Unity"] | De almacenamiento 

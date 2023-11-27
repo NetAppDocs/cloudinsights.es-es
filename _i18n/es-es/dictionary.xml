@@ -5906,19 +5906,10 @@
   <block id="993bb582982b324ee6465cc1d0c1a2bd" category="paragraph">El intervalo de tiempo personalizado le permite seleccionar hasta 31 días consecutivos. También puede establecer la hora de inicio y la hora de finalización del día para este intervalo. La hora de inicio predeterminada es 12:00 AM del primer día seleccionado y la hora de finalización predeterminada es 11:59 PM del último día seleccionado. Al hacer clic en aplicar se aplicará el intervalo de tiempo personalizado a la página del activo.</block>
   <block id="4feea054535349a31f7c12b7dcbc4d2b" category="section-title">Agregar widgets personalizados</block>
   <block id="2c6503d76e77d1cf4b2836c66fb29d6e" category="paragraph">Puede añadir sus propios widgets a cualquier página de activo. Los widgets que agregue aparecerán en las páginas de activos de todos los objetos de ese tipo. Por ejemplo, si se añade un widget personalizado a una página de activos de almacenamiento, aparecerá el widget correspondiente en las páginas de activos de todos los activos de almacenamiento.</block>
-  <block id="cf38d319bc1b083afe717ce8be4a0e2a" category="summary">Configurar el recopilador DE datos Dell EMC ScaleIO.</block>
-  <block id="a502d590a35b78e5a42f13e7f79aefd5" category="doc">Recopilador DE datos Dell EMC ScaleIO</block>
-  <block id="c502d2755afbc827d0b78e7bf29a63c3" category="paragraph">El recopilador de datos de ScaleIO recopila información de inventario del almacenamiento de ScaleIO. Para la configuración, este recopilador de datos requiere la dirección de puerta de enlace ScaleIO y el nombre de usuario y la contraseña de administrador.</block>
-  <block id="0711dbe30737a04c398a5d6577ea7fb6" category="paragraph">Cloud Insights adquiere la siguiente información de inventario del recopilador de datos de ScaleIO. Para cada tipo de activo adquirido por Cloud Insights, se muestra la terminología más común utilizada para este activo. Al ver o solucionar problemas de este recopilador de datos, tenga en cuenta la siguiente terminología:</block>
   <block id="d84428ff629eae2252af86f5b0c68597" category="cell">Clúster MDM (Meta Data Manager)</block>
-  <block id="32de3bca35dcedbe5dd77438efe818cd" category="cell">SDS (servidor de datos ScaleIO)</block>
   <block id="e0ac20adce6ffee48c7151b070aa5737" category="cell">Dispositivo</block>
   <block id="9bc4ba1e74d4345d8fb67c1039e8ee31" category="list-text">Acceso de solo lectura a la cuenta de usuario administrador</block>
   <block id="0e75d3cb4ff238983ed93446b3df10b4" category="list-text">Requisito de puerto: Puerto HTTPS 443</block>
-  <block id="b598786f418563a6288a22d6b801761e" category="cell">Puertas de enlace ScaleIO</block>
-  <block id="7f1dace1c2447400ca7e254d9f7c680d" category="cell">Direcciones IP o FQDN de puertas de enlace ScaleIO separadas por comas (,) o punto y coma (;)</block>
-  <block id="d44a2e308ec90ea99344ff3ca9a81883" category="cell">Nombre de usuario de administrador utilizado para iniciar sesión en el dispositivo ScaleIO</block>
-  <block id="358e9f4d894beeefdde1369e74db160f" category="cell">Contraseña utilizada para iniciar sesión en el dispositivo ScaleIO</block>
   <block id="fd4515531c9ce1d6eae38a306629e6eb" category="paragraph">Haga clic en la casilla de verificación Inventario para habilitar la recopilación de inventario.</block>
   <block id="f7130526f999ef4eed4ac1dbf86a0a03" category="cell">Puerto HTTPS</block>
   <block id="13f3cf8c531952d72e5847c4183e6910" category="cell">443</block>
@@ -8024,8 +8015,6 @@
   <block id="1b109b38fea9959dbc53058628693aef" category="cell"><block ref="1b109b38fea9959dbc53058628693aef" category="inline-link-macro-rx"></block></block>
   <block id="f8e3c055426933bde369444cdafa0c6b" category="inline-link-macro">RecoverPoint de Dell EMC</block>
   <block id="32f16e66f82b765e2355b037f437f0d6" category="cell"><block ref="32f16e66f82b765e2355b037f437f0d6" category="inline-link-macro-rx"></block></block>
-  <block id="9e41c813bafe9260d22ac12ca1d86d6b" category="inline-link-macro">Dell EMC ScaleIO</block>
-  <block id="e05a976ebc9a4cca05ffe391dc9aea64" category="cell"><block ref="e05a976ebc9a4cca05ffe391dc9aea64" category="inline-link-macro-rx"></block></block>
   <block id="42658796d03fcc8216277518ea2d5203" category="inline-link-macro">Dell EMC Unity</block>
   <block id="7d4fe4e454bc9f68e87ed3a86244c35a" category="cell"><block ref="7d4fe4e454bc9f68e87ed3a86244c35a" category="inline-link-macro-rx"></block></block>
   <block id="0cf39fe422a1bfd5d8bce06d5ce1b64f" category="inline-link-macro">Unisphere REST de Dell EMC</block>
@@ -12900,4 +12889,15 @@ Formato de clave pública - PEM, DER-encoded X,509 SubjectPublicKeyInfo RFC 5280
   <block id="9f32134bbefffdc9df70a2d73c2df6a6" category="list-text">un archivo de suma de comprobación (que termina en sha256.signed o sha256.ps1)</block>
   <block id="aacd43790bd404cab1a350cb047a9a9d" category="section-title">Verifique la suma de comprobación</block>
   <block id="43e3c65a555911ad6d7235d9e9206e4c" category="paragraph">Extraiga la suma de comprobación esperada del archivo de suma de comprobación</block>
+  <block id="e399d76f82d333fa1c49eb069522e8ac" category="inline-link-macro">ScaleIO/PowerFlex de Dell EMC </block>
+  <block id="f7ee83c5589aae26abcd6b7c1b853e5a" category="cell"><block ref="f7ee83c5589aae26abcd6b7c1b853e5a" category="inline-link-macro-rx"></block></block>
+  <block id="e3628e8ad35243dc8938a2b601a40729" category="summary">Configuración del recopilador de datos DELL EMC ScaleIO/PowerFlex.</block>
+  <block id="b7cfbf9d7104ab3206a9e36e4f1cfed8" category="doc">Recopilador de datos DELL EMC ScaleIO / PowerFlex</block>
+  <block id="eb2970c74f4003234e24b8bb86f7f1b1" category="paragraph">El recopilador de datos ScaleIO/PowerFlex recopila información de inventario del almacenamiento ScaleIO y PowerFlex. Para la configuración, este recopilador de datos requiere la dirección de puerta de enlace ScaleIO/PowerFlex y un nombre de usuario y una contraseña de administrador.</block>
+  <block id="0605f6ce75ae8707c23e729bfc341dd5" category="paragraph">Cloud Insights adquiere la siguiente información de inventario del recopilador de datos ScaleIO/PowerFlex. Para cada tipo de activo adquirido por Cloud Insights, se muestra la terminología más común utilizada para este activo. Al ver o solucionar problemas de este recopilador de datos, tenga en cuenta la siguiente terminología:</block>
+  <block id="1504819ba5c6757e9100d77628a826a2" category="cell">SDS (servidor de datos ScaleIO/PowerFlex)</block>
+  <block id="52775d60a5ff510b7b7db324e92a528a" category="cell">Puertas de enlace ScaleIO/PowerFlex</block>
+  <block id="4fd45e6b48ed24b4e3dbd4f7522cab8c" category="cell">Direcciones IP o FQDN de puertas de enlace ScaleIO/PowerFlex, separadas por coma (,) o punto y coma (;)</block>
+  <block id="68d34ea912eb8ba5af30d244ed0f9227" category="cell">Nombre de usuario administrador utilizado para iniciar sesión en el dispositivo ScaleIO/PowerFlex</block>
+  <block id="682ba587c3d6c301fba76aadc4ddd8af" category="cell">Contraseña utilizada para iniciar sesión en el dispositivo ScaleIO/PowerFlex</block>
 </blocks>
