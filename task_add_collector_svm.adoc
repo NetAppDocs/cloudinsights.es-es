@@ -220,30 +220,15 @@ Tenga en cuenta que si se crean volúmenes nuevos, etc. en ONTAP mientras el rec
 
 Tenga en cuenta lo siguiente:
 
-|===
-| # | Comportamiento pausado del recolector 
+* La purga de snapshots no se producirá de acuerdo con la configuración configurada en un recopilador en pausa.
+* Los eventos de EMS (como ARP de ONTAP) no se procesarán en un recopilador en pausa. Esto significa que si ONTAP identifica un ataque de ransomware, la seguridad de carga de trabajo Cloud Insights no podrá adquirir ese evento.
+* NO se enviarán correos electrónicos de notificaciones de estado para un recopilador en pausa.
+* Las acciones manuales o automáticas (como Instantánea o Bloqueo de usuarios) no se admitirán en un recopilador en pausa.
+* En las actualizaciones de agente o recopilador, la VM del agente se reinicia o reinicia el servicio del agente, un recopilador en pausa permanecerá en estado _Paused_.
+* Si el recopilador de datos está en estado _Error_, el recopilador no se puede cambiar al estado _Paused_. El botón Pausa solo se activará si el estado del recopilador es _Running_.
+* Si el agente está desconectado, el recopilador no se puede cambiar al estado _Paused_. El recopilador pasará al estado _STOP_ y el botón Pause se desactivará.
 
 
-| 1 | La purga de snapshots no se producirá de acuerdo con la configuración configurada en un recopilador en pausa. 
-
-
-| 2 | Los eventos de EMS (como ARP de ONTAP) no se procesarán en un recopilador en pausa. Esto significa que si ONTAP identifica un ataque de ransomware, la seguridad de carga de trabajo Cloud Insights no podrá adquirir ese evento. 
-
-
-| 3 | NO se enviarán correos electrónicos de notificaciones de estado para un recopilador en pausa. 
-
-
-| 4 | Las acciones manuales o automáticas (como Instantánea o Bloqueo de usuarios) no se admitirán en un recopilador en pausa. 
-
-
-| 5 | En las actualizaciones de agente o recopilador, la VM del agente se reinicia o reinicia el servicio del agente, un recopilador en pausa permanecerá en estado _Paused_. 
-
-
-| 6 | Si el recopilador de datos está en estado _Error_, el recopilador no se puede cambiar al estado _Paused_. El botón Pausa solo se activará si el estado del recopilador es _Running_. 
-
-
-| 7 | Si el agente está desconectado, el recopilador no se puede cambiar al estado _Paused_. El recopilador pasará al estado _STOP_ y el botón Pause se desactivará. 
-|===
 
 
 == Resolución de problemas
