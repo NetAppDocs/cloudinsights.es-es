@@ -2561,7 +2561,6 @@
   <block id="05b9537d4d6b18cde99b176600c5b6cb" category="paragraph">Para descifrar, ejecute el siguiente comando:</block>
   <block id="508c80147534839c8ece65596b3e23ca" category="section-title">Ejecute el script varias veces</block>
   <block id="3c00df162167ecfa7cae1012f21e271a" category="section-title">Cree archivos mediante programación</block>
-  <block id="b7013d500ab0d5c0a0a5ed66e230d702" category="paragraph">Antes de crear los archivos, primero debe detener el procesamiento del recopilador de datos. Realice los pasos siguientes antes de agregar el recopilador de datos al agente. Si ya ha agregado el recopilador de datos, simplemente edite el recopilador de datos, introduzca una contraseña no válida y guárdelo. Esto pondrá temporalmente el recopilador de datos en el estado de error. NOTA: Asegúrese de anotar la contraseña original.</block>
   <block id="7fb4f29b2fbada5675e1ca18652cf155" category="paragraph">Antes de ejecutar la simulación, primero debe agregar archivos para su cifrado. Puede copiar manualmente los archivos que se van a cifrar en la carpeta de destino o utilizar una secuencia de comandos (vea el ejemplo siguiente) para crear los archivos mediante programación. Sea cual sea el método que utilice, copie al menos 1,000 archivos.</block>
   <block id="ab1689bf65069d89f2858a33f94e7a0c" category="paragraph">Si elige crear los archivos mediante programación, haga lo siguiente:</block>
   <block id="1ccbd3884a5f46ebee24ea2d455e82c6" category="list-text">Inicie sesión en el cuadro Agente.</block>
@@ -12826,22 +12825,14 @@ Puedo guardar el informe, pero cuando vuelvo a abrir el informe guardado, la hor
   <block id="8455a8bde7347555ff461cd652af2821" category="list-text">Dado que esta información de soporte se mantiene en forma de anotación, puede consultarla o utilizarla en paneles de control.</block>
   <block id="8ed3dc52c7734ad3388658bf20175200" category="list-text">Si un usuario sobrescribe o vacía el valor de la anotación, el valor se rellena automáticamente de nuevo cuando Cloud Insights actualiza las anotaciones, lo que hace una vez al día.</block>
   <block id="b63d58d10a7cf952ba50c71631f55b80" category="section-title">Seguridad de la carga de trabajo: Poner en pausa/reanudar un recopilador</block>
-  <block id="84a9e424bdf106d03d3d28925f9d139f" category="paragraph">En Seguridad de carga de trabajo, puede pausar un recopilador de datos si el recopilador está en estado _Running_ o _Error_. Abra el menú de tres puntos para el recopilador y seleccione PAUSE. Mientras el recopilador está en pausa, no se recopilan datos desde ONTAP y no se envía ningún dato del recopilador a ONTAP. Seleccione Reanudar para comenzar a recopilar de nuevo.</block>
   <block id="27f986eca60850ba6afaf4deb6c8be29" category="section-title">Reproducir-Pausa del recopilador de datos</block>
   <block id="fc0a37407f79a45598558116e07830ba" category="paragraph">Ahora se muestran 2 nuevas operaciones en el menú kebab del colector (PAUSA y REANUDACIÓN).</block>
-  <block id="a1f56413bb240260818b1874baafc3b6" category="paragraph">Si el recopilador de datos se encuentra en estado _Running_ o _Error_, puede pausar la recopilación. Abra el menú de tres puntos para el recopilador y seleccione PAUSE. Mientras el recopilador está en pausa, no se recopilan datos desde ONTAP y no se envía ningún dato del recopilador a ONTAP. Esto significa que no fluirán eventos de Fpolicy de ONTAP al recopilador de datos y de allí a Cloud Insights.</block>
   <block id="12a77ef251456c14c7516a531e07f62b" category="paragraph">Tenga en cuenta que si se crean volúmenes nuevos, etc. en ONTAP mientras el recopilador está en pausa, la seguridad de la carga de trabajo no recopilará los datos y esos volúmenes, etc., no se reflejará en las consolas ni las tablas.</block>
-  <block id="01abfc750a0c942167651c40d088531d" category="cell">#</block>
-  <block id="a466ef2a0eac5ccca070b3013eaba386" category="cell">Comportamiento pausado del recolector</block>
-  <block id="c4ca4238a0b923820dcc509a6f75849b" category="cell">1</block>
   <block id="ac08b45e1e6b3f3cb0a5ffc7cb738447" category="cell">La purga de snapshots no se producirá de acuerdo con la configuración configurada en un recopilador en pausa.</block>
   <block id="301be6cbe57eeb518e76a0dacc06942b" category="cell">Los eventos de EMS (como ARP de ONTAP) no se procesarán en un recopilador en pausa. Esto significa que si ONTAP identifica un ataque de ransomware, la seguridad de carga de trabajo Cloud Insights no podrá adquirir ese evento.</block>
-  <block id="eccbc87e4b5ce2fe28308fd9f2a7baf3" category="cell">3</block>
   <block id="7e41836b686c17a31fd348a24ad244d1" category="cell">NO se enviarán correos electrónicos de notificaciones de estado para un recopilador en pausa.</block>
   <block id="3683774ed8a4e1ec359bda17c740e07d" category="cell">Las acciones manuales o automáticas (como Instantánea o Bloqueo de usuarios) no se admitirán en un recopilador en pausa.</block>
-  <block id="e4da3b7fbbce2345d7772b0674a318d5" category="cell">5</block>
   <block id="fa80f305470263b5f75374e020afeacd" category="cell">En las actualizaciones de agente o recopilador, la VM del agente se reinicia o reinicia el servicio del agente, un recopilador en pausa permanecerá en estado _Paused_.</block>
-  <block id="1679091c5a880faf6fb5e6087eb1b2dc" category="cell">6</block>
   <block id="90328fccc937505ade5c16d577869c88" category="cell">Si el recopilador de datos está en estado _Error_, el recopilador no se puede cambiar al estado _Paused_. El botón Pausa solo se activará si el estado del recopilador es _Running_.</block>
   <block id="59a5587328a48d1f89316c0bf4e4be6f" category="cell">Si el agente está desconectado, el recopilador no se puede cambiar al estado _Paused_. El recopilador pasará al estado _STOP_ y el botón Pause se desactivará.</block>
   <block id="cd5c932f5b2fa2206673bc29c081fa55" category="section-title">Recuperación de clave externa</block>
@@ -12908,4 +12899,12 @@ Para Linux, el espacio en disco se debe asignar de esta manera:
 /Opt/netapp 10 GB (20 GB para entornos de gran tamaño)
 /Var/log/netapp 40 GB (80 GB para entornos grandes)
 /Tmp Al menos 1 GB disponibles durante la instalación</block>
+  <block id="ddc197f26701abc15014fe5035957110" category="paragraph">Antes de crear los archivos, primero debe detener o pausar el procesamiento del recopilador de datos.
+Realice los pasos siguientes antes de agregar el recopilador de datos al agente. Si ya ha agregado el recopilador de datos, simplemente edite el recopilador de datos, introduzca una contraseña no válida y guárdelo. Esto pondrá temporalmente el recopilador de datos en el estado de error. NOTA: Asegúrese de anotar la contraseña original.</block>
+  <block id="ce9b2cd4bcab7dbbf52b62cd18cb5c55" category="inline-link-macro">pausar el recopilador</block>
+  <block id="3fc1bb029faccb362d05bb964b9a5532" category="admonition">La opción recomendada es a. <block ref="fab3704c9565365da788d72b33d2f55f" category="inline-link-macro-rx"></block> antes de crear sus archivos.]</block>
+  <block id="77b868151a2234cc10d342f43b6cbb14" category="inline-link-macro">reanude el recopilador</block>
+  <block id="d7392010d6df617dd55d326f0d9bf442" category="list-text">Si pausó el recopilador antes de seguir estos pasos, asegúrese de hacerlo <block ref="277e805b18142e57dd69c30e47ad86c3" category="inline-link-macro-rx"></block>.</block>
+  <block id="60d7b95e24d1ecfc57f6986cabb1871a" category="paragraph">En Workload Security, puede poner en pausa un recopilador de datos si el recopilador se encuentra en estado _Running_. Abra el menú de tres puntos para el recopilador y seleccione PAUSE. Mientras el recopilador está en pausa, no se recopilan datos desde ONTAP y no se envía ningún dato del recopilador a ONTAP. Seleccione Reanudar para comenzar a recopilar de nuevo.</block>
+  <block id="cb4cb59ec3d83f1c614ac2210509e260" category="paragraph">Si el recopilador de datos se encuentra en estado _Running_, puede pausar la recopilación. Abra el menú de tres puntos para el recopilador y seleccione PAUSE. Mientras el recopilador está en pausa, no se recopilan datos desde ONTAP y no se envía ningún dato del recopilador a ONTAP. Esto significa que no fluirán eventos de Fpolicy de ONTAP al recopilador de datos y de allí a Cloud Insights.</block>
 </blocks>

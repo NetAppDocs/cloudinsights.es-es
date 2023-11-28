@@ -31,7 +31,7 @@ NOTE: Es posible que algunas de estas funciones no estén disponibles en la edic
 
 === Seguridad de la carga de trabajo: Poner en pausa/reanudar un recopilador
 
-En Seguridad de carga de trabajo, puede pausar un recopilador de datos si el recopilador está en estado _Running_ o _Error_. Abra el menú de tres puntos para el recopilador y seleccione PAUSE. Mientras el recopilador está en pausa, no se recopilan datos desde ONTAP y no se envía ningún dato del recopilador a ONTAP. Seleccione Reanudar para comenzar a recopilar de nuevo.
+En Workload Security, puede poner en pausa un recopilador de datos si el recopilador se encuentra en estado _Running_. Abra el menú de tres puntos para el recopilador y seleccione PAUSE. Mientras el recopilador está en pausa, no se recopilan datos desde ONTAP y no se envía ningún dato del recopilador a ONTAP. Seleccione Reanudar para comenzar a recopilar de nuevo.
 
 
 

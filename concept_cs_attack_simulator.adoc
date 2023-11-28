@@ -137,7 +137,11 @@ Después de generar un ataque de ransomware para un usuario, cambie a otro usuar
 
 == Cree archivos mediante programación
 
-Antes de crear los archivos, primero debe detener el procesamiento del recopilador de datos. Realice los pasos siguientes antes de agregar el recopilador de datos al agente. Si ya ha agregado el recopilador de datos, simplemente edite el recopilador de datos, introduzca una contraseña no válida y guárdelo. Esto pondrá temporalmente el recopilador de datos en el estado de error. NOTA: Asegúrese de anotar la contraseña original.
+Antes de crear los archivos, primero debe detener o pausar el procesamiento del recopilador de datos.
+Realice los pasos siguientes antes de agregar el recopilador de datos al agente. Si ya ha agregado el recopilador de datos, simplemente edite el recopilador de datos, introduzca una contraseña no válida y guárdelo. Esto pondrá temporalmente el recopilador de datos en el estado de error. NOTA: Asegúrese de anotar la contraseña original.
+
+
+NOTE: La opción recomendada es a. link:task_add_collector_svm.html#play-pause-data-collector["pausar el recopilador"] antes de crear sus archivos.]
 
 Antes de ejecutar la simulación, primero debe agregar archivos para su cifrado. Puede copiar manualmente los archivos que se van a cifrar en la carpeta de destino o utilizar una secuencia de comandos (vea el ejemplo siguiente) para crear los archivos mediante programación. Sea cual sea el método que utilice, copie al menos 1,000 archivos.
 
@@ -169,4 +173,5 @@ se crearán archivos 1000 en la carpeta actual.
 +
 Si deshabilitó el recopilador de datos en el paso 1, edite el recopilador de datos, introduzca la contraseña correcta y guárdelo. Asegúrese de que el recopilador de datos vuelve a estar en estado de ejecución.
 
+. Si pausó el recopilador antes de seguir estos pasos, asegúrese de hacerlo link:task_add_collector_svm.html#play-pause-data-collector["reanude el recopilador"].
 
