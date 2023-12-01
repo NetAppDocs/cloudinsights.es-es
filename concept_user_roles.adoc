@@ -104,7 +104,10 @@ En la siguiente tabla, se muestran los permisos de Cloud Insights concedidos a c
 | Colectores de datos: Agregar/modificar/sondeo/Eliminar | Y | N | N 
 
 
-| Notificaciones: Ver/modificar | Y | N | N 
+| Notificaciones: Ver | Y | Y | Y 
+
+
+| Notificaciones: Modificar | Y | N | N 
 
 
 | Consultas: Crear/modificar/Eliminar | Y | Y | N 
