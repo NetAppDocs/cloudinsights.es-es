@@ -355,62 +355,6 @@
   <block id="0a4ac1ecc5652cf6314b1fb6b7e5b26c" category="cell">Nombre de usuario de la cuenta de administrador</block>
   <block id="d1e01fccb5204e881668149831422740" category="cell">Contraseña para la cuenta de administrador</block>
   <block id="49c74cfc814defdf4c6e66676f86702d" category="cell">Puerto TCP utilizado para conectarse a la matriz. El valor predeterminado es 9440.</block>
-  <block id="fbf36f3c6d60eb5668138c4d75d88089" category="summary">Recopilador de datos de NetApp Config Advisor</block>
-  <block id="88e2274e499f8ed26ef4781524c0c669" category="doc">Recopilador de datos de NetApp Config Advisor</block>
-  <block id="6046ad7e81a04054b1054dd18be646fc" category="paragraph">Este recopilador de datos adquiere datos de configuración de sistemas de almacenamiento que ejecutan ONTAP y switches conectados mediante llamadas de solo lectura. Este recopilador de datos también ejecuta validación de la configuración y comprobaciones del estado de toda la pila de configuración del clúster de ONTAP para identificar los problemas de cableado, configuración, resiliencia, disponibilidad y seguridad.</block>
-  <block id="ad1fa18840d24ed6975856dc6929d1ca" category="paragraph">Cloud Insights adquiere datos de configuración de ONTAP y los switches con el recopilador de datos de Config Advisor. Para cada tipo de activo adquirido, se muestra la terminología más común utilizada para el activo. Al ver o solucionar problemas de este recopilador de datos, tenga en cuenta la siguiente terminología:</block>
-  <block id="29caeecf8c2860ef16376efde64f566c" category="inline-image-macro">lista desplegable que muestra la etiqueta métrica del asesor de configuración</block>
-  <block id="e9adec50c1719bc25df0c99f074f2d62" category="paragraph">Además, debe tener en cuenta que las métricas de Config Advisor estarán disponibles en la consola y en otras consultas con la etiqueta _netapp_ontap.configAdvisor_.<block ref="3cb2c1d441e158e4834a77dea830d323" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="24b9e08fd1f7ee3ff738c574a84a91af" category="section-title">Terminología de Config Advisor</block>
-  <block id="06d58427354787f0e6d7c893fe2243bc" category="paragraph">Los siguientes términos se aplican a objetos o referencias que puede encontrar en paneles de Config Advisor.</block>
-  <block id="30c7128fd20d47795972c28c056858e9" category="section-title">Resumen del dispositivo</block>
-  <block id="744d9871512feec9f51d65f3dd1c47ab" category="list-text">Tipo/tipo de dispositivo: Tipo del dispositivo en la fuente de datos: Controladora/switch de almacenamiento</block>
-  <block id="624932da51cedff9d7ac173a91c610a1" category="list-text">Proveedor/subtipo: El mismo nombre de proveedor que vería si estuviera configurando un nuevo origen de datos.</block>
-  <block id="7d43a6f99fa2a91e1af6d7d2c7c18f13" category="list-text">Nombre de host: Nombre de host configurado en el origen de datos.</block>
-  <block id="cb46dd80b8d9a5b9d45de5e217aaa9df" category="list-text">Versión: Versión del sistema operativo o del firmware.</block>
-  <block id="b1fa038342539dd3908a11c162ea4c27" category="section-title">Resultados de regla</block>
-  <block id="36dce5e2b74a110ae5a36da007cf06f5" category="list-text">Regla: Comprobación que se ejecuta con el sistema analizando la desviación de la configuración de las prácticas recomendadas o identificando problemas conocidos.</block>
-  <block id="7f571e862fdd40095520423d149828d8" category="list-text">Nombre de regla: Nombre abreviado de la regla o comprobación que se ejecuta.</block>
-  <block id="f742f640bcdf429ec002619c5b306bfb" category="list-text">ID de regla: Identificador de la regla.</block>
-  <block id="d5f2db6c184f1d03095ebed8fab38f6d" category="list-text">Destino: Componente en el que se aplica la regla. Sería un nombre de clúster, nodo o switch.</block>
-  <block id="07e9e3b11dbfe13fae2d6a989de1722c" category="list-text">Impacto: Impacto del riesgo en el sistema. Los niveles de impacto se clasifican como se indica a continuación</block>
-  <block id="f9465122ea451d5ec730ea7884c2879f" category="list-text">Impacto alto: Posible pérdida de acceso a datos o pérdida prolongada de redundancia de nodo</block>
-  <block id="59917e42806fa2d873b1567e2fab2ed8" category="list-text">Impacto medio: Degradación del rendimiento o pérdida a corto plazo de redundancia de nodo.</block>
-  <block id="0296cc1b8c1bba2993b2bf444d65e226" category="list-text">Bajo impacto: Escenarios de bajo impacto</block>
-  <block id="35c28fe615929955e070ca34eea74a58" category="list-text">Recomendación: Desviaciones de las mejores prácticas documentadas</block>
-  <block id="da671d02becd0b448278c88d7cae5f0c" category="list-text">Descripción: Breve descripción del error.</block>
-  <block id="4684fb2fabd191161c08c96564158dfa" category="list-text">Detalles: Descripción detallada del error que enumera los componentes afectados</block>
-  <block id="107a9bd1e11fd68e05b0eca047c2d0a3" category="list-text">Recomendaciones: Vínculos a artículos de la base de conocimientos o documentación de NetApp que proporcionan información adicional sobre riesgos o soluciones.</block>
-  <block id="32e0e75cce51d9a86e3d9548e662cad3" category="list-text">Debe tener acceso a una cuenta de administrador configurada para tener acceso de solo lectura a las llamadas SSH y ONTAPa través de ONTAP.</block>
-  <block id="0a51523b7b104781f9276319d7728e78" category="list-text">Debe tener acceso a una cuenta de administrador configurada para tener acceso de solo lectura para las llamadas SSH en los switches si son parte de la recopilación</block>
-  <block id="905f005d189dfca41c588dfb3a86c577" category="list-text">Entre los detalles de la cuenta se incluye el nombre de usuario y la contraseña Opcionalmente, puede pasar la clave privada SSH si ONTAP está configurado para la autenticación basada en clave SSH o la autenticación multifactor (MFA)</block>
-  <block id="ccdc4e4e1923b0b16ce7eea299ea4163" category="list-text">Requisitos de puerto: 22, 80 o 443</block>
-  <block id="6598e142ccb1746c77267497f22d951b" category="list-text">Nombre de función de sólo lectura para ssh o para la aplicación ontapi en el Vserver predeterminado</block>
-  <block id="3b8258085ea914c50770f05a8c8040cf" category="list-text">Cuenta de administrador con al menos permisos de solo lectura en switches</block>
-  <block id="881e28667d3bfa6ea28cdd40ef5acdb4" category="cell">Habilite la MFA para ONTAP</block>
-  <block id="892219065257846dd04f00fcdffe9e12" category="cell">Marque esta opción para activar la autenticación multifactor en ONTAP</block>
-  <block id="fab1bac8f68d0e85c7d853e7cc89dee8" category="cell">Clave privada SSH</block>
-  <block id="b243383d42c261781fda74277075a9bf" category="cell">Pegue el contenido de la clave privada SSH si ONTAP está usando la autenticación de clave SSH o la MFA</block>
-  <block id="1ad2c997667844425cb79936e5d49437" category="cell">Puerto ONTAP SSH</block>
-  <block id="043854f925a3ddec09321e61f0796cb1" category="cell">Permite especificar un puerto SSH personalizado para la conexión ONTAP</block>
-  <block id="1e5fb47b2115f5fd80852bf2d19f9931" category="cell">Puerto SSH del switch</block>
-  <block id="3d56802b24eb9202180b8a5869ee4f5a" category="cell">Permite especificar un puerto SSH personalizado para la conexión de switch</block>
-  <block id="dfdfdc8cf35c1a03b11bc6b5c58e09f8" category="cell">Intervalo de sondeo (min)</block>
-  <block id="a0c828f2046ae9b82d4a8bcdc9c02147" category="cell">El valor predeterminado es de 1440 minutos o 24 horas. Puede establecer un mínimo de hasta 60 minutos</block>
-  <block id="6cc75295aec583ed79034eb36a15cdae" category="section-title">Sistemas operativos compatibles</block>
-  <block id="3c4d9416409219cf9622042be0436a75" category="paragraph">Config Advisor se puede ejecutar en los siguientes sistemas operativos. Si el recopilador está instalado en una unidad de adquisición con sistema operativo que no está en esta lista, las colecciones fallarán.</block>
-  <block id="1c9b42d9cdad3e650c7fc63dfa544dd3" category="list-text">Windows 10 (64 bits)</block>
-  <block id="f943cc21622ce70821e7210ca18fa6dd" category="list-text">Windows 2012 R2 Server (64 bits)</block>
-  <block id="d58eb715e810c3f2ac46575a5aacd90b" category="list-text">Windows 2016 Server (64 bits)</block>
-  <block id="7785a24bb948afb1d1b24ea64d912ee6" category="list-text">Windows 2019 Server (64 bits)</block>
-  <block id="d5955c6525a9a5ef57ea83f30159a996" category="list-text">Red Hat Enterprise Linux (RHEL) 7.7 y posterior (64 bits)</block>
-  <block id="64f069bd95ef26cdc0d665c7b1dfdf15" category="list-text">Ubuntu 14.0 y posterior</block>
-  <block id="6a9aea5a3e6edbc2fbcfb0b82e833894" category="section-title">Soporte y vídeo</block>
-  <block id="d8c4d821533431837ec1b03f5fad4fe4" category="paragraph">Vea estos vídeos para saber cómo instalar el recopilador de datos y usar los paneles para sacar el máximo partido de Config Advisor en Cloud Insights:</block>
-  <block id="e66d50cebc6c93b253c97ae0dec229f2" category="section-title">Instalación y configuración del recopilador de datos:</block>
-  <block id="cff2fb2b5c25be825b4648d0960cad38" category="section-title">Crear un panel de Config Advisor:</block>
-  <block id="ffdc0a4c20353f02a36d86c39af145b7" category="section-title">Otro soporte</block>
-  <block id="fa53b8785b0f7af8203d347d9f3e6edb" category="paragraph">Si tiene otras preguntas asociadas a Config Advisor, abra una incidencia de la herramienta Config Advisor haciendo clic en Ayuda -&gt; Abrir incidencia de soporte.</block>
   <block id="8b720a56569a3c7ab2f160ab1eda080e" category="summary">Mostrar leyendas en los widgets del panel.</block>
   <block id="d40435902e9d2aff211851b4be9e2a25" category="paragraph">Los widgets de los paneles se pueden mostrar con o sin leyendas.</block>
   <block id="82908db5a2e57cb0c3c9c7daae713304" category="paragraph">Al mostrar el panel, las leyendas de los widgets pueden activarse o desactivarse haciendo clic en el botón *Opciones* del widget y seleccionando *Mostrar leyendas* en el menú.</block>
@@ -2397,7 +2341,6 @@
   <block id="c5865855c43d734069987786177edd98" category="sidebar">Hyper-V.</block>
   <block id="117bdbda976fe8b3212bc3b6327a0a1b" category="sidebar">Cloud Volumes ONTAP</block>
   <block id="b81efc5684c71c82d1f7592812e5af66" category="sidebar">Cloud Volumes Services para AWS</block>
-  <block id="f9be17421d77a57baae245776004d9fc" category="sidebar">Config Advisor</block>
   <block id="9c58e11f96200548fd2f5932b391509a" category="sidebar">Software de gestión de datos ONTAP</block>
   <block id="7bb16842baaba3fd3ce157e27d9652f3" category="sidebar">Data ONTAP 7-Mode</block>
   <block id="4a17f9505c41e2b9d2fdf8e21809e428" category="sidebar">E-Series</block>
@@ -8101,8 +8044,6 @@
   <block id="3d569988d784be7b4a432df70e13153d" category="cell"><block ref="3d569988d784be7b4a432df70e13153d" category="inline-link-macro-rx"></block></block>
   <block id="acb242e4a47b7f1537825e1c4eacc87a" category="inline-link-macro">Conexión cloud de NetApp para ONTAP 9.9 o posterior</block>
   <block id="32b322f0c18e116c5d878598d8fedae2" category="cell"><block ref="32b322f0c18e116c5d878598d8fedae2" category="inline-link-macro-rx"></block></block>
-  <block id="e7e11e47420c10995bd13aa4ca018d9d" category="inline-link-macro">Config Advisor de NetApp</block>
-  <block id="b0dfae0e334f78eb272eea393c0dbe9c" category="cell"><block ref="b0dfae0e334f78eb272eea393c0dbe9c" category="inline-link-macro-rx"></block></block>
   <block id="995d9995da501d3734932d95524f1a35" category="inline-link-macro">Data ONTAP 7-Mode de NetApp</block>
   <block id="2e59af567907cf6ad1ae87c0cac8e6dd" category="cell"><block ref="2e59af567907cf6ad1ae87c0cac8e6dd" category="inline-link-macro-rx"></block></block>
   <block id="0311befd4f8a4eb64d5f02957a8b1d99" category="inline-link-macro">E-Series de NetApp</block>
@@ -12920,10 +12861,15 @@ Realice los pasos siguientes antes de agregar el recopilador de datos al agente.
   <block id="78803855559e90468b9778e0cfe3fb9d" category="paragraph">Cloud Insights utiliza el recopilador REST FOS de Brocade para descubrir inventario y rendimiento de los dispositivos de switch Brocade que ejecutan el firmware de FabricOS (FOS) 8,2 y posteriores.</block>
   <block id="2a8ee44741d591b5a5bbaeb9a53b8601" category="paragraph">De forma predeterminada, este recopilador intentará descubrir todos los dispositivos FOS que forman parte de todas las telas de las que forma parte el conmutador.</block>
   <block id="632dd9f1c3d874c126028ed203b0dd9f" category="paragraph">Cloud Insights adquiere la siguiente información de inventario del recopilador de DATOS REST DE Brocade FOS. Para cada tipo de activo adquirido por Cloud Insights, se muestra la terminología más común utilizada para este activo. Al ver o solucionar problemas de este recopilador de datos, tenga en cuenta la siguiente terminología:</block>
-  <block id="de498d77f85838129d5e5e0244f3218d" category="list-text">Debe haber conectividad IP a todos los switches de la estructura. Si activa la casilla de comprobación _Discover all switches in the fabric_, Cloud Insights identifica todos los switches de la estructura; sin embargo, necesita conectividad IP con estos switches adicionales para detectarlos.</block>
-  <block id="52ee9cef67200578c869ec0a47f47d75" category="cell">Lista separada por comas de ID de dispositivo para excluir del sondeo.</block>
   <block id="809ecc8a9a52f55bd82e3c640ecb9190" category="cell">Seleccione para detectar todos los switches de la estructura.</block>
   <block id="5ed56420d721e3c99ed9cd5fe2bb84c1" category="cell">Elija si desea preferir el HBA o los alias de zona.</block>
   <block id="42bf55c2417a1711c1eea84d1c100c52" category="cell">HTTP o HTTPS.</block>
   <block id="fd2660e8af5b6a90d0b853f19433e552" category="cell">Especifique un puerto si no utiliza el valor predeterminado.</block>
+  <block id="fa54865ee3e5060e95de2db0939bb141" category="list-text">Debe haber conectividad TCP para todos los switches de la estructura. Este tipo de recopilador de datos probará sin problemas tanto HTTP como HTTPS de cada dispositivo de la estructura. Si activa la casilla de comprobación _Discover all switches in the fabric_, Cloud Insights identifica todos los switches de la estructura; sin embargo, necesita conectividad TCP con estos switches adicionales para detectarlos.</block>
+  <block id="0c5002d65cc5f10f6e18141ac2704b54" category="list-text">La misma cuenta es necesaria globalmente en todos los switches del entramado. Puede utilizar la interfaz web del dispositivo para confirmar el acceso.</block>
+  <block id="bf05c9a08b659ee97017024af4c9309f" category="cell">Dirección IP o nombre de dominio completo del conmutador FOS</block>
+  <block id="e22e1a04d650adc7ca588d795e7461c2" category="cell">Lista separada por comas de direcciones del dispositivo IPv4 para excluir del sondeo.</block>
+  <block id="7339b2d54f0d972dcd8f403df7ed08df" category="cell">Tenga en cuenta que esta configuración solo cambia qué protocolo CI intenta utilizar primero por dispositivo; CI intentará el protocolo opuesto automáticamente si falla el valor predeterminado</block>
+  <block id="5ea4f4a83e327d73eba3355881f8048d" category="cell">La función de prueba me advierte de que no se puede acceder a un protocolo</block>
+  <block id="8eb07dc327c14e3d1af48bf6f3b15f2a" category="cell">Un dispositivo Brocade FOS 8,2+ solo querrá hablar en HTTP o HTTPS. Si un conmutador tiene un certificado digital instalado, el conmutador emitirá errores HTTP si se intenta comunicarse con HTTP sin cifrar frente a HTTPS. La función de prueba intenta la comunicación con HTTP y HTTPS: Si la prueba le indica que un protocolo pasa, puede guardar el recopilador de forma segura y no preocuparse de que el otro protocolo no se haya realizado correctamente, el recopilador intentará ambos protocolos durante la recopilación y solo fallará si ninguno de los dos funciona.</block>
 </blocks>

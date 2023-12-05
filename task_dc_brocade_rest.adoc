@@ -60,8 +60,8 @@ Nota: Sólo son asignaciones de terminología comunes y es posible que no repres
 
 == Requisitos
 
-* Debe haber conectividad IP a todos los switches de la estructura. Si activa la casilla de comprobación _Discover all switches in the fabric_, Cloud Insights identifica todos los switches de la estructura; sin embargo, necesita conectividad IP con estos switches adicionales para detectarlos.
-* La misma cuenta es necesaria globalmente en todos los switches del entramado. Puede utilizar PuTTY (emulador de terminal de código abierto) para confirmar el acceso.
+* Debe haber conectividad TCP para todos los switches de la estructura. Este tipo de recopilador de datos probará sin problemas tanto HTTP como HTTPS de cada dispositivo de la estructura. Si activa la casilla de comprobación _Discover all switches in the fabric_, Cloud Insights identifica todos los switches de la estructura; sin embargo, necesita conectividad TCP con estos switches adicionales para detectarlos.
+* La misma cuenta es necesaria globalmente en todos los switches del entramado. Puede utilizar la interfaz web del dispositivo para confirmar el acceso.
 
 
 
@@ -73,7 +73,7 @@ Nota: Sólo son asignaciones de terminología comunes y es posible que no repres
 | Campo | Descripción 
 
 
-| Cambie IP | Dirección IP o nombre de dominio completo del servidor EFC 
+| Cambie IP | Dirección IP o nombre de dominio completo del conmutador FOS 
 
 
 | Nombre de usuario | Nombre de usuario del conmutador 
@@ -90,7 +90,7 @@ Nota: Sólo son asignaciones de terminología comunes y es posible que no repres
 | Campo | Descripción 
 
 
-| Dispositivos excluidos | Lista separada por comas de ID de dispositivo para excluir del sondeo. 
+| Dispositivos excluidos | Lista separada por comas de direcciones del dispositivo IPv4 para excluir del sondeo. 
 
 
 | Intervalo de sondeo de inventario (mín.) | Intervalo entre sondeos de inventario. El valor predeterminado es 60. 
@@ -105,10 +105,10 @@ Nota: Sólo son asignaciones de terminología comunes y es posible que no repres
 | Tipo de conexión | HTTP o HTTPS. 
 
 
-| Anular puerto TCP | Especifique un puerto si no utiliza el valor predeterminado. 
+| Tenga en cuenta que esta configuración solo cambia qué protocolo CI intenta utilizar primero por dispositivo; CI intentará el protocolo opuesto automáticamente si falla el valor predeterminado | Anular puerto TCP 
 
 
-| Intervalo de sondeo de rendimiento (s) | Intervalo entre sondeos de rendimiento. El valor predeterminado es 300. 
+| Especifique un puerto si no utiliza el valor predeterminado. | Intervalo de sondeo de rendimiento (s) 
 |===
 
 
@@ -125,7 +125,7 @@ Algunas cosas para intentar si tiene problemas con este recopilador de datos:
 | Problema: | Pruebe lo siguiente: 
 
 
-| La adquisición de inventario del origen de datos de Brocade falla con el error: ERROR <date> <time> [com.onaro.sanscreen.acquisition.framework.datasource.BaseDataSource] error 2 de 2: <datasource name> [error interno] - no se puede generar el modelo para el dispositivo <IP>. Mensaje de error de detección ([<name> de nombre de dispositivo]: No se puede generar el modelo para <IP> de dispositivo. Mensaje de error al detectar) | El problema puede deberse a que el switch Brocade tarde demasiado en volver con un aviso, superando el tiempo de espera predeterminado de 5 segundos. En la configuración avanzada del recopilador de datos en Cloud Insights, intente aumentar el tiempo de espera de _SSH Banner Wait (seg)_ a un valor más alto. 
+| La función de prueba me advierte de que no se puede acceder a un protocolo | Un dispositivo Brocade FOS 8,2+ solo querrá hablar en HTTP o HTTPS. Si un conmutador tiene un certificado digital instalado, el conmutador emitirá errores HTTP si se intenta comunicarse con HTTP sin cifrar frente a HTTPS. La función de prueba intenta la comunicación con HTTP y HTTPS: Si la prueba le indica que un protocolo pasa, puede guardar el recopilador de forma segura y no preocuparse de que el otro protocolo no se haya realizado correctamente, el recopilador intentará ambos protocolos durante la recopilación y solo fallará si ninguno de los dos funciona. 
 
 
 | Error: "Cloud Insights recibido no válido rol de chasis" | Compruebe que el usuario configurado en este origen de datos ha obtenido el permiso de función de chasis. 
