@@ -232,9 +232,6 @@ Lista alfabética de recopiladores de datos compatibles con Cloud Insights:
 | link:task_dc_na_cloud_connection.html["Conexión cloud de NetApp para ONTAP 9.9 o posterior"] | De almacenamiento 
 
 
-| link:task_dc_na_ca.html["Config Advisor de NetApp"] | De almacenamiento 
-
-
 | link:task_dc_na_7mode.html["Data ONTAP 7-Mode de NetApp"] | De almacenamiento 
 
 
