@@ -151,7 +151,7 @@ Debe indicar su *número de serie* de Cloud Insights a su representante de venta
 
 NOTE: Debe ser propietario o administrador de una cuenta para poder aplicar una suscripción a AWS Marketplace a su cuenta de prueba de Cloud Insights existente. Además, debe tener una cuenta de Amazon Web Services (AWS).
 
-Al hacer clic en el enlace de Amazon Marketplace, se abre AWS link:https://aws.amazon.com/marketplace/pp/B07HM8QQGY["Cloud Insights"] página de suscripción, donde puede completar su suscripción. Tenga en cuenta que los valores introducidos en la calculadora no se rellenan en la página de suscripción de AWS; deberá introducir el número total de unidades administradas en esta página.
+Al hacer clic en el enlace de Amazon Marketplace, se abre AWS https://aws.amazon.com/marketplace/pp/prodview-pbc3h2mkgaqxe["Cloud Insights"] página de suscripción, donde puede completar su suscripción. Tenga en cuenta que los valores introducidos en la calculadora no se rellenan en la página de suscripción de AWS; deberá introducir el número total de unidades administradas en esta página.
 
 Después de haber introducido el recuento total de unidades administradas y haber elegido el plazo de suscripción de 12 o 36 meses, haga clic en *Configurar su cuenta* para finalizar el proceso de suscripción.
 
