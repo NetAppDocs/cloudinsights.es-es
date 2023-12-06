@@ -326,10 +326,10 @@ Siga estos pasos:
 +
 ** Descargar e instalar (predeterminado):
 +
- installerName=cloudinsights-kubernetes.sh … && sudo -E -H ./$installerName --download –-install
+ installerName=cloudinsights-rhel_centos.sh … && sudo -E -H ./$installerName --download –-install
 ** Solo descarga:
 +
- installerName=cloudinsights-kubernetes.sh … && sudo -E -H ./$installerName --download
+ installerName=cloudinsights-rhel_centos.sh … && sudo -E -H ./$installerName --download
 
 
 
