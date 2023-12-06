@@ -217,7 +217,7 @@ Las advertencias se muestran cuando el uso de la unidad gestionada supera el 80%
 
 == Suscríbase directamente y evite la prueba
 
-También puede suscribirse a Cloud Insights directamente desde el link:https://aws.amazon.com/marketplace/pp/B07HM8QQGY["Mercado AWS"], sin crear primero un entorno de prueba. Una vez finalizada la suscripción y configurada su entorno, se suscribirá inmediatamente.
+También puede suscribirse a Cloud Insights directamente desde el https://aws.amazon.com/marketplace/pp/prodview-pbc3h2mkgaqxe["Mercado AWS"], sin crear primero un entorno de prueba. Una vez finalizada la suscripción y configurada su entorno, se suscribirá inmediatamente.
 
 
 
