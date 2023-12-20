@@ -12151,16 +12151,6 @@ V9,2.4,2</block>
   <block id="8c5de4bef31a79ea191d0f5740fcd0d7" category="paragraph">Cloud Insights ha hecho que sea más fácil mostrar y encontrar información del recopilador de datos:</block>
   <block id="203714762dd5efde1be30c09220249eb" category="list-text">*El procesamiento de listas de recopiladores de datos* es más eficiente, lo que significa que el tiempo que se tarda en mostrar y navegar por estas listas se reduce considerablemente. Si tiene un entorno grande con muchos recopiladores de datos, verá una mejora significativa al enumerar sus recopiladores de datos.</block>
   <block id="213f6f47f9ff1cc9f4851725d89b4a7e" category="list-text">La matriz de soporte * Data Collector ha pasado de un archivo .PDF a una página basada en .HTML, de navegación más rápida y fácil de mantener. Consulte la nueva matriz aquí:<block ref="8ac5ec571a7bfa27b3b068af3462bfb9" category="inline-link-rx"></block></block>
-  <block id="76bcb8d1f49c96aae75d78c035df4a9b" category="cell">Un equipo que ejecuta una versión con licencia de uno de los siguientes:
-
-* CentOS (64 bits): 7,2 a 7,9, Stream 8, Stream 9
-* Debian (64 bits): 9 y 10
-* Oracle Enterprise Linux (64 bits): 7,5 a 7,9, 8,1 a 8,4
-* Red Hat Enterprise Linux (64 bits): 7,2 a 7,9, 8,1 a 8,7, 9,1
-* Rocky 9,0, 9,1
-* Servidor Ubuntu: 18,04 y 20,04 LTS
-
-Este equipo no debe ejecutar ningún otro software de nivel de aplicación. Se recomienda un servidor dedicado.</block>
   <block id="bef6178937f26cf5776d5c67e6c1d23c" category="cell">net-observer-l4-ds toleraciones adicionales.</block>
   <block id="5549e3ded48b31ecc7b00b810fa6b7ea" category="cell">Acciones correctivas</block>
   <block id="dacff74646dd80517d0cffd123266041" category="cell">Gravedad/Umbral</block>
@@ -12924,4 +12914,22 @@ Realice los pasos siguientes antes de agregar el recopilador de datos al agente.
   <block id="cec6efc84112c97bd14aba77f80d27d1" category="paragraph">Al seleccionar una alerta de forma similar, se proporcionan detalles sobre la alerta, incluido el monitor que activó la alerta, así como un gráfico que muestra una línea de tiempo visual para la alerta.</block>
   <block id="cf6b021661e577ef1017b5fe1ce38625" category="section-title">Página Lista de WebHooks</block>
   <block id="5bd2d7e216efca647c8b9d69cedb9410" category="paragraph">En la página de la lista WebHooks, se muestra el Nombre, Creado por, Creado en, Estado, Seguro, y Último campo registrado.</block>
+  <block id="160f07c3cffd1000365e042aeeaeb427" category="cell">Un equipo que ejecuta una versión con licencia de uno de los siguientes:
+
+* CentOS (64 bits): 7,2 a 7,9, Stream 8, Stream 9
+* Debian (64 bits): 9 y 10
+* Oracle Enterprise Linux (64 bits): 7,5 a 7,9, 8,1 a 8,4
+* Red Hat Enterprise Linux (64 bits): 7,2 a 7,9, 8,1 a 8,7, 9,1
+* Rocky 9,0, 9,1
+* Servidor Ubuntu: 18,04 y 20,04 LTS
+
+Este equipo no debe ejecutar ningún otro software de nivel de aplicación. Se recomienda un servidor dedicado.
+
+&lt;&lt;&lt;&lt;&lt;&lt; SELinux
+Si está ejecutando SELinux, se recomienda ejecutar los siguientes comandos en el sistema de unidades de adquisición:
+
+ _sudo semanage fcontext -a -t usr_t «/opt/netapp/cloudinsights(/.*)?»_
+ _Sudo restorecon -R /opt/netapp/cloudinsights_
+=======
+&gt;&gt;&gt;&gt;&gt;&gt;&gt; principal</block>
 </blocks>
