@@ -12922,4 +12922,6 @@ Realice los pasos siguientes antes de agregar el recopilador de datos al agente.
   <block id="48a3bc3cb899a72fd89e65ce93812a1b" category="inline-image-macro">Desplegar Panel de Detalles de Fallos</block>
   <block id="14414cf8ddb2977c5888a488317daa8d" category="paragraph"><block ref="14414cf8ddb2977c5888a488317daa8d" category="inline-image-macro-rx" type="image"></block></block>
   <block id="cec6efc84112c97bd14aba77f80d27d1" category="paragraph">Al seleccionar una alerta de forma similar, se proporcionan detalles sobre la alerta, incluido el monitor que activó la alerta, así como un gráfico que muestra una línea de tiempo visual para la alerta.</block>
+  <block id="cf6b021661e577ef1017b5fe1ce38625" category="section-title">Página Lista de WebHooks</block>
+  <block id="5bd2d7e216efca647c8b9d69cedb9410" category="paragraph">En la página de la lista WebHooks, se muestra el Nombre, Creado por, Creado en, Estado, Seguro, y Último campo registrado.</block>
 </blocks>
