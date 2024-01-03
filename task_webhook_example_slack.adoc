@@ -34,9 +34,6 @@ image:Webhooks_Slack_Create_Webhook.png["Cree Slack Webhook"]
 
 * Vaya a Webanzuelos entrantes, haga clic en _Activar Webanzuelos entrantes_, solicitar _Agregar nuevo Webhook_ y seleccione el canal en el que enviar.
 * Copie la URL de Webhook. Deberá pegarlo en la configuración de webhook de Cloud Insights.
-+
-image:Webhook_Slack_Config.jpg["Dirección URL de Slack Webhook"]
-
 
 
 
