@@ -30,6 +30,7 @@ NOTE: La seguridad de carga de trabajo no está disponible en la edición federa
 
 * Se requiere el privilegio sudo para la instalación, la ejecución de scripts y la desinstalación.
 * Al instalar el agente, se crean en el equipo un usuario local _cssys_ y un grupo local _cssys_. Si la configuración de permisos no permite la creación de un usuario local y, en su lugar, requiere Active Directory, se debe crear un usuario con el nombre de usuario _cssys_ en el servidor de Active Directory.
+* Puede leer acerca de la seguridad de Cloud Insights link:security_overview.html["aquí"].
 
 
 

@@ -26,6 +26,8 @@ En este tema se describe cómo agregar unidades de adquisición y se describen l
 
 NOTE: Para obtener informes precisos de auditoría y datos, se recomienda encarecidamente sincronizar el tiempo en la máquina de la unidad de adquisición mediante *Protocolo de tiempo de red (NTP)* o *Protocolo simple de tiempo de red (SNTP)*.
 
+Más información sobre la seguridad de Cloud Insights link:security_overview.html["aquí"].
+
 
 
 == Adición de una unidad de adquisición de Linux

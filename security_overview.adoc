@@ -108,3 +108,9 @@ Todo el personal de Cloud Insights se somete a una formación en seguridad, desa
 === Cumplimiento de normativas
 
 Cloud Insights realiza auditorías y validaciones independientes de terceros de la empresa de APEM externa con licencia de su seguridad, procesos y servicios, incluida la finalización de la auditoría SOC 2.
+
+
+
+=== Notificaciones de seguridad de NetApp
+
+Es posible ver las notificaciones de seguridad disponibles de NetApp link:https://security.netapp.com/advisory/["aquí"].
