@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: task_create_application.html 
-summary: Se crean reglas de anotación para aplicar anotaciones automáticamente a varios activos basándose en los criterios definidos. 
+summary: Defina las aplicaciones que luego se aplican a los activos del entorno según sea necesario. 
 keywords: application, create application, 
 ---
 = Creación de aplicaciones

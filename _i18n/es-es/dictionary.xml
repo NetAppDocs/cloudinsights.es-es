@@ -778,7 +778,6 @@
   <block id="8c2e7ed091a4f8575b17f8af2bb59449" category="cell">Compruebe que el servicio REST esté activado en este dispositivo.</block>
   <block id="8bf875173a6afe9bba37e4713c91c421" category="cell">"Error de configuración " con el mensaje de error "Usuario no autorizado para comando"</block>
   <block id="be63a0599db0a9d29e7d2b328c74dc03" category="cell">Probablemente debido a ciertos roles (por ejemplo, 'Advanced_Analytics') no se incluyen para el &lt;userName&gt; de usuario configurado. Solución posible: * Corrija el ámbito de análisis (estadística) para el usuario ${user} con la función de sólo lectura: - En la pantalla Configuración -&gt; usuarios, coloque el ratón sobre el rol y haga doble clic para permitir la edición - Seleccione "Analytics" en el menú desplegable ámbito. Aparece una lista de las propiedades posibles. - Haga clic en la casilla de verificación situada más arriba y seleccionará las tres propiedades. - Haga clic en el botón Agregar situado a la derecha. - Haga clic en el botón aplicar situado en la parte superior derecha de la ventana emergente. Se cerrará la ventana emergente.</block>
-  <block id="2837a19125070133e6e88f25d23f955b" category="summary">Se crean reglas de anotación para aplicar anotaciones automáticamente a varios activos basándose en los criterios definidos.</block>
   <block id="e42dae64f8e80d611352315992a2460d" category="doc">Creación de aplicaciones</block>
   <block id="a2f4ff91518afeccf570d0fb794c2f7f" category="paragraph">Para realizar un seguimiento de los datos asociados con aplicaciones específicas que se ejecutan en su entorno, puede definir las aplicaciones en Cloud Insights.</block>
   <block id="598c4639acaf0f3c5a419f9cf865ef56" category="paragraph">Si desea asociar la aplicación a una entidad de negocio, debe crear la entidad de negocio antes de definir la aplicación.</block>
@@ -12931,5 +12930,5 @@ Si está ejecutando SELinux, se recomienda ejecutar los siguientes comandos en e
   <block id="eebaff443664fe8dffc2c87c72413ce8" category="paragraph">Más información sobre la seguridad de Cloud Insights <block ref="543da5bd260d801b98cf781252e71d7c" category="inline-link-macro-rx"></block>.</block>
   <block id="33443a936cc78a75cfb9473405764a37" category="section-title">Notificaciones de seguridad de NetApp</block>
   <block id="eaf8ac7783e69f8aba13d1bece2acbd5" category="paragraph">Es posible ver las notificaciones de seguridad disponibles de NetApp <block ref="c748e422d42ad69f84a6f8d804551466" category="inline-link-macro-rx"></block>.</block>
-  <block id="5d0efaff5017b27ebd557fe6acfbf979" category="paragraph">security login create -user-or-group-name csuser -application ontapi -authmethod password -role csrole -vserver &lt;vservername&gt;</block>
+  <block id="570e0fa2a37c6838af341575ad05aec5" category="summary">Defina las aplicaciones que luego se aplican a los activos del entorno según sea necesario.</block>
 </blocks>
