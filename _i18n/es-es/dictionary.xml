@@ -12927,4 +12927,9 @@ Si está ejecutando SELinux, se recomienda ejecutar los siguientes comandos en e
   <block id="1169bc31edb2122ab9876b9b0289225c" category="paragraph">Para eliminar el permiso del operador de supervisión de Kubernetes de NetApp para ver los secretos en todo el clúster, elimine los siguientes recursos del archivo _operator-setup.yaml_ antes de instalar:</block>
   <block id="1790cdbccc4ddd4389eb90d73e043f4b" category="paragraph">Si se trata de una actualización, suprima también los recursos del clúster:</block>
   <block id="a66e68a20b3b94a700f3a3b9baa06764" category="paragraph">Si el análisis de cambios está activado, modifique _AgentConfiguration_ o _operator-config.yaml_ para anular el comentario de la sección de gestión de cambios e incluya _kindsToIgnoreFromWatch: ''secrets''_ en la sección de gestión de cambios. Observe la presencia y posición de comillas simples y dobles en esta línea.</block>
+  <block id="efe846805e5476fec607bbf54e45dc44" category="section-title">A enero de 2024</block>
+  <block id="03fe115860a60e02eaf2df94adba350a" category="section-title">Seguridad de cargas de trabajo mejorada</block>
+  <block id="c8bb883652ae26ad6b1ae229879d02ef" category="paragraph">Seguridad de la carga de trabajo incluye las siguientes mejoras:</block>
+  <block id="39d95be3c95b6807c34781066d955324" category="list-text">Se han mejorado los algoritmos de detección para reducir el número de advertencias de falsos positivos.</block>
+  <block id="ee1e8678e1e060e50af00e870fcbfa17" category="list-text">El rendimiento de la interfaz de usuario se ha mejorado al cargar, mostrar y desplazarse por las páginas de análisis forense.</block>
 </blocks>

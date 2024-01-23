@@ -25,6 +25,21 @@ NOTE: Es posible que algunas de estas funciones no estén disponibles en la edic
 
 
 
+== A enero de 2024
+
+
+
+=== Seguridad de cargas de trabajo mejorada
+
+Seguridad de la carga de trabajo incluye las siguientes mejoras:
+
+* Se han mejorado los algoritmos de detección para reducir el número de advertencias de falsos positivos.
+* El rendimiento de la interfaz de usuario se ha mejorado al cargar, mostrar y desplazarse por las páginas de análisis forense.
+
+
+'''
+
+
 == Diciembre de 2023
 
 
