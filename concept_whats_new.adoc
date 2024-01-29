@@ -29,6 +29,45 @@ NOTE: Es posible que algunas de estas funciones no estén disponibles en la edic
 
 
 
+=== Pruebe las funciones de Cloud Insights que aún no ha utilizado
+
+Además de su prueba inicial de Cloud Insights, también puede aprovechar link:/concept_subscribing_to_cloud_insights.html#module-trials["Pruebas de módulos"]. Por ejemplo, si está suscrito a Cloud Insights y ha supervisado el almacenamiento y las máquinas virtuales, al agregar Kubernetes a su entorno, entrará automáticamente en una prueba de 30 días de Kubernetes Observability. El uso de la unidad gestionada de Kubernetes Observability no contará con respecto a tu derecho suscrito hasta que finalice el período de prueba.
+
+
+
+=== ¿Cuál es el nivel de salud de mis cargas de trabajo?
+
+El estado de la carga de trabajo está disponible de un vistazo en la página *Kubernetes > Explorar > Cargas de trabajo*, de modo que puede ver rápidamente qué cargas de trabajo se ejecutan bien y cuáles pueden necesitar ayuda.
+
+image:WorkloadHealth.png["Estado de la carga de trabajo de un vistazo"]
+
+
+
+=== Actualizaciones del recopilador de datos
+
+
+
+==== Identificación de dominio de datos
+
+El recopilador de Data Domain se ha mejorado para identificar mejor los sistemas de alta disponibilidad para la durabilidad en los eventos de conmutación por error. Este cambio provocará una reidentificación *una vez* de los dispositivos de Data Domain en los sistemas de alta disponibilidad, lo que provocará que se eliminen las anotaciones en esos activos (porque estas matrices se volverán a identificar). Tendrá que volver a adjuntar anotaciones a sus objetos de Data Domain.
+
+
+
+=== Seguridad de cargas de trabajo mejorada
+
+Seguridad de la carga de trabajo incluye las siguientes mejoras:
+
+* Se han mejorado los algoritmos de detección para reducir el número de advertencias de falsos positivos.
+* El rendimiento de la interfaz de usuario se ha mejorado al cargar, mostrar y desplazarse por las páginas de análisis forense.
+
+
+'''
+
+
+== A enero de 2024
+
+
+
 === Seguridad de cargas de trabajo mejorada
 
 Seguridad de la carga de trabajo incluye las siguientes mejoras:
