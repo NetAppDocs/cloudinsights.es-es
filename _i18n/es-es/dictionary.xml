@@ -12599,7 +12599,6 @@ Este equipo no debe ejecutar ningún otro software de nivel de aplicación. Se r
   <block id="49eec5d17a233960170b22a7e35d15a7" category="paragraph">Las filas que muestran una comprobación están activas. X indica los dispositivos inactivos.</block>
   <block id="94199173f712baeb6cb5de3780bf07fa" category="cell">Inventory recent status: Datos inesperados recuperados -Array informó 0 volume</block>
   <block id="7e7b57722f915378d4f91beba7dfeeda" category="cell">Normalmente indica un problema de autorización (no autenticación). Asegúrese de que sus credenciales sean correctas y que el nombre de usuario pueda enumerar todos los volúmenes y ver sus atributos.</block>
-  <block id="ff4b0f3d8b62285c71936aba1b29d4cc" category="list-text">Haga clic en *AObservabilidad &gt; Colectores &gt; Unidades de adquisición &gt; +Unidad de adquisición*</block>
   <block id="293bcc0e7d6a9406090147d0fa8794ee" category="list-text">Haga clic en *Observabilidad &gt; Colectores &gt; Unidades de adquisición* para comprobar el estado de las Unidades de adquisición.</block>
   <block id="2e275d8e6835810edeb214f1d2d93419" category="list-text">Haga clic en *Observabilidad &gt; Colectores &gt; Unidades de adquisición &gt; +Unidad de adquisición* .</block>
   <block id="304161318d9b8fb676a16c964b6f8f50" category="list-text">Haga clic en * &gt; Observabilidad &gt; Colectores &gt; Unidades de adquisición* para comprobar el estado de las unidades de adquisición.</block>
@@ -12957,4 +12956,5 @@ Si está ejecutando SELinux, se recomienda ejecutar los siguientes comandos en e
   <block id="d3717aec38baca9f86dd49ee974d2ccf" category="paragraph">Una vez adquiridos los eventos del sistema ONTAP, la página Forenses de Seguridad de Carga de Trabajo mostrará los eventos Acceso Denegado. Además de la información mostrada, puede ver los permisos de usuario que faltan para una operación en particular agregando la columna _Desired Activity_ a la tabla desde el icono de engranaje.</block>
   <block id="fb4e4dc5cb185934a7a50a8b788d9a18" category="inline-image-macro">Evento de acceso denegado de ejemplo</block>
   <block id="ad7abfbe23406b97a783bcc153795841" category="paragraph"><block ref="ad7abfbe23406b97a783bcc153795841" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="fa7fb7843c2ca38571ee7a2500a1072e" category="list-text">Haga clic en *Observabilidad &gt; Colectores &gt; Unidades de adquisición &gt; +Unidad de adquisición*</block>
 </blocks>

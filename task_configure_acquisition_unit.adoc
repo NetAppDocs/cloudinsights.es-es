@@ -38,7 +38,7 @@ Más información sobre la seguridad de Cloud Insights link:security_overview.ht
 
 .Pasos para la instalación de la unidad de adquisición de Linux
 . Inicie sesión como administrador o propietario de cuenta en su entorno de Cloud Insights.
-. Haga clic en *AObservabilidad > Colectores > Unidades de adquisición > +Unidad de adquisición*
+. Haga clic en *Observabilidad > Colectores > Unidades de adquisición > +Unidad de adquisición*
 +
 El sistema muestra el cuadro de diálogo _Install Acquisition Unit_ (instalar unidad de adquisición). Elija Linux.
 
