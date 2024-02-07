@@ -25,13 +25,18 @@ NOTE: Es posible que algunas de estas funciones no estén disponibles en la edic
 
 
 
-== A enero de 2024
+== Febrero de 2024
 
 
 
 === API de seguridad de cargas de trabajo
 
 Las nuevas API de seguridad de carga de trabajo están disponibles para administrar los recopiladores de datos (agregar/actualizar/suprimir) y los agentes. Navegue hasta *Admin > API Access > API Documentation* y seleccione el tipo de API _Workload Security_ para obtener más información.
+
+'''
+
+
+== A enero de 2024
 
 
 
