@@ -29,9 +29,9 @@ NOTE: Es posible que algunas de estas funciones no estén disponibles en la edic
 
 
 
-=== API de seguridad de cargas de trabajo
+=== API de recopilador de datos de seguridad de carga de trabajo
 
-Las nuevas API de seguridad de carga de trabajo están disponibles para administrar los recopiladores de datos (agregar/actualizar/suprimir) y los agentes. Navegue hasta *Admin > API Access > API Documentation* y seleccione el tipo de API _Workload Security_ para obtener más información.
+En entornos de gran tamaño, puede automatizar la creación de recopiladores de seguridad de carga de trabajo con la nueva API de recopiladores de datos. Navegue hasta *Admin > API Access > API Documentation* y seleccione el tipo de API _Workload Security_ para obtener más información.
 
 '''
 
@@ -64,13 +64,11 @@ El recopilador de Data Domain se ha mejorado para identificar mejor los sistemas
 
 
 
-=== Seguridad de cargas de trabajo mejorada
+=== Algoritmo DE APRENDIZAJE AUTOMÁTICO con detección de ransomware mejorado
 
-Seguridad de la carga de trabajo incluye las siguientes mejoras:
+Workload Security incluye un nuevo algoritmo de APRENDIZAJE AUTOMÁTICO de detección de ransomware de 2nd generación para detectar los ataques más sofisticados de forma más rápida y precisa.
 
-* Se han mejorado los algoritmos de detección para reducir el número de advertencias de falsos positivos.
-* El rendimiento de la interfaz de usuario se ha mejorado al cargar, mostrar y desplazarse por las páginas de análisis forense.
-
+“Estacionalidad” de los comportamientos: El comportamiento de fin de semana puede seguir patrones diferentes de los días de la semana, o el comportamiento de la mañana a partir de la tarde. Los algoritmos de seguridad de la carga de trabajo tienen en cuenta esta estacionalidad.
 
 '''
 
