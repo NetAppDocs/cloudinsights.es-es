@@ -160,7 +160,7 @@ Antes de esta mejora, es probable que solo los switches FOS 9,1.1c sin estructur
 
 La seguridad de la carga de trabajo se ha mejorado con lo siguiente:
 
-* *Acceso denegado*: La seguridad de la carga de trabajo se integra con ONTAP para recibir eventos de “Acceso denegado” y proporcionar una capa adicional de análisis y respuestas automáticas.
+* *Acceso denegado*: La seguridad de la carga de trabajo se integra con ONTAP para recibir link:concept_ws_integration_with_ontap_access_denied.html["Eventos de acceso denegado"] y proporcionar una capa adicional de análisis y respuestas automáticas.
 * *Tipos de archivos permitidos*: Si se detecta un ataque de ransomware para una extensión de archivo conocida, esa extensión de archivo se puede agregar a un link:ws_allowed_file_types.html["tipos de archivo permitidos"] lista para evitar alertas innecesarias.
 
 

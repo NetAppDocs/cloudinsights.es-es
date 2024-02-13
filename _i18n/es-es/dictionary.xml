@@ -12636,7 +12636,6 @@ Consulte la sección referencia de proveedores del recopilador de datos de la do
   <block id="dfe1b74026ff6682b451240881e76be4" category="list-text">8777 para Gnocchi Performance Service</block>
   <block id="ef4b4f7d7c8a48dd95b30b14ab90dd62" category="section-title">Seguridad de cargas de trabajo mejorada</block>
   <block id="ed2b4bf5978e7c4c0546efaff8756311" category="paragraph">La seguridad de la carga de trabajo se ha mejorado con lo siguiente:</block>
-  <block id="b1f51a36e1f83c62064c47e5488e10c9" category="list-text">*Acceso denegado*: La seguridad de la carga de trabajo se integra con ONTAP para recibir eventos de “Acceso denegado” y proporcionar una capa adicional de análisis y respuestas automáticas.</block>
   <block id="23cda888e57eaac9d48f4167127da1b8" category="cell">Los eventos de My kubernetes dejaron de generar informes inesperadamente para Cloud Insights.</block>
   <block id="51a7a0a9ece41f3000834202c4f9b529" category="paragraph">Este recopilador de datos adquiere datos de inventario y rendimiento de los sistemas de almacenamiento de EMC ECS. Para la configuración, el recopilador de datos requiere una dirección IP o un nombre de host del clúster ECS, así como un nombre de usuario y una contraseña.</block>
   <block id="f62de35c42266dd92c1a10e3daf56fd2" category="list-text">Dirección IP o nombre de host del cluster ECS</block>
@@ -12943,4 +12942,6 @@ telégrafo:
     ...
 ...</block>
   <block id="0f282a47af79839bfb5e052b5cb08dcd" category="cell">Edite la sección telegraf en _AgentConfiguration_ y establezca _dockerMetricCollectionEnabled_ en false. Para obtener más información, consulte el apartado del operador  <block ref="74a91e6274b6ee5f9fd240fb978eb1d9" category="inline-link-macro-rx"></block>.</block>
+  <block id="1ec5bf0286a53dd8fc091a9a9b037623" category="inline-link-macro">Eventos de acceso denegado</block>
+  <block id="f6682194485ec630bf22981ff1031e29" category="list-text">*Acceso denegado*: La seguridad de la carga de trabajo se integra con ONTAP para recibir <block ref="cf689af48c341111dcdcd455a22874dd" category="inline-link-macro-rx"></block> y proporcionar una capa adicional de análisis y respuestas automáticas.</block>
 </blocks>
