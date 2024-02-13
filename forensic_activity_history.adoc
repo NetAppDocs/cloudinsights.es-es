@@ -232,4 +232,7 @@ Ejemplo: Utilice la cadena _testvolume*_, en lugar de _*testvolume_ o _*test*vol
 
 Utilice una búsqueda basada en prefijo para ver todas las actividades debajo de una carpeta determinada de forma recursiva (búsqueda jerárquica). por ejemplo, _/path1/path2/path3_ o _“/path1/path2/path3”_ enumerará todas las actividades de forma recursiva bajo _/path1/path2/path3_.
 También puede utilizar la opción “Agregar a filtro” en la pestaña Todas las actividades. 
+
+
+| Encuentro un error de solicitud fallida con el código de estado 500/503 al utilizar un filtro de ruta. | Intente utilizar un rango de fechas más pequeño para filtrar registros. 
 |===
