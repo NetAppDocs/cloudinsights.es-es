@@ -12946,4 +12946,5 @@ telégrafo:
   <block id="f3f66b8b59d9644a598941acf89639a4" category="section-title">Algoritmo DE APRENDIZAJE AUTOMÁTICO con detección de ransomware mejorado</block>
   <block id="c8bf494d8f410006e7c19ac8fa00ded4" category="paragraph">Workload Security incluye un nuevo algoritmo de APRENDIZAJE AUTOMÁTICO de detección de ransomware de 2nd generación para detectar los ataques más sofisticados de forma más rápida y precisa.</block>
   <block id="c082d0e57443bf019246b67c029c585b" category="paragraph">“Estacionalidad” de los comportamientos: El comportamiento de fin de semana puede seguir patrones diferentes de los días de la semana, o el comportamiento de la mañana a partir de la tarde. Los algoritmos de seguridad de la carga de trabajo tienen en cuenta esta estacionalidad.</block>
+  <block id="1c31d515d2e78422350a8dfc6a331a38" category="sidebar">Integración denegada de acceso a ONTAP</block>
 </blocks>
