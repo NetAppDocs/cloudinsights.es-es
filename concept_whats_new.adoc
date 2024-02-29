@@ -5,17 +5,14 @@ summary: Nuevas funciones y funcionalidades disponibles en Cloud Insights.
 keywords: features 
 ---
 = Novedades de Cloud Insights
-:toc: macro
 :hardbreaks:
 :toclevels: 2
 :allow-uri-read: 
-:toc: 
 :toclevels: 2
 :nofooter: 
 :icons: font
 :linkattrs: 
 :imagesdir: ./media/
-:toc-position: content
 
 
 NetApp mejora y mejora continuamente sus productos y servicios. Estas son algunas de las últimas características y funcionalidades disponibles en las ediciones comerciales de Cloud Insights.
@@ -26,6 +23,52 @@ NOTE: Es posible que algunas de estas funciones no estén disponibles en la edic
 
 
 == Febrero de 2024
+
+
+
+=== Mejoras en la facilidad de uso
+
+Guarde una *instantánea* de su panel actual seleccionando _Exportar como imagen_ en la esquina desplegable de la derecha. Cloud Insights crea un .PNG de los estados actuales del widget.
+
+image:ExportAsImage.png["Exportar como imagen desplegable"]
+
+* La selección de objetos y métricas* es más fácil que nunca para widgets, monitores, etc. Elija el tipo de objeto que desee y, a continuación, seleccione una métrica relevante para ese objeto en el menú desplegable Separar.
+
+image:ObjectAndMetricSelection.png["Los selectores de objeto y de métrica se separan"]
+
+* Exporte listas de Recopiladores de Datos y Unidades de Adquisición* a .CSV seleccionando el icono en la parte superior de esas páginas.
+
+image:ExportDCList.png["Exportar listas DC y AU a .csv"]
+
+Hemos *reorganizado la página Ayuda > Soporte* para que sea más fácil encontrar lo que estás buscando, y como lo solicitaste, añadimos enlaces directos en esta página a *API Swagger* y documentación de usuario.
+
+image:Support_APIAccess.png["Enlaces de API en la página Ayuda y soporte de gt;"]
+
+*Enlaces* en la columna “TriggeredOn” en la página de la lista de Alertas navegarán a la Página de Destino apropiada, si hay una Página de Destino disponible para ese objeto.
+
+image:TriggeredOnLink.png["Enlaces en el campo de alerta TriggeredOn"]
+
+
+
+=== Ver todos los cambios en su espacio de nombres
+
+El análisis de cambios de Kubernetes ahora le permite ver una línea de tiempo de los cambios al seleccionar el clúster y el espacio de nombres. Anteriormente, la carga de trabajo también debe haberse seleccionado.  Al filtrar en Cluster y Namespace, la línea de tiempo de todos los cambios en la carga de trabajo de ese espacio de nombres se muestra en una línea.
+
+image:NamespaceTimeline.png["Línea de tiempo del espacio de nombres"]
+
+
+
+=== Registros relacionados para alertas
+
+Al visualizar una alerta de log, las entradas de log relacionadas se muestran en una nueva tabla.  Una entrada de registro está relacionada si se produce en el mismo origen y marco temporal que la alerta y está sujeta a las mismas condiciones. Selecciona “Analizar registros” para explorar más.
+
+image:RelatedLogsTable.png["Registros relacionados en una página de destino de alerta de log"]
+
+
+
+=== Recopilar datos de switch de ONTAP
+
+Cloud Insights puede recopilar datos de los switches back-end del sistema ONTAP; simplemente habilite la recopilación en la sección _Configuración avanzada_ del recopilador de datos y asegúrese de que el sistema ONTAP esté configurado para proporcionar link:https://docs.netapp.com/us-en/ontap-cli-98/system-switch-ethernet-create.html["información del interruptor"] y tiene lo apropiado link:["permisos"] configurado.
 
 
 

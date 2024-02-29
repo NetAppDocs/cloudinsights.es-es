@@ -79,7 +79,7 @@ Si ve un mensaje “Error from server (NotFound)”, su operador debe actualizar
 
 Si usted está corriendo con un <<configuring-proxy-support,proxy>>, tenga un <<using-a-custom-or-private-docker-repository,repositorio personalizado>>, o están utilizando <<openshift-instructions,OpenShift>>, lea detenidamente las siguientes secciones.
 
-Lea también sobre <<permissions,Permisos>>.
+Lea también sobre <<permisos,Permisos>>.
 
 Si va a actualizar desde una instalación anterior, lea la <<actualizar,Actualizar>> información.
 

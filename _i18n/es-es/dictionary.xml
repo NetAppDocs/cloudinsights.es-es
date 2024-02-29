@@ -1758,10 +1758,6 @@
   <block id="e9713ae04a02a810d6f33dd956f42794" category="cell">Apache</block>
   <block id="aaba4d734bb5c6c1cd828a66a204028f" category="cell">Nodo IP Nombre de nodo Puerto Padre servidor principal generación de configuración servidor principal MPM generación tiempo de actividad del servidor principal se está deteniendo</block>
   <block id="af40aea2350db56f2ccf87bd2e878384" category="cell">Bytes de trabajadores ocupados por bytes de solicitud por segunda CPU Children System CPU Children User CPU Load System CPU System CPU User Asynchronous Connections Closing Asynchronous Connections Writing Connections duración total per Request Idle Workers Load Average (último 1 m) Load Average (último 15 m) Load Average (últimos 5 m) Procesos solicitudes por segundo acceso total duración total total KBytes cuadro de indicadores Cerrar cuadro de indicadores DNS consultas de indicadores acabado cuadro de indicadores Limpieza en vacío cuadro de indicadores mantener activo Registro cuadro de indicadores Abrir cuadro de indicadores lectura cuadro de indicadores Enviar cuadro de indicadores iniciando cuadro de indicadores esperando</block>
-  <block id="ce090ea7bc89bd5ec37a141c636c69de" category="summary">Este tema no está listo todavía.</block>
-  <block id="4a00b82df023b0f0fb303ec1d7a1ebfc" category="doc">Este tema en construcción</block>
-  <block id="27871ea7cd2bc4814101455654163190" category="paragraph">Indulte nuestra aparición durante el periodo de vista previa de Cloud Insights. Muchos temas están aún en construcción, y éste parece ser uno de ellos. Favor de llevar con nosotros y verificar a menudo para actualizaciones de la documentación.</block>
-  <block id="ba94b4c8120f35a3763a9a410b2b6647" category="image-alt">En Construcción</block>
   <block id="b25c993d3776230a665bf577a045a77c" category="summary">Configurar el recopilador de datos de Brocade.</block>
   <block id="5dd0750dbeaff9eef9c017100d1e10be" category="doc">Configurar el recopilador de datos de Brocade Enterprise Fabric Connectivity Manager</block>
   <block id="30e633574a47b4dcb4c8ecde882af403" category="paragraph">Cloud Insights utiliza el recopilador de datos de Brocade Enterprise Fabric Connectivity Manager (EFCM) para descubrir el inventario de los switches Brocade EFCM. Cloud Insights es compatible con las versiones 9.5, 9.6 y 9.7 de EFCM.</block>
@@ -12947,4 +12943,32 @@ telégrafo:
   <block id="c8bf494d8f410006e7c19ac8fa00ded4" category="paragraph">Workload Security incluye un nuevo algoritmo de APRENDIZAJE AUTOMÁTICO de detección de ransomware de 2nd generación para detectar los ataques más sofisticados de forma más rápida y precisa.</block>
   <block id="c082d0e57443bf019246b67c029c585b" category="paragraph">“Estacionalidad” de los comportamientos: El comportamiento de fin de semana puede seguir patrones diferentes de los días de la semana, o el comportamiento de la mañana a partir de la tarde. Los algoritmos de seguridad de la carga de trabajo tienen en cuenta esta estacionalidad.</block>
   <block id="1c31d515d2e78422350a8dfc6a331a38" category="sidebar">Integración denegada de acceso a ONTAP</block>
+  <block id="2b954573bdfbf3e6f7cd041ebd3f3682" category="section-title">Mejoras en la facilidad de uso</block>
+  <block id="dd02e3f2ac2d39316775658f3f6fef9c" category="paragraph">Guarde una *instantánea* de su panel actual seleccionando _Exportar como imagen_ en la esquina desplegable de la derecha. Cloud Insights crea un .PNG de los estados actuales del widget.</block>
+  <block id="d53957f8a1aee068b3b3326766554570" category="inline-image-macro">Exportar como imagen desplegable</block>
+  <block id="37cada8c4f46b21c02df2939356a5c89" category="paragraph"><block ref="37cada8c4f46b21c02df2939356a5c89" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="5d2a24755cf47ed77e9e34a1df4ef815" category="paragraph">* La selección de objetos y métricas* es más fácil que nunca para widgets, monitores, etc. Elija el tipo de objeto que desee y, a continuación, seleccione una métrica relevante para ese objeto en el menú desplegable Separar.</block>
+  <block id="2f4107aef619081a1d89d75c6a93321e" category="inline-image-macro">Los selectores de objeto y de métrica se separan</block>
+  <block id="ea67434ac421e1de9d939a1647e74e51" category="paragraph"><block ref="ea67434ac421e1de9d939a1647e74e51" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="cda669774eba29c91f639af08adb1a4a" category="paragraph">* Exporte listas de Recopiladores de Datos y Unidades de Adquisición* a .CSV seleccionando el icono en la parte superior de esas páginas.</block>
+  <block id="6be2ffb5d4b79f5272ab1074fc6603b6" category="inline-image-macro">Exportar listas DC y AU a .csv</block>
+  <block id="c6d0dc8d7ec51429c2c7300a7f8f69a4" category="paragraph"><block ref="c6d0dc8d7ec51429c2c7300a7f8f69a4" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="d480fd0b5ff9d58e0bc8785e82c7eb5b" category="paragraph">Hemos *reorganizado la página Ayuda &gt; Soporte* para que sea más fácil encontrar lo que estás buscando, y como lo solicitaste, añadimos enlaces directos en esta página a *API Swagger* y documentación de usuario.</block>
+  <block id="6b2eef8adc0e95db95014a8b08724379" category="inline-image-macro">Enlaces de API en la página Ayuda y soporte de gt;</block>
+  <block id="4c976a75386e11bb66ac24e8ee6af999" category="paragraph"><block ref="e8dee020306df51938caf982452d1304" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="95489108ef80ef1f702494f344d95ea2" category="paragraph">*Enlaces* en la columna “TriggeredOn” en la página de la lista de Alertas navegarán a la Página de Destino apropiada, si hay una Página de Destino disponible para ese objeto.</block>
+  <block id="c032f8e7ba44d91d7b9c57d652e0a033" category="inline-image-macro">Enlaces en el campo de alerta TriggeredOn</block>
+  <block id="fffe3fe21c35b168a145c010bce26160" category="paragraph"><block ref="fffe3fe21c35b168a145c010bce26160" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="139836acf897f8ef3c4fb19d21c35155" category="section-title">Ver todos los cambios en su espacio de nombres</block>
+  <block id="9143a0f1ce37b1e53b957a49833f9322" category="paragraph">El análisis de cambios de Kubernetes ahora le permite ver una línea de tiempo de los cambios al seleccionar el clúster y el espacio de nombres. Anteriormente, la carga de trabajo también debe haberse seleccionado.  Al filtrar en Cluster y Namespace, la línea de tiempo de todos los cambios en la carga de trabajo de ese espacio de nombres se muestra en una línea.</block>
+  <block id="5ed610ab86efcfb43954fb9ef0b7a72e" category="inline-image-macro">Línea de tiempo del espacio de nombres</block>
+  <block id="0b0562ef30238191f797d9225f3024c0" category="paragraph"><block ref="0b0562ef30238191f797d9225f3024c0" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="c91be2a24e6b73c8e2a2275adc2bef10" category="section-title">Registros relacionados para alertas</block>
+  <block id="5c5683919f4c326b9a4d4e83bff8dd91" category="paragraph">Al visualizar una alerta de log, las entradas de log relacionadas se muestran en una nueva tabla.  Una entrada de registro está relacionada si se produce en el mismo origen y marco temporal que la alerta y está sujeta a las mismas condiciones. Selecciona “Analizar registros” para explorar más.</block>
+  <block id="cf7dab299bf1390e2d44ac5a3f5aef74" category="inline-image-macro">Registros relacionados en una página de destino de alerta de log</block>
+  <block id="29869d564dea811db493659e276c4afb" category="paragraph"><block ref="29869d564dea811db493659e276c4afb" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="c15484a80236e65cd94c3fa859c0aca2" category="section-title">Recopilar datos de switch de ONTAP</block>
+  <block id="ff435ef5470e714750e57427557cc34e" category="inline-link-macro">información del interruptor</block>
+  <block id="41275a535677f79ff347e01bc530c176" category="inline-link-macro">permisos</block>
+  <block id="006486695c60df697c0abcefc81426d9" category="paragraph">Cloud Insights puede recopilar datos de los switches back-end del sistema ONTAP; simplemente habilite la recopilación en la sección _Configuración avanzada_ del recopilador de datos y asegúrese de que el sistema ONTAP esté configurado para proporcionar <block ref="d459f31dbd039334427e234b6edb8373" category="inline-link-macro-rx"></block> y tiene lo apropiado <block ref="8500b277c562368e86ad7d69d1827230" category="inline-link-macro-rx"></block> configurado.</block>
 </blocks>
