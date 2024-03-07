@@ -12906,7 +12906,6 @@ Si está ejecutando SELinux, se recomienda ejecutar los siguientes comandos en e
   <block id="6e0dfd81ddc34b1c1736fb0d236a55db" category="paragraph"><block ref="6e0dfd81ddc34b1c1736fb0d236a55db" category="inline-image-macro-rx" type="image"></block></block>
   <block id="8e590479d69be0679e0d2b7c5a78d3ab" category="paragraph">Si el recopilador de datos se agrega mediante credenciales de administración de cluster, no se necesitan permisos nuevos.</block>
   <block id="a3fef797358352dd57f209719f4590ca" category="paragraph">Si el recopilador se agrega utilizando un usuario personalizado (por ejemplo, _csuser_) con permisos otorgados al usuario, siga los pasos que se indican a continuación para otorgar a Seguridad de carga de trabajo el permiso necesario para registrarse en eventos de acceso denegado con ONTAP.</block>
-  <block id="04b888e98eb37f7a0061538c4af0da8a" category="paragraph">Para csuser con credenciales _cluster_, ejecute los siguientes comandos desde la línea de comandos de ONTAP. Tenga en cuenta que _csrole_ es un rol personalizado y _csuser_ es un usuario personalizado de ONTAP.</block>
   <block id="7a1aa4b5b013e91e379aedbfb6a633f3" category="paragraph">Para csuser con credenciales _SVM_, ejecute los siguientes comandos desde la línea de comandos de ONTAP:</block>
   <block id="6b112db6b76b4a3d519b727558f34cb6" category="section-title">Acceso denegado a eventos</block>
   <block id="d3717aec38baca9f86dd49ee974d2ccf" category="paragraph">Una vez adquiridos los eventos del sistema ONTAP, la página Forenses de Seguridad de Carga de Trabajo mostrará los eventos Acceso Denegado. Además de la información mostrada, puede ver los permisos de usuario que faltan para una operación en particular agregando la columna _Desired Activity_ a la tabla desde el icono de engranaje.</block>
@@ -12983,4 +12982,5 @@ Si su organización requiere el uso de proxy para el acceso a Internet, es posib
 *.cloudinsights.netapp.com
 
 Para obtener más información, lea Acerca de Proxies <block ref="05c875968683001fc59f206218314b72" category="inline-link-macro-rx"></block> o. <block ref="554efdd06704a764ab0a7e3947e279ff" category="inline-link-macro-rx"></block>.</block>
+  <block id="b30a6e7a75eaf5af9f2106e8d96d324b" category="paragraph">Para csuser con credenciales _cluster_, ejecute los siguientes comandos desde la línea de comandos de ONTAP. Tenga en cuenta que _csrestrole_ es un rol personalizado y _csuser_ es un usuario personalizado de ONTAP.</block>
 </blocks>

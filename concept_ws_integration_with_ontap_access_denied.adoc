@@ -39,23 +39,19 @@ Si el recopilador de datos se agrega mediante credenciales de administración de
 
 Si el recopilador se agrega utilizando un usuario personalizado (por ejemplo, _csuser_) con permisos otorgados al usuario, siga los pasos que se indican a continuación para otorgar a Seguridad de carga de trabajo el permiso necesario para registrarse en eventos de acceso denegado con ONTAP.
 
-Para csuser con credenciales _cluster_, ejecute los siguientes comandos desde la línea de comandos de ONTAP. Tenga en cuenta que _csrole_ es un rol personalizado y _csuser_ es un usuario personalizado de ONTAP.
+Para csuser con credenciales _cluster_, ejecute los siguientes comandos desde la línea de comandos de ONTAP. Tenga en cuenta que _csrestrole_ es un rol personalizado y _csuser_ es un usuario personalizado de ONTAP.
 
 [listing]
 ----
-security login create -user-or-group-name csuser -application http -authmethod password -role csrole
-
-security login rest-role create -role csrole -api /api/protocols/fpolicy -access all -vserver <cluster_name>
+ security login rest-role create -role csrestrole -api /api/protocols/fpolicy -access all -vserver <cluster_name>
+ security login create -user-or-group-name csuser -application http -authmethod password -role csrestrole
 ----
 Para csuser con credenciales _SVM_, ejecute los siguientes comandos desde la línea de comandos de ONTAP:
 
 [listing]
 ----
-security login rest-role create -role csrole -api /api/protocols/fpolicy -access all -vserver <svm_name>
-
-security login create -user-or-group-name csuser -application ontapi -authmethod password -role csrole
-security login create -user-or-group-name csuser -application ssh -authmethod password -role csrole
-security login create -user-or-group-name csuser -application http -authmethod password -role csrole
+ security login rest-role create -role csrestrole -api /api/protocols/fpolicy -access all -vserver <svm_name>
+ security login create -user-or-group-name csuser -application http -authmethod password -role csrestrole -vserver <svm_name>
 ----
 
 
