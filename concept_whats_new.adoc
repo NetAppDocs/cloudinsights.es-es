@@ -22,6 +22,31 @@ NOTE: Es posible que algunas de estas funciones no estén disponibles en la edic
 
 
 
+== Marzo de 2024
+
+
+
+=== Detalles del Agente de Seguridad de Carga de Trabajo
+
+Cada uno de sus agentes de seguridad de carga de trabajo tiene su propia página de destino, donde puede ver fácilmente información de resumen sobre el agente, así como los recopiladores de directorio de usuario y datos instalados asociados con ese agente.
+
+image:Agent_Detail_Page.png["Ejemplo de página de destino de detalle de agente"]
+
+
+
+=== Grafique más datos más rápidamente
+
+Al analizar datos en la página de destino de un activo, agregar datos adicionales a los gráficos de Vista de experto es muy sencillo. Para cada tabla de la página de destino, si un tipo de objeto tiene datos relevantes, pase el ratón sobre ese objeto para mostrar el icono «Agregar a la vista experta». Al seleccionar este icono, se agrega ese objeto a los recursos adicionales y se muestra en los gráficos de la vista de experto.
+
+image:AddToChartIcon.png["Agregar datos de tabla a la vista de experto"]
+
+O tal vez quieras ver los datos de una tabla de landing page en su propio gráfico. Simplemente seleccione el icono _Show Chart_ para abrir el gráfico debajo de la tabla:
+
+image:LPTableShowChartIcon.png["Mostrar icono de gráfico"]
+
+'''
+
+
 == Febrero de 2024
 
 
@@ -68,7 +93,7 @@ image:RelatedLogsTable.png["Registros relacionados en una página de destino de 
 
 === Recopilar datos de switch de ONTAP
 
-Cloud Insights puede recopilar datos de los switches back-end del sistema ONTAP; simplemente habilite la recopilación en la sección _Configuración avanzada_ del recopilador de datos y asegúrese de que el sistema ONTAP esté configurado para proporcionar link:https://docs.netapp.com/us-en/ontap-cli-98/system-switch-ethernet-create.html["información del interruptor"] y tiene lo apropiado link:["permisos"] configurado.
+Cloud Insights puede recopilar datos de los switches back-end del sistema ONTAP; simplemente habilite la recopilación en la sección _Configuración avanzada_ del recopilador de datos y asegúrese de que el sistema ONTAP esté configurado para proporcionar link:https://docs.netapp.com/us-en/ontap-cli-98/system-switch-ethernet-create.html["información del interruptor"] y tiene lo apropiado <<a-note-about-permissions,permisos>> configurado.
 
 
 
