@@ -12961,4 +12961,10 @@ Para obtener más información, lea Acerca de Proxies <block ref="05c87596868300
   <block id="03e73ba3232dcca3cc695f108f44c898" category="inline-image-macro">Mostrar icono de gráfico</block>
   <block id="66a14226acec760a4af6f762f938df66" category="paragraph"><block ref="66a14226acec760a4af6f762f938df66" category="inline-image-macro-rx" type="image"></block></block>
   <block id="d51ad7ff0d214fb056992b26bfed4ced" category="paragraph">Cloud Insights puede recopilar datos de los switches back-end del sistema ONTAP; simplemente habilite la recopilación en la sección _Configuración avanzada_ del recopilador de datos y asegúrese de que el sistema ONTAP esté configurado para proporcionar <block ref="d459f31dbd039334427e234b6edb8373" category="inline-link-macro-rx"></block> y tiene lo apropiado <block ref="e83cb79e34a9adb49ab5c30ebb0b6c54" category="inline-xref-macro-rx"></block> configurado.</block>
+  <block id="67c73d0c05c627af68622cc01164ae15" category="inline-xref">Permisos de ONTAP</block>
+  <block id="b4adf3d9e051be6ec8f7f311fd08d8dc" category="paragraph">Lea más acerca de la configuración de otros <block ref="364cb0af9008be29fffbb0635783d098" category="inline-xref-macro-rx"></block>.</block>
+  <block id="11949a37d3edcc91b37d386025b80680" category="section-title">Permisos para la protección autónoma frente a ransomware de ONTAP</block>
+  <block id="b015c01a5cd691f38c07727636f5e429" category="paragraph">Para obtener más información, lea acerca de <block ref="619ffa717a0c9eee469ccc9f3ce569e2" category="inline-xref-macro-rx"></block></block>
+  <block id="27bc78f063867505b2f0e7f6cdd03799" category="section-title">Se han denegado los permisos para el acceso a ONTAP</block>
+  <block id="2bf48db6b4ef5793137bd23562d2759b" category="paragraph">Para obtener más información, lea acerca de <block ref="56f4e785b0c10fe49372cccb28182a22" category="inline-xref-macro-rx"></block></block>
 </blocks>
