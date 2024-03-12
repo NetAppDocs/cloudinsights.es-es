@@ -27,7 +27,7 @@ Workload Security utiliza recopiladores de datos para recopilar datos de acceso 
 
 * Este recopilador de datos es compatible con lo siguiente:
 +
-** Data ONTAP 9.2 y versiones posteriores. Para obtener el mejor rendimiento, utilice una versión de Data ONTAP donde link:https://mysupport.netapp.com/site/bugs-online/product/ONTAP/BURT/1372994["este problema"] es fijo.
+** Data ONTAP 9.2 y versiones posteriores. Para obtener el mejor rendimiento, utilice una versión de Data ONTAP superior a 9.13.1.
 ** Protocolo SMB, versión 3.1 y versiones anteriores.
 ** Protocolo NFS versión 4.0 y anteriores
 ** ONTAP 9.4 y versiones posteriores admiten FlexGroup
@@ -138,7 +138,7 @@ security login rest-role create -role arwrole -api /api/storage/volumes -access 
 security login rest-role create -api /api/security/anti-ransomware -access readonly  -role arwrole -vserver <cluster_name>
 security login create -user-or-group-name csuser -application http -authmethod password -role arwrole
 ....
-Para obtener más información, lea acerca de <<concept_cs_integration_with_ontap_arp.html,Integración con la protección autónoma de ransomware de ONTAP>>
+Para obtener más información, lea acerca de link:concept_cs_integration_with_ontap_arp.html["Integración con la protección autónoma de ransomware de ONTAP"]
 
 
 
@@ -162,7 +162,7 @@ Para csuser con credenciales _SVM_, ejecute los siguientes comandos desde la lí
  security login rest-role create -role csrestrole -api /api/protocols/fpolicy -access all -vserver <svm_name>
  security login create -user-or-group-name csuser -application http -authmethod password -role csrestrole -vserver <svm_name>
 ----
-Para obtener más información, lea acerca de link:\concept_ws_integration_with_ontap_access_denied.html["Integración con acceso ONTAP denegado"]
+Para obtener más información, lea acerca de link:concept_ws_integration_with_ontap_access_denied.html["Integración con acceso ONTAP denegado"]
 
 
 
