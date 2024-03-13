@@ -12966,4 +12966,31 @@ Para obtener más información, lea Acerca de Proxies <block ref="05c87596868300
   <block id="b497cf0f1b1568d837947f6ad7ece7af" category="list-text">Data ONTAP 9.2 y versiones posteriores. Para obtener el mejor rendimiento, utilice una versión de Data ONTAP superior a 9.13.1.</block>
   <block id="74f912aa47d1bbf141926fbf2185abdf" category="paragraph">Para obtener más información, lea acerca de <block ref="b175fa20c42bfc20eae9965f6210437c" category="inline-link-macro-rx"></block></block>
   <block id="8a943496be1ad7baf6ce391c6f895b32" category="paragraph">Para obtener más información, lea acerca de <block ref="263966d0f12d0c50ce396f6ff55a2e0d" category="inline-link-macro-rx"></block></block>
+  <block id="2b9be21f00b184f2a6ee90f1574df505" category="summary">Recopilador de DATOS REST DE ONTAP</block>
+  <block id="e61b2d254813ba4e2bc2a8a223f0e0eb" category="doc">Recopilador de DATOS REST DE NetApp ONTAP</block>
+  <block id="51c8777ccbe8cbbe060fa364f308995c" category="paragraph">Este recopilador de datos adquiere datos de inventario y rendimiento de sistemas de almacenamiento que ejecutan ONTAP utilizando llamadas de API de REST de solo lectura desde una cuenta de ONTAP. Este recopilador de datos también crea un registro en el registro de la aplicación de clúster para acelerar la compatibilidad.</block>
+  <block id="90242ff563fa212860e5c6a5b21da8f6" category="list-text">IOPS: Se deriva directamente de las llamadas REST DE ONTAP del objeto del nodo.</block>
+  <block id="ea32a37fff2b9c40d4e8dd0e0803a04b" category="list-text">Latencia: Se deriva directamente de las llamadas DE REST DE ONTAP del objeto del nodo.</block>
+  <block id="4084aa6c02ea4a6ea3d32bd1c73f4888" category="list-text">Rendimiento: Se deriva directamente de las llamadas REST DE ONTAP del objeto del nodo.</block>
+  <block id="4493cd6343183bf0a790cf01a53cddd1" category="list-text">Debe tener acceso a una cuenta de administrador configurada para llamadas de API de REST DE solo lectura.</block>
+  <block id="cc5802bcc5281dcb68264fed31e4a4a1" category="cell">Dirección IP de administración de ONTAP</block>
+  <block id="7bcaf6369b1398f73e17d298aa39db60" category="cell">Nombre de usuario REST DE ONTAP</block>
+  <block id="bdb8fd1a64839a7885f10d1e33166bec" category="cell">Contraseña REST DE ONTAP</block>
+  <block id="87a7b8cc9265881e0bc0f09c410ec474" category="cell">El valor predeterminado es 60 segundos.</block>
+  <block id="5062d1b8a50da7152b0877114d23bf65" category="cell">Seleccione esta opción para incluir datos de contador avanzado de ONTAP en sondeos.</block>
+  <block id="216ade60a8bebfa7b9ef8f8fec32e876" category="cell">Habilite la recogida de eventos de EMS</block>
+  <block id="615eb0992cfadcf1dacb23db15c3598d" category="cell">Seleccione esto para incluir los datos del evento de registro de ONTAP EMS.</block>
+  <block id="22454981300d227862b5ebd81b19f7de" category="cell">Intervalo de sondeo de EMS (seg)</block>
+  <block id="961f9cd0cfe447f73a20455c4f8f7973" category="paragraph">También debe asegurarse de que el permiso de escritura para la API de REST DE ONTAP esté habilitado. Normalmente, esto requiere una cuenta en el nivel del clúster con los permisos necesarios.</block>
+  <block id="cfb13b3b743770c7f9772001c506ed28" category="list-text">Cree un rol mediante los siguientes comandos:</block>
+  <block id="7d0153c84324ec12ea855f4910fdc574" category="paragraph">inicio de sesión de seguridad rest-role create -role {role name} -api /api -access readonly
+inicio de sesión de seguridad rest-role create -role {role name} -api /api/cluster/agents -access all</block>
+  <block id="6765c1ce40f9ed10162dff1db4e987ca" category="paragraph">servicios de vserver acceso web create -name spi -role {role name} -vserver {name from above command}
+inicio de sesión de seguridad create -user-or-group-name {username} -application http -authentication-method password -role {role name}</block>
+  <block id="7483de82186016bc69ffb8a75489f338" category="cell">Al intentar crear un recopilador de DATOS REST DE ONTAP, se muestra un error como el siguiente:
+Configuración: 10.193.70.14: La API REST de ONTAP en 10.193.70.14 no está disponible: 10.193.70.14 no se pudo OBTENER /api/cluster: 400 Solicitud incorrecta</block>
+  <block id="40c54a6b7dcfa9b1202222c4928cb872" category="cell">Esto probablemente se deba a una cabina ONTAP más antigua, por ejemplo, ONTAP 9,6), que no tiene funcionalidades de API DE REST. ONTAP 9.14.1 es la versión de ONTAP mínima admitida por el recopilador de REST DE ONTAP. Se deben esperar respuestas de «Solicitud incorrecta de 400» en versiones de ONTAP previas a LA REST.
+
+Para las versiones de ONTAP que admiten REST pero que no son 9.14.1 o posteriores, puede que aparezca el siguiente mensaje similar:
+Configuración: 10.193.98.84: ONTAP REST API en 10.193.98.84 no está disponible: 10.193.98.84: ONTAP REST API en 10.193.98.84 está disponible: cheryl5-cluster-2 9.10.1 a3cb3247-3d3c-11ee-8ff3-005056b364a7 pero no es de la versión mínima 9.14.1.</block>
 </blocks>
