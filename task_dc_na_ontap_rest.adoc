@@ -16,13 +16,13 @@ summary: Recopilador de DATOS REST DE ONTAP
 
 
 [role="lead"]
-Este recopilador de datos adquiere datos de inventario y rendimiento de sistemas de almacenamiento que ejecutan ONTAP utilizando llamadas de API de REST de solo lectura desde una cuenta de ONTAP. Este recopilador de datos también crea un registro en el registro de la aplicación de clúster para acelerar la compatibilidad.
+Este recopilador de datos adquiere inventario, registros de EMS y datos de rendimiento de sistemas de almacenamiento que ejecutan ONTAP 9.14.1 y posteriores mediante llamadas de API DE REST. Para los sistemas ONTAP en versiones anteriores, utilice el tipo de recopilador «Software de gestión de datos NetApp ONTAP» basado en ZAPI.
 
 
 
 == Terminología
 
-Cloud Insights adquiere datos de inventario y rendimiento a partir del recopilador de datos de ONTAP. Para cada tipo de activo adquirido, se muestra la terminología más común utilizada para el activo. Al ver o solucionar problemas de este recopilador de datos, tenga en cuenta la siguiente terminología:
+Cloud Insights adquiere datos de inventario, registros y rendimiento del recopilador de datos de ONTAP. Para cada tipo de activo adquirido, se muestra la terminología más común utilizada para el activo. Al ver o solucionar problemas de este recopilador de datos, tenga en cuenta la siguiente terminología:
 
 [cols="2*"]
 |===
@@ -61,7 +61,7 @@ Los siguientes términos se aplican a objetos o referencias que puede encontrar 
 
 * Model: Una lista delimitada por comas de los nombres de modelo de nodos discretos únicos dentro de este clúster. Si todos los nodos de los clústeres tienen el mismo tipo de modelo, solo aparecerá un nombre de modelo.
 * Proveedor: El mismo nombre de proveedor que se vería si estuviera configurando un nuevo origen de datos.
-* Número de serie: El número de serie de la cabina. En sistemas de almacenamiento de arquitectura en clúster como la gestión de datos de ONTAP, este número de serie puede ser menos útil que los números de serie individuales de los “nodos de almacenamiento”.
+* Número de serie: El UUID de la cabina
 * IP: Generalmente serán las IP o los hostname tal como están configurados en el origen de datos.
 * Versión de microcódigo: Firmware.
 * Capacidad bruta: Suma base 2 de todos los discos físicos del sistema, sin importar su función.
@@ -109,18 +109,12 @@ Los siguientes términos se aplican a objetos o referencias que puede encontrar 
 
 A continuación se enumeran los requisitos para configurar y utilizar este recopilador de datos:
 
-* Debe tener acceso a una cuenta de administrador configurada para llamadas de API de REST DE solo lectura.
+* Debe tener acceso a una cuenta de usuario con el nivel de acceso necesario
 * Entre los detalles de la cuenta se incluye el nombre de usuario y la contraseña
-* Requisitos del puerto: 80 o 443
+* Requisitos del puerto: 443
 * Permisos de cuenta:
 +
-** Nombre de función de solo lectura para la aplicación ontapi en el Vserver predeterminado
-** Puede que necesite permisos de escritura opcionales adicionales. Consulte la nota sobre los permisos a continuación.
-
-
-* Requisitos para la licencia de ONTAP:
-+
-** Se requiere una licencia FCP y volúmenes asignados/enmascarados para la detección de Fibre Channel
+** Funcionalmente, Cloud Insights realiza solicitudes de lectura, pero se requieren algunos permisos de escritura para que la infraestructura convergente se registre en la cabina ONTAP. Consulte la nota sobre los permisos a continuación.
 
 
 
@@ -210,9 +204,7 @@ FAS/AFF 8080
 
 == Una nota sobre los permisos
 
-Dado que varios paneles ONTAP de Cloud Insights se basan en contadores ONTAP avanzados, debe activar *Advanced Counter Data Collection* en la sección Configuración avanzada del recopilador de datos.
-
-También debe asegurarse de que el permiso de escritura para la API de REST DE ONTAP esté habilitado. Normalmente, esto requiere una cuenta en el nivel del clúster con los permisos necesarios.
+Dado que varios paneles de control ONTAP de Cloud Insights se basan en contadores ONTAP avanzados, debe mantener habilitado *Habilitar Recopilación Avanzada de Datos de Contador* en la sección de Configuración Avanzada del recopilador de datos.
 
 Para crear una cuenta local para Cloud Insights en el nivel de clúster, inicie sesión en ONTAP con el nombre de usuario/contraseña del administrador de administración del clúster y ejecute los siguientes comandos en el servidor ONTAP:
 
