@@ -12975,9 +12975,7 @@ Para obtener más información, lea Acerca de Proxies <block ref="05c87596868300
   <block id="7bcaf6369b1398f73e17d298aa39db60" category="cell">Nombre de usuario REST DE ONTAP</block>
   <block id="bdb8fd1a64839a7885f10d1e33166bec" category="cell">Contraseña REST DE ONTAP</block>
   <block id="87a7b8cc9265881e0bc0f09c410ec474" category="cell">El valor predeterminado es 60 segundos.</block>
-  <block id="5062d1b8a50da7152b0877114d23bf65" category="cell">Seleccione esta opción para incluir datos de contador avanzado de ONTAP en sondeos.</block>
   <block id="216ade60a8bebfa7b9ef8f8fec32e876" category="cell">Habilite la recogida de eventos de EMS</block>
-  <block id="615eb0992cfadcf1dacb23db15c3598d" category="cell">Seleccione esto para incluir los datos del evento de registro de ONTAP EMS.</block>
   <block id="22454981300d227862b5ebd81b19f7de" category="cell">Intervalo de sondeo de EMS (seg)</block>
   <block id="cfb13b3b743770c7f9772001c506ed28" category="list-text">Cree un rol mediante los siguientes comandos:</block>
   <block id="7d0153c84324ec12ea855f4910fdc574" category="paragraph">inicio de sesión de seguridad rest-role create -role {role name} -api /api -access readonly
@@ -12993,7 +12991,10 @@ Configuración: 10.193.98.84: ONTAP REST API en 10.193.98.84 no está disponible
   <block id="550bad6f96e635103df31a148cb33c00" category="paragraph">Este recopilador de datos adquiere inventario, registros de EMS y datos de rendimiento de sistemas de almacenamiento que ejecutan ONTAP 9.14.1 y posteriores mediante llamadas de API DE REST. Para los sistemas ONTAP en versiones anteriores, utilice el tipo de recopilador «Software de gestión de datos NetApp ONTAP» basado en ZAPI.</block>
   <block id="65e871e42dd717b74cdb0435f27e32f6" category="paragraph">Cloud Insights adquiere datos de inventario, registros y rendimiento del recopilador de datos de ONTAP. Para cada tipo de activo adquirido, se muestra la terminología más común utilizada para el activo. Al ver o solucionar problemas de este recopilador de datos, tenga en cuenta la siguiente terminología:</block>
   <block id="5eeda23f92dad663daa058631cc10210" category="list-text">Número de serie: El UUID de la cabina</block>
-  <block id="fb6ea45004cffe21e52cde14678c6744" category="list-text">Debe tener acceso a una cuenta de usuario con el nivel de acceso necesario</block>
-  <block id="c40d45712b08c1aba1ce04dd1ac4cc5e" category="list-text">Funcionalmente, Cloud Insights realiza solicitudes de lectura, pero se requieren algunos permisos de escritura para que la infraestructura convergente se registre en la cabina ONTAP. Consulte la nota sobre los permisos a continuación.</block>
   <block id="b697879d40ceeef13c6f9527808724fe" category="paragraph">Dado que varios paneles de control ONTAP de Cloud Insights se basan en contadores ONTAP avanzados, debe mantener habilitado *Habilitar Recopilación Avanzada de Datos de Contador* en la sección de Configuración Avanzada del recopilador de datos.</block>
+  <block id="992ec6f152c405f64da205561d5810c3" category="list-text">Debe tener acceso a una cuenta de usuario con el nivel de acceso requerido. Tenga en cuenta que se requieren permisos de administrador si se crea un nuevo rol/usuario de REST.</block>
+  <block id="7716cde88803d3b7d809cbffb39a1d82" category="inline-xref">Nota sobre los permisos</block>
+  <block id="267142a6c5298e3a85dfd745d6a91771" category="list-text">Funcionalmente, Cloud Insights realiza solicitudes de lectura, pero se requieren algunos permisos de escritura para que Cloud Insights se registre en la cabina ONTAP. Consulte <block ref="2cd5e7e54a305dd942a55b6d20ef8f9c" category="inline-xref-macro-rx"></block> a continuación.</block>
+  <block id="45d6bfd686219a198a0983bc084e3b92" category="cell">Seleccione esta opción para incluir datos de contador avanzado de ONTAP en sondeos. Activado de forma predeterminada.</block>
+  <block id="19decc8950209e44f521507a99ab0792" category="cell">Seleccione esto para incluir los datos del evento de registro de ONTAP EMS. Activado de forma predeterminada.</block>
 </blocks>

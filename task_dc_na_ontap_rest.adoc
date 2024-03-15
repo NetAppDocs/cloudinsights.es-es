@@ -109,12 +109,12 @@ Los siguientes términos se aplican a objetos o referencias que puede encontrar 
 
 A continuación se enumeran los requisitos para configurar y utilizar este recopilador de datos:
 
-* Debe tener acceso a una cuenta de usuario con el nivel de acceso necesario
+* Debe tener acceso a una cuenta de usuario con el nivel de acceso requerido. Tenga en cuenta que se requieren permisos de administrador si se crea un nuevo rol/usuario de REST.
 * Entre los detalles de la cuenta se incluye el nombre de usuario y la contraseña
 * Requisitos del puerto: 443
 * Permisos de cuenta:
 +
-** Funcionalmente, Cloud Insights realiza solicitudes de lectura, pero se requieren algunos permisos de escritura para que la infraestructura convergente se registre en la cabina ONTAP. Consulte la nota sobre los permisos a continuación.
+** Funcionalmente, Cloud Insights realiza solicitudes de lectura, pero se requieren algunos permisos de escritura para que Cloud Insights se registre en la cabina ONTAP. Consulte <<a-note-about-permissions,Nota sobre los permisos>> a continuación.
 
 
 
@@ -151,10 +151,10 @@ A continuación se enumeran los requisitos para configurar y utilizar este recop
 | Intervalo de sondeo de rendimiento (s) | El valor predeterminado es 60 segundos. 
 
 
-| Recopilación avanzada de datos de contador | Seleccione esta opción para incluir datos de contador avanzado de ONTAP en sondeos. 
+| Recopilación avanzada de datos de contador | Seleccione esta opción para incluir datos de contador avanzado de ONTAP en sondeos. Activado de forma predeterminada. 
 
 
-| Habilite la recogida de eventos de EMS | Seleccione esto para incluir los datos del evento de registro de ONTAP EMS. 
+| Habilite la recogida de eventos de EMS | Seleccione esto para incluir los datos del evento de registro de ONTAP EMS. Activado de forma predeterminada. 
 
 
 | Intervalo de sondeo de EMS (seg) | El valor predeterminado es 60 segundos. 
@@ -239,8 +239,8 @@ El rol y el inicio de sesión de usuario resultantes tendrán algo parecido a lo
 Role Command/ Access
 Vserver Name Directory Query Level
 ---------- ------------- --------- ------------------ --------
-cluster1 ci_readonly DEFAULT read only
-cluster1 ci_readonly security readonly
+cluster1   ci_readonly   DEFAULT   read only
+cluster1   ci_readonly   security  read only
 ....
 ....
 cluster1::security login> show
@@ -248,7 +248,7 @@ Vserver: cluster1
 Authentication Acct
 UserName    Application   Method      Role Name      Locked
 ---------   -------      ----------- -------------- --------
-ci_user     ontapi      password    ci_readonly   no
+ci_user     ontapi       password    ci_readonly    no
 ....
 
 
