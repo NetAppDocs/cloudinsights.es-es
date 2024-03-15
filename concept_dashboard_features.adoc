@@ -407,7 +407,7 @@ image::SecondaryAxisExplained.png[Ejemplo de eje secundario]
 
 == Expresiones en widgets
 
-En un panel, cualquier widget de serie temporal (línea, spline, área, área apilada), valor único, O Widget de trocha le permite crear expresiones a partir de las métricas que elija y mostrar el resultado de esas expresiones en un único gráfico. Los ejemplos siguientes utilizan expresiones para resolver problemas específicos. En el primer ejemplo, queremos mostrar IOPS de lectura como un porcentaje de IOPS total para todos los activos de almacenamiento de nuestro entorno. El segundo ejemplo proporciona visibilidad de las IOPS del "sistema" o "sobrecarga" que se producen en su entorno: Las IOPS que no se leen ni escriben directamente.
+En un panel de control, cualquier widget de serie temporal (línea, spline, área, área apilada) gráfico de barras, gráfico de columnas, gráfico circular o widget de tabla le permite crear expresiones a partir de las métricas que elija y mostrar el resultado de esas expresiones en un solo gráfico (o columna en el caso de <<expressions-in-a-table-widget,widget de tabla>>). Los ejemplos siguientes utilizan expresiones para resolver problemas específicos. En el primer ejemplo, queremos mostrar IOPS de lectura como un porcentaje de IOPS total para todos los activos de almacenamiento de nuestro entorno. El segundo ejemplo proporciona visibilidad de las IOPS del "sistema" o "sobrecarga" que se producen en su entorno: Las IOPS que no se leen ni escriben directamente.
 
 Puede utilizar variables en expresiones (por ejemplo, _$Var1 * 100_)
 
@@ -446,9 +446,6 @@ Puede agregar hasta un total de cinco variables alfabéticas para la expresión 
 El gráfico muestra el porcentaje de lectura de IOPS con el tiempo para los dispositivos de almacenamiento seleccionados. Si lo desea, puede establecer un filtro o elegir un método de acumulación diferente. Tenga en cuenta que si selecciona suma como método ROLLUP, todos los valores porcentuales se agregan juntos, lo que puede llegar a ser superior al 100%.
 
 . Haga clic en *Guardar* para guardar el gráfico en el panel de control.
-+
-También puede utilizar expresiones en los widgets de gráfico de línea, gráfico de spline o de área apilada.
-
 
 
 
@@ -499,6 +496,14 @@ El gráfico muestra el número total de IOPS como un gráfico de líneas, con un
 
 
 Para utilizar una variable en una expresión, simplemente escriba el nombre de la variable, por ejemplo, _$var1 * 100_. Sólo se pueden utilizar variables numéricas en expresiones.
+
+
+
+=== Expresiones en un widget de tabla
+
+Los widgets de tabla manejan las expresiones de manera un poco diferente. Puede tener hasta cinco expresiones en un solo widget de tabla, cada una de las cuales se agrega como una nueva columna a la tabla. Cada expresión puede incluir hasta cinco valores sobre los que realizar su cálculo. Puede fácilmente nombrar a la columna algo significativo.
+
+image:Expression Example.png["Expresión en un widget de tabla"]
 
 
 
