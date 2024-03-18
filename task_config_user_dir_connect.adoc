@@ -57,7 +57,8 @@ Configure el colector de directorios de usuarios introduciendo los datos necesar
 
 
 | Enlazar DN | Se permite que el usuario busque en el directorio. Por ejemplo: _username@companyname.com_ o _username@domainname.com_
-Además, se requiere el permiso de solo lectura de dominio. 
+Además, se requiere el permiso de solo lectura de dominio.
+El usuario debe ser miembro del grupo de seguridad _Controladores de dominio de solo lectura_. 
 
 
 | ENLAZAR contraseña | Contraseña del servidor de directorio (es decir, contraseña para el nombre de usuario utilizado en DN de enlace) 

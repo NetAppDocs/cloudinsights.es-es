@@ -9175,7 +9175,6 @@
   <block id="9a517e6700abab3e080100846703ab51" category="paragraph">Si utiliza credenciales de administración del clúster, no es necesario contar con permisos nuevos.</block>
   <block id="22c7df611bbc787fa84ac34fdd9613e0" category="paragraph">Para csuser con credenciales de clúster, haga lo siguiente desde la línea de comandos ONTAP:</block>
   <block id="5a648726ddefbfa82103a1d9ad7f888d" category="section-title">¿Cómo se habilita la función?</block>
-  <block id="d024f8c400c18ed25e7c797f6b13a110" category="list-text">Establezca “Activar acceso de usuario de bloqueo” en _Enabled_.</block>
   <block id="8bdb8cb044f5c9cc0cc87ec310782e1a" category="section-title">¿Cómo configurar el bloqueo automático de acceso de usuario?</block>
   <block id="9e228488a6769acafe8dbd4abaaa23ff" category="list-text">Cree una nueva directiva de ataque o edite una directiva de ataque existente.</block>
   <block id="0791b390bcb1883a8ca3239cf8c8deed" category="list-text">Seleccione las SVM en las que debe supervisarse la política de ataque.</block>
@@ -9193,7 +9192,6 @@
   <block id="b030dc666e324798ee9403442dd23eb1" category="paragraph">En la página de detalles de alerta y detalles de usuario, en el panel de usuario, puede ver una auditoría del historial de limitación de acceso del usuario: Tiempo, Acción (bloqueo, desbloqueo), duración, acción realizada por, IP manuales/automáticas y afectadas para NFS.</block>
   <block id="b9a6eedc929b25f1d8a4be77ee9da64b" category="section-title">¿Cómo deshabilitar la función?</block>
   <block id="6efa4058becdd76841666397b456b8bc" category="paragraph">Es posible deshabilitar la función en cualquier momento. Si hay usuarios restringidos en el sistema, primero debe restaurar su acceso.</block>
-  <block id="01aa451dc1421e1b9d5fe5148ef31be7" category="list-text">Anule la selección de “Activar acceso de usuario en bloque” para desactivarlo.</block>
   <block id="d62cebbd54827b8db7ecf72f7e55fa9a" category="paragraph">La operación se ocultará de todas las páginas.</block>
   <block id="fdf597bf8083a921059736ff839ffae8" category="section-title">Restaurar manualmente las IP para NFS</block>
   <block id="6dbbd623c3a6977270c54a9833844b28" category="list-text">Enumere todas las políticas de exportación de una SVM.</block>
@@ -9330,8 +9328,6 @@
   <block id="036ce35e40fa3fbcc9c9e500c29c6bf9" category="paragraph">El usuario está bloqueado directamente para las direcciones SMB e IP de los equipos host que provocan el ataque se bloqueará para NFS. Esas direcciones IP de la máquina no podrán acceder a ninguna de las máquinas virtuales de almacenamiento (SVM) supervisadas por Workload Security.</block>
   <block id="f19379ce165a902f81548ae9d7b2e07c" category="paragraph">Por ejemplo, pongamos por caso que Workload Security gestiona 10 SVM y que la política de respuesta automática está configurada para cuatro de esos SVM. Si el ataque se origina en una de las cuatro SVM, el acceso del usuario se bloqueará en las 10 SVM. Se sigue utilizando una snapshot en la SVM de origen.</block>
   <block id="4965f6590d5121fa73cf823f64ef219b" category="paragraph">Si utiliza un usuario personalizado (por ejemplo, _csuser_) con permisos proporcionados al usuario, siga los pasos que se indican a continuación para otorgar permisos a Workload Security para bloquear al usuario.</block>
-  <block id="8e0c9f34f42be5c07c87ecae239a8823" category="list-text">En Seguridad de carga de trabajo, vaya a *Administración &gt; Directivas de respuesta automatizadas &gt; Configuración de la directiva de respuesta &gt; Bloquear acceso de usuario*.</block>
-  <block id="d9c1a964d322cb7ed68da85eaa8a06b0" category="list-text">En Seguridad de carga de trabajo, vaya a *Administración &gt; Directivas de respuesta automatizadas &gt; Configuración de la directiva de respuesta &gt; Bloquear acceso de usuario*</block>
   <block id="ef3c0a55c240483a8b3ffe2b395d514d" category="paragraph">Siga estos pasos para restaurar manualmente cualquier IP desde ONTAP si finaliza la prueba de seguridad de la carga de trabajo o si el agente/recopilador está inactivo.</block>
   <block id="1b0bdf15231b05a92c86cf44b6c5280e" category="list-text">Elimine las reglas en todas las directivas de la SVM que tengan “cloudsecure_rule” como Client Match especificando su respectivo RuleIndex. La regla de seguridad de la carga de trabajo suele estar en 1.</block>
   <block id="a117ae2a490977bedd4a55878386b06c" category="list-text">Asegúrese de que se elimine la regla de seguridad de la carga de trabajo (paso opcional para confirmar).</block>
@@ -12721,8 +12717,6 @@ Formato de clave pública - PEM, DER-encoded X,509 SubjectPublicKeyInfo RFC 5280
   <block id="4fd45e6b48ed24b4e3dbd4f7522cab8c" category="cell">Direcciones IP o FQDN de puertas de enlace ScaleIO/PowerFlex, separadas por coma (,) o punto y coma (;)</block>
   <block id="68d34ea912eb8ba5af30d244ed0f9227" category="cell">Nombre de usuario administrador utilizado para iniciar sesión en el dispositivo ScaleIO/PowerFlex</block>
   <block id="682ba587c3d6c301fba76aadc4ddd8af" category="cell">Contraseña utilizada para iniciar sesión en el dispositivo ScaleIO/PowerFlex</block>
-  <block id="9f3d8c0615d1ceba9f0f905f22c7d950" category="cell">Se permite que el usuario busque en el directorio. Por ejemplo: _username@companyname.com_ o _username@domainname.com_
-Además, se requiere el permiso de solo lectura de dominio.</block>
   <block id="dada9839975856f2fd06228d265fea07" category="list-text">Monitorización de red:</block>
   <block id="50e4ed16bb9f1a58d102b41d11b009d5" category="list-text">Requiere Linux kernel versión 4.18.0 y superior</block>
   <block id="7ae2ba2018b8e11d966acfdd0fce7a55" category="list-text">No se admite el SO de fotones.</block>
@@ -13001,4 +12995,11 @@ Configuración: 10.193.98.84: ONTAP REST API en 10.193.98.84 no está disponible
   <block id="57b48c75a9a8cae2e174d4d2e1a20e06" category="paragraph">Los widgets de tabla manejan las expresiones de manera un poco diferente. Puede tener hasta cinco expresiones en un solo widget de tabla, cada una de las cuales se agrega como una nueva columna a la tabla. Cada expresión puede incluir hasta cinco valores sobre los que realizar su cálculo. Puede fácilmente nombrar a la columna algo significativo.</block>
   <block id="65d2c24b071888fa849372a7a32969e8" category="inline-image-macro">Expresión en un widget de tabla</block>
   <block id="87e868e2dc8c898d0c4017d8f7f66ea8" category="paragraph"><block ref="87e868e2dc8c898d0c4017d8f7f66ea8" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="6dd0ae1f18b7c9b4d5e3b4eec7ff6352" category="cell">Se permite que el usuario busque en el directorio. Por ejemplo: _username@companyname.com_ o _username@domainname.com_
+Además, se requiere el permiso de solo lectura de dominio.
+El usuario debe ser miembro del grupo de seguridad _Controladores de dominio de solo lectura_.</block>
+  <block id="644ee4d8e32f0fd5525b3665f3b1be90" category="cell">enlace: task_dc_brocade_rest.html</block>
+  <block id="690b59689f385d15b45ee131216725c7" category="list-text">En Seguridad de carga de trabajo, vaya a *Seguridad de carga de trabajo &gt; Políticas &gt; Políticas de respuesta automatizada*.  Seleccione *+Política de ataque*.</block>
+  <block id="a0e5daf37fbc5d356df1518610cdff22" category="list-text">Seleccione (marque) _Block User File Access_.</block>
+  <block id="97436105e7ddd0da98d7e0207d74958a" category="list-text">Desactive (desactive) _Bloquear acceso a archivos de usuario_.</block>
 </blocks>

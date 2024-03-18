@@ -61,254 +61,257 @@ Lista alfabética de recopiladores de datos compatibles con Cloud Insights:
 | link:task_dc_brocade_fc_switch.html["Switches Fibre Channel de Brocade"] | De almacenamiento 
 
 
-| link:task_dc_cisco_fc_switch.html["Switches Cisco MDS Fabric"] | De almacenamiento 
+| enlace: task_dc_brocade_rest.html | REST DE Brocade FOS 
 
 
-| link:task_config_telegraf_consul.html["Cónsul"] | Servicio 
+| De almacenamiento | link:task_dc_cisco_fc_switch.html["Switches Cisco MDS Fabric"] 
 
 
-| link:task_config_telegraf_couchbase.html["Couchbase"] | Servicio 
+| De almacenamiento | link:task_config_telegraf_consul.html["Cónsul"] 
 
 
-| link:task_config_telegraf_couchdb.html["CouchDB"] | Servicio 
+| Servicio | link:task_config_telegraf_couchbase.html["Couchbase"] 
 
 
-| link:task_dc_cohesity_smartfiles.html["Archivos inteligentes de Cohesity"] | De almacenamiento 
+| Servicio | link:task_config_telegraf_couchdb.html["CouchDB"] 
 
 
-| link:task_dc_emc_datadomain.html["Data Domain de Dell EMC"] | De almacenamiento 
+| Servicio | link:task_dc_cohesity_smartfiles.html["Archivos inteligentes de Cohesity"] 
 
 
-| link:task_dc_emc_ecs.html["EMC ECS de Dell"] | De almacenamiento 
+| De almacenamiento | link:task_dc_emc_datadomain.html["Data Domain de Dell EMC"] 
 
 
-| link:task_dc_emc_isilon.html["Dell EMC PowerScale (anteriormente Isilon)"] | De almacenamiento 
+| De almacenamiento | link:task_dc_emc_ecs.html["EMC ECS de Dell"] 
 
 
-| link:task_dc_emc_isilon_rest.html["REST de Dell EMC Isilon/PowerScale"] | De almacenamiento 
+| De almacenamiento | link:task_dc_emc_isilon.html["Dell EMC PowerScale (anteriormente Isilon)"] 
 
 
-| link:task_dc_emc_powerstore.html["PowerStore de Dell EMC"] | De almacenamiento 
+| De almacenamiento | link:task_dc_emc_isilon_rest.html["REST de Dell EMC Isilon/PowerScale"] 
 
 
-| link:task_dc_emc_recoverpoint.html["RecoverPoint de Dell EMC"] | De almacenamiento 
+| De almacenamiento | link:task_dc_emc_powerstore.html["PowerStore de Dell EMC"] 
 
 
-| link:task_dc_emc_scaleio.html["ScaleIO/PowerFlex de Dell EMC "] | De almacenamiento 
+| De almacenamiento | link:task_dc_emc_recoverpoint.html["RecoverPoint de Dell EMC"] 
 
 
-| link:task_dc_emc_unity.html["Dell EMC Unity"] | De almacenamiento 
+| De almacenamiento | link:task_dc_emc_scaleio.html["ScaleIO/PowerFlex de Dell EMC "] 
 
 
-| link:task_dc_emc_unisphere_rest.html["Unisphere REST de Dell EMC"] | De almacenamiento 
+| De almacenamiento | link:task_dc_emc_unity.html["Dell EMC Unity"] 
 
 
-| link:task_dc_emc_vmax_powermax.html["Familia de dispositivos VMAX/PowerMax de Dell EMC"] | De almacenamiento 
+| De almacenamiento | link:task_dc_emc_unisphere_rest.html["Unisphere REST de Dell EMC"] 
 
 
-| link:task_dc_emc_vnx_block.html["Dell EMC VNX Block Storage"] | De almacenamiento 
+| De almacenamiento | link:task_dc_emc_vmax_powermax.html["Familia de dispositivos VMAX/PowerMax de Dell EMC"] 
 
 
-| link:task_dc_emc_vnx_file.html["VNX File de Dell EMC"] | De almacenamiento 
+| De almacenamiento | link:task_dc_emc_vnx_block.html["Dell EMC VNX Block Storage"] 
 
 
-| link:task_dc_emc_vnx_unified.html["VNX Unified de Dell EMC"] | De almacenamiento 
+| De almacenamiento | link:task_dc_emc_vnx_file.html["VNX File de Dell EMC"] 
 
 
-| link:task_dc_emc_vplex.html["VPLEX de Dell EMC"] | De almacenamiento 
+| De almacenamiento | link:task_dc_emc_vnx_unified.html["VNX Unified de Dell EMC"] 
 
 
-| link:task_dc_emc_xio.html["XtremIO de Dell EMC"] | De almacenamiento 
+| De almacenamiento | link:task_dc_emc_vplex.html["VPLEX de Dell EMC"] 
 
 
-| link:task_dc_dell_xc_series.html["Serie XC de Dell"] | De almacenamiento 
+| De almacenamiento | link:task_dc_emc_xio.html["XtremIO de Dell EMC"] 
 
 
-| link:task_config_telegraf_docker.html["Docker"] | Servicio 
+| De almacenamiento | link:task_dc_dell_xc_series.html["Serie XC de Dell"] 
 
 
-| link:task_config_telegraf_elasticsearch.html["Elasticsearch"] | Servicio 
+| De almacenamiento | link:task_config_telegraf_docker.html["Docker"] 
 
 
-| link:task_config_telegraf_flink.html["Tinta"] | Servicio 
+| Servicio | link:task_config_telegraf_elasticsearch.html["Elasticsearch"] 
 
 
-| link:task_dc_fujitsu_eternus.html["ETERNUS DX de Fujitsu"] | De almacenamiento 
+| Servicio | link:task_config_telegraf_flink.html["Tinta"] 
 
 
-| link:task_dc_google_cloud.html["Google Compute y Storage"] | De almacenamiento 
+| Servicio | link:task_dc_fujitsu_eternus.html["ETERNUS DX de Fujitsu"] 
 
 
-| link:task_config_telegraf_hadoop.html["Hadoop"] | Servicio 
+| De almacenamiento | link:task_dc_google_cloud.html["Google Compute y Storage"] 
 
 
-| link:task_config_telegraf_haproxy.html["HAProxy"] | Servicio 
+| De almacenamiento | link:task_config_telegraf_hadoop.html["Hadoop"] 
 
 
-| link:task_dc_hds_hcp.html["Plataforma de contenido Hitachi (HCP)"] | De almacenamiento 
+| Servicio | link:task_config_telegraf_haproxy.html["HAProxy"] 
 
 
-| link:task_dc_hds_commandsuite.html["Suite de comandos Hitachi Vantara"] | De almacenamiento 
+| Servicio | link:task_dc_hds_hcp.html["Plataforma de contenido Hitachi (HCP)"] 
 
 
-| link:task_dc_hds_nas.html["Plataforma NAS de Hitachi Vantara"] | De almacenamiento 
+| De almacenamiento | link:task_dc_hds_commandsuite.html["Suite de comandos Hitachi Vantara"] 
 
 
-| link:task_dc_hds_ops_center.html["Centro de operaciones de Hitachi"] | De almacenamiento 
+| De almacenamiento | link:task_dc_hds_nas.html["Plataforma NAS de Hitachi Vantara"] 
 
 
-| link:task_dc_hpe_nimble.html["Almacenamiento HP Enterprise Alletra 6000 (anteriormente ágil)"] | De almacenamiento 
+| De almacenamiento | link:task_dc_hds_ops_center.html["Centro de operaciones de Hitachi"] 
 
 
-| link:task_dc_hp_3par.html["Almacenamiento de HP Enterprise Alletra 9000 / primera (anteriormente 3PAR)"] | De almacenamiento 
+| De almacenamiento | link:task_dc_hpe_nimble.html["Almacenamiento HP Enterprise Alletra 6000 (anteriormente ágil)"] 
 
 
-| link:task_dc_hpe_commandview.html["HP Enterprise Command View"] | De almacenamiento 
+| De almacenamiento | link:task_dc_hp_3par.html["Almacenamiento de HP Enterprise Alletra 9000 / primera (anteriormente 3PAR)"] 
 
 
-| link:task_dc_huawei_oceanstor.html["Dispositivos OceanStor y Dorado de Huawei"] | De almacenamiento 
+| De almacenamiento | link:task_dc_hpe_commandview.html["HP Enterprise Command View"] 
 
 
-| link:task_dc_ibm_cleversafe.html["IBM Cleversafe"] | De almacenamiento 
+| De almacenamiento | link:task_dc_huawei_oceanstor.html["Dispositivos OceanStor y Dorado de Huawei"] 
 
 
-| link:task_dc_ibm_cs.html["Serie IBM CS"] | De almacenamiento 
+| De almacenamiento | link:task_dc_ibm_cleversafe.html["IBM Cleversafe"] 
 
 
-| link:task_dc_ibm_powervm.html["PowerVM de IBM"] | De almacenamiento 
+| De almacenamiento | link:task_dc_ibm_cs.html["Serie IBM CS"] 
 
 
-| link:task_dc_ibm_svc.html["Controlador de volúmenes SAN IBM (SVC)"] | De almacenamiento 
+| De almacenamiento | link:task_dc_ibm_powervm.html["PowerVM de IBM"] 
 
 
-| link:task_dc_ibm_ds.html["IBM System Storage serie DS8000"] | De almacenamiento 
+| De almacenamiento | link:task_dc_ibm_svc.html["Controlador de volúmenes SAN IBM (SVC)"] 
 
 
-| link:task_dc_ibm_xiv.html["Almacenes IBM XIV y A9000"] | De almacenamiento 
+| De almacenamiento | link:task_dc_ibm_ds.html["IBM System Storage serie DS8000"] 
 
 
-| link:task_dc_infinidat_infinibox.html["Infinidat InfiniBox"] | De almacenamiento 
+| De almacenamiento | link:task_dc_ibm_xiv.html["Almacenes IBM XIV y A9000"] 
 
 
-| link:task_config_telegraf_jvm.html["Java"] | Servicio 
+| De almacenamiento | link:task_dc_infinidat_infinibox.html["Infinidat InfiniBox"] 
 
 
-| link:task_config_telegraf_kafka.html["Kafka"] | Servicio 
+| De almacenamiento | link:task_config_telegraf_jvm.html["Java"] 
 
 
-| link:task_config_telegraf_kapacitor.html["Kapacitor"] | Servicio 
+| Servicio | link:task_config_telegraf_kafka.html["Kafka"] 
 
 
-| link:task_config_telegraf_kibana.html["Kibana"] | Servicio 
+| Servicio | link:task_config_telegraf_kapacitor.html["Kapacitor"] 
 
 
-| link:https:task_config_telegraf_agent.html#kubernetes["Kubernetes"] | Servicio 
+| Servicio | link:task_config_telegraf_kibana.html["Kibana"] 
 
 
-| link:task_dc_lenovo.html["Serie HX de Lenovo"] | De almacenamiento 
+| Servicio | link:https:task_config_telegraf_agent.html#kubernetes["Kubernetes"] 
 
 
-| link:task_config_telegraf_memcached.html["Memcached"] | Servicio 
+| Servicio | link:task_dc_lenovo.html["Serie HX de Lenovo"] 
 
 
-| link:task_dc_ms_anf.html["Azure NetApp Files de Microsoft"] | De almacenamiento 
+| De almacenamiento | link:task_config_telegraf_memcached.html["Memcached"] 
 
 
-| link:task_dc_ms_hyperv.html["Microsoft Hyper-V"] | De almacenamiento 
+| Servicio | link:task_dc_ms_anf.html["Azure NetApp Files de Microsoft"] 
 
 
-| link:task_config_telegraf_mongodb.html["MongoDB"] | Servicio 
+| De almacenamiento | link:task_dc_ms_hyperv.html["Microsoft Hyper-V"] 
 
 
-| link:task_config_telegraf_mysql.html["MySQL"] | Servicio 
+| De almacenamiento | link:task_config_telegraf_mongodb.html["MongoDB"] 
 
 
-| link:task_dc_na_cloud_volumes_ontap.html["Cloud Volumes ONTAP de NetApp"] | De almacenamiento 
+| Servicio | link:task_config_telegraf_mysql.html["MySQL"] 
 
 
-| link:task_dc_na_cloud_volumes.html["Cloud Volumes Services de NetApp para AWS"] | De almacenamiento 
+| Servicio | link:task_dc_na_cloud_volumes_ontap.html["Cloud Volumes ONTAP de NetApp"] 
 
 
-| link:task_dc_na_cloud_connection.html["Conexión cloud de NetApp para ONTAP 9.9 o posterior"] | De almacenamiento 
+| De almacenamiento | link:task_dc_na_cloud_volumes.html["Cloud Volumes Services de NetApp para AWS"] 
 
 
-| link:task_dc_na_7mode.html["Data ONTAP 7-Mode de NetApp"] | De almacenamiento 
+| De almacenamiento | link:task_dc_na_cloud_connection.html["Conexión cloud de NetApp para ONTAP 9.9 o posterior"] 
 
 
-| link:task_dc_na_eseries.html["E-Series de NetApp"] | De almacenamiento 
+| De almacenamiento | link:task_dc_na_7mode.html["Data ONTAP 7-Mode de NetApp"] 
 
 
-| link:task_dc_na_amazon_fsx.html["Amazon FSX para ONTAP de NetApp"] | De almacenamiento 
+| De almacenamiento | link:task_dc_na_eseries.html["E-Series de NetApp"] 
 
 
-| link:task_dc_na_hci.html["Centro virtual de NetApp HCI"] | De almacenamiento 
+| De almacenamiento | link:task_dc_na_amazon_fsx.html["Amazon FSX para ONTAP de NetApp"] 
 
 
-| link:task_dc_na_cdot.html["Software de gestión de datos ONTAP de NetApp"] | De almacenamiento 
+| De almacenamiento | link:task_dc_na_hci.html["Centro virtual de NetApp HCI"] 
 
 
-| link:task_dc_na_cdot.html["ONTAP Select de NetApp"] | De almacenamiento 
+| De almacenamiento | link:task_dc_na_cdot.html["Software de gestión de datos ONTAP de NetApp"] 
 
 
-| link:task_dc_na_solidfire.html["Cabina all-flash SolidFire de NetApp"] | De almacenamiento 
+| De almacenamiento | link:task_dc_na_cdot.html["ONTAP Select de NetApp"] 
 
 
-| link:task_dc_na_storagegrid.html["StorageGRID de NetApp"] | De almacenamiento 
+| De almacenamiento | link:task_dc_na_solidfire.html["Cabina all-flash SolidFire de NetApp"] 
 
 
-| link:task_config_telegraf_netstat.html["Netstat"] | Servicio 
+| De almacenamiento | link:task_dc_na_storagegrid.html["StorageGRID de NetApp"] 
 
 
-| link:task_config_telegraf_nginx.html["Nginx"] | Servicio 
+| De almacenamiento | link:task_config_telegraf_netstat.html["Netstat"] 
 
 
-| link:task_config_telegraf_node.html["Nodo"] | Servicio 
+| Servicio | link:task_config_telegraf_nginx.html["Nginx"] 
 
 
-| link:task_dc_nutanix.html["Serie Nutanix NX"] | De almacenamiento 
+| Servicio | link:task_config_telegraf_node.html["Nodo"] 
 
 
-| link:task_dc_openstack.html["OpenStack"] | De almacenamiento 
+| Servicio | link:task_dc_nutanix.html["Serie Nutanix NX"] 
 
 
-| link:task_config_telegraf_openzfs.html["OpenZFS"] | Servicio 
+| De almacenamiento | link:task_dc_openstack.html["OpenStack"] 
 
 
-| link:task_dc_oracle_zfs.html["Aplicación de almacenamiento ZFS de Oracle"] | De almacenamiento 
+| De almacenamiento | link:task_config_telegraf_openzfs.html["OpenZFS"] 
 
 
-| link:task_config_telegraf_postgresql.html["PostgreSQL"] | Servicio 
+| Servicio | link:task_dc_oracle_zfs.html["Aplicación de almacenamiento ZFS de Oracle"] 
 
 
-| link:task_config_telegraf_puppetagent.html["Agente de Puppet"] | Servicio 
+| De almacenamiento | link:task_config_telegraf_postgresql.html["PostgreSQL"] 
 
 
-| link:task_dc_pure_flasharray.html["FlashArray de Pure Storage"] | De almacenamiento 
+| Servicio | link:task_config_telegraf_puppetagent.html["Agente de Puppet"] 
 
 
-| link:task_dc_redhat_virtualization.html["Virtualización de Red Hat"] | De almacenamiento 
+| Servicio | link:task_dc_pure_flasharray.html["FlashArray de Pure Storage"] 
 
 
-| link:task_config_telegraf_redis.html["Reedis"] | Servicio 
+| De almacenamiento | link:task_dc_redhat_virtualization.html["Virtualización de Red Hat"] 
 
 
-| link:task_config_telegraf_rethinkdb.html["RethinkDB"] | Servicio 
+| De almacenamiento | link:task_config_telegraf_redis.html["Reedis"] 
 
 
-| link:task_config_telegraf_agent.html#rhel-and-centos["RHEL  CentOS"] | Servicio 
+| Servicio | link:task_config_telegraf_rethinkdb.html["RethinkDB"] 
 
 
-| link:task_dc_rubrik_cdm.html["Rubrik CDM Storage"] | De almacenamiento 
+| Servicio | link:task_config_telegraf_agent.html#rhel-and-centos["RHEL  CentOS"] 
 
 
-| link:task_config_telegraf_agent.html#ubuntu-and-debian["Ubuntu  Debian"] | Servicio 
+| Servicio | link:task_dc_rubrik_cdm.html["Rubrik CDM Storage"] 
 
 
-| link:task_dc_vmware.html["VSphere de VMware"] | De almacenamiento 
+| De almacenamiento | link:task_config_telegraf_agent.html#ubuntu-and-debian["Ubuntu  Debian"] 
 
 
-| link:task_config_telegraf_agent.html#windows["Windows"] | Servicio 
+| Servicio | link:task_dc_vmware.html["VSphere de VMware"] 
 
 
-| link:task_config_telegraf_zookeeper.html["Zookeeper"] | Servicio 
+| De almacenamiento | link:task_config_telegraf_agent.html#windows["Windows"] 
+
+
+| Servicio | link:task_config_telegraf_zookeeper.html["Zookeeper"] 
 |===

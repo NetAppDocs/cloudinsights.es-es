@@ -50,8 +50,8 @@ security login role create -role csrole -cmddirname "vserver name-mapping" -acce
 
 == ¿Cómo se habilita la función?
 
-* En Seguridad de carga de trabajo, vaya a *Administración > Directivas de respuesta automatizadas > Configuración de la directiva de respuesta > Bloquear acceso de usuario*.
-* Establezca “Activar acceso de usuario de bloqueo” en _Enabled_.
+* En Seguridad de carga de trabajo, vaya a *Seguridad de carga de trabajo > Políticas > Políticas de respuesta automatizada*.  Seleccione *+Política de ataque*.
+* Seleccione (marque) _Block User File Access_.
 
 
 
@@ -93,8 +93,8 @@ En la página de detalles de alerta y detalles de usuario, en el panel de usuari
 
 Es posible deshabilitar la función en cualquier momento. Si hay usuarios restringidos en el sistema, primero debe restaurar su acceso.
 
-* En Seguridad de carga de trabajo, vaya a *Administración > Directivas de respuesta automatizadas > Configuración de la directiva de respuesta > Bloquear acceso de usuario*
-* Anule la selección de “Activar acceso de usuario en bloque” para desactivarlo.
+* En Seguridad de carga de trabajo, vaya a *Seguridad de carga de trabajo > Políticas > Políticas de respuesta automatizada*.  Seleccione *+Política de ataque*.
+* Desactive (desactive) _Bloquear acceso a archivos de usuario_.
 
 
 La operación se ocultará de todas las páginas.
