@@ -13003,4 +13003,5 @@ El usuario debe ser miembro del grupo de seguridad _Controladores de dominio de 
   <block id="865ccb9e69aad9a527770df196a2c282" category="list-text">Sistemas operativos (como VMware o Windows)</block>
   <block id="6244cebffae6eb1472a9a0487a099c77" category="cell">Información general del bloque iSCSI, VMFS de VMware</block>
   <block id="56079badd056a19303cc26e6a4fcc7e0" category="sidebar">VMware</block>
+  <block id="45dd5be4ea94f7d41cb728ccc4186440" category="list-text">Haga clic en *Workload Security &gt; Collectors &gt; +Data Collectors*</block>
 </blocks>

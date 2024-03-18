@@ -170,7 +170,7 @@ Para obtener más información, lea acerca de link:concept_ws_integration_with_o
 
 .Pasos para la configuración
 . Inicie sesión como administrador o propietario de cuenta en su entorno de Cloud Insights.
-. Haga clic en *Observabilidad > Colectores > +Colectores de datos*
+. Haga clic en *Workload Security > Collectors > +Data Collectors*
 +
 El sistema muestra los colectores de datos disponibles.
 
