@@ -56,7 +56,7 @@ Cloud Insights adquiere la siguiente información de inventario del recopilador 
 | Pool de almacenamiento | Pool de almacenamiento 
 
 
-| Información general sobre el bloque de iSCSI, VMFS de VMware | Share 
+| Información general del bloque iSCSI, VMFS de VMware | Share 
 
 
 | Sistema remoto con replicación | Sincronización 
