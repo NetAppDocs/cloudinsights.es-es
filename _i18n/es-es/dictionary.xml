@@ -5994,7 +5994,6 @@
   <block id="e706090ac76b3e56523819912497e0f6" category="cell">16 GB DE MEMORIA RAM</block>
   <block id="da65b8cea76748b286bd905feef4a5fa" category="cell">Espacio disponible en disco</block>
   <block id="e09245effc62059e51f926fad603e413" category="inline-link-macro">resolución de problemas</block>
-  <block id="64ecfa2ee741849d8a5def32fdb1eef6" category="cell">El espacio en disco se debe asignar de esta manera: /Opt/netapp 35 GB (mínimo) Si /opt es una carpeta montada desde un almacenamiento NAS, asegúrese de que los usuarios locales tienen acceso a esta carpeta. Puede que el agente o el recopilador de datos no se instalen si los usuarios locales no tienen permiso para esta carpeta. consulte <block ref="b8e4bfa44cc0a900c6c15b3a86438fdc" category="inline-link-macro-rx"></block> para obtener más información.</block>
   <block id="eec89088ee408b80387155272b113256" category="cell">Red</block>
   <block id="74a747110c8997f51592b496d16006be" category="cell">50-55 GB para Linux, el espacio en disco se debe asignar de esta manera: /Opt/netapp 25-30 GB /var/log/netapp 25 GB</block>
   <block id="7049e466c3c4a154b7cc62cffe2ca36b" category="section-title">Recomendaciones adicionales</block>
@@ -13019,4 +13018,11 @@ El usuario debe ser miembro del grupo de seguridad _Controladores de dominio de 
   <block id="fd3eaf47a54b3fb99f483aa91af951ad" category="cell">Comunicación con ONTAP para eventos de Fpolicy. Estos puertos deben abrirse hacia el agente de seguridad de carga de trabajo para que ONTAP le envíe eventos, incluido cualquier firewall del propio agente de seguridad de carga de trabajo (si está presente).</block>
   <block id="a5bc5e25da90f0de3436e66f223df7bc" category="inline-link-macro">Asignación de ONTAPI a REST DE ONTAP 9.14.1</block>
   <block id="6e2fe63a1853939e7fbcdfb785f57e86" category="admonition">El recopilador REST DE ONTAP puede usarse como reemplazo del recopilador basado en ONTAPI anterior. Como tal, puede haber diferencias en las métricas que se recopilan o informan. Para obtener más información sobre las diferencias entre ONTAPI y REST, consulte la <block ref="239e0ab1e46437458ce3ffae42b58457" category="inline-link-macro-rx"></block> documentación.</block>
+  <block id="e8e49e7a35d758d776738dccc87a87b1" category="cell">El espacio en disco se debe asignar de esta manera:
+/Opt/netapp 35 GB (mínimo)
+
+Nota: Se recomienda asignar un poco de espacio adicional en el disco para permitir la creación del sistema de archivos. Asegúrese de que hay al menos 35 GB de espacio libre en el sistema de archivos.
+
+
+Si /opt es una carpeta montada de un almacenamiento NAS, asegúrese de que los usuarios locales tengan acceso a esta carpeta. Puede que el agente o el recopilador de datos no se instalen si los usuarios locales no tienen permiso para esta carpeta. consulte <block ref="b8e4bfa44cc0a900c6c15b3a86438fdc" category="inline-link-macro-rx"></block> para obtener más información.</block>
 </blocks>
