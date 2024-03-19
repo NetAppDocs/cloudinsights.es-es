@@ -13002,4 +13002,23 @@ El usuario debe ser miembro del grupo de seguridad _Controladores de dominio de 
   <block id="56079badd056a19303cc26e6a4fcc7e0" category="sidebar">VMware</block>
   <block id="45dd5be4ea94f7d41cb728ccc4186440" category="list-text">Haga clic en *Workload Security &gt; Collectors &gt; +Data Collectors*</block>
   <block id="d0c65e48e2de27f37b54853eb602f10b" category="cell">Agente de Seguridad de Carga de Trabajo</block>
+  <block id="13dc8fdf158db5a2d5b4333f157d56f1" category="summary">Recopilador de Resolver de Host de Base de Datos Genérica</block>
+  <block id="7ca1df328d6c4c2791d1be4c81d122dc" category="doc">Resolución de host de base de datos genérica de NetApp</block>
+  <block id="bf69c00bf7c53458f130b812692fec27" category="paragraph">Este recopilador de datos adquiere inventario</block>
+  <block id="cf6810c807663f7e67a6dad9b4e3f30d" category="paragraph">Cloud Insights adquiere el inventario de este recopilador.</block>
+  <block id="7cfb24a71b3d4346f06e58f1c56504c4" category="cell">Dirección IP del servidor de BASE DE DATOS</block>
+  <block id="fc0adf601bb47f61aeb001d2ca0fd014" category="cell">Dirección IP del servidor de base de datos</block>
+  <block id="44265ee9a4e77507b46127bd8bb9410e" category="cell">Puerto del servidor DE BASE DE DATOS</block>
+  <block id="8bffa07e351ddd5d04e99bb6b9da0978" category="cell">el valor predeterminado es 3306</block>
+  <block id="6ed1c3c7709b624446439652394447b6" category="cell">Nombre de clase de conductor cualificado</block>
+  <block id="b39e9ab46f4a173d584dd68f9f196576" category="cell">Nombre de clase para el controlador.</block>
+  <block id="8fb99cf573d4a413b2e37c63794eb3e0" category="cell">URL del controlador JDBC</block>
+  <block id="b89af963baa6e82f8621a668c14fbcd4" category="cell">URL para el controlador</block>
+  <block id="81658e723498b806a42aa7f578056dcf" category="cell">Consulta SQL</block>
+  <block id="ce3d730f469529eeaf2c008d233c540b" category="cell">Consulta utilizada para devolver datos de la tabla</block>
+  <block id="0405664c8ac697fdc068d704ac81f69f" category="cell">Intervalo de sondeo de inventario (mín.)</block>
+  <block id="63c34e2f1175f732874e4e180adeffd2" category="cell">Active la conexión SSL</block>
+  <block id="d0768c091a340f3c6007fff30de3ea50" category="cell">Seleccione esta opción para activar la conexión a través de SSL</block>
+  <block id="ac5ff7aa53ae721accfc89d2e8327f56" category="cell">Alias de WWN de informe</block>
+  <block id="2d97586297f1c09c58d04825a03405cf" category="cell">Seleccione para informar sobre el alias WWN</block>
 </blocks>
