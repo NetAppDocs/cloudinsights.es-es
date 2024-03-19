@@ -6020,7 +6020,6 @@
   <block id="9bf305870fa281c6eff0d16d2e8d6b6d" category="cell">Comunicación API con ONTAP</block>
   <block id="c1d0965e767c67506aa60bc80d5b716e" category="cell">35000 - 55000</block>
   <block id="2c2ee9a7d99b7adb60d6152c3090a0f0" category="cell">Direcciones IP de LIF de datos de SVM</block>
-  <block id="3931fc64139cf87ea57a9ac2d318fe52" category="cell">Comunicación con ONTAP para eventos de Fpolicy</block>
   <block id="8f14e45fceea167a5a36dedd4bea2543" category="cell">7</block>
   <block id="abd4328c725637aabedbd02d3b7ffd40" category="cell">Bidireccional</block>
   <block id="46a1d0dbde96d466dadd916b9b7a7d65" category="section-title">Ajuste de tamaño del sistema</block>
@@ -13021,4 +13020,5 @@ El usuario debe ser miembro del grupo de seguridad _Controladores de dominio de 
   <block id="d0768c091a340f3c6007fff30de3ea50" category="cell">Seleccione esta opción para activar la conexión a través de SSL</block>
   <block id="ac5ff7aa53ae721accfc89d2e8327f56" category="cell">Alias de WWN de informe</block>
   <block id="2d97586297f1c09c58d04825a03405cf" category="cell">Seleccione para informar sobre el alias WWN</block>
+  <block id="fd3eaf47a54b3fb99f483aa91af951ad" category="cell">Comunicación con ONTAP para eventos de Fpolicy. Estos puertos deben abrirse hacia el agente de seguridad de carga de trabajo para que ONTAP le envíe eventos, incluido cualquier firewall del propio agente de seguridad de carga de trabajo (si está presente).</block>
 </blocks>

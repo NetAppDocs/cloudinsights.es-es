@@ -126,7 +126,7 @@ Tenga en cuenta que al agregar _link:task_add_collector_svm.html#permissions-whe
 | TCP | 443 | Agente de Seguridad de Carga de Trabajo | Dirección IP de gestión del clúster o de SVM (según la configuración del recopilador SVM) | Comunicación API con ONTAP 
 
 
-| TCP | 35000 - 55000 | Direcciones IP de LIF de datos de SVM | Agente de Seguridad de Carga de Trabajo | Comunicación con ONTAP para eventos de Fpolicy 
+| TCP | 35000 - 55000 | Direcciones IP de LIF de datos de SVM | Agente de Seguridad de Carga de Trabajo | Comunicación con ONTAP para eventos de Fpolicy. Estos puertos deben abrirse hacia el agente de seguridad de carga de trabajo para que ONTAP le envíe eventos, incluido cualquier firewall del propio agente de seguridad de carga de trabajo (si está presente). 
 
 
 | TCP | 7 | Agente de Seguridad de Carga de Trabajo | Direcciones IP de LIF de datos de SVM | Unidireccional entre ONTAP y Seguridad de Carga de Trabajo. El agente hace ping a las LIF de SVM. 
