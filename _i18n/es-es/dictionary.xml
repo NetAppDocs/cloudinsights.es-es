@@ -13026,4 +13026,7 @@ Nota: Se recomienda asignar un poco de espacio adicional en el disco para permit
 Si /opt es una carpeta montada de un almacenamiento NAS, asegúrese de que los usuarios locales tengan acceso a esta carpeta. Puede que el agente o el recopilador de datos no se instalen si los usuarios locales no tienen permiso para esta carpeta. consulte <block ref="b8e4bfa44cc0a900c6c15b3a86438fdc" category="inline-link-macro-rx"></block> para obtener más información.</block>
   <block id="764f447ccb3bf87ad75ec71c633b9966" category="inline-link-macro">REST DE Brocade FOS </block>
   <block id="882354c20e5e22e1c581f6c0c24ef8f3" category="cell"><block ref="882354c20e5e22e1c581f6c0c24ef8f3" category="inline-link-macro-rx"></block></block>
+  <block id="5c62f1c9f30e0ad47fc12431846b6858" category="inline-link-macro">Bloqueo de acceso de usuario</block>
+  <block id="8ddc916ec9b2ba8508e95584974411cf" category="paragraph">Tenga en cuenta lo siguiente durante <block ref="84987077236e5a9982c9d1eae9e06415" category="inline-link-macro-rx"></block>:</block>
+  <block id="d725c02924790a2eff9bb2c7121e839d" category="paragraph">Asegúrese de revisar la sección Permisos del <block ref="8a91694a94b506bcdf4d50b0df6ab8bc" category="inline-link-macro-rx"></block> página también.</block>
 </blocks>
