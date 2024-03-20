@@ -12984,7 +12984,6 @@ Configuración: 10.193.98.84: ONTAP REST API en 10.193.98.84 no está disponible
   <block id="6dd0ae1f18b7c9b4d5e3b4eec7ff6352" category="cell">Se permite que el usuario busque en el directorio. Por ejemplo: _username@companyname.com_ o _username@domainname.com_
 Además, se requiere el permiso de solo lectura de dominio.
 El usuario debe ser miembro del grupo de seguridad _Controladores de dominio de solo lectura_.</block>
-  <block id="644ee4d8e32f0fd5525b3665f3b1be90" category="cell">enlace: task_dc_brocade_rest.html</block>
   <block id="690b59689f385d15b45ee131216725c7" category="list-text">En Seguridad de carga de trabajo, vaya a *Seguridad de carga de trabajo &gt; Políticas &gt; Políticas de respuesta automatizada*.  Seleccione *+Política de ataque*.</block>
   <block id="a0e5daf37fbc5d356df1518610cdff22" category="list-text">Seleccione (marque) _Block User File Access_.</block>
   <block id="97436105e7ddd0da98d7e0207d74958a" category="list-text">Desactive (desactive) _Bloquear acceso a archivos de usuario_.</block>
@@ -13025,4 +13024,6 @@ Nota: Se recomienda asignar un poco de espacio adicional en el disco para permit
 
 
 Si /opt es una carpeta montada de un almacenamiento NAS, asegúrese de que los usuarios locales tengan acceso a esta carpeta. Puede que el agente o el recopilador de datos no se instalen si los usuarios locales no tienen permiso para esta carpeta. consulte <block ref="b8e4bfa44cc0a900c6c15b3a86438fdc" category="inline-link-macro-rx"></block> para obtener más información.</block>
+  <block id="764f447ccb3bf87ad75ec71c633b9966" category="inline-link-macro">REST DE Brocade FOS </block>
+  <block id="882354c20e5e22e1c581f6c0c24ef8f3" category="cell"><block ref="882354c20e5e22e1c581f6c0c24ef8f3" category="inline-link-macro-rx"></block></block>
 </blocks>
