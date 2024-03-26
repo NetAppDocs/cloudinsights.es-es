@@ -9719,7 +9719,6 @@
   <block id="c0404d66fec1056cbbdcf7bc76589700" category="paragraph"><block ref="c0404d66fec1056cbbdcf7bc76589700" category="inline-image-macro-rx" type="image"></block></block>
   <block id="f6706b55dc0bef6b9951c40daa3a0ee2" category="admonition">La seguridad de la carga de trabajo de almacenamiento no está disponible en la edición federal de Cloud Insights.</block>
   <block id="af5f3409a3cec43a03f959371f642cae" category="admonition">Muchos monitores del sistema están en estado _Paused_ por defecto. Puede activar un monitor del sistema seleccionando la opción _Reanudar_ para el monitor. Asegúrese de que _Advanced Counter Data Collection_ y _Enable ONTAP EMS log collection_ estén habilitados en el recopilador de datos. Estas opciones se pueden encontrar en el recopilador de datos de ONTAP en _Configuración avanzada_:<block ref="c9fb5b808ac97b65ea1073e21fb359f9" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="52e3eb8960d4500b67360febd3b16b26" category="cell">Unidireccional entre ONTAP y Seguridad de Carga de Trabajo. El agente hace ping a las LIF de SVM.</block>
   <block id="8fee42a04811f34097bb06266a925ef6" category="paragraph"><block ref="f1d16f360380bc347a5a9e8768937aa7" category="inline-link-macro-rx"></block>
 <block ref="536041084bffaf10e48c1cc03ccee7a2" category="inline-link-macro-rx"></block></block>
   <block id="13c40afab8bb116e2a274838e229f575" category="paragraph">Puede exportar el historial de actividades a un archivo .CSV haciendo clic en el botón _Export_ situado encima de la tabla Historial de actividades. Tenga en cuenta que sólo se exportan los 100.000 registros principales. Dependiendo de la cantidad de datos, la exportación puede tardar desde unos segundos hasta varios minutos.</block>
@@ -13013,7 +13012,6 @@ El usuario debe ser miembro del grupo de seguridad _Controladores de dominio de 
   <block id="d0768c091a340f3c6007fff30de3ea50" category="cell">Seleccione esta opción para activar la conexión a través de SSL</block>
   <block id="ac5ff7aa53ae721accfc89d2e8327f56" category="cell">Alias de WWN de informe</block>
   <block id="2d97586297f1c09c58d04825a03405cf" category="cell">Seleccione para informar sobre el alias WWN</block>
-  <block id="fd3eaf47a54b3fb99f483aa91af951ad" category="cell">Comunicación con ONTAP para eventos de Fpolicy. Estos puertos deben abrirse hacia el agente de seguridad de carga de trabajo para que ONTAP le envíe eventos, incluido cualquier firewall del propio agente de seguridad de carga de trabajo (si está presente).</block>
   <block id="a5bc5e25da90f0de3436e66f223df7bc" category="inline-link-macro">Asignación de ONTAPI a REST DE ONTAP 9.14.1</block>
   <block id="6e2fe63a1853939e7fbcdfb785f57e86" category="admonition">El recopilador REST DE ONTAP puede usarse como reemplazo del recopilador basado en ONTAPI anterior. Como tal, puede haber diferencias en las métricas que se recopilan o informan. Para obtener más información sobre las diferencias entre ONTAPI y REST, consulte la <block ref="239e0ab1e46437458ce3ffae42b58457" category="inline-link-macro-rx"></block> documentación.</block>
   <block id="e8e49e7a35d758d776738dccc87a87b1" category="cell">El espacio en disco se debe asignar de esta manera:
@@ -13041,4 +13039,6 @@ Si /opt es una carpeta montada de un almacenamiento NAS, asegúrese de que los u
   <block id="01489ea97f62d455d744d92e643e44a9" category="cell">Veo métricas vacías o «0» donde el recopilador de ontapi de ONTAP muestra datos.</block>
   <block id="e33c3a41c8a37e74fdb59ca792c91d5a" category="cell">ONTAP REST no informa sobre métricas que se utilizan internamente en el sistema ONTAP únicamente. Por ejemplo, ONTAP REST no recopilará agregados del sistema, solo se recopilarán las SVM de tipo «datos».</block>
   <block id="93411b670be12318c5a6613f3fca054f" category="list-text">Agregue el Recopilador REST, introduciendo el mismo usuario/permiso/etc. tenías para el coleccionista anterior.</block>
+  <block id="7e0b2932c814704a91b543d4f713d658" category="cell">Comunicación de ONTAP al agente de seguridad de carga de trabajo para eventos de Fpolicy.  Estos puertos deben abrirse hacia el agente de seguridad de carga de trabajo para que ONTAP le envíe eventos, incluido cualquier firewall del propio agente de seguridad de carga de trabajo (si está presente).</block>
+  <block id="a01bf0188d9c5ff4efed61a66bd7061b" category="cell">Eco del agente a los LIF de datos de SVM</block>
 </blocks>
