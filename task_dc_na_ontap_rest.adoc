@@ -27,7 +27,7 @@ NOTE: El recopilador REST DE ONTAP puede usarse como reemplazo del recopilador b
 
 Para migrar desde un recopilador de datos de ONTAP (ontapi) anterior al recopilador de REST DE ONTAP más reciente, haga lo siguiente:
 
-. Agregar Recopilador REST, introduciendo el mismo usuario/permiso/etc. tenías para el coleccionista anterior.
+. Agregue el Recopilador REST, introduciendo el mismo usuario/permiso/etc. tenías para el coleccionista anterior.
 . Pausar el recopilador anterior.
 . Deje que el sistema recopile datos durante ~30 minutos. Ignore cualquier rareza de datos durante este tiempo.
 . Después del período de descanso, verá una continuación estable de los datos en el recolector de RESTO.
