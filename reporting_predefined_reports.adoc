@@ -30,8 +30,6 @@ Los informes predefinidos muestran su inventario, capacidad de almacenamiento, p
 
 Puede generar informes en distintos formatos, incluidos HTML, PDF, CSV, XML, Y Excel.
 
-Cloud Insights da cabida a múltiples usuarios para la creación de informes, lo que le permite asociar usuarios con unidades de negocio. Con esta función, los administradores pueden separar los datos o los informes de acuerdo con los atributos de un usuario o su afiliación.
-
 
 
 == Navegación a Informes predefinidos
