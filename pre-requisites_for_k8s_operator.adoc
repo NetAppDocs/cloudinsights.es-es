@@ -212,7 +212,7 @@ Si el clúster que se va a supervisar contiene recursos personalizados que no ti
 
 === Toleraciones y daños
 
-Los DaemonSets _telegraf_, _fluent-bit_ y _net-observer_ deben programar un pod en cada nodo del cluster para recopilar correctamente los datos en todos los nodos. El operador ha sido configurado para tolerar algunos *taints* bien conocidos. Si ha configurado cualquier daño personalizado en sus nodos, evitando así que los pods se ejecuten en cada nodo, puede crear una *tolerancia* para esos daños link:telegraf_agent_k8s_config_options.html["En el campo _AgentConfiguration_"]. Si ha aplicado daños personalizados a todos los nodos del cluster, también debe agregar las toleraciones necesarias al despliegue del operador para permitir que el pod del operador se programe y ejecute.
+Los _netapp-ci-telegraf-ds_, _netapp-ci-fluent-bit-ds_ y _netapp-ci-net-observer-L4-ds_ DaemonSets deben programar un pod en cada nodo del clúster para recopilar correctamente los datos en todos los nodos. El operador ha sido configurado para tolerar algunos *taints* bien conocidos. Si ha configurado cualquier daño personalizado en sus nodos, evitando así que los pods se ejecuten en cada nodo, puede crear una *tolerancia* para esos daños link:telegraf_agent_k8s_config_options.html["En el campo _AgentConfiguration_"]. Si ha aplicado daños personalizados a todos los nodos del cluster, también debe agregar las toleraciones necesarias al despliegue del operador para permitir que el pod del operador se programe y ejecute.
 
 Más información acerca de Kubernetes link:https://kubernetes.io/docs/concepts/scheduling-eviction/taint-and-toleration/["Tolerancias y taints"].
 

@@ -260,16 +260,16 @@ Ejecute «Image pull Snippet» desde el icono de instalación del operador de su
 Funcionalidad del operador principal y supervisión de Kubernetes
 
 * supervisión de netapp
-* proxy-rbac-kube
-* métricas-estado-kube
-* telegraf
+* ci-kube-rbac-proxy
+* ci-ksm
+* ci-telegraf
 * usuario raíz sin interrupciones
 
 
 Registro de eventos
 
-* bits fluidos
-* exportador de eventos de kubernetes
+* bits ci-fluido
+* ci-kubernetes-event-exporter
 
 
 Rendimiento de red y mapa
@@ -282,7 +282,7 @@ Introduzca la imagen del operador docker en el repositorio de su proveedor de se
 Edite el despliegue de operador de supervisión en operator-deployment.yaml y modifique todas las referencias de imagen para utilizar su repositorio Docker privado.
 
 ....
-image: <docker repo of the enterprise/corp docker repo>/kube-rbac-proxy:<kube-rbac-proxy version>
+image: <docker repo of the enterprise/corp docker repo>/kube-rbac-proxy:<ci-kube-rbac-proxy version>
 image: <docker repo of the enterprise/corp docker repo>/netapp-monitoring:<version>
 ....
 Edite AgentConfiguration en operator-config.yaml para reflejar la nueva ubicación de repositorio de Docker. Cree una nueva imagePullSecret para su repositorio privado, para más detalles consulte _https://kubernetes.io/docs/tasks/configure-pod-container/pull-image-private-registry/_
