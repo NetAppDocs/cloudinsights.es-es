@@ -19,13 +19,13 @@ summary: Registrarse en Cloud Insights y crear el entorno.
 
 
 [role="lead"]
-Para empezar a trabajar con Cloud Insights, tienes que registrarte en el portal *NetApp BlueXP* (antes llamado Cloud Central). Si ya tiene un inicio de sesión en Cloud Central de NetApp, puede iniciar una prueba gratuita de Cloud Insights con unos pasos rápidos.
+Antes de empezar a trabajar con Cloud Insights, debes registrarte en el portal *NetApp BlueXP*. Si ya tienes un inicio de sesión en BlueXP, puedes iniciar una prueba gratuita de Cloud Insights con unos rápidos pasos.
 
 
 toc::[]
 
 
-== Creación de la cuenta de Cloud Central de NetApp
+== Crear tu cuenta de NetApp BlueXP
 
 Para empezar a usar los servicios cloud de NetApp, vaya a. https://cloud.netapp.com["*BlueXP de NetApp*"^] Y haga clic en *Comenzar*.
 
@@ -54,7 +54,7 @@ image:BlueXP_CloudInsights.png["Prueba gratuita de Cloud Insights en BlueXP"]
 
 Si es la primera vez que inicia sesión en Cloud Insights, bajo la oferta de Cloud Insights, haga clic en *Iniciar prueba gratuita*. Cloud Insights te guiará a través de la creación del entorno de tu empresa.
 
-Una vez finalizada la creación de su entorno, puede usar las credenciales de Cloud Central para iniciar sesión e iniciar una prueba gratuita de 30 días de Cloud Insights. Durante esta prueba se pueden explorar las funciones que Cloud Insights puede ofrecer.
+Una vez que hayas completado la creación de tu entorno, puedes usar tus credenciales de BlueXP para iniciar sesión y comenzar tu prueba gratuita de 30 días de Cloud Insights. Durante esta prueba se pueden explorar las funciones que Cloud Insights puede ofrecer.
 
 Durante la prueba gratuita, puede link:concept_subscribing_to_cloud_insights.html["inicie su suscripción"] A Cloud Insights en cualquier momento. Una vez que se haya suscrito, puede utilizar las funciones de Cloud Insights en función de su suscripción actual.
 
@@ -62,15 +62,15 @@ Durante la prueba gratuita, puede link:concept_subscribing_to_cloud_insights.htm
 
 == Inicie sesión y go
 
-Una vez que se haya creado su entorno, en cualquier momento solo tiene que iniciar sesión en Cloud Portal de NetApp y hacer clic en *Ir a Cloud Insights*. Se le dirigirá directamente a su entorno de Cloud Insights.
+Una vez creado tu entorno, solo tienes que iniciar sesión en el portal de NetApp BlueXP y hacer clic en *Ir a Cloud Insights*. Se le dirigirá directamente a su entorno de Cloud Insights.
 
 También puede abrir un navegador directamente a la URL de su entorno Cloud Insights, por ejemplo:
 
  https://<environment-prefix>.c01.cloudinsights.netapp.com/
-La URL también se incluirá en el correo electrónico de invitación de cada usuario para un acceso sencillo y marcadores. Si el usuario aún no ha iniciado sesión en Cloud Central, se le pedirá que inicie sesión.
+La URL también se incluirá en el correo electrónico de invitación de cada usuario para un acceso sencillo y marcadores. Si el usuario no ha iniciado sesión en BlueXP, se le pedirá que inicie sesión.
 
 
-NOTE: Los nuevos usuarios aún deben registrarse para acceder a Cloud Central antes de poder acceder a la URL de su entorno.
+NOTE: Los nuevos usuarios aún deben registrarse para acceder a BlueXP antes de poder acceder a la URL de su entorno.
 
 La primera vez que inicie sesión en un entorno nuevo, se le guiará a través de la configuración de link:task_getting_started_with_cloud_insights.html["*comenzar a recopilar datos*"].
 
@@ -78,7 +78,13 @@ La primera vez que inicie sesión en un entorno nuevo, se le guiará a través d
 
 == Cierre la sesión
 
-Para cerrar sesión en Cloud Insights, haga clic en su *Nombre de usuario* y seleccione *Cerrar sesión*. Volverá a la pantalla de inicio de sesión de Cloud Central.
+Para cerrar sesión en Cloud Insights, haga clic en su *Nombre de usuario* y seleccione *Cerrar sesión*. Volverá a la pantalla de inicio de sesión de BlueXP.
 
 
-NOTE: Al cerrar la sesión en Cloud Insights, se cierra la sesión en Cloud Central. También se cerrará sesión en otros servicios cloud de NetApp que utilizan el inicio de sesión de Cloud Central.
+NOTE: Al cerrar la sesión de Cloud Insights se cierra la sesión de BlueXP. También se cerrará la sesión de otros servicios en la nube de NetApp que utilicen el inicio de sesión de BlueXP.
+
+
+
+=== Tiempo de espera de inactividad
+
+De forma predeterminada, BlueXP cerrará la sesión de un usuario si no hay actividad durante seis horas (360 minutos). Independientemente de la actividad, los usuarios se desconectarán después de siete días.

@@ -5676,7 +5676,6 @@
   <block id="b658088fb929fb96d594ab2f4ffdab24" category="paragraph">Nota: El intervalo de sondeo de rendimiento predeterminado es de 300 segundos y no se puede cambiar. Este es el único intervalo admitido por HPE Alletra 6000.</block>
   <block id="e9017792019e9d0101cc81616e5cec41" category="summary">Registrarse en Cloud Insights y crear el entorno.</block>
   <block id="695d7a391bb9043561bcc3c254868311" category="doc">Incorporación de Cloud Insights</block>
-  <block id="25866b1c01dcfb4e4ba435720ed78045" category="section-title">Creación de la cuenta de Cloud Central de NetApp</block>
   <block id="05d2a837df7692f0d65e4466b2fb05bd" category="list-text">Introduzca una dirección de correo electrónico profesional válida y elija una contraseña.</block>
   <block id="ad66d403ef43ddd58a7b527874c51878" category="list-text">Escriba el nombre de su empresa y el nombre completo.</block>
   <block id="d02f5d878903034a62253cb17ae51c2d" category="paragraph">Seleccione Cloud Insights.</block>
@@ -5686,15 +5685,10 @@
   <block id="3b1f676d06286548e11b332567f42bbd" category="inline-link-macro">inicie su suscripción</block>
   <block id="93219f4a6fd1dbd20138a0a65d6e08de" category="paragraph">Durante la prueba gratuita, puede <block ref="822a67eb96671d13fff372a75b259713" category="inline-link-macro-rx"></block> A Cloud Insights en cualquier momento. Una vez que se haya suscrito, puede utilizar las funciones de Cloud Insights en función de su suscripción actual.</block>
   <block id="2c4bb88652ba26d23266d851053ba465" category="section-title">Inicie sesión y go</block>
-  <block id="485f7bb9e7cc7894cf2e75343120bbf5" category="paragraph">Una vez que se haya creado su entorno, en cualquier momento solo tiene que iniciar sesión en Cloud Portal de NetApp y hacer clic en *Ir a Cloud Insights*. Se le dirigirá directamente a su entorno de Cloud Insights.</block>
   <block id="8dac70c4541c93f0deed8b8bd734a673" category="paragraph">También puede abrir un navegador directamente a la URL de su entorno Cloud Insights, por ejemplo:</block>
-  <block id="0e15f0ff9eb552105028ff08fc92e09f" category="paragraph">La URL también se incluirá en el correo electrónico de invitación de cada usuario para un acceso sencillo y marcadores. Si el usuario aún no ha iniciado sesión en Cloud Central, se le pedirá que inicie sesión.</block>
-  <block id="0df3e25ccf83cd4779234f7f928bebb5" category="admonition">Los nuevos usuarios aún deben registrarse para acceder a Cloud Central antes de poder acceder a la URL de su entorno.</block>
   <block id="da115c4fc9cae6fc87764395ef9ff331" category="inline-link-macro">*comenzar a recopilar datos*</block>
   <block id="8308d29f13c3d3cc69f506dfead0a733" category="paragraph">La primera vez que inicie sesión en un entorno nuevo, se le guiará a través de la configuración de <block ref="2949f1254245e371c2d697f481723a7e" category="inline-link-macro-rx"></block>.</block>
   <block id="cc580c5eecd9c28053db6de1830561ee" category="section-title">Cierre la sesión</block>
-  <block id="5f5052459ed746a225d85b63238531d1" category="paragraph">Para cerrar sesión en Cloud Insights, haga clic en su *Nombre de usuario* y seleccione *Cerrar sesión*. Volverá a la pantalla de inicio de sesión de Cloud Central.</block>
-  <block id="21648aceb436779ee1938a15ced12e7e" category="admonition">Al cerrar la sesión en Cloud Insights, se cierra la sesión en Cloud Central. También se cerrará sesión en otros servicios cloud de NetApp que utilizan el inicio de sesión de Cloud Central.</block>
   <block id="09d6123310780f93d8f4d27e5bea4c38" category="summary">Un resumen.</block>
   <block id="d094b5589a83ff9dbfcc2d0e99295078" category="doc">Administración de recopiladores de datos configurados</block>
   <block id="53b9802b3b72e00a64f054ac84f78c11" category="paragraph">La página colectores de datos instalados proporciona acceso a los recopiladores de datos que se han configurado para Cloud Insights. Puede utilizar esta página para modificar los recopiladores de datos existentes.</block>
@@ -9452,7 +9446,6 @@
   <block id="8d3d5857627846ebb0bfd18533d81373" category="list-text">Resuelva al instante</block>
   <block id="e9e214a6e16f6beca61f905fa6ce3ab9" category="inline-image-macro">Opciones de resolución de alertas</block>
   <block id="990eaf3ef2e3748beed4f15a2dc6d080" category="paragraph"><block ref="990eaf3ef2e3748beed4f15a2dc6d080" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="964a8b3315ffa6f99cb6f09543be37c8" category="paragraph">Para empezar a trabajar con Cloud Insights, tienes que registrarte en el portal *NetApp BlueXP* (antes llamado Cloud Central). Si ya tiene un inicio de sesión en Cloud Central de NetApp, puede iniciar una prueba gratuita de Cloud Insights con unos pasos rápidos.</block>
   <block id="21a763771df4e64b083a2b050ce81f09" category="inline-link">*BlueXP de NetApp*</block>
   <block id="79f4eac777cfb8f368485c1ed783c385" category="paragraph">Para empezar a usar los servicios cloud de NetApp, vaya a.<block ref="bb4bedb035450655c109a482f18f7a40" category="inline-link-rx"></block> Y haga clic en *Comenzar*.</block>
   <block id="1e26781b207fa848ce81c7268cf016a7" category="list-text">Si aún no se ha registrado, seleccione *Registrarse*</block>
@@ -9463,7 +9456,6 @@
   <block id="87174dc7b61ea27d55ab152cfdbfcbb0" category="inline-image-macro">Prueba gratuita de Cloud Insights en BlueXP</block>
   <block id="5d6203b83b93ae1cf7e9b34368cd7f9d" category="paragraph"><block ref="5d6203b83b93ae1cf7e9b34368cd7f9d" category="inline-image-macro-rx" type="image"></block></block>
   <block id="7395877188489ccb99fbacc8cc003a01" category="paragraph">Si es la primera vez que inicia sesión en Cloud Insights, bajo la oferta de Cloud Insights, haga clic en *Iniciar prueba gratuita*. Cloud Insights te guiará a través de la creación del entorno de tu empresa.</block>
-  <block id="5787741cafb89158f9880654c9e9b5a5" category="paragraph">Una vez finalizada la creación de su entorno, puede usar las credenciales de Cloud Central para iniciar sesión e iniciar una prueba gratuita de 30 días de Cloud Insights. Durante esta prueba se pueden explorar las funciones que Cloud Insights puede ofrecer.</block>
   <block id="1eb5ae63609e68a11106494d272615bf" category="cell">Gestión de clústeres</block>
   <block id="269ab41459ba8b3de391eb30b649d222" category="cell">Necesario para el bloqueo de usuarios CIFS/SMB.</block>
   <block id="0d04c76d344b77c4e10b41c28526be07" category="paragraph">Al seleccionar *Storage Manager Dashboard* de Team Content, se proporcionan varios informes que proporcionan información sobre su tráfico y almacenamiento.</block>
@@ -13044,4 +13036,14 @@ Si /opt es una carpeta montada de un almacenamiento NAS, asegúrese de que los u
   <block id="6e79cf0edf33ec7a0066155d964eeb57" category="list-text">En el menú Cloud Insights, haga clic en *Observabilidad &gt; Recopiladores* y haga clic en el botón *+ Recopilador de datos*.</block>
   <block id="710ec696cccefe4c3faa1d7ebf8fca87" category="list-text">En *Observabilidad &gt; Colectores*, haz clic en *+Recopilador de datos*. Elige Kibana.</block>
   <block id="c71f6654a45927e285ab22a697438b43" category="list-text">En *Observabilidad &gt; Colectores*, haz clic en *+Recopilador de datos*. Seleccione MongoDB.</block>
+  <block id="2e95a4622d16ffb729672b5838f5732b" category="paragraph">Antes de empezar a trabajar con Cloud Insights, debes registrarte en el portal *NetApp BlueXP*. Si ya tienes un inicio de sesión en BlueXP, puedes iniciar una prueba gratuita de Cloud Insights con unos rápidos pasos.</block>
+  <block id="5bff30d13ce98c505187872963af1f25" category="section-title">Crear tu cuenta de NetApp BlueXP</block>
+  <block id="f21c4669cdc7c8b69bb7b9e4f65412b9" category="paragraph">Una vez que hayas completado la creación de tu entorno, puedes usar tus credenciales de BlueXP para iniciar sesión y comenzar tu prueba gratuita de 30 días de Cloud Insights. Durante esta prueba se pueden explorar las funciones que Cloud Insights puede ofrecer.</block>
+  <block id="43e7ba0a52e8b0f8e52ee853f0e4ece5" category="paragraph">Una vez creado tu entorno, solo tienes que iniciar sesión en el portal de NetApp BlueXP y hacer clic en *Ir a Cloud Insights*. Se le dirigirá directamente a su entorno de Cloud Insights.</block>
+  <block id="c95038e09e37b3186bbce880a572f8f5" category="paragraph">La URL también se incluirá en el correo electrónico de invitación de cada usuario para un acceso sencillo y marcadores. Si el usuario no ha iniciado sesión en BlueXP, se le pedirá que inicie sesión.</block>
+  <block id="30a2b0510383d7eabe73f5621c5ec906" category="admonition">Los nuevos usuarios aún deben registrarse para acceder a BlueXP antes de poder acceder a la URL de su entorno.</block>
+  <block id="73d58318fd6991da49fe32dc00a56f19" category="paragraph">Para cerrar sesión en Cloud Insights, haga clic en su *Nombre de usuario* y seleccione *Cerrar sesión*. Volverá a la pantalla de inicio de sesión de BlueXP.</block>
+  <block id="201ec49877bf4303e362a0aac3add32b" category="admonition">Al cerrar la sesión de Cloud Insights se cierra la sesión de BlueXP. También se cerrará la sesión de otros servicios en la nube de NetApp que utilicen el inicio de sesión de BlueXP.</block>
+  <block id="8463a61dd94ff5934036d4c8a8936e32" category="section-title">Tiempo de espera de inactividad</block>
+  <block id="db7d4581c8073d9c4dda50c4994c4383" category="paragraph">De forma predeterminada, BlueXP cerrará la sesión de un usuario si no hay actividad durante seis horas (360 minutos). Independientemente de la actividad, los usuarios se desconectarán después de siete días.</block>
 </blocks>
