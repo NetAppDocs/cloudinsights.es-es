@@ -38,7 +38,7 @@ Para empezar a usar los servicios cloud de NetApp, vaya a. https://cloud.netapp.
 
 
 
-=== ¿Qué sucede si ya tengo un inicio de sesión en el cloud de NetApp?
+=== ¿Qué sucede si ya tengo un inicio de sesión en NetApp BlueXP?
 
 Cuando tengas una cuenta de NetApp BlueXP, solo tienes que seleccionar *Iniciar sesión* en la https://cloud.netapp.com["* BlueXPl de NetApp*"^] portal de datos.
 
@@ -78,10 +78,10 @@ La primera vez que inicie sesión en un entorno nuevo, se le guiará a través d
 
 == Cierre la sesión
 
-Para cerrar sesión en Cloud Insights, haga clic en su *Nombre de usuario* y seleccione *Cerrar sesión*. Volverá a la pantalla de inicio de sesión de BlueXP.
+Para cerrar sesión en Cloud Insights, haga clic en su *Nombre de usuario* y seleccione *Cerrar sesión*. Se le llevará de vuelta al link:https://docs.netapp.com/us-en/bluexp-setup-admin/task-logging-in.html["Inicio de sesión de BlueXP"] pantalla.
 
 
-NOTE: Al cerrar la sesión de Cloud Insights se cierra la sesión de BlueXP. También se cerrará la sesión de otros servicios en la nube de NetApp que utilicen el inicio de sesión de BlueXP.
+NOTE: Al cerrar la sesión de Cloud Insights se cierra la sesión de BlueXP. También se cerrará la sesión de otros servicios en la nube de NetApp que usen el inicio de sesión de BlueXP.
 
 
 

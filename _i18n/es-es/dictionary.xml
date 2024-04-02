@@ -5679,7 +5679,6 @@
   <block id="05d2a837df7692f0d65e4466b2fb05bd" category="list-text">Introduzca una dirección de correo electrónico profesional válida y elija una contraseña.</block>
   <block id="ad66d403ef43ddd58a7b527874c51878" category="list-text">Escriba el nombre de su empresa y el nombre completo.</block>
   <block id="d02f5d878903034a62253cb17ae51c2d" category="paragraph">Seleccione Cloud Insights.</block>
-  <block id="136e3fa9a2b8381149c5e720a65374fa" category="section-title">¿Qué sucede si ya tengo un inicio de sesión en el cloud de NetApp?</block>
   <block id="a46b8a484704b65f978247cb9b3901aa" category="paragraph">Introduzca su dirección de correo electrónico y contraseña. Después, irá a la página de ofertas de cloud de NetApp.</block>
   <block id="b1d39b97c6fe789fe5e7963f078e112d" category="section-title">Comience su prueba gratuita de Cloud Insights</block>
   <block id="3b1f676d06286548e11b332567f42bbd" category="inline-link-macro">inicie su suscripción</block>
@@ -13042,8 +13041,10 @@ Si /opt es una carpeta montada de un almacenamiento NAS, asegúrese de que los u
   <block id="43e7ba0a52e8b0f8e52ee853f0e4ece5" category="paragraph">Una vez creado tu entorno, solo tienes que iniciar sesión en el portal de NetApp BlueXP y hacer clic en *Ir a Cloud Insights*. Se le dirigirá directamente a su entorno de Cloud Insights.</block>
   <block id="c95038e09e37b3186bbce880a572f8f5" category="paragraph">La URL también se incluirá en el correo electrónico de invitación de cada usuario para un acceso sencillo y marcadores. Si el usuario no ha iniciado sesión en BlueXP, se le pedirá que inicie sesión.</block>
   <block id="30a2b0510383d7eabe73f5621c5ec906" category="admonition">Los nuevos usuarios aún deben registrarse para acceder a BlueXP antes de poder acceder a la URL de su entorno.</block>
-  <block id="73d58318fd6991da49fe32dc00a56f19" category="paragraph">Para cerrar sesión en Cloud Insights, haga clic en su *Nombre de usuario* y seleccione *Cerrar sesión*. Volverá a la pantalla de inicio de sesión de BlueXP.</block>
-  <block id="201ec49877bf4303e362a0aac3add32b" category="admonition">Al cerrar la sesión de Cloud Insights se cierra la sesión de BlueXP. También se cerrará la sesión de otros servicios en la nube de NetApp que utilicen el inicio de sesión de BlueXP.</block>
   <block id="8463a61dd94ff5934036d4c8a8936e32" category="section-title">Tiempo de espera de inactividad</block>
   <block id="db7d4581c8073d9c4dda50c4994c4383" category="paragraph">De forma predeterminada, BlueXP cerrará la sesión de un usuario si no hay actividad durante seis horas (360 minutos). Independientemente de la actividad, los usuarios se desconectarán después de siete días.</block>
+  <block id="6670eac4232d1c66e6c936fe67e52aff" category="section-title">¿Qué sucede si ya tengo un inicio de sesión en NetApp BlueXP?</block>
+  <block id="e3ad3e57d0a33a78b565817ed4710dea" category="inline-link-macro">Inicio de sesión de BlueXP</block>
+  <block id="b00323e3fc84f69070c5dc2be8e5ce9e" category="paragraph">Para cerrar sesión en Cloud Insights, haga clic en su *Nombre de usuario* y seleccione *Cerrar sesión*. Se le llevará de vuelta al <block ref="8d1c4f3c88725cbe8b8d86c07fb5d410" category="inline-link-macro-rx"></block> pantalla.</block>
+  <block id="4405c285662a5ac6f84ad517037907a7" category="admonition">Al cerrar la sesión de Cloud Insights se cierra la sesión de BlueXP. También se cerrará la sesión de otros servicios en la nube de NetApp que usen el inicio de sesión de BlueXP.</block>
 </blocks>
