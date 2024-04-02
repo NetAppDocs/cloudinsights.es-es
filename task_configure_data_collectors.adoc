@@ -40,11 +40,45 @@ Las credenciales del recopilador de datos se cifran cuando se introducen en Clou
 
 == Configuración del recopilador de datos
 
-* En el menú Cloud Insights, haga clic en *Observabilidad > Recopiladores* y haga clic en el botón *+ Recopilador de datos*. Puede elegir mostrar todos los recopiladores de datos o filtrar para mostrar sólo los recopiladores de datos disponibles en función de su suscripción.
-
-
+* En el menú Cloud Insights, haga clic en *Observabilidad > Recopiladores* y haga clic en el botón *+ Recopilador de datos*.
 * Dependiendo del tipo de recopilador de datos que elija, los pasos de instalación variarán.
 
+
+
+
+=== Infraestructura:
+
+Los recopiladores de datos de infraestructura incluyen aspectos como el almacenamiento o los switches.
+
+.Antes de empezar
+* Debe tener al menos una unidad de adquisición configurada para comenzar a recopilar datos de la infraestructura.
++
+.. Haga clic en un recopilador de datos de Infrastructure.
+.. Introduzca un nombre para el recopilador de datos. Los nombres pueden contener los siguientes caracteres:
+
+
+* letra (a-z)
+* número (0-9)
+* guión (-)
+* guión bajo (_)
+* período (.)
+* espacio ( )
++
+Los nombres pueden no comenzar o terminar con un espacio, punto o guión.
+
++
+.. Introduzca la unidad de adquisición para asociar a este recopilador de datos.
+.. Introduzca los campos obligatorios en la pantalla Configuración.
+.. Haga clic en *Configuración avanzada* para introducir campos de configuración adicionales. No todos los recopiladores de datos necesitan configuración avanzada.
+.. Haga clic en *Configuración de prueba* para comprobar que el recopilador de datos está configurado correctamente.
+.. Cuando termine, haga clic en *Agregar colector*.
+
+
+
+
+Para obtener ayuda sobre la adición de una nueva unidad de adquisición, consulte link:task_configure_acquisition_unit.html["Configuración de unidades de adquisición"]
+
++ puede tardar hasta dos períodos de sondeo antes de que los datos del entorno se muestren en paneles o estén disponibles para realizar consultas.
 
 
 
@@ -86,39 +120,3 @@ Puede tardar hasta dos períodos de sondeo antes de que los datos del servicio s
 
 
 
-
-
-
-=== Infraestructura:
-
-Los recopiladores de datos de infraestructura incluyen aspectos como el almacenamiento o los switches.
-
-.Antes de empezar
-* Debe tener al menos una unidad de adquisición configurada para comenzar a recopilar datos de la infraestructura.
-+
-.. Haga clic en un recopilador de datos de Infrastructure.
-.. Introduzca un nombre para el recopilador de datos. Los nombres pueden contener los siguientes caracteres:
-
-
-* letra (a-z)
-* número (0-9)
-* guión (-)
-* guión bajo (_)
-* período (.)
-* espacio ( )
-+
-Los nombres pueden no comenzar o terminar con un espacio, punto o guión.
-
-+
-.. Introduzca la unidad de adquisición para asociar a este recopilador de datos.
-.. Introduzca los campos obligatorios en la pantalla Configuración.
-.. Haga clic en *Configuración avanzada* para introducir campos de configuración adicionales. No todos los recopiladores de datos necesitan configuración avanzada.
-.. Haga clic en *Configuración de prueba* para comprobar que el recopilador de datos está configurado correctamente.
-.. Cuando termine, haga clic en *Agregar colector*.
-
-
-
-
-Para obtener ayuda sobre la adición de una nueva unidad de adquisición, consulte link:task_configure_acquisition_unit.html["Configuración de unidades de adquisición"]
-
-+ puede tardar hasta dos períodos de sondeo antes de que los datos del entorno se muestren en paneles o estén disponibles para realizar consultas.

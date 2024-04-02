@@ -34,9 +34,6 @@ Lista alfabética de recopiladores de datos compatibles con Cloud Insights:
 | Recopilador de datos | Tipo 
 
 
-| link:task_config_telegraf_activemq.html["ActiveMQ"] | Servicio 
-
-
 | link:task_dc_amazon_ec2.html["Amazon EC2 y EBS"] | De almacenamiento 
 
 
