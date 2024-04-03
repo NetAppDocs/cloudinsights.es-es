@@ -9805,7 +9805,6 @@
   <block id="3b7c5615013c6b42362845591653e503" category="cell">Habilitar DNSLookup</block>
   <block id="1d2b775d8b166dda0a22ca0ffa3f537c" category="cell">True/false, active la búsqueda de DNS</block>
   <block id="349a396fe021418ac0edbee3b447f4d5" category="section-title">Archivo de configuración de AgentConfiguration de ejemplo</block>
-  <block id="fc8a8119975d70c9ea4470d26aa4640b" category="paragraph">A continuación se muestra un archivo de ejemplo de AgentConfiguration. Tenga en cuenta que no todas las opciones se capturan aquí:</block>
   <block id="13f0cf7e64ed13ef0b58a80209d8e032" category="list-text">Si está utilizando un repositorio de Docker personalizado o privado, siga las instrucciones de la sección Uso de un repositorio de Docker personalizado o privado</block>
   <block id="64cf739e279a21fbfd5a0a55d9453e9d" category="list-text">Desde el 2022 de agosto, NetApp Kubernetes Monitoring Operator incluye soporte para la Política de seguridad de Pod (PSP). Debes renovar al último operador de supervisión de Kubernetes de NetApp si tu entorno utiliza PSP.</block>
   <block id="324c304c8e53f41411f3a55226c16d14" category="list-text">Si está ejecutando en OpenShift 4,6 o superior, debe seguir las instrucciones de OpenShift que aparecen a continuación, además de asegurarse de que se cumplen estos requisitos previos.</block>
@@ -13047,4 +13046,6 @@ Si /opt es una carpeta montada de un almacenamiento NAS, asegúrese de que los u
   <block id="e3ad3e57d0a33a78b565817ed4710dea" category="inline-link-macro">Inicio de sesión de BlueXP</block>
   <block id="b00323e3fc84f69070c5dc2be8e5ce9e" category="paragraph">Para cerrar sesión en Cloud Insights, haga clic en su *Nombre de usuario* y seleccione *Cerrar sesión*. Se le llevará de vuelta al <block ref="8d1c4f3c88725cbe8b8d86c07fb5d410" category="inline-link-macro-rx"></block> pantalla.</block>
   <block id="4405c285662a5ac6f84ad517037907a7" category="admonition">Al cerrar la sesión de Cloud Insights se cierra la sesión de BlueXP. También se cerrará la sesión de otros servicios en la nube de NetApp que usen el inicio de sesión de BlueXP.</block>
+  <block id="e04813a849ce9da2afe9f3bfcaf85f0e" category="cell">True/false - Establece runPrivileged en true si SELinux está habilitado en los nodos de Kubernetes.</block>
+  <block id="e40d435b2f81693776ecb79899e30849" category="paragraph">A continuación se muestra un archivo de ejemplo de AgentConfiguration.</block>
 </blocks>
