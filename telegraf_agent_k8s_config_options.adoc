@@ -40,7 +40,21 @@ La siguiente tabla enumera las posibles opciones para el archivo AgentConfigurat
 |  | Nombre del clúster | Campo de texto libre que identifica de forma única un clúster en todos los clústeres de clientes. Debe ser único en un cliente Cloud Insights. El valor predeterminado es lo que introduce el cliente en la interfaz de usuario del campo «Cluster Name» 
 
 
-|  | Proxy Format: Proxy: Servidor: Puerto: Nombre de usuario: Contraseña: NoProxy: IsTelegrafProxyEnabled: IsAuProxyEnabled: IsFluentbitProxyEnabled: IsCollectorProxyEnabled: | Opcional para que el cliente establezca el proxy. Esto suele ser el proxy corporativo de los clientes. 
+|  | proxy
+
+Formato:
+
+proxy:
+
+  servidor:
+  puerto:
+  nombre de usuario:
+  contraseña:
+  NoProxy:
+  IsTelegrafProxyActivado:
+  Se habilita isAuProxyEnabled:
+  IsFluentbitProxyEnabled:
+  IsCollectorProxyEnabled: | Opcional para establecer el proxy. Este suele ser el proxy corporativo del cliente. 
 
 
 | telegraf |  | Opciones de configuración que pueden personalizar la instalación de telegraf del Operador 
@@ -171,7 +185,7 @@ persistentvolumeclaims=[*],persistentvolumes=[*],pods=[*],replicasets=[*],resour
 |  | CpuLimit | Límite de CPU para ds de observador neto 
 
 
-|  | MemLimit | Límite de mem para ds de observador neto 
+|  | MemLimit | límite de mem para ds de observador neto 
 
 
 |  | CpuRequest | Solicitud de CPU para ds de observador de red 
@@ -193,6 +207,47 @@ persistentvolumeclaims=[*],persistentvolumes=[*],pods=[*],replicasets=[*],resour
 
 
 |  | Privilegios de ejecución | True/false - Establece runPrivileged en true si SELinux está habilitado en los nodos de Kubernetes. 
+
+
+| gestión del cambio |  | Opciones de configuración para la administración y análisis de cambios de Kubernetes 
+
+
+|  | CpuLimit | Límite de CPU para change-observer-watch-rs 
+
+
+|  | MemLimit | Límite de MEM para change-observer-watch-rs 
+
+
+|  | CpuRequest | Solicitud de CPU para change-observer-watch-rs 
+
+
+|  | MemRequest | solicitud de mem para change-observer-watch-rs 
+
+
+|  | FailureDeclarationIntervalMins | Intervalo en minutos tras el cual un despliegue incorrecto de una carga de trabajo se marcará como erróneo 
+
+
+|  | DeployAggrIntervalSeconds | Frecuencia a la que se envían los eventos de implementación de carga de trabajo en curso 
+
+
+|  | No WorkloadAggrIntervalSeconds | Frecuencia a la que se combinan y se envían las implementaciones sin cargas de trabajo 
+
+
+|  | TermsToRedact | Un conjunto de expresiones regulares utilizadas en los nombres de env y los mapas de datos cuyo valor será redactado
+Términos de ejemplo: “Pwd”, “password”, “token”, “apikey”, “api-key”, jwt 
+
+
+|  | KindsToWatch adicional | Una lista separada por comas de tipos adicionales para ver desde el conjunto predeterminado de tipos observados por el recopilador 
+
+
+|  | KindsToIgnoreFromWatch | Una lista separada por comas de tipos que ignorar de la observación del conjunto predeterminado de tipos observados por el recopilador 
+
+
+|  | LogRecordAggrIntervalSeconds | Frecuencia con la que los registros de registro se envían a CI desde el recopilador 
+
+
+|  | toleraciones de vigilancia | tolerancia adicional change-observer-watch-ds. Formato de línea única abreviado solamente.
+Ejemplo: '{key: taint1, operator: Exists, effect: NoSchedule},{key: taint2, operator: Exists, effect: Noexecute}' 
 |===
 
 
