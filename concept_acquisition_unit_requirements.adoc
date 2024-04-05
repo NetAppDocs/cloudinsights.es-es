@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar 
 permalink: concept_acquisition_unit_requirements.html 
-summary: El servidor o equipo virtual que utilice como unidad de adquisición debe cumplir los requisitos mínimos 
-keywords: AU, acquisition unit, RAU, requirements, sizing 
+summary: El servidor o la VM que utilice como Unidad de adquisición debe cumplir con los requisitos mínimos. 
+keywords: AU, acquisition unit, requirements, sizing 
 ---
 = Requisitos de la unidad de adquisición
 :toc: macro
@@ -33,12 +33,15 @@ Debe instalar una unidad de adquisición (AU) para obtener información de los r
 
 | De NetApp | Un equipo que ejecuta una versión con licencia de uno de los siguientes:
 
-* CentOS (64 bits): 7,2 a 7,9, Stream 8, Stream 9
+* CentOS (64 bits): 7,2 a 7,9, 8,1 a 8,4, Stream 8, Stream 9
 * Debian (64 bits): 9 y 10
-* Oracle Enterprise Linux (64 bits): 7,5 a 7,9, 8,1 a 8,4
-* Red Hat Enterprise Linux (64 bits): 7,2 a 7,9, 8,1 a 8,7, 9,1
-* Rocky 9,0, 9,1
-* Servidor Ubuntu: 18,04 y 20,04 LTS
+* OpenSUSE Leap 15,1 a 15,5
+* Oracle Enterprise Linux (64 bits): 7,5 a 7,9, 8,1 a 8,8
+* Red Hat Enterprise Linux (64 bits): 7,2 a 7,9, 8,1 a 8,8, 9,1, 9,2
+* Rocky 9,0, 9,1, 9,3
+* SUSE Enterprise Linux Server 15, 15 SP2 a 15 SP5
+* Servidor Ubuntu: 18,04, 20,04, 22,04 LTS
+* SELinux en las plataformas anteriores
 
 Este equipo no debe ejecutar ningún otro software de nivel de aplicación. Se recomienda un servidor dedicado.
 
