@@ -12774,7 +12774,6 @@ Realice los pasos siguientes antes de agregar el recopilador de datos al agente.
   <block id="efe846805e5476fec607bbf54e45dc44" category="section-title">A enero de 2024</block>
   <block id="a06394795b8f53802b059da7ff53b836" category="section-title">Pruebe las funciones de Cloud Insights que aún no ha utilizado</block>
   <block id="5dbb51f66b1a3074265f272db5200fa9" category="section-title">¿Cuál es el nivel de salud de mis cargas de trabajo?</block>
-  <block id="724d9fcddedbe051bb60333c24d60088" category="paragraph">El estado de la carga de trabajo está disponible de un vistazo en la página *Kubernetes &gt; Explorar &gt; Cargas de trabajo*, de modo que puede ver rápidamente qué cargas de trabajo se ejecutan bien y cuáles pueden necesitar ayuda.</block>
   <block id="32881fe09cf4dd3fd8228ed220fe9e0b" category="inline-image-macro">Estado de la carga de trabajo de un vistazo</block>
   <block id="89498d5fe061f9d0cd5bfa262fb798d6" category="paragraph"><block ref="89498d5fe061f9d0cd5bfa262fb798d6" category="inline-image-macro-rx" type="image"></block></block>
   <block id="5770f841572da2cfe361b72b1ca45ae8" category="section-title">Identificación de dominio de datos</block>
@@ -12878,7 +12877,6 @@ Para obtener más información, lea Acerca de Proxies <block ref="05c87596868300
   <block id="4dc21e298acee929dd835589e6d5c640" category="paragraph">O tal vez quieras ver los datos de una tabla de landing page en su propio gráfico. Simplemente seleccione el icono _Show Chart_ para abrir el gráfico debajo de la tabla:</block>
   <block id="03e73ba3232dcca3cc695f108f44c898" category="inline-image-macro">Mostrar icono de gráfico</block>
   <block id="66a14226acec760a4af6f762f938df66" category="paragraph"><block ref="66a14226acec760a4af6f762f938df66" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="d51ad7ff0d214fb056992b26bfed4ced" category="paragraph">Cloud Insights puede recopilar datos de los switches back-end del sistema ONTAP; simplemente habilite la recopilación en la sección _Configuración avanzada_ del recopilador de datos y asegúrese de que el sistema ONTAP esté configurado para proporcionar <block ref="d459f31dbd039334427e234b6edb8373" category="inline-link-macro-rx"></block> y tiene lo apropiado <block ref="e83cb79e34a9adb49ab5c30ebb0b6c54" category="inline-xref-macro-rx"></block> configurado.</block>
   <block id="67c73d0c05c627af68622cc01164ae15" category="inline-xref">Permisos de ONTAP</block>
   <block id="11949a37d3edcc91b37d386025b80680" category="section-title">Permisos para la protección autónoma frente a ransomware de ONTAP</block>
   <block id="27bc78f063867505b2f0e7f6cdd03799" category="section-title">Se han denegado los permisos para el acceso a ONTAP</block>
@@ -13089,4 +13087,14 @@ Si está ejecutando SELinux, se recomienda ejecutar los siguientes comandos en e
 
  sudo semanage fcontext -a -t usr_t «/opt/netapp/cloudinsights(/.*)?»
  Sudo restorecon -R /opt/netapp/cloudinsights</block>
+  <block id="3b3d7bce734c0832c20ba464b1f2d199" category="section-title">Abril de 2024</block>
+  <block id="f3ef1b9644edf713f62c657ef54694d0" category="section-title">Latencia de volumen de iSCSI</block>
+  <block id="6251d6375601d27b7a63aae2bde6bf54" category="paragraph">Las métricas de latencia de volumen iSCSI están disponibles para usar en consolas, alertas, etc. Para recopilar métricas de latencia iSCSI, active _Network Performance and Map_ en el elemento de menú Modificar implementación de Kubernetes Collector.</block>
+  <block id="d18f4b3cae368b2ec43457dddff4af20" category="list-text">Oracle Enterprise Linux 8,8</block>
+  <block id="55b374c5f09d1fe118ccac20abfe40c1" category="list-text">Red Hat Enterprise Linux 8,8</block>
+  <block id="c3571084e6793888922121d12a2dca13" category="list-text">Rocoso 9,3</block>
+  <block id="7c5f962bedfb419a0baae6396bf5594d" category="list-text">OpenSUSE Leap 15,1 a 15,5</block>
+  <block id="ef72ce3dbba91fd3b44036502dd167dd" category="list-text">SUSE Enterprise Linux Server 15, 15 SP2 a 15 SP5</block>
+  <block id="04178a20ab55400da1419fd8fb46d169" category="paragraph">Cloud Insights puede recopilar datos de los switches back-end del sistema ONTAP; simplemente habilite la recopilación en la sección _Configuración avanzada_ del recopilador de datos y asegúrese de que el sistema ONTAP esté configurado para proporcionar <block ref="d459f31dbd039334427e234b6edb8373" category="inline-link-macro-rx"></block> y tiene lo apropiado <block ref="d90f3f5210a51c1e01a73513b6257018" category="inline-link-macro-rx"></block> configurado.</block>
+  <block id="4cfa97a1b14caa2256ef4dc5cd3d0fed" category="paragraph">El estado de la carga de trabajo está disponible de un vistazo en la página *Kubernetes &gt; Explorar &gt; Cargas de trabajo*, de modo que puede ver rápidamente qué cargas de trabajo se ejecutan bien y cuáles pueden necesitar ayuda. Identifique fácilmente si el problema de estado está relacionado con cambios de infraestructura, red o configuración, y profundice en el análisis de la causa raíz.</block>
 </blocks>
