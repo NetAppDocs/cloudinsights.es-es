@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task_config_telegraf_agent_k8s.html 
 keywords: telegraf, installation, install, agent, telegraf agent, kubernetes, eks, operator, k8s 
-summary: Cloud Insights es compatible con Telegraf como su agente para la recopilación de datos de integración en Kubernetes. 
+summary: El operador de supervisión de Kubernetes de NetApp recopila datos de Kubernetes para su uso en Cloud Insights. 
 ---
 = Configurar el operador de supervisión Kubernetes de NetApp
 :toc: macro

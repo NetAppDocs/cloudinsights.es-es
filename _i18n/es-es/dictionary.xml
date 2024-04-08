@@ -578,8 +578,6 @@
   <block id="5d72a02b2ac24b90a1b9ba11e8b552fe" category="cell">Puerto utilizado para la CLI de Unity</block>
   <block id="ccb06b64aa7e8cb6a869d22deb1de8bd" category="summary">Configuración del recopilador de datos de Kubernetes</block>
   <block id="e93e9e1daf8e7243cd54ae6878bcbd91" category="paragraph">Cloud Insights utiliza este recopilador de datos para recopilar métricas de Kubernetes Pod, nodo y contenedor.</block>
-  <block id="853a529a2cb031ba8c442d361b80f74e" category="paragraph">Para obtener instrucciones de instalación de Kubernetes, consulte <block ref="83baed86820f9347147bd19d20167e7d" category="inline-link-macro-rx"></block> página.</block>
-  <block id="9202ccff1bbfb1125df09b7eb605eb6c" category="admonition">La información sobre * kube-state-Metricm* se ha trasladado al <block ref="83baed86820f9347147bd19d20167e7d" category="inline-link-macro-rx"></block> página.</block>
   <block id="2c1099d2eb2a8a08bba13169800b9ecb" category="cell">Contenedor de Kubernetes</block>
   <block id="5415e066c63454268882855520be8f45" category="cell">Cluster del contenedor Namespace Pod</block>
   <block id="7bc7c32edd5f6378984b7385ffc0ed80" category="cell">Nodo de Kubernetes Nombre nodo de nodo de sistema operativo nodo UUID IP del nodo</block>
@@ -12558,7 +12556,6 @@ Puedo guardar el informe, pero cuando vuelvo a abrir el informe guardado, la hor
   <block id="b85d0b41b181eb69881d2617c5514ba3" category="list-text">Debe tener acceso a una cuenta con el rol “fsxadmin”, con tres aplicaciones asignadas - ssh, ontapi, http</block>
   <block id="702a15850842eff4dc2587a96c210640" category="list-text">Requisitos del puerto: 443</block>
   <block id="6106de3fb9edc97d16b4426ca0ae0dc8" category="paragraph">Tenga en cuenta que los comandos de la CLI de FSx y la API recuperan algunos valores de capacidad que ZAPI de Cloud Insights no recopila, por lo que ciertos valores de capacidad (como los para pools de almacenamiento) pueden ser diferentes en Cloud Insights de los que están en el mismo FSx.</block>
-  <block id="6dac8d8f7e40ada8d5686e3e8192f90f" category="paragraph">Para obtener información sobre la instalación en Kubernetes, consulte <block ref="36dbd85d6f83f853e5478a62019a359b" category="inline-link-macro-rx"></block>.</block>
   <block id="4f39aea7decea72af93c7cb4ba3fe487" category="admonition">Si tiene la Edición Federal de Cloud Insights, las instrucciones de instalación y configuración pueden ser diferentes a las instrucciones de esta página. Sigue las instrucciones en Cloud Insights para instalar el operador de supervisión de Kubernetes de NetApp.</block>
   <block id="a5e641ea50deeae492ae44180a6c1cd9" category="list-text">Tipo: Elija *Unidad de adquisición* y *Recopilación de datos*</block>
   <block id="156e10596fdc76ee5300bab931d89c0f" category="inline-xref">Parche</block>
@@ -13097,4 +13094,7 @@ Si está ejecutando SELinux, se recomienda ejecutar los siguientes comandos en e
   <block id="ef72ce3dbba91fd3b44036502dd167dd" category="list-text">SUSE Enterprise Linux Server 15, 15 SP2 a 15 SP5</block>
   <block id="04178a20ab55400da1419fd8fb46d169" category="paragraph">Cloud Insights puede recopilar datos de los switches back-end del sistema ONTAP; simplemente habilite la recopilación en la sección _Configuración avanzada_ del recopilador de datos y asegúrese de que el sistema ONTAP esté configurado para proporcionar <block ref="d459f31dbd039334427e234b6edb8373" category="inline-link-macro-rx"></block> y tiene lo apropiado <block ref="d90f3f5210a51c1e01a73513b6257018" category="inline-link-macro-rx"></block> configurado.</block>
   <block id="4cfa97a1b14caa2256ef4dc5cd3d0fed" category="paragraph">El estado de la carga de trabajo está disponible de un vistazo en la página *Kubernetes &gt; Explorar &gt; Cargas de trabajo*, de modo que puede ver rápidamente qué cargas de trabajo se ejecutan bien y cuáles pueden necesitar ayuda. Identifique fácilmente si el problema de estado está relacionado con cambios de infraestructura, red o configuración, y profundice en el análisis de la causa raíz.</block>
+  <block id="2041337c363c1ecaeb2a1aa9c8999494" category="paragraph">Para obtener información sobre la instalación en Kubernetes, consulte <block ref="f0d3e43e41da35ba651820db811551cd" category="inline-link-macro-rx"></block> página.</block>
+  <block id="ed300e62408d01715c593931df6a2352" category="paragraph">Para obtener instrucciones de instalación de Kubernetes, consulte <block ref="f0d3e43e41da35ba651820db811551cd" category="inline-link-macro-rx"></block> página.</block>
+  <block id="9475d89ab72707a841c177322d6462fa" category="summary">El operador de supervisión de Kubernetes de NetApp recopila datos de Kubernetes para su uso en Cloud Insights.</block>
 </blocks>
