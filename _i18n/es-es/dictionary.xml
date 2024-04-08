@@ -394,7 +394,6 @@
   <block id="9c0408c775a2b61052a2e700a89f396f" category="section-title">Cumplimiento de normativas</block>
   <block id="d3c3f5c1a2706c55910136e97da08e3d" category="paragraph">Cloud Insights realiza auditorías y validaciones independientes de terceros de la empresa de APEM externa con licencia de su seguridad, procesos y servicios, incluida la finalización de la auditoría SOC 2.</block>
   <block id="c75d4b042f6604bc016e5b15ff4dea18" category="summary">Cloud Insights es compatible con Telegraf como su agente para la recopilación de datos de integración en Kubernetes.</block>
-  <block id="562442a302f1457c8c9df7cbde80c0b4" category="doc">Configurar el operador de supervisión Kubernetes de NetApp</block>
   <block id="b9f54c4d152facdb82c18e1719662b9f" category="paragraph">Cloud Insights ofrece la *NetApp Kubernetes Monitoring Operator* (NKMO) para la recogida de Kubernetes. Cuando se añade un recopilador de datos, solo tiene que elegir el icono "Kubernetes".</block>
   <block id="6a65175f7f76169aeeaf32acdda0d82f" category="section-title">Antes de instalar el operador de supervisión de Kubernetes de NetApp</block>
   <block id="e7cd0bdb5140849b9f1cd2c88adf53d0" category="list-text">La instalación del operador de NetApp Kubernetes Monitoring es compatible con la versión 1.20 o posterior de Kubernetes.</block>
@@ -576,7 +575,6 @@
   <block id="7622055b26116e77e0829f3b72e6fd74" category="cell">Ruta completa a la carpeta que contiene el ejecutable _uemcli.exe_</block>
   <block id="d1af7a4fcab5a7aaf8e28e83cbbd35d9" category="cell">Puerto CLI de Unity</block>
   <block id="5d72a02b2ac24b90a1b9ba11e8b552fe" category="cell">Puerto utilizado para la CLI de Unity</block>
-  <block id="ccb06b64aa7e8cb6a869d22deb1de8bd" category="summary">Configuración del recopilador de datos de Kubernetes</block>
   <block id="e93e9e1daf8e7243cd54ae6878bcbd91" category="paragraph">Cloud Insights utiliza este recopilador de datos para recopilar métricas de Kubernetes Pod, nodo y contenedor.</block>
   <block id="2c1099d2eb2a8a08bba13169800b9ecb" category="cell">Contenedor de Kubernetes</block>
   <block id="5415e066c63454268882855520be8f45" category="cell">Cluster del contenedor Namespace Pod</block>
@@ -12434,7 +12432,6 @@ Este equipo no debe ejecutar ningún otro software de nivel de aplicación. Se r
   <block id="8f0ae9ae8e0fd7f3e8fe6ff175a59943" category="list-text">Edite _operator-additional-permissions.yaml_ antes de instalar, o después de instalar, edite el recurso _ClusterRole/&lt;namespace&gt;-additional-permissions_</block>
   <block id="8a75e64ac585bb8eb6efae44768cfc8e" category="list-text">Cree una nueva regla para los apiGroups y recursos deseados con los verbos [“get”, “watch”, “list”]. Consulte \https://kubernetes.io/docs/reference/access-authn-authz/rbac/</block>
   <block id="5aa700b8892918bb447b666e3ba9b2a8" category="list-text">Aplique los cambios al clúster</block>
-  <block id="449735a59883598ca6b4afe7cb57336a" category="admonition">Lea la <block ref="98b00674e05edc386cc19257d013cae8" category="inline-link-macro-rx"></block> Documentación antes de instalar o actualizar el operador de supervisión de Kubernetes de NetApp.</block>
   <block id="4f05106cca363b0f3c492314ab777534" category="cell">Faltan datos _involved dobject_ para algunos registros de eventos.</block>
   <block id="67ee92e19812baa7cedb346320ca0182" category="cell">Asegúrese de haber seguido los pasos de la <block ref="d9283cdb1b027ed2a61fa92c8dc3e314" category="inline-link-macro-rx"></block> sección anterior.</block>
   <block id="dafe147a7f0074749f1e1c76f1e05008" category="section-title">Pruebas de módulos</block>
@@ -13097,4 +13094,8 @@ Si está ejecutando SELinux, se recomienda ejecutar los siguientes comandos en e
   <block id="2041337c363c1ecaeb2a1aa9c8999494" category="paragraph">Para obtener información sobre la instalación en Kubernetes, consulte <block ref="f0d3e43e41da35ba651820db811551cd" category="inline-link-macro-rx"></block> página.</block>
   <block id="ed300e62408d01715c593931df6a2352" category="paragraph">Para obtener instrucciones de instalación de Kubernetes, consulte <block ref="f0d3e43e41da35ba651820db811551cd" category="inline-link-macro-rx"></block> página.</block>
   <block id="9475d89ab72707a841c177322d6462fa" category="summary">El operador de supervisión de Kubernetes de NetApp recopila datos de Kubernetes para su uso en Cloud Insights.</block>
+  <block id="8c362b737d9d3a6fff5acfc29aaa5225" category="summary">Recopilador de datos para Kubernetes</block>
+  <block id="3ce5067a26bb6509b15cfb6487590ed5" category="doc">Recopilador de datos: Kubernetes</block>
+  <block id="c7e254ef92577e872c85b9cc18b384ea" category="doc">Instalación y configuración del operador de supervisión de Kubernetes</block>
+  <block id="0ec327c74f375d121d057b61ae7dc1be" category="admonition">Lea la <block ref="98b00674e05edc386cc19257d013cae8" category="inline-link-macro-rx"></block> Antes de instalar o actualizar el operador de supervisión de Kubernetes de NetApp, se requiere documentación previa.</block>
 </blocks>
