@@ -26,9 +26,12 @@ NOTE: Es posible que algunas de estas funciones no estén disponibles en la edic
 
 
 
-=== Latencia de volumen de iSCSI
+=== Compatibilidad con SAN iSCSI para mapa de red de Kubernetes
 
-Las métricas de latencia de volumen iSCSI están disponibles para usar en consolas, alertas, etc. Para recopilar métricas de latencia iSCSI, active _Network Performance and Map_ en el elemento de menú Modificar implementación de Kubernetes Collector.
+Identifica las dependencias de almacenamiento subyacente de Kubernetes para NFS y ahora iSCSI.
+Acelera la resolución de problemas obteniendo información sobre la actividad de red de almacenamiento de la aplicación de Kubernetes y métricas de almacenamiento sin definir. Comprende cómo la aplicación de Kubernetes utiliza la infraestructura de almacenamiento para los informes de pago por uso y visibilidad de uso.
+
+image:pod-to-storage.png["Ejemplo de POD a almacenamiento"]
 
 
 

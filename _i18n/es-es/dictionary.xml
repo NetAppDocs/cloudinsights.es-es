@@ -13082,8 +13082,6 @@ Si está ejecutando SELinux, se recomienda ejecutar los siguientes comandos en e
  sudo semanage fcontext -a -t usr_t «/opt/netapp/cloudinsights(/.*)?»
  Sudo restorecon -R /opt/netapp/cloudinsights</block>
   <block id="3b3d7bce734c0832c20ba464b1f2d199" category="section-title">Abril de 2024</block>
-  <block id="f3ef1b9644edf713f62c657ef54694d0" category="section-title">Latencia de volumen de iSCSI</block>
-  <block id="6251d6375601d27b7a63aae2bde6bf54" category="paragraph">Las métricas de latencia de volumen iSCSI están disponibles para usar en consolas, alertas, etc. Para recopilar métricas de latencia iSCSI, active _Network Performance and Map_ en el elemento de menú Modificar implementación de Kubernetes Collector.</block>
   <block id="d18f4b3cae368b2ec43457dddff4af20" category="list-text">Oracle Enterprise Linux 8,8</block>
   <block id="55b374c5f09d1fe118ccac20abfe40c1" category="list-text">Red Hat Enterprise Linux 8,8</block>
   <block id="c3571084e6793888922121d12a2dca13" category="list-text">Rocoso 9,3</block>
@@ -13098,4 +13096,9 @@ Si está ejecutando SELinux, se recomienda ejecutar los siguientes comandos en e
   <block id="3ce5067a26bb6509b15cfb6487590ed5" category="doc">Recopilador de datos: Kubernetes</block>
   <block id="c7e254ef92577e872c85b9cc18b384ea" category="doc">Instalación y configuración del operador de supervisión de Kubernetes</block>
   <block id="0ec327c74f375d121d057b61ae7dc1be" category="admonition">Lea la <block ref="98b00674e05edc386cc19257d013cae8" category="inline-link-macro-rx"></block> Antes de instalar o actualizar el operador de supervisión de Kubernetes de NetApp, se requiere documentación previa.</block>
+  <block id="f198d7bd876499c7a876c665606e2d82" category="section-title">Compatibilidad con SAN iSCSI para mapa de red de Kubernetes</block>
+  <block id="d14b2ad81a63e0273293afd80b29ec37" category="paragraph">Identifica las dependencias de almacenamiento subyacente de Kubernetes para NFS y ahora iSCSI.
+Acelera la resolución de problemas obteniendo información sobre la actividad de red de almacenamiento de la aplicación de Kubernetes y métricas de almacenamiento sin definir. Comprende cómo la aplicación de Kubernetes utiliza la infraestructura de almacenamiento para los informes de pago por uso y visibilidad de uso.</block>
+  <block id="54fc47ade0e8b56477f3a565a1183811" category="inline-image-macro">Ejemplo de POD a almacenamiento</block>
+  <block id="b4ee1759943c32311eab48ecd432c0d9" category="paragraph"><block ref="b4ee1759943c32311eab48ecd432c0d9" category="inline-image-macro-rx" type="image"></block></block>
 </blocks>
