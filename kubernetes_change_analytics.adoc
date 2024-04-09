@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: kubernetes_change_analytics.html 
-keywords: changes, management, analysis, kubernetes, k8s 
+keywords: changes, management, analysis 
 summary: El seguimiento de los cambios de Kubernetes es más fácil que nunca. 
 ---
 = Análisis de cambios de Kubernetes
@@ -19,12 +19,12 @@ summary: El seguimiento de los cambios de Kubernetes es más fácil que nunca.
 
 
 [role="lead"]
-El análisis de cambios de Kubernetes te ofrece una vista integral de los cambios recientes realizados en tu entorno de Kubernetes. Tiene a su alcance las alertas y el estado de la implementación. Con Change Analytics, puede realizar un seguimiento de cada cambio de implementación y configuración, y correlacionarlo con el estado y el rendimiento de los servicios, la infraestructura y los clústeres de K8s.
+Kubernetes Change Analytics le proporciona una vista integral de los cambios recientes en su entorno K8s. Tiene a su alcance las alertas y el estado de la implementación. Con Change Analytics, puede realizar un seguimiento de cada cambio de implementación y configuración, y correlacionarlo con el estado y el rendimiento de los servicios, la infraestructura y los clústeres de K8s.
 
 Tenga en cuenta lo siguiente:
 
-* En entornos Kubernetes multi-tenant, las interrupciones del servicio pueden ocurrir debido a cambios mal configurados. En entornos muy dinámicos, es posible que Cloud Insights no pueda realizar un seguimiento adecuado de todos los cambios.
-* Análisis de cambios proporciona un solo panel para ver y correlacionar el estado de las cargas de trabajo y los cambios de configuración. Esto puede ayudar a solucionar los problemas de entornos dinámicos de Kubernetes.
+* En entornos multi-tenant, las interrupciones del servicio pueden ocurrir debido a cambios mal configurados. En entornos muy dinámicos, es posible que Cloud Insights no pueda realizar un seguimiento adecuado de todos los cambios.
+* Análisis de cambios proporciona un solo panel para ver y correlacionar el estado de las cargas de trabajo y los cambios de configuración. Esto puede ayudar a la hora de solucionar problemas de entornos dinámicos.
 
 
 Para ver el análisis de cambios de Kubernetes, vaya a *Kubernetes > Análisis de cambios*.

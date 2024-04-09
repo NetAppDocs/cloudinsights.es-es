@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: kubernetes_node_detail.html 
-keywords: kubernetes, pods, clusters, nodes. troubleshooting, planning 
+keywords: k8s, pods, clusters, nodes. troubleshooting, planning 
 summary: La página de detalles del nodo de Kubernetes proporciona información sobre el almacenamiento PV back-end y Pod. 
 ---
 = Página de detalles del nodo de Kubernetes

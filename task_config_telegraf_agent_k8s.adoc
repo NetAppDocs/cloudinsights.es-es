@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar 
 permalink: task_config_telegraf_agent_k8s.html 
-keywords: kubernetes, k8s, telegraf, installation, install, agent, telegraf agent, eks, operator 
-summary: El operador de supervisión de Kubernetes de NetApp recopila datos de Kubernetes para su uso en Cloud Insights. 
+keywords: kubernetes, Kubernetes, k8s, telegraf, installation, install, agent, telegraf agent, eks, operator 
+summary: El operador de supervisión de Kubernetes recopila datos de Kubernetes para su uso en Cloud Insights. 
 ---
 = Instalación y configuración del operador de supervisión de Kubernetes
 :hardbreaks:
@@ -25,7 +25,7 @@ image:kubernetes_tile.png["Recuadro del recopilador de datos de Kubernetes"]
 
 
 toc::[]
-El operador y los recopiladores de datos se descargan del registro de Docker de Cloud Insights. Una vez instalado, NKMO gestiona los colectores compatibles con el operador implementados en los nodos del clúster de Kubernetes para adquirir datos, incluida la gestión del ciclo de vida de dichos colectores. Después de esta cadena, los datos se adquieren de los colectores y se envían a Cloud Insights.
+El operador de Kubernetes y los recopiladores de datos se descargan del registro de Docker de Cloud Insights. Una vez instalado, el Operador administra los recopiladores compatibles con el Operador desplegados en los nodos del clúster de Kubernetes para adquirir datos, incluida la gestión del ciclo de vida de esos recopiladores. Después de esta cadena, los datos se adquieren de los colectores y se envían a Cloud Insights.
 
 
 

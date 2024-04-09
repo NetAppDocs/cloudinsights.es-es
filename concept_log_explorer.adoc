@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: concept_log_explorer.html 
-keywords: logs, monitors, alerts, EMS, Kubernetes, 
+keywords: logs, monitors, alerts, EMS, 
 summary: El Explorador de registros es una herramienta eficaz para investigar problemas a través de diferentes registros del sistema. 
 ---
 = Explorador de registros
