@@ -51,7 +51,7 @@ Cloud Insights conserva datos históricos para usarlos en generación de informe
 | Marts de rendimiento | Nodo de almacenamiento | Todos los días | 13 meses 
 
 
-| Marts de rendimiento | Rendimiento de VM | Cada hora | 35 días 
+| Marts de rendimiento | Rendimiento de VM | Cada hora | 14 días 
 
 
 | Marts de rendimiento | Rendimiento de VM | Todos los días | 13 meses 
