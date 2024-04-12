@@ -23,7 +23,7 @@ Kubernetes Change Analytics le proporciona una vista integral de los cambios rec
 
 Tenga en cuenta lo siguiente:
 
-* En entornos multi-tenant, las interrupciones del servicio pueden ocurrir debido a cambios mal configurados. En entornos muy dinámicos, es posible que Cloud Insights no pueda realizar un seguimiento adecuado de todos los cambios.
+* En entornos multi-tenant, las interrupciones del servicio pueden ocurrir debido a cambios mal configurados. En entornos muy dinámicos, es posible que Cloud Insights Change Analytics no pueda realizar un seguimiento adecuado de todos los cambios.
 * Análisis de cambios proporciona un solo panel para ver y correlacionar el estado de las cargas de trabajo y los cambios de configuración. Esto puede ayudar a la hora de solucionar problemas de entornos dinámicos.
 
 
