@@ -13103,4 +13103,7 @@ Esta funcionalidad ayuda a las organizaciones a reducir los costes generales med
   <block id="ea68be0a35687ab64afad562f46dff32" category="paragraph">Permisos para Acceso ONTAP Denegado:</block>
   <block id="64ac4b9298207f0fc756c6288f8c1a80" category="paragraph">Nota: Si ya se ha agregado un rol REST--ya sea _arwrole_ o _csrestrole_- no es necesario agregar un segundo rol REST. Simplemente puede agregar los permisos de la API como en el ejemplo siguiente.</block>
   <block id="2e99c7c5f8b0c692f20c07f49b37d122" category="paragraph">Ejemplo: _Csrestrole_ ya está presente, por lo que solo tenemos que habilitar la protección anti-ransomware y dar permisos API al _csrestrole_ existente:</block>
+  <block id="2b9cb1c6561901b8c103aee1d5c61dfd" category="cell">Veo un mensaje de error de latido del corazón</block>
+  <block id="a79a7a75840b1e266cc0c6c037c2d7f0" category="cell">Al reinstalar la unidad de adquisición, aparece «ValueError: File context for /opt/netapp/cloudinsights(/.*)? ya definido.</block>
+  <block id="ae27abd8286d1b98e00b46440cd90926" category="cell">En un sistema con SELinux, este mensaje de error puede aparecer después<block ref="36f17859b55b3c1f8840366ccf62d8d6" prefix=" " category="inline-code"></block> Se ha ejecutado y se debe volver a instalar la unidad de adquisición. Ejecutando el comando<block ref="42f732f1bf8255184086b8f48ec741c3" prefix=" " category="inline-code"></block> debe corregir el problema y eliminar el mensaje.</block>
 </blocks>

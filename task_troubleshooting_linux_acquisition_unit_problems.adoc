@@ -60,7 +60,10 @@ Aquí encontrará sugerencias para solucionar problemas con las unidades de adqu
 | Estado: Fallo del latido | La Unidad de adquisición (AU) envía un latido de corazón a Cloud Insights cada 60 segundos para renovar su contrato de arrendamiento. Si la llamada de latido falla debido a un problema de red o a una Cloud Insights que no responde, el tiempo de concesión de la AU no se actualiza. Cuando finaliza el tiempo de concesión de la AU, Cloud Insights muestra el estado "Heartbeat failed". Pasos para la solución de problemas: Compruebe la conexión de red entre el servidor de la unidad de adquisición y CloudInsights. Compruebe si el servicio Unidad de adquisición está en funcionamiento. Si el servicio no está en ejecución, inicie el servicio. Compruebe el registro de la unidad de adquisición (/var/log/netapp/cloudsCDI/acq/acq.log) para ver si hay algún error. 
 
 
-| Estoy viendo un mensaje "Heartbeat error:" | Este error puede ocurrir si hay una interrupción de la red que hace que la comunicación entre la unidad de adquisición y el entorno Cloud Insights se interrumpa durante más de un minuto. Compruebe que la conexión entre AU y Cloud Insights es estable y activa. 
+| Veo un mensaje de error de latido del corazón | Este error puede ocurrir si hay una interrupción de la red que hace que la comunicación entre la unidad de adquisición y el entorno Cloud Insights se interrumpa durante más de un minuto. Compruebe que la conexión entre AU y Cloud Insights es estable y activa. 
+
+
+| Al reinstalar la unidad de adquisición, aparece «ValueError: File context for /opt/netapp/cloudinsights(/.*)? ya definido. | En un sistema con SELinux, este mensaje de error puede aparecer después `cloudinsights-uninstall.sh -p` Se ha ejecutado y se debe volver a instalar la unidad de adquisición. Ejecutando el comando `semanage fcontext -d -t usr_t "/opt/netapp/cloudinsights(/.*)?"` debe corregir el problema y eliminar el mensaje. 
 |===
 
 
