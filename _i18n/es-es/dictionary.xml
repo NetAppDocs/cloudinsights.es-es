@@ -13106,4 +13106,11 @@ Esta funcionalidad ayuda a las organizaciones a reducir los costes generales med
   <block id="2b9cb1c6561901b8c103aee1d5c61dfd" category="cell">Veo un mensaje de error de latido del corazón</block>
   <block id="a79a7a75840b1e266cc0c6c037c2d7f0" category="cell">Al reinstalar la unidad de adquisición, aparece «ValueError: File context for /opt/netapp/cloudinsights(/.*)? ya definido.</block>
   <block id="ae27abd8286d1b98e00b46440cd90926" category="cell">En un sistema con SELinux, este mensaje de error puede aparecer después<block ref="36f17859b55b3c1f8840366ccf62d8d6" prefix=" " category="inline-code"></block> Se ha ejecutado y se debe volver a instalar la unidad de adquisición. Ejecutando el comando<block ref="42f732f1bf8255184086b8f48ec741c3" prefix=" " category="inline-code"></block> debe corregir el problema y eliminar el mensaje.</block>
+  <block id="ae2e91be06ba70b73fa6c74eeeb93115" category="section-title">Funcionalidad anticuada</block>
+  <block id="4b19ce62e1686c6b02dce6a6a618fab8" category="paragraph">En ocasiones, la funcionalidad queda obsoleta a medida que evolucionan las operaciones. Estas son algunas de las características y funcionalidades que se han quedado obsoletas en Cloud Insights:</block>
+  <block id="f10826ff9826bc53b76b340699d7486c" category="section-title">Workload Secure REST cloudsecure_forsics.activities.v1 API en desuso</block>
+  <block id="22e1977c2373212d5a86d5500fb987b6" category="paragraph">La API _cloudsecure_forsics.activities.v1_ está en desuso. Esta API muestra información sobre las actividades asociadas con entidades en el entorno de seguridad de carga de trabajo de almacenamiento. Esta API ha sido reemplazada por cloudsecure_forsics.activities.*v2*_.</block>
+  <block id="2f536f055cc49f30b2b045622c25fdbc" category="paragraph">GET for this API ha devuelto anteriormente lo siguiente:</block>
+  <block id="4d50bab3a705e7ae04c75813a7d22ad2" category="paragraph">Esta API ahora devuelve:</block>
+  <block id="c124771302bfe76ccd178d7854d906f5" category="paragraph">Para obtener más detalles, consulte la documentación de Swagger en «Admin &gt; API Access &gt; API Documentation &gt; Workload Security».</block>
 </blocks>

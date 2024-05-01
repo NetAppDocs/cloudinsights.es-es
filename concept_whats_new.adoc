@@ -165,6 +165,49 @@ Workload Security incluye un nuevo algoritmo de APRENDIZAJE AUTOMÁTICO de detec
 
 “Estacionalidad” de los comportamientos: El comportamiento de fin de semana puede seguir patrones diferentes de los días de la semana, o el comportamiento de la mañana a partir de la tarde. Los algoritmos de seguridad de la carga de trabajo tienen en cuenta esta estacionalidad.
 
+
+
+=== Funcionalidad anticuada
+
+En ocasiones, la funcionalidad queda obsoleta a medida que evolucionan las operaciones. Estas son algunas de las características y funcionalidades que se han quedado obsoletas en Cloud Insights:
+
+
+
+==== Workload Secure REST cloudsecure_forsics.activities.v1 API en desuso
+
+La API _cloudsecure_forsics.activities.v1_ está en desuso. Esta API muestra información sobre las actividades asociadas con entidades en el entorno de seguridad de carga de trabajo de almacenamiento. Esta API ha sido reemplazada por cloudsecure_forsics.activities.*v2*_.
+
+GET for this API ha devuelto anteriormente lo siguiente:
+
+[listing]
+----
+{
+  "count": 24594,
+  "limit": 1000,
+  "offset": 0,
+  "results": [
+    {
+      "accessLocation":
+----
+Esta API ahora devuelve:
+
+[listing]
+----
+{
+  "limit": 1000,
+  "meta": {
+    "page": {
+      "after": "lvlvk3pp.4cpzcg4kpybl",
+      "before": "lvlxy3dz.4cq5ajdnl9fk",
+      "size": 1000
+    }
+  },
+  "results": [
+    {
+      "accessLocation": "10.249.6.220",
+----
+Para obtener más detalles, consulte la documentación de Swagger en «Admin > API Access > API Documentation > Workload Security».
+
 '''
 
 
