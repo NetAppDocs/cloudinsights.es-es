@@ -179,6 +179,9 @@ persistentvolumeclaims=[*],persistentvolumes=[*],pods=[*],replicasets=[*],resour
 |  | toleraciones-exportador-de-eventos | toleraciones adicionales de evento-exportador. 
 
 
+|  | Event-exporter-maxEventAgeSeconds | antigüedad máxima de evento de exportador-evento.  Consulte https://github.com/jkroepke/resmoio-kubernetes-event-exporter[] 
+
+
 | asignación de carga de trabajo |  | Opciones de configuración que pueden personalizar la recopilación de mapas de carga de trabajo y la instalación del operador 
 
 
@@ -391,6 +394,10 @@ spec:
     # # Example: '{key: taint1, operator: Exists, effect: NoSchedule},{key: taint2, operator: Exists, effect: NoExecute}'
     # fluent-bit-tolerations: ''
     # event-exporter-tolerations: ''
+
+    # # event-exporter max event age.
+    # # See https://github.com/jkroepke/resmoio-kubernetes-event-exporter
+    # event-exporter-maxEventAgeSeconds: '10'
 
   # # Settings for the Network Performance and Map feature.
   # workload-map:
