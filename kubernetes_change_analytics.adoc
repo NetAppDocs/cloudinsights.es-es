@@ -21,10 +21,10 @@ summary: El seguimiento de los cambios de Kubernetes es más fácil que nunca.
 [role="lead"]
 Kubernetes Change Analytics le proporciona una vista integral de los cambios recientes en su entorno K8s. Tiene a su alcance las alertas y el estado de la implementación. Con Change Analytics, puede realizar un seguimiento de cada cambio de implementación y configuración, y correlacionarlo con el estado y el rendimiento de los servicios, la infraestructura y los clústeres de K8s.
 
-Tenga en cuenta lo siguiente:
+¿Cómo ayuda el análisis de cambios?
 
-* En entornos multi-tenant, las interrupciones del servicio pueden ocurrir debido a cambios mal configurados. En entornos muy dinámicos, es posible que Cloud Insights Change Analytics no pueda realizar un seguimiento adecuado de todos los cambios.
-* Análisis de cambios proporciona un solo panel para ver y correlacionar el estado de las cargas de trabajo y los cambios de configuración. Esto puede ayudar a la hora de solucionar problemas de entornos dinámicos.
+* En entornos Kubernetes multi-tenant, las interrupciones del servicio pueden ocurrir debido a cambios mal configurados. En entornos muy dinámicos, es posible que la supervisión de la infraestructura de Cloud Insights no pueda realizar un seguimiento adecuado de todos los cambios.
+* Change Analytics ayuda con esto al proporcionar un único panel para ver y correlacionar el estado de las cargas de trabajo y los cambios de configuración. Esto puede ayudar a solucionar los problemas de entornos dinámicos de Kubernetes.
 
 
 Para ver el análisis de cambios de Kubernetes, vaya a *Kubernetes > Análisis de cambios*.
