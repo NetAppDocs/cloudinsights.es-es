@@ -202,7 +202,7 @@ Lista alfabética de recopiladores de datos compatibles con Cloud Insights:
 | link:task_config_telegraf_kibana.html["Kibana"] | Servicio 
 
 
-| link:https:task_config_telegraf_agent.html#kubernetes["Kubernetes"] | Servicio 
+| link:https:task_config_telegraf_agent_k8s.html["Kubernetes"] | Servicio 
 
 
 | link:task_dc_lenovo.html["Serie HX de Lenovo"] | De almacenamiento 

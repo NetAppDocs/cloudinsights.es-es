@@ -394,34 +394,15 @@
   <block id="9c0408c775a2b61052a2e700a89f396f" category="section-title">Cumplimiento de normativas</block>
   <block id="d3c3f5c1a2706c55910136e97da08e3d" category="paragraph">Cloud Insights realiza auditorías y validaciones independientes de terceros de la empresa de APEM externa con licencia de su seguridad, procesos y servicios, incluida la finalización de la auditoría SOC 2.</block>
   <block id="c75d4b042f6604bc016e5b15ff4dea18" category="summary">Cloud Insights es compatible con Telegraf como su agente para la recopilación de datos de integración en Kubernetes.</block>
-  <block id="b9f54c4d152facdb82c18e1719662b9f" category="paragraph">Cloud Insights ofrece la *NetApp Kubernetes Monitoring Operator* (NKMO) para la recogida de Kubernetes. Cuando se añade un recopilador de datos, solo tiene que elegir el icono "Kubernetes".</block>
-  <block id="6a65175f7f76169aeeaf32acdda0d82f" category="section-title">Antes de instalar el operador de supervisión de Kubernetes de NetApp</block>
-  <block id="e7cd0bdb5140849b9f1cd2c88adf53d0" category="list-text">La instalación del operador de NetApp Kubernetes Monitoring es compatible con la versión 1.20 o posterior de Kubernetes.</block>
-  <block id="419f3742e6de8e0ec4b22cce005e7630" category="cell">Plataforma</block>
-  <block id="b021df6aac4654c454f46c77646e745f" category="cell">Etiqueta</block>
-  <block id="95be99c1e2046a974fa1680ffa1b83ed" category="cell">Kubernetes v1.20 y superior</block>
-  <block id="f1f45371fb9bb18dae05a3bbc8c3fbc0" category="cell">Kubernetes.io/os = linux</block>
-  <block id="9e2a330d57e085e593849abad3159d54" category="cell">Rancher + ganadero.io como plataforma de orquestación/Kubernetes</block>
-  <block id="210d6dd076b2d2e1dd1645c99d185fbd" category="cell">ganado.io/os = linux</block>
-  <block id="665d63bd09ee670a485ee7ffa3b8a595" category="list-text">El operador de supervisión Kubernetes de NetApp y sus dependencias (telegraf, kube-state-Metrics, fluentbit, etc.) no son compatibles con los nodos que se ejecutan con la arquitectura Arm64.</block>
   <block id="b33361bde0bcb58125ffdc8fc36d8b99" category="inline-xref">Configurar el soporte del proxy</block>
   <block id="431387eb7262e1cfc79b125eb8a67c60" category="inline-xref">proxy</block>
-  <block id="ef2fbd69b6e60cf6860a0466960c15a2" category="inline-xref">repositorio personalizado</block>
-  <block id="ca988e68e82cbabbd81d5c8fe6c458c2" category="inline-xref">OpenShift</block>
-  <block id="fd75e30f03557ae02b87c843dca05eef" category="paragraph">Si usted está corriendo con un <block ref="1997cc9e11e3840958347d54a5502495" category="inline-xref-macro-rx"></block>, tenga un <block ref="8117c39ae2fe2d46fc88eb3e138ef1e6" category="inline-xref-macro-rx"></block>, o están utilizando <block ref="355c126f2151d7a3495e6210dabdd072" category="inline-xref-macro-rx"></block>, lea detenidamente las siguientes secciones.</block>
   <block id="edcc6d64ff09289fd7b549c0265f3ea6" category="inline-xref">Actualizar</block>
-  <block id="4ce29774235b5ad70135520aad0c4a92" category="paragraph">Hay dos lugares en los que puede utilizar un proxy en su entorno para instalar el operador de supervisión de Kubernetes de NetApp. Pueden ser los mismos sistemas proxy o independientes:</block>
   <block id="b30dfc4554e987d8435414f85e0afc5c" category="list-text">Proxy necesario durante la ejecución del fragmento de código de instalación (utilizando "curl") para conectar el sistema donde se ejecuta el fragmento de código a su entorno Cloud Insights</block>
   <block id="58b692b7f72614bb3545960fa7db5fde" category="list-text">El proxy que necesita el clúster de Kubernetes de destino para comunicarse con su entorno de Cloud Insights</block>
-  <block id="73689eeba538dc0b4e24b0c08682858c" category="paragraph">En el caso del proxy utilizado para instalar el monitor operativo de Kubernetes de NetApp, antes de instalar el operador, establezca las variables de entorno _http_proxy/https_proxy_. En algunos entornos proxy, también es posible que tenga que establecer la variable _no_proxy Environment_.</block>
-  <block id="05de88b1f0962d418af51426b2e42b5c" category="paragraph">Para ajustar las variables, lleve a cabo los siguientes pasos en su sistema *antes de* instalar el operador de monitorización Kubernetes de NetApp:</block>
-  <block id="a4e1e6009cd02048a3c4c625810efdde" category="paragraph">En el caso de que el proxy utilizado para el clúster de Kubernetes se comunique con el entorno de Cloud Insights, instale el operador de supervisión de Kubernetes de NetApp después de leer todas estas instrucciones.</block>
   <block id="ba5a4399ff89e39d6d73b55b320d32dc" category="section-title">Uso de un repositorio de Docker personalizado o privado</block>
   <block id="e11da9afe91d381489a365c86cc614ab" category="inline-xref">Requisitos previos</block>
   <block id="90e3576ed0e73e03c00705419f3411a3" category="section-title">Instrucciones de OpenShift</block>
   <block id="493c4ff608e06cc5a02d0561f6bb02a3" category="paragraph">OpenShift puede implementar un nivel de seguridad añadido que puede bloquear el acceso a algunos componentes de Kubernetes.</block>
-  <block id="143bc427903e01a7afe2d41b83643f5e" category="section-title">Instalación del operador de supervisión Kubernetes de NetApp</block>
-  <block id="7591998776b8f5daf9acfbbe7be1312b" category="list-title">Pasos para instalar el agente del operador de NetApp Kubernetes Monitoring en Kubernetes:</block>
   <block id="b1709369b19b51deac976f5fc9dce527" category="inline-xref">actualizar</block>
   <block id="349838fb1d851d3e2014b9fe39203275" category="inline-xref">Instale</block>
   <block id="350ff3e6edca65920342bf3e930281fd" category="summary">Cloud Insights proporciona varias cuentas de usuario con diferentes niveles de permiso.</block>
@@ -576,30 +557,6 @@
   <block id="d1af7a4fcab5a7aaf8e28e83cbbd35d9" category="cell">Puerto CLI de Unity</block>
   <block id="5d72a02b2ac24b90a1b9ba11e8b552fe" category="cell">Puerto utilizado para la CLI de Unity</block>
   <block id="e93e9e1daf8e7243cd54ae6878bcbd91" category="paragraph">Cloud Insights utiliza este recopilador de datos para recopilar métricas de Kubernetes Pod, nodo y contenedor.</block>
-  <block id="2c1099d2eb2a8a08bba13169800b9ecb" category="cell">Contenedor de Kubernetes</block>
-  <block id="5415e066c63454268882855520be8f45" category="cell">Cluster del contenedor Namespace Pod</block>
-  <block id="7bc7c32edd5f6378984b7385ffc0ed80" category="cell">Nodo de Kubernetes Nombre nodo de nodo de sistema operativo nodo UUID IP del nodo</block>
-  <block id="5ef967423ece776ba4ee9c6e0f94650f" category="cell">CPU nanosegundos uso CPU Nanocores memoria principales fallos de página memoria Resident Set Size (RSS) memoria conjunto de trabajo memoria fallos de página memoria uso memoria sistema de archivos raíz disponible capacidad del sistema de archivos raíz utilizado</block>
-  <block id="201aa8b6df1bf9b6d3e7978dd379f568" category="cell">Nodo de Kubernetes</block>
-  <block id="58c8faf6f85ccaa7fc8d2d01063a95b9" category="cell">Clúster de nodos de Kubernetes</block>
-  <block id="484a187381025ea8b53e38a49719005d" category="cell">Nombre de nodo nodo nodo OS nodo UUID IP de nodo</block>
-  <block id="67505af3915f51555c02bfad9febc3b5" category="cell">Uso de CPU Nanocores uso de CPU nanossegundos sistema de archivos disponible sistema de archivos total del sistema de archivos utilizado memoria disponible uso de memoria memoria fallos de página memoria fallos de página memoria conjunto residente Tamaño (RSS) memoria conjunto de trabajo errores RX de red (por segundo) bytes RX de red (por segundo) errores TX de red (por segundo) bytes TX de red (Por segundo) sistema de archivos de imágenes en tiempo de ejecución sistema de archivos de imágenes en tiempo de ejecución uso capacidad del sistema de archivos de imágenes en tiempo de ejecución</block>
-  <block id="d34c4d1c2c5e1fd5027617805f18d578" category="cell">Pod de Kubernetes</block>
-  <block id="b93534eac0ffef15e4bc6e622b649edb" category="cell">Cluster Namespace Pod</block>
-  <block id="9fa53e6369971b13a4de86d77930fa7d" category="cell">UUID de nodo de nodo de Kubernetes IP nodo de nodo de sistema operativo</block>
-  <block id="d5da5a0488eed8f6bd2a7b8ff56baa7d" category="cell">Errores de transmisión de red (por segundo) bytes de red (por segundo) bytes de recepción de red (por segundo) errores de recepción de red (por segundo)</block>
-  <block id="71c7112b40180e67cc433b17314c1e5a" category="cell">Volumen de Kubernetes Pod</block>
-  <block id="95177894fca839bb4f125dc82e11bcd5" category="cell">Espacio de nombres de cluster Volume Pod</block>
-  <block id="23be9b4dfda51095be8d72ec54e75785" category="cell">So nodo IP nodo IP nodo de UUID nodo de nodo de Kubernetes</block>
-  <block id="872a1fa9654389ef8254b1ea3c159c67" category="cell">Capacidad disponible utilizada</block>
-  <block id="31b831445602d4355cb2a53eb882ccb0" category="cell">Contenedor del sistema Kubernetes</block>
-  <block id="bba6b40acdcc344bcea91f489658ca7f" category="cell">Cluster de nodos de Kubernetes del contenedor del sistema</block>
-  <block id="a5ebe27628fe912bf017622a96de6fe3" category="cell">Nombre de nodo IP nodo UUID de nodo operativo</block>
-  <block id="963d5703dfad66d7b08aef8039584b0f" category="cell">Uso de CPU Nanocores uso de CPU núcleo nanosegundos memoria Principal fallos de página memoria fallos de página memoria memoria Configuración residente Tamaño (RSS) memoria uso memoria conjunto de trabajo sistema de archivos raíz disponibles registros de capacidad del sistema de archivos raíz sistema de archivos capacidad disponible capacidad del sistema de archivos registros disponibles capacidad del sistema de archivos</block>
-  <block id="79617508491cde046161eba3cfb5fd1e" category="cell">Ejecuto el comando de instalador del agente Kubernetes, pero no veo un pod del agente Telegraf a través de: Sudo kubectl --Namespace ci-Monitoring Get pods</block>
-  <block id="da2a3d7c97da2247d78d19b6b5451992" category="cell">Compruebe si se ha producido algún error al implementar DemonSet: Sudo kubectl --namespace i-Monitoring describe DS telegraf-ds Si hay errores relacionados con SecurityContextConstraints, haga lo siguiente: 1. Genere el monitor Telegraf DemonSet YLMA sudo kubectl --Namespace i-Monitoring Get ds telegraf-ds -o ylma &gt; /tmp/telegraf-ds.ylma 2. Detenga el servicio de Telegraf sudo kubectl --namespace i-Monitoring delete ds telegraf-DS 3. Cree la SecurityContextConstraint necesaria (consulte la sección "Configuración del agente para recopilar datos") 4. Vuelva a crear el dispositivo Telegraf DemonSet</block>
-  <block id="fd2109b8b8dd431e9abcb1057799aa87" category="cell">Configuré Telegraf para obtener información sobre mi clúster de Kubernetes, pero no veo ninguna información en Cloud Insights. Veo errores de "valor de campo de encabezado no válido" en el archivo de registro de Telegraf que pertenece al plugin de entrada de kubernetes configurado.</block>
-  <block id="4fcad48adea3c25275399dda7aa9b491" category="cell">Asegúrese de que el archivo de referencia bearer_token no tenga una nueva línea final. Para verificar, ejecute el siguiente comando y confirme que devuelve 0: Tail -c1 &lt;bearer_token_file&gt;</block>
   <block id="ee2a93e19df5ad763517220a4fecc6e8" category="summary">Configuración del recopilador de datos de HP Enterprise Alletra 9000 / primera (anteriormente 3PAR).</block>
   <block id="0ad305f14374986b7d4c3eb802c0a307" category="doc">Recopilador de datos de HP Enterprise Alletra 9000 / primera Storage</block>
   <block id="e8d428fdd8f92c72e345b165722699b3" category="paragraph">Cloud Insights utiliza el recopilador de datos de HP Enterprise Alletra 9000 / HP Enterprise primera (anteriormente 3PAR) para descubrir el inventario y el rendimiento.</block>
@@ -7958,7 +7915,6 @@
   <block id="00a674292851f68b1b3f085a4bff1de6" category="inline-link-macro">Kibana</block>
   <block id="48047e4c3f58331228bccfbfdf20f816" category="cell"><block ref="48047e4c3f58331228bccfbfdf20f816" category="inline-link-macro-rx"></block></block>
   <block id="b00f8bc92c87c005a66b8f84aa943f22" category="inline-link-macro">Kubernetes</block>
-  <block id="3dcf1132d2ac9bc21285187c48593f04" category="cell"><block ref="3dcf1132d2ac9bc21285187c48593f04" category="inline-link-macro-rx"></block></block>
   <block id="9c213cb7b5d19c2f29b16c443a8abfd6" category="inline-link-macro">Serie HX de Lenovo</block>
   <block id="cb794264bdd8eabce9d96fe3669eb8ba" category="cell"><block ref="cb794264bdd8eabce9d96fe3669eb8ba" category="inline-link-macro-rx"></block></block>
   <block id="fa836c8f852703c79e684718602d15f3" category="inline-link-macro">Memcached</block>
@@ -9377,7 +9333,6 @@
   <block id="d26ec9bd59920d141e6767082f0524dc" category="summary">Mediante un script, puede simular un ataque de ransomware para probar o demostrar la seguridad de la carga de trabajo</block>
   <block id="5dfe08a6b6855a1ebeedad2a282e5824" category="cell">El bloqueo del usuario (dirección IP) para NFS funciona, pero para SMB / CIFS, aparece un mensaje de error: “Error de la transformación de SID a DomainName. Motivo de tiempo de espera: No se ha establecido el socket”</block>
   <block id="e8aaaf728a906b8e9d531bb2447c9cf2" category="cell">Esto puede suceder es _csuser_ no tiene permiso para realizar ssh. (Asegúrese de conexión a nivel de clúster y, a continuación, asegúrese de que el usuario pueda realizar ssh). el rol _csuser_ requiere estos permisos.<block ref="3066b8235934d1594e54f7b043a73648" category="inline-link-rx"></block>Para _csuser_ con credenciales de clúster, haga lo siguiente desde la línea de comandos de ONTAP: security login role create -role csrole -cmddirname "vserver export-policy rule" -access all security login role create -role csrole -cmddirname set -access all security login role create -role csrole -cmddirname "vserver cifs session" -access all security login role create -role create -role csrole -role -role -dirrole -dirname "vserver services access security" Role create -role csrole -cmddirname "vserver name-mapping" -access all If _csuser_ no se utiliza y si se usa el usuario administrador a nivel de clúster, asegúrese de que el usuario administrador tenga permiso ssh para ONTAP.</block>
-  <block id="39331dcf20cdc1eb4f9f6846be32417f" category="list-text">Cuando Cloud Insights supervisa el almacenamiento back-end y se utiliza Kubernetes con el tiempo de ejecución de contenedor Docker, Cloud Insights puede mostrar las asignaciones y métricas de Pod a VP al almacenamiento para NFS e iSCSI; los demás tiempos de ejecución solo muestran NFS.</block>
   <block id="fb4d860c1938626a4cb9b8f66c6eb6f2" category="section-title">Marzo de 2023</block>
   <block id="eefa6cd78e40f4194cf842026e05a215" category="section-title">Cloud Connection para ONTAP 9.9 o posterior obsoleto</block>
   <block id="2589e2b6868c0dfc4223608ad37b1ecf" category="paragraph">El recopilador de datos de Cloud Connection para ONTAP 9.9+ está obsoleto. A partir del 4 de abril de 2023, los recopiladores de datos de Cloud Connection en su entorno ya no recopilarán datos y, en su lugar, presentarán un error al realizar el sondeo. El recopilador de datos de Cloud Connection se eliminará por completo de Cloud Insights en una actualización posterior.</block>
@@ -9718,8 +9673,6 @@
   <block id="8022a6c696c4f5ec847420e8ebe1de9e" category="doc">Supervisión y mapa del rendimiento de la red de Kubernetes</block>
   <block id="ee14ad38dfee48bc207f90920b1efb9f" category="paragraph">Antes de poder usar el control y el mapa de rendimiento de red de Kubernetes, debe haber configurado el <block ref="f0d3e43e41da35ba651820db811551cd" category="inline-link-macro-rx"></block> para activar esta opción. Durante el despliegue del operador, seleccione la casilla de verificación Rendimiento de red y mapa para activarlo. También puedes habilitar esta opción navegando a una página de destino de Kubernetes y seleccionando «Modificar implementación».</block>
   <block id="1d292eb6751a0db171502dec84f9f7c0" category="summary">El operador de supervisión de Kubernetes de NetApp tiene una serie de opciones configurables.</block>
-  <block id="57e4cf9437210e6248eb8a2137609c4e" category="doc">Opciones de configuración del operador de supervisión de NetApp Kubernetes</block>
-  <block id="7753286779cc80ff196972ced13aef62" category="paragraph">La siguiente tabla enumera las posibles opciones para el archivo AgentConfiguration:</block>
   <block id="b33aed8f3134996703dc39f9a7c95783" category="cell">agente</block>
   <block id="4e49d105e5ecfd95da78eb980f698488" category="cell">Opciones de configuración comunes a todos los componentes que el operador puede instalar. Estas pueden considerarse como opciones “globales”.</block>
   <block id="286bec770910c4da609323e21222e283" category="cell">Repositorio de documentos</block>
@@ -9787,32 +9740,17 @@
   <block id="3b7c5615013c6b42362845591653e503" category="cell">Habilitar DNSLookup</block>
   <block id="1d2b775d8b166dda0a22ca0ffa3f537c" category="cell">True/false, active la búsqueda de DNS</block>
   <block id="349a396fe021418ac0edbee3b447f4d5" category="section-title">Archivo de configuración de AgentConfiguration de ejemplo</block>
-  <block id="13f0cf7e64ed13ef0b58a80209d8e032" category="list-text">Si está utilizando un repositorio de Docker personalizado o privado, siga las instrucciones de la sección Uso de un repositorio de Docker personalizado o privado</block>
-  <block id="64cf739e279a21fbfd5a0a55d9453e9d" category="list-text">Desde el 2022 de agosto, NetApp Kubernetes Monitoring Operator incluye soporte para la Política de seguridad de Pod (PSP). Debes renovar al último operador de supervisión de Kubernetes de NetApp si tu entorno utiliza PSP.</block>
-  <block id="324c304c8e53f41411f3a55226c16d14" category="list-text">Si está ejecutando en OpenShift 4,6 o superior, debe seguir las instrucciones de OpenShift que aparecen a continuación, además de asegurarse de que se cumplen estos requisitos previos.</block>
-  <block id="5b925a68a70ae9da77c295e7b4d7099e" category="list-text">La supervisión solo se instala en los nodos de Linux Cloud Insights admite la supervisión de los nodos de Kubernetes que ejecutan Linux, especificando un selector de nodos de Kubernetes que busque las siguientes etiquetas de Kubernetes en estas plataformas:</block>
-  <block id="98d685fda937571a72b80ee80cc3df63" category="list-text">Los siguientes comandos deben estar disponibles: Curl, kubectl. El comando docker es necesario para un paso de instalación opcional. Para obtener los mejores resultados, añada estos comandos a la RUTA DE ACCESO. Tenga en cuenta que kubectl debe configurarse con acceso a los siguientes objetos de kubernetes como mínimo: Agentes, clusterroles, clusterrolebindings, customresourcedefinitions, despliegues, espacios de nombres, roles, rolebindings, secretos, cuentas de servicio, y servicios. Vea aquí un ejemplo de archivo .yaml con estos privilegios mínimos de clusterrole.</block>
-  <block id="7e353b350f248a292faf4c1ef3558222" category="list-text">El host que utilizará para la instalación del operador de supervisión de NetApp Kubernetes debe haber configurado kubectl para comunicarse con el clúster K8s de destino y tener conexión a Internet en el entorno Cloud Insights.</block>
-  <block id="aa21c04425cac7977f19ae18bc35f341" category="list-text">Si se encuentra detrás de un proxy durante la instalación, o cuando funciona el clúster K8s que se va a supervisar, siga las instrucciones de la sección Configurar soporte de proxy.</block>
-  <block id="61bbee10c0e43ec8eab71be85b9e7b74" category="list-text">El operador de supervisión de Kubernetes de NetApp instala sus propias métricas de estado kube para evitar conflictos con otras instancias. Para obtener informes precisos de auditoría y datos, se recomienda encarecidamente sincronizar la hora en el equipo del agente mediante el Protocolo de hora de red (NTP) o el Protocolo de hora de red simple (SNTP).</block>
-  <block id="44f30d2da91071ac955bd6af9891db9d" category="list-text">Si va a volver a desplegar el Operador (es decir, lo está actualizando o reemplazando), no es necesario crear un token de API _new_; puede volver a utilizar el token anterior.</block>
-  <block id="f9cbff62c46c7a73f51dee39b0ea930a" category="list-text">También tenga en cuenta que, si tiene instalado recientemente un operador de supervisión de Kubernetes de NetApp y usa un token de acceso de API renovable, los tokens que venzan se reemplazarán automáticamente por tokens de acceso de API nuevos o actualizados.</block>
   <block id="44df9c10959f57dfdf2dd50f7591a9c9" category="section-title">Configuración del operador</block>
   <block id="cac54dc379f23a7aed8745bde8386662" category="inline-link-macro">ajustes disponibles</block>
   <block id="cfda62a17e54042dffdf6eb6a74c7977" category="paragraph">En las versiones más recientes del operador, los ajustes más comúnmente modificados se pueden configurar en el recurso personalizado _AgentConfiguration_. Puede editar este recurso antes de desplegar el operador editando el archivo _operator-config.yaml_. Este archivo incluye ejemplos comentados de algunas configuraciones. Consulte la lista de <block ref="d0a687c4569dc784e63f3960b33ab7c7" category="inline-link-macro-rx"></block> para la versión más reciente del operador.</block>
   <block id="342414165099895140bbfbd3ffb613ca" category="paragraph">También puede editar este recurso después de desplegar el operador mediante el siguiente comando:</block>
   <block id="3ab04e244a91c8a73c48633c62ac613a" category="paragraph">Para determinar si la versión implementada del operador admite AgentConfiguration, ejecute el siguiente comando:</block>
   <block id="51ba9262aad7e83aa5f74ed6dc93a039" category="paragraph">Si ve un mensaje “Error from server (NotFound)”, su operador debe actualizarse antes de poder usar AgentConfiguration.</block>
-  <block id="6a487db38d52ee4c14d91f1b1ddd2fac" category="paragraph">Configure la sección proxy de AgentConfiguration en operator-config.yaml antes de implementar el operador de supervisión de Kubernetes de NetApp.</block>
-  <block id="496310011786854d1bf0863b20b159b3" category="paragraph">De forma predeterminada, el operador de supervisión de Kubernetes de NetApp extraerá imágenes de contenedor del repositorio de Cloud Insights. Si tiene un clúster de Kubernetes utilizado como destino para la supervisión, y ese clúster se configura para extraer solo imágenes de contenedor desde un repositorio de Docker privado o personalizado, debe configurar el acceso a los contenedores que necesita el operador de supervisión de Kubernetes de NetApp.</block>
   <block id="664cfa316d48b417a500c0e898f37409" category="paragraph">Ejecute «Image pull Snippet» desde el icono de instalación del operador de supervisión de NetApp. Este comando iniciará sesión en el repositorio de Cloud Insights, extraerá todas las dependencias de imágenes del operador y cerrará la sesión en el repositorio de Cloud Insights. Cuando se le solicite, introduzca la contraseña temporal del repositorio proporcionada. Este comando descarga todas las imágenes utilizadas por el operador, incluidas las funciones opcionales. Consulte a continuación las funciones para las que se utilizan estas imágenes.</block>
   <block id="e353fb1c241718a57c3f1ebea2f2eda2" category="paragraph">Funcionalidad del operador principal y supervisión de Kubernetes</block>
   <block id="aadb900c6eaeed8ade58660fe972acec" category="list-text">supervisión de netapp</block>
-  <block id="4a3ecd51c30dc55cebd7ed9babbb7931" category="list-text">proxy-rbac-kube</block>
   <block id="7b1808ad616c2f87f5c28aa1d89f75f7" category="list-text">usuario raíz sin interrupciones</block>
   <block id="f8dcd7540ab5947fed469158330013cc" category="paragraph">Registro de eventos</block>
-  <block id="bb84790255aac66744320e4417143dd8" category="list-text">bits fluidos</block>
-  <block id="2941fa605b5a46d4cf07aade64af8b6e" category="list-text">exportador de eventos de kubernetes</block>
   <block id="e081b29a739e8831bbe1f8ad1c2a2859" category="paragraph">Rendimiento de red y mapa</block>
   <block id="a050c9f3e338616510e46bf6d9714f64" category="list-text">ci-net-observador</block>
   <block id="a3cdf80b89a5235481aa9bc21b5857e9" category="paragraph">Introduzca la imagen del operador docker en el repositorio de su proveedor de servicios de empresa/local/privado de acuerdo con las políticas de su empresa. Asegúrese de que las etiquetas de imagen y las rutas de acceso de directorio a estas imágenes del repositorio sean coherentes con las del repositorio de Cloud Insights.</block>
@@ -9829,17 +9767,7 @@
   <block id="cc56bec82b2c1d802e942018b5923042" category="list-text">La instalación se realiza automáticamente. Cuando haya terminado, haga clic en el botón _Next_.</block>
   <block id="512795526de87931c50ae79cb1cb0a2b" category="list-text">Una vez finalizada la instalación, haga clic en el botón _Next_. Asegúrese también de eliminar o almacenar de forma segura el archivo _operator-secrets.yaml_.</block>
   <block id="faaf8961a729f548e51c3b9f1af0f7e8" category="inline-xref">configurando proxy</block>
-  <block id="038f6519626a44bf13147d0f6bf585c1" category="paragraph">Más información acerca de <block ref="1a6ccc12a618fccf7330b5bee5bca7b7" category="inline-xref-macro-rx"></block>.</block>
   <block id="c149af672528f58d22f99809653add8a" category="inline-xref">utilizando un repositorio de docker personalizado/privado</block>
-  <block id="868b132e8ef5a6adb3f9c30cc2596dfc" category="paragraph">Más información acerca de <block ref="5616d0aefbf2e33b5f6c94a93c02e259" category="inline-xref-macro-rx"></block>.</block>
-  <block id="d815ee1e41746ef06fd66b3b30d2bc78" category="paragraph">La recogida de registros de EMS de Kubernetes se habilita de forma predeterminada cuando se instala el operador de supervisión de Kubernetes de NetApp. Para deshabilitar esta colección después de la instalación, haga clic en el botón *Modificar implementación* en la parte superior de la página de detalles del clúster de Kubernetes y anule la selección de “Recopilación de registros”.</block>
-  <block id="88b2095fc7879662ec05b3f703681a11" category="inline-image-macro">Pantalla Modificar Despliegue que muestra la casilla de verificación para la recopilación de registros</block>
-  <block id="5afc0f33a3c779dc228b788e5b0cae22" category="paragraph"><block ref="5afc0f33a3c779dc228b788e5b0cae22" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="f9f142ab6222e3ae7de290d8287b2920" category="paragraph">Esta pantalla también muestra el estado actual de la recopilación de registros. A continuación se muestran los estados posibles:</block>
-  <block id="5e7360afad9787a415b6f706e486423c" category="list-text">Habilitado: Instalación en curso</block>
-  <block id="d5461aa4ef1df0b08d1c023caca59a6e" category="list-text">Activado: Sin conexión</block>
-  <block id="3a7ceac4689e5c9ea84be781707cd148" category="list-text">Activado: En línea</block>
-  <block id="be85cefb4673c1f486c73de818be2056" category="list-text">Error: La clave API tiene permisos insuficientes</block>
   <block id="a33c53884818c3fc88ab0531e515addb" category="section-title">Instalación mejorada del operador de supervisión de Kubernetes</block>
   <block id="3e1d445ca1169cb6a1128270df9b6d0f" category="paragraph">Instalación y configuración del <block ref="f0d3e43e41da35ba651820db811551cd" category="inline-link-macro-rx"></block> es más fácil que nunca con las siguientes mejoras:</block>
   <block id="581978383d3baa213002e5bc8a0db701" category="inline-link-macro">ajustes de configuración</block>
@@ -10098,7 +10026,6 @@ También puede utilizar la opción “Agregar a filtro” en la pestaña Todas l
   <block id="c228e145e9e61000d0f54dd253874651" category="list-text">Nota: Si está utilizando el usuario y el grupo “cisys” por defecto, no es necesario realizar este paso.</block>
   <block id="579e7c70138d11bebf2d5787d6df5c96" category="list-text">Nota: El usuario personalizado puede ser cualquier usuario que sea miembro de un grupo personalizado que haya proporcionado a cloudinsights-install.sh durante la instalación de AU, y puede ser el mismo o diferente del usuario personalizado que proporcionó durante la instalación de AU.</block>
   <block id="93fb085f87c8ff2c36aa100fa213c9c8" category="list-text">Nota: Si utiliza el usuario y el grupo “cisys”, estos se mostrarán en la salida anterior.</block>
-  <block id="c35a33c9875991494585fbfbed175784" category="paragraph">La <block ref="f0d3e43e41da35ba651820db811551cd" category="inline-link-macro-rx"></block> la instalación y configuración se pueden personalizar.</block>
   <block id="8d44687186d37f705aa7f2282722aeb5" category="sidebar">Opciones del operador de monitorización</block>
   <block id="8b673d5f702e58efd947465ead5c9647" category="cell">Límite de CPU para la implementación de métricas de estado-kube</block>
   <block id="e49ddab01d68c08aeef7fdff59e6def6" category="cell">Límite de MEM para el despliegue de métricas de estado-kube</block>
@@ -10199,7 +10126,6 @@ persistentvolumeclaims=[*],persistentvolumes=[*],pods=[*],replicasets=[*],resour
   <block id="259addbbe43276d62a91ef44d4dd55a8" category="paragraph">Se han realizado las siguientes mejoras en <block ref="b13d2921c99b8ae4a991204f54e7f54b" category="inline-link-macro-rx"></block> instalación:</block>
   <block id="e69cca83cc71ef5f7c5439d8944e108d" category="paragraph">La agregación, la selección de unidades, el formato condicional y el cambio de nombre de columna son algunas de las características más útiles de un widget de tabla de panel de control, y ahora esas mismas características están disponibles para <block ref="2b0568ca01fc8a058b93978c376cc13e" category="inline-link-macro-rx"></block>.</block>
   <block id="8b4599b5810466dc4e8956fc5bc3c54c" category="paragraph">Edite el despliegue de operador de supervisión en operator-deployment.yaml y modifique todas las referencias de imagen para utilizar su repositorio Docker privado.</block>
-  <block id="3aabe2789e92746b5404b30428bb4f9e" category="paragraph">Si usa un proxy para una o ambas, para instalar el monitor operativo de Kubernetes de NetApp, primero debe asegurarse de que el proxy esté configurado para permitir una buena comunicación con su entorno de Cloud Insights. Por ejemplo, desde los servidores/VM desde los que desea instalar el Operador, debe poder acceder a Cloud Insights y poder descargar archivos binarios de Cloud Insights.</block>
   <block id="302f46075983be9c47bafd103c8fbf36" category="paragraph">Consulte las páginas de Swagger para ver ejemplos específicos de la API que desea utilizar.</block>
   <block id="ad8f9b24701da9364290a4c2eee40c64" category="section-title">Métricas de potencia de ONTAP</block>
   <block id="b665630963f971c488f8e065e0c06fa9" category="paragraph">Varios modelos de ONTAP proporcionan métricas de potencia para Cloud Insights que se pueden utilizar para supervisión o alertas. Las listas de modelos compatibles y no compatibles a continuación no son exhaustivas, pero deben proporcionar alguna orientación; en general, si un modelo está en la misma familia que uno de la lista, el soporte debe ser el mismo.</block>
@@ -12227,16 +12153,8 @@ Compruebe el rendimiento de la red de hardware.</block>
 La saturación de CPU del clúster se calcula como la suma del uso de CPU dividida por la suma de CPU asignable en los K8s nodos.</block>
   <block id="8a14559db6edf9a976c459c3501915bb" category="list-text">Los resultados del filtro actual, incluidos los valores de filtro por Y el filtro de consulta avanzada, se muestran en la lista de resultados. La lista se puede ordenar por cualquier columna mostrada. Para mostrar columnas adicionales, seleccione el icono de engranaje.</block>
   <block id="0e80fd75f5823e3db3be70c162115e4c" category="doc">Antes de instalar o actualizar el operador de supervisión de Kubernetes de NetApp</block>
-  <block id="842fffc43801e047da9ff318c6e87c49" category="paragraph">Lea esta información antes de instalar y actualizar su operador de supervisión de Kubernetes de NetApp</block>
-  <block id="16a53ba18c619dcf3d471d85becaeee6" category="section-title">Cosas importantes que debe tener en cuenta antes de comenzar</block>
-  <block id="ccd3239a9f19d6d508e3603882b2f0a7" category="paragraph">Lea también sobre <block ref="abccd48aba555dd896a8cc74442f4360" category="inline-xref-macro-rx"></block>.</block>
-  <block id="cc2bb73c3e6fbe9cfa1882cd8e797fd4" category="paragraph">Si va a actualizar desde una instalación anterior, lea la <block ref="8c16618fd0a2a4546027523bc90153a9" category="inline-xref-macro-rx"></block> información.</block>
   <block id="fbc05142fc5476cd7c2dd603607412ee" category="inline-link-macro">*NetApp Kubernetes Monitoreo de la página de instalación del operador*</block>
   <block id="c425b824281c7958c5622dd1dc041533" category="paragraph">Vuelva a la <block ref="6f93c3205a564eadff1f05e34704d40c" category="inline-link-macro-rx"></block></block>
-  <block id="f34adaf8e760e7cb58ba333e44c4dc52" category="inline-image-macro">Recuadro del recopilador de datos de Kubernetes</block>
-  <block id="a0eda368f17db54a54c6f0246fd5c816" category="paragraph"><block ref="a0eda368f17db54a54c6f0246fd5c816" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="3e4299c002d64ba4e1a384acbdafad4c" category="inline-link-macro">*Antes de instalar o actualizar*</block>
-  <block id="20e38ff1d741d05cb351043049612af2" category="section-title">Actualice al operador de supervisión Kubernetes de NetApp más reciente</block>
   <block id="59f9e8b92a6bc55e991031f0b5fea324" category="paragraph">Determine si existe una AgentConfiguration con el operador existente (si el espacio de nombres no es el valor predeterminado _netapp-monitoring_, sustituya el espacio de nombres adecuado):</block>
   <block id="bb5c0afa0b80550de02b1ac19c1226b4" category="paragraph">Si existe una configuración de agente:</block>
   <block id="7f7436ae77d35f1d44077fc6a514e554" category="list-text"><block ref="1fa08d04c08db5225793f360e12d623f" category="inline-xref-macro-rx"></block> El último operador sobre el operador existente.</block>
@@ -12250,18 +12168,12 @@ La saturación de CPU del clúster se calcula como la suma del uso de CPU dividi
   <block id="98dc8e0a1ca4088c0cc75feb9c6a5560" category="list-text"><block ref="1fa08d04c08db5225793f360e12d623f" category="inline-xref-macro-rx"></block> El operador más reciente.</block>
   <block id="4c42e83b5a46ef16402aa2bea7ab525e" category="list-text">Utilice el mismo nombre de clúster.</block>
   <block id="9e274d61eab1c1a3b088854ed50639ff" category="list-text">Después de descargar los últimos archivos YAML del operador, transfiera cualquier personalización encontrada en agent_backup.yaml al operator-config.yaml descargado antes de implementar.</block>
-  <block id="447ede71efbff97ddd4418212a6b52c9" category="section-title">Detención e inicio del operador de supervisión Kubernetes de NetApp</block>
-  <block id="450670e2626f71fbb9a492373158ed02" category="paragraph">Para detener al operador de supervisión de Kubernetes de NetApp:</block>
-  <block id="c1bdaebddc4968d3e08193cf297db84b" category="paragraph">Para iniciar el operador de NetApp Kubernetes Monitoring:</block>
   <block id="c2aaea4dacecce78b34302e41fcef75e" category="section-title">Desinstalando</block>
-  <block id="f9d83bcd2ea0c04a50e5e1cd5bc469ac" category="section-title">Para quitar el operador de supervisión Kubernetes de NetApp</block>
-  <block id="7a8d7f509007f2970254571be4a339db" category="paragraph">Tenga en cuenta que el espacio de nombres predeterminado para el operador de supervisión Kubernetes de NetApp es "Supervisión de netapp".  Si ha definido su propio espacio de nombres, sustituya este espacio de nombres en estos y todos los comandos y archivos subsiguientes.</block>
   <block id="12deeaac5f633c54b730f8c247dbf7e0" category="paragraph">Las versiones más recientes del operador de supervisión se pueden desinstalar con los siguientes comandos:</block>
   <block id="97e76f0c81cc1c26b3d8ffe0d972c5af" category="paragraph">Si el primer comando devuelve “no se han encontrado recursos”, utilice las siguientes instrucciones para desinstalar versiones anteriores del operador de supervisión.</block>
   <block id="0b14d0fbc4256c7ec7c3bb39b2c28854" category="paragraph">Ejecute cada uno de los comandos siguientes en orden. Dependiendo de su instalación actual, algunos de estos comandos pueden devolver mensajes de ‘no se ha encontrado el objeto’. Estos mensajes pueden ignorarse con seguridad.</block>
   <block id="82a8cca794947463478c2f08445a8ff4" category="paragraph">Si se ha creado previamente una restricción de contexto de seguridad:</block>
   <block id="a945216a5c61e628c867b8948c797454" category="section-title">Acerca de las métricas de estado de Kube</block>
-  <block id="bacf6d7427784a1658e1d5fb278300f8" category="paragraph">El operador de supervisión NetApp Kubernetes instala el métrica del estado kube automáticamente; no es necesario realizar la interacción con el usuario.</block>
   <block id="8f5d4322bbada1e271bc144d48fbd530" category="section-title">Contadores de mediciones de estado kube</block>
   <block id="0868aed0151117af81e4d8a3bf48f5d1" category="paragraph">Utilice los siguientes vínculos para acceder a la información de estos contadores de métricas de estado de kube:</block>
   <block id="dcd18b6a9c1c857332184b4ab6b6b876" category="inline-link">Métricas de ConfigMap</block>
@@ -12290,13 +12202,11 @@ La saturación de CPU del clúster se calcula como la suma del uso de CPU dividi
   <block id="4e3e0b949c1506c4eb21f3ebfc141e3b" category="list-text"><block ref="4e3e0b949c1506c4eb21f3ebfc141e3b" category="inline-link-rx"></block></block>
   <block id="e0c0cc3c69b0271b0179dc71d1e9bfa7" category="inline-link">Métricas de Statilusionados Set</block>
   <block id="3a41cf72ebe7dd71e2b8cb6f1a7e14ff" category="list-text"><block ref="3a41cf72ebe7dd71e2b8cb6f1a7e14ff" category="inline-link-rx"></block></block>
-  <block id="7a9065c97476c0400d1ffaaa20c4bbe5" category="paragraph">Si utiliza un proxy para alguno de estos o ambos, para instalar el monitor operativo NetApp Kubernetes, primero debe asegurarse de que el proxy esté configurado para permitir una buena comunicación con el entorno de Cloud Insights. Si tiene un proxy y puede acceder a Cloud Insights desde el servidor/equipo virtual desde el que desea instalar el operador, es probable que el proxy esté configurado correctamente.</block>
   <block id="342761835c95d3618833ced82b6260ac" category="section-title">Verificando sumas de comprobación de Kubernetes</block>
   <block id="06da10bf5b15bdaae23d623ecea6b7f6" category="paragraph">El instalador del agente de Cloud Insights realiza comprobaciones de integridad, pero algunos usuarios pueden querer realizar sus propias verificaciones antes de instalar o aplicar artefactos descargados. Para realizar una operación de sólo descarga (a diferencia de la descarga e instalación predeterminadas), estos usuarios pueden editar el comando de instalación del agente obtenido de la interfaz de usuario y eliminar la opción de instalación final.</block>
   <block id="8ff498fedef16be83cafa8d00c04dd6d" category="list-text">Retire el “--install” final del comando.</block>
   <block id="9f38037f1d71ce0a3fe1ba3e1c8aa8e1" category="paragraph">El comando download-only descargará todos los artefactos necesarios de Cloud Insights al directorio de trabajo.  Los artefactos incluyen, pero no se pueden limitar a:</block>
   <block id="700459827d4941a6a127bc7de7938d5d" category="list-text">un archivo de suma de comprobación firmado (sha256.firmadas)</block>
-  <block id="72e6fd543a67010efd03f7fdc1a1e1bc" category="paragraph">Algunos puntos para intentar si tiene problemas para configurar el operador de supervisión de Kubernetes de NetApp:</block>
   <block id="3dcf0a51075fbcf98f9e53d661506adf" category="cell">No veo un hipervínculo/conexión entre mi volumen persistente Kubernetes y el dispositivo de almacenamiento back-end correspondiente. Mi volumen persistente de Kubernetes se configura usando el nombre de host del servidor de almacenamiento.</block>
   <block id="31374f026fd34f38c1768e8bcae58183" category="cell">Siga los pasos para desinstalar el agente de Telegraf existente y, a continuación, vuelva a instalar el último agente de Telegraf. Debe utilizar Telegraf versión 2.0 o posterior y Cloud Insights debe supervisar de forma activa el almacenamiento del clúster de Kubernetes.</block>
   <block id="a603e86bb87b54e9b7acc7e242269514" category="cell">Veo mensajes en los registros que se parecen a los siguientes:
@@ -12352,32 +12262,10 @@ Por ejemplo, edite ReplicaSet...
 
 ...y añadir las toleraciones apropiadas a la especificación. A continuación, reinicie el Pod ReplicaSet.</block>
   <block id="7f213685ee85ff84e10c6c9b9c633789" category="cell">Tengo un entorno PSP/PSA. ¿Afecta esto a mi operador de supervisión?</block>
-  <block id="180998c51dd0da936f3ebbeb1b922f6b" category="cell">Si el clúster de Kubernetes funciona con una política de seguridad del Pod (PSP) o una admisión de seguridad del pod (PSA) in situ, debe actualizarlo al operador más reciente de NetApp Kubernetes Monitoring. Siga estos pasos para actualizar al NKMO actual con soporte para PSP/PSA:
-
-1. <block ref="a7177598d8f3c4f7d3503ecefe58c480" category="inline-xref-macro-rx"></block> el operador de monitorización anterior:
-
- kubectl delete agent-monitoring-netapp -n netapp-monitoring
- kubectl delete ns netapp-monitoring
- kubectl delete crd agents.monitoring.netapp.com
- kubectl delete clusterrole agent-manager-role agent-proxy-role agent-metrics-reader
- kubectl delete clusterrolebinding agent-manager-rolebinding agent-proxy-rolebinding agent-cluster-admin-rolebinding
-
-2. <block ref="8e5c51a62ab45f504ec71f39c03c1633" category="inline-xref-macro-rx"></block> la última versión del operador de supervisión.</block>
-  <block id="6ae137903bc328659928ed818d9ee78a" category="cell">Me encontré con problemas al intentar desplegar la NKMO y tengo PSP/PSA en uso.</block>
-  <block id="63c5c26973f4cb2983185abedde31f4b" category="cell">1. Edite el agente usando el siguiente comando:
-
-kubectl -n agente de edición de &lt;name-space&gt;
-
-2. Marque 'seguridad-política-habilitada' como 'falso'. Esto desactivará las políticas de seguridad de Pod y la admisión de seguridad de Pod y permitirá la implementación de NKMO. Confirme mediante los siguientes comandos:
-
-Kubectl Get psp (debe mostrar la política de seguridad de Pod eliminada)
-kubectl get all -n &lt;namespace&gt; | grep -i psp (debe mostrar que no se encuentra nada)</block>
   <block id="59e3026f71d01a624108642cdb778ebd" category="cell">Se han visto errores "ImagePullBackoff"</block>
   <block id="43340e6cc4e88197d57f8d6d5ea50a46" category="inline-xref">Leer más</block>
-  <block id="d18743173cd6691e1637fd7bb6299057" category="cell">Puede observar estos errores si dispone de un repositorio de Docker personalizado o privado y aún no ha configurado el operador de supervisión de Kubernetes de NetApp para que lo reconozca correctamente.  <block ref="64c2e35c96e92fc99426098fae703fff" category="inline-xref-macro-rx"></block> acerca de la configuración para repo personalizado/privado.</block>
   <block id="6da3e5f4ef4407262c741e8325a8249d" category="cell">Tengo un problema con la implementación de mi operador de supervisión y la documentación actual no me ayuda a resolverla.</block>
   <block id="368fbe1d48012e8e4f24249e2b27a8dd" category="paragraph">Capture o anote el resultado de los siguientes comandos y póngase en contacto con el equipo de soporte técnico.</block>
-  <block id="0538684ab7c9197cd8966c3859e59c6a" category="cell">Los pods de Net-Observer (Workload Map) en el espacio de nombres NKMO se encuentran en CrashLoopBackOff</block>
   <block id="b1dd812a8bc65d5769e88b945f591999" category="cell">Estos pods corresponden al recopilador de datos de asignación de cargas de trabajo para la observabilidad de red. Pruebe lo siguiente:
 • Compruebe los registros de uno de los pods para confirmar la versión mínima del kernel. Por ejemplo:
 
@@ -12386,17 +12274,11 @@ kubectl get all -n &lt;namespace&gt; | grep -i psp (debe mostrar que no se encue
 ----
 
 • Net-Observer requiere que la versión del kernel de Linux sea al menos 4.18.0. Compruebe la versión del núcleo con el comando “uname -r” y asegúrese de que son &gt;= 4.18.0</block>
-  <block id="c37dcb848a7244594adc1af67cc44fb5" category="cell">Los pods se ejecutan en el espacio de nombres NKMO (predeterminado: Supervisión de netapp), pero no se muestran datos en la interfaz de usuario para el mapa de carga de trabajo o métricas de Kubernetes en consultas</block>
   <block id="b301a7b156c241fb466de1bca776811c" category="cell">Compruebe la configuración de hora en los nodos del clúster K8S. Para obtener informes precisos de auditoría y datos, se recomienda encarecidamente sincronizar la hora en el equipo del agente mediante el Protocolo de hora de red (NTP) o el Protocolo de hora de red simple (SNTP).</block>
-  <block id="4ded7a1a9e117c3e40fb8fd746b0652d" category="cell">Algunos de los pods de observador de red en el espacio de nombres NKMO están en estado Pendiente</block>
   <block id="c55a7a21faf06d9f162882100bc46e42" category="cell">NET-observer es un DaemonSet y ejecuta un pod en cada nodo del cluster k8s.
 • Observe el pod que está en estado Pendiente y compruebe si está experimentando un problema de recursos para la CPU o la memoria. Asegúrese de que la memoria y la CPU requeridas estén disponibles en el nodo.</block>
-  <block id="04e7b6395fd3a2be3a25869ea1196f3d" category="cell">Veo lo siguiente en mis registros inmediatamente después de instalar el operador de supervisión de Kubernetes de NetApp:
-
-[inputs.prometheus] Error en plugin: Error al hacer la solicitud HTTP a.<block ref="189319aba70d8b3a1cf8eef70b48f546" category="inline-link-rx"></block> Obtenga<block ref="189319aba70d8b3a1cf8eef70b48f546" category="inline-link-rx"></block> dial tcp: buscar kube-state-metrics.&lt;namespace&gt;.svc.cluster.local: no existe ese host</block>
   <block id="d232f49a9877a99204dde54474c23ce6" category="cell">Este mensaje normalmente solo aparece cuando se instala un nuevo operador y el pod _telegraf-rs_ está activo antes de que el pod _ksm_ esté activo. Estos mensajes deben detenerse una vez que todos los pods se estén ejecutando.</block>
   <block id="02230bab9788e4843408e124331bb1ca" category="cell">No veo que se esté recopilando ninguna métrica para los cronjobs de Kubernetes que existen en mi clúster.</block>
-  <block id="81467098050f12a1f4ece9dea82405f0" category="cell">Compruebe la versión de Kubernetes (es decir,<block ref="4fc58818ca77fb3a60cbd34a7f7d5071" prefix=" " category="inline-code"></block>).  Si es v1,20.x o inferior, esta es una limitación esperada.  La versión de métricas de estado de kube implementada con el operador de supervisión de Kubernetes de NetApp solo admite v1.cronjob.  Con Kubernetes 1,20.x y más abajo, el recurso cronjob está en v1beta.cronjob.  Como resultado, kube-state-metrics no puede encontrar el recurso cronjob.</block>
   <block id="45698e13b1c2f7241751839133834506" category="cell">Después de instalar el operador, los pods de telegraf-ds ingresan CrashLoopBackOff y los registros de pod indican “su: Error de autenticación”.</block>
   <block id="9de497f607f8a73311408d3d7b337399" category="cell">Veo mensajes de error repetidos parecidos a los siguientes en mis registros de Telegraf:
 
@@ -12414,11 +12296,6 @@ Rocky 8.x de 64 bits, Rocky 9.x de 64 bits, SELinux
 SUSE Linux Enterprise Server 15 SP3, SUSE Linux Enterprise Server 15 SP4 y SELinux en SUSE 15 SP3
 
 Este equipo no debe ejecutar ningún otro software de nivel de aplicación. Se recomienda un servidor dedicado.</block>
-  <block id="4099aa818be44a204ef7ec3ba69b96c7" category="inline-link-macro">agregados para ver</block>
-  <block id="6046897f8c0f41425f2e47227c5932e8" category="paragraph">Si el clúster que se va a supervisar contiene recursos personalizados que no tienen un ClusterRole que <block ref="c09eb6051f010e6e01a634a8b6a5c304" category="inline-link-macro-rx"></block>, Tendrá que conceder manualmente el acceso del operador a estos recursos para supervisarlos con registros de eventos.</block>
-  <block id="8f0ae9ae8e0fd7f3e8fe6ff175a59943" category="list-text">Edite _operator-additional-permissions.yaml_ antes de instalar, o después de instalar, edite el recurso _ClusterRole/&lt;namespace&gt;-additional-permissions_</block>
-  <block id="8a75e64ac585bb8eb6efae44768cfc8e" category="list-text">Cree una nueva regla para los apiGroups y recursos deseados con los verbos [“get”, “watch”, “list”]. Consulte \https://kubernetes.io/docs/reference/access-authn-authz/rbac/</block>
-  <block id="5aa700b8892918bb447b666e3ba9b2a8" category="list-text">Aplique los cambios al clúster</block>
   <block id="4f05106cca363b0f3c492314ab777534" category="cell">Faltan datos _involved dobject_ para algunos registros de eventos.</block>
   <block id="67ee92e19812baa7cedb346320ca0182" category="cell">Asegúrese de haber seguido los pasos de la <block ref="d9283cdb1b027ed2a61fa92c8dc3e314" category="inline-link-macro-rx"></block> sección anterior.</block>
   <block id="dafe147a7f0074749f1e1c76f1e05008" category="section-title">Pruebas de módulos</block>
@@ -12540,7 +12417,6 @@ Puedo guardar el informe, pero cuando vuelvo a abrir el informe guardado, la hor
   <block id="b85d0b41b181eb69881d2617c5514ba3" category="list-text">Debe tener acceso a una cuenta con el rol “fsxadmin”, con tres aplicaciones asignadas - ssh, ontapi, http</block>
   <block id="702a15850842eff4dc2587a96c210640" category="list-text">Requisitos del puerto: 443</block>
   <block id="6106de3fb9edc97d16b4426ca0ae0dc8" category="paragraph">Tenga en cuenta que los comandos de la CLI de FSx y la API recuperan algunos valores de capacidad que ZAPI de Cloud Insights no recopila, por lo que ciertos valores de capacidad (como los para pools de almacenamiento) pueden ser diferentes en Cloud Insights de los que están en el mismo FSx.</block>
-  <block id="4f39aea7decea72af93c7cb4ba3fe487" category="admonition">Si tiene la Edición Federal de Cloud Insights, las instrucciones de instalación y configuración pueden ser diferentes a las instrucciones de esta página. Sigue las instrucciones en Cloud Insights para instalar el operador de supervisión de Kubernetes de NetApp.</block>
   <block id="a5e641ea50deeae492ae44180a6c1cd9" category="list-text">Tipo: Elija *Unidad de adquisición* y *Recopilación de datos*</block>
   <block id="156e10596fdc76ee5300bab931d89c0f" category="inline-xref">Parche</block>
   <block id="1b61043ff027934bc2900e3c686978de" category="paragraph">En este punto, el software AU está instalado en el sistema y es accesible por el usuario personalizado y el grupo. Sin embargo, no tiene la capacidad de agregar recopiladores de datos. Para hacerlo manualmente, lea las siguientes instrucciones. Si sólo desea instalar un parche, consulte <block ref="40c0527ef35e12c3a3ce0496a70ee226" category="inline-xref-macro-rx"></block> a continuación.</block>
@@ -12641,9 +12517,6 @@ Formato de clave pública - PEM, DER-encoded X,509 SubjectPublicKeyInfo RFC 5280
   <block id="4fd45e6b48ed24b4e3dbd4f7522cab8c" category="cell">Direcciones IP o FQDN de puertas de enlace ScaleIO/PowerFlex, separadas por coma (,) o punto y coma (;)</block>
   <block id="68d34ea912eb8ba5af30d244ed0f9227" category="cell">Nombre de usuario administrador utilizado para iniciar sesión en el dispositivo ScaleIO/PowerFlex</block>
   <block id="682ba587c3d6c301fba76aadc4ddd8af" category="cell">Contraseña utilizada para iniciar sesión en el dispositivo ScaleIO/PowerFlex</block>
-  <block id="dada9839975856f2fd06228d265fea07" category="list-text">Monitorización de red:</block>
-  <block id="50e4ed16bb9f1a58d102b41d11b009d5" category="list-text">Requiere Linux kernel versión 4.18.0 y superior</block>
-  <block id="7ae2ba2018b8e11d966acfdd0fce7a55" category="list-text">No se admite el SO de fotones.</block>
   <block id="e51abfd3fc3e12a9fe8f5f800312a852" category="cell">50 GB (se recomiendan 100 GB)
 Para Linux, el espacio en disco se debe asignar de esta manera:
 /Opt/netapp 10 GB (20 GB para entornos de gran tamaño)
@@ -12743,10 +12616,7 @@ Realice los pasos siguientes antes de agregar el recopilador de datos al agente.
   <block id="0f21fa822dc46792cc163d7e77fe6c2c" category="paragraph">Recupere el nombre del pod de evento-exportador:</block>
   <block id="9df5220f9f1e94f2849e58be10655af5" category="paragraph">Debe ser «exportador-de-centro-eventos-netapp» o «exportador-de-eventos».  A continuación, edite el agente de supervisión<block ref="254deec50834604297ddd3caab0d8ce7" prefix=" " category="inline-code"></block>, Y establezca el valor de LOG_FILE para reflejar el nombre de pod de evento-exportador adecuado que se encuentra en el paso anterior.  Más concretamente, EL ARCHIVO_REGISTRO debe establecerse en «/var/log/containers/netapp-ci-event-exporter.log» o «/var/log/containers/event-exporter*.log»</block>
   <block id="8878dc3c5cd3e696f38ddc994eba9593" category="paragraph">Alternativamente, uno también puede <block ref="eb03b2f692ebf826fa07016cc9fa15a6" category="inline-xref-macro-rx"></block> y.. <block ref="2be7be71447d2c340aab35ab29970e30" category="inline-xref-macro-rx"></block> el agente.</block>
-  <block id="5be7a9b90aa61d46f99cd06715e40a54" category="cell">Veo que los pods puestos en marcha por el operador de supervisión de Kubernetes de NetApp se han bloqueado debido a la falta de recursos.</block>
-  <block id="740cd109d583d1b28a1ebd66338906b7" category="cell">Consulte el operador de supervisión de Kubernetes de NetApp <block ref="74a91e6274b6ee5f9fd240fb978eb1d9" category="inline-link-macro-rx"></block> Para aumentar los límites de la CPU o la memoria según sea necesario.</block>
   <block id="d8c9294ea12d1c7d12e34008f3ecee39" category="section-title">Una nota sobre los secretos</block>
-  <block id="1169bc31edb2122ab9876b9b0289225c" category="paragraph">Para eliminar el permiso del operador de supervisión de Kubernetes de NetApp para ver los secretos en todo el clúster, elimine los siguientes recursos del archivo _operator-setup.yaml_ antes de instalar:</block>
   <block id="1790cdbccc4ddd4389eb90d73e043f4b" category="paragraph">Si se trata de una actualización, suprima también los recursos del clúster:</block>
   <block id="a66e68a20b3b94a700f3a3b9baa06764" category="paragraph">Si el análisis de cambios está activado, modifique _AgentConfiguration_ o _operator-config.yaml_ para anular el comentario de la sección de gestión de cambios e incluya _kindsToIgnoreFromWatch: ''secrets''_ en la sección de gestión de cambios. Observe la presencia y posición de comillas simples y dobles en esta línea.</block>
   <block id="efe846805e5476fec607bbf54e45dc44" category="section-title">A enero de 2024</block>
@@ -13003,7 +12873,6 @@ Si /opt es una carpeta montada de un almacenamiento NAS, asegúrese de que los u
   <block id="b00323e3fc84f69070c5dc2be8e5ce9e" category="paragraph">Para cerrar sesión en Cloud Insights, haga clic en su *Nombre de usuario* y seleccione *Cerrar sesión*. Se le llevará de vuelta al <block ref="8d1c4f3c88725cbe8b8d86c07fb5d410" category="inline-link-macro-rx"></block> pantalla.</block>
   <block id="4405c285662a5ac6f84ad517037907a7" category="admonition">Al cerrar la sesión de Cloud Insights se cierra la sesión de BlueXP. También se cerrará la sesión de otros servicios en la nube de NetApp que usen el inicio de sesión de BlueXP.</block>
   <block id="e04813a849ce9da2afe9f3bfcaf85f0e" category="cell">True/false - Establece runPrivileged en true si SELinux está habilitado en los nodos de Kubernetes.</block>
-  <block id="e40d435b2f81693776ecb79899e30849" category="paragraph">A continuación se muestra un archivo de ejemplo de AgentConfiguration.</block>
   <block id="5c7af4a6b686285084e62f255503c141" category="cell">proxy
 
 Formato:
@@ -13078,7 +12947,6 @@ Si está ejecutando SELinux, se recomienda ejecutar los siguientes comandos en e
   <block id="8c362b737d9d3a6fff5acfc29aaa5225" category="summary">Recopilador de datos para Kubernetes</block>
   <block id="3ce5067a26bb6509b15cfb6487590ed5" category="doc">Recopilador de datos: Kubernetes</block>
   <block id="c7e254ef92577e872c85b9cc18b384ea" category="doc">Instalación y configuración del operador de supervisión de Kubernetes</block>
-  <block id="0ec327c74f375d121d057b61ae7dc1be" category="admonition">Lea la <block ref="98b00674e05edc386cc19257d013cae8" category="inline-link-macro-rx"></block> Antes de instalar o actualizar el operador de supervisión de Kubernetes de NetApp, se requiere documentación previa.</block>
   <block id="f198d7bd876499c7a876c665606e2d82" category="section-title">Compatibilidad con SAN iSCSI para mapa de red de Kubernetes</block>
   <block id="d14b2ad81a63e0273293afd80b29ec37" category="paragraph">Identifica las dependencias de almacenamiento subyacente de Kubernetes para NFS y ahora iSCSI.
 Acelera la resolución de problemas obteniendo información sobre la actividad de red de almacenamiento de la aplicación de Kubernetes y métricas de almacenamiento sin definir. Comprende cómo la aplicación de Kubernetes utiliza la infraestructura de almacenamiento para los informes de pago por uso y visibilidad de uso.</block>
@@ -13088,7 +12956,6 @@ Acelera la resolución de problemas obteniendo información sobre la actividad d
   <block id="60a414e81fe118967fa6232e8eb9f5ed" category="paragraph">La función de supervisión y mapa del rendimiento de red de Kubernetes simplifica la solución de problemas mediante la asignación de dependencias entre servicios (también llamadas cargas de trabajo) y proporciona visibilidad en tiempo real de las latencias y anomalías del rendimiento de la red para identificar problemas de rendimiento antes de que afecten a los usuarios.
 Esta funcionalidad ayuda a las organizaciones a reducir los costes generales mediante el análisis y la auditoría de los flujos de tráfico de Kubernetes.</block>
   <block id="41f9e4070ff69cb3ab05150a383b982d" category="summary">El operador de supervisión de Kubernetes recopila datos de Kubernetes para su uso en Cloud Insights.</block>
-  <block id="3c25ca8d0b15faf67f1de6aacaaaa615" category="paragraph">El operador de Kubernetes y los recopiladores de datos se descargan del registro de Docker de Cloud Insights. Una vez instalado, el Operador administra los recopiladores compatibles con el Operador desplegados en los nodos del clúster de Kubernetes para adquirir datos, incluida la gestión del ciclo de vida de esos recopiladores. Después de esta cadena, los datos se adquieren de los colectores y se envían a Cloud Insights.</block>
   <block id="1efee558528b235998f6c37634f18ec9" category="paragraph">Permisos para la integración ARP de ONTAP:</block>
   <block id="ea68be0a35687ab64afad562f46dff32" category="paragraph">Permisos para Acceso ONTAP Denegado:</block>
   <block id="64ac4b9298207f0fc756c6288f8c1a80" category="paragraph">Nota: Si ya se ha agregado un rol REST--ya sea _arwrole_ o _csrestrole_- no es necesario agregar un segundo rol REST. Simplemente puede agregar los permisos de la API como en el ejemplo siguiente.</block>
@@ -13111,4 +12978,111 @@ Esta funcionalidad ayuda a las organizaciones a reducir los costes generales med
   <block id="639bed0f86ee37975166505f25500f59" category="paragraph">¿Cómo ayuda el análisis de cambios?</block>
   <block id="8c0ffb3a96aefd29a8b298519ff82eb8" category="list-text">En entornos Kubernetes multi-tenant, las interrupciones del servicio pueden ocurrir debido a cambios mal configurados. En entornos muy dinámicos, es posible que la supervisión de la infraestructura de Cloud Insights no pueda realizar un seguimiento adecuado de todos los cambios.</block>
   <block id="6cfc89cbc741a775222e1cd65f12a4a0" category="list-text">Change Analytics ayuda con esto al proporcionar un único panel para ver y correlacionar el estado de las cargas de trabajo y los cambios de configuración. Esto puede ayudar a solucionar los problemas de entornos dinámicos de Kubernetes.</block>
+  <block id="9c64a0e0a0e22cc18b7137e967889926" category="doc">Opciones de configuración del operador de supervisión de Kubernetes</block>
+  <block id="3371b7c42a338a1d63764ce6cc96fdcb" category="inline-link-macro">Operador de supervisión de Kubernetes</block>
+  <block id="f32519ffeecd98f4c4f06a7bf1c7a34c" category="paragraph">La <block ref="025a80672f7feae526479c9984c435c7" category="inline-link-macro-rx"></block> la configuración se puede personalizar.</block>
+  <block id="2d18be6c8402f4ca0cb26ce68adc0564" category="paragraph">La siguiente tabla enumera las posibles opciones para el archivo _AgentConfiguration_:</block>
+  <block id="05275b3b3aecea67df39f7c8383f0251" category="paragraph">A continuación se muestra un archivo _AgentConfiguration_ de ejemplo.</block>
+  <block id="af57028abefe0cec300b73d928a9b559" category="paragraph">Lea esta información antes de instalar o actualizar el <block ref="c4dd0ed9c7aa586e1ccc41d08bd166bb" category="inline-link-macro-rx"></block>.</block>
+  <block id="9b97b7bd5e0a87be7bf218224ada83cf" category="cell">Requisito</block>
+  <block id="80afba45eb055fc9bdc48c90d1debd06" category="cell">La versión de Kubernetes</block>
+  <block id="68093a5f53a9ee02298f90ed90367b75" category="cell">Kubernetes v1,20 y versiones posteriores.</block>
+  <block id="9eb52c106cbff3d3a7f9e74b6662772d" category="cell">Distribuciones de Kubernetes</block>
+  <block id="3fa40ca45d07b47c5a845b3d4b4acc63" category="cell">Elastic Kubernetes Service (EKS) de AWS
+Azure Kubernetes Service (AKS)
+Google Kubernetes Engine (GKE)
+Red Hat OpenShift
+Motor Kubernetes de rancher (RKE)
+Tanzania de VMware</block>
+  <block id="793d284bad68b41cca09ce8e8b200352" category="cell">Sistema operativo Linux</block>
+  <block id="798e5a5c88d188ba67f7f5a17b2ce32b" category="cell">Cloud Insights no es compatible con nodos que ejecuten con una arquitectura Arm64.
+
+Supervisión de red: Debe ejecutar Linux kernel versión 4.18.0 o superior. No se admite el SO de fotones.</block>
+  <block id="3ad6cb6100190c8f81e99fd52debf7ef" category="cell">Etiquetas</block>
+  <block id="5fb045ef41992286f9d611596ce27dfe" category="cell">Cloud Insights admite la supervisión de nodos Kubernetes que ejecutan Linux, especificando un selector de nodos de Kubernetes que busca las siguientes etiquetas de Kubernetes en estas plataformas:
+
+Kubernetes v1,20 en adelante: Kubernetes.io/os = linux
+Rancher + cattle.io como orquestación/plataforma Kubernetes: Cattle.io/os = linux</block>
+  <block id="b0c7368729c7094129da2a9003691e56" category="cell">Los comandos cURL y kubectl deben estar disponibles.; Para obtener mejores resultados, agregue estos comandos a la RUTA.</block>
+  <block id="9bd9d0ebc081bd74f5bef4e136bb1aed" category="cell">Conectividad</block>
+  <block id="55a65c182f00e32a2ec3792167680870" category="cell">la interfaz de línea de comandos de kubectl está configurada para comunicarse con el clúster K8s de destino y tiene conectividad a Internet con el entorno Cloud Insights.
+
+Si está detrás de un proxy durante la instalación, siga las instrucciones de <block ref="64cf37673a6ed79c9da34b6623735516" category="inline-link-macro-rx"></block> Sección de la instalación del operador.
+
+Para obtener informes precisos de auditoría y datos, sincronice la hora en el equipo del agente mediante Network Time Protocol (NTP) o Simple Network Time Protocol (SNTP).</block>
+  <block id="a4b54dca162f049f992f72e7505f2056" category="cell">Si ejecuta OpenShift 4,6 o superior, debe seguir el enlace:task_config_telegraf_agent_k8s.html#openshift-instructions[Instrucciones openshift además de asegurarse de que se cumplen estos requisitos previos.</block>
+  <block id="5161b4f9ce9a8b7d966e8bf3c049f6f3" category="cell">Token de API</block>
+  <block id="6f45f482f0e5142bd1fcac264b61790c" category="cell">Si va a volver a desplegar el Operador (es decir, lo está actualizando o reemplazando), no es necesario crear un nuevo token de API; puede volver a utilizar el token anterior.</block>
+  <block id="40bdea93b8749ee61a47530602b78ba0" category="cell"><block ref="40bdea93b8749ee61a47530602b78ba0" category="inline-link-macro-rx"></block></block>
+  <block id="6a2947f7e89b5053f53a29320e46a462" category="paragraph">El operador de supervisión de Kubernetes instala kube-state-metrics automáticamente; no se necesita interacción del usuario.</block>
+  <block id="9c2506e67ece46fad96ea50d91339c89" category="paragraph">Cloud Insights ofrece el *Operador de Monitoreo de Kubernetes* para la colección de Kubernetes. Vaya a *Kubernetes &gt; Colectores &gt; +Kubernetes Collector* para implementar un nuevo operador.</block>
+  <block id="ef9cae2862d53687ca6c708bce978631" category="section-title">Antes de instalar el operador de supervisión de Kubernetes</block>
+  <block id="f055962514dd49f67bfc4a5bdbcfb6e6" category="paragraph">Consulte <block ref="7e9e1d875029ecd37a6243d877725b0c" category="inline-link-macro-rx"></block> Documentación antes de instalar o actualizar el operador de supervisión de Kubernetes.</block>
+  <block id="17aea06810c3d411bf4dd86cff5135f7" category="section-title">Instalación del operador de supervisión de Kubernetes</block>
+  <block id="280f4a4e1fec05badea1183eb2ccbebf" category="list-title">Pasos para instalar el agente del operador de supervisión de Kubernetes en Kubernetes:</block>
+  <block id="2954bdba102f234c90367d1425951c86" category="paragraph">Si utiliza un proxy, lea acerca de <block ref="1a6ccc12a618fccf7330b5bee5bca7b7" category="inline-xref-macro-rx"></block>.</block>
+  <block id="84cce7a55f3a5c0926f355d54120bd4b" category="paragraph">Si tiene un repositorio personalizado, lea acerca de <block ref="5616d0aefbf2e33b5f6c94a93c02e259" category="inline-xref-macro-rx"></block>.</block>
+  <block id="ce4c84a03d990672d77b5332c35eaada" category="section-title">Componentes de supervisión de Kubernetes</block>
+  <block id="30e63c1c50e18ca87a3930545e885e50" category="paragraph">La supervisión de Kubernetes de Cloud Insights se compone de cuatro componentes de supervisión:</block>
+  <block id="cd997e99acb212a9b5523b3874b531a1" category="list-text">Métricas de cluster</block>
+  <block id="cd0d13a51e7b498dff48148d41152140" category="list-text">Rendimiento de red y mapa (opcional)</block>
+  <block id="69588fca52f9264142c066641a3f0f36" category="list-text">Registros de eventos (opcional)</block>
+  <block id="a21b8ad70a2f7fda0a0ce57acb9d8b86" category="list-text">Análisis de cambios (opcional)</block>
+  <block id="59c1adaa13fe0a102eeeb4be84b62ccd" category="paragraph">Los componentes opcionales anteriores están habilitados de forma predeterminada para cada recopilador de Kubernetes; si decide que no necesita un componente para un recopilador en particular, puede deshabilitarlo navegando a *Kubernetes &gt; Colectores* y seleccionando _Modify Deployment_ en el menú de tres puntos del recopilador a la derecha de la pantalla.</block>
+  <block id="4a8935a67aadaec6ba4fbfd58e9329b9" category="inline-image-macro">Modificar el menú de implementación en la página de la lista de recopiladores de Kubernetes</block>
+  <block id="7a9e68f513e02f6f4993d88781b49637" category="paragraph"><block ref="7a9e68f513e02f6f4993d88781b49637" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="e1ab0e7895c9df2539e36203b84c90d1" category="paragraph">La pantalla muestra el estado actual de cada componente y le permite desactivar o activar componentes para ese recopilador según sea necesario.</block>
+  <block id="9cef0071e460e946beaa92e847eee7a2" category="inline-image-macro">Opciones de implementación de Mody, 700</block>
+  <block id="680dda670e97a05d2baca651224019c6" category="paragraph"><block ref="680dda670e97a05d2baca651224019c6" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="8b54cfbc7f4622be8f18ef9e6b323931" category="section-title">Actualiza al operador de supervisión de Kubernetes más reciente</block>
+  <block id="bf4f601d0ebbcc54c415c3eb689c82f3" category="section-title">Detener e iniciar el operador de supervisión de Kubernetes</block>
+  <block id="ac3978dbb1caac278e3d6b9932b85966" category="paragraph">Para detener el operador de supervisión de Kubernetes:</block>
+  <block id="faf3019197a41959b7aba9bcfa3023da" category="paragraph">Para iniciar el operador de supervisión de Kubernetes:</block>
+  <block id="f9be986e48715e277a00159a04f55e8a" category="section-title">Para eliminar el operador de supervisión de Kubernetes</block>
+  <block id="e06effb18b8b0d2f3ce53c30a98e4b93" category="paragraph">Tenga en cuenta que el espacio de nombres predeterminado para el operador de supervisión de Kubernetes es la «supervisión de netapp».  Si ha definido su propio espacio de nombres, sustituya este espacio de nombres en estos y todos los comandos y archivos subsiguientes.</block>
+  <block id="951a50d1b55837ddb5ff4cb5af4ebc8a" category="paragraph">El operador de supervisión de Kubernetes de NetApp instala sus propias métricas de estado kube para evitar conflictos con otras instancias.</block>
+  <block id="807c67eb6796ba389d19bd183fc2b317" category="paragraph">Para obtener más información sobre Kube-State-Metrics, consulte <block ref="73f7e5446269af2d39c747140597d176" category="inline-link-macro-rx"></block>.</block>
+  <block id="4f20cb3e8959a7865ba5aaa5af540ddb" category="section-title">Configuración/Personalización del Operador</block>
+  <block id="67dea165315ff79ce5620f051688d07c" category="paragraph">Estas secciones contienen información sobre cómo personalizar la configuración del operador, cómo trabajar con proxy, cómo usar un repositorio de Docker personalizado o privado o cómo trabajar con OpenShift.</block>
+  <block id="039369597a340d41c2e4a9df62b375fb" category="paragraph">En las versiones más recientes del operador, los ajustes más comúnmente modificados se pueden configurar en el recurso personalizado _AgentConfiguration_. Puede editar este recurso antes de desplegar el operador editando el archivo _operator-config.yaml_. Este archivo incluye ejemplos de configuración comentados. Consulte la lista de <block ref="d0a687c4569dc784e63f3960b33ab7c7" category="inline-link-macro-rx"></block> para la versión más reciente del operador.</block>
+  <block id="27aa502b8f8f23143b77f0800d6dd42f" category="paragraph">También puede editar este recurso después de desplegar el operador mediante el siguiente comando:</block>
+  <block id="c8cb2db38f5ff99219b7338226473fd2" category="paragraph">Hay dos lugares en los que puede usar un proxy en su entorno para instalar el operador de supervisión de Kubernetes. Pueden ser los mismos sistemas proxy o independientes:</block>
+  <block id="a7f189b94dda98958771dc1a3345eb8f" category="paragraph">Si usas un proxy para uno o ambos, para instalar el Monitor Operativo de Kubernetes, primero debes asegurarte de que tu proxy esté configurado para permitir una buena comunicación con tu entorno de Cloud Insights. Si tiene un proxy y puede acceder a Cloud Insights desde el servidor/equipo virtual desde el que desea instalar el operador, es probable que el proxy esté configurado correctamente.</block>
+  <block id="4cf131cb570986a48574d0708d4c8b35" category="paragraph">Para el proxy utilizado para instalar el monitor operativo de Kubernetes, antes de instalar el operador, defina las variables de entorno _http_proxy/https_proxy_. En algunos entornos proxy, también es posible que tenga que establecer la variable _no_proxy Environment_.</block>
+  <block id="e25c898cccd50c035eb1941a8411ba8b" category="paragraph">Para configurar las variables, realice los siguientes pasos en su sistema *antes* de instalar el Operador de monitoreo de Kubernetes:</block>
+  <block id="9230dd0c6ece2aa3c307b71e41784611" category="paragraph">Para que el proxy utilizado para su clúster de Kubernetes se comunique con su entorno de Cloud Insights, instale el operador de supervisión de Kubernetes después de leer todas estas instrucciones.</block>
+  <block id="6b883170f6284320691d7cfefa3f48e3" category="paragraph">Configure la sección proxy de AgentConfiguration en operator-config.yaml antes de implementar el operador de supervisión de Kubernetes.</block>
+  <block id="1f1cd41335301b707232462ccfe6641a" category="paragraph">De forma predeterminada, el operador de supervisión de Kubernetes extraerá imágenes de contenedor del repositorio de Cloud Insights. Si tiene un clúster de Kubernetes utilizado como destino para la supervisión, y ese clúster está configurado para extraer solo imágenes de contenedor de un repositorio Docker privado o personalizado o un registro de contenedores, debe configurar el acceso a los contenedores que necesita el operador de supervisión de Kubernetes.</block>
+  <block id="bd0f62d92c7b0e5d6e74b4447418c58b" category="paragraph">Para eliminar el permiso del operador de supervisión de Kubernetes para ver los secretos en todo el clúster, elimine los siguientes recursos del archivo _operator-setup.yaml_ antes de instalar:</block>
+  <block id="5961d0092306c169d325c3e662030e8e" category="paragraph">Algunas cosas que debe probar si encuentra problemas para configurar el operador de supervisión de Kubernetes:</block>
+  <block id="909f5f4ab6355c685c77bc41c8507d3c" category="cell">Si su clúster de Kubernetes se ejecuta con la política de seguridad de Pod (PSP) o la admisión de seguridad de Pod (PSA), debe actualizar al último operador de supervisión de Kubernetes. Siga estos pasos para actualizar al Operador actual con soporte para PSP/PSA:
+
+1. <block ref="a7177598d8f3c4f7d3503ecefe58c480" category="inline-xref-macro-rx"></block> el operador de monitorización anterior:
+
+ kubectl delete agent-monitoring-netapp -n netapp-monitoring
+ kubectl delete ns netapp-monitoring
+ kubectl delete crd agents.monitoring.netapp.com
+ kubectl delete clusterrole agent-manager-role agent-proxy-role agent-metrics-reader
+ kubectl delete clusterrolebinding agent-manager-rolebinding agent-proxy-rolebinding agent-cluster-admin-rolebinding
+
+2. <block ref="8e5c51a62ab45f504ec71f39c03c1633" category="inline-xref-macro-rx"></block> la última versión del operador de supervisión.</block>
+  <block id="b10669273dd57c8fd5d2fe2a3b97e299" category="cell">Me encontré con problemas tratando de implementar el Operador, y tengo PSP/PSA en uso.</block>
+  <block id="f005ad36a865e60c2f589a58c0daafa5" category="cell">1. Edite el agente usando el siguiente comando:
+
+kubectl -n agente de edición de &lt;name-space&gt;
+
+2. Marque 'seguridad-política-habilitada' como 'falso'. Esto desactivará las políticas de seguridad de Pod y la admisión de seguridad de Pod y permitirá que el operador se despliegue. Confirme mediante los siguientes comandos:
+
+Kubectl Get psp (debe mostrar la política de seguridad de Pod eliminada)
+kubectl get all -n &lt;namespace&gt; | grep -i psp (debe mostrar que no se encuentra nada)</block>
+  <block id="31c512270381a100a1d6ed5460e4382a" category="cell">Estos errores pueden verse si tiene un repositorio de Docker personalizado o privado y aún no ha configurado el operador de supervisión de Kubernetes para reconocerlo correctamente.  <block ref="64c2e35c96e92fc99426098fae703fff" category="inline-xref-macro-rx"></block> acerca de la configuración para repo personalizado/privado.</block>
+  <block id="70d79a6ca6098037988336f11346dce8" category="cell">Los pods de Net-Observer (Workload Map) en el espacio de nombres del operador están en CrashLoopBackOff</block>
+  <block id="e49c236734fe2ea50ae36fcb5353eed9" category="cell">Los pods se ejecutan en el espacio de nombres del operador (predeterminado: Supervisión de netapp), pero no se muestran datos en la interfaz de usuario para el mapa de cargas de trabajo o las métricas de Kubernetes en consultas</block>
+  <block id="665dddc2adb2f34c745ef47345ee5e93" category="cell">Algunos de los pods del observador de red en el espacio de nombres del operador están en estado Pendiente</block>
+  <block id="a5ecb374e5b37ce04e31d68dc3716305" category="cell">Veo lo siguiente en mis registros inmediatamente después de instalar el operador de supervisión de Kubernetes:
+
+[inputs.prometheus] Error en plugin: Error al hacer la solicitud HTTP a.<block ref="189319aba70d8b3a1cf8eef70b48f546" category="inline-link-rx"></block> Obtenga<block ref="189319aba70d8b3a1cf8eef70b48f546" category="inline-link-rx"></block> dial tcp: buscar kube-state-metrics.&lt;namespace&gt;.svc.cluster.local: no existe ese host</block>
+  <block id="b3b6bea000b13acbfcb412bad49ee494" category="cell">Compruebe la versión de Kubernetes (es decir,<block ref="4fc58818ca77fb3a60cbd34a7f7d5071" prefix=" " category="inline-code"></block>).  Si es v1,20.x o inferior, esta es una limitación esperada.  La versión de métricas de estado de kube implementada con el operador de supervisión de Kubernetes solo admite v1.cronjob.  Con Kubernetes 1,20.x y más abajo, el recurso cronjob está en v1beta.cronjob.  Como resultado, kube-state-metrics no puede encontrar el recurso cronjob.</block>
+  <block id="cacd73b257654b42f59477320860f203" category="cell">Estoy viendo que los pods han sido puestos en marcha por el operador de supervisión de Kubernetes se han bloqueado debido a la falta de recursos.</block>
+  <block id="1bf4c34fd6e2ff1bf1741953bce0f5e1" category="cell">Consulte el operador de supervisión de Kubernetes <block ref="74a91e6274b6ee5f9fd240fb978eb1d9" category="inline-link-macro-rx"></block> Para aumentar los límites de la CPU o la memoria según sea necesario.</block>
 </blocks>
