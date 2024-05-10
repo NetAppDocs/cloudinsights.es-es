@@ -51,6 +51,8 @@ Para configurar este recopilador de datos, es necesario lo siguiente:
 * La Unidad de adquisición de Cloud Insights iniciará conexiones con el puerto TCP 443 al clúster Rubrik. Un recopilador por clúster.
 * Dirección IP del clúster de Rubrik.
 * El nombre de usuario y la contraseña para el clúster de.
+* Nombre de host o dirección IP del clúster de Rubrik.
+* Para la autenticación básica, un nombre de usuario y una contraseña del clúster. Si prefiere utilizar la autenticación basada en cuentas de servicio, necesita una cuenta de servicio, un secreto y un identificador de organización
 * Requisito de puerto: HTTPS 443
 
 
