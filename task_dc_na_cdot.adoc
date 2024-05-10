@@ -130,6 +130,12 @@ A continuación se enumeran los requisitos para configurar y utilizar este recop
 
 
 
+=== Requisitos de permiso para recopilar métricas de conmutador de ONTAP
+
+Cloud Insights tiene la capacidad de recopilar datos de switch de cluster ONTAP como una opción en los recopiladores <<advanced-configuration,Configuración avanzada>> configuración. Además de habilitar esto en el recopilador Cloud Insights, también debe *configurar el propio sistema ONTAP* para que lo proporcione link:https://docs.netapp.com/us-en/ontap-cli-98/system-switch-ethernet-create.html["información del interruptor"], y asegúrese de que es correcto <<a-note-about-permissions,permisos>> Se establecen para permitir que los datos del conmutador se envíen a Cloud Insights.
+
+
+
 == Configuración
 
 [cols="2*"]
