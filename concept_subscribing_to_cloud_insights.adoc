@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: concept_subscribing_to_cloud_insights.html 
 summary: En cualquier momento durante su prueba gratuita, puede suscribirse a Cloud Insights. 
-keywords: subscribe, trial, subscription, contract, raw capacity, region, data retention, retention, MU, managed unit, managed units, units, managed 
+keywords: subscribe, trial, subscription, contract, raw capacity, region, data retention, retention, MU, managed unit, managed units, units, managed, module, evaluation 
 ---
 = Suscribirse a Cloud Insights
 :toc: macro
@@ -69,27 +69,25 @@ Si su prueba gratuita ha caducado y aún no se ha suscrito a Cloud Insights, ten
 
 
 
-== Pruebas de módulos
+== Evaluación del módulo
 
-Disponible próximamente
-
-
-NOTE: La prueba de módulo se considera funcionalidad de vista previa y, por lo tanto, está sujeta a cambios.
-
-Además de su prueba inicial de Cloud Insights, también puede aprovechar *Pruebas de módulos*. Por ejemplo, si ya está suscrito a Observabilidad de la Infraestructura pero está agregando Kubernetes a su entorno, entrará automáticamente en una prueba de 30 días de Observabilidad de Kubernetes, a partir del momento en que instale el Operador de Supervisión de Kubernetes de NetApp. Solo se te cobrará por el uso de la unidad gestionada por Kubernetes Observability al final del período de prueba.
+También puedes aprovechar *Evaluaciones de módulos*. Por ejemplo, si ya está suscrito a Observabilidad de la Infraestructura pero está agregando Kubernetes a su entorno, entrará automáticamente en una evaluación de 30 días de Observabilidad de Kubernetes, a partir del momento en que instale el Operador de Supervisión de Kubernetes de NetApp. Solo se te cobrará por el uso de la unidad gestionada de Kubernetes Observability al final del período de evaluación.
 
 
-NOTE: Tenga en cuenta que se le cobrará por el nuevo uso de la unidad administrada (MU) después del período de prueba, así que asegúrese de planificar en consecuencia. Cuando finalice la prueba del módulo, se le notificará si necesitará agregar más unidades de medida para evitar la interrupción del servicio.
+NOTE: Tenga en cuenta que se le cobrará por el nuevo uso de la unidad administrada (MU) después de la evaluación, así que asegúrese de planificar en consecuencia. Cuando finalice la evaluación del módulo, se le notificará si necesitará agregar más unidades de medida para evitar la interrupción del servicio.
 
 Puede supervisar el uso de la unidad administrada en la página *Admin > Suscripción* de la pestaña *Uso*.
 
 image:Module_Trials_UsageTab.png["Pantalla Uso de UM"]
 
 
+NOTE: A _Module Evaluation_ no es un _Trial_ - Utilizamos el término de prueba cuando ofrecemos a los clientes un período de prueba gratuito de uso del servicio CI para confirmar que se ajusta y habilita la compra. Una evaluación de módulo es diferente - esto es cuando permitimos que un cliente pagado pruebe un módulo de Cloud Insights que no han utilizado en los últimos meses de su suscripción de pago. Cuando la evaluación está activa, se renuncian los cargos sólo para el módulo recién configurado. El entorno de trabajo de los clientes aún está bajo suscripción y no ha vuelto a la prueba gratuita. La suscripción no ha cambiado.
+
+
 
 === Estimator
 
-Durante una prueba de módulo, no se cambia el uso de MU para los recursos consumidos para el módulo, pero puedes abrir el *Estimator* (en la pestaña _Summary_) para ver cómo se cargarán las MU después de la prueba, así como jugar con escenarios “What if” con el número de MU que puedas necesitar en el futuro. Restablezca los números saliendo de Estimator.
+Durante una evaluación de módulo, no se cambia el uso de UM para los recursos consumidos para el módulo, pero puedes abrir el *Estimator* (en la pestaña _Summary_) para ver cómo se cargarán las MU después de la evaluación, así como jugar con escenarios “What if” con el número de MU que puedas necesitar en el futuro. Restablezca los números saliendo de Estimator.
 
 image:Module_Trials_Estimator.png["Estimator"]
 
@@ -97,7 +95,7 @@ Seleccione la casilla de verificación situada junto a un módulo para agregar o
 
 El Estimator también le permite ver cómo se acumulan los números para un complemento, donde mantiene el plazo de suscripción actual y aumenta el número de unidades administradas con licencia, o una opción de renovación para una suscripción de renovación que compraría cuando se suscribiera actualmente el término finaliza.
 
-Tenga en cuenta que los clientes solo pueden optar a una prueba de módulo una vez por suscripción.
+Tenga en cuenta que los clientes solo son elegibles para una evaluación de módulo una vez por suscripción.
 
 
 
