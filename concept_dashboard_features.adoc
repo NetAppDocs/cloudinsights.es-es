@@ -29,7 +29,7 @@ toc::[]
 
 Los widgets se nombran automáticamente en función del objeto, métrica o atributo seleccionado para la primera consulta del widget. Si también elige una agrupación para el widget, los atributos "Agrupar por" se incluyen en la nomenclatura automática (método de agregación y métrica).
 
-image:WidgetNameExample.png["Ejemplo de nomenclatura de widgets"]
+image:WidgetNamingExample-C.png["Ejemplo de nomenclatura de widgets"]
 
 Al seleccionar un nuevo objeto o un atributo de agrupación, se actualiza el nombre automático.
 
@@ -231,7 +231,7 @@ Los datos que se muestran en un widget se agrupan (a veces denominados "rolled u
 * *Maximum*: Muestra cada línea como el _Maximum_ de los datos subyacentes.
 * *Mínimo*: Muestra cada línea como el _mínimo_ de los datos subyacentes.
 * *Suma*: Muestra cada línea como la _suma_ de los datos subyacentes.
-* * Count*: Muestra un _count_ de objetos que han informado datos dentro del intervalo de tiempo especificado. Puede elegir la _entire time Window_ según el intervalo de tiempo del panel de control (o el intervalo de tiempo del widget, si está configurado para anular la hora del panel de control) o una _Custom Time Window_ que seleccione.
+* * Count*: Muestra un _count_ de objetos que han informado datos dentro del intervalo de tiempo especificado. Puede seleccionar _Toda la ventana de tiempo_ según lo determinado por el rango de tiempo del panel de control.
 
 
 .Pasos
@@ -369,11 +369,13 @@ El intervalo de tiempo personalizado le permite seleccionar hasta 31 días conse
 
 Puede anular el ajuste del intervalo de tiempo del panel principal en widgets individuales. Estos widgets mostrarán los datos en función del marco de tiempo establecido, no del marco de tiempo del panel de control.
 
-Para anular la hora del panel de instrumentos y forzar que un widget utilice su propio intervalo de tiempo, en el modo de edición del widget, defina *Omitir hora del panel* en *Activado* (marque la casilla) y seleccione un intervalo de tiempo para el widget. *Guardar* el widget en el panel.
+Para anular la hora del panel de control y forzar que un widget utilice su propio marco de tiempo, en el modo de edición del widget, elija el intervalo de tiempo definido y Guardar el widget en el panel de control.
 
 El widget mostrará sus datos en función del intervalo de tiempo establecido, independientemente del periodo de tiempo seleccionado en el propio panel.
 
 El intervalo de tiempo establecido para un widget no afectará a ningún otro widget del panel.
+
+image:OverrideTimeOnWidget.png["sustitución del rango de tiempo del panel de control para un widget"]
 
 
 
@@ -748,7 +750,7 @@ La siguiente tabla muestra todas las unidades disponibles por categoría.
 
 == Modo TV y auto-refrescamiento
 
-Los datos de los widgets de los paneles y las páginas de inicio de activos se actualizan automáticamente según un intervalo de actualización determinado por el intervalo de tiempo del panel seleccionado (o intervalo de tiempo del widget, si está configurado para anular la hora del panel). El intervalo de actualización se basa en si el widget es una serie de tiempo (línea, spline, área, gráfico de área apilado) o no una serie de tiempo (todos los demás gráficos).
+Los datos de los widgets de los paneles de control y las páginas de destino de activos se refrescan automáticamente según el intervalo de actualización que determine el intervalo de tiempo del panel de control seleccionado. El intervalo de actualización se basa en si el widget es una serie de tiempo (línea, spline, área, gráfico de área apilado) o no una serie de tiempo (todos los demás gráficos).
 
 |===
 
