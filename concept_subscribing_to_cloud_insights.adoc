@@ -168,14 +168,20 @@ Si hay un problema y el proceso de suscripción no se completa correctamente, se
 
 Una vez activa la suscripción, puede ver el estado de su suscripción y el uso de la unidad gestionada desde la página *Admin > Subscription*.
 
-El separador Resumen de Suscripción muestra lo siguiente:
+La pestaña Suscripción *Resumen* muestra cosas como las siguientes:
 
 * Edición actual
 * Número de serie de suscripción
-* Uso de UM actual y «¿qué sucede si?» estimaciones de costes
-* Enlaces para modificar su suscripción
-* Vistas del uso de la unidad gestionada
+* Derecho de UM actual
 
+
+La pestaña *Uso* te muestra tu uso actual de MU y cómo ese uso se desglosa por el recopilador de datos.
+
+image:SubscriptionUsageByModule.png["Uso de MU por módulo"]
+
+La pestaña *Historial* te da una idea de tu uso de MU en los últimos 7 a 90 días. Al pasar el cursor sobre una columna del gráfico, se obtiene un desglose por módulo (es decir, observabilidad, Kubernetes).
+
+image:Subscription_Usage_History.png["Historial de uso de UM"]
 
 
 

@@ -9912,11 +9912,8 @@ NOTA: Las calculadoras son solo para estimación. El precio exacto se establecer
   <block id="3d3a14a6970653e82934d70556e92edc" category="inline-image-macro">Página de suscripción que muestra las calculadoras de estimación de costes de Kubernetes e infraestructura</block>
   <block id="93dd899a28072850f389977b64f3eb1b" category="paragraph"><block ref="93dd899a28072850f389977b64f3eb1b" category="inline-image-macro-rx" type="image"></block></block>
   <block id="380912a894b2ed4e52150b87b17024b2" category="paragraph">Una vez finalizado el proceso de suscripción a AWS, volverá a su entorno de Cloud Insights. O bien, si el entorno ya no está activo (por ejemplo, has cerrado la sesión), irás a la página de inicio de sesión de NetApp BlueXP. Cuando inicie sesión en Cloud Insights de nuevo, su suscripción estará activa.</block>
-  <block id="d1f15ae17b64c6a381736fceb36824b1" category="paragraph">El separador Resumen de Suscripción muestra lo siguiente:</block>
   <block id="2638d109f7501322af782022ec53f096" category="list-text">Edición actual</block>
   <block id="19cf2ec0c9b04a9d1e83a5c88cfd0526" category="list-text">Número de serie de suscripción</block>
-  <block id="7fe46cdf8a500ce7ce79c9bab4fb0678" category="list-text">Uso de UM actual y «¿qué sucede si?» estimaciones de costes</block>
-  <block id="824254db492a2daf86c1fa9977bc9c7d" category="list-text">Enlaces para modificar su suscripción</block>
   <block id="d3d856c02816952b24a5110171a09834" category="paragraph">La pestaña Administración de uso muestra una visión general del uso de unidades administradas, así como pestañas que desglosan el consumo de unidades administradas por recopilador o clúster de Kubernetes.</block>
   <block id="7702a4028f8e4df8a4c7cc7e0e9629c9" category="paragraph">En caso de que su uso se acerque o supere la cantidad suscrita, puede reducir el uso eliminando recopiladores de datos o deteniendo la supervisión de los clústeres de Kubernetes. Elimine un elemento de esta lista haciendo clic en el menú “Tres puntos” y seleccionando _Eliminar_.</block>
   <block id="718a66b23c9ea5a577883d447f892296" category="cell">Se muestra un banner de error y tendrá funcionalidad limitada hasta que realice una de las siguientes acciones:
@@ -10013,7 +10010,6 @@ También puede utilizar la opción “Agregar a filtro” en la pestaña Todas l
   <block id="46f506a87cfed781f4ca50c5456e5dea" category="list-text">Resolver según entrada de log: Resolver alerta cuando se detecta la línea de log como se describe en la siguiente definición o depurar después del período de retención de datos.</block>
   <block id="c418d072678072a9d451ca92f8cbbcdd" category="list-text">1 Unidad Gestionada = 4 vCPU de Kubentes</block>
   <block id="72a8f3e5ddcd565deaadfe888f6ec6ad" category="paragraph">Las calculadoras de suscripción le ayudan a estimar el coste de su suscripción a Cloud Insights en función del número de unidades gestionadas necesarias. Los valores actuales se rellenan previamente y puede ajustar esos valores para ayudarle a planificar el crecimiento futuro estimado. Puede ajustar los valores de Infraestructura, Kubernetes o ambos.</block>
-  <block id="e83566ec8beb942e786f102a35482e5d" category="list-text">Vistas del uso de la unidad gestionada</block>
   <block id="5fe48850b2ef6a213ed01dde1958dfa4" category="section-title">Editar un informe existente</block>
   <block id="5bd415396ca9b48afa3306c238307445" category="paragraph">Tenga en cuenta que la edición de archivos en su ubicación predeterminada corre el riesgo de que esos informes se sobrescriban en la siguiente actualización del catálogo de informes. Se recomienda guardar el informe editado con un nuevo nombre o almacenarlo en una ubicación no predeterminada.</block>
   <block id="9bb3efbd29374edfd5411d3bf02b3b92" category="cell">Después de escribir algunas letras que contienen un carácter comodín como asterisco (*) en los filtros de las páginas Forensics _All Activity_ o _entities_, las páginas se cargan muy lentamente.</block>
@@ -13128,4 +13124,12 @@ Seleccione Bloquear cookies de terceros y añada excepciones para _[\*.]auth0.co
 Microsoft Edge sigue el mismo formato para excepciones que Chrome.
 
 En Firefox, las excepciones de cookies se designan simplemente como _auth0.com_ y _netapp.com_.</block>
+  <block id="8bfda936be946f758536df68a230dfab" category="paragraph">La pestaña Suscripción *Resumen* muestra cosas como las siguientes:</block>
+  <block id="9b7f10f52064c80bcec17905afd00559" category="list-text">Derecho de UM actual</block>
+  <block id="f02a81449f4e8c1806fe657044887b30" category="paragraph">La pestaña *Uso* te muestra tu uso actual de MU y cómo ese uso se desglosa por el recopilador de datos.</block>
+  <block id="5e4b95db832e18e6c9bfe688b8cb8044" category="inline-image-macro">Uso de MU por módulo</block>
+  <block id="36be66d4e4e4fc3739c2b9f067442449" category="paragraph"><block ref="36be66d4e4e4fc3739c2b9f067442449" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="d3b55f9a8374f81f85e7606ece767371" category="paragraph">La pestaña *Historial* te da una idea de tu uso de MU en los últimos 7 a 90 días. Al pasar el cursor sobre una columna del gráfico, se obtiene un desglose por módulo (es decir, observabilidad, Kubernetes).</block>
+  <block id="fbc13ba96b933d65afd4caf522ab96b6" category="inline-image-macro">Historial de uso de UM</block>
+  <block id="2319aa26c375ca721d328685f3585394" category="paragraph"><block ref="2319aa26c375ca721d328685f3585394" category="inline-image-macro-rx" type="image"></block></block>
 </blocks>
