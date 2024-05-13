@@ -49,7 +49,7 @@ Para generar una clave de API, haga lo siguiente:
 * Haga clic en “Guardar” y, a continuación, *copie la clave y guárdela* en un lugar seguro. No podrá acceder más tarde a la clave completa.
 
 
-APIkeys es bueno para _Sync_ o _Async_.
+APIkeys son buenos para <<synchronous-or-asynchronous,_Sync_ o _Async_>>.
 
 
 
@@ -135,3 +135,43 @@ Además:
 
 
 Su clave de API será específica para su entorno de Cloud Insights.
+
+
+
+== ¿Síncrono o asíncrono?
+
+Por defecto, un comando API funcionará en modo _synchronous_, lo que significa que usted envía la solicitud y la respuesta se devuelve inmediatamente. Sin embargo, a veces una consulta puede tardar mucho tiempo en ejecutarse, lo que podría provocar que se agote el tiempo de espera de la solicitud. Para evitar esto, puede ejecutar una solicitud _Asynchronous_. En modo asíncrono, la solicitud devolverá una URL a través de la cual se puede supervisar la ejecución. La URL devolverá el resultado cuando esté lista.
+
+Para ejecutar una consulta en modo asíncrono, agregue la cabecera `*Prefer: respond-async*` a la solicitud. Una vez que se ejecute correctamente, la respuesta contendrá los siguientes encabezados:
+
+....
+Status Code: 202 (which means ACCEPTED)
+preference-applied: respond-async
+location: https://<Cloud Insights URL>/rest/v1/dwh-management/odata/dwh_custom/asyncStatus/<token>
+....
+Si consulta la URL de ubicación, se devolverán los mismos encabezados si la respuesta aún no está lista o se devolverán con el estado 200 si la respuesta está lista. El contenido de la respuesta será de tipo texto y contiene el estado http de la consulta original y algunos metadatos, seguido de los resultados de la consulta original.
+
+....
+HTTP/1.1 200 OK
+ OData-Version: 4.0
+ Content-Type: application/json;odata.metadata=minimal
+ oDataResponseSizeCounted: true
+
+ { <JSON_RESPONSE> }
+....
+Para ver una lista de todas las consultas asíncronas y cuáles de ellas están listas, utilice el siguiente comando:
+
+ GET https://<Cloud Insights URL>/rest/v1/dwh-management/odata/dwh_custom/asyncList
+La respuesta tiene el siguiente formato:
+
+....
+{
+   "queries" : [
+       {
+           "Query": "https://<Cloud Insights URL>/rest/v1/dwh-management/odata/dwh_custom/heavy_left_join3?$count=true",
+           "Location": "https://<Cloud Insights URL>/rest/v1/dwh-management/odata/dwh_custom/asyncStatus/<token>",
+           "Finished": false
+       }
+   ]
+}
+....
