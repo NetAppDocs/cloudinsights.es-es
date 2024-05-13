@@ -798,7 +798,7 @@ La actualización automática no está disponible para el intervalo de tiempo pe
 Cuando se combina con *modo TV*, la actualización automática permite la visualización casi en tiempo real de los datos en un panel o página de activos. El modo TV proporciona una visualización desembragada; el menú de navegación está oculto, proporcionando más propiedades de pantalla para la visualización de datos, al igual que el botón Editar. El modo TV ignora los tiempos de espera habituales de Cloud Insights, dejando la pantalla en directo hasta que se cierra la sesión de forma manual o automática mediante protocolos de seguridad de autorización.
 
 
-NOTE: Como NetApp BlueXP tiene su propio tiempo de espera de inicio de sesión de usuarios de 7 días, Cloud Insights también debe cerrar la sesión en ese evento. Simplemente puede iniciar sesión de nuevo y el panel seguirá mostrándose.
+NOTE: 9fd11a00d0217c79c8723171888d8b89
 
 * Para activar el modo TV, haga clic en image:ActivateTVMode.png["Modo TV"] botón.
 * Para desactivar el modo TV, haga clic en el botón *salir* de la parte superior izquierda de la pantalla. image:ExitTVMode.png["Botón salir"]

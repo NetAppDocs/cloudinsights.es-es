@@ -49,7 +49,7 @@ Estos son los datos generados como resultado de la prestación del Servicio de d
 
 * Acceso de usuarios a datos
 +
-Información de autenticación y acceso que permite a NetApp BlueXP comunicarse con sitios regionales de Cloud Insights, incluidos los datos relacionados con la autorización de usuarios.
+a020ee54398cbdbb6220eb6dbbb2eea3
 
 * Datos del directorio de usuario de seguridad de la carga de trabajo de almacenamiento
 +
@@ -85,7 +85,7 @@ La siguiente información se almacena en la región de host:
 La siguiente información reside en los Estados Unidos, independientemente de la región donde se aloje su entorno de Cloud Insights:
 
 * Información del sitio de entorno (a veces denominado "inquilino"), como el propietario del sitio/cuenta.
-* Información que permite a NetApp BlueXP comunicarse con sitios regionales de Cloud Insights, incluida cualquier cosa que tenga que ver con la autorización de usuarios.
+* 477495be48e10387478849fdda012566
 * Información relacionada con la relación entre el usuario de Cloud Insights y el inquilino.
 
 

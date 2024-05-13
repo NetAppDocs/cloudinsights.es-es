@@ -95,7 +95,7 @@ Los eventos y acciones auditados por Cloud Insights se pueden clasificar en las 
 
 * *Cuenta de usuario*: Inicio de sesión, cierre de sesión, cambio de rol, etc.
 +
-Ejemplo: _Usuario *Tony Lavoie* inició sesión desde *10,1.120,15*, agente de usuario *Mozilla/5,0 (Windows NT 10,0; Win64; x64) AppleWebKit/537,36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537,36*, métodos de inicio de sesión *BlueXP Portal Login_*
+5a3b3866ed7beab8b728614f1d33c0b5
 
 * *Unidad de adquisición*: Crear, borrar, etc.
 +
