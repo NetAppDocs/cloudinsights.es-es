@@ -4,22 +4,19 @@ permalink: task_cloud_insights_onboarding_1.html
 summary: Registrarse en Cloud Insights y crear el entorno. 
 ---
 = Incorporación de Cloud Insights
-:toc: macro
 :hardbreaks:
 :toclevels: 2
 :allow-uri-read: 
-:toc: 
 :toclevels: 2
 :nofooter: 
 :icons: font
 :linkattrs: 
 :imagesdir: ./media/
 :keywords: Cloud Insights, documentation, help, onboarding, getting started,
-:toc-position: content
 
 
 [role="lead"]
-2e95a4622d16ffb729672b5838f5732b
+Antes de empezar a trabajar con Cloud Insights, debes registrarte en el portal *NetApp BlueXP*. Si ya tienes un inicio de sesión en NetApp BlueXP, puedes iniciar una prueba gratuita de Cloud Insights con unos rápidos pasos.
 
 
 toc::[]
@@ -78,10 +75,10 @@ La primera vez que inicie sesión en un entorno nuevo, se le guiará a través d
 
 == Cierre la sesión
 
-b00323e3fc84f69070c5dc2be8e5ce9e
+Para cerrar sesión en Cloud Insights, haga clic en su *Nombre de usuario* y seleccione *Cerrar sesión*. Volverá a la pantalla de inicio de sesión de BlueXP.
 
 
-NOTE: 4405c285662a5ac6f84ad517037907a7
+NOTE: Al cerrar la sesión de Cloud Insights se cierra la sesión de BlueXP. También se cerrará la sesión de otros servicios en la nube de NetApp que utilicen el inicio de sesión de BlueXP.
 
 
 
