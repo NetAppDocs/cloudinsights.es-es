@@ -17593,7 +17593,7 @@ Productos compatibles con este recopilador de datos:
 | Tipo | Separación | HTTPS |  
 
 
-.4+| rendimiento | Qtree.1 o posterior | Reducida | Discos con fallos | Implementado | HTTPS 
+.4+| Rendimiento | Qtree | Reducida | Discos con fallos | Implementado | HTTPS 
 
 
 |  .3+| Nodo de almacenamiento | Ratio de aciertos de caché total | Implementado | HTTPS 

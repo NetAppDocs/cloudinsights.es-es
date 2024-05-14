@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar 
-permalink: task_query_assign_multiple_applicationss.html 
+permalink: task_query_assign_multiple_applications.html 
 summary: Utilice una consulta para asignar varias aplicaciones o anotaciones a objetos o para eliminar varias aplicaciones o anotaciones de ellos. 
 keywords: query, queries, application, annotation, multiple 
 ---
