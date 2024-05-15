@@ -156,7 +156,6 @@ Las entradas de auditoría anteriores al tiempo de retención se purgan automát
 
 == Resolución de problemas
 
-[role="lead"]
 Aquí encontrará sugerencias para solucionar problemas con Audit.
 
 |===

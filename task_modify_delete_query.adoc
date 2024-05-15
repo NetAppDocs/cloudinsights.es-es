@@ -18,7 +18,7 @@ keywords: query, queries, modify, edit, delete, remove
 :toc-position: content
 
 
-[role="lead]"]
+[role="lead"]
 Puede cambiar los criterios asociados a una consulta cuando desee cambiar los criterios de búsqueda de los activos que esté consultando.
 
 

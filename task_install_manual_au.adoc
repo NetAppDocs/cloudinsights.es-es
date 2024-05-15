@@ -45,7 +45,7 @@ El proceso es similar para Linux y Windows.
 
 
 
-image:Manual_AU_Create_API_Token.png[""]
+image:Manual_AU_Create_API_Token.png["Crear Token de API"]
 
 . En Swagger (Administrador > Acceso de API > Documentación de API), utilice el token para autorizar las API de Cloud Insights
 +
@@ -57,7 +57,7 @@ image:Manual_AU_Create_API_Token.png[""]
 
 
 
-image:Manual_AU_Authorization.png[""]
+image:Manual_AU_Authorization.png["Autorice el token API"]
 
 . Descargue AU Installer con la API _/au/installers/{platform}/latest_ o _/au/installers/{platform}/{version}_:
 +
@@ -89,8 +89,8 @@ IMPORTANT: Los siguientes pasos requieren el uso de un token temporal. No utilic
 
 
 
-image:Manual_AU_one_time_token.png[""]
-image:Manual_AU_one_time_token_response.png[""]
+image:Manual_AU_one_time_token.png["Crear token de API de un solo uso"]
+image:Manual_AU_one_time_token_response.png["Respuesta para un ejemplo de token de API de uso único"]
 
 . En el equipo donde se va a instalar la unidad de asignación, navegue hasta la carpeta que contiene el archivo de instalación descargado. Los siguientes comandos requieren que el usuario tenga permisos root.
 +

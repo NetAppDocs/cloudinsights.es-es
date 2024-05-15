@@ -2,6 +2,7 @@
 sidebar: sidebar 
 permalink: task_cloud_insights_onboarding_1.html 
 summary: Registrarse en Cloud Insights y crear el entorno. 
+keywords: onboarding, new user 
 ---
 = Incorporación de Cloud Insights
 :hardbreaks:
@@ -24,7 +25,7 @@ toc::[]
 
 == Crear tu cuenta de NetApp BlueXP
 
-Para empezar a usar los servicios cloud de NetApp, vaya a. https://cloud.netapp.com["*BlueXP de NetApp*"^] Y haga clic en *Comenzar*.
+Para empezar a usar los servicios cloud de NetApp, vaya a. link:https://cloud.netapp.com["*BlueXP de NetApp*"^] Y haga clic en *Comenzar*.
 
 * Si aún no se ha registrado, seleccione *Registrarse*
 * Introduzca una dirección de correo electrónico profesional válida y elija una contraseña.
@@ -37,7 +38,7 @@ Para empezar a usar los servicios cloud de NetApp, vaya a. https://cloud.netapp.
 
 === ¿Qué sucede si ya tengo un inicio de sesión en NetApp BlueXP?
 
-Cuando tengas una cuenta de NetApp BlueXP, solo tienes que seleccionar *Iniciar sesión* en la https://cloud.netapp.com["* BlueXPl de NetApp*"^] portal de datos.
+Cuando tengas una cuenta de NetApp BlueXP, solo tienes que seleccionar *Iniciar sesión* en la link:https://cloud.netapp.com["*BlueXP de NetApp*"^] portal de datos.
 
 Introduzca su dirección de correo electrónico y contraseña. Después, irá a la página de ofertas de cloud de NetApp.
 
@@ -49,7 +50,9 @@ image:BlueXP_CloudInsights.png["Prueba gratuita de Cloud Insights en BlueXP"]
 
 == Comience su prueba gratuita de Cloud Insights
 
-Si es la primera vez que inicia sesión en Cloud Insights, bajo la oferta de Cloud Insights, haga clic en *Iniciar prueba gratuita*. Cloud Insights te guiará a través de la creación del entorno de tu empresa.
+Si es la primera vez que inicia sesión en Cloud Insights, bajo la oferta de Cloud Insights, haga clic en *Iniciar prueba gratuita*. Cloud Insights le guiará a través de la creación del entorno de su empresa, incluida la selección de la región en la que desea que resida su entorno.
+
+image:trial_region_selector.png["Selección de la región en la que se alojará el entorno Cloud Insights"]
 
 Una vez que hayas completado la creación de tu entorno, puedes usar tus credenciales de BlueXP para iniciar sesión y comenzar tu prueba gratuita de 30 días de Cloud Insights. Durante esta prueba se pueden explorar las funciones que Cloud Insights puede ofrecer.
 
@@ -63,7 +66,7 @@ Una vez creado tu entorno, solo tienes que iniciar sesión en el portal de NetAp
 
 También puede abrir un navegador directamente a la URL de su entorno Cloud Insights, por ejemplo:
 
- https://<environment-prefix>.c01.cloudinsights.netapp.com/
+ \https://<environment-prefix>.c01.cloudinsights.netapp.com/
 La URL también se incluirá en el correo electrónico de invitación de cada usuario para un acceso sencillo y marcadores. Si el usuario no ha iniciado sesión en BlueXP, se le pedirá que inicie sesión.
 
 

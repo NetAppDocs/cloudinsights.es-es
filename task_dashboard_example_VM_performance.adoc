@@ -47,7 +47,7 @@ Se abrirá el cuadro de diálogo Editar widget. Los datos que se muestran de for
 
 
 
-image:VMDashboard-TableWidget1.png[""]
+image:VMDashboard-TableWidget1.png["Cuadro de diálogo Editar widget de tabla"]
 
 . Podemos personalizar este widget. En el campo Nombre de la parte superior, elimine "Widget 1" e introduzca "Virtual Machine Performance Table".
 . Haga clic en el menú desplegable de tipo de activo y cambie _Storage_ a _Virtual Machine_.
@@ -68,7 +68,7 @@ Las filas de la tabla ahora se agrupan según su configuración. Puede expandir 
 
 
 
-image:VMDashboard-TableWidgetGroup.png[""]
+image:VMDashboard-TableWidgetGroup.png["Ejemplo de agrupación de widgets de tabla"]
 
 . Cuando haya personalizado el widget de tabla a su satisfacción, haga clic en el botón *[Guardar]*.
 +
@@ -88,7 +88,7 @@ A continuación, añadiremos algunos gráficos para mostrar nuestro rendimiento 
 . Haga clic en *[Guardar]* para añadir este widget al panel de control.
 
 
-image:VMDashboard-LineChartVMLatency.png[""]
+image:VMDashboard-LineChartVMLatency.png["Gráfico de líneas que muestra los datos de latencia"]
 
 A continuación, añadiremos un gráfico que muestre VM Read, Write y total IOPS en un único gráfico.
 
@@ -100,7 +100,7 @@ A continuación, añadiremos un gráfico que muestre VM Read, Write y total IOPS
 . Haga clic en *Mostrar leyenda* para mostrar una leyenda de este widget en el panel.
 
 
-image:VMDashboard-AreaChartVMIOPS.png[""]
+image:VMDashboard-AreaChartVMIOPS.png["Gráfico de área que muestra las IOPS de VM"]
 
 . Haga clic en *[Guardar]* para añadir este widget al panel de control.
 
@@ -121,4 +121,4 @@ Asegúrese de *[Guardar]* el panel después de realizar los cambios.
 
 La última consola de rendimiento de la máquina virtual tendrá un aspecto similar a este:
 
-image:VMDashExample1.png[""]
+image:VMDashExample1.png["VM Dashboard Ejemplo completo que muestra todos los widgets en su lugar"]

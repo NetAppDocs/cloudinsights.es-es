@@ -28,22 +28,22 @@ Tenga en cuenta que las API de Cloud Insights están disponibles en función de 
 | Tipo de API | Básico | Estándar | Premium 
 
 
-| Unidad de adquisición | image:SmallCheckMark.png[""] | image:SmallCheckMark.png[""] | image:SmallCheckMark.png[""] 
+| Unidad de adquisición | image:SmallCheckMark.png["marca de verificación"] | image:SmallCheckMark.png["marca de verificación"] | image:SmallCheckMark.png["marca de verificación"] 
 
 
-| Recopilación de datos | image:SmallCheckMark.png[""] | image:SmallCheckMark.png[""] | image:SmallCheckMark.png[""] 
+| Recopilación de datos | image:SmallCheckMark.png["marca de verificación"] | image:SmallCheckMark.png["marca de verificación"] | image:SmallCheckMark.png["marca de verificación"] 
 
 
-| Alertas |  | image:SmallCheckMark.png[""] | image:SmallCheckMark.png[""] 
+| Alertas |  | image:SmallCheckMark.png["marca de verificación"] | image:SmallCheckMark.png["marca de verificación"] 
 
 
-| Activos |  | image:SmallCheckMark.png[""] | image:SmallCheckMark.png[""] 
+| Activos |  | image:SmallCheckMark.png["marca de verificación"] | image:SmallCheckMark.png["marca de verificación"] 
 
 
-| Ingesta de datos |  | image:SmallCheckMark.png[""] | image:SmallCheckMark.png[""] 
+| Ingesta de datos |  | image:SmallCheckMark.png["marca de verificación"] | image:SmallCheckMark.png["marca de verificación"] 
 
 
-| Registrar ingestión |  | image:SmallCheckMark.png[""] | image:SmallCheckMark.png[""] 
+| Registrar ingestión |  | image:SmallCheckMark.png["marca de verificación"] | image:SmallCheckMark.png["marca de verificación"] 
 |===
 Además, su Cloud Insights link:https://docs.netapp.com/us-en/cloudinsights/concept_user_roles.html#permission-levels["función de conjunto de funciones"] Determinará a qué API puede acceder. Los roles de usuario e invitado tienen menos privilegios que el rol de administrador. Por ejemplo, si tiene la función de administrador en Monitor y Optimize, pero la función de usuario en Reporting, puede administrar todos los tipos de API excepto Data Warehouse.
 

@@ -39,7 +39,15 @@ En el cuadro de diálogo puede configurar el recopilador de datos y agregar una 
 . Introduzca un nombre para el recopilador de datos.
 
 
+<<<<<<<<< CABEZA
+. Haga clic en *Configuración avanzada* para agregar campos de configuración adicionales. (No todos los recopiladores de datos necesitan configuración avanzada.)
+. Haga clic en *Configuración de prueba* para comprobar que el recopilador de datos está configurado correctamente.
+. Haga clic en *Agregar colector* para guardar la configuración y agregar el recopilador de datos a su arrendatario Cloud Insights.
+
+[]
+====
 Puede tardar hasta dos períodos de sondeo antes de que los datos del servicio se muestren en paneles o estén disponibles para realizar consultas.
+>>>>>>> b8087143154c7dd9f5d1d3f33ee1bbdf97a7c9d1
 
 * primera encuesta de inventario: inmediatamente
 * primera encuesta de datos de rendimiento para establecer una línea de base: inmediatamente después de la encuesta de inventario
@@ -47,3 +55,5 @@ Puede tardar hasta dos períodos de sondeo antes de que los datos del servicio s
 
 
 A continuación, el sondeo se realiza según el inventario configurado y los intervalos de sondeo de rendimiento.
+
+====

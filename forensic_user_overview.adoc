@@ -13,6 +13,7 @@ summary: detalles forenses del usuario
 :imagesdir: ./media/
 
 
+[role="lead"]
 La información de cada usuario se proporciona en la sección Información general del usuario. Utilice estas vistas para comprender las características del usuario, las entidades asociadas y las actividades recientes.
 
 

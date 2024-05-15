@@ -18,6 +18,7 @@ summary: datos forenses sobre la actividad de los usuarios
 :toc-position: content
 
 
+[role="lead"]
 La página actividad del usuario le ayuda a comprender las acciones realizadas por los usuarios en las entidades.
 
 Los datos disponibles en esta página, describen:

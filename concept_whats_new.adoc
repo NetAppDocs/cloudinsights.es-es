@@ -15,6 +15,7 @@ keywords: features
 :imagesdir: ./media/
 
 
+[role="lead"]
 NetApp mejora y mejora continuamente sus productos y servicios. Estas son algunas de las últimas características y funcionalidades disponibles en las ediciones comerciales de Cloud Insights.
 
 
@@ -1418,8 +1419,8 @@ _Nuevas variables para atributos y la capacidad de utilizar variables en widgets
 
 Los paneles son ahora más potentes y flexibles que nunca. Crear paneles adaptativos con variables de atributos para filtrar rápidamente los paneles sobre la marcha. Uso de éstos y otros preexistentes link:concept_dashboard_features.html#variables["variables"] ahora puede crear un panel de alto nivel para ver métricas de todo su entorno y filtrar sin problemas por nombre, tipo, ubicación y mucho más. Utilice variables de número en widgets para asociar métricas sin procesar a costes, por ejemplo, el coste por GB para el almacenamiento como servicio.
 
-image:Variables_Drop_Down_Showing_Annotations.png[""]
-image:Variables_Attribute_Filtering.png[""]
+image:Variables_Drop_Down_Showing_Annotations.png["Anotaciones desplegables en una variable"]
+image:Variables_Attribute_Filtering.png["filtrado de atributos en una variable"]
 
 
 
@@ -1594,19 +1595,19 @@ Las potentes API de Cloud Insights son más accesibles que nunca, con las API de
 | Categoría de API | Básico | Estándar | Premium 
 
 
-| Unidad de adquisición | image:SmallCheckMark.png[""] | image:SmallCheckMark.png[""] | image:SmallCheckMark.png[""] 
+| Unidad de adquisición | image:SmallCheckMark.png["marca de verificación"] | image:SmallCheckMark.png["marca de verificación"] | image:SmallCheckMark.png["marca de verificación"] 
 
 
-| Recopilación de datos | image:SmallCheckMark.png[""] | image:SmallCheckMark.png[""] | image:SmallCheckMark.png[""] 
+| Recopilación de datos | image:SmallCheckMark.png["marca de verificación"] | image:SmallCheckMark.png["marca de verificación"] | image:SmallCheckMark.png["marca de verificación"] 
 
 
-| Alertas |  | image:SmallCheckMark.png[""] | image:SmallCheckMark.png[""] 
+| Alertas |  | image:SmallCheckMark.png["marca de verificación"] | image:SmallCheckMark.png["marca de verificación"] 
 
 
-| Activos |  | image:SmallCheckMark.png[""] | image:SmallCheckMark.png[""] 
+| Activos |  | image:SmallCheckMark.png["marca de verificación"] | image:SmallCheckMark.png["marca de verificación"] 
 
 
-| Ingesta de datos |  | image:SmallCheckMark.png[""] | image:SmallCheckMark.png[""] 
+| Ingesta de datos |  | image:SmallCheckMark.png["marca de verificación"] | image:SmallCheckMark.png["marca de verificación"] 
 |===
 
 
@@ -1688,19 +1689,19 @@ El acceso a la API ya está disponible en todas las ediciones de Cloud Insights.
 | Categoría de API | Básico | Estándar | Premium 
 
 
-| Unidad de adquisición | image:SmallCheckMark.png[""] | image:SmallCheckMark.png[""] | image:SmallCheckMark.png[""] 
+| Unidad de adquisición | image:SmallCheckMark.png["marca de verificación"] | image:SmallCheckMark.png["marca de verificación"] | image:SmallCheckMark.png["marca de verificación"] 
 
 
-| Recopilación de datos | image:SmallCheckMark.png[""] | image:SmallCheckMark.png[""] | image:SmallCheckMark.png[""] 
+| Recopilación de datos | image:SmallCheckMark.png["marca de verificación"] | image:SmallCheckMark.png["marca de verificación"] | image:SmallCheckMark.png["marca de verificación"] 
 
 
-| Activos |  | image:SmallCheckMark.png[""] | image:SmallCheckMark.png[""] 
+| Activos |  | image:SmallCheckMark.png["marca de verificación"] | image:SmallCheckMark.png["marca de verificación"] 
 
 
-| Ingesta de datos |  | image:SmallCheckMark.png[""] | image:SmallCheckMark.png[""] 
+| Ingesta de datos |  | image:SmallCheckMark.png["marca de verificación"] | image:SmallCheckMark.png["marca de verificación"] 
 
 
-| Almacén de datos |  |  | image:SmallCheckMark.png[""] 
+| Almacén de datos |  |  | image:SmallCheckMark.png["marca de verificación"] 
 |===
 Para obtener más información sobre el uso de la API, consulte link:https://docs.netapp.com/us-en/cloudinsights/API_Overview.html#api-documentation-swagger["Documentación de API"].
 

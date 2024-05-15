@@ -16,6 +16,7 @@ summary: Página de entidades forenses
 :toc-position: content
 
 
+[role="lead"]
 La página entidades Forensics proporciona información detallada sobre la actividad de la entidad en su entorno.
 
 

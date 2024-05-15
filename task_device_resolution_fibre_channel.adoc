@@ -120,7 +120,7 @@ Al exportar una identificación de dispositivo Fibre Channel a un archivo .CSV, 
 . Haga clic en *Administrar > resolución del dispositivo*
 . Seleccione la ficha *Identificación de canal de fibra*.
 . Seleccione el dispositivo Fibre Channel o los dispositivos cuya identificación desea exportar.
-. Haga clic en *Exportar* image:ExportButton.png[""] botón.
+. Haga clic en *Exportar* image:ExportButton.png["Botón Exportar"] botón.
 +
 Seleccione si desea abrir el archivo .CSV o guardar el archivo.
 

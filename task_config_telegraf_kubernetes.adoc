@@ -32,23 +32,21 @@ El operador de supervisión de Kubernetes instala kube-state-metrics automática
 
 
 
-=== Contadores de mediciones de estado kube
+=== Contadores de métricas-estado-Kube
 
-Utilice los siguientes vínculos para acceder a la información de estos contadores de métricas de estado de kube:
+El Operador de Supervisión de Kubernetes de NetApp extrae los contadores de métricas de estado de kube que se enumeran a continuación. Puede encontrar más detalles sobre cada contador en: https://github.com/kubernetes/kube-state-metrics/tree/main/docs#exposed-metrics[].
 
-. https://github.com/kubernetes/kube-state-metrics/blob/master/docs/configmap-metrics.md["Métricas de ConfigMap"]
-. https://github.com/kubernetes/kube-state-metrics/blob/master/docs/daemonset-metrics.md["DemonSet Metrics"]
-. https://github.com/kubernetes/kube-state-metrics/blob/master/docs/deployment-metrics.md["Métricas de puesta en marcha"]
-. https://github.com/kubernetes/kube-state-metrics/blob/master/docs/ingress-metrics.md["Métricas de entrada"]
-. https://github.com/kubernetes/kube-state-metrics/blob/master/docs/namespace-metrics.md["Métricas de espacio de nombres"]
-. https://github.com/kubernetes/kube-state-metrics/blob/master/docs/node-metrics.md["Métricas de nodo"]
-. https://github.com/kubernetes/kube-state-metrics/blob/master/docs/persistentvolume-metrics.md["Métricas de volúmenes persistentes"]
-. https://github.com/kubernetes/kube-state-metrics/blob/master/docs/persistentvolumeclaim-metrics.md["Métricas de reclamaciones de volumen persistente"]
-. https://github.com/kubernetes/kube-state-metrics/blob/master/docs/pod-metrics.md["Métricas de POD"]
-. https://github.com/kubernetes/kube-state-metrics/blob/master/docs/replicaset-metrics.md["Métricas replicaset"]
-. https://github.com/kubernetes/kube-state-metrics/blob/master/docs/secret-metrics.md["Métricas secretas"]
-. https://github.com/kubernetes/kube-state-metrics/blob/master/docs/service-metrics.md["Métricas de servicio"]
-. https://github.com/kubernetes/kube-state-metrics/blob/master/docs/statefulset-metrics.md["Métricas de Statilusionados Set"]
+. Métricas de ConfigMap
+. DemonSet Metrics
+. Métricas de puesta en marcha
+. Métricas de entrada
+. Métricas de espacio de nombres
+. Métricas de nodo
+. Métricas de volúmenes persistentes
+. Métricas de reclamación de volumen persistente
+. Métricas de POD
+. Métricas replicaset
+. Métricas secretas
+. Métricas de servicio
+. Métricas de Statilusionados Set
 
-
-'''

@@ -43,7 +43,7 @@ NOTE: La seguridad de carga de trabajo no está disponible en la edición federa
 El sistema muestra la página Agregar un agente:
 
 +
-image::Add-agent-1.png[Agregar agente 1]
+image::Add-agent-1.png[Agregando un agente de seguridad de carga de trabajo]
 
 . Compruebe que el servidor de agentes cumple los requisitos mínimos del sistema.
 . Para comprobar que el servidor de agentes está ejecutando una versión compatible de Linux, haga clic en _version soportadas (i)_.
@@ -55,7 +55,7 @@ image:CloudSecureAgentWithProxy_Instructions.png["Instalar agente con nota de pr
 . Ejecute el comando de instalación en una ventana de terminal.
 . El sistema muestra el siguiente mensaje cuando la instalación se completa correctamente:
 +
-image::new-agent-detect.png[detección de nuevo agente]
+image::new-agent-detect.png[Mensaje para la instalación correcta del agente]
 
 
 

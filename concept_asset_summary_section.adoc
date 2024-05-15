@@ -23,7 +23,7 @@ La sección Resumen de una página de activos muestra información general sobre
 
 La información de la sección de resumen, así como en cualquier tabla o widgets personalizados de la página de activos, se actualiza automáticamente en función del intervalo de tiempo seleccionado. Puede ver la tasa de actualización actual en la esquina superior derecha de la sección Resumen, las tablas y cualquier widget personalizado.
 
-image:Summary_Section_Example.png[""]
+image:Summary_Section_Example.png["Ejemplo de una sección de resumen de página de destino"]
 
 Nota: La información que se muestra en la sección Resumen varía en función del tipo de activo que esté viendo.
 
@@ -56,4 +56,4 @@ La topología está disponible para los siguientes tipos de activos:
 * Volumen
 
 
-image:TopologyExample.png[""]
+image:TopologyExample.png["Ejemplo de una sección Topología de Página de Destino"]

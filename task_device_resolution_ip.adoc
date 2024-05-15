@@ -91,7 +91,7 @@ Al exportar una identificación de dispositivo IP a un archivo .CSV, el archivo 
 . Haga clic en *Administrar > resolución del dispositivo*
 . Seleccione la ficha *Identificación de dirección IP*.
 . Seleccione el dispositivo IP o los dispositivos cuya identificación desea exportar.
-. Haga clic en *Exportar* image:ExportButton.png[""] botón.
+. Haga clic en *Exportar* image:ExportButton.png["Botón Exportar"] botón.
 +
 Seleccione si desea abrir el archivo .CSV o guardar el archivo.
 

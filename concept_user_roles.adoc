@@ -291,4 +291,4 @@ Se le presentan las siguientes opciones:
 * Limite el acceso a los valores por defecto más los dominios que especifique. Enumere los dominios que desee tener acceso a su entorno de Cloud Insights, además de los dominios predeterminados.
 
 
-image:Restrict_Domains_Tooltip.png[""]
+image:Restrict_Domains_Tooltip.png["Información sobre herramientas de restricción de dominios"]
