@@ -52,12 +52,12 @@ Rancher + cattle.io como orquestación/plataforma Kubernetes: Cattle.io/os = lin
 
 | Conectividad | la interfaz de línea de comandos de kubectl está configurada para comunicarse con el clúster K8s de destino y tiene conectividad a Internet con el entorno Cloud Insights.
 
-Si está detrás de un proxy durante la instalación, siga las instrucciones de link:/task_config_telegraf_agent_k8s.html#configuring-proxy-support["Configurar el soporte del proxy"] Sección de la instalación del operador.
+Si está detrás de un proxy durante la instalación, siga las instrucciones de link:task_config_telegraf_agent_k8s.html#configuring-proxy-support["Configurar el soporte del proxy"] Sección de la instalación del operador.
 
 Para obtener informes precisos de auditoría y datos, sincronice la hora en el equipo del agente mediante Network Time Protocol (NTP) o Simple Network Time Protocol (SNTP). 
 
 
-| Otros | Si ejecuta OpenShift 4,6 o superior, debe seguir el enlace:task_config_telegraf_agent_k8s.html#openshift-instructions[Instrucciones openshift además de asegurarse de que se cumplen estos requisitos previos. 
+| Otros | Si ejecuta OpenShift 4,6 o superior, debe seguir el link:task_config_telegraf_agent_k8s.html#openshift-instructions["Instrucciones de OpenShift"] además de garantizar que se cumplan estos requisitos previos. 
 
 
 | Token de API | Si va a volver a desplegar el Operador (es decir, lo está actualizando o reemplazando), no es necesario crear un nuevo token de API; puede volver a utilizar el token anterior. 
@@ -169,7 +169,7 @@ Edite AgentConfiguration en operator-config.yaml para reflejar la nueva ubicaci�
 agent:
   ...
   # An optional docker registry where you want docker images to be pulled from as compared to CI's docker registry
-  # Please see documentation link here: https://docs.netapp.com/us-en/cloudinsights/task_config_telegraf_agent_k8s.html#using-a-custom-or-private-docker-repository
+  # Please see documentation for link:task_config_telegraf_agent_k8s.html#using-a-custom-or-private-docker-repository[using a custom or private docker repository].
   dockerRepo: your.docker.repo/long/path/to/test
   # Optional: A docker image pull secret that maybe needed for your private docker registry
   dockerImagePullSecret: docker-secret-name

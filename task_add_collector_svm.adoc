@@ -49,7 +49,7 @@ Workload Security utiliza recopiladores de datos para recopilar datos de acceso 
 
 
 ** Mediante la administración de Vserver IP, nombre de usuario y contraseña de SVM
-** Si no puede o no desea utilizar el nombre de usuario y la contraseña de Administrator Cluster/SVM Management, puede crear un usuario personalizado con privilegios menores como se indica en la link:#a-note-about-permissions["“Una nota sobre los permisos”"] a continuación. Este usuario personalizado se puede crear tanto para SVM como para el acceso a clústeres.
+** Si no puede o no desea utilizar el nombre de usuario y la contraseña de Administrator Cluster/SVM Management, puede crear un usuario personalizado con privilegios menores como se indica en la <<a-note-about-permissions,“Una nota sobre los permisos”>> a continuación. Este usuario personalizado se puede crear tanto para SVM como para el acceso a clústeres.
 +
 *** o también puede usar un usuario de AD con una función que tenga al menos los permisos de csrole como se menciona en la sección “una nota sobre los permisos” que aparece a continuación. Consulte también la link:https://docs.netapp.com/ontap-9/index.jsp?topic=%2Fcom.netapp.doc.pow-adm-auth-rbac%2FGUID-0DB65B04-71DB-43F4-9A0F-850C93C4896C.html["Documentación de ONTAP"].
 
@@ -124,33 +124,9 @@ security login role create -role csrole -cmddirname "security certificate" -acce
 security login create -user-or-group-name csuser -application ontapi -authmethod password -role csrole
 security login create -user-or-group-name csuser -application ssh -authmethod password -role csrole
 ....
-<<<<<<<<< CABEZA
 
-[]
-====
-Permisos para la integración ARP de ONTAP:
 
-....
-security login rest-role create -role arwrole -api /api/storage/volumes -access readonly -vserver <cluster_name>
-security login rest-role create -api /api/security/anti-ransomware -access readonly  -role arwrole -vserver <cluster_name>
-security login create -user-or-group-name csuser -application http -authmethod password -role arwrole
-....
-Permisos para Acceso ONTAP Denegado:
-
-....
-security login rest-role create -role csrestrole -api /api/protocols/fpolicy -access all -vserver <cluster_name>
-security login create -user-or-group-name csuser -application http -authmethod password -role csrestrole
-....
-Nota: Si ya se ha agregado un rol REST--ya sea _arwrole_ o _csrestrole_- no es necesario agregar un segundo rol REST. Simplemente puede agregar los permisos de la API como en el ejemplo siguiente.
-
-Ejemplo: _Csrestrole_ ya está presente, por lo que solo tenemos que habilitar la protección anti-ransomware y dar permisos API al _csrestrole_ existente:
-
-....
-security login rest-role create -role csrestrole -api /api/storage/volumes -access readonly -vserver <cluster_name>
-security login rest-role create -api /api/security/anti-ransomware -access readonly  -role arwrole -vserver <cluster_name>
-....
->>>>>>> b8087143154c7dd9f5d1d3f33ee1bbdf97a7c9d1
-=== Permisos al agregar a través de *Vserver Management IP*:
+=== Permisos al agregar mediante *IP de administración de Vserver*:
 
 Si no puede utilizar el usuario administrador de administración de clústeres para permitir que Workload Security acceda al recopilador de datos de SVM de ONTAP, puede crear un nuevo usuario llamado “csuser” con los roles como se muestra en los comandos siguientes. Utilice el nombre de usuario “csuser” y la contraseña para “csuser” cuando configure el recopilador de datos Workload Security para utilizar Vserver Management IP.
 
@@ -168,17 +144,9 @@ security login role create -vserver <vservername> -role csrole -cmddirname "vser
 security login role create -vserver <vservername> -role csrole -cmddirname "volume snapshot" -access all
 ....
  security login create -user-or-group-name csuser -application ontapi -authmethod password -role csrole -vserver <vservername>
-<<<<<<<<< CABEZA
 
-====
-Permisos para Acceso ONTAP Denegado:
 
-....
-security login rest-role create -role csrestrole -api /api/protocols/fpolicy -access all -vserver <svm_name>
-security login create -user-or-group-name csuser -application http -authmethod password -role csrestrole -vserver <svm_name>
-....
->>>>>>> b8087143154c7dd9f5d1d3f33ee1bbdf97a7c9d1
-=== Permisos para la protección autónoma contra ransomware de ONTAP
+=== Permisos para la protección autónoma frente a ransomware de ONTAP
 
 Si utiliza credenciales de administración del clúster, no es necesario contar con permisos nuevos.
 
@@ -384,7 +352,7 @@ g) Abra el firewall en ONTAP, de modo que ONTAP pueda conectar la caja del agent
 
 8. Verifique que el puerto 7 esté abierto.
 
-9. Si ninguno de los anteriores resuelve el problema, abra un caso con link:http://docs.netapp.com/us-en/cloudinsights/concept_requesting_support.html["Soporte de NetApp"] para más ayuda. 
+9. Si ninguno de los anteriores resuelve el problema, abra un caso con link:concept_requesting_support.html["Soporte de NetApp"] para más ayuda. 
 
 
 | Mensaje: "No se ha podido determinar el tipo de ONTAP para [hostname: <IP Address>. Motivo: Error de conexión con Storage System <IP Address>: No se puede acceder al host (no se puede acceder al host)" | 1. Compruebe que se ha proporcionado la dirección IP de administración de SVM o la IP de administración de clúster correctas. 2. SSH a la SVM o el clúster al que pretende conectarse. Una vez que esté conectado, asegúrese de que la SVM o el nombre del clúster sean correctos. 
@@ -420,6 +388,15 @@ g) Abra el firewall en ONTAP, de modo que ONTAP pueda conectar la caja del agent
 | El recopilador de datos está en error, muestra este mensaje de error. “Error: El conector está en estado de error. Nombre del servicio: Auditoría. Motivo del fallo: No se puede configurar la política en SVM_test. Motivo: Falta el valor del campo zapi: Eventos. “ | Empiece con una nueva SVM solo con el servicio NFS configurado. Añadir un recopilador de datos de SVM de ONTAP en Workload Security. CIFS se configura como un protocolo permitido para la SVM mientras se añade el recopilador de datos de la SVM de ONTAP en Workload Security. Espere hasta que el recopilador de datos de Workload Security muestre un error. Dado que el servidor CIFS NO está configurado en la SVM, este error, tal como se muestra en la izquierda, se muestra con Workload Security. Edite el recopilador de datos de la SVM de ONTAP y anule la comprobación de CIFS como protocolo permitido. Guarde el recopilador de datos. Empezará a funcionar únicamente con el protocolo NFS habilitado. 
 
 
-| El recopilador de datos muestra el mensaje de error: “Error: No se pudo determinar el estado del recopilador en 2 reintentos, intente reiniciar el colector de nuevo (código de error: AGENT008)”. | 1. En la página colectores de datos, desplácese a la derecha del recopilador de datos que da el error y haga clic en el menú 3 puntos. Seleccione _Edit_. Vuelva a introducir la contraseña del recopilador de datos. Guarde el recopilador de datos pulsando el botón _Save_. El recopilador de datos se reiniciará y se debería solucionar el error. 2. Es posible que el equipo del agente no tenga suficiente espacio de CPU o RAM, por eso los DSCs fallan. Compruebe el número de colectores de datos que se agregan al agente en la máquina. Si es superior a 20, aumente la capacidad de CPU y RAM de la máquina del agente. Una vez que la CPU y la RAM se aumentan, los DSCs se inicializarán y luego se pondrán en funcionamiento automáticamente. Consulte la guía de tamaños en link:https://docs.netapp.com/us-en/cloudinsights/concept_cs_event_rate_checker.html["esta página"]. 
+| El recopilador de datos muestra el mensaje de error: “Error: No se pudo determinar el estado del recopilador en 2 reintentos, intente reiniciar el colector de nuevo (código de error: AGENT008)”. | 1. En la página colectores de datos, desplácese a la derecha del recopilador de datos que da el error y haga clic en el menú 3 puntos. Seleccione _Edit_.
+Vuelva a introducir la contraseña del recopilador de datos.
+Guarde el recopilador de datos pulsando el botón _Save_.
+El recopilador de datos se reiniciará y se debería solucionar el error.
+
+2. Es posible que el equipo del agente no tenga suficiente espacio de CPU o RAM, por eso los DSCs fallan.
+Compruebe el número de colectores de datos que se agregan al agente en la máquina.
+Si es superior a 20, aumente la capacidad de CPU y RAM de la máquina del agente.
+Una vez que la CPU y la RAM se aumentan, los DSCs se inicializarán y luego se pondrán en funcionamiento automáticamente.
+Consulte la guía de tamaños en link:concept_cs_event_rate_checker.html["esta página"]. 
 |===
 Si todavía tiene problemas, póngase en contacto con los enlaces de soporte mencionados en la página *Ayuda > Soporte*.

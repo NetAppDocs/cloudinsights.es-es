@@ -54,7 +54,7 @@ Introduzca los datos en los campos del recopilador de datos de acuerdo con la ta
 | Región de AWS | Seleccione la región de AWS 
 
 
-| Rol IAM | Para su uso solo cuando se adquiere en una unidad de almacenamiento AU en AWS. Consulte a continuación para obtener más información sobre link:task_dc_amazon_ec2.html#iam-roles["Roles IAM"]. 
+| Rol IAM | Para su uso solo cuando se adquiere en una unidad de almacenamiento AU en AWS. Consulte a continuación para obtener más información sobre <<iam-role,Rol IAM>>. 
 
 
 | ID de clave de acceso IAM de AWS | Introduzca el ID de clave de acceso IAM de AWS. Se requiere si no utiliza el rol IAM. 

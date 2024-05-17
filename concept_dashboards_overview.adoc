@@ -74,7 +74,7 @@ image:Time-Series Charts.png["Área, área apilada, línea, gráficos de spline"
 +
 image:Single-Value Widgets.png["Widgets de un solo valor con y sin formato"]
 
-* *Widget de indicador*: Muestra datos de un solo valor en un indicador tradicional (sólido) o en un indicador de viñeta, con colores basados en valores "Advertencia" o "críticos" link:concept_dashboard_features.adoc#formatting-gauge-widgets["personalizar"].
+* *Widget de indicador*: Muestra datos de un solo valor en un indicador tradicional (sólido) o en un indicador de viñeta, con colores basados en valores "Advertencia" o "críticos" link:concept_dashboard_features.html#formatting-gauge-widgets["personalizar"].
 +
 image:Gauge Widgets.png["Valor único con formato, calibre tradicional, indicador tubular"]
 

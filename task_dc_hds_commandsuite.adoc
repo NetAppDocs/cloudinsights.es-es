@@ -260,6 +260,13 @@ Algunas cosas para intentar si tiene problemas con este recopilador de datos:
 | Error: Error de configuración: No se informa de la cabina de almacenamiento por inventario | Compruebe si la matriz de almacenamiento en cuestión está configurada en HiCommand Server 
 
 
-| Error: * No hay ninguna cabina registrada en la matriz de CLI modular 2 de Storage Navigator * no está registrada en la CLI modular 2 de Storage Navigator * error de configuración: Cabina de almacenamiento no registrada en la CLI modular de StorageNavigator | * Abra el símbolo del sistema y cambie el directorio a la ruta configurada * ejecute el comando “set=STONAVM_HOME=”. * Ejecute el comando “auunitref” * confirme que la salida del comando contiene detalles de la matriz con IP * Si la salida no contiene los detalles de la matriz, registre la matriz con la CLI de Storage Navigator: - Abra el símbolo del sistema y cambie el directorio a la ruta configurada: Ejecute el comando “set=STONAVM_HOME=”. - Ejecute el comando “auunitaddauto -ip ${ip}”. Sustituya ${ip} por IP real 
+| Error: * No hay ninguna cabina registrada en la matriz de CLI modular 2 de Storage Navigator * no está registrada en la CLI modular 2 de Storage Navigator * error de configuración: Cabina de almacenamiento no registrada en la CLI modular de StorageNavigator | * Abrir el prompt de comandos y cambiar el directorio a la ruta configurada
+* Ejecute el comando “set=STONAVM_HOME=.”
+* Ejecutar el comando “auunitref”
+* Confirme que la salida del comando contiene detalles de la matriz con IP
+* Si la salida no contiene los detalles de la cabina, registre la cabina con Storage Navigator CLI:
+    - Abrir el prompt de comandos y cambiar el directorio a la ruta configurada
+    - Ejecutar el comando “SET=STONAVM_HOME=.”
+    - Ejecutar comando “auunitaddauto -ip <ip>”. Sustituya <ip> por la IP correcta. 
 |===
 Puede encontrar información adicional en link:concept_requesting_support.html["Soporte técnico"] o en la link:reference_data_collector_support_matrix.html["Matriz de compatibilidad de recopilador de datos"].

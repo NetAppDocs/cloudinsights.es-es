@@ -133,7 +133,13 @@ Algunas cosas para intentar si tiene problemas con este recopilador de datos:
 | Error: Los pools de almacenamiento no notifican los discos en Service Processor en la dirección IP configurada | Configure el recopilador de datos con las dos IP de Service Processor, separadas por una coma 
 
 
-| Error: Error de revisión no coincidente | • Esto suele deberse a la actualización del firmware en el dispositivo de almacenamiento en bloque VNX, pero no a la actualización de la instalación de NaviCLI.exe. Esto también puede deberse a que haya dispositivos diferentes con distintas firmwares, pero sólo una CLI instalada (con una versión de firmware diferente). • Compruebe que tanto el dispositivo como el host ejecutan versiones idénticas del software: - Desde la Unidad de adquisición de Cloud Insights, abra una ventana de línea de comandos - cambie el directorio al directorio de instalación configurado - establezca una conexión con el dispositivo CLARiiON escribiendo “navicli -h ${ip} getagent” - busque el número de versión en el primer par de líneas. Ejemplo: “Agent Rev: 6.16.2 (0.1)”: Busque y compare la versión de la primera línea. Ejemplo: “Navisphere CLI Revisión 6.07.00.04.07” 
+| Error: Error de revisión no coincidente | • Esto suele deberse a la actualización del firmware en el dispositivo de almacenamiento de bloques VNX, pero no a la actualización de la instalación de NaviCLI.exe. Esto también puede deberse a que haya dispositivos diferentes con distintas firmwares, pero sólo una CLI instalada (con una versión de firmware diferente).
+• Verifique que el dispositivo y el host estén ejecutando versiones idénticas del software:
+    - Desde la Unidad de Adquisición Cloud Insights, abra una ventana de línea de comandos
+    - Cambiar el directorio al directorio de instalación configurado
+    - Hacer una conexión con el dispositivo CLARiiON escribiendo “navicli -h <ip> getagent”
+    - Busque el número de versión en el primer par de líneas. Ejemplo: “Agent Rev: 6.16.2 (0,1)”
+    - Busque y compare la versión en la primera línea. Ejemplo: “Navisphere CLI Revisión 6.07.00.04.07” 
 
 
 | Error: Configuración no compatible: No hay puertos Fibre Channel | El dispositivo no está configurado con ningún puerto Fibre Channel. Actualmente, solo se admiten las configuraciones de FC. Compruebe que esta versión/firmware sea compatible. 

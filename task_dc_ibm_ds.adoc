@@ -124,7 +124,8 @@ Algunas cosas para intentar si tiene problemas con este recopilador de datos:
 | Problema: | Pruebe lo siguiente: 
 
 
-| Error que contiene: CMUC00192E, CMUC00191E o CMUC00190E | * Verifique las credenciales y la dirección IP introducidas. * Intente comunicarse con la matriz a través de la consola de administración web https://${ip}:8452/DS8000/Console[]. Sustituya el ${ip} por la IP configurada del recopilador de datos. 
+| Error que contiene: CMUC00192E, CMUC00191E o CMUC00190E | * Verifique las credenciales y la dirección IP introducidas.
+* Intente comunicarse con la cabina a través de la consola de gestión web \https://<ip>:8452/DS8000/Console.  Sustituya <ip> por la IP configurada del recopilador de datos. 
 
 
 | Error: * No se puede ejecutar el programa * error al ejecutar el comando | * Desde la Unidad de adquisición de Cloud Insights abra un archivo CMD * Open CLI.CFG en el directorio/lib home de la CLI y compruebe la propiedad JAVA_INSTALL, edite el valor para que coincida con su entorno * Mostrar versión Java instalada en esta máquina, tecleando: "java -version" * hacer ping a la dirección IP del dispositivo de almacenamiento IBM especificado en el comando CLI emitido. * Si todo lo anterior funcionaba bien, entonces ejecute manualmente un comando CLI 

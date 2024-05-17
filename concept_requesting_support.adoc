@@ -31,7 +31,7 @@ image:SupportPageWithLearningCenter.png["Página de soporte"]
 
 == Activación de los derechos de soporte
 
-Cloud Insights ofrece compatibilidad con autoservicio y correo electrónico cuando se ejecuta en modo de prueba. Una vez que se haya suscrito al servicio, se recomienda encarecidamente que active el derecho de asistencia técnica. La activación de la autorización de asistencia le permite acceder al soporte técnico a través del chat en línea, el sistema de tickets web y el teléfono. El modo de soporte predeterminado es el autoservicio hasta que se complete el registro. Consulte link:#obtaining-support-information["detalles"] a continuación.
+Cloud Insights ofrece compatibilidad con autoservicio y correo electrónico cuando se ejecuta en modo de prueba. Una vez que se haya suscrito al servicio, se recomienda encarecidamente que active el derecho de asistencia técnica. La activación de la autorización de asistencia le permite acceder al soporte técnico a través del chat en línea, el sistema de tickets web y el teléfono. El modo de soporte predeterminado es el autoservicio hasta que se complete el registro. Consulte <<obtaining-support-information,detalles>> a continuación.
 
 Durante el proceso de suscripción inicial, su instancia de Cloud Insights generará un número de serie de NetApp de 20 dígitos a partir de "950". Este número de serie de NetApp representa la suscripción de Cloud Insights asociada a su cuenta. Debe registrar el número de serie de NetApp para activar la autorización de asistencia. Ofrecemos dos opciones de registro de soporte:
 

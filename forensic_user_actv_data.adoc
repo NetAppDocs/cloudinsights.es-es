@@ -24,7 +24,7 @@ La página actividad del usuario le ayuda a comprender las acciones realizadas p
 Los datos disponibles en esta página, describen:
 
 * El tiempo de acceso de la entidad, incluido el mes, el día, el año y el tiempo.
-* El usuario que ha accedido a la entidad con un vínculo a link:<forensic_user_detail>.html["Datos de detalles del usuario"].
+* El usuario que ha accedido a la entidad con un vínculo a link:forensic_user_detail.html["Datos de detalles del usuario"].
 * Actividad que el usuario realizó:
 +
 ** Escritura
@@ -32,7 +32,7 @@ Los datos disponibles en esta página, describen:
 ** Acceder a los datos meta
 
 
-* Ruta de acceso a la entidad con un vínculo a link:<forensic_entity_detail>.html["Datos de detalle de entidad"]
+* Ruta de acceso a la entidad con un vínculo a link:forensic_entity_detail.html["Datos de detalle de entidad"]
 * Tipo de entidad:
 +
 ** Archivo

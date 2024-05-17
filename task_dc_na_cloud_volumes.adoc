@@ -60,6 +60,17 @@ Algunas cosas para intentar si tiene problemas con este recopilador de datos:
 | Problema: | Pruebe lo siguiente: 
 
 
-| He recibido un error similar a éste: "No se ha podido ejecutar la solicitud: Conectar a <AWS region endpoint>:8080 [<AWS region endpoint>/AWS region Endpoint IP>] falló: Se ha agotado el tiempo de espera de conexión: GET https://<AWS[] Nombre de dominio completo de región>:8080/v1/Storage/IPRanges HTTP/1.1' | La link:task_configure_acquisition_unit.html#proxy-configuration-2["proxy"] Utilizado por Cloud Insights para comunicarse con la unidad de adquisición no se comunica entre Cloud Insights y el propio recopilador de datos. Estas son algunas cosas que puede probar: Asegúrese de que la unidad de adquisición es capaz de resolver el fqdn y llegar al puerto requerido. Confirme que no es necesario que un proxy llegue al extremo especificado en el mensaje de error. Curl se puede utilizar para probar la comunicación entre la unidad de adquisición y el punto final. Asegúrese de que está *no* utilizando un proxy para esta prueba. Ejemplo: Root@acquisitionunit# curl -s -H Accept:Application/json -H "Content-type: Application/json" -H api-key:<api key used in the data collector credentials -H secret-key:<secret key used in the data collector credentials> -X. https://<AWS[] Regional Endpoint>:8080/v1/Storage/IPRanges Vea esto link:https://kb.netapp.com/Advice_and_Troubleshooting/Cloud_Services/Cloud_Insights/Cloud_Insights_fails_discovery_for_Cloud_Volumes_Service_for_AWS["Artículo de la base de conocimientos de NetApp"]. 
+| He recibido un error similar a este:
+'Fallo al ejecutar la solicitud: Connect to <AWS region endpoint>:8080 [<AWS region endpoint>/AWS region endpoint IP>] Fallo: Timeout de conexión: GET \https://<AWS Region Endpoint FQDN>:8080/v1/Storage/IPRanges HTTP/1,1' | La link:task_configure_acquisition_unit.html#proxy-configuration-2["proxy"] Utilizado por Cloud Insights para comunicarse con la unidad de adquisición no se comunica entre Cloud Insights y el propio recopilador de datos. Aquí hay algunas cosas que puedes probar:
+
+Asegúrese de que la unidad de adquisición es capaz de resolver el fqdn y alcanzar el puerto requerido.
+Confirme que no es necesario que un proxy llegue al extremo especificado en el mensaje de error.
+Curl se puede utilizar para probar la comunicación entre la unidad de adquisición y el punto final. Asegúrese de que está *no* utilizando un proxy para esta prueba.
+
+Ejemplo:
+
+Root@adquisitionunit# curl -s -H accept:application/json -H «Content-type: Application/json» -H Clave api utilizada en las credenciales del recopilador de datos -H clave secreta utilizada en las credenciales del recopilador de datos> -X GET \https://<AWS Regional Endpoint>:8080/v1/Storage/IPRanges
+
+Vea esto link:https://kb.netapp.com/Advice_and_Troubleshooting/Cloud_Services/Cloud_Insights/Cloud_Insights_fails_discovery_for_Cloud_Volumes_Service_for_AWS["Artículo de la base de conocimientos de NetApp"]. 
 |===
 Se puede encontrar información adicional sobre este colector de datos en la link:concept_requesting_support.html["Soporte técnico"] o en la link:reference_data_collector_support_matrix.html["Matriz de compatibilidad de recopilador de datos"].
