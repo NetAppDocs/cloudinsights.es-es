@@ -81,7 +81,7 @@ Consulte link:concept_cs_agent_requirements.html["Requisitos del agente"] para o
 
 == Requisitos previos para bloqueo de acceso del usuario
 
-Tenga en cuenta lo siguiente durante link:/cloudinsights/cs_restrict_user_access.html["Bloqueo de acceso de usuario"]:
+Tenga en cuenta lo siguiente durante link:cs_restrict_user_access.html["Bloqueo de acceso de usuario"]:
 
 Se necesitan credenciales para que esta función funcione.
 

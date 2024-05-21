@@ -95,13 +95,11 @@ Estas opciones de soporte están disponibles en modo de prueba y están disponib
 +
 Al hacer clic en los enlaces de esta sección, accede a la base de conocimientos de NetApp, donde puede buscar artículos relevantes, instrucciones, etc.
 
-
-
 * *link:https://docs.netapp.com/us-en/cloudinsights/["Documentación"]*
 +
 Al hacer clic en el enlace Documentación se le lleva a este centro de documentación.
 
-* *link:https://mysupport.netapp.com/site/search?q=cloud%20insights&offset=0&searchType=Manual&autocorrect=true&origin=CI_Support_Community&filter=%28content_type%3D%3D%22community%22;product%3D%3D%22Cloud%20Insights%22%29["Comunidad NetApp"]*
+* *link:https://community.netapp.com/t5/Cloud-Insights/bd-p/CloudInsights["Comunidad NetApp"]*
 +
 Al hacer clic en el enlace de la comunidad se accede a la comunidad Cloud Insights de NetApp, donde puede contactar con colegas y expertos.
 
@@ -116,7 +114,7 @@ También hay un enlace que proporcionar link:mailto:ng-cloudinsights-customerfee
 Además de las opciones de autosoporte mencionadas anteriormente, si tiene una suscripción a Cloud Insights o soporte de pago para productos o servicios de NetApp supervisados, puede trabajar con un ingeniero de soporte de NetApp para resolver el problema.
 
 
-NOTE: Debe registrarse para poder <<Activating support entitlement and accessing support,active el soporte>> Para productos de cloud de NetApp. Para registrarse, visite el sitio de NetApp link:https://register.netapp.com["Registro de soporte de servicios de datos en el cloud"].
+NOTE: Debe registrarse para poder <<activating-support-entitlement,active el soporte>> Para productos de cloud de NetApp. Para registrarse, visite el sitio de NetApp link:https://register.netapp.com["Registro de soporte de servicios de datos en el cloud"].
 
 Se recomienda encarecidamente marcar la casilla para permitir el acceso de un ingeniero de soporte de NetApp a un entorno de Cloud Insights durante la sesión de soporte. Esto permitirá al ingeniero solucionar el problema y ayudarle a resolverlo rápidamente. Cuando se resuelva el problema o la sesión de soporte haya finalizado, puede anular la selección de la casilla.
 

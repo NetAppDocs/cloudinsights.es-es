@@ -46,10 +46,11 @@ Cloud Insights proporciona supervisión de multicloud híbrido, lo que proporcio
 * ¿Cómo puedo hacerlo link:task_cloud_insights_onboarding_1.html["*empezar*"] Con Cloud Insights?
 * Estoy registrado. Ahora, ¿qué debo hacer?link:task_getting_started_with_cloud_insights.html["Adquisición de datos"]
 link:concept_user_roles.html["Configurar usuarios"]
-* ¡Impresionante! El futurolink:task_defining_annotations.html["Preparación de activos: Anotación"]
+* ¡Impresionante! El futuro
+link:task_defining_annotations.html["Preparación de activos: Anotación"]
 link:concept_querying_assets.html["Buscar los activos que desea: Consultar"]
 link:concept_dashboards_overview.html["Ver los datos que desea: Paneles"]
-link:https:task_create_monitor.html["Supervisión y alertas"]
-link:https://docs.netapp.com/us-en/cloudinsights/task_cs_getting_started.html["Protección de los datos"]
+link:task_create_monitor.html["Supervisión y alertas"]
+link:task_cs_getting_started.html["Protección de los datos"]
 * ¡Esto es una gran cosa! Estoy listo link:concept_subscribing_to_cloud_insights.html["*suscríbase*"].
 

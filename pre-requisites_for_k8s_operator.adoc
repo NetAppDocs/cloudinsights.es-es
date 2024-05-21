@@ -70,8 +70,6 @@ Si usted está corriendo con un <<configuring-proxy-support,proxy>>, tenga un <<
 
 Lea también sobre <<permisos,Permisos>>.
 
-Si va a actualizar desde una instalación anterior, lea la <<actualizar,Actualizar>> información.
-
 
 
 === Configurar el soporte del proxy

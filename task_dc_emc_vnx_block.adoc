@@ -127,7 +127,10 @@ Algunas cosas para intentar si tiene problemas con este recopilador de datos:
 | Error: 4.29 emc235848 emc241018 getall no pudo analizar la información del alias del host | Esto probablemente se deba a un problema FLARE 29 dañado de la base de datos del iniciador de host en la propia cabina. Consulte los artículos de la base de conocimientos de EMC: Emc235848, emc241018. También puede comprobar https://now.netapp.com/Knowledgebase/solutionarea.asp?id=kb58128[] 
 
 
-| Error: No se pueden recuperar los meta LUN. Error al ejecutar java -jar navicli.jar | • Modificar la configuración del recopilador de datos para usar el cliente seguro (recomendado) • instalar navicli.jar en la ruta de CLI en navicli.exe O naviseccli.exe • Nota: navicli.jar está obsoleto a partir de la versión 6.26 de EMC Navisphere • puede estar disponible en la versión navicli.jar http://powerlink.emc.com[] 
+| Error: No se pueden recuperar los meta LUN. Error al ejecutar java -jar navicli.jar | • Modificar la configuración del recopilador de datos para utilizar el cliente seguro (recomendado)
+• Instale navicli.jar en la ruta de la CLI a navicli.exe O naviseccli.exe
+• Nota: navicli.jar está en desuso a partir de la versión 6,26 de EMC Navisphere
+• El navicli.jar puede estar disponible en \http://powerlink.emc.com 
 
 
 | Error: Los pools de almacenamiento no notifican los discos en Service Processor en la dirección IP configurada | Configure el recopilador de datos con las dos IP de Service Processor, separadas por una coma 
