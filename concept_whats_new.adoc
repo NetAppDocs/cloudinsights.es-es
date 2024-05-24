@@ -19,18 +19,27 @@ keywords: features
 NetApp mejora y mejora continuamente sus productos y servicios. Estas son algunas de las últimas características y funcionalidades disponibles en las ediciones comerciales de Cloud Insights.
 
 
-NOTE: Es posible que algunas de estas funciones no estén disponibles en la edición federal de Cloud Insights o que estén disponibles con funciones reducidas. Siempre que sea posible, estas diferencias se anotan en la documentación.
 
+== Mayo de 2024
+
+
+
+=== Resolver automáticamente alertas basadas en el tiempo
+
+Ahora las alertas del registro se pueden resolver en función del tiempo; si la condición de alerta deja de producirse, Cloud Insights puede resolver la alerta automáticamente cuando haya pasado un periodo especificado. Puede optar por resolver la alerta en minutos, horas o días.
+
+image:alerts_resolve_based_on_time.png["Resuelva una alerta en función del tiempo transcurrido"]
+
+'''
 
 
 == Abril de 2024
 
 
 
-=== Compatibilidad con SAN iSCSI para mapa de red de Kubernetes
+=== Compatibilidad con iSCSI para Kubernetes
 
-Identifica las dependencias de almacenamiento subyacente de Kubernetes para NFS y ahora iSCSI.
-Acelera la resolución de problemas obteniendo información sobre la actividad de red de almacenamiento de la aplicación de Kubernetes y métricas de almacenamiento sin definir. Comprende cómo la aplicación de Kubernetes utiliza la infraestructura de almacenamiento para los informes de pago por uso y visibilidad de uso.
+Cloud Insights ahora tiene soporte para asignar el almacenamiento iSCSI asociado con Kubernetes, lo que permite solucionar problemas más rápidamente mediante el mapa de red de Kubernetes y la capacidad de proporcionar informes de pago por uso o visibilidad de uso mediante generación de informes.
 
 image:pod-to-storage.png["Ejemplo de POD a almacenamiento"]
 
@@ -138,7 +147,7 @@ En entornos de gran tamaño, puede automatizar la creación de recopiladores de 
 
 === Pruebe las funciones de Cloud Insights que aún no ha utilizado
 
-Además de su prueba inicial de Cloud Insights, también puede aprovechar link:concept_subscribing_to_cloud_insights.html#module-evaluation["Evaluación del módulo"]. Por ejemplo, si está suscrito a Cloud Insights y ha supervisado el almacenamiento y las máquinas virtuales, al agregar Kubernetes a su entorno, entrará automáticamente en una prueba de 30 días de Kubernetes Observability. El uso de la unidad gestionada de Kubernetes Observability no contará con respecto a tu derecho suscrito hasta que finalice el período de prueba.
+Además de su prueba inicial de Cloud Insights, también puede aprovechar link:concept_subscribing_to_cloud_insights.html#module-evaluation["Evaluaciones de módulos"]. Por ejemplo, si está suscrito a Cloud Insights y ha supervisado el almacenamiento y las máquinas virtuales, al agregar Kubernetes a su entorno, entrará automáticamente en una prueba de 30 días de Kubernetes Observability. El uso de la unidad gestionada de Kubernetes Observability no contará con respecto a tu derecho suscrito hasta que finalice el período de prueba.
 
 
 
@@ -305,7 +314,7 @@ La seguridad de la carga de trabajo se ha mejorado con lo siguiente:
 
 === Pruebas de módulos
 
-Además de su prueba inicial de Cloud Insights, también puede aprovechar link:concept_subscribing_to_cloud_insights.html#module-evaluation["Evaluación del módulo"]. Por ejemplo, si ya está suscrito a Infrastructure Observability pero está añadiendo Kubernetes a su entorno, entrará automáticamente en una prueba de 30 días de Kubernetes Observability. Solo se te cobrará por el uso de la unidad gestionada por Kubernetes Observability al final del período de prueba.
+Además de su prueba inicial de Cloud Insights, también puede aprovechar link:concept_subscribing_to_cloud_insights.html#module-evaluation["Evaluaciones de módulos"]. Por ejemplo, si ya está suscrito a Infrastructure Observability pero está añadiendo Kubernetes a su entorno, entrará automáticamente en una prueba de 30 días de Kubernetes Observability. Solo se te cobrará por el uso de la unidad gestionada de Kubernetes Observability al final del período de evaluación.
 
 
 
@@ -767,7 +776,7 @@ Tenga en cuenta que algunos de estos monitores _Enabled_ de forma predeterminada
 
 === Exportación .CSV para todos los widgets de tabla de consola
 
-Garantizar la accesibilidad a sus datos es fundamental, por lo que hemos realizado la exportación de .CSV image:csv_export_icon.png["icono de exportación .csv"] disponible para todas las consultas métricas, widgets de tabla de panel y páginas de destino de objetos, independientemente del tipo de datos (activo o integración) que esté consultando.
+Garantizar la accesibilidad a sus datos es esencial, por lo que hemos hecho . Exportación CSV disponible para todas las consultas de métricas, widgets de tablas de paneles de control y páginas de destino de objetos, independientemente del tipo de datos (activo o integración) que esté consultando.
 
 Las personalizaciones de datos, como la selección de columnas, el cambio de nombre de columnas y las conversiones de unidades, también se incluyen ahora en la nueva funcionalidad de exportación.
 
@@ -1133,7 +1142,7 @@ image:ChatIcon.png["El icono de chat muestra el \"N\" azul de NetApp sobre una s
 
 Le hemos facilitado la puesta en marcha con el avanzado explorador de clúster y supervisión de Kubernetes de Cloud Insights.
 
-La link:https://docs.netapp.com/us-en/cloudinsights/task_config_telegraf_agent_k8s.html#operator-based-install-or-script-based-install["Operador de supervisión Kubernetes de NetApp"] (NKMO) es el método preferido para la instalación de Kubernetes para Cloud Insights Insights, para obtener una configuración más flexible de la supervisión en menos pasos, así como oportunidades mejoradas de supervisión de otro software que se ejecuta en el clúster de K8S.
+La link:task_config_telegraf_agent_k8s.html["Operador de supervisión de Kubernetes"] (NKMO) es el método preferido para la instalación de Kubernetes para Cloud Insights Insights, para obtener una configuración más flexible de la supervisión en menos pasos, así como oportunidades mejoradas de supervisión de otro software que se ejecuta en el clúster de K8S.
 
 Haga clic en el enlace anterior para obtener más información y requisitos previos
 
@@ -1149,7 +1158,8 @@ Ahora puede gestionar usuarios e invitaciones mediante la potente API de Cloud I
 
 ¡No se pierda las métricas críticas debido a un colector fallido!
 
-Es más fácil que nunca hacer un seguimiento de sus recopiladores de datos con nuevo link:https://docs.netapp.com/us-en/cloudinsights/task_system_monitors.html#data-collection-monitors["alertas"] para errores en la unidad de captación y recopilación de datos. Tenga en cuenta que estos monitores se _pausan_ de forma predeterminada. Para activar, desplácese a la página de monitores y localice y reanude “Acquisition Unit Shutdown” (Apagado) y “Coleccionista failed” (colector fallido).
+Es más fácil que nunca hacer un seguimiento de sus recopiladores de datos con nuevo link:task_system_monitors.html#data-collection-monitors["alertas"] para errores en la unidad de captación y recopilación de datos.
+Tenga en cuenta que estos monitores se _pausan_ de forma predeterminada. Para activar, desplácese a la página de monitores y localice y reanude “Acquisition Unit Shutdown” (Apagado) y “Coleccionista failed” (colector fallido).
 
 
 
@@ -1703,7 +1713,7 @@ El acceso a la API ya está disponible en todas las ediciones de Cloud Insights.
 
 | Almacén de datos |  |  | image:SmallCheckMark.png["marca de verificación"] 
 |===
-Para obtener más información sobre el uso de la API, consulte link:https://docs.netapp.com/us-en/cloudinsights/API_Overview.html#api-documentation-swagger["Documentación de API"].
+Para obtener más información sobre el uso de la API, consulte link:API_Overview.html#api-documentation-swagger["Documentación de API"].
 
 '''
 
@@ -1714,7 +1724,7 @@ Para obtener más información sobre el uso de la API, consulte link:https://doc
 
 === Gestión más sencilla de los monitores
 
-link:https://docs.netapp.com/us-en/cloudinsights/task_create_monitor.html#monitor-grouping["Agrupación de monitores"] simplifica la gestión de monitores en su entorno. Ahora se pueden agrupar varios monitores y pausarlo como uno solo. Por ejemplo, si tiene una actualización que se produce en una pila de infraestructuras, puede pausar las alertas de todos esos dispositivos con un solo clic.
+link:task_create_monitor.html#monitor-groups["Agrupación de monitores"] simplifica la gestión de monitores en su entorno. Ahora se pueden agrupar varios monitores y pausarlo como uno solo. Por ejemplo, si tiene una actualización que se produce en una pila de infraestructuras, puede pausar las alertas de todos esos dispositivos con un solo clic.
 
 Los grupos de monitores son la primera parte de una nueva e interesante función que mejora la gestión de los dispositivos ONTAP en Cloud Insights.
 
@@ -2492,7 +2502,7 @@ image:DuplicateWidget.png["Duplicar un widget"]
 
 === Inicio de sesión único (SSO)
 
-Con la edición Premium de Cloud Insights, los administradores pueden habilitar *link:concept_user_roles.html["Inicio de sesión único"]* (SSO) acceso a Cloud Insights para todos los usuarios en su dominio corporativo, sin tener que invitarlos individualmente. Con SSO activado, cualquier usuario con la misma dirección de correo electrónico del dominio puede iniciar sesión en Cloud Insights utilizando sus credenciales corporativas.
+Con la edición Premium de Cloud Insights, los administradores pueden habilitar *link:concept_user_roles.html#what-is-identity-federation["Inicio de sesión único"]* (SSO) acceso a Cloud Insights para todos los usuarios en su dominio corporativo, sin tener que invitarlos individualmente. Con SSO activado, cualquier usuario con la misma dirección de correo electrónico del dominio puede iniciar sesión en Cloud Insights utilizando sus credenciales corporativas.
 
 
 NOTE: El inicio de sesión único solo está disponible en Cloud Insights Premium Edition y debe configurarse para que se pueda habilitar para Cloud Insights. La configuración de SSO incluye link:https://services.cloud.netapp.com/misc/federation-support["Federación de identidades"] Mediante Cloud Central de NetApp. La Federación permite a los usuarios de inicio de sesión único acceder a sus cuentas de Cloud Central de NetApp utilizando las credenciales de su directorio corporativo.
@@ -2586,13 +2596,6 @@ Este cambio duplica de forma efectiva la capacidad del entorno que puede supervi
 
 == Noviembre de 2019
 
-
-
-=== Ediciones Tabla de comparación de funciones
-
-La página *Admin > Subscription* link:concept_subscribing_to_cloud_insights.html["tabla de comparación"] Se ha actualizado para enumerar los conjuntos de funciones disponibles en las ediciones Basic, Standard y Premium de Cloud Insights. NetApp mejora constantemente sus servicios cloud, por lo que consulte esta página a menudo para encontrar la edición adecuada para las necesidades cambiantes de su negocio.
-
-'''
 
 
 == Octubre de 2019

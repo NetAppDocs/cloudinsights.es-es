@@ -51,7 +51,7 @@ Este equipo no debe ejecutar ningún otro software de nivel de aplicación. Se r
 
 
 | Espacio disponible en disco | El espacio en disco se debe asignar de esta manera:
-/Opt/netapp 35 GB (mínimo)
+/Opt/netapp 36 GB (mínimo 35 GB de espacio libre tras la creación del sistema de archivos)
 
 Nota: Se recomienda asignar un poco de espacio adicional en el disco para permitir la creación del sistema de archivos. Asegúrese de que hay al menos 35 GB de espacio libre en el sistema de archivos.
 

@@ -1,10 +1,10 @@
 ---
 sidebar: sidebar 
-permalink: task_dc_na_eseries.html 
-keywords: data collector, ontap, clustered ontap, e-series, santricity 
-summary: Configurar recopilador de datos E-Series de NetApp. 
+permalink: task_dc_na_eseries_rest.html 
+keywords: data collector, ontap, clustered ontap, REST 
+summary: Configurar el recopilador de DATOS DE REST E-Series de NetApp. 
 ---
-= Recopilador de datos de la API de SANtricity heredada E-Series de NetApp
+= Recopilador de DATOS DE REST DE E-Series de NetApp
 :toc: macro
 :hardbreaks:
 :toclevels: 2
@@ -19,13 +19,13 @@ summary: Configurar recopilador de datos E-Series de NetApp.
 
 
 [role="lead"]
-El recopilador de datos de la API SANtricity heredada de E-Series de NetApp recopila datos de inventario y rendimiento. El recopilador admite el firmware 7.x+ usando las mismas configuraciones y informando de los mismos datos.
+El recopilador de DATOS DE REST DE E-Series de NetApp recopila datos de inventario y de rendimiento. El recopilador admite el firmware 7.x+ usando las mismas configuraciones y informando de los mismos datos. El recopilador REST supervisa el estado de cifrado de los pools de almacenamiento, así como el estado de cifrado de los discos y volúmenes relacionados, y proporciona la utilización de la CPU de nodo de almacenamiento como contadores de rendimiento. La funcionalidad no se proporciona en el recopilador E-Series de SANtricity heredado.
 
 
 
 == Terminología
 
-Cloud Insight adquiere la siguiente información de inventario de la colección de datos E-Series de NetApp. Para cada tipo de activo adquirido, se muestra la terminología más común utilizada para este activo. Al ver o solucionar problemas de este recopilador de datos, tenga en cuenta la siguiente terminología:
+Cloud Insight adquiere la siguiente información de inventario de E-Series de NetApp, utilizando REST. Para cada tipo de activo adquirido, se muestra la terminología más común utilizada para este activo. Al ver o solucionar problemas de este recopilador de datos, tenga en cuenta la siguiente terminología:
 
 [cols="2*"]
 |===
@@ -51,6 +51,41 @@ Cloud Insight adquiere la siguiente información de inventario de la colección 
 |===
 Nota: Sólo son asignaciones de terminología comunes y es posible que no representen todos los casos de este recopilador de datos.
 
+
+
+== Requisitos
+
+* La dirección IP de cada controladora de la cabina
+* Este recopilador solo admite matrices modelo E-Series con *capacidades de API REST nativas*. La organización de E-Series envía una distribución de API DE REST que se puede instalar fuera de la cabina para cabinas E-Series anteriores: Este recopilador no admite esa situación. Los usuarios con cabinas más antiguas deben seguir usando Cloud Insights' link:task_dc_na_eseries.html["API de E-Series SANtricity"] recopilador.
+* El campo «Direcciones IP de controladora E-Series» admite una cadena delimitada por comas de 2 IP/nombres de host; el recopilador intentará inteligentemente el segundo IP/nombre de host si no se puede acceder al primero.
+* Puerto HTTPS: El valor predeterminado es 8443.
+
+
+
+
+== Configuración
+
+[cols="2*"]
+|===
+| Campo | Descripción 
+
+
+| Direcciones IP de la controladora E-Series | Direcciones IP separadas por comas y/o nombres de dominio completo para las controladoras de cabina 
+|===
+
+
+== Configuración avanzada
+
+[cols="2*"]
+|===
+| Campo | Descripción 
+
+
+| Intervalo de sondeo de inventario (mín.) | El valor predeterminado es 30 minutos 
+
+
+| Intervalo de sondeo de rendimiento hasta 3600 segundos | El valor predeterminado es 300 segundos 
+|===
 
 
 == Terminología de E-Series (página de destino)
@@ -107,39 +142,6 @@ Los siguientes términos se aplican a objetos o referencias que puede encontrar 
 * Procesadores: Número de CPU
 
 
-
-
-== Requisitos
-
-* La dirección IP de cada controladora de la cabina
-* Requisito de puerto 2463
-
-
-
-
-== Configuración
-
-[cols="2*"]
-|===
-| Campo | Descripción 
-
-
-| Lista separada por comas de las IP de controladora de SANtricity de cabina | Direcciones IP y/o nombres de dominio completos para las controladoras de cabina 
-|===
-
-
-== Configuración avanzada
-
-[cols="2*"]
-|===
-| Campo | Descripción 
-
-
-| Intervalo de sondeo de inventario (mín.) | El valor predeterminado es 30 minutos 
-
-
-| Intervalo de sondeo de rendimiento hasta 3600 segundos | El valor predeterminado es 300 segundos 
-|===
 
 
 == Resolución de problemas
