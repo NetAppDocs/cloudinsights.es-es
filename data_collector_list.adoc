@@ -238,6 +238,9 @@ Lista alfabética de recopiladores de datos compatibles con Cloud Insights:
 | link:task_dc_na_eseries.html["E-Series de NetApp"] | De almacenamiento 
 
 
+| link:task_dc_netapp_eseries_rest.html["REST DE E-Series de NetApp "] | De almacenamiento 
+
+
 | link:task_dc_na_amazon_fsx.html["Amazon FSX para ONTAP de NetApp"] | De almacenamiento 
 
 

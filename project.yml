@@ -397,6 +397,8 @@ sidebar:
           url: "/task_dc_na_7mode.html"
         - title: E-Series
           url: "/task_dc_na_eseries.html"
+        - title: REST DE E-Series
+          url: "/task_dc_netapp_eseries_rest.html"
         - title: Servidor de gestión NetApp HCI
           url: "/task_dc_na_hci.html"
         - title: SolidFire
