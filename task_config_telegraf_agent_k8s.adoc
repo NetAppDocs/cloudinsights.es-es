@@ -568,5 +568,8 @@ Alternativamente, uno también puede <<uninstalling,desinstalar>> y.. <<installi
 
 
 | Los pods de métricas de estado-ci-kube-state no se pueden iniciar tras ejecutar una actualización del operador de Kubernetes y lanzar ErrImagePull (no lograr extraer la imagen). | Intente restablecer los pods manualmente. 
+
+
+| Los mensajes de «Event descarded as as as older then maxEventAgeSeconds» se observan para mi clúster de Kubernetes en Log Analysis. | Modifique el Operador _agentconfiguration_ y aumente el _event-exporter-maxEventAgeSeconds_ (es decir, a 60s), _event-exporter-kubeQPS_ (es decir, a 100) y _event-exporter-kubeBurst_ (es decir, a 500). Para obtener más información sobre estas opciones de configuración, consulte link:telegraf_agent_k8s_config_options.html["opciones de configuración"] página. 
 |===
 Puede encontrar información adicional en link:concept_requesting_support.html["Soporte técnico"] o en la link:reference_data_collector_support_matrix.html["Matriz de compatibilidad de recopilador de datos"].
