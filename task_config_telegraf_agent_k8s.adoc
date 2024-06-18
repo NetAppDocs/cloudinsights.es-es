@@ -571,5 +571,8 @@ Alternativamente, uno también puede <<uninstalling,desinstalar>> y.. <<installi
 
 
 | Los mensajes de «Event descarded as as as older then maxEventAgeSeconds» se observan para mi clúster de Kubernetes en Log Analysis. | Modifique el Operador _agentconfiguration_ y aumente el _event-exporter-maxEventAgeSeconds_ (es decir, a 60s), _event-exporter-kubeQPS_ (es decir, a 100) y _event-exporter-kubeBurst_ (es decir, a 500). Para obtener más información sobre estas opciones de configuración, consulte link:telegraf_agent_k8s_config_options.html["opciones de configuración"] página. 
+
+
+| Telegraf quiere (o se bloquea debido a) una memoria bloqueable insuficiente. | Intente aumentar el límite de memoria bloqueable para Telegraf en el sistema operativo/nodo subyacente. Si aumentar el límite no es una opción, modifique la configuración agentconfiguration de NKMO y establezca _skipLockedMemory_ en _true_.  Esto indicará a Telegraf que no intente reservar páginas de memoria bloqueadas. Aunque esto puede suponer un riesgo para la seguridad, ya que los secretos descifrados se pueden intercambiar en el disco, permite su ejecución en entornos en los que no es posible reservar la memoria bloqueada. Para obtener más información sobre las opciones de configuración _skipLockedMemory_, consulte la link:telegraf_agent_k8s_config_options.html["opciones de configuración"] página. 
 |===
 Puede encontrar información adicional en link:concept_requesting_support.html["Soporte técnico"] o en la link:reference_data_collector_support_matrix.html["Matriz de compatibilidad de recopilador de datos"].
