@@ -20,6 +20,21 @@ NetApp mejora y mejora continuamente sus productos y servicios. Estas son alguna
 
 
 
+== Junio de 2024
+
+
+
+=== Soporte del sistema operativo
+
+Los siguientes sistemas operativos son compatibles con las unidades de adquisición de Cloud Insights, además de los mismos link:https://docs.netapp.com/us-en/cloudinsights/concept_acquisition_unit_requirements.html["ya es compatible"]:
+
+* Red Hat Enterprise Linux 8,9, 8,10 y 9,4
+* Rocoso 9,4
+* AlmaLinux 9,3 y 9,4
+
+
+
+
 == Mayo de 2024
 
 

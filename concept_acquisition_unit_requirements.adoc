@@ -34,11 +34,12 @@ Debe instalar una unidad de adquisición (AU) para obtener información de los r
 | De NetApp | Un equipo que ejecuta una versión con licencia de uno de los siguientes:
 
 * CentOS (64 bits): 7,2 a 7,9, 8,1 a 8,4, Stream 8, Stream 9
+* AlmaLinux 9,3 y 9,4
 * Debian (64 bits): 9 y 10
 * OpenSUSE Leap 15,1 a 15,5
 * Oracle Enterprise Linux (64 bits): 7,5 a 7,9, 8,1 a 8,8
-* Red Hat Enterprise Linux (64 bits): 7,2 a 7,9, 8,1 a 8,8, 9,1, 9,2
-* Rocky 9,0, 9,1, 9,3
+* Red Hat Enterprise Linux (64 bits): 7,2 a 7,9, 8,1 a 8,10, 9,1 a 9,4
+* Rocky 9,0 a 9,4
 * SUSE Enterprise Linux Server 15, 15 SP2 a 15 SP5
 * Servidor Ubuntu: 18,04, 20,04, 22,04 LTS
 * SELinux en las plataformas anteriores
