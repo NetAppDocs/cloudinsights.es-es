@@ -120,6 +120,12 @@ proxy:
 |  | RsToleraciones | toleraciones adicionales de telegraf-rs. 
 
 
+|  | SkipProcessorsAfterAggregators | Consulte link:https://github.com/influxdata/telegraf/blob/master/docs/CONFIGURATION.md#agent["Documentación de configuración de Telegraf"] 
+
+
+|  | sin protección | Vea esto link:https://community.influxdata.com/t/updating-telegraf-to-version-1-29-5-crashes-kubernetes-pod/33376["Problema conocido de Telegraf"]. Si se establece _UNPROTECTED_, se indicará al operador de supervisión de Kubernetes que ejecute Telegraf con el `--unprotected` bandera. 
+
+
 | métricas-estado-kube |  | Opciones de configuración que pueden personalizar la instalación de métricas de estado kube del Operador 
 
 
