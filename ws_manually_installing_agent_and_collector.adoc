@@ -24,7 +24,7 @@ De forma predeterminada, cuando hay disponible una nueva versión de un agente o
 
 . Verifique en Swagger que las categorías API denominadas «cloudsecure_installers.agent» y «cloudsecure_installers.collector» están disponibles. Si no es así, el soporte para la instalación manual del agente no está activado. Póngase en contacto con el servicio de soporte de NetApp para que la función esté habilitada.
 +
-image:ws_manual_install_APIs.png[""]
+image:ws_manual_install_APIs.png["API de instalación manual"]
 
 . Ejecute todos los comandos mencionados en este documento como usuario 'root', o, si se ejecuta con un usuario diferente, ejecute los comandos con 'sudo'.
 
@@ -45,16 +45,16 @@ image:ws_manual_install_APIs.png[""]
 .. Haga clic en _Save_.
 .. Copie el token de acceso a API generado. Tenga en cuenta que una vez cerrada la ventana, el token ya no se puede recuperar. En ese caso, deberá generar un nuevo token.
 +
-image:ws_create_and_save_token.png[""]
+image:ws_create_and_save_token.png["Crear y guardar token de API"]
 
 +
-image:ws_create_and_save_token_confirm.png[""]
+image:ws_create_and_save_token_confirm.png["Confirme la creación del token"]
 
 
 
 . Navegue hasta *Admin > API Access > API Documentation* (en la parte superior derecha de la página) y seleccione el icono _Workload Security_. Esto abre la documentación de Swagger para las API de seguridad de cargas de trabajo.
 +
-image:ws_swagger_documentation_link.png[""]
+image:ws_swagger_documentation_link.png["Documentación de Swagger para Workload Security"]
 
 . Autorizar para acceder a las API _Workload Security_.
 +
@@ -62,7 +62,7 @@ image:ws_swagger_documentation_link.png[""]
 .. En el campo de texto _Customer ApiKey (apiKey)_, pegue el token API copiado anteriormente del Paso 1c.
 .. Haga clic en _Autorizar_ y cierre la ventana.
 +
-image:ws_API_authorization.png[""]
+image:ws_API_authorization.png["Autorice la API"]
 
 
 
@@ -71,8 +71,8 @@ image:ws_API_authorization.png[""]
 .. En Swagger, seleccione _cloudsecure_installers.agent_ > _/v1/cloudsecure/agents/installers/{platform}/latest_ (GET) API. Haga clic en _Pruébelo_.
 .. En el campo _platform_, introduzca _linux_. Haga clic en _Execute_.
 +
-image:ws_installers_agent_api_swagger.png[""]
-image:ws_installers_agent_api_swagger-2.png[""]
+image:ws_installers_agent_api_swagger.png["Swagger para API del instalador de agentes: Superior"]
+image:ws_installers_agent_api_swagger-2.png["Swagger para la API del instalador del agente: Respuesta"]
 
 .. Haga clic en “Descargar archivo” para descargar el instalador.
 .. Si el archivo de instalación se descarga externamente en un equipo distinto del sistema en el que se va a instalar el agente, copie el archivo de instalación en ese sistema.
@@ -80,7 +80,7 @@ image:ws_installers_agent_api_swagger-2.png[""]
 +
 *** Agregue el argumento “-o {{file_name}}” al comando cURL para guardar el archivo de instalación con el nombre deseado. El nombre real del archivo de instalación se puede encontrar en la sección Cabeceras de respuesta de Swagger. Ese nombre también se puede utilizar.
 +
-image:ws_installers_agent_api_swagger_installer_file.png[""]
+image:ws_installers_agent_api_swagger_installer_file.png["Elija el agente más reciente a través de API: Swagger"]
 
 *** Aunque el archivo se puede descargar en cualquier ubicación, se recomienda descargarlo en una carpeta vacía en la que se puede extraer el archivo .zip del instalador.
 
@@ -188,7 +188,7 @@ En este punto, el agente debe instalarse correctamente.
 ----
 .. El agente debe ser visible en la página “Agentes” y debe estar en estado “Conectado”.
 +
-image:ws_agentsPageShowingConnected.png[""]
+image:ws_agentsPageShowingConnected.png["Interfaz de usuario que muestra agentes conectados"]
 
 
 
@@ -225,13 +225,13 @@ drwx------ 2 cssys         cssys 4096 Apr 26 15:56 collectors
 . Vaya a Swagger, «cloudsecure_config.collector-types > /v1/cloudsecure/collector-types» (GET). En el menú desplegable “collectorCategory”, selecciona el tipo de recopilador como “DATA”. Seleccione “ALL” para obtener todos los detalles del tipo de recopilador.
 . Copie el UUID del tipo de recopilador necesario.
 +
-image:ws_collectorAPIShowingUUID.png[""]
+image:ws_collectorAPIShowingUUID.png["Respuesta de API del recopilador que muestra UUID"]
 
 . Descargar el instalador del recopilador.
 +
 .. Navegue hasta «cloudsecure_installers.collector > /v1/cloudsecure/collector-types/installers/{collectorTypeUUID}» (GET) API. Introduzca el UUID copiado del paso anterior y descargue el archivo del instalador.
 +
-image:ws_downloadCollectorByUUID.png[""]
+image:ws_downloadCollectorByUUID.png["API para descargar recopilador por UUID"]
 
 .. Si el archivo de instalación se descarga externamente en una máquina diferente, copie el archivo de instalación en el sistema donde se está ejecutando el agente y colóquelo en el directorio “/tmp/collector”.
 .. También puede copiar el comando cURL desde la misma API y ejecutarlo directamente en el sistema donde se va a instalar el recopilador.
@@ -239,7 +239,7 @@ image:ws_downloadCollectorByUUID.png[""]
 Tenga en cuenta que el nombre del archivo debe ser el mismo que el presente en las cabeceras de respuesta de la API del recopilador de descargas. consulte la captura de pantalla a continuación.
 
 +
-image:ws_curl_command.png[""]
+image:ws_curl_command.png["Ejemplo de comando Curl que muestra un token ofuscado"]
 
 +
 [listing]
@@ -264,13 +264,13 @@ total 49716
 .. Desplácese hasta «cloudsecure_config.collector» > «/v1/cloudsecure/collector» (PUBLICACIÓN) API.
 .. En el menú desplegable de ejemplo, selecciona «ONTAP SVM data collector json sample», update collector config details y Execute.
 +
-image:ws_API_add_collector.png[""]
+image:ws_API_add_collector.png["API para agregar recopilador"]
 
 
 
 . El recopilador debería ser ahora visible en la sección “Recopiladores de datos”.
 +
-image:ws_collectorPageList.png[""]
+image:ws_collectorPageList.png["Página de lista de interfaz de usuario que muestra los recopiladores"]
 
 . Limpieza posterior a la instalación.
 +
@@ -297,17 +297,17 @@ drwx------ 2 cssys         cssys 4096 Apr 26 15:56 collectors
 ----
 . Ahora necesitamos recuperar la versión del recopilador y el UUID del recopilador. Navegue a la API «cloudsecure_config.collector-types». En la lista desplegable collectorCategory, selecciona el tipo de recopilador como “USUARIO”. Seleccione “TODOS” para obtener todos los detalles del tipo de recopilador en una sola solicitud.
 +
-image:ws_API_collector_all.png[""]
+image:ws_API_collector_all.png["API para obtener todos los coleccionistas"]
 
 . Copie el UUID del recopilador LDAP.
 +
-image:ws_LDAP_collector_UUID.png[""]
+image:ws_LDAP_collector_UUID.png["Respuesta de API que muestra el UUID del recopilador LDAP"]
 
 . Descargue el instalador del recopilador.
 +
 .. Desplácese hasta «cloudsecure_installers.collector» > «/v1/cloudsecure/collector-types/installers/{collectorTypeUUID}» (GET) API. Introduzca el UUID copiado del paso anterior y descargue el archivo del instalador.
 +
-image:ws_LDAP_collector_UUID_download.png[""]
+image:ws_LDAP_collector_UUID_download.png["API y respuesta para descargar el recopilador"]
 
 .. Si el archivo de instalación se descarga externamente en una máquina diferente, copie el archivo de instalación en el sistema donde se ejecuta el agente y en el directorio “/tmp/collector”.
 .. También puede copiar el comando cURL desde la misma API y ejecutarlo directamente en el sistema donde se debe instalar el recopilador.
@@ -318,7 +318,7 @@ Tenga en cuenta que el nombre del archivo debe ser el mismo que el presente en l
 
 +
 +
-image:ws_curl_command.png[""]
+image:ws_curl_command.png["API de comando curl"]
 
 +
 +
@@ -345,15 +345,15 @@ total 37156
 ----
 . Navega a la página 'User Directory Collectors' y haz clic en '+ User Directory Collector'.
 +
-image:ws_user_directory_collector.png[""]
+image:ws_user_directory_collector.png["Agregando recopilador de directorios de usuario"]
 
 . Selecciona 'LDAP Directory Server'.
 +
-image:ws_LDAP_user_select.png[""]
+image:ws_LDAP_user_select.png["Ventana de interfaz de usuario para seleccionar un usuario LDAP"]
 
 . Ingrese los detalles del servidor de directorios LDAP y haga clic en “Guardar”
 +
-image:ws_LDAP_user_Details.png[""]
+image:ws_LDAP_user_Details.png["Interfaz de usuario que muestra los detalles del usuario LDAP"]
 
 . Al hacer clic en “Guardar”, el servicio del agente localizará el instalador del recopilador en el directorio “/tmp/collector/” e instalará el recopilador.
 . Como opción alternativa, en lugar de agregar recopilador a través de la interfaz de usuario, también se puede agregar a través de la API.
@@ -361,13 +361,13 @@ image:ws_LDAP_user_Details.png[""]
 .. Desplácese hasta «cloudsecure_config.collector» > «/v1/cloudsecure/collector» (PUBLICACIÓN) API.
 .. En el ejemplo desplegable, seleccione “LDAP Directory Server user collector json sample”, actualice los detalles de configuración del recopilador y haga clic en “Execute”.
 +
-image:ws_API_LDAP_Collector.png[""]
+image:ws_API_LDAP_Collector.png["API para recopilador LDAP"]
 
 
 
 . El recopilador debe ser ahora visible en la sección “Colectores de directorios de usuarios”.
 +
-image:ws_LDAP_collector_list.png[""]
+image:ws_LDAP_collector_list.png["Lista del recopilador de LDAP en la interfaz de usuario de"]
 
 . Limpieza posterior a la instalación.
 +
@@ -451,7 +451,7 @@ drwx------  2 root  root  4096 Apr 26 17:38 tmp
 ----
 .. El agente debe ser visible en la página “Agentes” y debe estar en estado “Conectado”.
 +
-image:ws_agentsPageShowingConnected.png[""]
+image:ws_agentsPageShowingConnected.png["Interfaz de usuario que muestra los agentes conectados"]
 
 
 
@@ -490,14 +490,14 @@ Copiar UUID y versión del cuerpo de la respuesta.
 
 
 
-image:ws_collector_UUID_and_version.png[""]
+image:ws_collector_uuid_and_version.png["Respuesta de la API que muestra el UUID del recopilador y la versión resaltados"]
 
 . Descargue el archivo del instalador del recopilador más reciente.
 +
 .. Desplácese hasta «cloudsecure_installers.collector» > «/v1/cloudsecure/collector-types/installers/{collectorTypeUUID}» API. Ingresa “collectorTypeUUID” copiado del paso anterior. Descargue el instalador en el directorio “/tmp/collector”.
 .. Alternativamente, también se puede usar el comando cURL de la misma API.
 +
-image:ws_curl_command_only.png[""]
+image:ws_curl_command_only.png["Ejemplo de comando cURL"]
 
 
 
@@ -524,7 +524,7 @@ total 55024
 .. En el menú desplegable «Ejemplos», seleccione «ONTAP SVM data collector upgrade json sample» para rellenar la carga útil de la muestra.
 .. Reemplace la versión con la versión copiada del paso 3 y haga clic en 'Ejecutar'.
 +
-image:ws_svm_ontap_collector_upgrade_example_json.png[""]
+image:ws_svm_ontap_collector_upgrade_example_json.png["Ejemplo de actualización de SVM en la interfaz de usuario de Swagger"]
 
 
 
@@ -554,7 +554,7 @@ Repita los pasos anteriores para actualizar otros tipos de colectores también.
 Este error se producirá si el archivo instalador del recopilador no está presente en el directorio “/tmp/collector” o no es accesible. Asegúrese de que el archivo de instalación está descargado y el directorio “recopiladores” y el archivo zip del instalador es propiedad de cssys:cssys y el servicio del agente de reinicio – “systemctl restart cloudsecure-agent.service”
 
 +
-image:ws_agent014_error.png[""]
+image:ws_agent014_error.png["Pantalla de interfaz de usuario que muestra el error de agente 014"]
 
 . 2. Error no autorizado
 +
