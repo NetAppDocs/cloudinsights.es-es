@@ -38,6 +38,7 @@ Workload Security utiliza recopiladores de datos para recopilar datos de acceso 
 * SVM tiene varios subtipos. De estos, sólo se admiten _default_, _SYNC_Source_ y _SYNC_Destination_.
 * Un agente link:task_cs_add_agent.html["debe configurarse"] antes de configurar recopiladores de datos.
 * Asegúrese de que tiene un conector de directorio de usuario configurado correctamente; de lo contrario, los eventos mostrarán nombres de usuario codificados y no el nombre real del usuario (tal como se almacena en Active Directory) en la página “Activity Forensics”.
+* • El almacén persistente de ONTAP es compatible con 9.15.1.
 * Para obtener un rendimiento óptimo, debe configurar el servidor FPolicy para que esté en la misma subred que el sistema de almacenamiento.
 
 
@@ -297,6 +298,8 @@ Tenga en cuenta lo siguiente:
 * En las actualizaciones de agente o recopilador, la VM del agente se reinicia o reinicia el servicio del agente, un recopilador en pausa permanecerá en estado _Paused_.
 * Si el recopilador de datos está en estado _Error_, el recopilador no se puede cambiar al estado _Paused_. El botón Pausa solo se activará si el estado del recopilador es _Running_.
 * Si el agente está desconectado, el recopilador no se puede cambiar al estado _Paused_. El recopilador pasará al estado _STOP_ y el botón Pause se desactivará.
+* No se puede suprimir un recopilador de datos en pausa.
+* Mientras está en pausa, la configuración de fpolicy en ONTAP está deshabilitada, pero no se elimina. Al reanudar, la configuración de fpolicy en ONTAP se vuelve a activar.
 
 
 
@@ -398,5 +401,8 @@ Compruebe el número de colectores de datos que se agregan al agente en la máqu
 Si es superior a 20, aumente la capacidad de CPU y RAM de la máquina del agente.
 Una vez que la CPU y la RAM se aumentan, los DSCs se inicializarán y luego se pondrán en funcionamiento automáticamente.
 Consulte la guía de tamaños en link:concept_cs_event_rate_checker.html["esta página"]. 
+
+
+| El recopilador de datos está fuera de servicio cuando se selecciona el modo SVM. | Mientras se conecta en modo SVM, si se utiliza la IP de gestión del clúster para conectarse en lugar de la IP de gestión de SVM, la conexión se producirá un error. Asegúrese de que se usa la IP de SVM correcta. 
 |===
 Si todavía tiene problemas, póngase en contacto con los enlaces de soporte mencionados en la página *Ayuda > Soporte*.

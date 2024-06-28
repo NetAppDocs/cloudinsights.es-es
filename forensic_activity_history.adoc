@@ -127,6 +127,8 @@ Puede ordenar los datos del historial de actividades por _Time, User, Source IP,
 
 Puede exportar el historial de actividades a un archivo .CSV haciendo clic en el botón _Export_ situado encima de la tabla Historial de actividades. Tenga en cuenta que sólo se exportan los 100.000 registros principales. Dependiendo de la cantidad de datos, la exportación puede tardar desde unos segundos hasta varios minutos.
 
+En _/opt/netapp/cloudsecure/agent/export-script/_ encontrará un script de ejemplo para extraer datos forenses a través de la API. Consulte el archivo Léame en esta ubicación para obtener más información sobre el script.
+
 
 
 == Selección de columna para toda la actividad
@@ -235,4 +237,19 @@ También puede utilizar la opción “Agregar a filtro” en la pestaña Todas l
 
 
 | Encuentro un error de solicitud fallida con el código de estado 500/503 al utilizar un filtro de ruta. | Intente utilizar un rango de fechas más pequeño para filtrar registros. 
+
+
+| La interfaz de usuario forense carga los datos lentamente cuando se utiliza el filtro _PATH_. | Si la ruta es _/AAA/BBB/CCC/DDD_, entonces en lugar de buscar:
+
+AAA/BBB/CCC*
+
+O.
+
+AAA/BBB/C*
+
+Intente buscar:
+
+AAA/BBB/CCC/*
+
+Esta búsqueda debería permitir que los datos se carguen más rápido. 
 |===
