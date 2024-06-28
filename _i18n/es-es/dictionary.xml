@@ -13135,6 +13135,150 @@ Si está ejecutando SELinux, se recomienda ejecutar los siguientes comandos en e
   <block id="412ea2434c00799606f268b4aa2b35dc" category="cell">sin protección</block>
   <block id="9091b3fb9f4d43844af8dc0a973c67e0" category="inline-link-macro">Problema conocido de Telegraf</block>
   <block id="d466d69e5a5f62e5d6773f7d399fe086" category="cell">Vea esto <block ref="0dcd3ea27696029fecb8ccd7e247f633" category="inline-link-macro-rx"></block>. Si se establece _UNPROTECTED_, se indicará al operador de supervisión de Kubernetes que ejecute Telegraf con el<block ref="3a41393afb053a415e6dc30cf704d899" prefix=" " category="inline-code"></block> bandera.</block>
-  <block id="ab504a720d67f8b1d6fb93a2e0fd41aa" category="cell">Telegraf quiere (o se bloquea debido a) una memoria bloqueable insuficiente.</block>
   <block id="9953ac1176fec4ceef2b233ecd286c7b" category="cell">Intente aumentar el límite de memoria bloqueable para Telegraf en el sistema operativo/nodo subyacente. Si aumentar el límite no es una opción, modifique la configuración de agentconfiguration NKMO y establezca _UNPROTECTED_ en _TRUE_.  Esto indicará a Telegraf que no intente reservar páginas de memoria bloqueadas. Aunque esto puede suponer un riesgo para la seguridad, ya que los secretos descifrados se pueden intercambiar en el disco, permite su ejecución en entornos en los que no es posible reservar la memoria bloqueada. Para obtener más información sobre las opciones de configuración _UNPROTECTED_, consulte la <block ref="74a91e6274b6ee5f9fd240fb978eb1d9" category="inline-link-macro-rx"></block> página.</block>
+  <block id="7438b4e926a47d987228924d394e21fc" category="cell">Telegraf advierte de, o se bloquea debido a, memoria bloqueable insuficiente.</block>
+  <block id="8c8a571e456c6997313d3c14bc8e2e33" category="summary">Los agentes de seguridad de carga de trabajo se pueden instalar o actualizar manualmente, lo que proporciona un mayor control sobre el software instalado en su entorno.</block>
+  <block id="5ecfbb1f5f3536161517dc33155eaa58" category="doc">Instalación manual del agente de seguridad de carga de trabajo y del recopilador</block>
+  <block id="b18da8c028e8898757dd43e098d29586" category="paragraph">De forma predeterminada, cuando hay disponible una nueva versión de un agente o recopilador de seguridad de carga de trabajo, se envía una notificación previa a la actualización y los agentes y recopiladores se actualizan automáticamente en su entorno. Sin embargo, en un entorno controlado y seguro, es posible que no se deseen actualizaciones automáticas. En tales casos, Workload Security se puede configurar para la instalación/actualización manual de agentes y colectores, lo que proporciona más control sobre el software instalado en sus sistemas.</block>
+  <block id="1d7c0bdfd6486be2ad7378309185dd8d" category="list-text">Verifique en Swagger que las categorías API denominadas «cloudsecure_installers.agent» y «cloudsecure_installers.collector» están disponibles. Si no es así, el soporte para la instalación manual del agente no está activado. Póngase en contacto con el servicio de soporte de NetApp para que la función esté habilitada.</block>
+  <block id="b6ce3d2e8bbf578cfdcdeb74825d0609" category="paragraph"><block ref="b6ce3d2e8bbf578cfdcdeb74825d0609" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="b47cdf24f25c792e7f7bee977b59785f" category="list-text">Ejecute todos los comandos mencionados en este documento como usuario 'root', o, si se ejecuta con un usuario diferente, ejecute los comandos con 'sudo'.</block>
+  <block id="24b69749dd40594efb1f2e9cafb0ba86" category="section-title">Instalación de un agente nuevo</block>
+  <block id="24d17e357f806ec1c8a435b7688427df" category="list-text">Cree un nuevo token de acceso a la API de seguridad de carga de trabajo.</block>
+  <block id="3b87284d5c3fe4faabb8dc375cd165e7" category="list-text">Vaya a *Admin &gt; API Access*. Seleccione la pestaña “Workload Security Tokens” y haga clic en “+ API Access Token”.</block>
+  <block id="63533cd0226103d0ad30dbf3c1586464" category="list-text">Establezca un nombre y una descripción que sean fáciles de identificar.</block>
+  <block id="26e81e7061dc41e68dfb9b8aedbb1ed6" category="list-text">Bajo el “¿Qué tipo de APIs se usará este token para llamar?” Seleccione _Collector Management_ y _Agent &amp; Collector Installation_.</block>
+  <block id="1f13ce10e05713b09a5710af0b9f5f40" category="list-text">Seleccione la duración de caducidad deseada.</block>
+  <block id="73507ba211863509e00da520eff7099c" category="list-text">Haga clic en _Save_.</block>
+  <block id="cc7aef4ed3668a652853c8be5873aa33" category="list-text">Copie el token de acceso a API generado. Tenga en cuenta que una vez cerrada la ventana, el token ya no se puede recuperar. En ese caso, deberá generar un nuevo token.</block>
+  <block id="45bbef09c47259a6fcfbd1f25b63ac9c" category="paragraph"><block ref="45bbef09c47259a6fcfbd1f25b63ac9c" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="256176a4f9b26608ca563ee3f1ef34ec" category="paragraph"><block ref="256176a4f9b26608ca563ee3f1ef34ec" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="180648243db0d9593e75e0a7dcc9e70c" category="list-text">Navegue hasta *Admin &gt; API Access &gt; API Documentation* (en la parte superior derecha de la página) y seleccione el icono _Workload Security_. Esto abre la documentación de Swagger para las API de seguridad de cargas de trabajo.</block>
+  <block id="2034e411b416bb8a1700564433d3cd96" category="paragraph"><block ref="2034e411b416bb8a1700564433d3cd96" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="c6e324f498c45c040c62a6fa6c3ee605" category="list-text">Autorizar para acceder a las API _Workload Security_.</block>
+  <block id="2fb830e83b717250d3913a3a0b88988e" category="list-text">Haga clic en el botón _Autorizar_ en la parte superior derecha de la página.</block>
+  <block id="1742f0a5fd9e84cc6abbac0f91f20145" category="list-text">En el campo de texto _Customer ApiKey (apiKey)_, pegue el token API copiado anteriormente del Paso 1c.</block>
+  <block id="4d72ae66caf6c8d221f1265fef5074a4" category="list-text">Haga clic en _Autorizar_ y cierre la ventana.</block>
+  <block id="be10b4573e48113fb1ac5c23054ebf52" category="paragraph"><block ref="be10b4573e48113fb1ac5c23054ebf52" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="92d059abe745a2f9412e7e28cf8d4b7a" category="list-text">Descargue el instalador del agente.</block>
+  <block id="9bfb10dfddb775b19e5382b100f3b95c" category="list-text">En Swagger, seleccione _cloudsecure_installers.agent_ &gt; _/v1/cloudsecure/agents/installers/{platform}/latest_ (GET) API. Haga clic en _Pruébelo_.</block>
+  <block id="9a9218c558d48a113241255b493ebce4" category="list-text">En el campo _platform_, introduzca _linux_. Haga clic en _Execute_.</block>
+  <block id="81fa97985e807c92a56b0503fbb64e90" category="paragraph"><block ref="00f688012d021ff7555f49c98fcaa137" category="inline-image-macro-rx" type="image"></block>
+<block ref="01005f9d47b011c1212f7bf5ad6f9024" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="ee6a52b13fbddb62016bcb2805c17702" category="list-text">Haga clic en “Descargar archivo” para descargar el instalador.</block>
+  <block id="0f8979c47074a8474a7b68f6b5041333" category="list-text">Si el archivo de instalación se descarga externamente en un equipo distinto del sistema en el que se va a instalar el agente, copie el archivo de instalación en ese sistema.</block>
+  <block id="2ca042fd80784e45a082b48e420ab342" category="list-text">Alternativamente, puede copiar el comando curl y ejecutarlo directamente en el sistema donde se debe instalar el agente.</block>
+  <block id="c63360f268fe9cedccae33ff3677374e" category="list-text">Agregue el argumento “-o {{file_name}}” al comando cURL para guardar el archivo de instalación con el nombre deseado. El nombre real del archivo de instalación se puede encontrar en la sección Cabeceras de respuesta de Swagger. Ese nombre también se puede utilizar.</block>
+  <block id="187e0a2ad583571b3a862394f5de152d" category="paragraph"><block ref="187e0a2ad583571b3a862394f5de152d" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="916cf5f1dfa408f84ad15ac58fb178b7" category="list-text">Aunque el archivo se puede descargar en cualquier ubicación, se recomienda descargarlo en una carpeta vacía en la que se puede extraer el archivo .zip del instalador.</block>
+  <block id="ff324aae593d3293768656baf930a788" category="list-text">Cree una carpeta nueva (recomendado), copie el archivo de instalación en esta carpeta y descomprima:</block>
+  <block id="6ce9d80723d57729143449d1cd127853" category="list-text">Establezca el permiso _execute_ para el archivo «cloudsecure-agent-install.sh».</block>
+  <block id="a9446988374a9bcb4db7d1e2cb812e4e" category="list-text">Generar un token de una sola vez para la instalación de un nuevo agente.</block>
+  <block id="7b02da3e5513b578e65441f615ac8fc3" category="paragraph">Nota: El token de una sola vez generado en este paso es diferente del token de acceso de API generado en el paso 1c.</block>
+  <block id="a3022c8d916e0189ce254d35f8530250" category="list-text">En Swagger, ejecute la API _cloudsecure_installers.agent &gt; /v1/cloudsecure/agent/oneTimeToken_ y copie el token de la respuesta.</block>
+  <block id="b49b775ebd025a1d541016edb46cce1f" category="list-text">Exporte el token de una sola vez como variable de entorno.</block>
+  <block id="9df5c6030692622039f21c49d8d01552" category="list-text">Si se utiliza un servidor proxy, exporte https_proxy como variable de entorno en el formato que se menciona a continuación.</block>
+  <block id="8cb67ba1a1692267fe20f637f1c00899" category="list-text">Opcional: De forma predeterminada, el agente y los recopiladores se instalarán en la ruta «/opt/netapp». Para instalar en una ruta diferente, defina la siguiente variable de entorno.</block>
+  <block id="fec12cce751056a9c721cb2b2055c11f" category="paragraph">Nota: Si se instala en una ruta personalizada, los recopiladores de datos y todos los demás artefactos, como los registros del agente, se crearán solo dentro de la ruta personalizada. Los registros de instalación seguirán presentes en - _/var/log/netapp/cloudsecure/install_.</block>
+  <block id="98b0be5334ffb2235789bcf8b20d806a" category="list-text">Vuelva al directorio donde se descargó el instalador del agente y ejecute “cloudsecure-agent-install.sh”</block>
+  <block id="396a97364332575a50ec976701ed43c0" category="paragraph">Nota: Si el usuario no se está ejecutando en un shell “bash”, es posible que el comando de exportación no funcione. En ese caso, los pasos 8 a 11 se pueden combinar y ejecutar como se indica a continuación. HTTPS_PROXY y AGENT_INSTALL_PATH son opcionales y se pueden ignorar si no es necesario.</block>
+  <block id="c456bc2827dd977dfe67be72d8a00d47" category="paragraph">En este punto, el agente debe instalarse correctamente.</block>
+  <block id="eacf181f15af1f0579e56a30c60711dc" category="list-text">Comprobación de estado para la instalación del agente:</block>
+  <block id="b8d752e2b793a20d3b97803fa8bd137f" category="list-text">Ejecute “systemctl status cloudsecure-agent.service” y verifique que el servicio del agente está en estado _running_.</block>
+  <block id="a85cd1b0bb395d30fe2d656af8c45241" category="list-text">El agente debe ser visible en la página “Agentes” y debe estar en estado “Conectado”.</block>
+  <block id="5d5d717f52e6d8847a7780754fc0fb2c" category="paragraph"><block ref="5d5d717f52e6d8847a7780754fc0fb2c" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="dfbadd34e39758c3ba5d6aa09a579b79" category="list-text">Limpieza posterior a la instalación.</block>
+  <block id="140b66a6d0a9e50bee73565be1467b63" category="list-text">Si la instalación del agente se realiza correctamente, se pueden eliminar los archivos descargados del instalador del agente.</block>
+  <block id="58130a8aadcaf720b42fcca8adaae36c" category="section-title">Instalación de un nuevo recopilador de datos.</block>
+  <block id="1b36b33046ab8bd17922fc367347e295" category="paragraph">Nota: Este documento contiene instrucciones para la instalación de «Recopilador de datos de SVM de ONTAP». Los mismos pasos se aplican al «recopilador de datos de Cloud Volumes ONTAP» y al «recopilador de datos de Amazon FSx para NetApp ONTAP».</block>
+  <block id="a8dd0cd5ec6aa2fa59984595d5711e4f" category="list-text">Vaya al sistema en el que el recopilador necesita ser instalado y cree un directorio llamado “recopiladores” bajo el directorio “/tmp”.</block>
+  <block id="8343fe03336dda69cffe501d86dc3bd7" category="list-text">Cambie la propiedad del directorio “recopiladores” a “cssys:cssys” (el usuario y el grupo de cssys se crearán durante la instalación del agente).</block>
+  <block id="f88df495978aea1949fd994d1bd434f5" category="list-text">Ahora necesitamos recuperar la versión del recopilador y el UUID del recopilador. Navegue a la API «cloudsecure_config.collector-types».</block>
+  <block id="d01630b920021fdbcfded91d28c943bb" category="list-text">Vaya a Swagger, «cloudsecure_config.collector-types &gt; /v1/cloudsecure/collector-types» (GET). En el menú desplegable “collectorCategory”, selecciona el tipo de recopilador como “DATA”. Seleccione “ALL” para obtener todos los detalles del tipo de recopilador.</block>
+  <block id="f48b5207fe43ebc5402b9c278bd7fcce" category="list-text">Copie el UUID del tipo de recopilador necesario.</block>
+  <block id="eea6c85e871ed7d5ae81ca5d661e78d5" category="paragraph"><block ref="eea6c85e871ed7d5ae81ca5d661e78d5" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="ddfde501612f68f80a91fec5fc0f07c7" category="list-text">Descargar el instalador del recopilador.</block>
+  <block id="c1c6a754702a1c4ab63fc9982a6ce591" category="list-text">Navegue hasta «cloudsecure_installers.collector &gt; /v1/cloudsecure/collector-types/installers/{collectorTypeUUID}» (GET) API. Introduzca el UUID copiado del paso anterior y descargue el archivo del instalador.</block>
+  <block id="8180e782ffbaa5d5ac127d240a765e10" category="paragraph"><block ref="8180e782ffbaa5d5ac127d240a765e10" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="960963d0b016c92eaeccc263ef52fdba" category="list-text">Si el archivo de instalación se descarga externamente en una máquina diferente, copie el archivo de instalación en el sistema donde se está ejecutando el agente y colóquelo en el directorio “/tmp/collector”.</block>
+  <block id="55a4c61aa7efda1711d77921e1a92a8d" category="list-text">También puede copiar el comando cURL desde la misma API y ejecutarlo directamente en el sistema donde se va a instalar el recopilador.</block>
+  <block id="1fee2c4ec45fbe47ced2acd43c9d4447" category="paragraph">Tenga en cuenta que el nombre del archivo debe ser el mismo que el presente en las cabeceras de respuesta de la API del recopilador de descargas. consulte la captura de pantalla a continuación.</block>
+  <block id="5ed4fdc46422ad7a3d943bfb0a365487" category="paragraph"><block ref="5ed4fdc46422ad7a3d943bfb0a365487" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="45212f4567fd41d5e2982cda11096e58" category="list-text">Navegue hasta *Workload Security &gt; Collectors* y seleccione *+Collector*. Seleccione el recopilador _ONTAP SVM_.</block>
+  <block id="615d69b66e616d31e597f5daab30304d" category="list-text">Configure los detalles del recopilador y _Save_ el recopilador.</block>
+  <block id="86ecf670dbd931937d00a5378aa07840" category="list-text">Al hacer clic en “Guardar”, el proceso del agente localizará el instalador del recopilador en el directorio “/tmp/collector/” e instalará el recopilador.</block>
+  <block id="6787ef48e0f1a2e3871017f73c1104d0" category="list-text">Como opción alternativa, en lugar de agregar el recopilador a través de la interfaz de usuario, también se puede agregar a través de la API.</block>
+  <block id="b27df93d8844fa78c07fad879a901800" category="list-text">Desplácese hasta «cloudsecure_config.collector» &gt; «/v1/cloudsecure/collector» (PUBLICACIÓN) API.</block>
+  <block id="d91a6e2ddbc6f9b866b28804de7d2ea2" category="list-text">En el menú desplegable de ejemplo, selecciona «ONTAP SVM data collector json sample», update collector config details y Execute.</block>
+  <block id="e17d71bf716fbe0dbfb5f044e69abd47" category="paragraph"><block ref="e17d71bf716fbe0dbfb5f044e69abd47" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="65430216dd6e04aeb4ec77900543d9c0" category="list-text">El recopilador debería ser ahora visible en la sección “Recopiladores de datos”.</block>
+  <block id="8505d18bd42482fac2134d562f4f0951" category="paragraph"><block ref="8505d18bd42482fac2134d562f4f0951" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="e2dcb3aa661588b80bf624cee20a4d9a" category="list-text">Si la instalación del recopilador es correcta, todos los archivos en el directorio “/tmp/collector” se pueden eliminar.</block>
+  <block id="5c988949b33fdff8d1cb685edd772a78" category="section-title">Instalación de un nuevo recopilador de directorios de usuario</block>
+  <block id="c1d3d73ef2be97edc6318c8b9e1be652" category="paragraph">Nota: En este documento hemos mencionado los pasos para instalar un recopilador LDAP. Los mismos pasos se aplican para instalar un recopilador de AD.</block>
+  <block id="2ab3b812979b03e6897a80c035d884e3" category="list-text">Ahora necesitamos recuperar la versión del recopilador y el UUID del recopilador. Navegue a la API «cloudsecure_config.collector-types». En la lista desplegable collectorCategory, selecciona el tipo de recopilador como “USUARIO”. Seleccione “TODOS” para obtener todos los detalles del tipo de recopilador en una sola solicitud.</block>
+  <block id="2851cf59c3b636d2286e3601c840bf0b" category="paragraph"><block ref="2851cf59c3b636d2286e3601c840bf0b" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="aa26819573f8d5de196d75c2940b9140" category="list-text">Copie el UUID del recopilador LDAP.</block>
+  <block id="b49c1096ebc6903e47a29c40f0574f0c" category="paragraph"><block ref="b49c1096ebc6903e47a29c40f0574f0c" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="28a727e9a70db036cc6e4b1381a93f66" category="list-text">Descargue el instalador del recopilador.</block>
+  <block id="cac3390b8d7c3963dd149f531a17b42d" category="list-text">Desplácese hasta «cloudsecure_installers.collector» &gt; «/v1/cloudsecure/collector-types/installers/{collectorTypeUUID}» (GET) API. Introduzca el UUID copiado del paso anterior y descargue el archivo del instalador.</block>
+  <block id="63707277cd58c76baa5fcedb992ac5b8" category="paragraph"><block ref="63707277cd58c76baa5fcedb992ac5b8" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="4c57cd0ffcecf9cea5cc8cd058524581" category="list-text">Si el archivo de instalación se descarga externamente en una máquina diferente, copie el archivo de instalación en el sistema donde se ejecuta el agente y en el directorio “/tmp/collector”.</block>
+  <block id="58237ddf4e8c451c3f1c93e5c96bf452" category="list-text">También puede copiar el comando cURL desde la misma API y ejecutarlo directamente en el sistema donde se debe instalar el recopilador.</block>
+  <block id="88ad8720d8a141ccd2cb753bd4e97afb" category="paragraph">+
+<block ref="5ed4fdc46422ad7a3d943bfb0a365487" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="26b17225b626fb9238849fd60eabdf60" category="paragraph">+</block>
+  <block id="5709666caa5256a262f0055350a1c41f" category="list-text">Cambie la propiedad del archivo zip del instalador del recopilador a cssys:cssys.</block>
+  <block id="841d5bf0ac1c3f88a052517da8b24155" category="list-text">Navega a la página 'User Directory Collectors' y haz clic en '+ User Directory Collector'.</block>
+  <block id="cd78c76e5ad6c0b400cbcf623f92e49a" category="paragraph"><block ref="cd78c76e5ad6c0b400cbcf623f92e49a" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="0e9198d5902f64b3cae6ac3671c1677e" category="list-text">Selecciona 'LDAP Directory Server'.</block>
+  <block id="bc924648c1cee8ab0ee13d42575d59c5" category="paragraph"><block ref="bc924648c1cee8ab0ee13d42575d59c5" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="fe0c0f9a77be12447da802b62442e67e" category="list-text">Ingrese los detalles del servidor de directorios LDAP y haga clic en “Guardar”</block>
+  <block id="c11b04b153e3ae99f621725197405334" category="paragraph"><block ref="c11b04b153e3ae99f621725197405334" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="e632d5518578306a762a61b755d4c5be" category="list-text">Al hacer clic en “Guardar”, el servicio del agente localizará el instalador del recopilador en el directorio “/tmp/collector/” e instalará el recopilador.</block>
+  <block id="63a6b3c8c2e58ddc47bddb7e0e1765c6" category="list-text">Como opción alternativa, en lugar de agregar recopilador a través de la interfaz de usuario, también se puede agregar a través de la API.</block>
+  <block id="a0a7d3e7a6cb2e91beed5114cc067cce" category="list-text">En el ejemplo desplegable, seleccione “LDAP Directory Server user collector json sample”, actualice los detalles de configuración del recopilador y haga clic en “Execute”.</block>
+  <block id="7ed2e2c584b8462cda0058266b65f5df" category="paragraph"><block ref="7ed2e2c584b8462cda0058266b65f5df" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="b3f5c445c4bc966c8652199ceb82762c" category="list-text">El recopilador debe ser ahora visible en la sección “Colectores de directorios de usuarios”.</block>
+  <block id="abc9edb3d074e13fa39590e1b8e1592e" category="paragraph"><block ref="abc9edb3d074e13fa39590e1b8e1592e" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="62c9ab325204f66c9fca63c88b31f244" category="section-title">Actualización de un agente</block>
+  <block id="d6d45cdaacc8f0955983f7639a303c90" category="paragraph">Se enviará una notificación por correo electrónico cuando haya disponible una nueva versión del agente/recopilador.</block>
+  <block id="e1484285201e25aff4afdd10c3789c4e" category="list-text">Descargue el instalador del agente más reciente.</block>
+  <block id="4c0a042538180edd06a6c8106e212114" category="list-text">Los pasos para descargar el instalador más reciente son similares a “Instalar un nuevo agente”. En Swagger, seleccione la API “cloudsecure_installers.agent” à “/v1/cloudsecure/agents/installers/{platform}/latest”, introduzca la plataforma como “linux” y descargue el archivo zip del instalador. También se puede utilizar el comando curl. Descomprima el archivo del instalador.</block>
+  <block id="a6d8035a7c771338e6fad3bae1787e02" category="list-text">Establezca el permiso de ejecución para el archivo «cloudsecure-agent-upgrade.sh».</block>
+  <block id="a6d806d0183611768f05da5cdda916fc" category="list-text">Ejecute el script «cloudsecure-agent-upgrade.sh». Si el script se ha ejecutado correctamente, imprimirá el mensaje “Cloudsecure agent has updated successfully” (El agente de Cloudsecure se ha actualizado correctamente). en la salida.</block>
+  <block id="bb7c03c78b9c284bc5c206564d483190" category="list-text">Ejecute el siguiente comando 'systemctl daemon-reload'</block>
+  <block id="64e858e7326545e63e7a7e612925881c" category="list-text">Reinicie el servicio de agente.</block>
+  <block id="68ac9dcbb18ec01adee86bb564a124de" category="paragraph">En este punto, el agente debe actualizarse correctamente.</block>
+  <block id="0a08326fab343f28d5cc12e5f46e37f4" category="list-text">Comprobación de estado tras actualización de agente.</block>
+  <block id="27619ed5ea50bcf344707a0e4d503b14" category="list-text">Desplácese hasta la ruta en la que está instalado el agente (por ejemplo, «/opt/netapp/cloudsecure/»).  El “agente” symlink debe apuntar a una nueva versión del agente.</block>
+  <block id="f8f9f7f0d4337aaef721604bd0326c44" category="section-title">Actualizando recopiladores</block>
+  <block id="d64a61695a0497568adb11f38b555611" category="paragraph">Nota: Los pasos de actualización son los mismos para todos los tipos de recopiladores. En este documento mostraremos la actualización del recopilador «SVM de ONTAP».</block>
+  <block id="1788421524c681e92ffb072cb2b16ba4" category="list-text">Ve al sistema en el que los coleccionistas necesitan ser actualizados y crea el directorio “/tmp/collector” si no está ya presente.</block>
+  <block id="84409f99ba6f01bcc3c8c3cfe5f4edab" category="list-text">Asegúrate de que el directorio “coleccionistas” sea propiedad de cssys:cssys.</block>
+  <block id="30cb8ff7690cb51e2ba4a45fa1fec47b" category="list-text">En Swagger, desplácese hasta «cloudsecure_config.collector-types» GET API. En el menú desplegable “collectorCategory”, seleccione “DATA” (seleccione “USER” para el recopilador de directorios de usuario o “ALL”).</block>
+  <block id="b63f1156c2b0b306d2c21686c4671290" category="paragraph">Copiar UUID y versión del cuerpo de la respuesta.</block>
+  <block id="be2931485319fe61c020322a40893d98" category="paragraph"><block ref="be2931485319fe61c020322a40893d98" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="26f085ec96f326a83a2cd1c9a101547a" category="list-text">Descargue el archivo del instalador del recopilador más reciente.</block>
+  <block id="38836b79dd635a5e513204082f0d059b" category="list-text">Desplácese hasta «cloudsecure_installers.collector» &gt; «/v1/cloudsecure/collector-types/installers/{collectorTypeUUID}» API. Ingresa “collectorTypeUUID” copiado del paso anterior. Descargue el instalador en el directorio “/tmp/collector”.</block>
+  <block id="4aca3370873bcc20704038a3b449349c" category="list-text">Alternativamente, también se puede usar el comando cURL de la misma API.</block>
+  <block id="942215776ab4c9b3ecd9304dcbd6b397" category="paragraph"><block ref="942215776ab4c9b3ecd9304dcbd6b397" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="87aac0bd54f48e3ea018cdbf4c49240f" category="paragraph">Nota: El nombre del archivo debe ser el mismo que el presente en las cabeceras de respuesta de la API del recopilador de descargas.</block>
+  <block id="1e161bf723a8e1aeb010097d8893525c" category="list-text">Active la API del recopilador de actualizaciones.</block>
+  <block id="4e8e4b67b8a4e686cd0697d1631ba57f" category="list-text">En Swagger, navega hasta «cloudsecure_installers.collector» &gt; «/v1/cloudsecure/collector-types/upgrade» (PUT).</block>
+  <block id="c702d61016e786540c3423a56068d5fa" category="list-text">En el menú desplegable «Ejemplos», seleccione «ONTAP SVM data collector upgrade json sample» para rellenar la carga útil de la muestra.</block>
+  <block id="1658e77190c6002b3789ca2dd5bbdc65" category="list-text">Reemplace la versión con la versión copiada del paso 3 y haga clic en 'Ejecutar'.</block>
+  <block id="8815603aed46dcf87c07c5d729099d74" category="paragraph"><block ref="8815603aed46dcf87c07c5d729099d74" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="ac934065e06072ceec86257a2f72087d" category="paragraph">Espere unos segundos, los colectores se actualizarán automáticamente.</block>
+  <block id="59e00ac512bd959d2a3ded4209823e6f" category="list-text">Comprobación de estado.</block>
+  <block id="eac5a780e5ba342d31bf3d406ab502ca" category="paragraph">Los recopiladores deben estar en estado de ejecución en la interfaz de usuario.</block>
+  <block id="ab515596662ea64e3e544564ff79aeab" category="list-text">Limpieza posterior a la actualización.</block>
+  <block id="f27db76a6388239fb1cfc200d1f859b7" category="list-text">Si la actualización del recopilador se realiza correctamente, todos los archivos del directorio “/tmp/collector” se pueden eliminar.</block>
+  <block id="991fefa76287bfa32eacbff100d426b8" category="paragraph">Repita los pasos anteriores para actualizar otros tipos de colectores también.</block>
+  <block id="9d72500e8a5c053eafcdfe4056754eb8" category="section-title">Problemas y correcciones de Commons.</block>
+  <block id="b69ea6725a0b6525e6cf544da1adc773" category="list-text">AGENT014 Error.</block>
+  <block id="21375ff3b38428634b0bb8f11745059a" category="paragraph">Este error se producirá si el archivo instalador del recopilador no está presente en el directorio “/tmp/collector” o no es accesible. Asegúrese de que el archivo de instalación está descargado y el directorio “recopiladores” y el archivo zip del instalador es propiedad de cssys:cssys y el servicio del agente de reinicio – “systemctl restart cloudsecure-agent.service”</block>
+  <block id="0f7a6275819f9811b54d1e8c38069670" category="paragraph"><block ref="0f7a6275819f9811b54d1e8c38069670" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="3cb0a3ec16e76962936843ae69672ce5" category="list-text">2. Error no autorizado</block>
+  <block id="c10b2daccdd9136337eaaa94938222bc" category="paragraph">Este error se mostrará si se genera el token de acceso API sin seleccionar todas las categorías de API necesarias. Genere un nuevo token de acceso de API seleccionando todas las categorías de API necesarias.</block>
 </blocks>
