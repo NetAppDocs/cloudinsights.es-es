@@ -20,6 +20,31 @@ NetApp mejora y mejora continuamente sus productos y servicios. Estas son alguna
 
 
 
+== Julio de 2024
+
+
+
+=== Navegación más sencilla por la consola
+
+Esta función consiste en optimizar los flujos de trabajo operativos y facilitar la colaboración entre equipos.
+
+Al agrupar tus consolas, es más fácil obtener rápidamente la visibilidad que necesitas y, ahora, con el nuevo menú de navegación, puedes saltar entre diferentes consolas sin perder tu lugar, lo que facilita explorar y gestionar tu infraestructura. Alinee los grupos de paneles de control con sus runbooks operativos para mejorar aún más su experiencia.
+
+image:Dashboard_Nav_Group_Dropdown.png["Desplegable para seleccionar otro panel de control en el mismo grupo o grupos que el panel de control actual"]
+
+
+
+=== Iconos de objeto nuevo
+
+Cloud Insights ahora tiene una iconografía de objetos actualizada, lo que reduce la varianza general de los iconos utilizados en las diversas páginas de Cloud Insights, así como la agrupación de objetos similares (por ejemplo, objetos relacionados con el volumen). Los iconos anteriores basados en letras se sustituyen por gráficos basados en imágenes, lo que hace que las pantallas Cloud Insights sean más fáciles de usar y accesibles.
+
+¿No está seguro de lo que significa un icono? La siguiente tabla (también disponible en la link:reference_object_icons.html["Referencia de iconos de objeto"] página) las explica todas.
+
+image:Icons_2024.png["'Imagen que muestra todos los iconos de objetos usados en Cloud Insights agrupados en Almacenamiento, Redes, Computación e Integraciones (incluido Kubernetes) y Adicional'"]
+
+'''
+
+
 == Junio de 2024
 
 

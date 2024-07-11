@@ -5,36 +5,10 @@ summary: Referencia de iconos de objeto Cloud Insights.
 keywords: icons, assets, objects, reference, map 
 ---
 = Referencia de iconos de objeto
-:toc: macro
-:hardbreaks:
-:toclevels: 1
 :allow-uri-read: 
-:toc: 
-:toclevels: 1
-:nofooter: 
-:icons: font
-:linkattrs: 
-:imagesdir: ./media/
-:toc-position: content
 
 
 [role="lead"]
-Una referencia rápida para los iconos de objeto utilizados en Cloud Insights.
+Iconos de objetos utilizados en Cloud Insights.
 
-
-
-== Iconos de infraestructura:
-
-image:Icon_Glossary.png["Referencia de iconos de infraestructura"]
-
-
-
-== Iconos de Kubernetes:
-
-image:K8sIconsWithLabels.png["Referencia de iconos de Kubernetes, width=180"]
-
-
-
-== Iconos de mapas y supervisión del rendimiento de la red de Kubernetes:
-
-image:ServiceMap_Icons.png["Supervisión y mapa del rendimiento de la red de Kubernetes, width=640"]
+image:Icons_2024.png["'Imagen que muestra todos los iconos de objetos usados en Cloud Insights agrupados en Almacenamiento, Redes, Computación e Integraciones (incluido Kubernetes) y Adicional'"]
