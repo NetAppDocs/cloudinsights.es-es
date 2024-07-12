@@ -79,6 +79,16 @@ Debe haber identificado todos los agregados raíz que desea excluir del informe 
 Como alternativa a la aplicación manual de anotaciones a activos individuales, puede aplicar anotaciones automáticamente a varios activos mediante reglas de anotación. Las reglas de anotación se basan en las consultas que se crean y cuando se ejecutan en el sistema agregan activos nuevos a los conjuntos de activos existentes. Cuando estos conjuntos de activos se excluyen de un informe, los nuevos activos también se excluyen automáticamente.
 
 .Antes de empezar
-Debe haber creado y guardado una consulta que identifique los agregados raíz de NetApp identificados en el entorno. . Pasos . En la barra de herramientas de Cloud Insights, haga clic en *Administrar > Reglas de anotación* . Haga clic en *Agregar*
+Debe haber creado y guardado una consulta que identifique los agregados raíz de NetApp identificados en el entorno.
 
-+ el cuadro de diálogo Agregar regla aparece: .. En el cuadro Nombre , escriba un nombre único que describa la regla: *"RootAggrExclude"* .. Haga clic en Consulta y seleccione la consulta que Insight debe utilizar para aplicar la regla de anotación a: *"agregar0"* .. Haga clic en anotación y seleccione: *"raíz agg exclude"* .. Haga clic en *valor* e introduzca *Verdadero*
+.Pasos
+. En la barra de herramientas de Cloud Insights, haga clic en *Administrar > Reglas de anotación*.
+. Haga clic en *Agregar*. Aparece el cuadro de diálogo Agregar regla.
++
+.. En el cuadro Nombre, introduzca un nombre único que describa la regla: *“RootAggrExclude”*
+.. Haga clic en Consulta y seleccione la Consulta que Insight debe utilizar para aplicar la regla de anotación a: *“Aggregate0”*
+.. Haga clic en Anotación y seleccione: *“Root agg exclude”*
+.. Haga clic en *valor* e introduzca *Verdadero*
+
+
+
