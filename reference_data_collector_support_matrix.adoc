@@ -19900,55 +19900,70 @@ Productos compatibles con este recopilador de datos:
 | Total de objetos | Implementado |  |  
 
 
-| Qtree.4 o posterior | Reducida | Error de capacidad bruta | Implementado |  
+.5+| Qtree | Capacidad utilizada | Implementado |  |  
 
 
-|  | Capacidad bruta de repuesto | Implementado |  | Capacidad de bruta de los discos de repuesto (suma de todos los discos de repuesto) 
+| IOPS totales | Implementado |  |  
 
 
-| Capacidad de StoragePools | Implementado |  |  | Capacidad bruta 
+| Límite estricto de la cuota de capacidad | Implementado |  |  
 
 
-| Implementado |  |  .8+| Nodo de almacenamiento | El uso de la capacidad del nodo permite los metadatos 
+| Límite suave de cuota de capacidad | Implementado |  |  
 
 
-| Implementado |  |  | Aprovechamiento total de la capacidad del nodo 
+| Recuento de archivos | Implementado |  |  
 
 
-| Implementado |  |  | Aprovechamiento de la capacidad del nodo utilizable 
+.4+| Reducida | Error de capacidad bruta | Implementado |  |  
 
 
-| Implementado |  |  | Aprovechamiento de la capacidad del nodo utilizado 
+| Capacidad bruta de repuesto | Implementado |  | Capacidad de bruta de los discos de repuesto (suma de todos los discos de repuesto) 
 
 
-| Implementado |  |  | El uso de la capacidad del nodo utiliza los metadatos 
+| Capacidad de StoragePools | Implementado |  |  
 
 
-| Implementado |  |  | Rendimiento de lectura 
+| Capacidad bruta | Implementado |  |  
 
 
-| Implementado |  |  | Rendimiento total 
+.8+| Nodo de almacenamiento | El uso de la capacidad del nodo permite los metadatos | Implementado |  |  
 
 
-| Implementado |  | Tasa media total del disco (lectura y escritura en todos los discos) en MB/s | Rendimiento de escritura 
+| Aprovechamiento total de la capacidad del nodo | Implementado |  |  
 
 
-| Implementado |  |  .6+| Disco de StoragePool | Capacidad aprovisionada 
+| Aprovechamiento de la capacidad del nodo utilizable | Implementado |  |  
 
 
-| Implementado |  |  | Capacidad bruta 
+| Aprovechamiento de la capacidad del nodo utilizado | Implementado |  |  
 
 
-| Implementado |  |  | Capacidad total 
+| El uso de la capacidad del nodo utiliza los metadatos | Implementado |  |  
 
 
-| Implementado |  |  | Capacidad utilizada 
+| Rendimiento de lectura | Implementado |  |  
 
 
-| Implementado |  |  | Ratio de exceso de capacidad COMMIT 
+| Rendimiento total | Implementado |  | Tasa media total del disco (lectura y escritura en todos los discos) en MB/s 
 
 
-| Implementado |  | Se informa como una serie temporal | Relación de capacidad utilizada 
+| Rendimiento de escritura | Implementado |  |  
+
+
+.6+| Disco de StoragePool | Capacidad aprovisionada | Implementado |  |  
+
+
+| Capacidad bruta | Implementado |  |  | Capacidad total 
+
+
+| Implementado |  |  | Capacidad utilizada | Implementado 
+
+
+|  |  | Ratio de exceso de capacidad COMMIT | Implementado |  
+
+
+| Se informa como una serie temporal | Relación de capacidad utilizada | Implementado |  |  
 |===
 API de gestión que usa este recopilador de datos:
 

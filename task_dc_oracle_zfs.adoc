@@ -127,17 +127,38 @@ Algunas cosas para intentar si tiene problemas con este recopilador de datos:
 
 === Inventario
 
-[cols="2*"]
+[cols="2a, 2a"]
 |===
 | Problema: | Pruebe lo siguiente: 
 
 
-| "Credenciales de inicio de sesión no válidas" | Validar la cuenta de usuario y contraseña de ZFS 
+ a| 
+"Credenciales de inicio de sesión no válidas"
+ a| 
+Validar la cuenta de usuario y contraseña de ZFS
 
 
-| "Error de configuración" con el mensaje de error "el servicio DE REPOSO está desactivado" | Compruebe que el servicio REST esté activado en este dispositivo. 
+
+ a| 
+"Error de configuración" con el mensaje de error "el servicio DE REPOSO está desactivado"
+ a| 
+Compruebe que el servicio REST esté activado en este dispositivo.
 
 
-| "Error de configuración " con el mensaje de error "Usuario no autorizado para comando" | Este error se debe probablemente a que ciertos roles (por ejemplo, 'ADVANCED_ANALYTICS') no se incluyen para el usuario configurado. La aplicación del ámbito de análisis para el usuario con rol de sólo lectura puede eliminar el error. Siga estos pasos: 1. En el sistema ZFS, en la pantalla Configuración -> Usuarios, mueva el ratón sobre el rol y haga doble clic para permitir la edición 2. Seleccione "Análisis" en el menú desplegable ámbito. Aparece una lista de las propiedades posibles. 3. Haga clic en la casilla de verificación situada en la parte superior y seleccionará las tres propiedades. 4. Haga clic en el botón Agregar en el lado derecho. 5. Haga clic en el botón aplicar situado en la parte superior derecha de la ventana emergente. Se cerrará la ventana emergente. 
+
+ a| 
+"Error de configuración " con el mensaje de error "Usuario no autorizado para comando"
+ a| 
+Este error se debe probablemente a que ciertos roles (por ejemplo, 'ADVANCED_ANALYTICS') no se incluyen para el usuario configurado.
+
+La aplicación del ámbito de análisis para el usuario con rol de sólo lectura puede eliminar el error. Siga estos pasos:
+
+. En el sistema ZFS, en la pantalla Configuración -> Usuarios, mueva el ratón sobre el rol y haga doble clic para permitir la edición
+. Seleccione "Análisis" en el menú desplegable ámbito. Aparece una lista de las propiedades posibles.
+. Haga clic en la casilla de verificación situada en la parte superior y seleccionará las tres propiedades.
+. Haga clic en el botón Agregar en el lado derecho.
+. Haga clic en el botón aplicar situado en la parte superior derecha de la ventana emergente. Se cerrará la ventana emergente.
+
+
 |===
 Puede encontrar información adicional en link:concept_requesting_support.html["Soporte técnico"] o en la link:reference_data_collector_support_matrix.html["Matriz de compatibilidad de recopilador de datos"].
