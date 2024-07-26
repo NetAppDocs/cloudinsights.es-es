@@ -36,17 +36,14 @@ El operador de supervisión de Kubernetes instala kube-state-metrics automática
 
 El Operador de Supervisión de Kubernetes de NetApp extrae los contadores de métricas de estado de kube que se enumeran a continuación. Puede encontrar más detalles sobre cada contador en: https://github.com/kubernetes/kube-state-metrics/tree/main/docs#exposed-metrics[].
 
-. Métricas de ConfigMap
 . DemonSet Metrics
 . Métricas de puesta en marcha
-. Métricas de entrada
 . Métricas de espacio de nombres
 . Métricas de nodo
 . Métricas de volúmenes persistentes
 . Métricas de reclamación de volumen persistente
 . Métricas de POD
 . Métricas replicaset
-. Métricas secretas
 . Métricas de servicio
 . Métricas de Statilusionados Set
 
