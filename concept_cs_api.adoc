@@ -16,9 +16,6 @@ summary: Workload Security incluye una potente API para la integración con otra
 [role="lead"]
 La API de seguridad de carga de trabajo permite a los clientes y proveedores independientes de software (ISV) de NetApp integrar la seguridad de la carga de trabajo con otras aplicaciones, como CMDB u otros sistemas de emisión de boletos.
 
-
-NOTE: La seguridad de carga de trabajo no está disponible en la edición federal de Cloud Insights.
-
 Requisitos para el acceso a API:
 
 * Se utiliza un modelo de token de acceso de API para conceder acceso.
@@ -30,6 +27,9 @@ Requisitos para el acceso a API:
 == Documentación de API (Swagger)
 
 La información más reciente de la API se encuentra iniciando sesión en Workload Security y navegando a *Admin > API Access*. Haga clic en el enlace *Documentación de API*. La documentación de API es basada en Swagger, que proporciona una descripción breve e información de uso de la API, y permite probarlo en su entorno.
+
+
+NOTE: Si llama a la API de actividad de Forensics, use la API cloudsecure_forensics.activities.*v2*. Si realiza varias llamadas a esta API, asegúrese de que las llamadas se realicen secuencialmente, no en paralelo. Varias llamadas paralelas pueden hacer que la API se agote.
 
 
 
