@@ -28,7 +28,7 @@ NetApp mejora y mejora continuamente sus productos y servicios. Estas son alguna
 
 *Compatibilidad con NFS 4,1*
 
-El recopilador de datos SVM ahora admite versiones NFS hasta *NFS 4,1*, incluido.
+El recopilador de datos SVM ahora admite versiones NFS hasta *NFS 4,1* con ONTAP 9.15.1 o posterior.
 
 *Nueva API de Actividad Forense*
 
