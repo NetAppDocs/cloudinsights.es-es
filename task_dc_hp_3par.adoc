@@ -52,7 +52,7 @@ Nota: Sólo son asignaciones de terminología comunes y es posible que no repres
 
 == Requisitos
 
-Para configurar este colletor de datos, se requieren los siguientes elementos:
+Para configurar este recopilador de datos, es necesario lo siguiente:
 
 * La dirección IP o el FQDN del clúster InServ
 * Para el inventario, el nombre de usuario y la contraseña de sólo lectura del servidor StoreServ

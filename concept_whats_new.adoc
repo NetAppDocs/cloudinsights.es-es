@@ -24,6 +24,20 @@ NetApp mejora y mejora continuamente sus productos y servicios. Estas son alguna
 
 
 
+=== AIOps: Detección de anomalías
+
+Cloud Insights utiliza el aprendizaje automático para detectar cambios inesperados en los patrones de datos en su entorno y ofrecer alertas proactivas que le ayuden a identificar temprano los problemas.
+
+Un centro de datos se comporta de distintas maneras en distintas horas del día y en distintos días de la semana. Cloud Insights utiliza la estacionalidad semanal para comparar el comportamiento histórico de cada día y hora.
+
+La monitorización de detección de anomalías puede proporcionar alertas para situaciones como cuando la definición de “normal” no está clara, cuando el comportamiento cambia con el tiempo o cuando se trabaja con grandes cantidades de datos en las que la definición manual de umbrales no es práctica.
+
+Nueva link:concept_anomaly_detection.html["Monitores de detección de anomalías"] alerta cuando se producen anomalías como esta en las métricas de objeto que elija.
+
+image:anomaly_detection_expert_view.png["gráfico en el que se muestra una anomalía detectada"]
+
+
+
 === Mejoras en la seguridad de las cargas de trabajo
 
 *Compatibilidad con NFS 4,1*

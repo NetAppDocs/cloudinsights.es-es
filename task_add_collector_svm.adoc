@@ -29,7 +29,7 @@ Workload Security utiliza recopiladores de datos para recopilar datos de acceso 
 +
 ** Data ONTAP 9.2 y versiones posteriores. Para obtener el mejor rendimiento, utilice una versión de Data ONTAP superior a 9.13.1.
 ** Protocolo SMB, versión 3.1 y versiones anteriores.
-** Protocolo NFS versión 4.1 y anteriores
+** Versiones de NFS hasta e incluido NFS 4,1 con ONTAP 9.15.1 o posteriores.
 ** ONTAP 9.4 y versiones posteriores admiten FlexGroup
 ** ONTAP Select es compatible
 
@@ -38,7 +38,7 @@ Workload Security utiliza recopiladores de datos para recopilar datos de acceso 
 * SVM tiene varios subtipos. De estos, sólo se admiten _default_, _SYNC_Source_ y _SYNC_Destination_.
 * Un agente link:task_cs_add_agent.html["debe configurarse"] antes de configurar recopiladores de datos.
 * Asegúrese de que tiene un conector de directorio de usuario configurado correctamente; de lo contrario, los eventos mostrarán nombres de usuario codificados y no el nombre real del usuario (tal como se almacena en Active Directory) en la página “Activity Forensics”.
-* • El almacén persistente de ONTAP es compatible con 9.15.1.
+* • El almacén persistente de ONTAP es compatible con 9.14.1.
 * Para obtener un rendimiento óptimo, debe configurar el servidor FPolicy para que esté en la misma subred que el sistema de almacenamiento.
 
 
@@ -269,10 +269,34 @@ Tenga en cuenta lo siguiente:
 * En las actualizaciones de agente o recopilador, la VM del agente se reinicia o reinicia el servicio del agente, un recopilador en pausa permanecerá en estado _Paused_.
 * Si el recopilador de datos está en estado _Error_, el recopilador no se puede cambiar al estado _Paused_. El botón Pausa solo se activará si el estado del recopilador es _Running_.
 * Si el agente está desconectado, el recopilador no se puede cambiar al estado _Paused_. El recopilador pasará al estado _STOP_ y el botón Pause se desactivará.
-* No se puede suprimir un recopilador de datos en pausa.
-* Mientras está en pausa, la configuración de fpolicy en ONTAP está deshabilitada, pero no se elimina. Al reanudar, se vuelven a habilitar los ajustes de fpolicy en ONTAP.
 
 
+
+
+== Almacén persistente
+
+ONTAP 9.14.1 y versiones posteriores es compatible con el almacén persistente. Tenga en cuenta que las instrucciones de nombre del volumen varían de ONTAP 9,14 a 9,15.
+
+El almacén persistente se puede activar seleccionando la casilla de verificación en la página de edición/adición del recopilador. Después de seleccionar la casilla de verificación, se muestra un campo de texto para aceptar el nombre del volumen. El nombre del volumen es un campo obligatorio para activar el almacén persistente.
+
+* Para ONTAP 9.14.1, debe crear el volumen antes de habilitar la función e introducir el mismo nombre en el campo _Volume Name_. El tamaño de volumen recomendado es de 16GB TB.
+* Para ONTAP 9.15.1, el recopilador creará el volumen automáticamente con un tamaño de 16GB, utilizando el nombre proporcionado en el campo _Nombre del Volumen_.
+
+
+Se necesitan permisos específicos para el almacén persistente (es posible que algunos o todos estos ya existan):
+
+Modo de clúster:
+
+....
+security login rest-role create -role csrestrole -api /api/protocols/fpolicy -access all -vserver <cluster-name>
+security login rest-role create -role csrestrole -api /api/cluster/jobs/ -access readonly -vserver <cluster-name>
+....
+Modo Vserver:
+
+....
+security login rest-role create -role csrestrole -api /api/protocols/fpolicy -access all -vserver <vserver-name>
+security login rest-role create -role csrestrole -api /api/cluster/jobs/ -access readonly -vserver <vserver-name>
+....
 
 
 == Resolución de problemas
