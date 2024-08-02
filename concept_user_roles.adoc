@@ -22,28 +22,25 @@ summary: Cloud Insights proporciona varias cuentas de usuario con diferentes niv
 Cloud Insights proporciona hasta cuatro roles de cuenta de usuario: Propietario de cuenta, administrador, usuario e invitado. A cada cuenta se le asignan niveles de permiso específicos, como se indica en la tabla siguiente.  Los usuarios ya lo están link:#creating-accounts-by-inviting-users["invitado"] A Cloud Insights y a un rol específico, o puede iniciar sesión a través de link:#single-sign-on-sso-and-identity-federation["Autorización de inicio de sesión único (SSO)"] con un rol predeterminado. La autorización de SSO está disponible como función de la edición Premium de Cloud Insights.
 
 
-NOTE: Los inicios de sesión de los usuarios en la edición federal de Cloud Insights se limitan a los proveedores de identidad configurados (con sus dominios de correo electrónico especificados). Cuando se invita a un nuevo usuario a un entorno federal de Cloud Insights, su dirección de correo electrónico debe coincidir con el dominio configurado para ese entorno.
-
-
 
 == Niveles de permisos
 
 Utilice una cuenta con privilegios de administrador para crear o modificar cuentas de usuario. Cada cuenta de usuario tiene asignado un rol para cada función Cloud Insights desde los siguientes niveles de permisos.
 
 |===
-| Función | Observabilidad | Seguridad de cargas de trabajo | Creación de informes 
+| Función | Observabilidad | Seguridad de cargas de trabajo | Creación de informes | Admin 
 
 
-| Propietario de la cuenta 3+| Puede modificar las suscripciones, ver la información de facturación y uso, y realizar todas las funciones del administrador para Observabilidad, Seguridad e Informes. Los propietarios también pueden invitar y gestionar usuarios, así como gestionar la autenticación de SSO y la configuración de Federación de identidades. El primer propietario de cuenta se crea al registrarse para Cloud Insights. Se recomienda contar con al menos dos propietarios de cuentas por cada entorno de Cloud Insights.  
+| Propietario de la cuenta | Igual que Administrador | Igual que Administrador | Igual que Administrador | Igual que el administrador, así como gestionar la configuración de autenticación SSO y federación de identidades. También puede asignar propietarios adicionales. 
 
 
-| Administrador | Puede realizar todas las funciones de Observabilidad, todas las funciones de usuario, así como la gestión de recopiladores de datos, tokens de API de Observabilidad y notificaciones. Un administrador también puede invitar a otros usuarios, pero sólo puede asignar roles de Observability. | Puede realizar todas las funciones de seguridad, incluidas las de Alertas, Forensics, recopiladores de datos, directivas de respuesta automatizadas y tokens API de seguridad. Un administrador también puede invitar a otros usuarios, pero sólo puede asignar funciones de seguridad. | Puede realizar todas las funciones de usuario/autor, incluida la gestión de tokens de API de informes, así como todas las tareas administrativas como la configuración de informes y el cierre y reinicio de las tareas de creación de informes. Un administrador también puede invitar a otros usuarios, pero sólo puede asignar funciones de informes. 
+| Administrador | Puede realizar todas las funciones de observabilidad, así como la gestión de recopiladores de datos. | Puede realizar todas las funciones de seguridad, incluidas las de Alertas, Forensics, recopiladores de datos, directivas de respuesta automatizadas y tokens API de seguridad. Un administrador también puede invitar a otros usuarios, pero sólo puede asignar funciones de seguridad. | Puede realizar todas las funciones de usuario/autor, incluida la gestión de tokens de API de informes, así como todas las tareas administrativas como la configuración de informes y el cierre y reinicio de las tareas de creación de informes. Un administrador también puede invitar a otros usuarios, pero sólo puede asignar funciones de informes. | Puede invitar a otros usuarios, pero solo puede asignar roles de observabilidad. Puede ver pero no modificar la configuración de SSO. Puede crear y gestionar tokens de acceso de API. Puede ver la información de auditoría. Puede ver la información de suscripción, el uso y el historial. Puede gestionar las listas de notificaciones de alerta global y de destinatarios de notificaciones de suscripción. 
 
 
-| Usuario | Puede ver y modificar paneles, consultas, alertas, anotaciones, reglas de anotación, y aplicaciones, y administrar la resolución del dispositivo. | Puede ver y gestionar alertas y visualizar información forense. El rol de usuario puede cambiar el estado de alerta, agregar una nota, tomar instantáneas manualmente y gestionar restringir el acceso de usuario. | Puede realizar todas las funciones de invitado/consumidor, así como crear y gestionar informes y paneles. 
+| Usuario | Puede ver y modificar paneles, consultas, alertas, anotaciones, reglas de anotación, y aplicaciones, y administrar la resolución del dispositivo. | Puede ver y gestionar alertas y visualizar información forense. El rol de usuario puede cambiar el estado de alerta, agregar una nota, tomar instantáneas manualmente y gestionar restringir el acceso de usuario. | Puede realizar todas las funciones de invitado/consumidor, así como crear y gestionar informes y paneles. | No disponible 
 
 
-| Invitado | Dispone de acceso de sólo lectura a páginas de activos, paneles, alertas y puede ver y ejecutar consultas. | Puede ver Alertas y Forensics. El rol de invitado no puede cambiar el estado de alerta, agregar una nota, tomar instantáneas manualmente o restringir el acceso de usuario. | Puede ver, programar y ejecutar informes y establecer preferencias personales como las de idiomas y zonas horarias. Los invitados/consumidores no pueden crear informes ni realizar tareas administrativas. 
+| Invitado | Dispone de acceso de sólo lectura a páginas de activos, paneles, alertas y puede ver y ejecutar consultas. | Puede ver Alertas y Forensics. El rol de invitado no puede cambiar el estado de alerta, agregar una nota, tomar instantáneas manualmente o restringir el acceso de usuario. | Puede ver, programar y ejecutar informes y establecer preferencias personales como las de idiomas y zonas horarias. Los invitados/consumidores no pueden crear informes ni realizar tareas administrativas. | No disponible 
 |===
 La práctica recomendada es limitar el número de usuarios con permisos de administrador. El mayor número de cuentas debe ser cuentas de usuario o de invitado.
 
