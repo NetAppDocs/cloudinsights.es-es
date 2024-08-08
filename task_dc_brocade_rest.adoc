@@ -21,6 +21,14 @@ summary: Configurar el recopilador de DATOS REST DE Brocade FOS.
 [role="lead"]
 Cloud Insights utiliza el recopilador REST FOS de Brocade para descubrir inventario y rendimiento de los dispositivos de switch Brocade que ejecutan el firmware de FabricOS (FOS) 8,2 y posteriores.
 
+Tenga en cuenta que el nivel de usuario predeterminado de FOS no es suficientemente potente para que Cloud Insights vea todos los aspectos lógicos de un dispositivo. Necesitamos una cuenta de usuario con la función de chasis activada, así como permisos en todas las estructuras virtuales configuradas en un conmutador.
+
+A continuación se muestra un ejemplo de cómo puede crear una cuenta de usuario de “mínimo privilegio” para el uso de Cloud Insights en una sesión SSH en un dispositivo FOS:
+
+UserConfig --add NetAppCIUser -r user -l 1-128 -c user -p Qwerty!
+
+Esto creará un usuario «NetAppCIUser» con la contraseña «Qwerty!». Este usuario tiene el rol «user» (-r) en las 128 estructuras virtuales posibles ( -l ). Este usuario también tiene el rol “Chassis” requerido ( -c) con acceso de nivel de usuario asignado.
+
 De forma predeterminada, este recopilador intentará descubrir todos los dispositivos FOS que forman parte de todas las telas de las que forma parte el conmutador.
 
 
@@ -47,9 +55,6 @@ Cloud Insights adquiere la siguiente información de inventario del recopilador 
 
 
 | Cambio lógico | Cambio lógico 
-
-
-| Volumen virtual | Volumen 
 
 
 | Zona LSAN | Zona IVR 
@@ -134,9 +139,6 @@ Algunas cosas para intentar si tiene problemas con este recopilador de datos:
 | Error: "La dirección IP del chasis no coincide" | Cambie la configuración del origen de datos para utilizar la dirección IP del chasis. 
 
 
-| Reciba un mensaje que indica que más de 1 nodo ha iniciado sesión en el puerto Access Gateway | Compruebe que el dispositivo NPV funciona correctamente y que se esperan todos los WWN conectados. No adquiera directamente el dispositivo NPV. En lugar de ello, la adquisición del switch de estructura principal recopilará los datos del dispositivo NPV. 
-
-
-| Se produce un error en la recopilación de rendimiento con el tiempo de espera agotado durante el envío de la solicitud SNMP. | En función de las variables de consulta y la configuración del conmutador, algunas consultas pueden superar el tiempo de espera predeterminado.  link:https://kb.netapp.com/Cloud/BlueXP/Cloud_Insights/Cloud_Insight_Brocade_data_source_fails_performance_collection_with_a_timeout_due_to_default_SNMP_configuration["Leer más"]. 
+| El inventario falla con un 403 Prohibido | Esto puede ser simplemente credenciales erróneas, o puede ser indicativo de que está intentando usar un rol poco potente. Recuerde que los usuarios de nivel de usuario NO tienen el derecho de rol de chasis requerido, ni acceso de visualización a estructuras virtuales no predeterminadas. 
 |===
 Puede encontrar información adicional en link:concept_requesting_support.html["Soporte técnico"] o en la link:reference_data_collector_support_matrix.html["Matriz de compatibilidad de recopilador de datos"].

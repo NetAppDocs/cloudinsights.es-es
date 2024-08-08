@@ -19,7 +19,7 @@ summary: Configurar el recopilador de datos de Pure Storage.
 
 
 [role="lead"]
-Cloud Insights utiliza el recopilador de datos FlashBlade de Pure Storage para recopilar datos de inventario y rendimiento.
+Cloud Insights usa el recopilador de datos FlashBlade de Pure Storage para recopilar datos de inventario y rendimiento de clústeres FlashBlade que exponen la versión 2 de su API DE REST
 
 
 
@@ -38,13 +38,13 @@ Para cada tipo de activo adquirido por Cloud Insights, se muestra la terminolog�
 | Cabina | Reducida 
 
 
-| Controladora | Nodo de almacenamiento 
+| Hoja | Nodo de almacenamiento 
 
 
-| Volumen | Volumen 
+| Sistema de archivos | Volumen interno 
 
 
-| Mapa de LUN | Asignación de volumen 
+| Cubo de almacenamiento de objetos | Qtree 
 
 
 | Iniciador, destino | Máscara de volumen 
@@ -55,9 +55,9 @@ Nota: Sólo son asignaciones de terminología comunes y es posible que no repres
 
 == Requisitos
 
-* Dirección IP del sistema de almacenamiento
-* El nombre de usuario y la contraseña de la cuenta de administrador del sistema de almacenamiento de Pure.
-* Requisito de puerto: HTTP/HTTPS 80/443
+* Dirección IP o nombre de dominio completo del sistema de almacenamiento
+* Token API, idealmente con una vida infinita. Un usuario de nivel de sólo lectura debería ser suficiente.
+* Requisito de puerto: HTTPS 443
 
 
 
@@ -72,10 +72,10 @@ Nota: Sólo son asignaciones de terminología comunes y es posible que no repres
 | Dirección IP del host de FlashBlade | La dirección IP del sistema de almacenamiento 
 
 
-| Nombre de usuario | Nombre de usuario con privilegios de administrador 
+| Nombre de usuario | Nombre de usuario para ayudar a los administradores de Cloud Insights a recordar a qué usuario pertenece su token de API 
 
 
-| Contraseña de la cuenta con privilegios de administrador | Contraseña 
+| Token de API | Token de API 
 |===
 
 
