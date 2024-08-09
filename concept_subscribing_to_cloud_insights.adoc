@@ -61,9 +61,20 @@ La prueba gratuita de AWS Marketplace no se puede ampliar. En cualquier momento 
 
 
 
-==== ¿Qué pasa si mi prueba ha caducado?
+=== ¿Qué pasa si mi prueba ha caducado?
 
-Si su prueba gratuita ha caducado y aún no se ha suscrito a Cloud Insights, tendrá una funcionalidad limitada hasta que se suscriba.
+Si su prueba gratuita ha caducado y aún no se ha suscrito a Cloud Insights, tendrá una funcionalidad limitada hasta que se suscriba. La ingesta de datos puede cesar, y después de unas semanas, sus datos serán eliminados de acuerdo con nuestra política de retención de datos.
+
+
+
+== ¿Qué pasa si mi suscripción ha caducado?
+
+Si tienes una suscripción a Cloud Insights, pero esa suscripción ha caducado, tendrás un período de gracia de cinco días para renovar tu suscripción. Toda la funcionalidad de Cloud Insights se mantendrá activa durante este periodo de gracia.
+
+Una vez transcurrido el período de gracia, la funcionalidad Cloud Insights se suspende hasta que se renueva. Para renovar, consulte la página *Admin > Suscripción* o póngase en contacto con Ventas de NetApp.
+
+
+NOTE: Sus datos de Cloud Insights recopilados durante el final del período de gracia permanecen intactos durante 30 días después del periodo de gracia. Si renueva su suscripción dentro de este tiempo, todos sus datos hasta el momento en que transcurra el período de gracia estarán disponibles para usted.
 
 
 
@@ -123,28 +134,8 @@ Si su entorno incluye o se espera que incluya 1,000 o más unidades gestionadas,
 
 === Medición de Seguridad de Carga de Trabajo
 
-La seguridad de la carga de trabajo se mide en función de si los nodos utilizados son de gama alta, media o básica, en los siguientes recuentos de unidades gestionadas (MU):
+La seguridad de las cargas de trabajo se mide por el clúster utilizando el mismo enfoque que la medición de observabilidad.
 
-|===
-
-
-| Tipo de nodo: | Modelos de ejemplo: | Medido a: 
-
-
-| 1 Nodo de gama alta | 700 de febrero de 800, 900 9xxx | 80 Unidades gestionadas 
-
-
-| 1 Nodo de gama media | 300, 400, 500, 8x00 | 40 Unidades gestionadas 
-
-
-| 1 Nodo de gama básica | 1xx, 2xx, 2xxx | 20 Unidades gestionadas 
-
-
-| 1 ONTAP de software | CVO, FSx | 10 Unidades gestionadas 
-
-
-| 1 Nodo desconocido |  | 80 Unidades gestionadas 
-|===
 Puede ver el uso de Seguridad de carga de trabajo en la página *Admin > Suscripción* de la pestaña *Seguridad de carga de trabajo*.
 
 image:ws_metering_example_page.png["'Pestaña Admin > Subscription > Workload Security que muestra los recuentos de nodos de gama alta, media y básica'"]

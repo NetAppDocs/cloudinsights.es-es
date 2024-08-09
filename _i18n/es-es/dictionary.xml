@@ -3524,7 +3524,6 @@
   <block id="bc8745f374e91204332a0cd070e3c20c" category="inline-xref">Unidades administradas</block>
   <block id="6061bb3060aa3de79828df051d62babd" category="paragraph">Nota: Si configura más de 499 MU, entrará el estado "incumplido". Mientras su prueba está en estado de infracción, perderá acceso a alguna funcionalidad de Cloud Insights hasta que se resuelva la infracción, ya sea reduciendo el número de UM configuradas o suscribiendo a Cloud Insights.</block>
   <block id="03742c91392961db83c5540550a3500a" category="section-title">¿Qué pasa si mi prueba ha caducado?</block>
-  <block id="c23cd2c1b4017692f424447c29e0e94a" category="paragraph">Si su prueba gratuita ha caducado y aún no se ha suscrito a Cloud Insights, tendrá una funcionalidad limitada hasta que se suscriba.</block>
   <block id="6dfeca588bd5c0da6ea024447ccdb31c" category="section-title">Opciones de suscripción</block>
   <block id="0b8e651376aa14f43ba4123bb6c8d139" category="list-text">1 unidad gestionada = 2 hosts (cualquier máquina virtual o física)</block>
   <block id="dc3f15e1a26ca80a17b59bb6db783b8a" category="list-text">1 Unidad administrada = 4 TIB de capacidad sin formato de discos físicos o virtuales</block>
@@ -13325,23 +13324,6 @@ Esta búsqueda debería permitir que los datos se carguen más rápido.</block>
   <block id="1552a022e1b90a3bc06148ff722ce4a0" category="list-text">1 Unidad Gestionada = 4 vCPU de Kubentes.</block>
   <block id="959487d08cec8dfae823bcdea09da795" category="list-text">1 Ajuste de la Unidad Gestionada K8s = 2 nodos o hosts también supervisados por la infraestructura.</block>
   <block id="f057d707b9d5c17f0fad56f8204f6bff" category="section-title">Medición de Seguridad de Carga de Trabajo</block>
-  <block id="b5dbf3908d3c6b22dae178d413d4ce4e" category="paragraph">La seguridad de la carga de trabajo se mide en función de si los nodos utilizados son de gama alta, media o básica, en los siguientes recuentos de unidades gestionadas (MU):</block>
-  <block id="9deac637ce81c2ff5c02dd677114b046" category="cell">Tipo de nodo:</block>
-  <block id="5c6b02f3e1e66cf6bc61770896381c0c" category="cell">Modelos de ejemplo:</block>
-  <block id="36f40ed2512ba28c547d66d7d491162f" category="cell">Medido a:</block>
-  <block id="6e01164f2c9cb0a5194189abb25109bd" category="cell">1 Nodo de gama alta</block>
-  <block id="170a94d41c76a81a1b946d250f220856" category="cell">700 de febrero de 800, 900 9xxx</block>
-  <block id="e590a5366379c2508c4a67e27f2113df" category="cell">80 Unidades gestionadas</block>
-  <block id="12382b0c1437be6dd1acc8bc87687420" category="cell">1 Nodo de gama media</block>
-  <block id="683af03ee72fbf8b08496a0ce7512c64" category="cell">300, 400, 500, 8x00</block>
-  <block id="5d7e414148bc2dc4fe724922baf5c29c" category="cell">40 Unidades gestionadas</block>
-  <block id="4d163b200e42b8b9ca12ceb09cf806e4" category="cell">1 Nodo de gama básica</block>
-  <block id="1dfa056fe0e2fe2064a0a2d6557b6f51" category="cell">1xx, 2xx, 2xxx</block>
-  <block id="55e705ba2a458ac1ceaac25be1541fdc" category="cell">20 Unidades gestionadas</block>
-  <block id="c348d250ed74551e60d0bbe9cf4411cf" category="cell">1 ONTAP de software</block>
-  <block id="e9b32f06458a1207182046e76c5b5de8" category="cell">CVO, FSx</block>
-  <block id="27c5cf27d09e53151bd6502189ffb375" category="cell">10 Unidades gestionadas</block>
-  <block id="0c57b1acf3284a22d04607fb0452db54" category="cell">1 Nodo desconocido</block>
   <block id="3943920606f23b23925f15408e26cae2" category="paragraph">Puede ver el uso de Seguridad de carga de trabajo en la página *Admin &gt; Suscripción* de la pestaña *Seguridad de carga de trabajo*.</block>
   <block id="36e75837cd661882faf4ce93d35cafea" category="inline-image-macro">'Pestaña Admin &amp;gt; Subscription &amp;gt; Workload Security que muestra los recuentos de nodos de gama alta, media y básica'</block>
   <block id="78770d4128ce656a56bd8e8ecd580a0e" category="paragraph"><block ref="9d3e296bb7e7c4cf7ec09d1ec6e96740" category="inline-image-macro-rx" type="image"></block></block>
@@ -13436,4 +13418,10 @@ Esta búsqueda debería permitir que los datos se carguen más rápido.</block>
   <block id="ae4fab3dbcbe018dadb4c33b8b70b2e8" category="list-text">Token API, idealmente con una vida infinita. Un usuario de nivel de sólo lectura debería ser suficiente.</block>
   <block id="a4f4fd88594a0ac02050f5e403bde903" category="cell">Nombre de usuario para ayudar a los administradores de Cloud Insights a recordar a qué usuario pertenece su token de API</block>
   <block id="51408f1c75ab7bcc90f67b3ab1801733" category="cell">Token de API</block>
+  <block id="72fb59b13b553d470d4daf5fafe5e2ea" category="paragraph">Si su prueba gratuita ha caducado y aún no se ha suscrito a Cloud Insights, tendrá una funcionalidad limitada hasta que se suscriba. La ingesta de datos puede cesar, y después de unas semanas, sus datos serán eliminados de acuerdo con nuestra política de retención de datos.</block>
+  <block id="b3aa21e2b7855df7d2d86e0bcb7a55d9" category="section-title">¿Qué pasa si mi suscripción ha caducado?</block>
+  <block id="be739afed3708aea5b887ed48586b187" category="paragraph">Si tienes una suscripción a Cloud Insights, pero esa suscripción ha caducado, tendrás un período de gracia de cinco días para renovar tu suscripción. Toda la funcionalidad de Cloud Insights se mantendrá activa durante este periodo de gracia.</block>
+  <block id="1f679308dcaa1cf09288bcb2c3cdaabc" category="paragraph">Una vez transcurrido el período de gracia, la funcionalidad Cloud Insights se suspende hasta que se renueva. Para renovar, consulte la página *Admin &gt; Suscripción* o póngase en contacto con Ventas de NetApp.</block>
+  <block id="0a20fc316ac6795053a9cfbf1a2cdb5b" category="admonition">Sus datos de Cloud Insights recopilados durante el final del período de gracia permanecen intactos durante 30 días después del periodo de gracia. Si renueva su suscripción dentro de este tiempo, todos sus datos hasta el momento en que transcurra el período de gracia estarán disponibles para usted.</block>
+  <block id="c3ef097c271469a3ca9718d35396087c" category="paragraph">La seguridad de las cargas de trabajo se mide por el clúster utilizando el mismo enfoque que la medición de observabilidad.</block>
 </blocks>
