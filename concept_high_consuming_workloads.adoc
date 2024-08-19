@@ -43,13 +43,9 @@ Se produce *contención* cuando se determina que las IOPS afectan a otros recurs
 
 === Cargas de trabajo que requieren un alto consumo
 
-Para empezar a analizar las cargas de trabajo impactadas e impactantes de los recursos compartidos, haga clic en *Paneles > cargas de trabajo de alto consumo* en el menú Cloud Insights.
+Las cargas de trabajo que consume gran cantidad que detecta Cloud Insights se muestran en _Shared Resources under Stress_ Insight. Navegue a *Observabilidad > Infrastructure Insights* para ver estos detalles.
 
-image:Impacts_Workloads_Menu.png["Menú de cargas de trabajo que requieren un alto consumo"]
-
-Cloud Insights muestra una lista de cualquier carga de trabajo en la que se ha detectado una saturación. Haga clic en una carga de trabajo para abrir la consola de cargas de trabajo.
-
-image:Impacts_High_Consuming_Workloads.png["Lista de cargas de trabajo"]
+image:Impacts_Workloads_Menu.png["Comparte los recursos"]
 
 Haga clic en una carga de trabajo para ver la página de detalles correspondiente. El gráfico superior muestra la actividad del recurso compartido (por ejemplo, un pool de almacenamiento) en el que se produce la contención.
 
