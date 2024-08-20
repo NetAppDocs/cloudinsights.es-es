@@ -43,51 +43,53 @@ image:ws_manual_install_APIs.png["API de instalación manual"]
 
 
 .. Haga clic en _Save_.
-.. Copie el token de acceso a API generado. Tenga en cuenta que una vez cerrada la ventana, el token ya no se puede recuperar. En ese caso, deberá generar un nuevo token.
+
+
+
+
+[[copy-access-token]]
+. Copie el token de acceso a API generado. Tenga en cuenta que una vez cerrada la ventana, el token ya no se puede recuperar. En ese caso, deberá generar un nuevo token.
 +
 image:ws_create_and_save_token.png["Crear y guardar token de API"]
 
 +
 image:ws_create_and_save_token_confirm.png["Confirme la creación del token"]
 
-
-
-. Navegue hasta *Admin > API Access > API Documentation* (en la parte superior derecha de la página) y seleccione el icono _Workload Security_. Esto abre la documentación de Swagger para las API de seguridad de cargas de trabajo.
++
+.. Navegue hasta *Admin > API Access > API Documentation* (en la parte superior derecha de la página) y seleccione el icono _Workload Security_. Esto abre la documentación de Swagger para las API de seguridad de cargas de trabajo.
 +
 image:ws_swagger_documentation_link.png["Documentación de Swagger para Workload Security"]
 
-. Autorizar para acceder a las API _Workload Security_.
-+
-.. Haga clic en el botón _Autorizar_ en la parte superior derecha de la página.
-.. En el campo de texto _Customer ApiKey (apiKey)_, pegue el token API copiado anteriormente del Paso 1c.
-.. Haga clic en _Autorizar_ y cierre la ventana.
+.. Autorizar para acceder a las API _Workload Security_.
+
+
+. Haga clic en el botón _Autorizar_ en la parte superior derecha de la página.
+. En el campo de texto _Customer ApiKey (apiKey)_, pegue el token API copiado previamente de <<copy-access-token,Paso 1c>>.
+. Haga clic en _Autorizar_ y cierre la ventana.
 +
 image:ws_API_authorization.png["Autorice la API"]
 
-
-
-. Descargue el instalador del agente.
 +
-.. En Swagger, seleccione _cloudsecure_installers.agent_ > _/v1/cloudsecure/agents/installers/{platform}/latest_ (GET) API. Haga clic en _Pruébelo_.
-.. En el campo _platform_, introduzca _linux_. Haga clic en _Execute_.
+.. Descargue el instalador del agente.
+
+
+. En Swagger, seleccione _cloudsecure_installers.agent_ > _/v1/cloudsecure/agents/installers/{platform}/latest_ (GET) API. Haga clic en _Pruébelo_.
+. En el campo _platform_, introduzca _linux_. Haga clic en _Execute_.
 +
 image:ws_installers_agent_api_swagger.png["Swagger para API del instalador de agentes: Superior"]
 image:ws_installers_agent_api_swagger-2.png["Swagger para la API del instalador del agente: Respuesta"]
 
-.. Haga clic en “Descargar archivo” para descargar el instalador.
-.. Si el archivo de instalación se descarga externamente en un equipo distinto del sistema en el que se va a instalar el agente, copie el archivo de instalación en ese sistema.
-.. Alternativamente, puede copiar el comando curl y ejecutarlo directamente en el sistema donde se debe instalar el agente.
+. Haga clic en “Descargar archivo” para descargar el instalador.
+. Si el archivo de instalación se descarga externamente en un equipo distinto del sistema en el que se va a instalar el agente, copie el archivo de instalación en ese sistema.
+. Alternativamente, puede copiar el comando curl y ejecutarlo directamente en el sistema donde se debe instalar el agente.
 +
-*** Agregue el argumento “-o {{file_name}}” al comando cURL para guardar el archivo de instalación con el nombre deseado. El nombre real del archivo de instalación se puede encontrar en la sección Cabeceras de respuesta de Swagger. Ese nombre también se puede utilizar.
+** Agregue el argumento “-o {{file_name}}” al comando cURL para guardar el archivo de instalación con el nombre deseado. El nombre real del archivo de instalación se puede encontrar en la sección Cabeceras de respuesta de Swagger. Ese nombre también se puede utilizar.
 +
 image:ws_installers_agent_api_swagger_installer_file.png["Elija el agente más reciente a través de API: Swagger"]
 
-*** Aunque el archivo se puede descargar en cualquier ubicación, se recomienda descargarlo en una carpeta vacía en la que se puede extraer el archivo .zip del instalador.
-
-
-
-
-. Cree una carpeta nueva (recomendado), copie el archivo de instalación en esta carpeta y descomprima:
+** Aunque el archivo se puede descargar en cualquier ubicación, se recomienda descargarlo en una carpeta vacía en la que se puede extraer el archivo .zip del instalador.
++
+... Cree una carpeta nueva (recomendado), copie el archivo de instalación en esta carpeta y descomprima:
 +
 [listing]
 ----
@@ -111,7 +113,7 @@ Archive:  cloudsecure-linux-agent-installer-1.617.0.zip
   inflating: cloudsecure-agent-install.sh
   inflating: cloudsecure-agent-upgrade.sh
 ----
-. Establezca el permiso _execute_ para el archivo «cloudsecure-agent-install.sh».
+... Establezca el permiso _execute_ para el archivo «cloudsecure-agent-install.sh».
 +
 [listing]
 ----
@@ -124,27 +126,29 @@ total 153344
 -rw------- 1 root root 77834705 Apr 26 14:34 cloudsecure-linux-agent-installer-1.617.0.zip
 
 ----
-. Generar un token de una sola vez para la instalación de un nuevo agente.
+... Generar un token de una sola vez para la instalación de un nuevo agente.
 +
-Nota: El token de una sola vez generado en este paso es diferente del token de acceso de API generado en el paso 1c.
+Nota: El token único generado en este paso es diferente del token de acceso de API generado en <<copy-access-token,Paso 1c>> .
 
+
+
+
+
+. En Swagger, ejecute la API _cloudsecure_installers.agent > /v1/cloudsecure/agent/oneTimeToken_ y copie el token de la respuesta.
 +
-.. En Swagger, ejecute la API _cloudsecure_installers.agent > /v1/cloudsecure/agent/oneTimeToken_ y copie el token de la respuesta.
-
-
-. Exporte el token de una sola vez como variable de entorno.
+.. Exporte el token de una sola vez como variable de entorno.
 +
 [listing]
 ----
 [root@demo-agent ~]# export TOKEN=<<one time token generated in step 7>>
 ----
-. Si se utiliza un servidor proxy, exporte https_proxy como variable de entorno en el formato que se menciona a continuación.
+.. Si se utiliza un servidor proxy, exporte https_proxy como variable de entorno en el formato que se menciona a continuación.
 +
 [listing]
 ----
 [root@demo-agent ~]# export HTTPS_PROXY='USER:PASSWORD@PROXY_SERVER:PORT'
 ----
-. Opcional: De forma predeterminada, el agente y los recopiladores se instalarán en la ruta «/opt/netapp». Para instalar en una ruta diferente, defina la siguiente variable de entorno.
+.. Opcional: De forma predeterminada, el agente y los recopiladores se instalarán en la ruta «/opt/netapp». Para instalar en una ruta diferente, defina la siguiente variable de entorno.
 +
 [listing]
 ----
@@ -153,7 +157,7 @@ Nota: El token de una sola vez generado en este paso es diferente del token de a
 +
 Nota: Si se instala en una ruta personalizada, los recopiladores de datos y todos los demás artefactos, como los registros del agente, se crearán solo dentro de la ruta personalizada. Los registros de instalación seguirán presentes en - _/var/log/netapp/cloudsecure/install_.
 
-. Vuelva al directorio donde se descargó el instalador del agente y ejecute “cloudsecure-agent-install.sh”
+.. Vuelva al directorio donde se descargó el instalador del agente y ejecute “cloudsecure-agent-install.sh”
 +
 [listing]
 ----
@@ -170,9 +174,10 @@ sudo /bin/bash -c "TOKEN=<<one time token generated in step 7>> HTTPS_PROXY=<<pr
 +
 En este punto, el agente debe instalarse correctamente.
 
-. Comprobación de estado para la instalación del agente:
-+
-.. Ejecute “systemctl status cloudsecure-agent.service” y verifique que el servicio del agente está en estado _running_.
+.. Comprobación de estado para la instalación del agente:
+
+
+. Ejecute “systemctl status cloudsecure-agent.service” y verifique que el servicio del agente está en estado _running_.
 +
 [listing]
 ----
@@ -186,17 +191,15 @@ En este punto, el agente debe instalarse correctamente.
            ├─15887 java -Dconfig.file=/test_user/apps/cloudsecure/agent/conf/application.conf -Dagent.proxy.host= -Dagent.proxy.port= -Dagent.proxy.user= -Dagent.proxy.password= -Dagent.env=prod -Dagent.base.path=/test_user/apps/cloudsecure/agent -...
 
 ----
-.. El agente debe ser visible en la página “Agentes” y debe estar en estado “Conectado”.
+. El agente debe ser visible en la página “Agentes” y debe estar en estado “Conectado”.
 +
 image:ws_agentsPageShowingConnected.png["Interfaz de usuario que muestra agentes conectados"]
 
-
-
-. Limpieza posterior a la instalación.
 +
-.. Si la instalación del agente se realiza correctamente, se pueden eliminar los archivos descargados del instalador del agente.
+.. Limpieza posterior a la instalación.
 
 
+. Si la instalación del agente se realiza correctamente, se pueden eliminar los archivos descargados del instalador del agente.
 
 
 
@@ -295,7 +298,7 @@ Nota: En este documento hemos mencionado los pasos para instalar un recopilador 
 [root@demo-agent tmp]# ll | grep collectors
 drwx------ 2 cssys         cssys 4096 Apr 26 15:56 collectors
 ----
-. Ahora necesitamos recuperar la versión del recopilador y el UUID del recopilador. Navegue a la API «cloudsecure_config.collector-types». En la lista desplegable collectorCategory, selecciona el tipo de recopilador como “USUARIO”. Seleccione “TODOS” para obtener todos los detalles del tipo de recopilador en una sola solicitud.
+. Ahora necesitamos recuperar la versión y UUID del recopilador. Navegue a la API «cloudsecure_config.collector-types». En la lista desplegable collectorCategory, selecciona el tipo de recopilador como “USUARIO”. Seleccione “TODOS” para obtener todos los detalles del tipo de recopilador en una sola solicitud.
 +
 image:ws_API_collector_all.png["API para obtener todos los coleccionistas"]
 
@@ -307,21 +310,17 @@ image:ws_LDAP_collector_UUID.png["Respuesta de API que muestra el UUID del recop
 +
 .. Desplácese hasta «cloudsecure_installers.collector» > «/v1/cloudsecure/collector-types/installers/{collectorTypeUUID}» (GET) API. Introduzca el UUID copiado del paso anterior y descargue el archivo del instalador.
 +
-image:ws_LDAP_collector_UUID_download.png["API y respuesta para descargar el recopilador"]
+image:ws_LDAP_collector_UUID_download.png["API y respuesta al recopilador de descargas"]
 
 .. Si el archivo de instalación se descarga externamente en una máquina diferente, copie el archivo de instalación en el sistema donde se ejecuta el agente y en el directorio “/tmp/collector”.
 .. También puede copiar el comando cURL desde la misma API y ejecutarlo directamente en el sistema donde se debe instalar el recopilador.
-
-
 +
-Tenga en cuenta que el nombre del archivo debe ser el mismo que el presente en las cabeceras de respuesta de la API del recopilador de descargas. consulte la captura de pantalla a continuación.
+Tenga en cuenta que el nombre del archivo debe ser el mismo que el presente en las cabeceras de respuesta de la API del recopilador de descargas. Consulte la captura de pantalla a continuación.
 
-+
 +
 image:ws_curl_command.png["API de comando curl"]
 
-+
-+
+
 
 +
 [listing]
@@ -384,7 +383,7 @@ Se enviará una notificación por correo electrónico cuando haya disponible una
 
 . Descargue el instalador del agente más reciente.
 +
-.. Los pasos para descargar el instalador más reciente son similares a “Instalar un nuevo agente”. En Swagger, seleccione la API “cloudsecure_installers.agent” à “/v1/cloudsecure/agents/installers/{platform}/latest”, introduzca la plataforma como “linux” y descargue el archivo zip del instalador. También se puede utilizar el comando curl. Descomprima el archivo del instalador.
+.. Los pasos para descargar el instalador más reciente son similares a los de “Instalar un nuevo agente”. En Swagger, seleccione «cloudsecure_installers.agent» > «/v1/cloudsecure/agents/installers/{platform}/latest» API, introduzca la plataforma como «linux» y descargue el archivo zip del instalador. Alternativamente, también se puede utilizar un comando cURL. Descomprima el archivo del instalador.
 
 
 . Establezca el permiso de ejecución para el archivo «cloudsecure-agent-upgrade.sh».
@@ -474,7 +473,7 @@ Nota: Los pasos de actualización son los mismos para todos los tipos de recopil
 ----
 mkdir -p /tmp/collectors
 ----
-. Asegúrate de que el directorio “coleccionistas” sea propiedad de cssys:cssys.
+. Asegúrese de que el directorio “recopiladores” es propiedad de _cssys:cssys_.
 +
 [listing]
 ----
@@ -488,8 +487,7 @@ drwx------ 2 cssys         cssys 4096 Apr 26 15:56 collectors
 +
 Copiar UUID y versión del cuerpo de la respuesta.
 
-
-
++
 image:ws_collector_uuid_and_version.png["Respuesta de la API que muestra el UUID del recopilador y la versión resaltados"]
 
 . Descargue el archivo del instalador del recopilador más reciente.
@@ -499,11 +497,10 @@ image:ws_collector_uuid_and_version.png["Respuesta de la API que muestra el UUID
 +
 image:ws_curl_command_only.png["Ejemplo de comando cURL"]
 
-
-
-
-
++
 Nota: El nombre del archivo debe ser el mismo que el presente en las cabeceras de respuesta de la API del recopilador de descargas.
+
+
 
 . Cambie la propiedad del archivo zip del instalador del recopilador a cssys:cssys.
 +
@@ -522,21 +519,20 @@ total 55024
 +
 .. En Swagger, navega hasta «cloudsecure_installers.collector» > «/v1/cloudsecure/collector-types/upgrade» (PUT).
 .. En el menú desplegable «Ejemplos», seleccione «ONTAP SVM data collector upgrade json sample» para rellenar la carga útil de la muestra.
-.. Reemplace la versión con la versión copiada del paso 3 y haga clic en 'Ejecutar'.
+.. Reemplace la versión con la versión copiada <<copy-access-token,Paso 3>>y haga clic en 'Ejecutar'.
 +
 image:ws_svm_ontap_collector_upgrade_example_json.png["Ejemplo de actualización de SVM en la interfaz de usuario de Swagger"]
 
++
+Espere unos segundos. Los coleccionistas se actualizarán automáticamente.
 
 
-
-
-Espere unos segundos, los colectores se actualizarán automáticamente.
 
 . Comprobación de estado.
 +
 Los recopiladores deben estar en estado de ejecución en la interfaz de usuario.
 
-. Limpieza posterior a la actualización.
+. Limpieza posterior a la actualización:
 +
 .. Si la actualización del recopilador se realiza correctamente, todos los archivos del directorio “/tmp/collector” se pueden eliminar.
 
@@ -549,14 +545,14 @@ Repita los pasos anteriores para actualizar otros tipos de colectores también.
 
 == Problemas y correcciones de Commons.
 
-. AGENT014 Error.
+. AGENT014 Error
 +
 Este error se producirá si el archivo instalador del recopilador no está presente en el directorio “/tmp/collector” o no es accesible. Asegúrese de que el archivo de instalación está descargado y el directorio “recopiladores” y el archivo zip del instalador es propiedad de cssys:cssys y el servicio del agente de reinicio – “systemctl restart cloudsecure-agent.service”
 
 +
 image:ws_agent014_error.png["Pantalla de interfaz de usuario que muestra el error de agente 014"]
 
-. 2. Error no autorizado
+. Error no autorizado
 +
 [listing]
 ----
