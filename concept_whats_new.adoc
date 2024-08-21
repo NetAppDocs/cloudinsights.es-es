@@ -20,6 +20,47 @@ NetApp mejora y mejora continuamente sus productos y servicios. Estas son alguna
 
 
 
+== Agosto de 2024
+
+
+
+=== Ver datos específicos de su intervalo de tiempo
+
+¿Está investigando una alerta? ¿Acercar un gráfico? Estas acciones cambian el intervalo de tiempo de esas páginas. Ahora puede bloquear ese intervalo de tiempo, navegar a otras páginas de Cloud Insights y ver datos específicos de ese intervalo de tiempo bloqueado. ¡La investigación y la solución de problemas son mucho más fáciles!
+
+image:timerange_lock.png["información sobre herramientas que indica que debe hacer clic en el icono para bloquear el intervalo de tiempo que se va a utilizar en otras páginas"]
+
+
+
+=== Análisis del ratio de cambio y cambio (%)
+
+Las agregaciones de tiempo de ratio de cambio le ayudan a identificar cambios y tendencias significativos en los valores de métrica a lo largo del tiempo. Estos conocimientos son clave para entender lo que ha cambiado, como un considerable crecimiento de la capacidad durante un tiempo específico o un cambio en el rendimiento de un puerto único.
+
+* *Cambio* - Observe el cambio en una métrica entre dos puntos dentro de un período seleccionado.
+* *Ratio de cambio* - Observe el cambio proporcional en una métrica entre dos puntos, con respecto al punto inicial, dentro de un período seleccionado.
+
+
+image:change_and_change_ratio_bar_chart.png["ejemplo de gráfico de barras que muestra las opciones de agregación de cambio y cambio de relación"]
+
+
+
+=== Exportar resultados de consulta de registro a .CSV
+
+Al ver los resultados de las consultas de registro, exporte fácilmente hasta 10.000 filas a .CSV haciendo clic en el nuevo botón “Exportar”. Esto mejora la accesibilidad a los datos, facilita el análisis y la creación de informes de datos, y facilita la integración perfecta con otras herramientas de Data Processing.
+
+image:csv_export_button.png["Botón Exportar a CSV en una página de consulta de registro"]
+
+
+
+=== Resolver alertas por tiempo
+
+Cloud Insights ahora le ofrece la opción de resolver una alerta cuando la métrica supervisada permanece dentro del rango aceptable durante una duración especificada. Esto le permite centrarse en problemas reales, reduciendo el ruido asociado con métricas que cruzan repetidamente umbrales definidos mediante la consolidación de varias alertas en una.
+
+image:resolve_alert_by_time_dropdown.png["resolver una alerta basada en el tiempo"]
+
+'''
+
+
 == Julio de 2024
 
 
