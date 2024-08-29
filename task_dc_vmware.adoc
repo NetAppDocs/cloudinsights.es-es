@@ -19,7 +19,7 @@ summary: Configurar recopilador de datos de VMware.
 
 
 [role="lead"]
-El recopilador de datos para VMware vSphere recopila información de ESX Host y requiere privilegios de solo lectura para todos los objetos del centro virtual.
+El recopilador de datos de VMware vSphere recoge información de configuración y rendimiento del invitado de máquina virtual y del host ESXi, y requiere Privileges de solo lectura en todos los objetos de vSphere. A partir de agosto de 2024, el recopilador de vSphere aporta además mensajes de registro de entornos de vSphere y algunas métricas específicas de VMware. Tenga en cuenta que Cloud Insights solo puede recuperar información de registros de VMware de entornos vSphere 8.0.1 o superiores. Del mismo modo, las métricas específicas del proveedor solo son compatibles con entornos vSphere 7+. Como tal, puede que desee desactivar la casilla de verificación Registros y/o Métricas Específicas del Proveedor en un recopilador determinado si apunta a una instancia de vSphere más antigua.
 
 
 
