@@ -95,6 +95,24 @@ Salida de muestra:
  35000-55000/tcp
 
 
+== 'Anclar' a un agente en la versión actual
+
+De forma predeterminada, la seguridad de carga de trabajo de Cloud Insights actualiza los agentes automáticamente. Es posible que algunos clientes deseen pausar la actualización automática, lo que deja a un agente en su versión actual hasta que ocurra una de las siguientes acciones:
+
+* El cliente reanuda las actualizaciones automáticas del agente.
+* han pasado 30 días. Tenga en cuenta que los 30 días comienzan el día de la actualización anterior del agente más reciente, no el día en que el agente se pone en pausa.
+
+
+En cada uno de estos casos, el agente se actualizará en la siguiente actualización de seguridad de carga de trabajo. Para pausar o reanudar las actualizaciones automáticas del agente, utilice las APIs _cloudsecure_config.agents_:
+
+image:ws_pin_agent_apis.png["API de agente de PIN de WS"]
+
+Tenga en cuenta que la acción de pausa o reanudación puede tardar hasta cinco minutos en aplicarse. Puede ver las versiones actuales del agente en la página Workload Security > Collectors, en el separador Agents.
+
+image:ws_agent_version.png["Versiones de WS Agent"]
+
+
+
 == Solución de problemas de errores del agente
 
 Los problemas conocidos y sus resoluciones se describen en la siguiente tabla.
@@ -104,7 +122,7 @@ Los problemas conocidos y sus resoluciones se describen en la siguiente tabla.
 | Problema: | Resolución: 
 
 
-| La instalación del agente no puede crear la carpeta /opt/netapp/cloudsecure/agent/logs/agent.log y el archivo install.log no proporciona información relevante. | Este error se produce durante el arranque del agente. El error no se registra en los archivos de registro porque se produce antes de inicializar el registrador. El error se redirige a la salida estándar y es visible en el registro de servicios mediante el `journalctl -u cloudsecure-agent.service` comando. Este comando se puede usar para solucionar el problema con más detalle. 
+| La instalación del agente no puede crear la carpeta /opt/netapp/cloudsecure/agent/logs/agent.log y el archivo install.log no proporciona información relevante. | Este error se produce durante el arranque del agente. El error no se registra en los archivos de registro porque se produce antes de inicializar el registrador. El error se redirige a la salida estándar y es visible en el registro de servicio mediante `journalctl -u cloudsecure-agent.service` el comando. Este comando se puede utilizar para solucionar el problema con más detalle. est 
 
 
 | Se produce un error en la instalación del agente con ‘esta distribución de linux no es compatible. Salir de la instalación». | Este error aparece cuando intenta instalar el agente en un sistema no compatible. Consulte link:concept_cs_agent_requirements.html["Requisitos del agente"]. 
