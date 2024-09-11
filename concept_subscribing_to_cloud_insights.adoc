@@ -28,7 +28,7 @@ Empezar a usar Cloud Insights es tan sencillo como contar con tres sencillos pas
 
 Durante el proceso de registro, es posible elegir la región global donde se alojará el entorno de Cloud Insights. Para obtener más información, lea acerca de Cloud Insights link:security_information_and_region.html["Información y Región"].
 
-Para obtener una comparación completa de las características disponibles en las ediciones básica y premium de Cloud Insights, consulte la link:https://bluexp.netapp.com/cloud-insights-pricing["Precios de Cloud Insights"] página.
+Para obtener una comparación completa de las características disponibles en las ediciones Básica y Premium de Cloud Insights, consulte la link:https://www.netapp.com/cloud-services/cloud-insights/editions-pricing["Precios de Cloud Insights"] página.
 
 
 WARNING: Los entornos Cloud Insights Basic Edition inactivos se eliminan y se reclaman sus recursos. Un entorno se considera inactivo si no hay actividad del usuario durante 30 días consecutivos, de si no hay datos ingeridos durante 7 días consecutivos. Cloud Insights enviará una notificación y proporcionará un período de gracia de cuatro días antes de la eliminación de un entorno.
