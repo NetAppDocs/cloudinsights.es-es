@@ -92,14 +92,6 @@ NOTE: Si cambia sus preferencias de correo electrónico de usuario dentro de Clo
 
 
 
-== Nota importante para los clientes existentes
-
-Si es nuevo en Cloud Insights con Informes, ¡Bienvenido! No hay nada más que usted necesita hacer para comenzar a disfrutar de Reporting.
-
-Si ya es cliente de Premium Edition, SSO no se activa automáticamente para su entorno. Al habilitar SSO, el usuario administrador del portal de informes (Cognos) deja de existir. Esto significa que los informes que se encuentran en la carpeta _My Content_ se eliminan y deben volver a instalarse o crearse en _Team Content_. Además, los informes programados deberán configurarse una vez que se habilite el SSO.
-
-
-
 === ¿Qué pasos debo seguir para preparar mi entorno actual para habilitar SSO?
 
 Para asegurarse de que sus informes se conservan, migre todos los informes de _My Content_ a _Team Content_ mediante los pasos siguientes. Debe hacerlo antes de habilitar SSO en su entorno:
