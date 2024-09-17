@@ -210,6 +210,19 @@ Los resultados de búsqueda con y sin / serán diferentes
 |===
 
 
+== Cambios en la actividad de un usuario raíz SVM local
+
+Si un usuario de SVM raíz local realiza alguna actividad, la IP del cliente en el que se monta el recurso compartido de NFS se considera en el nombre de usuario, que se muestra como _root@<ip-address-of-the-client>_ en las páginas de actividad forense y de actividad del usuario.
+
+Por ejemplo:
+
+* Si SVM-1 se supervisa mediante Workload Security, y el usuario raíz de esa SVM monta el recurso compartido en un cliente con la dirección IP 10.197.12.40, el nombre de usuario que se muestra en la página de actividades forenses será _root@10.197.12.40_.
+* Si se monta el mismo SVM-1 en otro cliente con la dirección IP 10.197.12.41, el nombre de usuario que se muestra en la página de actividad forense será _root@10.197.12.41_.
+* Esto se hace para segregar la actividad del usuario raíz NFS por dirección IP. Anteriormente, toda la actividad se consideraba realizada únicamente por _root_ usuario, sin distinción de IP.
+
+
+
+
 == Resolución de problemas
 
 |===
