@@ -141,6 +141,7 @@ Cloud Insights admite la colección de cuentas secundarias para AWS en un único
 * Debe configurar cada cuenta secundaria para que tenga una función de AWS que permita que el ID de cuenta principal tenga acceso a los detalles de EC2 desde la cuenta secundaria.
 * Cada cuenta secundaria debe tener el nombre de función configurado como la misma cadena.
 * Introduzca esta cadena de nombre de rol en la sección recopilador de datos de AWS de Cloud Insights *Configuración avanzada*, en el campo *rol de cuenta cruzada*.
+* La cuenta en la que se instala el recopilador debe tener _DELEGATE ACCESS ADMINISTRATOR_ Privileges. Consulte la link:https://docs.aws.amazon.com/accounts/latest/reference/using-orgs-delegated-admin.html["Documentación de AWS"] para obtener más información.
 
 
 Práctica recomendada: Se recomienda asignar la política predefinida _AmazonEC2ReadOnlyAccess_ de AWS a la cuenta principal de EC2. Además, el usuario configurado en el origen de datos debe tener asignada al menos la directiva _AWSOrganizationsReadOnlyAccess_ predefinida para consultar a AWS.

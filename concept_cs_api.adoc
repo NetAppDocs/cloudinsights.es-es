@@ -62,3 +62,19 @@ Por ejemplo, utilice lo siguiente para recuperar activos de almacenamientos:
 Donde _<API_Access_Token>_ es el token que ha guardado durante la creación de la clave de acceso de API.
 
 Puede encontrar información detallada en el enlace _API Documentation_ en *Admin > API Access*.
+
+
+
+== Script para extraer datos a través de la API
+
+Los agentes de seguridad de carga de trabajo incluyen un script de exportación para facilitar las llamadas paralelas a la API de v2 dividiendo el rango de tiempo solicitado en lotes más pequeños.
+
+El script está ubicado en _/opt/NetApp/cloudsecure/agent/export-script_. Un archivo README en el mismo directorio proporciona instrucciones de uso.
+
+A continuación se muestra un comando de ejemplo para invocar el script:
+
+[source]
+----
+python3 data-export.py --tenant_url <tenant id>.cs01.cloudinsights.netapp.com --access_key %ACCESS_KEY% --path_filter "<dir path>" --user_name "<user>" --from_time "01-08-2024 00:00:00" --to_time "31-08-2024 23:59:59" --iteration_interval 12 --num_workers 3
+----
+Parámetros Clave: - `--iteration_interval 12`: Divide el rango de tiempo solicitado en intervalos de 12 horas.  `--num_workers 3`- : Fetches estos intervalos en paralelo usando 3 hilos.

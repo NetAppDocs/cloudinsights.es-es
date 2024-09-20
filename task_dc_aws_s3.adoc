@@ -132,6 +132,7 @@ Cloud Insights admite la colección de cuentas secundarias para AWS en un único
 * Debe configurar cada cuenta secundaria para que tenga un rol de AWS que permita que el ID de cuenta principal acceda a los detalles de S3 desde la cuenta secundaria.
 * Cada cuenta secundaria debe tener el nombre de función configurado como la misma cadena.
 * Introduzca esta cadena de nombre de rol en la sección recopilador de datos de AWS de Cloud Insights *Configuración avanzada*, en el campo *rol de cuenta cruzada*.
+* La cuenta en la que se instala el recopilador debe tener _DELEGATE ACCESS ADMINISTRATOR_ Privileges. Consulte la link:https://docs.aws.amazon.com/accounts/latest/reference/using-orgs-delegated-admin.html["Documentación de AWS"] para obtener más información.
 
 
 Práctica recomendada: Es muy recomendable asignar la directiva predefinida _AmazonS3ReadOnlyAccess_ de AWS a la cuenta principal de S3. Además, el usuario configurado en el origen de datos debe tener asignada al menos la directiva _AWSOrganizationsReadOnlyAccess_ predefinida para consultar a AWS.
