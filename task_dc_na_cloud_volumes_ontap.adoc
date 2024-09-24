@@ -80,7 +80,7 @@ Este recopilador de datos admite la recopilación de inventario de las configura
 | Número de subprocesos simultáneos de rendimiento | Número de subprocesos simultáneos. 
 
 
-| Recopilación avanzada de datos de contador | Compruebe que Cloud Insights recopile las métricas avanzadas de la lista siguiente. 
+| Recopilación avanzada de datos de contador | Active esta opción para que Data Infrastructure Insights recopile las métricas avanzadas de la lista que aparece a continuación. 
 |===
 
 

@@ -19,13 +19,13 @@ summary: 'Configuración del recopilador de datos de HP Enterprise Alletra 9000 
 
 
 [role="lead"]
-Cloud Insights utiliza el recopilador de datos de HP Enterprise Alletra 9000 / HP Enterprise primera (anteriormente 3PAR) para descubrir el inventario y el rendimiento.
+Data Infrastructure Insights utiliza el recopilador de datos HP Enterprise Alletra 9000 / HP Enterprise Primera (anteriormente 3PAR) para descubrir el inventario y el rendimiento.
 
 
 
 == Terminología
 
-Cloud Insights adquiere la siguiente información de inventario de este recopilador de datos. Para cada tipo de activo adquirido por Cloud Insights, se muestra la terminología más común utilizada para este activo. Al ver o solucionar problemas de este recopilador de datos, tenga en cuenta la siguiente terminología:
+Data Infrastructure Insights adquiere la siguiente información de inventario de este recopilador de datos. Para cada tipo de activo adquirido por Data Infrastructure Insights, se muestra la terminología más habitual utilizada para este activo. Al ver o solucionar problemas de este recopilador de datos, tenga en cuenta la siguiente terminología:
 
 [cols="2*"]
 |===
@@ -136,6 +136,6 @@ Algunas cosas para intentar si tiene problemas con este recopilador de datos:
 | El usuario de SMI-S configurado no tiene ningún dominio | Conceda privilegios de dominio adecuados al usuario de SMI-S configurado 
 
 
-| Cloud Insights indica que no se puede conectar/iniciar sesión al servicio SMI-S. | Confirme que no existe un firewall entre la AU de CI y la matriz que bloquearía la AU de CI para realizar conexiones TCP a 5988 o 5989. Una vez que se haya hecho, y si ha confirmado que no hay firewall, debe SSH a la matriz y usar el comando “showcim” para confirmar. Verifique que: * El servicio está habilitado * HTTPS está habilitado * el puerto HTTPS debe ser 5989 Si todos lo están, puede intentar “stopcim” y luego “startcim” para reiniciar el CIM (por ejemplo, el servicio SMI-S). 
+| Data Infrastructure Insights indica que no puede conectarse ni iniciar sesión en el servicio SMI-S. | Confirme que no existe un firewall entre la AU de CI y la matriz que bloquearía la AU de CI para realizar conexiones TCP a 5988 o 5989. Una vez que se haya hecho, y si ha confirmado que no hay firewall, debe SSH a la matriz y usar el comando “showcim” para confirmar. Verifique que: * El servicio está habilitado * HTTPS está habilitado * el puerto HTTPS debe ser 5989 Si todos lo están, puede intentar “stopcim” y luego “startcim” para reiniciar el CIM (por ejemplo, el servicio SMI-S). 
 |===
 Puede encontrar información adicional en link:concept_requesting_support.html["Soporte técnico"] o en la link:reference_data_collector_support_matrix.html["Matriz de compatibilidad de recopilador de datos"].

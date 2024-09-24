@@ -19,7 +19,7 @@ summary: Configurar el recopilador de datos de Brocade.
 
 
 [role="lead"]
-Cloud Insights utiliza el recopilador de datos de Brocade Enterprise Fabric Connectivity Manager (EFCM) para descubrir el inventario de los switches Brocade EFCM. Cloud Insights es compatible con las versiones 9.5, 9.6 y 9.7 de EFCM.
+El análisis de la infraestructura de datos utiliza el recopilador de datos del Gestor de conectividad de la estructura empresarial (EFCM) de Brocade para detectar el inventario de los switches EFCM de Brocade. Data Infrastructure Insights es compatible con las versiones 9,5, 9,6 y 9,7 de EFCM.
 
 
 
@@ -29,7 +29,7 @@ Cloud Insights utiliza el recopilador de datos de Brocade Enterprise Fabric Conn
 * La versión de EFCM debe ser 9.5, 9.6 o 9.7
 * Dirección IP del servidor EFCM
 * Nombre de usuario y contraseña de sólo lectura para el servidor EFCM
-* Acceso validado al conmutador Connectrix mediante Telnet desde el servidor Cloud Insights, utilizando el nombre de usuario de sólo lectura y la contraseña a través del puerto 51512
+* Acceso validado al conmutador Connectrix por Telnet desde el servidor Data Infrastructure Insights, utilizando el nombre de usuario y la contraseña de solo lectura a través del puerto 51512
 
 
 
@@ -82,7 +82,7 @@ Cloud Insights utiliza el recopilador de datos de Brocade Enterprise Fabric Conn
 | Excluir dispositivos | Lista de nombres de unidades separados por comas para incluir o excluir del sondeo 
 
 
-| Utilice el apodo del interruptor EFCM como nombre del conmutador | Seleccione esta opción para utilizar el apodo del interruptor EFCM como nombre del conmutador Cloud Insights. 
+| Utilice el apodo del interruptor EFCM como nombre del conmutador | Seleccione esta opción para utilizar el apodo del conmutador EFCM como nombre del conmutador Data Infrastructure Insights. 
 
 
 | Intervalo de sondeo de rendimiento (s) | Intervalo entre sondeos de rendimiento. El valor predeterminado es 300 segundos. 

@@ -19,7 +19,7 @@ keywords: data collector, queries, create
 
 
 [role="lead"]
-Este recopilador de datos admite el inventario y la recopilación de rendimiento de las configuraciones de la plataforma cloud de Google Compute. Este recopilador buscará descubrir todos los recursos informáticos dentro de todos los proyectos dentro de una organización de Google. Si tiene varias organizaciones de Google que desea descubrir con Cloud Insights, deberá implementar un recopilador de Cloud Insights por organización.
+Este recopilador de datos admite el inventario y la recopilación de rendimiento de las configuraciones de la plataforma cloud de Google Compute. Este recopilador buscará descubrir todos los recursos informáticos dentro de todos los proyectos dentro de una organización de Google. Si tiene varias organizaciones de Google que quiera descubrir con Data Infrastructure Insights, querrá poner en marcha un recopilador de Data Infrastructure Insights por organización.
 
 
 
@@ -33,7 +33,7 @@ Este recopilador de datos admite el inventario y la recopilación de rendimiento
 | ID de la organización | El ID de organización que desea descubrir con este recopilador. Este campo es obligatorio si su cuenta de servicio puede ver más de una organización 
 
 
-| Seleccione "excluir" o "incluir" para filtrar los proyectos de GCP por ID | Si desea limitar los recursos de los proyectos que se incorporan a Cloud Insights. 
+| Seleccione "excluir" o "incluir" para filtrar los proyectos de GCP por ID | Si desea limitar los recursos de los proyectos que se incluyen en Data Infrastructure Insights. 
 
 
 | ID del proyecto | La lista de Id. De proyecto que desea filtrar dentro o fuera de la detección, según el valor de la opción "Seleccionar"...." valor. La lista predeterminada está vacía 

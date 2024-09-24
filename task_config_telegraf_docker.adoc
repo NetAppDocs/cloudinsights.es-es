@@ -19,7 +19,7 @@ summary: Configuración de recopilador de datos de Docker
 
 
 [role="lead"]
-Cloud Insights utiliza este recopilador de datos para recopilar métricas de Docker.
+Data Infrastructure Insights usa este recopilador de datos para recopilar métricas de Docker.
 
 
 
@@ -80,7 +80,7 @@ volumeMounts:
 - name: docker-sock
 mountPath: /var/run/docker.sock
 ----
-Tenga en cuenta que el instalador de Cloud Insights proporcionado para la plataforma de Kubernetes se ocupa automáticamente de este mapa.
+Tenga en cuenta que el instalador de Data Infrastructure Insights proporcionado para la plataforma Kubernetes se encarga de esta asignación de forma automática.
 
 
 
@@ -122,6 +122,6 @@ Se recopilan los objetos siguientes y sus contadores:
 | Problema: | Pruebe lo siguiente: 
 
 
-| No veo mis métricas de Docker en Cloud Insights después de seguir las instrucciones en la página de configuración. | Compruebe si el agente de Telegraf registra el siguiente error: E! Error en el plugin [inputs.docker]: Se le ha denegado el permiso al intentar conectarse a la toma del demonio Docker. Si lo hace, siga los pasos necesarios para proporcionar al agente Telegraf acceso al socket Unix Docker según se ha especificado anteriormente. 
+| No veo mis métricas de Docker en Data Infrastructure Insights después de seguir las instrucciones en la página de configuración. | Compruebe si el agente de Telegraf registra el siguiente error: E! Error en el plugin [inputs.docker]: Se le ha denegado el permiso al intentar conectarse a la toma del demonio Docker. Si lo hace, siga los pasos necesarios para proporcionar al agente Telegraf acceso al socket Unix Docker según se ha especificado anteriormente. 
 |===
 Puede encontrar información adicional en link:concept_requesting_support.html["Soporte técnico"] página.

@@ -29,7 +29,7 @@ Cloud Insight adquiere la siguiente información de inventario de la colección 
 
 [cols="2*"]
 |===
-| Plazo del proveedor/modelo | Término de Cloud Insights 
+| Plazo del proveedor/modelo | Término de información sobre la infraestructura de datos 
 
 
 | Disco | Disco 
@@ -67,9 +67,9 @@ Los siguientes términos se aplican a objetos o referencias que puede encontrar 
 * IP: Generalmente serán las IP o los hostname tal como están configurados en el origen de datos
 * Versión de microcódigo: Firmware
 * Capacidad bruta: Suma base 2 de todos los discos físicos del sistema, sin importar su función
-* Latencia: Representación de lo que experimentan las cargas de trabajo a las que se enfrentan el host, tanto en lecturas como escrituras. Idealmente, Cloud Insights está abasteciéndose este valor directamente, pero este no es a menudo el caso. En lugar de que la cabina ofrezca esta configuración, Cloud Insights suele realizar un cálculo ponderado por IOPS derivado de las estadísticas de los volúmenes individuales.
-* Rendimiento: El rendimiento total de la cabina frente al host. Idealmente se obtiene directamente de la matriz, si no está disponible, Cloud Insights suma el rendimiento de los volúmenes para derivar este valor
-* Administración: Puede contener un hipervínculo para la interfaz de gestión del dispositivo. Creado mediante programación por el origen de datos de Cloud Insights como parte de los informes de inventario
+* Latencia: Representación de lo que experimentan las cargas de trabajo a las que se enfrentan el host, tanto en lecturas como escrituras. Lo ideal es que Data Infrastructure Insights obtenga este valor directamente pero este no es el caso. En lugar de que la cabina que ofrece esta opción, Data Infrastructure Insights suele realizar un cálculo ponderado por IOPS derivado de las estadísticas de los volúmenes individuales.
+* Rendimiento: El rendimiento total de la cabina frente al host. Si se fuentes idealmente directamente de la cabina, Data Infrastructure Insights suma el rendimiento de los volúmenes para obtener este valor
+* Administración: Puede contener un hipervínculo para la interfaz de gestión del dispositivo. Creado mediante programación por el origen de datos de Data Infrastructure Insights como parte de los informes de inventario  
 
 
 

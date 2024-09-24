@@ -19,7 +19,7 @@ summary: Configuración del recopilador de datos de Cisco MDS Fablic Switch.
 
 
 [role="lead"]
-Cloud Insights utiliza el recopilador de datos de los switches de estructura MDS de Cisco para descubrir el inventario de los switches de estructura Cisco MDS de la estructura y una serie de switches FCoE de Cisco Nexus en los que se ha habilitado el servicio FC.
+Información de infraestructura de datos utiliza el recopilador de datos de switches de estructura MDS de Cisco para descubrir inventario de los switches estructurales MDS de Cisco, así como una variedad de switches FCoE Cisco Nexus en los que está activado el servicio FC.
 
 Además, con este recopilador de datos podrá descubrir muchos modelos de dispositivos de Cisco que se ejecutan en el modo NPV.
 
@@ -27,11 +27,11 @@ Además, con este recopilador de datos podrá descubrir muchos modelos de dispos
 
 == Terminología
 
-Cloud Insights adquiere la siguiente información de inventario a través del recopilador de datos de switches FC de Cisco. Para cada tipo de activo adquirido por Cloud Insights, se muestra la terminología más común utilizada para este activo. Al ver o solucionar problemas de este recopilador de datos, tenga en cuenta la siguiente terminología:
+Data Infrastructure Insights adquiere la siguiente información de inventario del recopilador de datos del switch FC de Cisco. Para cada tipo de activo adquirido por Data Infrastructure Insights, se muestra la terminología más habitual utilizada para este activo. Al ver o solucionar problemas de este recopilador de datos, tenga en cuenta la siguiente terminología:
 
 [cols="2*"]
 |===
-| Plazo del proveedor/modelo | Término de Cloud Insights 
+| Plazo del proveedor/modelo | Término de información sobre la infraestructura de datos 
 
 
 | Conmutador | Conmutador 
@@ -169,7 +169,7 @@ Algunas cosas para intentar si tiene problemas con este recopilador de datos:
 | Error: El dispositivo no es un conmutador Cisco MDS | • Asegúrese de que la IP de origen de datos configurada para el dispositivo es correcta • Inicie sesión en el dispositivo mediante la GUI de Cisco Device Manager • Inicie sesión en el dispositivo mediante CLI 
 
 
-| Error: Cloud Insights no puede obtener el WWN del interruptor. | Es posible que no sea un switch FC o FCoE y es posible que, por ejemplo, no sea compatible. Asegúrese de que la IP/FQDN configurada en el origen de datos es realmente un switch FC/FCoE. 
+| Error: La información sobre la infraestructura de datos no puede obtener el WWN del switch. | Es posible que no sea un switch FC o FCoE y es posible que, por ejemplo, no sea compatible. Asegúrese de que la IP/FQDN configurada en el origen de datos es realmente un switch FC/FCoE. 
 
 
 | Error: Se han encontrado más de un nodo conectado al puerto del switch NPV | Desactivar la adquisición directa del conmutador NPV 

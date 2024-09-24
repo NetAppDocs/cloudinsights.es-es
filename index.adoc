@@ -1,10 +1,10 @@
 ---
 sidebar: sidebar 
 permalink: index.html 
-summary: Bienvenido al portal de documentación de Cloud Insights. 
+summary: Bienvenido al portal de documentación de Data Infrastructure Insights. 
 keywords:  
 ---
-= Documentación de Cloud Insights
+= Documentación de Data Infrastructure Insights
 :toc: macro
 :hardbreaks:
 :toclevels: 2
@@ -19,13 +19,13 @@ keywords:
 
 
 [role="lead"]
-Cloud Insights de NetApp es una herramienta de supervisión de infraestructura de cloud que le proporciona visibilidad sobre su infraestructura completa. Con Cloud Insights, puede supervisar, solucionar problemas y optimizar todos los recursos, incluidos los clouds públicos y los centros de datos privados.
+Data Infrastructure Insights de NetApp (anteriormente Cloud Insights) es una herramienta de supervisión de infraestructuras de cloud que le ofrece visibilidad sobre su infraestructura completa. Con Data Infrastructure Insights, podrá supervisar, solucionar problemas y optimizar todos sus recursos, incluidos los clouds públicos y los centros de datos privados.
 
 
 
-== ¿Qué puede hacer Cloud Insights por mí?
+== ¿Qué puede hacer por mí Data Infrastructure Insights?
 
-Cloud Insights proporciona supervisión de multicloud híbrido, lo que proporciona una capacidad de observación de toda la pila de infraestructura y cargas de trabajo.
+Data Infrastructure Insights proporciona supervisión de multinube híbrida, lo que le ofrece una capacidad de observación de toda la pila de la infraestructura y las cargas de trabajo.
 
 * Recopiladores de datos para infraestructura y cargas de trabajo heterogéneas, incluido Kubernetes
 * Colector Open Telegraf y API abiertas para una fácil integración
@@ -42,7 +42,7 @@ Cloud Insights proporciona supervisión de multicloud híbrido, lo que proporcio
 
 == Primeros pasos
 
-* ¿Cómo puedo hacerlo link:task_cloud_insights_onboarding_1.html["*empezar*"] Con Cloud Insights?
+* ¿Cómo link:task_cloud_insights_onboarding_1.html["*empezar*"]puedo hacer con Data Infrastructure Insights?
 * Estoy registrado. Ahora, ¿qué debo hacer?link:task_getting_started_with_cloud_insights.html["Adquisición de datos"]
 link:concept_user_roles.html["Configurar usuarios"]
 * ¡Impresionante! El futuro

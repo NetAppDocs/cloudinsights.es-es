@@ -19,7 +19,7 @@ summary: Configuración de recopilador de datos memcached
 
 
 [role="lead"]
-Cloud Insights utiliza este recopilador de datos para recopilar métricas de Memcached.
+Data Infrastructure Insights utiliza este recopilador de datos para recopilar métricas de Memcached.
 
 
 

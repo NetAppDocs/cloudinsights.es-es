@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task_config_telegraf_agent.html 
 keywords: telegraf, agent, telegraf agent 
-summary: Cloud Insights admite Telegraf como su agente para la recopilación de datos de integración y se puede configurar en Windows o Linux. 
+summary: Data Infrastructure Insights admite Telegraf como su agente para la recopilación de datos de integración y se puede configurar en Windows o Linux. 
 ---
 = Configuración de un agente para recopilar datos (Windows/Linux)
 :toc: macro
@@ -19,9 +19,9 @@ summary: Cloud Insights admite Telegraf como su agente para la recopilación de 
 
 
 [role="lead"]
-Usos de Cloud Insights link:https://docs.influxdata.com/telegraf["Telegraf"] como agente para la recopilación de datos de integración. Telegraf es un agente de servidor basado en complementos que se puede utilizar para recopilar e informar estadísticas, eventos y registros. Los complementos de entrada se utilizan para recopilar la información deseada en el agente mediante el acceso al sistema/SO directamente, llamando a API de terceros o escuchando flujos configurados (por ejemplo, Kafka, statsD, etc.). Los complementos de salida se utilizan para enviar las métricas, eventos y registros recopilados desde el agente a Cloud Insights.
+Data Infrastructure Insights utiliza link:https://docs.influxdata.com/telegraf["Telegraf"] como su agente para la recopilación de datos de integración. Telegraf es un agente de servidor basado en complementos que se puede utilizar para recopilar e informar estadísticas, eventos y registros. Los complementos de entrada se utilizan para recopilar la información deseada en el agente mediante el acceso al sistema/SO directamente, llamando a API de terceros o escuchando flujos configurados (por ejemplo, Kafka, statsD, etc.). Los plugins de salida se utilizan para enviar las métricas, los eventos y los registros recopilados del agente a Data Infrastructure Insights.
 
-La versión actual de Telegraf para Cloud Insights es *1.24.0*.
+La versión actual de Telegraf para Data Infrastructure Insights es *1.24.0*.
 
 Para obtener información sobre la instalación en Kubernetes, consulte link:task_config_telegraf_agent_k8s.html["Operador de supervisión Kubernetes de NetApp"] página.
 
@@ -45,7 +45,7 @@ Si está instalando un recopilador de datos de servicio y aún no ha configurado
 Para instalar un agente, independientemente de la plataforma que esté utilizando, primero debe hacer lo siguiente:
 
 . Inicie sesión en el host que utilizará para su agente.
-. Inicie sesión en su entorno de Cloud Insights y vaya a *Observabilidad > Colectores*.
+. Inicie sesión en su entorno Data Infrastructure Insights y vaya a *Observabilidad > Colectores*.
 . Haga clic en *+Data Collector* y elija un recopilador de datos para instalar.
 . Elegir la plataforma adecuada para el host (Windows, Linux)
 . Siga los pasos restantes para cada plataforma.
@@ -55,7 +55,7 @@ Para instalar un agente, independientemente de la plataforma que esté utilizand
 NOTE: Una vez que haya instalado un agente en un host, no necesitará instalar de nuevo un agente en ese host.
 
 
-TIP: Una vez que haya instalado un agente en un servidor/equipo virtual, Cloud Insights recopila métricas de ese sistema además de recopilar de cualquier recopilador de datos que configure. Estas métricas se recogen como link:task_config_telegraf_node.html["Métricas de "nodo""].
+TIP: Una vez que haya instalado un agente en un servidor/equipo virtual, Data Infrastructure Insights recopila métricas de ese sistema además de recopilar datos de los recopiladores de datos que configure. Estas métricas se recopilan como link:task_config_telegraf_node.html["Métricas de "nodo""].
 
 
 NOTE: Si está utilizando un proxy, lea las instrucciones del proxy de su plataforma antes de instalar el agente Telegraf.
@@ -366,7 +366,7 @@ systemctl stop telegraf (If your operating system is using systemd)
 
 == Verificando sumas de comprobación
 
-El instalador del agente de Cloud Insights realiza comprobaciones de integridad, pero algunos usuarios pueden querer realizar sus propias verificaciones antes de instalar o aplicar artefactos descargados. Esto se puede hacer descargando el instalador y generando una suma de comprobación para el paquete descargado y, a continuación, comparando la suma de comprobación con el valor que se muestra en las instrucciones de instalación.
+El instalador del agente de Data Infrastructure Insights realiza comprobaciones de integridad, pero es posible que algunos usuarios deseen realizar sus propias verificaciones antes de instalar o aplicar artefactos descargados. Esto se puede hacer descargando el instalador y generando una suma de comprobación para el paquete descargado y, a continuación, comparando la suma de comprobación con el valor que se muestra en las instrucciones de instalación.
 
 
 
@@ -403,7 +403,7 @@ Windows.
  !$($installerName=".\cloudinsights-windows.ps1") … -and $(&$installerName -download)
 
 
-El comando download-only descargará todos los artefactos necesarios de Cloud Insights al directorio de trabajo. Los artefactos incluyen, pero no se pueden limitar a:
+El comando download-only descargará todos los artefactos necesarios de Data Infrastructure Insights en el directorio de trabajo. Los artefactos incluyen, pero no se pueden limitar a:
 
 * una secuencia de comandos de instalación
 * un archivo de entorno
@@ -470,9 +470,9 @@ Algunas cosas que debe intentar si tiene problemas para configurar un agente:
 | Ejecuto la secuencia de comandos del instalador en una instalación antigua y ahora el agente no envía datos | Desinstale el agente telegraf y vuelva a ejecutar la secuencia de comandos de instalación. Siga los pasos de *Actualizar el agente* de esta página para obtener la plataforma adecuada. 
 
 
-| Ya he instalado un agente utilizando Cloud Insights | Si ya ha instalado un agente en su host/equipo virtual, no necesita volver a instalar el agente. En este caso, sólo tiene que elegir la plataforma y clave adecuadas en la pantalla de instalación del agente y hacer clic en *continuar* o *Finalizar*. 
+| Ya he instalado un agente con Data Infrastructure Insights | Si ya ha instalado un agente en su host/equipo virtual, no necesita volver a instalar el agente. En este caso, sólo tiene que elegir la plataforma y clave adecuadas en la pantalla de instalación del agente y hacer clic en *continuar* o *Finalizar*. 
 
 
-| Ya tengo un agente instalado pero no utilizando el instalador de Cloud Insights | Elimine el agente anterior y ejecute la instalación del agente de Cloud Insights para asegurarse de que los valores predeterminados del archivo de configuración son correctos. Cuando termine, haga clic en *continuar* o *Finalizar*. 
+| Ya tengo un agente instalado, pero no mediante el instalador de Data Infrastructure Insights | Elimine el agente anterior y ejecute la instalación de Data Infrastructure Insights Agent para garantizar la configuración correcta del archivo de configuración predeterminado. Cuando termine, haga clic en *continuar* o *Finalizar*. 
 |===
 Puede encontrar información adicional en link:concept_requesting_support.html["Soporte técnico"] o en la link:reference_data_collector_support_matrix.html["Matriz de compatibilidad de recopilador de datos"].

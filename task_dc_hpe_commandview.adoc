@@ -19,17 +19,17 @@ summary: Configuración del recopilador de datos de HP Enterprise Command View.
 
 
 [role="lead"]
-El recopilador de datos HP Enterprise Command View Advanced Edition admite la detección de matrices XP y P9500 a través del servidor Command View Advanced Edition (CVAE). Cloud Insights se comunica con CVAE a través de la API estándar de vista de comandos para recopilar datos de inventario y rendimiento.
+El recopilador de datos HP Enterprise Command View Advanced Edition admite la detección de matrices XP y P9500 a través del servidor Command View Advanced Edition (CVAE). Data Infrastructure Insights se comunica con CVAE mediante la API estándar de Command View para recopilar datos de inventario y rendimiento.
 
 
 
 == Terminología
 
-Cloud Insights adquiere la siguiente información de inventario del recopilador de datos de HP Enterprise Command View. Para cada tipo de activo adquirido por Cloud Insights, se muestra la terminología más común utilizada para este activo. Al ver o solucionar problemas de este recopilador de datos, tenga en cuenta la siguiente terminología:
+Data Infrastructure Insights adquiere la siguiente información de inventario del recopilador de datos de HP Enterprise Command View. Para cada tipo de activo adquirido por Data Infrastructure Insights, se muestra la terminología más habitual utilizada para este activo. Al ver o solucionar problemas de este recopilador de datos, tenga en cuenta la siguiente terminología:
 
 [cols="2*"]
 |===
-| Plazo del proveedor/modelo | Término de Cloud Insights 
+| Plazo del proveedor/modelo | Término de información sobre la infraestructura de datos 
 
 
 | PDEV | Disco 
@@ -72,14 +72,14 @@ Para poder recopilar datos de rendimiento, se deben cumplir los siguientes requi
 +
 ** El Monitor de rendimiento debe tener licencia.
 ** El interruptor de supervisión debe estar activado.
-** La herramienta de exportación (Export.exe) se debe copiar en la unidad AU de Cloud Insights y extraer en una ubicación. En CI Linux AUS, asegúrese de que "cisys" tiene permisos de lectura y ejecución.
+** La herramienta de exportación (Export.exe) debe copiarse en la AU de Data Infrastructure Insights y extraerse en una ubicación. En CI Linux AUS, asegúrese de que "cisys" tiene permisos de lectura y ejecución.
 ** La versión de la herramienta de exportación debe coincidir con la versión de microcódigo de la matriz de destino.
 
 
 * Rendimiento de AMS:
 +
 ** El Monitor de rendimiento debe tener licencia.
-** La utilidad CLI de Storage Navigator Modular 2 (SNM2) se instalará en la AU de Cloud Insights.
+** La utilidad de CLI de Storage Navigator Modular 2 (SNM2) se instala en Data Infrastructure Insights AU.
 
 
 * Requisitos de red
@@ -191,13 +191,13 @@ Algunas cosas para intentar si tiene problemas con este recopilador de datos:
 | Problema: | Pruebe lo siguiente: 
 
 
-| Error: * Error al ejecutar la utilidad de exportación * error al ejecutar el comando externo | * Confirme que la Utilidad de exportación está instalada en la Unidad de adquisición Cloud Insights * confirme que la ubicación de la Utilidad de exportación es correcta en la configuración del recopilador de datos * confirme que la dirección IP de la matriz USP/R600 es correcta en la configuración del recopilador de datos * confirme que el nombre de usuario Y la contraseña son correctas en la configuración del recopilador de datos * Confirmar que la versión de la utilidad de exportación es compatible con la versión de micro código de la cabina de almacenamiento * de la unidad de adquisición de Cloud Insights, abra un indicador CMD y haga lo siguiente: - Cambie el directorio al directorio de instalación configurado - intente establecer una conexión con la matriz de almacenamiento configurada ejecutando el archivo por lotes runWin.bat 
+| Error: * Error al ejecutar la utilidad de exportación * error al ejecutar el comando externo | * Confirme que Export Utility está instalada en la unidad de adquisición de datos de Infrastructure Insights * Confirme que la ubicación de Export Utility es correcta en la configuración del recopilador de datos * Confirme que la IP de la matriz USP/R600 es correcta en la configuración del recopilador de datos * Confirme que el nombre de usuario y la contraseña son correctos en la configuración del recopilador de datos * Confirme que la versión de Export Utility es compatible con la versión de código micro * de la matriz de almacenamiento de la versión * desde la unidad de la unidad de la unidad de almacenamiento de datos de adquisición de datos de datos de datos de datos de datos de datos de datos de la unidad de datos de datos de la unidad de información de datos runWin.bat 
 
 
 | Error: Error al iniciar sesión en la herramienta de exportación para la IP de destino | * Confirme que el nombre de usuario/contraseña es correcto * cree un ID de usuario principalmente para este recopilador de datos de HDS * confirme que no hay otros recopiladores de datos configurados para adquirir esta matriz 
 
 
-| Error: Las herramientas de exportación registradas "no se puede obtener el intervalo de tiempo para la supervisión". | * Confirme que la supervisión del rendimiento está activada en la cabina. * Intente invocar las herramientas de exportación fuera de Cloud Insights para confirmar que el problema se encuentra fuera de Cloud Insights. 
+| Error: Las herramientas de exportación registradas "no se puede obtener el intervalo de tiempo para la supervisión". | * Confirme que la supervisión del rendimiento está activada en la cabina. * Intente invocar las herramientas de exportación fuera de Data Infrastructure Insights para confirmar que el problema está fuera de Data Infrastructure Insights. 
 
 
 | Error: * Error de configuración: La cabina de almacenamiento no es compatible con la utilidad de exportación * error de configuración: La cabina de almacenamiento no es compatible con la CLI modular de Storage Navigator | * Configure solo las cabinas de almacenamiento admitidas. * Utilice “Lista de dispositivos de filtro” para excluir matrices de almacenamiento no compatibles. 
@@ -206,7 +206,7 @@ Algunas cosas para intentar si tiene problemas con este recopilador de datos:
 | Error: * Error al ejecutar el comando externo * error de configuración: La matriz de almacenamiento no ha sido informada por el inventario * error de configuración:la carpeta de exportación no contiene archivos JAR | * Compruebe la ubicación de la utilidad de exportación. * Compruebe si Storage Array in Question está configurado en Command View Server * establezca el intervalo de sondeo de rendimiento como múltiplo de 60 segundos. 
 
 
-| Error: * Error en la CLI del navegador de almacenamiento * error al ejecutar el comando auPerform * error al ejecutar el comando externo | * Confirme que la CLI modular de Storage Navigator está instalada en la unidad de adquisición de Cloud Insights * confirme que la ubicación de la CLI modular de Storage Navigator es correcta en la configuración del recopilador de datos * confirme que la IP de la matriz WMS/SMS/SMS es correcta en la configuración del recopilador de datos * Confirm Que la versión de CLI modular de Storage Navigator es compatible con la versión de micro código de la cabina de almacenamiento configurada en el recopilador de datos * de la unidad de adquisición de Cloud Insights, abra un símbolo del sistema CMD y haga lo siguiente: - Cambie el directorio al directorio de instalación configurado - intente establecer una conexión con la matriz de almacenamiento configurada ejecutando el siguiente comando “auunitref.exe”. 
+| Error: * Error en la CLI del navegador de almacenamiento * error al ejecutar el comando auPerform * error al ejecutar el comando externo | * Confirme que Storage Navigator Modular CLI está instalado en la unidad de adquisición de datos de información de infraestructura * Confirme que Storage Navigator Modular CLI es correcta en la configuración del recopilador de datos * Confirme que la IP de la matriz WMS/SMS/SMS es correcta en la configuración del recopilador de datos * Confirme que Storage Navigator Modular CLI versión es compatible con la versión de código micro de la matriz de almacenamiento configurada en el recopilador de datos * Desde la unidad de adquisición de datos, abra un CMD - Realice una instalación configurada con el siguiente directorio unitaria - Realice la siguiente: 
 
 
 | Error: Error de configuración: No se informa de la cabina de almacenamiento por inventario | Compruebe si la cabina de almacenamiento en cuestión está configurada en Command View Server 

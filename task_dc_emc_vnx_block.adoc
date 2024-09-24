@@ -19,17 +19,17 @@ summary: 'Configurar VNX Block Storage DE DELL EMC (anteriormente CLARiiON).'
 
 
 [role="lead"]
-Cloud Insights utiliza el recopilador de datos de Dell EMC VNX Block Storage (NaviSec) (anteriormente CLARiiON) para la adquisición de datos de inventario y rendimiento.
+Data Infrastructure Insights utiliza el recopilador de datos VNX Block Storage (NaviSec) de Dell EMC (anteriormente CLARiiON) para adquirir datos de inventario y rendimiento.
 
 
 
 == Terminología
 
-Cloud Insights adquiere la siguiente información de inventario del recopilador de datos de EMC VNX Block Storage. Para cada tipo de activo adquirido por Cloud Insights, se muestra la terminología más común utilizada para este activo. Al ver o solucionar problemas de este recopilador de datos, tenga en cuenta la siguiente terminología:
+Data Infrastructure Insights adquiere la siguiente información de inventario del recopilador de datos de EMC VNX Block Storage. Para cada tipo de activo adquirido por Data Infrastructure Insights, se muestra la terminología más habitual utilizada para este activo. Al ver o solucionar problemas de este recopilador de datos, tenga en cuenta la siguiente terminología:
 
 [cols="2*"]
 |===
-| Plazo del proveedor/modelo | Término de Cloud Insights 
+| Plazo del proveedor/modelo | Término de información sobre la infraestructura de datos 
 
 
 | Disco | Disco 
@@ -56,8 +56,8 @@ Se deben cumplir los siguientes requisitos para poder recopilar datos:
 
 * Dirección IP de cada procesador de almacenamiento en bloques VNX
 * Nombre de usuario y contraseña de sólo lectura de Navisphere para las matrices de almacenamiento de bloques VNX
-* NaviSecoSGUE debe estar instalado en la unidad AU de Cloud Insights
-* Validación de acceso: Ejecute NaviSecCLI desde Cloud Insights AU a cada matriz utilizando el nombre de usuario y la contraseña.
+* NaviSecCli debe estar instalado en Data Infrastructure Insights AU
+* Validación de acceso: Ejecute NaviSecCLI desde Data Infrastructure Insights AU a cada cabina con el nombre de usuario y la contraseña.
 * Requisitos de los puertos: 80, 443
 * La versión de NaviSecCLI debe corresponder con el código DE BROTE más reciente de la matriz
 * Para mejorar el rendimiento, se debe habilitar el registro de estadísticas.
@@ -133,7 +133,7 @@ Error
 * No ha seleccionado la opción de uso de cliente seguro en el asistente de configuración del recopilador de datos y no tiene instalada una versión no segura de la CLI de Naviphere.
 * Confirme que el directorio de instalación de la CLI de Navisphere es correcto en la configuración del recopilador de datos
 * Confirme que la IP del almacenamiento en bloques de VNX es correcta en la configuración del recopilador de datos:
-* Desde la Unidad de adquisición de Cloud Insights:
+* Desde la unidad de adquisición de Data Infrastructure Insights:
 +
 ** Abra un CMD.
 ** Cambie el directorio al directorio de instalación configurado
@@ -175,7 +175,7 @@ Error: Error de revisión no coincidente
 * Esto suele deberse a la actualización del firmware en el dispositivo de almacenamiento de bloques VNX, pero no a la actualización de la instalación de NaviCLI.exe. Esto también puede deberse a que haya dispositivos diferentes con distintas firmwares, pero sólo una CLI instalada (con una versión de firmware diferente).
 * Compruebe que el dispositivo y el host ejecutan versiones idénticas del software:
 +
-** En la Unidad de adquisición de Cloud Insights, abra una ventana de línea de comandos
+** En la unidad de adquisición de información sobre la infraestructura de datos, abra una ventana de línea de comandos
 ** Cambie el directorio al directorio de instalación configurado
 ** Establezca una conexión con el dispositivo CLARiiON escribiendo «navicli -h <ip> getagent».
 ** Busque el número de versión en el primer par de líneas. Ejemplo: “Agente Rev: 6.16.2 (0,1)”

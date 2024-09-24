@@ -19,17 +19,17 @@ summary: Configurar el recopilador de datos de Pure Storage.
 
 
 [role="lead"]
-Cloud Insights usa el recopilador de datos FlashBlade de Pure Storage para recopilar datos de inventario y rendimiento de clústeres FlashBlade que exponen la versión 2 de su API DE REST
+Data Infrastructure Insights usa el recopilador de datos FlashBlade de Pure Storage para recopilar datos de inventario y rendimiento de clústeres FlashBlade que exponen la versión 2 de su API DE REST
 
 
 
 == Terminología
 
-Para cada tipo de activo adquirido por Cloud Insights, se muestra la terminología más común utilizada para el activo. Al ver o solucionar problemas de este recopilador de datos, tenga en cuenta la siguiente terminología:
+Para cada tipo de activo adquirido por Data Infrastructure Insights, se muestra la terminología más habitual utilizada para el activo. Al ver o solucionar problemas de este recopilador de datos, tenga en cuenta la siguiente terminología:
 
 [cols="2*"]
 |===
-| Plazo del proveedor/modelo | Término de Cloud Insights 
+| Plazo del proveedor/modelo | Término de información sobre la infraestructura de datos 
 
 
 | Unidad (SSD) | Disco 
@@ -72,7 +72,7 @@ Nota: Sólo son asignaciones de terminología comunes y es posible que no repres
 | Dirección IP del host de FlashBlade | La dirección IP del sistema de almacenamiento 
 
 
-| Nombre de usuario | Nombre de usuario para ayudar a los administradores de Cloud Insights a recordar a qué usuario pertenece su token de API 
+| Nombre de usuario | Nombre de usuario para ayudar a los administradores de Data Infrastructure Insights a recordar a qué usuario pertenece su token de API 
 
 
 | Token de API | Token de API 

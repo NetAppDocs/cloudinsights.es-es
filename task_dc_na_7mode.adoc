@@ -25,14 +25,14 @@ En los sistemas de almacenamiento que utilizan el software Data ONTAP funcionand
 
 == Terminología
 
-Cloud Insights adquiere la siguiente información de inventario a través del recopilador de datos de 7-Mode de NetApp. Para cada tipo de activo adquirido, se muestra la terminología más común utilizada para este activo. Al ver o solucionar problemas de este recopilador de datos, tenga en cuenta la siguiente terminología:
+Data Infrastructure Insights adquiere la siguiente información de inventario del recopilador de datos NetApp 7-Mode. Para cada tipo de activo adquirido, se muestra la terminología más común utilizada para este activo. Al ver o solucionar problemas de este recopilador de datos, tenga en cuenta la siguiente terminología:
 
 
 NOTE: Este recopilador de datos es link:task_getting_started_with_cloud_insights.html#useful-definitions["obsoleto"].
 
 [cols="2*"]
 |===
-| Plazo del proveedor/modelo | Término de Cloud Insights 
+| Plazo del proveedor/modelo | Término de información sobre la infraestructura de datos 
 
 
 | Disco | Disco 
@@ -138,12 +138,12 @@ Los sistemas de almacenamiento se adquieren cuando se adquiere el filer principa
 
 * Los siguientes comandos definen las capacidades de los roles de usuario:
 +
-** "api-*": Utilice esto para permitir que Cloud Insights ejecute todos los comandos de la API de almacenamiento de NetApp.
+** «api-*»: Utilice esto para permitir que la información de la infraestructura de datos ejecute todos los comandos de la API de almacenamiento de NetApp.
 +
 Este comando es necesario para utilizar LA ZAPI.
 
-** "login-http-admin": Utilice esto para permitir que Cloud Insights se conecte al almacenamiento de NetApp a través de HTTP. Este comando es necesario para utilizar LA ZAPI.
-** «Security-api-vfiler»: Utilice esto para permitir a Cloud Insights ejecutar comandos de API de almacenamiento de NetApp para recuperar información de la unidad vFiler.
+** «Login-http-admin»: Utilice esta opción para permitir que la información de la infraestructura de datos se conecte al almacenamiento de NetApp por medio de HTTP. Este comando es necesario para utilizar LA ZAPI.
+** «Security-api-vfiler»: Utilice esto para permitir que Data Infrastructure Insights ejecute comandos de la API de almacenamiento de NetApp para recuperar información de la unidad vFiler.
 ** "cli-options": Para el comando "OPTIONS" y se utiliza para la IP del partner y las licencias habilitadas.
 ** "cli-lun": Acceda a este comando para gestionar las LUN. Muestra el estado (ruta de LUN, tamaño, estado en línea/sin conexión y estado compartido) de la LUN o clase de LUN determinada.
 ** "cli-df": Para comandos "df -s", "df -r", "df -A -r" y se utiliza para mostrar espacio libre.
@@ -181,7 +181,7 @@ Algunas cosas para intentar si tiene problemas con este recopilador de datos:
 | Recibir respuesta HTTP 401 o código de error ZAPI 13003 y ZAPI devuelve “privilegios insuficientes” o “no autorizados para este comando” | Compruebe el nombre de usuario y la contraseña, así como los privilegios y permisos de usuario. 
 
 
-| Error de “error al ejecutar el comando” | Compruebe si el usuario tiene el siguiente permiso en el dispositivo: • api-* • CLI-date • cli-df • cli-ifconfig • cli-lun • cli-opers • cli-rdfile • cli-snap • login-http-admin • Security-api-vfiler también comprueba si la versión de ONTAP es compatible con Cloud Insights y verifica si las credenciales utilizadas coinciden con las credenciales del dispositivo 
+| Error de “error al ejecutar el comando” | Compruebe si el usuario tiene el siguiente permiso en el dispositivo: • api-* • cli-date • cli-df • cli-ifconfig • cli-lun • cli-operations • cli-rdfile • cli-snap • login-http-admin • security-api-vfiler También compruebe si la versión de ONTAP es compatible con Data Infrastructure Insights y compruebe si las credenciales utilizadas coinciden con las credenciales del dispositivo 
 
 
 | La versión del clúster es < 8.1 | La versión mínima admitida del clúster es 8.1. Actualice a la versión mínima admitida. 

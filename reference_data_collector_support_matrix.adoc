@@ -17593,16 +17593,19 @@ Productos compatibles con este recopilador de datos:
 | Tipo | Separación | HTTPS |  
 
 
-.4+| Rendimiento | Qtree | Reducida | Discos con fallos | Implementado | HTTPS 
+.5+| Rendimiento | Reducida | Discos con fallos | Implementado | HTTPS |  
 
 
-|  .3+| Nodo de almacenamiento | Ratio de aciertos de caché total | Implementado | HTTPS 
+.3+| Nodo de almacenamiento | Ratio de aciertos de caché total | Implementado | HTTPS |  
 
 
-|  | Lectura total del disco reemplazada | Implementado | HTTPS 
+| Lectura total del disco reemplazada | Implementado | HTTPS |  
 
 
-|  | Total de utilización | Implementado | HTTPS 
+| Total de utilización | Implementado | HTTPS |  
+
+
+| Qtree |  | Implementado | HTTPS |  
 |===
 API de gestión que usa este recopilador de datos:
 

@@ -22,7 +22,7 @@ Este recopilador de datos adquiere inventario
 
 == Terminología
 
-Cloud Insights adquiere el inventario de este recopilador.
+Data Infrastructure Insights adquiere un inventario de este recopilador.
 
 
 

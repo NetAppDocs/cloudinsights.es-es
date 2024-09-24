@@ -26,13 +26,12 @@ Puede cambiar los criterios asociados a una consulta cuando desee cambiar los cr
 == Modificar una consulta
 
 .Pasos
-. Haga clic en *consultas* y seleccione *Mostrar todas las consultas*.
+. Haga clic en *Explorar* y seleccione *Todas las consultas métricas*.
 +
 Se muestra la página consultas.
 
 . Haga clic en el nombre de la consulta
-. Para agregar un criterio a la consulta, haga clic en image:GearIcon.png["Columnas"] y seleccione un criterio de la lista.
-. Para eliminar un filtro de la consulta, haga clic en *X* junto al filtro que desea eliminar.
+. Para agregar un criterio a la consulta, haga clic en el icono Columnas y seleccione una métrica o atributo de la lista.
 
 
 Cuando haya realizado todos los cambios necesarios, realice una de las siguientes acciones:

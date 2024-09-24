@@ -19,17 +19,17 @@ summary: Configurar el recopilador de datos de Nutanix.
 
 
 [role="lead"]
-Cloud Insights utiliza el recopilador de datos de Nutanix para detectar datos de inventario y rendimiento de los sistemas de almacenamiento Nutanix NX.
+Data Infrastructure Insights utiliza el recopilador de datos Nutanix para detectar datos de inventario y rendimiento de los sistemas de almacenamiento Nutanix NX.
 
 
 
 == Terminología
 
-Cloud Insights adquiere la siguiente información de inventario del recopilador de datos de Nutanix. Para cada tipo de activo adquirido por Cloud Insights, se muestra la terminología más común utilizada para este activo. Al ver o solucionar problemas de este recopilador de datos, tenga en cuenta la siguiente terminología:
+Data Infrastructure Insights adquiere la siguiente información de inventario del recopilador de datos Nutanix. Para cada tipo de activo adquirido por Data Infrastructure Insights, se muestra la terminología más habitual utilizada para este activo. Al ver o solucionar problemas de este recopilador de datos, tenga en cuenta la siguiente terminología:
 
 [cols="2*"]
 |===
-| Plazo del proveedor/modelo | Término de Cloud Insights 
+| Plazo del proveedor/modelo | Término de información sobre la infraestructura de datos 
 
 
 | Pool de almacenamiento | Pool de almacenamiento 

@@ -21,17 +21,17 @@ summary: Configuración del recopilador DE datos Dell EMC PowerStore.
 [role="lead"]
 El recopilador de datos de EMC PowerStore recopila información de inventario del almacenamiento de EMC PowerStore. Para la configuración, el recopilador de datos requiere la dirección IP de los procesadores de almacenamiento y un nombre de usuario y contraseña de sólo lectura.
 
-El recopilador de datos de EMC PowerStore recopila las relaciones de replicación de volumen a volumen que PowerStore coordina en otras cabinas de almacenamiento. Cloud Insights muestra una cabina de almacenamiento para cada clúster de PowerStore, y recopila datos de inventario para los nodos y los puertos de almacenamiento de ese clúster. No se recopilan datos de volúmenes o pool de almacenamiento.
+El recopilador de datos de EMC PowerStore recopila las relaciones de replicación de volumen a volumen que PowerStore coordina en otras cabinas de almacenamiento. Data Infrastructure Insights muestra una cabina de almacenamiento para cada clúster de PowerStore, y recopila datos de inventario de nodos y puertos de almacenamiento en ese clúster. No se recopilan datos de volúmenes o pool de almacenamiento.
 
 
 
 == Terminología
 
-Cloud Insights adquiere la siguiente información de inventario de este recopilador de datos. Para cada tipo de activo adquirido por Cloud Insights, se muestra la terminología más común utilizada para este activo. Al ver o solucionar problemas de este recopilador de datos, tenga en cuenta la siguiente terminología:
+Data Infrastructure Insights adquiere la siguiente información de inventario de este recopilador de datos. Para cada tipo de activo adquirido por Data Infrastructure Insights, se muestra la terminología más habitual utilizada para este activo. Al ver o solucionar problemas de este recopilador de datos, tenga en cuenta la siguiente terminología:
 
 [cols="2*"]
 |===
-| Plazo del proveedor/modelo | Término de Cloud Insights 
+| Plazo del proveedor/modelo | Término de información sobre la infraestructura de datos 
 
 
 | host | host 
@@ -103,7 +103,7 @@ Para configurar este recopilador de datos se necesita la siguiente información:
 
 | Intervalo de sondeo de inventario (minutos) | Intervalo entre sondeos de inventario. El valor predeterminado es 60 minutos. 
 |===
-La colección de rendimiento PowerStore de Cloud Insight utiliza los datos de fuente de granularidad de 5 minutos de PowerStore. De este modo, Cloud Insights sondea esos datos cada cinco minutos; por el contrario, no se puede configurar.
+La colección de rendimiento PowerStore de Cloud Insight utiliza los datos de fuente de granularidad de 5 minutos de PowerStore. Por eso, Data Infrastructure Insights sondea esos datos cada cinco minutos, algo que no se puede configurar.
 
 
 

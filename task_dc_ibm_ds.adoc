@@ -21,17 +21,17 @@ summary: Configurar el recopilador de datos de la serie DS8000 de System Storage
 [role="lead"]
 El recopilador de datos de IBM DS (CLI) es compatible con la adquisición de datos de inventario y rendimiento para dispositivos DS6xxx y DS8xxx.
 
-Los dispositivos DS3xxx, DS4xxx y DS5xxx son compatibles con link:task_dc_na_eseries.html["Recopilador de datos E-Series de NetApp"]. Debe consultar la matriz de compatibilidad de Cloud Insights para conocer los modelos y versiones de firmware compatibles.
+Los dispositivos DS3xxx, DS4xxx y DS5xxx son compatibles con el link:task_dc_na_eseries.html["Recopilador de datos E-Series de NetApp"]. Debe consultar la matriz de compatibilidad de Data Infrastructure Insights para ver los modelos y las versiones de firmware compatibles.
 
 
 
 == Terminología
 
-Cloud Insights adquiere la siguiente información de inventario del recopilador de datos de IBM DS. Para cada tipo de activo adquirido por Cloud Insights, se muestra la terminología más común utilizada para este activo. Al ver o solucionar problemas de este recopilador de datos, tenga en cuenta la siguiente terminología:
+Data Infrastructure Insights adquiere la siguiente información de inventario del recopilador de datos de IBM DS. Para cada tipo de activo adquirido por Data Infrastructure Insights, se muestra la terminología más habitual utilizada para este activo. Al ver o solucionar problemas de este recopilador de datos, tenga en cuenta la siguiente terminología:
 
 [cols="2*"]
 |===
-| Plazo del proveedor/modelo | Término de Cloud Insights 
+| Plazo del proveedor/modelo | Término de información sobre la infraestructura de datos 
 
 
 | Módulo de unidad de disco | Disco 
@@ -58,7 +58,7 @@ Necesita lo siguiente para configurar este recopilador de datos:
 
 * Dirección IP de cada matriz DS
 * Nombre de usuario y contraseña de sólo lectura en cada matriz DS
-* Software de terceros instalado en la AU de Cloud Insights: IBM _dscli_
+* Software de terceros instalado en Data Infrastructure Insights AU: IBM _dscli_
 * Validación de acceso: Ejecute comandos _dscli_ mediante el nombre de usuario y la contraseña
 * Requisitos del puerto: 80, 443 y 1750
 
@@ -128,6 +128,6 @@ Algunas cosas para intentar si tiene problemas con este recopilador de datos:
 * Intente comunicarse con la cabina a través de la consola de gestión web \https://<ip>:8452/DS8000/Console.  Sustituya <ip> por la IP configurada del recopilador de datos. 
 
 
-| Error: * No se puede ejecutar el programa * error al ejecutar el comando | * Desde la Unidad de adquisición de Cloud Insights abra un archivo CMD * Open CLI.CFG en el directorio/lib home de la CLI y compruebe la propiedad JAVA_INSTALL, edite el valor para que coincida con su entorno * Mostrar versión Java instalada en esta máquina, tecleando: "java -version" * hacer ping a la dirección IP del dispositivo de almacenamiento IBM especificado en el comando CLI emitido. * Si todo lo anterior funcionaba bien, entonces ejecute manualmente un comando CLI 
+| Error: * No se puede ejecutar el programa * error al ejecutar el comando | * Desde Data Infrastructure Insights Acquisition Unit Abra un archivo CMD * Abra el archivo CLI.CFG en directorio/lib de inicio de CLI y compruebe la propiedad JAVA_INSTALL, edite el valor para que coincida con su entorno * Mostrar la versión de Java instalada en esta máquina, escribiendo: “java -version” * Ping la dirección IP del dispositivo IBM Storage especificado en el comando CLI emitido. * Si todo lo anterior funcionaba bien, entonces ejecute manualmente un comando CLI 
 |===
 Puede encontrar información adicional en link:concept_requesting_support.html["Soporte técnico"] o en la link:reference_data_collector_support_matrix.html["Matriz de compatibilidad de recopilador de datos"].

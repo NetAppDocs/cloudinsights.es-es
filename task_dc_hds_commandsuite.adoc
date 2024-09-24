@@ -19,17 +19,17 @@ summary: Configuración del recopilador de datos de HDS Command Suite Device Man
 
 
 [role="lead"]
-El recopilador de datos Hitachi Vantara Command Suite es compatible con el servidor HiCommand Device Manager. Cloud Insights se comunica con el servidor del Administrador de dispositivos HiCommand mediante la API estándar HiCommand.
+El recopilador de datos Hitachi Vantara Command Suite es compatible con el servidor HiCommand Device Manager. Data Infrastructure Insights se comunica con el servidor HiCommand Device Manager mediante la API estándar de HiCommand.
 
 
 
 == Terminología
 
-Cloud Insights adquiere la siguiente información de inventario del recopilador de datos de Hitachi Vantara Command Suite. Para cada tipo de activo adquirido por Cloud Insights, se muestra la terminología más común utilizada para este activo. Al ver o solucionar problemas de este recopilador de datos, tenga en cuenta la siguiente terminología:
+Data Infrastructure Insights adquiere la siguiente información de inventario del recopilador de datos Hitachi Vantara Command Suite. Para cada tipo de activo adquirido por Data Infrastructure Insights, se muestra la terminología más habitual utilizada para este activo. Al ver o solucionar problemas de este recopilador de datos, tenga en cuenta la siguiente terminología:
 
 [cols="2*"]
 |===
-| Plazo del proveedor/modelo | Término de Cloud Insights 
+| Plazo del proveedor/modelo | Término de información sobre la infraestructura de datos 
 
 
 | PDEV | Disco 
@@ -77,10 +77,10 @@ Los siguientes términos se aplican a objetos o referencias que puede encontrar 
 ** Thin Provisioning: Si se trata de un pool HDP
 ** RAID Group: Es probable que las vea por algunos motivos:
 +
-Cloud Insights tiene una posición fuerte para evitar el doble de capacidad de recuento a cualquier coste. En HDS, normalmente es necesario crear grupos RAID a partir de discos, crear volúmenes de pool en esos grupos RAID y crear pools (a menudo HDP, pero podría ser un propósito especial) a partir de dichos volúmenes de pools. Si Cloud Insights informó sobre los grupos RAID subyacentes tal y como es, y los pools, la suma de su capacidad bruta superaría en gran medida la suma de los discos.
+Data Infrastructure Insights adopta una postura firme para evitar el doble de capacidad de recuento a todos los costes. En HDS, normalmente es necesario crear grupos RAID a partir de discos, crear volúmenes de pool en esos grupos RAID y crear pools (a menudo HDP, pero podría ser un propósito especial) a partir de dichos volúmenes de pools. Si Data Infrastructure Insights notificaba tanto los grupos RAID subyacentes como si estuvieran, así como los pools, la suma de su capacidad bruta superaría en gran medida la suma de los discos.
 
 +
-En su lugar, el recopilador de datos de HDS Command Suite de Cloud Insights reduce arbitrariamente el tamaño de los grupos RAID por la capacidad de los volúmenes del pool. Esto puede provocar que Cloud Insights no informe en absoluto al grupo RAID. Además, todos los grupos RAID resultantes se marcan de forma que no sean visibles en la WebUI de Cloud Insights, pero fluyen al almacén de datos de Cloud Insights (DWH). El propósito de estas decisiones es evitar el desorden de la interfaz de usuario para cosas que la mayoría de los usuarios no cuidan de - si su matriz HDS tiene grupos RAID con 50MB libres, usted probablemente no puede utilizar ese espacio libre para cualquier resultado significativo.
+En su lugar, el recopilador de datos de HDS Command Suite de Data Infrastructure Insights reduce arbitrariamente el tamaño de los grupos RAID en función de la capacidad de los volúmenes de pools. Esto puede provocar que Data Infrastructure Insights no notifique en absoluto al grupo RAID. Además, los grupos RAID resultantes se marcan de forma que no sean visibles en la WebUI de información de infraestructura de datos, pero sí fluyen al almacén de datos de información de infraestructura de datos (DWH). El propósito de estas decisiones es evitar el desorden de la interfaz de usuario para cosas que la mayoría de los usuarios no cuidan de - si su matriz HDS tiene grupos RAID con 50MB libres, usted probablemente no puede utilizar ese espacio libre para cualquier resultado significativo.
 
 
 
@@ -124,15 +124,15 @@ Para poder recopilar datos de rendimiento, se deben cumplir los siguientes requi
 +
 ** El Monitor de rendimiento debe tener licencia.
 ** El interruptor de supervisión debe estar activado.
-** La herramienta de exportación (Export.exe) se debe copiar en la unidad AU de Cloud Insights.
+** La herramienta de exportación (Export.exe) se debe copiar en la AU de información de infraestructura de datos.
 ** La versión de la herramienta de exportación debe coincidir con la versión de microcódigo de la matriz de destino.
 
 
 * Rendimiento de AMS:
 +
-** NetApp recomienda encarecidamente crear una cuenta de servicio dedicada en cabinas AMS para Cloud Insights con el fin de recuperar datos de rendimiento. El navegador de almacenamiento solo permite que una cuenta de usuario inicie sesión simultáneamente en la cabina. Si Cloud Insights utiliza la misma cuenta de usuario que las secuencias de comandos de administración o HiCommand, es posible que Cloud Insights, las secuencias de comandos de administración o HiCommand no puedan comunicarse con la matriz debido al límite de inicio de sesión de una cuenta de usuario concurrente
+** NetApp recomienda crear una cuenta de servicio dedicada en cabinas AMS para que Data Infrastructure Insights la utilice para recuperar datos de rendimiento. El navegador de almacenamiento solo permite que una cuenta de usuario inicie sesión simultáneamente en la cabina. Si Data Infrastructure Insights utiliza la misma cuenta de usuario que las secuencias de comandos de gestión o HiCommand, puede que Data Infrastructure Insights, las secuencias de comandos de gestión o HiCommand no puedan comunicarse con la cabina debido al límite de inicio de sesión simultáneo de una cuenta de usuario
 ** El Monitor de rendimiento debe tener licencia.
-** Es necesario instalar la utilidad CLI de Storage Navigator Modular 2 (SNM2) en Cloud Insights AU.
+** Se debe instalar la utilidad de CLI de Storage Navigator Modular 2 (SNM2) en Data Infrastructure Insights AU.
 
 
 
@@ -239,13 +239,13 @@ Algunas cosas para intentar si tiene problemas con este recopilador de datos:
 | Problema: | Pruebe lo siguiente: 
 
 
-| Error: * Error al ejecutar la utilidad de exportación * error al ejecutar el comando externo | * Confirme que la Utilidad de exportación está instalada en la Unidad de adquisición Cloud Insights * confirme que la ubicación de la Utilidad de exportación es correcta en la configuración del recopilador de datos * confirme que la dirección IP de la matriz USP/R600 es correcta en la configuración del recopilador de datos * confirme que el nombre de usuario Y la contraseña son correctas en la configuración del recopilador de datos * Confirmar que la versión de la utilidad de exportación es compatible con la versión de micro código de la cabina de almacenamiento * de la unidad de adquisición de Cloud Insights, abra un indicador CMD y haga lo siguiente: - Cambie el directorio al directorio de instalación configurado - intente establecer una conexión con la matriz de almacenamiento configurada ejecutando el archivo por lotes runWin.bat 
+| Error: * Error al ejecutar la utilidad de exportación * error al ejecutar el comando externo | * Confirme que Export Utility está instalada en la unidad de adquisición de datos de Infrastructure Insights * Confirme que la ubicación de Export Utility es correcta en la configuración del recopilador de datos * Confirme que la IP de la matriz USP/R600 es correcta en la configuración del recopilador de datos * Confirme que el nombre de usuario y la contraseña son correctos en la configuración del recopilador de datos * Confirme que la versión de Export Utility es compatible con la versión de código micro * de la matriz de almacenamiento de la versión * desde la unidad de la unidad de la unidad de almacenamiento de datos de adquisición de datos de datos de datos de datos de datos de datos de datos de la unidad de datos de datos de la unidad de información de datos runWin.bat 
 
 
 | Error: Error al iniciar sesión en la herramienta de exportación para la IP de destino | * Confirme que el nombre de usuario/contraseña es correcto * cree un ID de usuario principalmente para este recopilador de datos de HDS * confirme que no hay otros recopiladores de datos configurados para adquirir esta matriz 
 
 
-| Error: Las herramientas de exportación registradas "no se puede obtener el intervalo de tiempo para la supervisión". | * Confirme que la supervisión del rendimiento está activada en la cabina. * Intente invocar las herramientas de exportación fuera de Cloud Insights para confirmar que el problema se encuentra fuera de Cloud Insights. 
+| Error: Las herramientas de exportación registradas "no se puede obtener el intervalo de tiempo para la supervisión". | * Confirme que la supervisión del rendimiento está activada en la cabina. * Intente invocar las herramientas de exportación fuera de Data Infrastructure Insights para confirmar que el problema está fuera de Data Infrastructure Insights. 
 
 
 | Error: * Error de configuración: La cabina de almacenamiento no es compatible con la utilidad de exportación * error de configuración: La cabina de almacenamiento no es compatible con la CLI modular de Storage Navigator | * Configure solo las cabinas de almacenamiento admitidas. * Utilice “Lista de dispositivos de filtro” para excluir matrices de almacenamiento no compatibles. 
@@ -254,7 +254,7 @@ Algunas cosas para intentar si tiene problemas con este recopilador de datos:
 | Error: * Error al ejecutar el comando externo * error de configuración: La matriz de almacenamiento no ha sido informada por el inventario * error de configuración:la carpeta de exportación no contiene archivos JAR | * Compruebe la ubicación de la utilidad de exportación. * Compruebe si Storage Array en cuestión está configurado en HiCommand Server * establezca el intervalo de sondeo de rendimiento como múltiplo de 60 segundos. 
 
 
-| Error: * Error en la CLI del navegador de almacenamiento * error al ejecutar el comando auPerform * error al ejecutar el comando externo | * Confirme que la CLI modular de Storage Navigator está instalada en la unidad de adquisición de Cloud Insights * confirme que la ubicación de la CLI modular de Storage Navigator es correcta en la configuración del recopilador de datos * confirme que la IP de la matriz WMS/SMS/SMS es correcta en la configuración del recopilador de datos * Confirm Que la versión de CLI modular de Storage Navigator es compatible con la versión de micro código de la cabina de almacenamiento configurada en el recopilador de datos * de la unidad de adquisición de Cloud Insights, abra un símbolo del sistema CMD y haga lo siguiente: - Cambie el directorio al directorio de instalación configurado - intente establecer una conexión con la matriz de almacenamiento configurada ejecutando el siguiente comando “auunitref.exe”. 
+| Error: * Error en la CLI del navegador de almacenamiento * error al ejecutar el comando auPerform * error al ejecutar el comando externo | * Confirme que Storage Navigator Modular CLI está instalado en la unidad de adquisición de datos de información de infraestructura * Confirme que Storage Navigator Modular CLI es correcta en la configuración del recopilador de datos * Confirme que la IP de la matriz WMS/SMS/SMS es correcta en la configuración del recopilador de datos * Confirme que Storage Navigator Modular CLI versión es compatible con la versión de código micro de la matriz de almacenamiento configurada en el recopilador de datos * Desde la unidad de adquisición de datos, abra un CMD - Realice una instalación configurada con el siguiente directorio unitaria - Realice la siguiente: 
 
 
 | Error: Error de configuración: No se informa de la cabina de almacenamiento por inventario | Compruebe si la matriz de almacenamiento en cuestión está configurada en HiCommand Server 

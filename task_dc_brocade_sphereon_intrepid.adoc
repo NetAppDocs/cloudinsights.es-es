@@ -19,7 +19,7 @@ summary: Configuración del recopilador de datos Brocade Sphereon/Intrepid Switc
 
 
 [role="lead"]
-Cloud Insights utiliza el recopilador de datos Brocade Sphereon/Intrepid Switch (SNMP) para descubrir el inventario de los switches Brocade Sphereon o Intrepid.
+La información de la infraestructura de datos utiliza el recopilador de datos del conmutador Brocade Sphereon/Intrepid (SNMP) para detectar el inventario de los switches Brocade Sphereon o Intrepid.
 
 
 
@@ -27,7 +27,7 @@ Cloud Insights utiliza el recopilador de datos Brocade Sphereon/Intrepid Switch 
 
 Se deben cumplir los siguientes requisitos para configurar este recopilador de datos:
 
-* Debe haber conectividad IP a todos los switches de la estructura. Si selecciona la casilla de comprobación detectar todos los switches en la estructura, Cloud Insights identifica todos los switches de la estructura; sin embargo, necesita conectividad IP a estos switches adicionales para detectarlos.
+* Debe haber conectividad IP para todos los switches de la estructura. Si selecciona la casilla de comprobación Detectar todos los switches en la estructura, Data Infrastructure Insights identifica todos los switches de la estructura; no obstante, se necesita conectividad IP con estos switches adicionales para detectarlos.
 * Cadena de comunidad de sólo lectura si se utiliza SNMP V1 o SNMP V2.
 * Acceso HTTP al switch para obtener información de división en zonas.
 * Acceda a la validación ejecutando la utilidad snmpwalk al conmutador (consulte _<install_path>\bin\_).

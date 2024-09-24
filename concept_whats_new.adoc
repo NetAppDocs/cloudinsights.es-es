@@ -1,10 +1,10 @@
 ---
 sidebar: sidebar 
 permalink: concept_whats_new.html 
-summary: Nuevas funciones y funcionalidades disponibles en Cloud Insights. 
+summary: Nuevas funciones y funcionalidades disponibles en Data Infrastructure Insights. 
 keywords: features 
 ---
-= Novedades de Cloud Insights
+= Novedades en Data Infrastructure Insights
 :hardbreaks:
 :toclevels: 2
 :allow-uri-read: 
@@ -16,7 +16,19 @@ keywords: features
 
 
 [role="lead"]
-NetApp mejora y mejora continuamente sus productos y servicios. Estas son algunas de las últimas características y funcionalidades disponibles en las ediciones comerciales de Cloud Insights.
+NetApp mejora y mejora continuamente sus productos y servicios. A continuación se muestran algunas de las características y funcionalidades más recientes disponibles en Data Infrastructure Insights (anteriormente Cloud Insights).
+
+
+
+== Septiembre de 2024
+
+
+
+=== Presentación de información sobre la infraestructura de datos, antes Cloud Insights
+
+El martes 24 de septiembre de 2024, NetApp cambió oficialmente el nombre de Cloud Insights a *Datos de Infraestructura* (DII). Esto ha sido anunciado durante la conferencia de usuarios de Insight por Haiyan Song en su presentación principal del escenario y en un comunicado de prensa sobre el producto de la conferencia Insight.
+
+El servicio DII sigue siendo el mismo; no hay cambios ni modificaciones en las características. Esto supone un cambio de nombre para alinear mejor el nombre del servicio con sus funcionalidades para toda la infraestructura TECNOLÓGICA.
 
 
 

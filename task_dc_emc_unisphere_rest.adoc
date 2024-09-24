@@ -23,7 +23,7 @@ Este recopilador de datos adquiere los datos de inventario y rendimiento de Unis
 
 Tenga en cuenta que Dell/EMC no introdujo estadísticas por volumen hasta Unisphere 10.0. Este recopilador de datos admite 9.2.0+, pero no podrá recopilar estadísticas de volumen, ya que no existen.
 
-Una instancia de Unisphere para Vmax/PowerMax puede estar gestionando una o más cabinas de almacenamiento Symmetrix Vmax 3 o superior. Este recopilador intentará de forma predeterminada detectar todas las que son «locales» en esa instancia de Unisphere. Si una instancia de Unisphere ve matrices “remotas” (es decir, aquellas conectadas a través de la replicación SRDF), se ignorarán y para descubrir aquellas, debe crear un recopilador adicional de Unisphere en Cloud Insights apuntando a cualquier instancia de Unisphere en ese sitio las ve como locales.
+Una instancia de Unisphere para Vmax/PowerMax puede estar gestionando una o más cabinas de almacenamiento Symmetrix Vmax 3 o superior. Este recopilador intentará de forma predeterminada detectar todas las que son «locales» en esa instancia de Unisphere. Si una instancia de Unisphere ve arrays “remotos” (es decir, aquellos conectados a través de la replicación SRDF), se ignorarán y, para descubrir estos, debe crear un recopilador adicional de Unisphere en Data Infrastructure Insights que apunte a cualquier instancia de Unisphere en ese sitio los vea como locales.
 
 Para la configuración, el recopilador de datos requiere una dirección IP/FQDN del servidor Unisphere, conectividad TCP al puerto 8443 y un nombre de usuario y contraseña.
 

@@ -31,7 +31,7 @@ TIP: Los monitores y alertas están disponibles en la edición estándar de Clou
 Para ver y gestionar alertas, haga lo siguiente.
 
 . Vaya a la página *Alertas > todas las alertas*.
-. Se muestra una lista de hasta las 1,000 alertas más recientes. Puede ordenar esta lista en cualquier campo haciendo clic en el encabezado de columna del campo. La lista muestra la siguiente información. Tenga en cuenta que no todas estas columnas se muestran de forma predeterminada. Puede seleccionar las columnas que desea mostrar haciendo clic en el icono "Gear" image:gear.png["icono de marcha"]:
+. Se muestra una lista de hasta las 1,000 alertas más recientes. Puede ordenar esta lista en cualquier campo haciendo clic en el encabezado de columna del campo. La lista muestra la siguiente información. Tenga en cuenta que no todas estas columnas se muestran de forma predeterminada. Puede seleccionar las columnas que desea mostrar haciendo clic en el icono de engranaje:
 +
 ** *ID de alerta*: ID de alerta único generado por el sistema
 ** *Tiempo activado*: El momento en que el monitor correspondiente activó la alerta

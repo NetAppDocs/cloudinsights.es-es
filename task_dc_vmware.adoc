@@ -19,17 +19,17 @@ summary: Configurar recopilador de datos de VMware.
 
 
 [role="lead"]
-El recopilador de datos de VMware vSphere recoge información de configuración y rendimiento del invitado de máquina virtual y del host ESXi, y requiere Privileges de solo lectura en todos los objetos de vSphere. A partir de agosto de 2024, el recopilador de vSphere aporta además mensajes de registro de entornos de vSphere y algunas métricas específicas de VMware. Tenga en cuenta que Cloud Insights solo puede recuperar información de registros de VMware de entornos vSphere 8.0.1 o superiores. Del mismo modo, las métricas específicas del proveedor solo son compatibles con entornos vSphere 7+. Como tal, puede que desee desactivar la casilla de verificación Registros y/o Métricas Específicas del Proveedor en un recopilador determinado si apunta a una instancia de vSphere más antigua.
+El recopilador de datos de VMware vSphere recoge información de configuración y rendimiento del invitado de máquina virtual y del host ESXi, y requiere Privileges de solo lectura en todos los objetos de vSphere. A partir de agosto de 2024, el recopilador de vSphere aporta además mensajes de registro de entornos de vSphere y algunas métricas específicas de VMware. Tenga en cuenta que Data Infrastructure Insights solo puede recuperar información de registros de VMware de entornos vSphere 8.0.1 o superiores. Del mismo modo, las métricas específicas del proveedor solo son compatibles con entornos vSphere 7+. Como tal, puede que desee desactivar la casilla de verificación Registros y/o Métricas Específicas del Proveedor en un recopilador determinado si apunta a una instancia de vSphere más antigua.
 
 
 
 == Terminología
 
-Cloud Insights adquiere la siguiente información de inventario del recopilador de datos de VMware vSphere. Para cada tipo de activo adquirido, se muestra la terminología más común utilizada para el activo. Al ver o solucionar problemas de este recopilador de datos, tenga en cuenta la siguiente terminología:
+Data Infrastructure Insights adquiere la siguiente información de inventario del recopilador de datos de VMware vSphere. Para cada tipo de activo adquirido, se muestra la terminología más común utilizada para el activo. Al ver o solucionar problemas de este recopilador de datos, tenga en cuenta la siguiente terminología:
 
 [cols="2*"]
 |===
-| Plazo del proveedor/modelo | Término de Cloud Insights 
+| Plazo del proveedor/modelo | Término de información sobre la infraestructura de datos 
 
 
 | Disco virtual | Disco 
@@ -129,24 +129,24 @@ En la pantalla de configuración avanzada, marque la casilla *VM Performance* pa
 | Puerto de comunicación | El valor predeterminado es 443 
 
 
-| Filtrar lista de dispositivos... | Esta lista debe estar compuesta por coincidencias de cadenas exactas. Si va a filtrar por ESX_HOST, debe crear una lista delimitada por comas con los "nombres" exactos de los hosts ESX según se informa tanto en Cloud Insights como en vSphere. Estos "nombres" pueden ser direcciones IP, nombres de host simples o nombres de dominio completos (FQDN) - esto se determina por cómo se nombraron estos hosts cuando se agregaron originalmente a vSphere. Al filtrar por CLÚSTER, Use los nombres de clústeres de estilo Cloud Insights tal y como informa CI en hipervisores - Cloud Insights predice el nombre del clúster de vSphere con el nombre del centro de datos de vSphere y una barra inversa - "DC1/clusterA" es el nombre de clúster que Cloud Insights informará sobre un hipervisor en clusterA dentro del centro de datos DC1. 
+| Filtrar lista de dispositivos... | Esta lista debe constar de coincidencias de cadena exactas. Si va a filtrar por ESX_HOST, debe crear una lista delimitada por comas con los nombres exactos de los hosts ESX, tal y como se indica en Data Infrastructure Insights y vSphere. Estos "nombres" pueden ser direcciones IP, nombres de host simples o nombres de dominio completos (FQDN) - esto se determina por cómo se nombraron estos hosts cuando se agregaron originalmente a vSphere. Cuando se filtra por CLÚSTER, use los nombres de clústeres similares a Data Infrastructure Insights según informa CI en hipervisores: Data Infrastructure Insights precede el nombre del clúster de vSphere con el nombre del centro de datos de vSphere y una barra diagonal: «DC1/clusterA» es el nombre del clúster. Data Infrastructure Insights informará sobre un hipervisor en clusterA dentro del centro de datos DC1. 
 
 
 | Intervalo de sondeo de rendimiento (s) | El valor predeterminado es 300 
 |===
 
 
-== Asignar etiquetas de VMware a anotaciones de Cloud Insights
+== Asignar las etiquetas de VMware a anotaciones de Data Infrastructure Insights
 
-El recopilador de datos de VMware permite completar anotaciones de Cloud Insights con etiquetas configuradas en VMware. Las anotaciones deben tener el mismo nombre que las etiquetas de VMware. Cloud Insights siempre rellenará anotaciones con el mismo nombre de tipo de texto y hará un "mejor intento" para rellenar anotaciones de otros tipos (número, booleano, etc.). Si la anotación es de un tipo diferente y el recopilador de datos no la rellena, puede que sea necesario eliminar la anotación y volver a crearla como un tipo de texto.
+El recopilador de datos de VMware le permite completar las anotaciones de Data Infrastructure Insights con etiquetas configuradas en VMware. Las anotaciones deben tener el mismo nombre que las etiquetas de VMware. Data Infrastructure Insights siempre rellenará anotaciones de tipo texto con el mismo nombre y hará el «mejor intento» de completar anotaciones de otro tipo (número, booleano, etc.). Si la anotación es de un tipo diferente y el recopilador de datos no la rellena, puede que sea necesario eliminar la anotación y volver a crearla como un tipo de texto.
 
-Tenga en cuenta que las etiquetas de VMware pueden distinguir entre mayúsculas y minúsculas, mientras que las etiquetas de Cloud Insights no distinguen entre mayúsculas y minúsculas. De modo que si creas una anotación llamada «PROPIETARIO» en Cloud Insights y etiquetas denominadas «PROPIETARIO», «propietario» y «propietario» en VMware, todas esas variaciones de «propietario» se asignarían a la anotación de «propietario» DE Cloud Insight.
+Tenga en cuenta que las etiquetas de VMware pueden distinguir entre mayúsculas y minúsculas, mientras que las etiquetas de Data Infrastructure Insights no distinguen entre mayúsculas y minúsculas. De modo que si creas una anotación llamada «PROPIETARIO» en los Datos de Infraestructura y etiquetas llamadas «PROPIETARIO», «propietario» y «propietario» en VMware, todas esas variaciones de «propietario» se asignarían a la anotación de «propietario» DE Cloud Insight.
 
 Tenga en cuenta lo siguiente:
 
-* Actualmente, Cloud Insights solo publica automáticamente información de soporte para dispositivos NetApp.
+* En la actualidad, Data Infrastructure Insights solo publica automáticamente información de soporte para dispositivos NetApp.
 * Dado que esta información de soporte se mantiene en forma de anotación, puede consultarla o utilizarla en paneles de control.
-* Si un usuario sobrescribe o vacía el valor de la anotación, el valor se rellena automáticamente de nuevo cuando Cloud Insights actualiza las anotaciones, lo que hace una vez al día.
+* Si un usuario sobrescribe o vacía el valor de la anotación, el valor se vuelve a rellenar automáticamente cuando Data Infrastructure Insights actualiza las anotaciones, lo que hace una vez al día.
 
 
 

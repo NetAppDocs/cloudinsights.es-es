@@ -19,7 +19,7 @@ summary: Configurar recopilador de datos de computación de Azure.
 
 
 [role="lead"]
-Cloud Insights utiliza el recopilador de datos de computación de Azure para adquirir datos de inventario y rendimiento de instancias de computación de Azure.
+Data Infrastructure Insights utiliza el recopilador de datos informáticos de Azure para adquirir datos de inventario y rendimiento de las instancias de computación de Azure.
 
 
 
@@ -33,9 +33,9 @@ Necesita la siguiente información para configurar este recopilador de datos.
 * IP de Azure Resource Manager (management.core.windows.net)
 * ID de aplicación principal de servicios Azure (cliente) (se requiere rol de lector)
 * Clave de autenticación principal del servicio Azure (contraseña de usuario)
-* Debe configurar una cuenta de Azure para la detección de Cloud Insights.
+* Tienes que configurar una cuenta de Azure para la detección de Data Infrastructure Insights.
 +
-Una vez que la cuenta se haya configurado correctamente y registre la aplicación en Azure, tendrá las credenciales necesarias para descubrir la instancia de Azure con Cloud Insights. En el siguiente enlace se describe cómo configurar la cuenta para la detección.https://docs.microsoft.com/en-us/azure/active-directory/develop/howto-create-service-principal-portal[]
+Una vez que la cuenta esté configurada correctamente y registre la aplicación en Azure, tendrá las credenciales necesarias para detectar la instancia de Azure con Data Infrastructure Insights. El enlace siguiente describe cómo configurar la cuenta para la detección. https://docs.microsoft.com/en-us/azure/active-directory/develop/howto-create-service-principal-portal[]
 
 
 

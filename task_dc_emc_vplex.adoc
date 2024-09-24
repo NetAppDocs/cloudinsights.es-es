@@ -22,17 +22,17 @@ summary: Configurar el recopilador de datos de VPLEX.
 Este recopilador de datos adquiere datos de inventario y rendimiento de los sistemas de almacenamiento de EMC VPLEX. Para la configuración, el recopilador de datos requiere la dirección IP del servidor VPLEX y una cuenta de dominio de nivel administrativo.
 
 
-NOTE: La recopilación de rendimiento de Cloud Insights de los clústeres de Vplex requiere que el servicio de archivado de rendimiento esté operativo, para llenar los archivos .CSV y registros que Cloud Insights recupera a través de copias de archivos basadas en SCP. NetApp ha observado que muchas actualizaciones de la estación de gestión/actualización del firmware Vplex dejarán esta funcionalidad en estado no operativo. Los clientes que planean dichas actualizaciones podrían preguntar de manera proactiva a Dell/EMC si su actualización planificada dejará esta funcionalidad inoperable y, si es así, ¿cómo pueden volver a habilitarla para minimizar las deficiencias en la visibilidad del rendimiento? El código de rendimiento del complejo de Cloud Insight evaluará en cada sondeo si existen todos los archivos esperados y si se están actualizando correctamente; si faltan o están obsoletos, Cloud Insights registrará los errores de recopilación del rendimiento.
+NOTE: La recopilación de rendimiento de Data Infrastructure Insights de clústeres Vplex requiere que el servicio de archivado de rendimiento esté operativo para completar los archivos .CSV y los registros que Data Infrastructure Insights recupera mediante copias de archivos basadas en SCP. NetApp ha observado que muchas actualizaciones de la estación de gestión/actualización del firmware Vplex dejarán esta funcionalidad en estado no operativo. Los clientes que planean dichas actualizaciones podrían preguntar de manera proactiva a Dell/EMC si su actualización planificada dejará esta funcionalidad inoperable y, si es así, ¿cómo pueden volver a habilitarla para minimizar las deficiencias en la visibilidad del rendimiento? El código de rendimiento Vplex de Cloud Insight evaluará en cada encuesta si todos los archivos esperados existen y si se actualizan correctamente; si faltan o están obsoletos, Data Infrastructure Insights registrará los fallos de recopilación de rendimiento.
 
 
 
 == Terminología
 
-Cloud Insights adquiere la siguiente información de inventario del recopilador de datos de VPLEX. Para cada tipo de activo adquirido, se muestra la terminología más común utilizada para este activo. Al ver o solucionar problemas de este recopilador de datos, tenga en cuenta la siguiente terminología:
+Data Infrastructure Insightst adquiere la siguiente información de inventario del recopilador de datos de VPLEX. Para cada tipo de activo adquirido, se muestra la terminología más común utilizada para este activo. Al ver o solucionar problemas de este recopilador de datos, tenga en cuenta la siguiente terminología:
 
 [cols="2*"]
 |===
-| Plazo del proveedor/modelo | Término de Cloud Insights 
+| Plazo del proveedor/modelo | Término de información sobre la infraestructura de datos 
 
 
 | Clúster | Reducida 

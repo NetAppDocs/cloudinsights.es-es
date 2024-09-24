@@ -47,8 +47,6 @@ Todos los widgets del panel pueden colocarse y dimensionarse de acuerdo con sus 
 
 En el modo de edición del panel, haga clic en el menú del widget y seleccione *Duplicar*. Se inicia el editor de widgets, con la configuración del widget original y con un sufijo de “copia” en el nombre del widget. Puede realizar fácilmente los cambios necesarios y guardar el nuevo widget. El widget se colocará en la parte inferior de la consola y, si es necesario, puede colocarlo. Recuerde guardar el panel cuando haya finalizado todos los cambios.
 
-image:DuplicateWidget.png["Duplicar un widget"]
-
 
 
 == Visualización de leyendas de widgets
@@ -471,7 +469,7 @@ El widget se abre en el modo de edición. De forma predeterminada, se muestra un
 +
 El gráfico muestra una línea que muestra la suma del total de IOPS.
 
-. Haga clic en el icono _Duplicar esta consulta_ image:DuplicateQueryIcon.png["Consulta DUPLICAT"] para crear una copia de la consulta.
+. Haga clic en el icono _Duplicar esta Consulta_ para crear una copia de la consulta.
 +
 Se agrega un duplicado de la consulta debajo del original.
 
@@ -505,7 +503,7 @@ Para utilizar una variable en una expresión, simplemente escriba el nombre de l
 
 Los widgets de tabla manejan las expresiones de manera un poco diferente. Puede tener hasta cinco expresiones en un solo widget de tabla, cada una de las cuales se agrega como una nueva columna a la tabla. Cada expresión puede incluir hasta cinco valores sobre los que realizar su cálculo. Puede fácilmente nombrar a la columna algo significativo.
 
-image:Expression Example.png["Expresión en un widget de tabla"]
+image:ExpressionExample.png["Expresión en un widget de tabla"]
 
 
 
@@ -612,7 +610,7 @@ Nombres de variables:
 
 Los widgets de indicador sólido y viñeta permiten establecer umbrales para los niveles _Warning_ y/o _Critical_, proporcionando una representación clara de los datos que especifique.
 
-image:Gauge Widget Formatting.png["Ajustes de formato para el widget de indicador"]
+image:GaugeWidgetFormatting.png["Ajustes de formato para el widget de indicador"]
 
 Para establecer el formato de estos widgets, siga estos pasos:
 
@@ -632,7 +630,7 @@ image:Gauge-Bullet.png["Calibre de viñeta, ancho=374"]
 
 En el widget valor único, además de establecer los umbrales de advertencia (naranja) y crítico (rojo), puede elegir que los valores "en rango" (por debajo del nivel de advertencia) se muestren con fondo verde o blanco.
 
-image:Single-Value Widgets.png["Widget de un solo valor con y sin formato"]
+image:Single-ValueWidgets.png["Widget de un solo valor con y sin formato"]
 
 Al hacer clic en el vínculo de un widget de un único valor o de un widget de indicador, se mostrará una página de consulta correspondiente a la primera consulta del widget.
 
@@ -692,7 +690,7 @@ NOTE: Cloud Insights utiliza estándares de denominación de números en inglés
 
 Si tiene un widget de serie temporal (es decir, línea, spline, área, área apilada) que tiene dos consultas en las que se traza el eje y primario, la unidad base no se muestra en la parte superior del eje Y. Sin embargo, si el widget tiene una consulta en el eje y primario y una consulta en el eje y secundario, se muestran las unidades base de cada una de ellas.
 
-image:UnitsOnPrimaryAnd SecondaryYAxis.png["Unidades en ambos ejes Y."]
+image:UnitsOnPrimaryAndSecondaryYAxis.png["Unidades en ambos ejes Y."]
 
 Si el widget tiene tres o más consultas, las unidades base no se muestran en el eje Y.
 
@@ -802,8 +800,8 @@ Cuando se combina con *modo TV*, la actualización automática permite la visual
 
 NOTE: Como NetApp BlueXP tiene su propio tiempo de espera de inicio de sesión de usuarios de 7 días, Cloud Insights también debe cerrar la sesión en ese evento. Simplemente puede iniciar sesión de nuevo y el panel seguirá mostrándose.
 
-* Para activar el modo TV, haga clic en image:ActivateTVMode.png["Modo TV"] botón.
-* Para desactivar el modo TV, haga clic en el botón *salir* de la parte superior izquierda de la pantalla. image:ExitTVMode.png["Botón salir"]
+* Para activar el modo TV, haga clic en el botón Modo TV.
+* Para desactivar el modo TV, haga clic en el botón *salir* de la parte superior izquierda de la pantalla.
 
 
 Puede suspender temporalmente la actualización automática haciendo clic en el botón Pausa en la esquina superior derecha. Durante la pausa, el campo intervalo de tiempo del panel mostrará el intervalo de tiempo activo de los datos en pausa. Los datos aún se adquieren y se actualizan mientras la actualización automática está en pausa. Haga clic en el botón Reanudar para continuar con la actualización automática de los datos.

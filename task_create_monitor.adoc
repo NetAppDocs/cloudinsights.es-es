@@ -101,6 +101,16 @@ image:Monitor_metric_conditions.png["Defina las condiciones del monitor"]
 
 
 
+==== Defina el comportamiento de resolución de alertas
+
+Puede elegir cómo se resuelve una alerta de monitor de métricas. Se le presentan dos opciones:
+
+* Resuelva cuando la métrica vuelva al rango aceptable.
+* Resuelva cuando la métrica se encuentre dentro del rango aceptable para una cantidad de tiempo especificada, de 1 minuto a 7 días.
+
+
+
+
 === Supervisor de registros
 
 Al crear un *Monitor de registro*, elija primero qué registro se va a supervisar en la lista de registros disponibles. A continuación, puede filtrar en función de los atributos disponibles como se ha indicado anteriormente. También puede elegir uno o más atributos "Agrupar por".
@@ -122,12 +132,39 @@ Puede crear el monitor para que emita una alerta con un nivel de gravedad de _Cr
 
 Puede elegir cómo se resuelve una alerta de monitor de registro. Se le presentan tres opciones:
 
-* Resuelva al instante
-* Purgar después del período de retención de datos (consulte la página de ediciones para obtener más información). Tenga en cuenta que el monitor no tiene ninguna condición de resolución por definición, por lo que una alerta permanecerá _active_ y suprimirá todas las alertas posteriores con _group_by_ coincidentes generadas por este monitor, hasta que haya pasado el período de retención de datos.
-* Resolver según entrada de log: Resolver alerta cuando se detecta la línea de log como se describe en la siguiente definición o depurar después del período de retención de datos.
+* *Resolver instantáneamente*: La alerta se resuelve inmediatamente sin que sea necesario realizar ninguna otra acción
+* *Resolver basado en el tiempo*: La alerta se resuelve después de que ha transcurrido el tiempo especificado
+* *Resolver basado en la entrada de registro*: La alerta se resuelve cuando se ha producido una actividad de registro posterior. Por ejemplo, cuando un objeto se registra como "disponible".
 
 
-image:LogMonitorAlertResolution.png["Opciones de resolución de alertas"]
+image:Monitor_log_monitor_resolution.png["Resolución de alertas"]
+
+
+
+=== Monitor de detección de anomalías
+
+. En el menú desplegable, busque y elija un tipo de objeto y métrica que supervisar.
+
+
+Puede configurar filtros para restringir los atributos de objeto o las métricas que desea supervisar.
+
+image:AnomalyDetectionMonitorMetricChoosing.png["Filtrado de métricas para detección de anomalías"]
+
+
+
+==== Defina las condiciones del monitor.
+
+. Después de elegir el objeto y la métrica a supervisar, yous et las condiciones bajo las cuales se detecta una anomalía.
++
+** Elija si desea detectar una anomalía cuando la métrica elegida * espícula por encima* de los límites previstos, * cae por debajo* de esos límites, o * espícula por encima o cae por debajo* de los límites.
+** Establezca la *sensibilidad* de la detección. *Bajo* (se desconectan menos anomalías), *Medio* o *Alto* (se detectan más anomalías).
+** Configure las alertas para que sean blandas * Advertencia * o * Críticas *.
+** Si lo desea, puede optar por reducir el ruido, ignorando las anomalías cuando la métrica seleccionada está por debajo del umbral que haya establecido.
+
+
+
+
+image:AnomalyDetectionMonitorDefineConditions.png["Definición de las condiciones para desencadenar una detección de anomalías"]
 
 
 

@@ -62,7 +62,7 @@ La monitorización de la detección de anomalías puede proporcionar alertas út
 
 Para alertar sobre anomalías, cree un monitor navegando a *Observabilidad > Alertas > +Monitor*. Seleccione _Anomaly Detection Monitor_ como tipo de monitor.
 
-image:Anomaly Detection Monitor Choice.png["Selección de detección de anomalías al crear un monitor, width=480"]
+image:AnomalyDetectionMonitorChoice.png["Selección de detección de anomalías al crear un monitor, width=480"]
 
 Seleccione el objeto y la métrica que desea supervisar. Puede establecer filtros y agrupamiento como con otros tipos de monitores.
 
@@ -74,7 +74,7 @@ A continuación, establezca las condiciones del monitor.
 * Opcionalmente, establezca un valor por debajo del cual las anomalías se _ignoran_. Esto puede ayudar a reducir el ruido. Este valor se muestra como una línea discontinua en el gráfico de muestra.
 
 
-image:Anomaly Detection Monitor Conditions.png["Ajuste de las condiciones para el monitor de detección de anomalías"]
+image:AnomalyDetectionMonitorConditions.png["Ajuste de las condiciones para el monitor de detección de anomalías"]
 
 Por último, puede configurar un método de entrega para las alertas (correo electrónico, webhook o ambas), proporcionar al monitor una descripción opcional o acciones correctivas y agregar el monitor a un grupo personalizado, si lo desea.
 

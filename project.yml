@@ -1,6 +1,6 @@
 ---
 settings:
-  name: Cloud Insights
+  name: Data Infrastructure Insights
   harmony_integration: maestro
   rss_page: concept_whats_new.html
   internal:
@@ -11,11 +11,11 @@ settings:
   langs: es-es,us-en,ja-jp,ko-kr,zh-cn,zh-tw,de-de,fr-fr,it-it
 sidebar:
   entries:
-  - title: Documentación de Cloud Insights
+  - title: Documentación de Data Infrastructure Insights
     url: "/index.html"
   - title: Novedades
     url: "/concept_whats_new.html"
-  - title: Registrarse en Cloud Insights
+  - title: Regístrate en Data Infrastructure Insights
     url: "/task_cloud_insights_onboarding_1.html"
   - title: Seguridad
     entries:
@@ -53,7 +53,7 @@ sidebar:
       url: "/concept_user_roles.html"
   - title: Lista de recopiladores de datos
     url: "/data_collector_list.html"
-  - title: Suscribirse a Cloud Insights
+  - title: Suscripción a Data Infrastructure Insights
     url: "/concept_subscribing_to_cloud_insights.html"
   - title: Observabilidad
     entries:

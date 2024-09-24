@@ -19,7 +19,7 @@ summary: Configurar el recopilador de datos de Lenovo.
 
 
 [role="lead"]
-Cloud Insights utiliza el recopilador de datos de Lenovo para descubrir datos de inventario y rendimiento de los sistemas de almacenamiento HX de Lenovo.
+Data Infrastructure Insights utiliza el recopilador de datos de Lenovo para detectar datos de inventario y rendimiento de los sistemas de almacenamiento Lenovo HX.
 
 Nota: Sólo son asignaciones de terminología comunes y es posible que no representen todos los casos de este recopilador de datos.
 

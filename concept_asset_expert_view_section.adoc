@@ -222,4 +222,4 @@ Por ejemplo, al hacer clic en el porcentaje vinculado junto a un activo correlac
 
 
 
-Después de seleccionar un activo, este se muestra en la sección de recursos adicionales. Cuando ya no desee ver información sobre el activo, haga clic en image:TrashCanIcon.png["Eliminar"].
+Después de seleccionar un activo, este se muestra en la sección de recursos adicionales. Cuando ya no desee ver información sobre el activo, haga clic en el icono de papelera para eliminarlo.

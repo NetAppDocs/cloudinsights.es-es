@@ -19,11 +19,11 @@ summary: Configurar el recopilador de DATOS REST DE Brocade FOS.
 
 
 [role="lead"]
-Cloud Insights utiliza el recopilador REST FOS de Brocade para descubrir inventario y rendimiento de los dispositivos de switch Brocade que ejecutan el firmware de FabricOS (FOS) 8,2 y posteriores.
+Información de infraestructura de datos utiliza el recopilador REST FOS de Brocade para detectar inventario y rendimiento de dispositivos de switch Brocade que ejecutan el firmware de Fabric OS (FOS) 8,2 y posteriores.
 
-Tenga en cuenta que el nivel de usuario predeterminado de FOS no es suficientemente potente para que Cloud Insights vea todos los aspectos lógicos de un dispositivo. Necesitamos una cuenta de usuario con la función de chasis activada, así como permisos en todas las estructuras virtuales configuradas en un conmutador.
+Nota: El nivel de usuario predeterminado de FOS no es suficientemente potente para que la información de la infraestructura de datos pueda ver todos los aspectos lógicos de un dispositivo. Necesitamos una cuenta de usuario con la función de chasis activada, así como permisos en todas las estructuras virtuales configuradas en un conmutador.
 
-A continuación se muestra un ejemplo de cómo puede crear una cuenta de usuario de “mínimo privilegio” para el uso de Cloud Insights en una sesión SSH en un dispositivo FOS:
+A continuación se muestra un ejemplo de cómo puede crear una cuenta de usuario de «mínimo privilegio» para el uso de Data Infrastructure Insights en una sesión SSH en un dispositivo FOS:
 
 UserConfig --add NetAppCIUser -r user -l 1-128 -c user -p Qwerty!
 
@@ -35,11 +35,11 @@ De forma predeterminada, este recopilador intentará descubrir todos los disposi
 
 == Terminología
 
-Cloud Insights adquiere la siguiente información de inventario del recopilador de DATOS REST DE Brocade FOS. Para cada tipo de activo adquirido por Cloud Insights, se muestra la terminología más común utilizada para este activo. Al ver o solucionar problemas de este recopilador de datos, tenga en cuenta la siguiente terminología:
+Data Infrastructure Insights adquiere la siguiente información de inventario al recopilador de DATOS DE REST DE Brocade FOS. Para cada tipo de activo adquirido por Data Infrastructure Insights, se muestra la terminología más habitual utilizada para este activo. Al ver o solucionar problemas de este recopilador de datos, tenga en cuenta la siguiente terminología:
 
 [cols="2*"]
 |===
-| Plazo del proveedor/modelo | Término de Cloud Insights 
+| Plazo del proveedor/modelo | Término de información sobre la infraestructura de datos 
 
 
 | Conmutador | Conmutador 
@@ -65,7 +65,7 @@ Nota: Sólo son asignaciones de terminología comunes y es posible que no repres
 
 == Requisitos
 
-* Debe haber conectividad TCP para todos los switches de la estructura. Este tipo de recopilador de datos probará sin problemas tanto HTTP como HTTPS de cada dispositivo de la estructura. Si activa la casilla de comprobación _Discover all switches in the fabric_, Cloud Insights identifica todos los switches de la estructura; sin embargo, necesita conectividad TCP con estos switches adicionales para detectarlos.
+* Debe haber conectividad TCP para todos los switches de la estructura. Este tipo de recopilador de datos probará sin problemas tanto HTTP como HTTPS de cada dispositivo de la estructura. Si activa la casilla de comprobación _Discover all switches in the fabric_, Data Infrastructure Insights identifica todos los switches de la estructura; sin embargo, requiere conectividad TCP con estos switches adicionales para detectarlos.
 * La misma cuenta es necesaria globalmente en todos los switches del entramado. Puede utilizar la interfaz web del dispositivo para confirmar el acceso.
 
 
@@ -133,7 +133,7 @@ Algunas cosas para intentar si tiene problemas con este recopilador de datos:
 | La función de prueba me advierte de que no se puede acceder a un protocolo | Un dispositivo Brocade FOS 8,2+ solo querrá hablar en HTTP o HTTPS. Si un conmutador tiene un certificado digital instalado, el conmutador emitirá errores HTTP si se intenta comunicarse con HTTP sin cifrar frente a HTTPS. La función de prueba intenta la comunicación con HTTP y HTTPS: Si la prueba le indica que un protocolo pasa, puede guardar el recopilador de forma segura y no preocuparse de que el otro protocolo no se haya realizado correctamente, el recopilador intentará ambos protocolos durante la recopilación y solo fallará si ninguno de los dos funciona. 
 
 
-| Error: "Cloud Insights recibido no válido rol de chasis" | Compruebe que el usuario configurado en este origen de datos ha obtenido el permiso de función de chasis. 
+| Error: «Información de infraestructura de datos recibida rol de chasis no válido» | Compruebe que el usuario configurado en este origen de datos ha obtenido el permiso de función de chasis. 
 
 
 | Error: "La dirección IP del chasis no coincide" | Cambie la configuración del origen de datos para utilizar la dirección IP del chasis. 

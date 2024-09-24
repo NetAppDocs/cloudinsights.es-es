@@ -19,7 +19,7 @@ summary: Configuración del recopilador de datos Dell EMC XC Series.
 
 
 [role="lead"]
-Cloud Insights utiliza este recopilador de datos para descubrir información de inventario y rendimiento de las matrices de almacenamiento de la serie EMC XC de Dell.
+Data Infrastructure Insights utiliza este recopilador de datos para descubrir información de inventario y rendimiento de las matrices de almacenamiento Dell EMC XC Series.
 
 
 

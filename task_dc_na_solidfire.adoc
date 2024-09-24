@@ -27,11 +27,11 @@ El recopilador de datos de SolidFire utiliza la API DE REST de SolidFire. La uni
 
 == Terminología
 
-Cloud Insights adquiere la siguiente información de inventario de la colección de datos de cabinas all-flash SolidFire de NetApp. Para cada tipo de activo adquirido por Cloud Insights, se muestra la terminología más común utilizada para este activo. Al ver o solucionar problemas de este recopilador de datos, tenga en cuenta la siguiente terminología:
+Data Infrastructure Insights adquiere la siguiente información de inventario del recopilador de datos de cabina all-flash NetApp SolidFire. Para cada tipo de activo adquirido por Data Infrastructure Insights, se muestra la terminología más habitual utilizada para este activo. Al ver o solucionar problemas de este recopilador de datos, tenga en cuenta la siguiente terminología:
 
 [cols="2*"]
 |===
-| Plazo del proveedor/modelo | Término de Cloud Insights 
+| Plazo del proveedor/modelo | Término de información sobre la infraestructura de datos 
 
 
 | Unidad | Disco 
@@ -108,7 +108,7 @@ A continuación se indican los requisitos para configurar este recopilador de da
 
 == Resolución de problemas
 
-Cuando SolidFire informa de un error, se muestra en Cloud Insights de la siguiente manera:
+Cuando SolidFire notifica un error, se muestra en información sobre infraestructuras de datos de la siguiente manera:
 
 _Se ha recibido un mensaje de error de un dispositivo SolidFire al intentar recuperar datos. La llamada era <method> (<parameterString>). El mensaje de error del dispositivo era (consulte el manual del dispositivo): <message>_
 

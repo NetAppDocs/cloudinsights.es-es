@@ -36,11 +36,11 @@ Para configurar el recopilador de datos de EMC XtremIO (HTTP), debe tener:
 
 == Terminología
 
-Cloud Insights adquiere la siguiente información de inventario del recopilador de datos de EMC XtremIO. Para cada tipo de activo adquirido por Cloud Insights, se muestra la terminología más común utilizada para este activo. Al ver o solucionar problemas de este origen de datos, tenga en cuenta la siguiente terminología:
+Data Infrastructure Insights adquiere la siguiente información de inventario del recopilador de datos de EMC XtremIO. Para cada tipo de activo adquirido por Data Infrastructure Insights, se muestra la terminología más habitual utilizada para este activo. Al ver o solucionar problemas de este origen de datos, tenga en cuenta la siguiente terminología:
 
 [cols="2*"]
 |===
-| Plazo del proveedor/modelo | Término de Cloud Insights 
+| Plazo del proveedor/modelo | Término de información sobre la infraestructura de datos 
 
 
 | Disco (SSD) | Disco 

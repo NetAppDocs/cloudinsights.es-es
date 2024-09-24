@@ -23,7 +23,7 @@ El principal caso de uso del recopilador de datos de EMC RecoverPoint es descubr
 
 Para la configuración, el recopilador de datos requiere la dirección IP de los procesadores de almacenamiento y un nombre de usuario y contraseña de sólo lectura.
 
-El recopilador de datos de EMC RecoverPoint recopila las relaciones de replicación de volumen a volumen que RecoverPoint coordina en otras cabinas de almacenamiento. Cloud Insights muestra una cabina de almacenamiento para cada clúster RecoverPoint, y recopila datos de inventario de los nodos y los puertos de almacenamiento de ese clúster. No se recopilan datos de volúmenes o pool de almacenamiento.
+El recopilador de datos de EMC RecoverPoint recopila las relaciones de replicación de volumen a volumen que RecoverPoint coordina en otras cabinas de almacenamiento. Data Infrastructure Insights muestra una cabina de almacenamiento para cada clúster de RecoverPoint, y recoge datos de inventario de nodos y puertos de almacenamiento en ese clúster. No se recopilan datos de volúmenes o pool de almacenamiento.
 
 
 

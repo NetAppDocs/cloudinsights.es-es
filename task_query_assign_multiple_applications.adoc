@@ -28,7 +28,7 @@ NOTE: Puede utilizar estos pasos para agregar o quitar link:task_defining_annota
 Debe haber creado una consulta que busque todos los activos que desea editar.
 
 .Pasos
-. Haga clic en *consultas* y seleccione *Mostrar todas las consultas*.
+. Haga clic en *Explorar* y seleccione *Consultas métricas*.
 +
 Aparece la página consultas.
 
@@ -38,15 +38,15 @@ Se muestra la lista de activos asociados a la consulta.
 
 . Seleccione los activos deseados en la lista o haga clic en la casilla de verificación superior para seleccionar todo.
 +
-La image:BulkActions.png["Acciones"] se muestra el botón.
+Se muestra el menú desplegable Bulk Actions.
 
-. Para agregar una aplicación a los activos seleccionados, haga clic en image:BulkActions.png["Acciones"] Y seleccione *Agregar aplicación*.
+. Para agregar una aplicación a los activos seleccionados, haga clic en Acciones masivas y seleccione *Agregar aplicación*.
 . Seleccione una o más aplicaciones.
 +
 Puede seleccionar varias aplicaciones para hosts, volúmenes internos, qtrees y máquinas virtuales; sin embargo, puede seleccionar solo una aplicación para un volumen o un recurso compartido.
 
 . Haga clic en *Guardar*.
-. Para eliminar una aplicación asignada a los activos, haga clic en image:BulkActions.png["Acciones"] Y seleccione *Eliminar aplicación*.
+. Para eliminar una aplicación asignada a los activos, haga clic en Acciones masivas y seleccione *Eliminar aplicación*.
 . Seleccione la aplicación o aplicaciones que desea eliminar.
 . Haga clic en *Eliminar*.
 

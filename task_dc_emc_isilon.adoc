@@ -19,17 +19,17 @@ summary: 'Configurar el recopilador de datos de Dell EMC PowerScale (anteriormen
 
 
 [role="lead"]
-Cloud Insights utiliza el recopilador de datos de SSH Dell EMC PowerScale (anteriormente Isilon) para adquirir datos de inventario y rendimiento del almacenamiento NAS de escalado horizontal de PowerScale.
+Data Infrastructure Insights utiliza el recopilador de datos SSH Dell EMC PowerScale (anteriormente Isilon) para adquirir datos de inventario y rendimiento del almacenamiento NAS de escalabilidad horizontal PowerScale.
 
 
 
 == Terminología
 
-Cloud Insights adquiere la siguiente información de inventario de este recopilador de datos. Para cada tipo de activo adquirido por Cloud Insights, se muestra la terminología más común utilizada para este activo. Al ver o solucionar problemas de este recopilador de datos, tenga en cuenta la siguiente terminología:
+Data Infrastructure Insights adquiere la siguiente información de inventario de este recopilador de datos. Para cada tipo de activo adquirido por Data Infrastructure Insights, se muestra la terminología más habitual utilizada para este activo. Al ver o solucionar problemas de este recopilador de datos, tenga en cuenta la siguiente terminología:
 
 [cols="2*"]
 |===
-| Plazo del proveedor/modelo | Término de Cloud Insights 
+| Plazo del proveedor/modelo | Término de información sobre la infraestructura de datos 
 
 
 | Unidad | Disco 

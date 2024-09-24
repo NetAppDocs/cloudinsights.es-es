@@ -19,7 +19,7 @@ summary: Configurar el recopilador de datos de Amazon EC2.
 
 
 [role="lead"]
-Cloud Insights utiliza el recopilador de datos de Amazon EC2 para adquirir datos de inventario y rendimiento de las instancias de EC2.
+Data Infrastructure Insights utiliza el recopilador de datos de Amazon EC2 para adquirir datos de inventario y rendimiento de instancias de EC2.
 
 
 
@@ -63,7 +63,7 @@ Introduzca los datos en los campos del recopilador de datos de acuerdo con la ta
 | Clave de acceso secreta de AWS IAM | Introduzca la clave de acceso secreta del IAM de AWS. Se requiere si no utiliza el rol IAM. 
 
 
-| Entiendo que AWS me facturas por solicitudes de API | Marque esto para verificar que AWS le da la cuenta de que las solicitudes de API que ha realizado el sondeo de Cloud Insights. 
+| Entiendo que AWS me facturas por solicitudes de API | Marque esto para verificar que AWS le factura las solicitudes de API realizadas por el sondeo de Data Infrastructure Insights. 
 |===
 
 
@@ -92,7 +92,7 @@ Introduzca los datos en los campos del recopilador de datos de acuerdo con la ta
 | Intervalo de sondeo de rendimiento (s) | El valor predeterminado es 1800 
 
 
-| Espacio de nombres de medidas del agente CloudWatch | Espacio de nombres en EC2/EBS desde el cual se recopilan datos. Tenga en cuenta que si se cambian los nombres de las métricas predeterminadas en este espacio de nombres, es posible que Cloud Insights no pueda recopilar los datos a los que se ha cambiado el nombre. Se recomienda dejar los nombres de métricas predeterminados. 
+| Espacio de nombres de medidas del agente CloudWatch | Espacio de nombres en EC2/EBS desde el cual se recopilan datos. Tenga en cuenta que si se cambian los nombres de las métricas predeterminadas de este espacio de nombres, es posible que Data Infrastructure Insights no pueda recopilar esos datos con los que se ha cambiado el nombre. Se recomienda dejar los nombres de métricas predeterminados. 
 |===
 
 
@@ -120,11 +120,11 @@ Nota: El rol IAM sólo se puede utilizar cuando la unidad de adquisición se est
 
 
 
-== Asignación de etiquetas de Amazon a anotaciones de Cloud Insights
+== Asignar etiquetas de Amazon a anotaciones de Data Infrastructure Insights
 
-El recopilador de datos de Amazon EC2 incluye una opción que permite completar anotaciones de Cloud Insights con etiquetas configuradas en EC2. Las anotaciones deben denominarse exactamente como etiquetas EC2. Cloud Insights siempre rellenará anotaciones con el mismo nombre de tipo de texto y hará un "mejor intento" para rellenar anotaciones de otros tipos (número, booleano, etc.). Si la anotación es de un tipo diferente y el recopilador de datos no la rellena, puede que sea necesario eliminar la anotación y volver a crearla como un tipo de texto.
+El recopilador de datos de Amazon EC2 incluye una opción que le permite rellenar anotaciones de Data Infrastructure Insights con etiquetas configuradas en EC2. Las anotaciones deben denominarse exactamente como etiquetas EC2. Data Infrastructure Insights siempre rellenará anotaciones de tipo texto con el mismo nombre y hará el «mejor intento» de completar anotaciones de otro tipo (número, booleano, etc.). Si la anotación es de un tipo diferente y el recopilador de datos no la rellena, puede que sea necesario eliminar la anotación y volver a crearla como un tipo de texto.
 
-Tenga en cuenta que AWS distingue mayúsculas de minúsculas, mientras que Cloud Insights no distingue mayúsculas de minúsculas. De modo que si crea una anotación llamada «PROPIETARIO» en Cloud Insights y etiquetas llamadas «PROPIETARIO», «propietario» y «propietario» en EC2, todas las variaciones de EC2 del «propietario» se asignarán a la anotación «PROPIETARIO» de Cloud Insight.
+Tenga en cuenta que AWS distingue entre mayúsculas y minúsculas, mientras que Data Infrastructure Insights no distingue entre mayúsculas y minúsculas. De modo que si crea una anotación llamada «PROPIETARIO» en Data Infrastructure Insights y etiquetas llamadas «PROPIETARIO», «propietario» y «propietario» en EC2, todas las EC2 variaciones de «propietario» se asignarán a la anotación de «propietario» de Cloud Insight.
 
 
 
@@ -136,17 +136,17 @@ En la sección AWS Data Collector *Configuración avanzada*, puede configurar el
 
 == Recopilación de cuentas secundarias de AWS
 
-Cloud Insights admite la colección de cuentas secundarias para AWS en un único recopilador de datos de AWS. La configuración de esta colección se realiza en el entorno AWS:
+Data Infrastructure Insights admite la recopilación de cuentas secundarias de AWS en un único recopilador de datos de AWS. La configuración de esta colección se realiza en el entorno AWS:
 
 * Debe configurar cada cuenta secundaria para que tenga una función de AWS que permita que el ID de cuenta principal tenga acceso a los detalles de EC2 desde la cuenta secundaria.
 * Cada cuenta secundaria debe tener el nombre de función configurado como la misma cadena.
-* Introduzca esta cadena de nombre de rol en la sección recopilador de datos de AWS de Cloud Insights *Configuración avanzada*, en el campo *rol de cuenta cruzada*.
+* Introduzca esta cadena de nombre de rol en la sección Data Infrastructure Insights AWS Data Collector *Advanced Configuration*, en el campo *Cross account role*.
 * La cuenta en la que se instala el recopilador debe tener _DELEGATE ACCESS ADMINISTRATOR_ Privileges. Consulte la link:https://docs.aws.amazon.com/accounts/latest/reference/using-orgs-delegated-admin.html["Documentación de AWS"] para obtener más información.
 
 
 Práctica recomendada: Se recomienda asignar la política predefinida _AmazonEC2ReadOnlyAccess_ de AWS a la cuenta principal de EC2. Además, el usuario configurado en el origen de datos debe tener asignada al menos la directiva _AWSOrganizationsReadOnlyAccess_ predefinida para consultar a AWS.
 
-Consulte lo siguiente para obtener información sobre la configuración de su entorno para permitir que Cloud Insights recopile desde cuentas secundarias de AWS:
+Consulte lo siguiente para obtener información sobre cómo configurar su entorno para permitir que Data Infrastructure Insights recopile de cuentas secundarias de AWS:
 
 link:https://docs.aws.amazon.com/IAM/latest/UserGuide/tutorial_cross-account-with-roles.html["Tutorial: Delegue el acceso en las cuentas de AWS mediante roles IAM"]
 
