@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: concept_dashboards_overview.html 
-summary: Información general de las consolas en Cloud Insights. 
+summary: Descripción general de las consolas de Data Infrastructure Insights. 
 keywords: dashboard, widget, custom, view, data 
 ---
 = Información general sobre consolas
@@ -19,7 +19,7 @@ keywords: dashboard, widget, custom, view, data
 
 
 [role="lead"]
-Cloud Insights ofrece a los usuarios la flexibilidad necesaria para crear vistas operativas de los datos de la infraestructura, al permitirle crear paneles personalizados con una variedad de widgets, cada uno de los cuales ofrece una amplia flexibilidad a la hora de mostrar y crear gráficos de sus datos.
+Data Infrastructure Insights proporciona a los usuarios la flexibilidad para crear vistas operativas de los datos de la infraestructura, al permitirle crear paneles personalizados con una variedad de widgets, cada uno de los cuales proporciona una amplia flexibilidad para mostrar y registrar los datos.
 
 
 IMPORTANT: Los ejemplos de estas secciones son sólo para fines de explicación y no cubren todos los escenarios posibles. Los conceptos y pasos aquí indicados pueden utilizarse para crear sus propios paneles de control con el fin de resaltar los datos específicos de sus necesidades particulares.

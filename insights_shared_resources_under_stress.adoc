@@ -19,7 +19,7 @@ summary: Los conocimientos le permiten ver cómo afectan los recursos a otros re
 
 
 [role="lead"]
-Las cargas de trabajo con un alto impacto pueden reducir el rendimiento de otras cargas de trabajo en un recurso compartido. Esto pone el recurso compartido bajo estrés. Cloud Insights ofrece herramientas para ayudarle a investigar la saturación de recursos y el impacto de su entorno.
+Las cargas de trabajo con un alto impacto pueden reducir el rendimiento de otras cargas de trabajo en un recurso compartido. Esto pone el recurso compartido bajo estrés. Data Infrastructure Insights proporciona herramientas que te ayudan a investigar la saturación de los recursos y el impacto en tu entorno.
 
 
 
@@ -31,7 +31,7 @@ Una *carga de trabajo exigente* es una carga de trabajo que actualmente se ident
 
 Una *carga de trabajo afectada* es una carga de trabajo que se ve afectada por una carga de trabajo de alto consumo en el Pool de almacenamiento compartido. Estas cargas de trabajo están experimentando una reducción de IOPS o una latencia superior, debido a las cargas de trabajo más exigentes.
 
-Tenga en cuenta que si Cloud Insights no detectó la carga de trabajo de computación principal, el volumen o el volumen interno en sí se reconocerán como la carga de trabajo. Esto se aplica tanto a las cargas de trabajo exigentes como a las cargas de trabajo afectadas.
+Tenga en cuenta que si Data Infrastructure Insights no ha detectado la carga de trabajo de computación principal, el volumen o el propio volumen interno se reconocerán como la carga de trabajo. Esto se aplica tanto a las cargas de trabajo exigentes como a las cargas de trabajo afectadas.
 
 *Saturación de recursos compartidos* es la relación de impactar IOPS en _basal_.
 
@@ -47,7 +47,7 @@ Para empezar a buscar cargas de trabajo exigentes e impactadas en tus recursos c
 
 image:InsightsMenu.png["Menú Información"]
 
-Cloud Insights muestra una lista de cualquier carga de trabajo en la que se ha detectado una saturación. Tenga en cuenta que Cloud Insights mostrará cargas de trabajo donde se ha detectado al menos un recurso _exigente_ *o* _recurso afectado_.
+Data Infrastructure Insights muestra una lista de las cargas de trabajo en las que se detectó una saturación. Tenga en cuenta que Data Infrastructure Insights mostrará las cargas de trabajo en las que se ha detectado al menos un recurso _exigente_ *o* _recurso afectado_.
 
 Haga clic en una carga de trabajo para ver la página de detalles correspondiente. El gráfico superior muestra la actividad del recurso compartido (por ejemplo, un grupo de almacenamiento) en el que se produce la contención/saturación.
 

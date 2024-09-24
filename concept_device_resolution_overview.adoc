@@ -19,7 +19,7 @@ summary: La resolución automática de dispositivos le ayuda a realizar un segui
 
 
 [role="lead"]
-Debe identificar todos los dispositivos que desea supervisar con Cloud Insights. La identificación es necesaria para realizar un seguimiento preciso del rendimiento y del inventario en su entorno. Normalmente, la mayoría de los dispositivos detectados en su entorno se identifican mediante _Automatic Device Resolution_.
+Es necesario identificar todos los dispositivos que desea supervisar con Data Infrastructure Insights. La identificación es necesaria para realizar un seguimiento preciso del rendimiento y del inventario en su entorno. Normalmente, la mayoría de los dispositivos detectados en su entorno se identifican mediante _Automatic Device Resolution_.
 
 Después de configurar los recopiladores de datos, se identifican los dispositivos del entorno, incluidos los switches, las matrices de almacenamiento y la infraestructura virtual de hipervisores y máquinas virtuales. Sin embargo, normalmente esto no identifica el 100% de los dispositivos de su entorno.
 
@@ -32,7 +32,7 @@ Una vez configurados los dispositivos de tipo recopilador de datos, la mejor pr�
 
 Los dispositivos que permanecen como desconocidos después de la resolución del dispositivo se consideran dispositivos genéricos, que también se pueden mostrar en consultas y en paneles.
 
-Las reglas creadas a su vez identificarán automáticamente nuevos dispositivos con atributos similares a los que se agregan a su entorno. En algunos casos, la resolución del dispositivo también permite la identificación manual evitando las reglas de resolución del dispositivo para dispositivos no detectados dentro de Cloud Insights.
+Las reglas creadas a su vez identificarán automáticamente nuevos dispositivos con atributos similares a los que se agregan a su entorno. En algunos casos, la resolución del dispositivo también permite la identificación manual omitiendo las reglas de resolución del dispositivo para dispositivos no detectados en Data Infrastructure Insights.
 
 La identificación incompleta de los dispositivos puede dar lugar a problemas como:
 

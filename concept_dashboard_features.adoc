@@ -64,7 +64,7 @@ Cuando se muestren las leyendas, si se puede navegar hasta la página de destino
 
 == Transformando las métricas
 
-Cloud Insights proporciona diferentes opciones de *transformación* para ciertas métricas en widgets (específicamente aquellas métricas llamadas "personalizadas" o métricas de integración, como de Kubernetes, datos avanzados de ONTAP, plugins de Telegraf, etc.), lo que le permite visualizar los datos de varias maneras. Al añadir medidas transformables a un widget, se presenta con una lista desplegable dando las siguientes opciones de transformación:
+Información sobre la infraestructura de datos proporciona diferentes opciones de *transformación* para ciertas métricas en widgets (específicamente, aquellas métricas llamadas “personalizadas” o métricas de integración, como de Kubernetes, datos avanzados de ONTAP, plugins de Telegraf, etc.), lo que le permite mostrar los datos de varias maneras. Al añadir medidas transformables a un widget, se presenta con una lista desplegable dando las siguientes opciones de transformación:
 
 Ninguno:: Los datos se muestran tal cual, sin manipulación.
 Velocidad:: Valor actual dividido entre el intervalo de tiempo desde la observación anterior.
@@ -541,7 +541,7 @@ Pero si desea ver temporalmente solo nodos en subredes individuales en su entorn
 
 image:Variables_Node_Example_After_Variable_Applied.png["Nodos de agente tras filtro variable"]
 
-También puede establecer una variable para filtrar objetos _all_ con un atributo determinado independientemente del tipo de objeto, por ejemplo, objetos con un atributo de "proveedor", especificando _*.Vendor_ en el campo variable. No es necesario escribir "*."; Cloud Insights le proporcionará esta opción si selecciona la opción comodín.
+También puede establecer una variable para filtrar objetos _all_ con un atributo determinado independientemente del tipo de objeto, por ejemplo, objetos con un atributo de "proveedor", especificando _*.Vendor_ en el campo variable. No es necesario que escriba el signo «*»; si selecciona la opción de comodín, la información de la infraestructura de datos se proporcionará.
 
 image:Variables_Attribute_Vendor_Example.png["Variable de atributo para el proveedor"]
 
@@ -641,7 +641,7 @@ Al hacer clic en el vínculo de un widget de un único valor o de un widget de i
 Al igual que los widgets de un solo valor y de calibre, puede establecer el formato condicional en los widgets de tabla, lo que le permite resaltar datos con colores y/o iconos especiales.
 
 
-NOTE: El formato condicional no está disponible actualmente en la edición federal de Cloud Insights.
+NOTE: El formato condicional no está disponible actualmente en Data Infrastructure Insights Federal Edition.
 
 El formato condicional permite establecer y resaltar umbrales de nivel de advertencia y de nivel crítico en los widgets de tabla, lo que proporciona visibilidad instantánea a los valores atípicos y puntos de datos excepcionales.
 
@@ -659,9 +659,9 @@ Puede elegir si desea mostrar el formato de condición como color, iconos o ambo
 
 == Selección de la Unidad para mostrar datos
 
-La mayoría de los widgets de un panel permiten especificar las unidades en las que se muestran los valores, por ejemplo, _megabytes_, _miles_, _Porcentaje_, _milisegundos (ms)_, etc. En muchos casos, Cloud Insights conoce el mejor formato para los datos que se van a adquirir. En los casos en los que no se conoce el mejor formato, puede definir el formato que desee.
+La mayoría de los widgets de un panel de control le permiten especificar las Unidades en las que mostrar valores, por ejemplo _megabytes_, _miles_, _porcentaje_, _milisegundos (ms)_, etc. En muchos casos, Data Infrastructure Insights conoce el mejor formato para los datos que se adquieren. En los casos en los que no se conoce el mejor formato, puede definir el formato que desee.
 
-En el siguiente ejemplo del gráfico de líneas, se sabe que los datos seleccionados para el widget están en _bytes_ (la unidad de datos IEC básica: Consulte la tabla siguiente), de modo que la unidad base se selecciona automáticamente como 'byte (B)'. Sin embargo, los valores de los datos son lo suficientemente grandes como para que se presenten como gibibytes (GIB), por lo que Cloud Insights formatea automáticamente los valores como GIB. El eje y del gráfico muestra "GIB" como unidad de visualización y todos los valores se muestran en términos de dicha unidad.
+En el siguiente ejemplo del gráfico de líneas, se sabe que los datos seleccionados para el widget están en _bytes_ (la unidad de datos IEC básica: Consulte la tabla siguiente), de modo que la unidad base se selecciona automáticamente como 'byte (B)'. Sin embargo, los valores de datos son lo suficientemente grandes para presentarse como gibibytes (GiB), por lo que Data Infrastructure Insights de forma predeterminada formatea automáticamente los valores como GiB. El eje y del gráfico muestra "GIB" como unidad de visualización y todos los valores se muestran en términos de dicha unidad.
 
 image:used_memory_in_bytes.png["Byte de la unidad base mostrado en Gigabytes,width=640"]
 
@@ -679,10 +679,10 @@ Para borrar la configuración y volver a iniciar, haga clic en *Restablecer valo
 
 === Una palabra sobre el formato automático
 
-La mayoría de las métricas son notificadas por los recopiladores de datos de la unidad más pequeña, por ejemplo, como un número entero, como 1,234,567,890 bytes. De forma predeterminada, Cloud Insights formateará automáticamente el valor de la pantalla más legible. Por ejemplo, un valor de datos de 1,234,567,890 bytes se formatearía automáticamente a 1.23 _gibibytes_. Puede elegir mostrarla en otro formato, como _mebibytes_. El valor se mostrará en consecuencia.
+La mayoría de las métricas son notificadas por los recopiladores de datos de la unidad más pequeña, por ejemplo, como un número entero, como 1,234,567,890 bytes. De forma predeterminada, Data Infrastructure Insights formateará automáticamente el valor para la visualización más legible. Por ejemplo, un valor de datos de 1,234,567,890 bytes se formatearía automáticamente a 1.23 _gibibytes_. Puede elegir mostrarla en otro formato, como _mebibytes_. El valor se mostrará en consecuencia.
 
 
-NOTE: Cloud Insights utiliza estándares de denominación de números en inglés americanos. Los "mil millones" americanos equivalen a "mil millones".
+NOTE: Data Infrastructure Insights utiliza estándares de nomenclatura de números en inglés estadounidense. Los "mil millones" americanos equivalen a "mil millones".
 
 
 
@@ -795,10 +795,10 @@ Cada widget muestra su intervalo de actualización automática en la esquina sup
 
 La actualización automática no está disponible para el intervalo de tiempo personalizado del panel.
 
-Cuando se combina con *modo TV*, la actualización automática permite la visualización casi en tiempo real de los datos en un panel o página de activos. El modo TV proporciona una visualización desembragada; el menú de navegación está oculto, proporcionando más propiedades de pantalla para la visualización de datos, al igual que el botón Editar. El modo TV ignora los tiempos de espera habituales de Cloud Insights, dejando la pantalla en directo hasta que se cierra la sesión de forma manual o automática mediante protocolos de seguridad de autorización.
+Cuando se combina con *modo TV*, la actualización automática permite la visualización casi en tiempo real de los datos en un panel o página de activos. El modo TV proporciona una visualización desembragada; el menú de navegación está oculto, proporcionando más propiedades de pantalla para la visualización de datos, al igual que el botón Editar. El modo TV ignora los tiempos de espera típicos de Data Infrastructure Insights, dejando la pantalla activa hasta que se cierra la sesión manual o automáticamente mediante protocolos de seguridad de autorización.
 
 
-NOTE: Como NetApp BlueXP tiene su propio tiempo de espera de inicio de sesión de usuarios de 7 días, Cloud Insights también debe cerrar la sesión en ese evento. Simplemente puede iniciar sesión de nuevo y el panel seguirá mostrándose.
+NOTE: Dado que NetApp BlueXP  tiene su propio tiempo de espera de inicio de sesión de usuario de 7 días, Data Infrastructure Insights también debe cerrar la sesión en ese evento. Simplemente puede iniciar sesión de nuevo y el panel seguirá mostrándose.
 
 * Para activar el modo TV, haga clic en el botón Modo TV.
 * Para desactivar el modo TV, haga clic en el botón *salir* de la parte superior izquierda de la pantalla.
@@ -835,7 +835,7 @@ Para agregar paneles al grupo, haga clic en el grupo _All Dashboards_ para mostr
 Elimine los paneles del grupo actual de la misma manera seleccionando _Remove from Group_. No puede quitar paneles del grupo _All Dashboards_ ni _My Dashboards_ .
 
 
-NOTE: Al quitar un panel de un grupo, no se elimina el panel de Cloud Insights. Para eliminar completamente un panel, seleccione el panel y haga clic en _Delete_. Esto lo elimina de cualquier grupo al que pertenecía y ya no está disponible para ningún usuario.
+NOTE: Al eliminar una consola de un grupo, no se elimina la consola de Data Infrastructure Insights. Para eliminar completamente un panel, seleccione el panel y haga clic en _Delete_. Esto lo elimina de cualquier grupo al que pertenecía y ya no está disponible para ningún usuario.
 
 
 
@@ -851,7 +851,7 @@ image:DashboardPin.png["Paneles fijados"]
 
 == Tema oscuro
 
-Puede elegir mostrar Cloud Insights utilizando un tema claro (el predeterminado), que muestra la mayoría de las pantallas con un fondo claro con texto oscuro o un tema oscuro que muestra la mayoría de las pantallas con un fondo oscuro con texto claro.
+Puede optar por mostrar la información de la infraestructura de datos utilizando un tema claro (el predeterminado), que muestra la mayoría de las pantallas con un fondo claro con texto oscuro, o un tema oscuro que muestra la mayoría de las pantallas con un fondo oscuro con texto claro.
 
 Para cambiar entre temas claros y oscuros, haga clic en el botón de nombre de usuario de la esquina superior derecha de la pantalla y elija el tema que desee.
 
@@ -870,7 +870,7 @@ NOTE: Algunas áreas de la pantalla, como ciertos gráficos del widget, todavía
 
 Los diferentes recopiladores de datos a menudo sondean sus datos a intervalos diferentes. Por ejemplo, el recopilador de datos A puede sondear cada 15 minutos mientras que el recopilador de datos B sondea cada cinco minutos. Cuando un widget de gráfico de líneas (también gráficos de spline, área y área apilada) está agregando estos datos de varios recopiladores de datos en una sola línea (por ejemplo, cuando el widget se agrupa por "todos"), Y actualizando la línea cada cinco minutos, los datos del colector B se pueden mostrar con precisión mientras que los datos del colector A pueden tener huecos, afectando así al agregado hasta que el colector vuelva a sondear.
 
-Para aliviar esto, Cloud Insights interpola los datos al agregar, utilizando los puntos de datos circundantes para tomar una "mejor conjetura" en los datos hasta que los recopiladores de datos sondean de nuevo. Siempre puede ver los datos de objetos de cada recopilador de datos individualmente ajustando la agrupación del widget.
+Para paliar esto, Data Infrastructure Insights interpola los datos al agregarlos, utilizando los puntos de datos circundantes para realizar una «mejor conjetura» con respecto a los datos hasta que los recopiladores de datos vuelvan a sondear. Siempre puede ver los datos de objetos de cada recopilador de datos individualmente ajustando la agrupación del widget.
 
 
 

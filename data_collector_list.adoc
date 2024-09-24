@@ -4,7 +4,7 @@ permalink: data_collector_list.html
 summary: Lista de recopiladores de datos compatibles. 
 keywords: data collector, vendor, infrastructure, integration, service 
 ---
-= Lista de recopiladores de datos de Cloud Insights
+= Lista de recopiladores de datos de Data Infrastructure Insights
 :toc: macro
 :hardbreaks:
 :toclevels: 1
@@ -19,7 +19,7 @@ keywords: data collector, vendor, infrastructure, integration, service
 
 
 [role="lead"]
-Cloud Insights admite una gran variedad de recopiladores de datos de muchos proveedores y servicios.
+Data Infrastructure Insights admite una variedad de recolectores de datos de muchos proveedores y servicios.
 
 Los recolectores de datos se clasifican según los siguientes tipos:
 
@@ -27,7 +27,7 @@ Los recolectores de datos se clasifican según los siguientes tipos:
 * Servicio: Adquirido de servicios como Kubernetes o Docker. También se llama _Integration_.
 
 
-Lista alfabética de recopiladores de datos compatibles con Cloud Insights:
+Lista alfabética de recopiladores de datos compatibles con Data Infrastructure Insights:
 
 [cols="<,<"]
 |===

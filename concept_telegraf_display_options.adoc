@@ -19,7 +19,7 @@ summary: Opciones de visualización de datos de Telegraf
 
 
 [role="lead"]
-Cloud Insights proporciona diferentes opciones de *transformación* para ciertas métricas en widgets (específicamente aquellas métricas llamadas "personalizadas" o métricas de integración, como de Kubernetes, datos avanzados de ONTAP, plugins de Telegraf, etc.), lo que le permite visualizar los datos de varias maneras. Al añadir medidas transformables a un widget, se presenta con una lista desplegable dando las siguientes opciones de transformación:
+Información sobre la infraestructura de datos proporciona diferentes opciones de *transformación* para ciertas métricas en widgets (específicamente, aquellas métricas llamadas “personalizadas” o métricas de integración, como de Kubernetes, datos avanzados de ONTAP, plugins de Telegraf, etc.), lo que le permite mostrar los datos de varias maneras. Al añadir medidas transformables a un widget, se presenta con una lista desplegable dando las siguientes opciones de transformación:
 
 Ninguno:: Los datos se muestran tal cual, sin manipulación.
 Velocidad:: Valor actual dividido entre el intervalo de tiempo desde la observación anterior.

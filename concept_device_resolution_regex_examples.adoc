@@ -19,13 +19,13 @@ summary:
 
 
 [role="lead"]
-Si ha seleccionado el enfoque de expresión regular como estrategia de nomenclatura de origen, puede utilizar los ejemplos de expresiones regulares como guías para sus propias expresiones utilizadas en los métodos de resolución automática de Cloud Insights.
+Si ha seleccionado el enfoque de expresión regular como estrategia de nomenclatura de origen, puede utilizar los ejemplos de expresiones regulares como guías para sus propias expresiones utilizadas en los métodos de resolución automática de Data Infrastructure Insights.
 
 
 
 == Dar formato a expresiones regulares
 
-Al crear expresiones regulares para la resolución automática de Cloud Insights, puede configurar el formato de salida introduciendo valores en un campo denominado _FORMAT_.
+Al crear expresiones regulares para la resolución automática de Data Infrastructure Insights, puede configurar el formato de salida introduciendo valores en un campo denominado _FORMAT_.
 
 El valor predeterminado es \1, lo que significa que un nombre de zona que coincida con la expresión regular se reemplaza por el contenido de la primera variable creada por la expresión regular. En una expresión regular, los valores de las variables se crean mediante sentencias entre paréntesis. Si se producen varias sentencias paréntesis, se hace referencia numéricamente a las variables, de izquierda a derecha. Las variables se pueden utilizar en formato de salida en cualquier orden. El texto constante también se puede insertar en la salida, agregándolo al campo DE FORMATO.
 
@@ -280,7 +280,7 @@ El # (circumflex o caret) *dentro de corchetes* niega la expresión, por ejemplo
 
 *Nombre de host:* mhs-apps44-d
 
-*RegExp:* ([_]+)_([AB]).*aplicar formato a Cloud Insights: \1-\2 ([]+)_ ([[2_]+)_([[2_]+).*aplicar formato a Cloud Insights: \1-\2-\3
+*RegExp:* ([^_]+)_([AB]).*Formato en Información de infraestructura de datos: \1-\2 ([^_]+)_ ([^_]+)_([^_]+).*Formato en Información de infraestructura de datos: \1-\2-\3
 
 
 

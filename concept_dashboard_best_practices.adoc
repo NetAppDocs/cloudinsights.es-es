@@ -25,9 +25,9 @@ Consejos y trucos para ayudarle a aprovechar al máximo las potentes funciones d
 
 == Búsqueda de la métrica derecha
 
-Cloud Insights adquiere contadores y métricas utilizando nombres que a veces difieren de recopilador de datos a recopilador de datos.
+Data Infrastructure Insights adquiere contadores y métricas con nombres que en ocasiones difieren del recopilador de datos al recopilador de datos.
 
-Al buscar la métrica o el contador adecuado para el widget de panel, tenga en cuenta que la métrica que desea podría estar con un nombre diferente al que está pensando en. Aunque las listas desplegables de Cloud Insights suelen ser por orden alfabético, a veces es posible que un término no aparezca en la lista donde usted cree que debería. Por ejemplo, los términos como "capacidad bruta" y "capacidad utilizada" no aparecen juntos en la mayoría de las listas.
+Al buscar la métrica o el contador adecuado para el widget de panel, tenga en cuenta que la métrica que desea podría estar con un nombre diferente al que está pensando en. Aunque las listas desplegables de Data Infrastructure Insights suelen ser alfabéticas, a veces es posible que un término no aparezca en la lista donde cree que debería aparecer. Por ejemplo, los términos como "capacidad bruta" y "capacidad utilizada" no aparecen juntos en la mayoría de las listas.
 
 *Mejor práctica*: Utilice la función de búsqueda en campos como Filtrar por o lugares como el selector de columnas para encontrar lo que está buscando. Por ejemplo, si busca "cap", se mostrarán todas las métricas con "capacidad" en sus nombres, independientemente de dónde ocurran en la lista. Así, puede seleccionar fácilmente las métricas que desee de esa lista más corta.
 

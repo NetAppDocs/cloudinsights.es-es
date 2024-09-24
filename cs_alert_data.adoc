@@ -16,9 +16,6 @@ summary: Workload Security crea alertas en caso de actividad de usuario anormal 
 [role="lead"]
 La página Workload Security Alerts (Alertas de seguridad de carga de trabajo) muestra una línea temporal de ataques y/o advertencias recientes y permite ver detalles de cada problema.
 
-
-NOTE: La seguridad de carga de trabajo no está disponible en la edición federal de Cloud Insights.
-
 image:CloudSecureAlertsListPage.png["Lista de alertas"]
 
 

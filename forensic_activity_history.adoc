@@ -96,13 +96,14 @@ Puede filtrar los datos de la actividad forense por los siguientes campos:
 
 * *Nombre de usuario* del usuario que realiza la actividad. Debe proporcionar el nombre de usuario exacto para filtrar. La búsqueda con nombre de usuario parcial o nombre de usuario parcial con prefijo o sufijo ‘*’ no funcionará.
 * *Reducción de ruido* para filtrar los archivos que el usuario crea en las últimas 2 horas. También se utiliza para filtrar archivos temporales (por ejemplo, archivos .tmp) a los que accede el usuario.
+* *Dominio* del usuario que realiza la actividad. Debe proporcionar el *dominio exacto* para filtrar. La búsqueda de dominio parcial, o dominio parcial con prefijo o sufijo con comodín ()'*'), no funcionará. _None_ se puede especificar para buscar el dominio que falta.
 
 
 Los siguientes campos están sujetos a reglas de filtrado especiales:
 
-* *Tipo de entidad*, utilizando la extensión de entidad (archivo)
-* *Ruta* de la entidad
-* *Usuario* realizando la actividad
+* *Tipo de entidad*, usando la extensión de entidad (archivo) - es preferible especificar el tipo de entidad exacto dentro de las comillas. Por ejemplo _“txt”_.
+* *Ruta* de la entidad - Los filtros de ruta de directorio (cadena de ruta que termina con /) hasta 4 directorios de profundidad se recomiendan para obtener resultados más rápidos. Por ejemplo, _/home/userX/nested1/nested2/_ O _”/home/userX/nested1/nested2/”_. Consulte la siguiente tabla para obtener más información.
+* *Usuario* realizando la actividad - es preferible especificar el usuario exacto dentro de las comillas. Para eample, _ «Administrador»_.
 * *Dispositivo* (SVM) donde residen las entidades
 * *Volumen* donde residen las entidades
 * La *Ruta original* se utiliza para cambiar el nombre de los eventos cuando se cambió el nombre del archivo original.
@@ -117,15 +118,65 @@ Los campos anteriores están sujetos a lo siguiente al filtrar:
 
 
 
+== Ejemplos de filtros forenses de actividades:
+
+|===
+| Expresión de filtro aplicada por el usuario | Resultado esperado | Evaluación del rendimiento | Comentar 
+
+
+| Path = /home/userX/nested1/nested2/ o /home/userX/nested1/nested2/* o «/home/userX/nested1/nested2/» | Búsqueda recursiva de todos los archivos y carpetas en el directorio dado | Y rápido | Las búsquedas en directorios de hasta 4 directorios serán rápidas. 
+
+
+| Path = /home/userX/nested1/ o /home/userX/nested1/* o «/home/userX/nested1/» | Búsqueda recursiva de todos los archivos y carpetas en el directorio dado | Y rápido | Las búsquedas en directorios de hasta 4 directorios serán rápidas. 
+
+
+| Path = /home/userX/nested1/test* o /home/userX/nested1/test | Búsqueda recursiva de todos los archivos y carpetas bajo la ruta de acceso regex (prueba* podría significar archivo O directorio O ambos) | Más lento | La búsqueda de directorio+archivo regex será más lenta en comparación con las búsquedas de directorio. 
+
+
+| Path = /home/userX/nested1/nested2/nested3/ o /home/userX/nested1/nested2/nested3/* o «/home/userX/nested1/nested2/nested3/» | Búsqueda recursiva de todos los archivos y carpetas en el directorio dado | Más lento | Más de 4 búsquedas de directorios son más lentas para realizar búsquedas. 
+
+
+| Path=\*userX/nested1/test* | Búsqueda recursiva de todos los archivos y carpetas bajo la cadena de ruta de acceso comodín dada (prueba* podría significar archivo O directorio O ambos) | La más lenta | La búsqueda inicial con comodines son búsquedas más lentas. 
+
+
+| Cualquier otro filtro no basado en ruta. Filtros de tipo de usuario y entidad recomendados para estar entre comillas, por ejemplo, User= “Administrator” Entity Type= “txt” |  | Y rápido |  
+|===
+NOTA:
+
+. El recuento de actividades que se muestra junto al icono Todas las actividades se redondea a 30 minutos cuando el intervalo de tiempo seleccionado abarca más de 3 días. Por ejemplo, un intervalo de tiempo de _sept 1st 10:15 am a sept 7th 10:15 am_ mostrará recuentos de actividades desde sept 1st 10:00 am hasta sept 7th 10:30 am.
+. Del mismo modo, las métricas de recuento que se muestran en Tipos de actividad, Actividad en tipos de entidad e Historial de actividad se redondean a 30 minutos cuando el intervalo de tiempo seleccionado abarca más de 3 días.
+
+
+
+
 == Ordenar datos del historial de actividades forenses
 
 Puede ordenar los datos del historial de actividades por _Time, User, Source IP, Activity, Path_ y _Entity Type_. De forma predeterminada, la tabla se ordena por orden _time_ descendente, lo que significa que los datos más recientes se mostrarán primero. La ordenación está desactivada para los campos _Device_ y _Protocol_.
 
 
 
-== Exportando toda la actividad
+== Guía de usuario para exportaciones asíncronas
 
-Puede exportar el historial de actividades a un archivo .CSV haciendo clic en el botón _Export_ situado encima de la tabla Historial de actividades. Tenga en cuenta que sólo se exportan los 100.000 registros principales. Dependiendo de la cantidad de datos, la exportación puede tardar desde unos segundos hasta varios minutos.
+
+
+=== Descripción general
+
+La función de exportaciones asíncronas de Storage Workload Security está diseñada para gestionar grandes exportaciones de datos.
+
+
+
+=== Guía paso a paso: Exportación de datos con exportaciones asíncronas
+
+. *Iniciar exportación*: Seleccione la duración de tiempo y los filtros deseados para la exportación y haga clic en el botón de exportación.
+. *Espere a que se complete la exportación*: El tiempo de procesamiento puede variar de unos minutos a unas pocas horas. Es posible que tenga que actualizar la página de análisis forense unas cuantas veces. Una vez finalizado el trabajo de exportación, se activará el botón Descargar último archivo CSV de exportación.
+. *Descargar*: Haga clic en el botón “Descargar último archivo de exportación creado” para obtener los datos exportados en un formato .zip. Estos datos estarán disponibles para su descarga hasta que el usuario inicie otra exportación asíncrona o hayan transcurrido 3 días, lo que ocurra primero. El botón permanecerá activado hasta que se inicie otra exportación asíncrona.
+. *Limitaciones*:
++
+** El número de descargas asíncronas está limitado actualmente a 1 por usuario y 3 por inquilino.
+** Los datos exportados están limitados a un máximo de 1 millones de registros.
+
+
+
 
 En _/opt/netapp/cloudsecure/agent/export-script/_ encontrará un script de ejemplo para extraer datos forenses a través de la API. Consulte el archivo Léame en esta ubicación para obtener más información sobre el script.
 
@@ -148,21 +199,19 @@ El historial de actividad se conserva durante 13 meses para entornos de segurida
 == Aplicabilidad de los filtros en la página Forensics
 
 |===
+| Filtro | Qué hace | Ejemplo | Aplicable a estos filtros | No aplicable a estos filtros | Resultado 
 
 
-| Filtro | Qué hace | Ejemplo | ¿En qué filtros es aplicable? | No aplicable para qué filtros | Resultado 
+| * (Asterisk) | le permite buscar todo | Auto*03172022 Si el texto de búsqueda contiene guiones o guiones bajos, dar expresión entre paréntesis, por ejemplo, (svm*) para buscar svm-123 | Usuario, RUTA, tipo de entidad, dispositivo, volumen, ruta original |  | Devuelve todos los recursos que empiezan por “Auto” y terminan por “03172022” 
 
 
-| * (Asterisk) | le permite buscar todo | Auto*03172022 | Usuario, RUTA, Tipo de entidad, Tipo de dispositivo, volumen, Ruta original |  | Devuelve todos los recursos que empiezan por “Auto” y terminan por “03172022” 
+| ? (signo de interrogación) | le permite buscar un número específico de caracteres | AutoSabotageUser1_03172022? | Usuario, Tipo de entidad, dispositivo, volumen |  | Devuelve AutoSabotageUser1_03172022A, AutoSabotageUser1_03172022B, AutoSabotageUser1_031720225, etc. 
 
 
-| ? (signo de interrogación) | le permite buscar un número específico de caracteres | AutoSabotageUser1_03172022? | Usuario, Tipo de entidad, dispositivo, volumen |  | Devuelve AutoSabotageUser1_03172022A, AutoSabotageUser1_03172022AB, AutoSabotageUser1_031720225, etc. 
+| O. | permite especificar varias entidades | AutoSabotageUser1_03172022 o AutoRansomUser4_03162022 | Usuario, Dominio, RUTA DE ACCESO, Tipo de Entidad, Ruta de Acceso Original |  | Devuelve cualquiera de los valores de AutoSabotageUser1_03172022 O AutoRansomUser4_03162022 
 
 
-| O. | permite especificar varias entidades | AutoSabotageUser1_03172022 o AutoRansomUser4_03162022 | Usuario, dominio, nombre de usuario, RUTA, tipo de entidad, Dispositivo, ruta original |  | Devuelve cualquiera de los valores de AutoSabotageUser1_03172022 O AutoRansomUser4_03162022 
-
-
-| NO | permite excluir el texto de los resultados de la búsqueda | NO es AutoRansomero4_03162022 | Usuario, dominio, nombre de usuario, RUTA, tipo de entidad, RUTA original, volumen | Dispositivo | Devuelve todo lo que no empieza con"AutoRansomUser4_03162022" 
+| NO | permite excluir el texto de los resultados de la búsqueda | NO es AutoRansomero4_03162022 | Usuario,Dominio, RUTA DE ACCESO, Tipo de Entidad, RUTA DE ACCESO Original | Dispositivo | Devuelve todo lo que no empieza con"AutoRansomUser4_03162022" 
 
 
 | Ninguno | Busca valores NULL en todos los campos | Ninguno | Dominio |  | devuelve los resultados en los que el campo de destino está vacío 
@@ -242,28 +291,11 @@ Si todavía no se resuelve, compruebe si ha agregado el recopilador de datos de 
 | Algunos eventos de NFS no se ven en la interfaz de usuario de. | Compruebe lo siguiente: 1. Se debe ejecutar un recopilador de directorios de usuarios para el servidor AD con el conjunto de atributos POSIX con el atributo unixid habilitado desde la interfaz de usuario. 2. Cualquier usuario que haga acceso a NFS debe verse cuando se busca en la página de usuario desde UI 3. Los eventos sin formato (los eventos para los que aún no se ha detectado el usuario) no son compatibles con NFS 4. El acceso anónimo a la exportación de NFS no se supervisará. 5. Asegúrese de que la versión NFS se utiliza en menor valor que NFS4.1. 
 
 
-| Después de escribir algunas letras que contienen un carácter comodín como asterisco (*) en los filtros de las páginas Forensics _All Activity_ o _entities_, las páginas se cargan muy lentamente. | Un asterisco (\*) en la cadena de búsqueda busca todo. Sin embargo, las cadenas comodín iniciales como _*<searchTerm>_ o _*<searchTerm>*_ resultarán en una consulta lenta.
-Para obtener un mejor rendimiento, utilice cadenas de prefijo en su lugar, en el formato _<searchTerm>*_ (en otras palabras, agregue el asterisco (*) _after_ un término de búsqueda).
-Ejemplo: Utilice la cadena _testvolume*_, en lugar de _*testvolume_ o _*test*volume_.
-
-Utilice una búsqueda basada en prefijo para ver todas las actividades debajo de una carpeta determinada de forma recursiva (búsqueda jerárquica). por ejemplo, _/path1/path2/path3_ o _“/path1/path2/path3”_ enumerará todas las actividades de forma recursiva bajo _/path1/path2/path3_.
-También puede utilizar la opción “Agregar a filtro” en la pestaña Todas las actividades. 
+| Después de escribir algunas letras que contienen un carácter comodín como asterisco (*) en los filtros de las páginas Forensics _All Activity_ o _entities_, las páginas se cargan muy lentamente. | Un asterisco (\*) en la cadena de búsqueda busca todo. Sin embargo, las cadenas comodín iniciales como _*<searchTerm>_ o _*<searchTerm>*_ resultarán en una consulta lenta. Para obtener un mejor rendimiento, utilice cadenas de prefijo en su lugar, en el formato _<searchTerm>*_ (en otras palabras, agregue el asterisco (*) _after_ un término de búsqueda). Ejemplo: Utilice la cadena _testvolume*_, en lugar de _*testvolume_ o _*test*volume_. Utilice una búsqueda de directorio para ver todas las actividades debajo de una carpeta dada de forma recursiva (búsqueda jerárquica). Por ejemplo, /path1/path2/path3/ o “/path1/path2/path3/” enumerará todas las actividades de forma recursiva en /path1/path2/path3. Alternativamente, use la opción “Agregar a filtro” en la pestaña Todas las actividades.” 
 
 
 | Encuentro un error de solicitud fallida con el código de estado 500/503 al utilizar un filtro de ruta. | Intente utilizar un rango de fechas más pequeño para filtrar registros. 
 
 
-| La interfaz de usuario forense carga los datos lentamente cuando se utiliza el filtro _PATH_. | Si la ruta es _/AAA/BBB/CCC/DDD_, entonces en lugar de buscar:
-
-AAA/BBB/CCC*
-
-O.
-
-AAA/BBB/C*
-
-Intente buscar:
-
-AAA/BBB/CCC/*
-
-Esta búsqueda debería permitir que los datos se carguen más rápido. 
+| La interfaz de usuario forense carga los datos lentamente cuando se utiliza el filtro _PATH_. | Se recomiendan filtros de ruta de directorio (cadena de ruta que termina con /) de hasta 4 directorios de profundidad para obtener resultados más rápidos. Por ejemplo, si la ruta de directorio es /AAA/BBB/CCC/DDD, intente buscar /AAA/BBB/CCC/DDD/ o “/AAA/BBB/CCC/DDD/” para cargar datos más rápido. 
 |===

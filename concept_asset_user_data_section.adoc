@@ -48,7 +48,7 @@ Para eliminar una aplicación, coloque la lista de aplicaciones en la lista y el
 
 == Uso de la sección datos de usuario para asignar o modificar anotaciones
 
-A la hora de personalizar Cloud Insights para realizar un seguimiento de los datos según sus requisitos corporativos, puede definir notas especializadas llamadas anotaciones y asignarlas a sus activos. La sección datos de usuario de una página de activos muestra las anotaciones asignadas a un activo y también permite cambiar las anotaciones asignadas a ese activo.
+Cuando personalice Data Infrastructure Insights para hacer un seguimiento de los datos según los requisitos de su empresa, puede definir notas especializadas llamadas anotaciones y asignarlas a sus activos. La sección datos de usuario de una página de activos muestra las anotaciones asignadas a un activo y también permite cambiar las anotaciones asignadas a ese activo.
 
 .Pasos
 . Para agregar una anotación al activo, en la sección datos de usuario de la página del activo, haga clic en *+anotación*.

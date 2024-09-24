@@ -38,9 +38,9 @@ image:ServiceMap_NKMO_Deployment_Options.png["Selección de la opción Mapa dura
 
 == Supervisiones
 
-La asignación de carga de trabajo utiliza link:task_create_monitor.html["supervisiones"] para derivar información. Cloud Insights proporciona una serie de monitores de Kubernetes predeterminados (tenga en cuenta que estos pueden ser _Paused_ de forma predeterminada. Puede _Reanudar_ (es decir, habilitar) los monitores que desee), o puede crear monitores personalizados para objetos de kubernetes, que también utilizará el mapa de carga de trabajo.
+La asignación de carga de trabajo utiliza link:task_create_monitor.html["supervisiones"] para derivar información. Data Infrastructure Insights proporciona una serie de supervisores de Kubernetes predeterminados (tenga en cuenta que estos pueden estar _Paused_ de forma predeterminada. Puede _Reanudar_ (es decir, habilitar) los monitores que desee), o puede crear monitores personalizados para objetos de kubernetes, que también utilizará el mapa de carga de trabajo.
 
-Puede crear alertas de métricas Cloud Insights en cualquiera de los tipos de objeto siguientes. Asegúrese de que los datos están agrupados por el tipo de objeto predeterminado.
+Puedes crear alertas de métricas de Data Infrastructure Insights en cualquiera de los tipos de objeto siguientes. Asegúrese de que los datos están agrupados por el tipo de objeto predeterminado.
 
 * kubernetes
 * inicio de kubernetes
@@ -83,7 +83,7 @@ image:Workload_Map_Slideout_with_Alert.png["Detalles de la diapositiva de las ca
 
 == Búsqueda y filtrado
 
-Al igual que sucede con otras funciones de Cloud Insights, puede establecer fácilmente filtros para centrarse en los objetos específicos o los atributos de carga de trabajo que desee.
+Como sucede con otras funciones de Data Infrastructure Insights, puede configurar fácilmente filtros para centrarse en los objetos específicos o los atributos de carga de trabajo que desee.
 
 image:Workload_Map_Filtering.png["Filtrado de asignación de carga de trabajo"]
 
@@ -117,7 +117,7 @@ Las etiquetas de carga de trabajo son necesarias si desea que el mapa identifiqu
 
 * Si el origen es externo al clúster de kubernetes:
 +
-** Cloud Insights intentará analizar el nombre resuelto de DNS para extraer el tipo de servicio.
+** Data Infrastructure Insights intentará analizar el nombre resuelto DNS para extraer el tipo de servicio.
 +
 Por ejemplo, con un nombre DNS resuelto de _s3.eu-north-1.amazonaws.com_, el nombre resuelto se analiza para obtener _S3_ como tipo de servicio.
 

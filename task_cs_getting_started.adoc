@@ -21,9 +21,6 @@ summary: Estos sencillos pasos le permitirán empezar a utilizar Workload Securi
 [role="lead"]
 Hay tareas de configuración que se deben completar antes de empezar a utilizar Workload Security para supervisar la actividad del usuario.
 
-
-NOTE: La seguridad de carga de trabajo no está disponible en la edición federal de Cloud Insights.
-
 El sistema Workload Security utiliza un agente para recopilar datos de acceso de los sistemas de almacenamiento e información de usuario de los servidores de Directory Services.
 
 Es necesario configurar lo siguiente para poder comenzar a recoger datos:

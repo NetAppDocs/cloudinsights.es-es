@@ -4,7 +4,7 @@ permalink: bluexp_overview.html
 summary: Cree, proteja y gobierne sus datos de multicloud híbrido desde un único plano de control. 
 keywords: bluexp, cloud manager, cm, storage, data, services, integrated 
 ---
-= Cloud Insights forma parte de BlueXP
+= Información sobre la infraestructura de datos forma parte de BlueXP 
 :toc: macro
 :hardbreaks:
 :toclevels: 2
@@ -19,17 +19,17 @@ keywords: bluexp, cloud manager, cm, storage, data, services, integrated
 
 
 [role="lead"]
-BlueXP le permite gestionar todos sus activos de almacenamiento y datos de NetApp desde una única interfaz. En BlueXP encontrará muchos servicios de almacenamiento nuevos, así como servicios de datos que anteriormente sólo estaban disponibles como un servicio independiente con una interfaz de usuario independiente. Cloud Insights es uno de estos servicios.
+BlueXP le permite gestionar todos sus activos de almacenamiento y datos de NetApp desde una única interfaz. En BlueXP encontrará muchos servicios de almacenamiento nuevos, así como servicios de datos que anteriormente sólo estaban disponibles como un servicio independiente con una interfaz de usuario independiente. Data Infrastructure Insights (anteriormente Cloud Insights) es uno de estos servicios.
 
 
 NOTE: La integración del menú de navegación de BlueXP se considera un link:concept_preview_features.html["_Preview_"] y, por lo tanto, está sujeta a cambios.
 
-Nuevo e intuitivo menú en el menú de navegación de BlueXP, los servicios de datos se organizan por categorías y se nombran según su funcionalidad. Por ejemplo, el conjunto de funciones "Cloud Insights" se encuentra en el menú "Observability" (Observabilidad). Mientras explora Cloud Insights, la sección "Observability" aparece en la parte superior del menú de navegación. Esto es cierto para cada servicio BlueXP mientras explora.
+Nuevo e intuitivo menú en el menú de navegación de BlueXP, los servicios de datos se organizan por categorías y se nombran según su funcionalidad. Por ejemplo, el conjunto de funciones «Data Infrastructure Insights» se encuentra en el menú «Observabilidad». Mientras explora la información sobre la infraestructura de datos, la sección «Observabilidad» aparece en la parte superior del menú de navegación. Esto es cierto para cada servicio BlueXP mientras explora.
 
 image:BlueXP_Nav_Menu.png["El menú de navegación de BlueXP, que muestra el Observabilidad de la parte superior y de otros servicios de NetApp a continuación"]
 
 
-NOTE: A lo largo de esta documentación, los términos "Cloud Insights" y "Observabilidad" pueden usarse indistintamente.
+NOTE: En esta documentación, los términos «Información de la infraestructura de datos» y «Observabilidad» pueden utilizarse indistintamente.
 
 La información sobre herramientas del cursor proporciona más información.
 

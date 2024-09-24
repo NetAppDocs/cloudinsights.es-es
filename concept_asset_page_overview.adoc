@@ -25,7 +25,7 @@ Las páginas de activos resumen el estado actual de un activo y contienen víncu
 
 == Tipos de páginas de activos
 
-Cloud Insights proporciona páginas de activos para los siguientes activos:
+Data Infrastructure Insights proporciona páginas de activos para los siguientes activos:
 
 * Máquina virtual
 * Máquina virtual de almacenamiento (SVM)

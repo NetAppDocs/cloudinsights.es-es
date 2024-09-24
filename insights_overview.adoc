@@ -31,7 +31,7 @@ Hay disponible una serie de información. Vaya a *Paneles > Insights* para comen
 
 === Recursos compartidos bajo estrés
 
-Las cargas de trabajo con un alto impacto pueden reducir el rendimiento de otras cargas de trabajo en un recurso compartido. Esto pone el recurso compartido bajo estrés. Cloud Insights ofrece herramientas para ayudarle a investigar la saturación de recursos y el impacto de su entorno. link:insights_shared_resources_under_stress.html["Leer más"]
+Las cargas de trabajo con un alto impacto pueden reducir el rendimiento de otras cargas de trabajo en un recurso compartido. Esto pone el recurso compartido bajo estrés. Data Infrastructure Insights proporciona herramientas que te ayudan a investigar la saturación de los recursos y el impacto en tu entorno. link:insights_shared_resources_under_stress.html["Leer más"]
 
 
 
@@ -46,4 +46,4 @@ Los espacios de nombres de Kubernetes que se ejecutan en Space Insight le ofrece
 La información _Reclaim ONTAP Cold Storage_ proporciona datos sobre capacidad fría, ahorros potenciales de costes y energía, y elementos de acción recomendados para volúmenes en sistemas de ONTAP. link:insights_reclaim_ontap_cold_storage.html["Leer más"]
 
 
-NOTE: Esta es una función _Preview_ y puede cambiar con el tiempo a medida que se realizan mejoras. link:/concept_preview_features.html["Leer más"] Acerca de las funciones de vista preliminar de Cloud Insights.
+NOTE: Esta es una función _Preview_ y puede cambiar con el tiempo a medida que se realizan mejoras. link:/concept_preview_features.html["Leer más"] Acerca de las funciones de vista previa de información sobre la infraestructura de datos.

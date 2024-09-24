@@ -21,7 +21,7 @@ summary: Los conocimientos le permiten ver cómo afectan los recursos a otros re
 [role="lead"]
 La información _Reclaim ONTAP Cold Storage_ proporciona datos sobre capacidad fría, ahorros potenciales de costes y energía, y elementos de acción recomendados para volúmenes en sistemas de ONTAP.
 
-Para ver estos detalles, navegue a *Paneles de mando > Información* y eche un vistazo a la información _Reclaim ONTAP Cold Storage_. Tenga en cuenta que este Insight solo incluirá los almacenamientos afectados si Cloud Insights ha detectado almacenamiento en frío; de lo contrario, aparecerá un mensaje que indica que todos se borrarán.
+Para ver estos detalles, navegue a *Paneles de mando > Información* y eche un vistazo a la información _Reclaim ONTAP Cold Storage_. Tenga en cuenta que este Insight solo incluirá los almacenamientos afectados si Data Infrastructure Insights ha detectado almacenamiento en frío; de lo contrario, aparecerá un mensaje que indica que todos se pueden borrar.
 
 Tenga en cuenta que no se muestran los datos inactivos de menos de 30 días de antigüedad.
 

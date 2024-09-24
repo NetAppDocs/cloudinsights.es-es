@@ -16,9 +16,6 @@ summary: 'Puede definir políticas de respuesta automatizadas para ataques poten
 [role="lead"]
 Las directivas de respuesta activan acciones como la toma de instantáneas o la restricción del acceso de los usuarios en caso de un ataque o un comportamiento anómalo del usuario.
 
-
-NOTE: La seguridad de carga de trabajo no está disponible en la edición federal de Cloud Insights.
-
 Puede establecer políticas en dispositivos específicos o en todos los dispositivos. Para establecer una política de respuesta, seleccione *Admin > Políticas de respuesta automatizadas* y haga clic en el botón *+Policy* correspondiente. Puede crear directivas para ataques o advertencias.
 
 image:Automated_Response_Screenshot.png["Crear directiva de ataque"]

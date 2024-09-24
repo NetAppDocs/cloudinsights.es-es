@@ -19,9 +19,9 @@ summary: Supervisar métricas para detectar anomalías
 
 
 [role="lead"]
-La detección de anomalías proporciona información sobre cambios inesperados en los patrones de datos de su entorno. Una anomalía se produce cuando el patrón de comportamiento de un objeto cambia en su entorno, por ejemplo, si un objeto experimenta un cierto nivel de latencia en un determinado momento los miércoles, pero la latencia se dispara por encima de ese nivel en ese momento el miércoles siguiente, ese pico se consideraría una anomalía. Cloud Insights permite la creación de monitores para alertar cuando se producen anomalías como este.
+La detección de anomalías proporciona información sobre cambios inesperados en los patrones de datos de su entorno. Una anomalía se produce cuando el patrón de comportamiento de un objeto cambia en su entorno, por ejemplo, si un objeto experimenta un cierto nivel de latencia en un determinado momento los miércoles, pero la latencia se dispara por encima de ese nivel en ese momento el miércoles siguiente, ese pico se consideraría una anomalía. Data Infrastructure Insights permite la creación de monitores para que avisen de cualquier anomalía como este.
 
-La detección de anomalías es adecuada para métricas de objetos que muestran un patrón recurrente y predecible. Cuando estas métricas de objetos se disparan por encima o por debajo de los niveles esperados, Cloud Insights puede generar una alerta para solicitar la investigación.
+La detección de anomalías es adecuada para métricas de objetos que muestran un patrón recurrente y predecible. Cuando estas métricas de los objetos se disparan por encima o por debajo de los niveles esperados, Data Infrastructure Insights puede generar una alerta que permita investigarlas rápidamente.
 
 image:anomaly_detection_expert_view.png["gráfico en el que se muestra una anomalía detectada"]
 
@@ -29,7 +29,7 @@ image:anomaly_detection_expert_view.png["gráfico en el que se muestra una anoma
 
 == ¿Qué es la detección de anomalías?
 
-Una anomalía ocurre cuando el valor medio de una métrica es un número de desviaciones estándar lejos de la media ponderada de esa métrica para las semanas anteriores, con semanas recientes teniendo más peso que las semanas anteriores. Cloud Insights proporciona la capacidad de supervisar los datos y generar alertas cuando se detectan anomalías. Puede elegir entre establecer los niveles de sensibilidad de detección. Por ejemplo, una sensibilidad más alta sería cuando el valor medio es menos desviaciones estándar de la media, lo que provoca que se generen más alertas. Por el contrario, menor sensibilidad = más desviaciones estándar de la media = menos alertas.
+Una anomalía ocurre cuando el valor medio de una métrica es un número de desviaciones estándar lejos de la media ponderada de esa métrica para las semanas anteriores, con semanas recientes teniendo más peso que las semanas anteriores. Data Infrastructure Insights permite supervisar los datos y generar alertas cuando se detectan anomalías. Puede elegir entre establecer los niveles de sensibilidad de detección. Por ejemplo, una sensibilidad más alta sería cuando el valor medio es menos desviaciones estándar de la media, lo que provoca que se generen más alertas. Por el contrario, menor sensibilidad = más desviaciones estándar de la media = menos alertas.
 
 
 

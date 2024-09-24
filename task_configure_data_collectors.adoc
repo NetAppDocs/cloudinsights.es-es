@@ -19,7 +19,7 @@ summary: Instrucciones generales para el recopilador de datos
 
 
 [role="lead"]
-Puede configurar recopiladores de datos en el entorno de Cloud Insights para recopilar datos de dispositivos en el centro de datos.
+Los recolectores de datos se configuran en su entorno Data Infrastructure Insights para recopilar datos de los dispositivos del centro de datos.
 
 .Antes de empezar
 * Debe haber configurado una unidad de adquisición para poder empezar a recopilar datos.
@@ -28,7 +28,7 @@ Puede configurar recopiladores de datos en el entorno de Cloud Insights para rec
 
 
 .Pasos
-. En el menú Cloud Insights, haga clic en *Observabilidad > Colectores*
+. En el menú Data Infrastructure Insights, haga clic en *Observabilidad > Recopiladores*
 +
 El sistema muestra los colectores de datos disponibles dispuestos por el proveedor.
 
@@ -39,7 +39,7 @@ En el cuadro de diálogo puede configurar el recopilador de datos y agregar una 
 . Introduzca un nombre para el recopilador de datos.
 . Haga clic en *Configuración avanzada* para agregar campos de configuración adicionales. (No todos los recopiladores de datos necesitan configuración avanzada.)
 . Haga clic en *Configuración de prueba* para comprobar que el recopilador de datos está configurado correctamente.
-. Haga clic en *Agregar colector* para guardar la configuración y agregar el recopilador de datos a su arrendatario Cloud Insights.
+. Haga clic en *Agregar recopilador* para guardar la configuración y agregar el recopilador de datos a su inquilino de Data Infrastructure Insights.
 
 
 Puede tardar hasta dos períodos de sondeo antes de que los datos del servicio se muestren en paneles o estén disponibles para realizar consultas.

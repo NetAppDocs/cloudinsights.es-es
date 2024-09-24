@@ -19,7 +19,7 @@ summary: El Explorador de registros es una herramienta eficaz para investigar pr
 
 
 [role="lead"]
-El Explorador de registros de Cloud Insights es una herramienta eficaz para consultar registros del sistema. Además de ayudar con las investigaciones, también puede guardar una consulta de registro en un monitor para proporcionar alertas cuando se activan esos activadores de registro específicos.
+El Explorador de registros de Data Infrastructure Insights es una potente herramienta para consultar registros del sistema. Además de ayudar con las investigaciones, también puede guardar una consulta de registro en un monitor para proporcionar alertas cuando se activan esos activadores de registro específicos.
 
 Para comenzar a explorar los registros, haga clic en *Log Queries > +New Log Query*.
 
@@ -33,7 +33,7 @@ NOTE: Los tipos de registros disponibles para la consulta pueden variar en funci
 Puede establecer filtros para afinar aún más los resultados de la consulta. Por ejemplo, para buscar todos los mensajes de registro que muestran un error, establezca un filtro para _Messages_ que contenga la palabra "failed".
 
 
-TIP: Puede empezar a escribir el texto deseado en el campo de filtro; Cloud Insights le pedirá que cree una búsqueda con comodín que contenga la cadena a medida que escribe.
+TIP: Puede empezar a escribir el texto deseado en el campo de filtro; Data Infrastructure Insights le pedirá que cree una búsqueda con comodines que contenga la cadena a medida que escribe.
 
 Los resultados se muestran en un gráfico que muestra el número de instancias de registro de cada período de tiempo mostrado. Debajo del gráfico están las entradas de registro temconsigo mismo. El gráfico y las entradas se actualizan automáticamente en función del intervalo de tiempo seleccionado.
 
@@ -79,7 +79,7 @@ Tenga en cuenta que, en el caso anterior, ya que tanto la monitorización CM com
 
 
 . Los resultados del filtro actual, incluidos los valores de filtro por Y el filtro de consulta avanzada, se muestran en la lista de resultados. La lista se puede ordenar por cualquier columna mostrada. Para mostrar columnas adicionales, seleccione el icono de engranaje.
-. Se amplió el gráfico para mostrar solo los resultados del registro que se produjeron dentro de un período de tiempo específico. El intervalo de tiempo que se muestra aquí refleja el nivel de zoom actual. Seleccione el botón _Restablecer zoom_ para restablecer el nivel de zoom al rango de tiempo actual de Cloud Insights.
+. Se amplió el gráfico para mostrar solo los resultados del registro que se produjeron dentro de un período de tiempo específico. El intervalo de tiempo que se muestra aquí refleja el nivel de zoom actual. Seleccione el botón _Reset Zoom_ para restablecer el nivel de zoom al intervalo de tiempo actual de Data Infrastructure Insights.
 . Los resultados del gráfico se han agrupado por el campo _SOURCE_. El gráfico muestra los resultados de cada columna agrupados en colores. Si pasa el ratón sobre una columna del gráfico, se mostrarán algunos detalles sobre las entradas específicas.
 +
 image:Log_Advanced_Query_Group_Detail.png["Detalles de salto agrupado"]

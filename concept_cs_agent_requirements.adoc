@@ -21,9 +21,6 @@ keywords: agent, Linux, requirements, docker, browsers, permissions, Network, Cl
 [role="lead"]
 Debe link:task_cs_add_agent.html["Instale un agente"] para adquirir información de sus recopiladores de datos. Antes de instalar el agente, debe asegurarse de que su entorno cumple con los requisitos de sistema operativo, CPU, memoria y espacio en disco.
 
-
-NOTE: La seguridad de la carga de trabajo de almacenamiento no está disponible en la edición federal de Cloud Insights.
-
 [cols="36,60"]
 |===
 | Componente | Requisitos de Linux 
@@ -52,7 +49,7 @@ Si /opt es una carpeta montada de un almacenamiento NAS, asegúrese de que los u
 
 | Red | Conexión Ethernet de 100 Mbps a 1 Gbps, dirección IP estática, conectividad IP con todos los dispositivos y un puerto requerido para la instancia de seguridad de carga de trabajo (80 o 443). 
 |===
-Tenga en cuenta que el agente de seguridad de carga de trabajo se puede instalar en la misma máquina que una unidad de adquisición y/o agente de Cloud Insights. Sin embargo, es una mejor práctica instalar estos en máquinas independientes. En el caso de que se instalen en el mismo equipo, asigne espacio en disco como se muestra a continuación:
+Tenga en cuenta que el agente de seguridad de carga de trabajo se puede instalar en el mismo equipo que una unidad de adquisición y/o agente de Data Infrastructure Insights. Sin embargo, es una mejor práctica instalar estos en máquinas independientes. En el caso de que se instalen en el mismo equipo, asigne espacio en disco como se muestra a continuación:
 
 |===
 
@@ -77,7 +74,7 @@ Para entornos de seguridad de cargas de trabajo *basados en EE.UU.*:
 | Protocolo | Puerto | Origen | Destino | Descripción 
 
 
-| TCP | 443 | Agente de Seguridad de Carga de Trabajo | <site_name>.cs01.cloudinsights.netapp.com <site_name>.c01.cloudinsights.netapp.com <site_name>.c02.cloudinsights.netapp.com | Acceso a Cloud Insights 
+| TCP | 443 | Agente de Seguridad de Carga de Trabajo | <site_name>.cs01.cloudinsights.netapp.com <site_name>.c01.cloudinsights.netapp.com <site_name>.c02.cloudinsights.netapp.com | Acceso a Información sobre la infraestructura de datos 
 
 
 | TCP | 443 | Agente de Seguridad de Carga de Trabajo | gateway.c01.cloudinsights.netapp.com agentlogin.cs01.cloudinsights.netapp.com | Acceso a los servicios de autenticación 
@@ -89,7 +86,7 @@ Para entornos de seguridad de cargas de trabajo * basados en Europa:
 | Protocolo | Puerto | Origen | Destino | Descripción 
 
 
-| TCP | 443 | Agente de Seguridad de Carga de Trabajo | <site_name>.cs01-eu-1.cloudinsights.netapp.com <site_name>.c01-eu-1.cloudinsights.netapp.com <site_name>.c02-eu-1.cloudinsights.netapp.com | Acceso a Cloud Insights 
+| TCP | 443 | Agente de Seguridad de Carga de Trabajo | <site_name>.cs01-eu-1.cloudinsights.netapp.com <site_name>.c01-eu-1.cloudinsights.netapp.com <site_name>.c02-eu-1.cloudinsights.netapp.com | Acceso a Información sobre la infraestructura de datos 
 
 
 | TCP | 443 | Agente de Seguridad de Carga de Trabajo | gateway.c01.cloudinsights.netapp.com agentlogin.cs01-eu-1.cloudinsights.netapp.com | Acceso a los servicios de autenticación 
@@ -101,7 +98,7 @@ Para entornos de seguridad de cargas de trabajo * basados en APAC*:
 | Protocolo | Puerto | Origen | Destino | Descripción 
 
 
-| TCP | 443 | Agente de Seguridad de Carga de Trabajo | <site_name>.cs01-ap-1.cloudinsights.netapp.com <site_name>.c01-ap-1.cloudinsights.netapp.com <site_name>.c02-ap-1.cloudinsights.netapp.com | Acceso a Cloud Insights 
+| TCP | 443 | Agente de Seguridad de Carga de Trabajo | <site_name>.cs01-ap-1.cloudinsights.netapp.com <site_name>.c01-ap-1.cloudinsights.netapp.com <site_name>.c02-ap-1.cloudinsights.netapp.com | Acceso a Información sobre la infraestructura de datos 
 
 
 | TCP | 443 | Agente de Seguridad de Carga de Trabajo | gateway.c01.cloudinsights.netapp.com agentlogin.cs01-ap-1.cloudinsights.netapp.com | Acceso a los servicios de autenticación 

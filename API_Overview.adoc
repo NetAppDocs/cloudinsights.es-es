@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: API_Overview.html 
 keywords: API, customer API, premium, JSON, Swagger, Access Token, token, rotate, expired 
-summary: La API de Cloud Insights permite la integración con otras aplicaciones, como los sistemas de supervisión y generación de informes. 
+summary: La API de Data Infrastructure Insights permite la integración con otras aplicaciones, como los sistemas de supervisión y generación de informes. 
 ---
-= API de Cloud Insights
+= API de información de infraestructura de datos
 :toc: macro
 :hardbreaks:
 :toclevels: 2
@@ -19,9 +19,9 @@ summary: La API de Cloud Insights permite la integración con otras aplicaciones
 
 
 [role="lead"]
-La API de Cloud Insights permite a los clientes y proveedores independientes de software (ISV) de NetApp integrar Cloud Insights con otras aplicaciones, como CMDB u otros sistemas de emisión de boletos.
+La API de información sobre infraestructuras de datos permite que los clientes de NetApp y los proveedores de software independientes (ISV) integren la información sobre infraestructuras de datos con otras aplicaciones, como CMDB u otros sistemas de tickets.
 
-Tenga en cuenta que las API de Cloud Insights están disponibles en función de su edición actual:
+Tenga en cuenta que las API de Data Infrastructure Insights están disponibles según su edición actual:
 
 [cols="<,^s,^s,^s"]
 |===
@@ -45,25 +45,25 @@ Tenga en cuenta que las API de Cloud Insights están disponibles en función de 
 
 | Registrar ingestión |  | image:SmallCheckMark.png["marca de verificación"] | image:SmallCheckMark.png["marca de verificación"] 
 |===
-Además, su Cloud Insights link:https://docs.netapp.com/us-en/cloudinsights/concept_user_roles.html#permission-levels["función de conjunto de funciones"] Determinará a qué API puede acceder. Los roles de usuario e invitado tienen menos privilegios que el rol de administrador. Por ejemplo, si tiene la función de administrador en Monitor y Optimize, pero la función de usuario en Reporting, puede administrar todos los tipos de API excepto Data Warehouse.
+Además, tu Información sobre la infraestructura de datos link:https://docs.netapp.com/us-en/cloudinsights/concept_user_roles.html#permission-levels["función de conjunto de funciones"]determinará a qué API puedes acceder. Los roles de usuario e invitado tienen menos privilegios que el rol de administrador. Por ejemplo, si tiene la función de administrador en Monitor y Optimize, pero la función de usuario en Reporting, puede administrar todos los tipos de API excepto Data Warehouse.
 
 
 
 == Requisitos para acceder a las API
 
 * Se utiliza un modelo de token de acceso de API para conceder acceso.
-* La gestión de token de API la realizan los usuarios de Cloud Insights con la función de administrador.
+* Los usuarios de Data Infrastructure Insights con la función de administrador llevan a cabo la gestión de tokens de API.
 
 
 
 
 == Documentación de API (Swagger)
 
-Para obtener la información más reciente sobre la API, inicie sesión en Cloud Insights y vaya a *Admin > API access*. Haga clic en el enlace *Documentación de API*.
+Para obtener la información más reciente sobre la API, inicie sesión en Data Infrastructure Insights y vaya a *Admin > API acccess*. Haga clic en el enlace *Documentación de API*.
 
 image:API_Swagger_Types.png["Tipos de API"]
 
-La documentación de API es basada en Swagger, que proporciona una descripción breve e información de uso de la API, y permite probarlo en su entorno. Según la función de usuario y/o la edición Cloud Insights, los tipos de API disponibles para usted pueden variar.
+La documentación de API es basada en Swagger, que proporciona una descripción breve e información de uso de la API, y permite probarlo en su entorno. En función de su rol de usuario o de la edición Data Infrastructure Insights, los tipos de API que tiene a su disposición pueden variar.
 
 image:API_Swagger_Example.png["Ejemplo de API de Swagger"]
 
@@ -71,7 +71,7 @@ image:API_Swagger_Example.png["Ejemplo de API de Swagger"]
 
 == Tokens de acceso API
 
-Antes de utilizar la API de Cloud Insights, debe crear uno o más *tokens de acceso de API*. Los tokens de acceso se utilizan para los tipos de API especificados y pueden otorgar permisos de lectura y/o escritura. También puede establecer la caducidad de cada token de acceso. Todas las API de los tipos especificados son válidas para el token de acceso. Cada token es nulo de un nombre de usuario o contraseña.
+Antes de usar la API de información de la infraestructura de datos, debe crear uno o más tokens de acceso a la API *. Los tokens de acceso se utilizan para los tipos de API especificados y pueden otorgar permisos de lectura y/o escritura. También puede establecer la caducidad de cada token de acceso. Todas las API de los tipos especificados son válidas para el token de acceso. Cada token es nulo de un nombre de usuario o contraseña.
 
 Para crear un token de acceso:
 
@@ -91,7 +91,7 @@ NOTE: El token sólo estará disponible para copiar en el portapapeles y guardar
 
 Puede desactivar, activar y revocar tokens. Se pueden activar los tokens desactivados.
 
-Los tokens conceden acceso de uso general a las API desde la perspectiva del cliente; además, gestionan el acceso a las API en el ámbito de su propio inquilino. Los administradores del cliente pueden conceder y revocar estos tokens sin la intervención directa del personal de administración de Cloud Insights.
+Los tokens conceden acceso de uso general a las API desde la perspectiva del cliente; además, gestionan el acceso a las API en el ámbito de su propio inquilino. Los administradores de clientes pueden conceder y revocar estos tokens sin intervención directa del personal de back-end de Data Infrastructure Insights.
 
 La aplicación recibe un token de acceso después de que un usuario autentica correctamente y autoriza el acceso, a continuación, pasa el token de acceso como credencial cuando llama a la API de destino. El token pasado informa a la API de que el portador del token ha sido autorizado para acceder a la API y realizar acciones específicas especificadas por el ámbito que se concedió durante la autorización.
 
@@ -108,12 +108,12 @@ Consulte las páginas de Swagger para ver ejemplos específicos de la API que de
 
 == Tipo de API
 
-La API de Cloud Insights está basada en categorías y actualmente contiene los siguientes tipos:
+La API de Data Infrastructure Insights se basa en categorías y actualmente contiene los siguientes tipos:
 
 * El tipo DE ACTIVO contiene API de activo, consulta y búsqueda.
 +
 ** Activos: Enumera los objetos de nivel superior y recupera un objeto específico o una jerarquía de objetos.
-** Consulta: Recupere y gestione consultas Cloud Insights.
+** Consulta: Recuperar y gestionar consultas de Data Infrastructure Insights.
 ** Importar: Importe anotaciones o aplicaciones y asígnelas a objetos
 ** Búsqueda: Busque un objeto específico sin conocer el ID único del objeto o su nombre completo.
 
@@ -125,13 +125,13 @@ La API de Cloud Insights está basada en categorías y actualmente contiene los 
 
 Es posible que haya disponibles más tipos y/o API a lo largo del tiempo. Puede encontrar la información de API más reciente en el link:#api-documentation-swagger["Documentación de API Swagger"].
 
-Tenga en cuenta que los tipos de API a los que tiene acceso un usuario también dependen de link:concept_user_roles.html["Rol de usuario"] Se incluyen en cada conjunto de funciones de Cloud Insights (Supervisión, seguridad de carga de trabajo, generación de informes).
+Tenga en cuenta que los tipos de API a los que un usuario tiene acceso dependen también de link:concept_user_roles.html["Rol de usuario"]los que tienen en cada conjunto de funciones de Data Infrastructure Insights (supervisión, seguridad de la carga de trabajo, informes).
 
 
 
 == Transversal de inventario
 
-En esta sección se describe cómo recorrer una jerarquía de objetos Cloud Insights.
+En esta sección se describe cómo atravesar una jerarquía de objetos de Data Infrastructure Insights.
 
 
 
@@ -178,7 +178,7 @@ Para desalentarlo, las solicitudes de cobranzas de nivel superior no se pueden e
 
 == Datos de rendimiento
 
-Los datos de rendimiento se recopilan en muchos dispositivos como muestras independientes. Cada hora (valor predeterminado), Cloud Insights agrega y resume muestras de rendimiento.
+Los datos de rendimiento se recopilan en muchos dispositivos como muestras independientes. Cada hora (valor predeterminado), Data Infrastructure Insights agrega y resume muestras de rendimiento.
 
 La API permite el acceso tanto a las muestras como a los datos resumidos. Para un objeto con datos de rendimiento, hay disponible un resumen de rendimiento como _Expand=Performance_. Las series de tiempo del historial de rendimiento están disponibles mediante el _Expand=performance.history_ anidado.
 
@@ -203,7 +203,7 @@ El diccionario de datos de rendimiento resultante tiene las siguientes claves:
 * Cualquier otra clave de diccionario (“diskThroughput”, etc.) es el nombre de una métrica de rendimiento.
 
 
-Cada tipo de objeto de datos de rendimiento tiene un conjunto único de métricas de rendimiento. Por ejemplo, el objeto de rendimiento de máquina virtual admite “diskThroughput” como métrica de rendimiento. Cada métrica de rendimiento admitida es de una cierta “performanceCategory” presentada en el diccionario de métricas. Cloud Insights admite varios tipos de métrica de rendimiento enumerados más adelante en este documento. Cada diccionario de métrica de rendimiento también tendrá el campo “descripción” que es una descripción legible por el usuario de esta métrica de rendimiento y un conjunto de entradas de contador de resumen de rendimiento.
+Cada tipo de objeto de datos de rendimiento tiene un conjunto único de métricas de rendimiento. Por ejemplo, el objeto de rendimiento de máquina virtual admite “diskThroughput” como métrica de rendimiento. Cada métrica de rendimiento admitida es de una cierta “performanceCategory” presentada en el diccionario de métricas. Data Infrastructure Insights admite varios tipos de métricas de rendimiento que se detallan más adelante en este documento. Cada diccionario de métrica de rendimiento también tendrá el campo “descripción” que es una descripción legible por el usuario de esta métrica de rendimiento y un conjunto de entradas de contador de resumen de rendimiento.
 
 El contador de resumen de rendimiento es el resumen de contadores de rendimiento. Presenta valores agregados típicos como min, max y avg para un contador y también el último valor observado, intervalo de tiempo para datos resumidos, tipo de unidad para contador y umbrales para datos. Sólo los umbrales son opcionales; el resto de atributos son obligatorios.
 
@@ -269,7 +269,7 @@ image:StoragePoolCapacity.png["Ejemplo de capacidad de pool de almacenamiento"]
 
 La API de búsqueda es un punto de entrada sencillo al sistema. El único parámetro de entrada a la API es una cadena de forma libre y el JSON resultante contiene una lista clasificada de resultados. Los tipos son los diferentes tipos de activos del inventario, como los almacenamientos, hosts, almacenes de datos, etc. Cada tipo contiene una lista de objetos del tipo que coinciden con los criterios de búsqueda.
 
-Cloud Insights es una solución ampliable (abierta) que permite integraciones con sistemas de orquestación, gestión comercial, control de cambios y emisión de tickets de terceros, e integraciones personalizadas de CMDB.
+Data Infrastructure Insights es una solución extensible (amplia y abierta) que permite la integración con sistemas de coordinación, gestión empresarial, control de cambios y tickets de terceros, así como integraciones CMDB personalizadas.
 
 La API RESTful de Cloud Insight es un punto principal de integración que permite un movimiento de datos sencillo y efectivo. Además, permite a los usuarios obtener un acceso sencillo a sus datos.
 

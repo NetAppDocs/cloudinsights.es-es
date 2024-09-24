@@ -19,13 +19,13 @@ keywords: time-to-live, TTL, downsampling, downsample, retention
 
 
 [role="lead"]
-Dado que Cloud Insights conserva los datos durante un período determinado (por edición), existe la posibilidad de procesar miles de puntos de datos. Por lo tanto, los datos pueden reducirse antes de mostrarse en gráficos y tablas.
+Dado que Data Infrastructure Insights conserva los datos durante un período determinado (por edición), existe la posibilidad de procesar miles de puntos de datos. Por lo tanto, los datos pueden reducirse antes de mostrarse en gráficos y tablas.
 
 
 
 == Conservación de datos
 
-Cloud Insights conserva los datos durante un período de tiempo determinado por la edición suscrita activa.
+Data Infrastructure Insights retiene los datos durante un tiempo determinado por la edición suscrita activa.
 
 |===
 | Edición | Conservación de datos 
@@ -36,7 +36,7 @@ Cloud Insights conserva los datos durante un período de tiempo determinado por 
 
 | Premium | 13 meses 
 |===
-Una lista completa de características disponibles en cada edición está disponible en Cloud Insights link:https://bluexp.netapp.com/cloud-insights-pricing["Ediciones y precios"] página.
+Existe una lista completa de las funciones disponibles en cada edición disponible en la link:https://bluexp.netapp.com/cloud-insights-pricing["Ediciones y precios"]página Información sobre infraestructura de datos.
 
 
 
@@ -69,7 +69,7 @@ Dado que estamos eligiendo un intervalo de tiempo inferior a 7 días y tenemos m
 
 image:Charts_NoDownsample.png["No hay reducción de muestreo"]
 
-Sin embargo, si está viendo datos eligiendo 30d en el selector de tiempo de página de activos, O bien, al configurar un intervalo de tiempo personalizado de más de 7 días (o si Cloud Insights recogió más de 1,000 muestras de datos durante el período de tiempo elegido), se reduce la muestra de los datos antes de que se muestren. Al ampliar un gráfico de muestra descendente, la pantalla continúa mostrando los datos aproximados.
+Sin embargo, si está viendo datos eligiendo 30D en el selector de tiempo de la página de activos o estableciendo un intervalo de tiempo personalizado de más de 7 días (o en el caso de que Data Infrastructure Insights haya recopilado más de 1.000 muestras de datos para el período de tiempo elegido), los datos se reducen de muestra antes de que se muestren. Al ampliar un gráfico de muestra descendente, la pantalla continúa mostrando los datos aproximados.
 
 
 NOTE: Al ampliar un gráfico de muestra descendente, el zoom es un zoom digital. La pantalla continúa mostrando los datos aproximados.

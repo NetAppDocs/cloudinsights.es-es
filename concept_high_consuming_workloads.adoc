@@ -19,7 +19,7 @@ summary: Los conocimientos le permiten ver cómo afectan los recursos a otros re
 
 
 [role="lead"]
-Las cargas de trabajo con un alto impacto pueden reducir el rendimiento de otras cargas de trabajo en un recurso compartido. Cloud Insights ofrece herramientas para ayudarle a investigar la saturación de recursos y el impacto de su entorno.
+Las cargas de trabajo con un alto impacto pueden reducir el rendimiento de otras cargas de trabajo en un recurso compartido. Data Infrastructure Insights proporciona herramientas que te ayudan a investigar la saturación de los recursos y el impacto en tu entorno.
 
 
 
@@ -29,7 +29,7 @@ Cuando se habla del impacto de la carga de trabajo o de los recursos, las siguie
 
 Un recurso *impactante* o _codicioso_ es uno que causa un impacto negativo en otro recurso. Por ejemplo, un volumen que experimenta un IOPS muy alto puede aumentar la latencia en otros volúmenes (por ejemplo, recursos _impactados_ o _degradados_). Los recursos impactados y afectados son “compañeros” que utilizan el mismo recurso compartido, por ejemplo, un pool de almacenamiento o volumen.
 
-Una *carga de trabajo de alto consumo* es una carga de trabajo que actualmente se identifica como que afecta a otros recursos en el pool de almacenamiento compartido. Estas cargas de trabajo mejoran las IOPS, lo que reduce las IOPS en las cargas de trabajo afectadas. En Cloud Insights se identifican como *cargas de trabajo exigentes*.
+Una *carga de trabajo de alto consumo* es una carga de trabajo que actualmente se identifica como que afecta a otros recursos en el pool de almacenamiento compartido. Estas cargas de trabajo mejoran las IOPS, lo que reduce las IOPS en las cargas de trabajo afectadas. En Data Infrastructure Insights, estas se identifican como *cargas de trabajo exigentes*.
 
 Una *carga de trabajo afectada* es una carga de trabajo afectada por una carga de trabajo de alto consumo en el Pool de almacenamiento compartido. Estas cargas de trabajo están experimentando una reducción de IOPS o una latencia superior, debido a las cargas de trabajo más exigentes.
 
@@ -43,7 +43,7 @@ Se produce *contención* cuando se determina que las IOPS afectan a otros recurs
 
 === Cargas de trabajo que requieren un alto consumo
 
-Las cargas de trabajo que consume gran cantidad que detecta Cloud Insights se muestran en _Shared Resources under Stress_ Insight. Navegue a *Observabilidad > Infrastructure Insights* para ver estos detalles.
+Las cargas de trabajo que consumen mucho tiempo que detecta Data Infrastructure Insights se muestran en _Shared Resources under Stress_ Insight. Navegue a *Observabilidad > Infrastructure Insights* para ver estos detalles.
 
 image:Impacts_Workloads_Menu.png["Comparte los recursos"]
 

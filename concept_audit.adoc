@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: concept_audit.html 
 keywords: audit, users, activities 
-summary: La auditoría ofrece una vista de las actividades del sistema y del usuario en el sistema Cloud Insights. 
+summary: La auditoría proporciona una vista de las actividades del sistema y del usuario en el sistema Data Infrastructure Insights. 
 ---
 = Auditoría
 :toc: macro
@@ -19,7 +19,7 @@ summary: La auditoría ofrece una vista de las actividades del sistema y del usu
 
 
 [role="lead"]
-Para identificar los cambios esperados (para seguimiento) o inesperados (para solución de problemas), puede ver un registro de auditoría de los eventos del sistema Cloud Insights y de las actividades del usuario.
+Para identificar los cambios esperados (para el seguimiento) o inesperados (para la solución de problemas), puede ver un registro de auditoría de los eventos del sistema Data Infrastructure Insights y las actividades del usuario.
 
 
 
@@ -29,7 +29,7 @@ Para ver la página Auditoría, haga clic en *Administración > Auditoría* en e
 
 * *Hora*: Fecha y hora del evento o actividad
 * *Usuario*: El usuario que inició la actividad
-* *Rol*: Función del usuario en Cloud Insights (invitado, usuario, administrador)
+* *Rol* - El rol del usuario en Data Infrastructure Insights (invitado, usuario, administrador)
 * *IP*: La dirección IP asociada al evento
 * *Acción*: Tipo de actividad, por ejemplo Inicio de sesión, Crear, Actualizar
 * *Categoría* - la categoría de actividad
@@ -91,7 +91,7 @@ Si una cadena de filtro se debe escribir entre comillas dobles, Insight trata to
 
 == Eventos y acciones auditados
 
-Los eventos y acciones auditados por Cloud Insights se pueden clasificar en las siguientes áreas generales:
+Los eventos y acciones auditados por Data Infrastructure Insights se pueden clasificar en las siguientes áreas generales:
 
 * *Cuenta de usuario*: Inicio de sesión, cierre de sesión, cambio de rol, etc.
 +
@@ -134,7 +134,7 @@ Ejemplo: Creado por el destinatario _ci-alerts-mations-dl_
 Puede exportar los resultados de la presentación de auditoría a un archivo .CSV, lo que le permitirá analizar los datos o importarlos a otra aplicación.
 
 .Pasos
-. En la página Auditoría, establezca el intervalo de tiempo deseado y los filtros que desee. Cloud Insights solo exportará las entradas de auditoría que coincidan con el filtrado y el intervalo de tiempo que haya establecido.
+. En la página Auditoría, establezca el intervalo de tiempo deseado y los filtros que desee. Data Infrastructure Insights exportará solo las entradas de auditoría que coincidan con el filtrado y el intervalo de tiempo que haya establecido.
 . Haga clic en el botón _Export_ image:ExportButton.png["Botón Exportar"] en la esquina superior derecha de la tabla.
 
 
@@ -144,7 +144,7 @@ Los eventos de auditoría mostrados se exportarán a un archivo .CSV, hasta un m
 
 == Retención de datos de auditoría
 
-La cantidad de tiempo que Cloud Insights retiene los datos de auditoría se basa en su edición:
+La cantidad de tiempo que Data Infrastructure Insights retiene los datos de auditoría se basa en su edición:
 
 * Edición básica: Los datos de auditoría se conservan durante 30 días
 * Ediciones Standard y Premium: Los datos de auditoría se conservan durante 1 año más 1 día

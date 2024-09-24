@@ -16,9 +16,6 @@ summary: Con Workload Security, puede restringir el acceso de los usuarios en ca
 [role="lead"]
 Una vez detectado un ataque, Workload Security puede detener el ataque bloqueando el acceso del usuario al sistema de archivos. El acceso se puede bloquear automáticamente, mediante Directivas de respuesta automática o manualmente desde las páginas de alerta o de detalles del usuario.
 
-
-NOTE: La seguridad de carga de trabajo no está disponible en la edición federal de Cloud Insights.
-
 Al bloquear el acceso de los usuarios, debe definir un período de tiempo de bloqueo. Una vez finalizado el período de tiempo seleccionado, el acceso del usuario se restaura automáticamente. El bloqueo de acceso es compatible tanto con los protocolos SMB como NFS.
 
 El usuario está bloqueado directamente para las direcciones SMB e IP de los equipos host que provocan el ataque se bloqueará para NFS. Esas direcciones IP de la máquina no podrán acceder a ninguna de las máquinas virtuales de almacenamiento (SVM) supervisadas por Workload Security.
