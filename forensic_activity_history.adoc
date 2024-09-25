@@ -88,22 +88,18 @@ Pulse Intro o haga clic fuera del cuadro de filtro para aplicar el filtro.
 Puede filtrar los datos de la actividad forense por los siguientes campos:
 
 * El tipo *actividad*.
-
-
 * *IP de origen* desde la que se accedió a la entidad. Debe proporcionar una dirección IP de origen válida entre comillas dobles, por ejemplo “10.1.1.1”. Los IP incompletos, como “10.1.1.*”, “10.1.*.*”, etc., no funcionarán.
 * *Protocolo* para obtener actividades específicas del protocolo.
-
-
 * *Nombre de usuario* del usuario que realiza la actividad. Debe proporcionar el nombre de usuario exacto para filtrar. La búsqueda con nombre de usuario parcial o nombre de usuario parcial con prefijo o sufijo ‘*’ no funcionará.
 * *Reducción de ruido* para filtrar los archivos que el usuario crea en las últimas 2 horas. También se utiliza para filtrar archivos temporales (por ejemplo, archivos .tmp) a los que accede el usuario.
-* *Dominio* del usuario que realiza la actividad. Debe proporcionar el *dominio exacto* para filtrar. La búsqueda de dominio parcial, o dominio parcial con prefijo o sufijo con comodín ()'*'), no funcionará. _None_ se puede especificar para buscar el dominio que falta.
+* *Dominio* del usuario que realiza la actividad. Debe proporcionar el *dominio exacto* para filtrar. La búsqueda de dominio parcial, o dominio parcial con prefijo o sufijo con comodín ('*'), no funcionará. _None_ se puede especificar para buscar el dominio que falta.
 
 
 Los siguientes campos están sujetos a reglas de filtrado especiales:
 
 * *Tipo de entidad*, usando la extensión de entidad (archivo) - es preferible especificar el tipo de entidad exacto dentro de las comillas. Por ejemplo _“txt”_.
 * *Ruta* de la entidad - Los filtros de ruta de directorio (cadena de ruta que termina con /) hasta 4 directorios de profundidad se recomiendan para obtener resultados más rápidos. Por ejemplo, _/home/userX/nested1/nested2/_ O _”/home/userX/nested1/nested2/”_. Consulte la siguiente tabla para obtener más información.
-* *Usuario* realizando la actividad - es preferible especificar el usuario exacto dentro de las comillas. Para eample, _ «Administrador»_.
+* *Usuario* realizando la actividad - es preferible especificar el usuario exacto dentro de las comillas. Por ejemplo, _ “Administrador”_.
 * *Dispositivo* (SVM) donde residen las entidades
 * *Volumen* donde residen las entidades
 * La *Ruta original* se utiliza para cambiar el nombre de los eventos cuando se cambió el nombre del archivo original.
@@ -151,7 +147,7 @@ NOTA:
 
 == Ordenar datos del historial de actividades forenses
 
-Puede ordenar los datos del historial de actividades por _Time, User, Source IP, Activity, Path_ y _Entity Type_. De forma predeterminada, la tabla se ordena por orden _time_ descendente, lo que significa que los datos más recientes se mostrarán primero. La ordenación está desactivada para los campos _Device_ y _Protocol_.
+Puede ordenar los datos del historial de actividades por _Tiempo, Usuario, IP de origen, Actividad,_ y _Tipo de entidad_. De forma predeterminada, la tabla se ordena por orden _time_ descendente, lo que significa que los datos más recientes se mostrarán primero. La ordenación está desactivada para los campos _Device_ y _Protocol_.
 
 
 
@@ -178,7 +174,7 @@ La función de exportaciones asíncronas de Storage Workload Security está dise
 
 
 
-En _/opt/netapp/cloudsecure/agent/export-script/_ encontrará un script de ejemplo para extraer datos forenses a través de la API. Consulte el archivo Léame en esta ubicación para obtener más información sobre el script.
+Un script de ejemplo para extraer datos forenses a través de API está presente en _/opt/NetApp/cloudsecure/agent/export-script/_ en el agente. Consulte el archivo Léame en esta ubicación para obtener más información sobre el script.
 
 
 
