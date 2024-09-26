@@ -22,9 +22,9 @@ keywords: reporting, cognos, data warehouse, dwh, ad-hoc, custom
 Puede utilizar las herramientas de creación de informes para crear informes personalizados. Después de crear informes, puede guardarlos y ejecutarlos en un horario normal. Los resultados de los informes se pueden enviar automáticamente por correo electrónico a usted mismo y a otros.
 
 
-NOTE: La función Reporting se encuentra disponible en Cloud Insights link:concept_subscribing_to_cloud_insights.html["Edición Premium"].
+NOTE: La función Informes está disponible en Data Infrastructure Insights link:concept_subscribing_to_cloud_insights.html["Edición Premium"].
 
-Los ejemplos de esta sección muestran el siguiente proceso, que se puede utilizar para cualquiera de los modelos de datos de informes de Cloud Insights:
+Los ejemplos de esta sección muestran el siguiente proceso, que se puede utilizar para cualquiera de los modelos de datos de informes de información de información de infraestructura de datos:
 
 * Identificar una pregunta que se va a responder con un informe
 * Determinar los datos necesarios para respaldar los resultados
@@ -38,7 +38,7 @@ Por ejemplo, si no finaliza el proceso de identificación del dispositivo, los i
 Antes de diseñar los informes, lleve a cabo las tareas siguientes:
 
 * Configurar todo link:task_configure_data_collectors.html["recopiladores de datos"] regularmente.
-* Introducir anotaciones (como niveles, centros de datos y unidades de negocio) en dispositivos y recursos del entorno. Es beneficioso que las anotaciones sean estables antes de generar informes, ya que el sistema de informes de Cloud Insights recopila información histórica.
+* Introducir anotaciones (como niveles, centros de datos y unidades de negocio) en dispositivos y recursos del entorno. Es beneficioso tener anotaciones estables antes de generar informes, ya que la generación de informes de Data Infrastructure Insights recopila información histórica.
 
 
 
@@ -87,9 +87,9 @@ Es posible que varias sugerencias sean útiles cuando se diseñan informes.
 
 * Determinar si necesita utilizar datos actuales o históricos.
 +
-La mayoría de los informes solo deben generar informes sobre los datos más recientes disponibles en Cloud Insights.
+La mayoría de los informes solo deben elaborar informes sobre los datos más recientes disponibles en Data Infrastructure Insights.
 
-* La generación de informes de Cloud Insights proporciona información histórica sobre la capacidad y el rendimiento, pero no sobre el inventario.
+* Los informes de información de infraestructura de datos proporcionan información histórica sobre la capacidad y el rendimiento, pero no sobre el inventario.
 * Todo el mundo ve todos los datos; sin embargo, es posible que tenga que limitar los datos a audiencias específicas.
 +
 Para segmentar la información de diferentes usuarios, puede crear informes y establecer permisos de acceso en ellos.
@@ -100,7 +100,7 @@ Para segmentar la información de diferentes usuarios, puede crear informes y es
 
 == Modelos de datos de generación de informes
 
-Cloud Insights incluye varios modelos de datos a partir de los cuales se pueden seleccionar informes predefinidos o crear un informe personalizado.
+Data Infrastructure Insights incluye varios modelos de datos a partir de los cuales puede seleccionar informes predefinidos o crear su propio informe personalizado.
 
 Cada modelo de datos contiene un simple data Mart y un Data Mart avanzado:
 
@@ -188,7 +188,7 @@ Le permite informar sobre el entorno virtual y el uso de su capacidad. Este mode
 * ¿Cuáles son los ahorros obtenidos con la eficiencia del almacenamiento gracias a las tecnologías de thin provisioning y deduplicación del almacenamiento?
 
 
-Las capacidades del modelo de datos de capacidad de máquinas virtuales están tomadas de discos virtuales (VMDK). Esto significa que el tamaño aprovisionado de una máquina virtual utilizando el modelo de datos de capacidad de la máquina virtual es el tamaño de sus discos virtuales. Esto es diferente de la capacidad aprovisionada en la vista de equipos virtuales de Cloud Insights, que muestra el tamaño aprovisionado para los propios equipos virtuales.
+Las capacidades del modelo de datos de capacidad de máquinas virtuales están tomadas de discos virtuales (VMDK). Esto significa que el tamaño aprovisionado de una máquina virtual utilizando el modelo de datos de capacidad de la máquina virtual es el tamaño de sus discos virtuales. Esta es diferente de la capacidad aprovisionada en la vista Máquinas virtuales de Data Infrastructure Insights, que muestra el tamaño aprovisionado para la misma máquina virtual.
 
 
 
@@ -302,7 +302,7 @@ El modelo de datos de rendimiento incluye información que le ayuda a determinar
 
 === Modelo de datos de eficiencia del almacenamiento
 
-Le permite realizar un seguimiento de la puntuación en eficiencia del almacenamiento y de su potencial a lo largo del tiempo. Este modelo de datos almacena mediciones no solo de la capacidad aprovisionada, sino también de la cantidad usada o consumida (la medición física). Por ejemplo, cuando se habilita thin provisioning, Cloud Insights indica cuánta capacidad se toma del dispositivo. También puede usar este modelo para determinar la eficiencia cuando está activada la deduplicación. Puede responder a varias preguntas con el Data Mart de eficiencia del almacenamiento:
+Le permite realizar un seguimiento de la puntuación en eficiencia del almacenamiento y de su potencial a lo largo del tiempo. Este modelo de datos almacena mediciones no solo de la capacidad aprovisionada, sino también de la cantidad usada o consumida (la medición física). Por ejemplo, cuando se habilita el thin provisioning, Data Infrastructure Insights indica cuánta capacidad se toma del dispositivo. También puede usar este modelo para determinar la eficiencia cuando está activada la deduplicación. Puede responder a varias preguntas con el Data Mart de eficiencia del almacenamiento:
 
 * ¿Cuáles son los ahorros que hemos conseguido en eficiencia del almacenamiento gracias a la implantación de tecnologías de thin provisioning y deduplicación?
 * ¿Cuál es el ahorro de almacenamiento en los centros de datos?

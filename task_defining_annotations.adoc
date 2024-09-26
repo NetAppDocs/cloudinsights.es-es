@@ -19,7 +19,7 @@ summary: Realizar un seguimiento de los datos mediante anotaciones.
 
 
 [role="lead"]
-A la hora de personalizar Cloud Insights para realizar un seguimiento de los datos según sus requisitos corporativos, puede definir notas especializadas, llamadas anotaciones y asignarlas a sus activos.
+Cuando personalizas Data Infrastructure Insights para hacer un seguimiento de los datos según los requisitos corporativos, puedes definir notas especializadas, denominadas anotaciones y asignarlas a tus activos.
 
 Puede asignar anotaciones a activos con información como la finalización de la vida útil de los activos, el centro de datos, la ubicación de creación, el nivel de almacenamiento o el nivel de servicio de volumen.
 
@@ -38,7 +38,7 @@ Por ejemplo, si un activo se está arrendando y el arrendamiento caduca dentro d
 
 == Tipos de anotaciones predeterminados
 
-Cloud Insights proporciona algunos tipos de anotaciones predeterminados. Estas anotaciones pueden utilizarse para filtrar o agrupar datos.
+Data Infrastructure Insights proporciona algunos tipos de anotación predeterminados. Estas anotaciones pueden utilizarse para filtrar o agrupar datos.
 
 Puede asociar activos con tipos de anotación predeterminados como los siguientes:
 
@@ -48,7 +48,7 @@ Puede asociar activos con tipos de anotación predeterminados como los siguiente
 * Estado, como caliente (alta utilización)
 
 
-En la siguiente tabla se enumeran los tipos de anotación proporcionados por Cloud Insights.
+La siguiente tabla muestra los tipos de anotación proporcionados por Data Infrastructure Insights.
 
 [cols="30,53, 16"]
 |===
@@ -93,10 +93,10 @@ NOTE: Alias, centro de datos, caliente, nivel de servicio, puesta de sol, El niv
 
 == Creación de anotaciones personalizadas
 
-Con las anotaciones, puede agregar datos personalizados específicos del negocio que se ajusten a los activos de las necesidades del negocio. Aunque Cloud Insights proporciona un conjunto de anotaciones predeterminadas, es posible que desee ver datos de otras maneras. Los datos de anotaciones personalizadas complementan los datos del dispositivo ya recopilados, como el fabricante de almacenamiento, los volúmenes de número y las estadísticas de rendimiento. Cloud Insights no detecta los datos que se agregan con anotaciones.
+Con las anotaciones, puede agregar datos personalizados específicos del negocio que se ajusten a los activos de las necesidades del negocio. Aunque Data Infrastructure Insights proporciona un conjunto de anotaciones predeterminadas, puede descubrir que desea ver datos de otras maneras. Los datos de anotaciones personalizadas complementan los datos del dispositivo ya recopilados, como el fabricante de almacenamiento, los volúmenes de número y las estadísticas de rendimiento. Data Infrastructure Insights no detecta los datos que agregue mediante anotaciones.
 
 .Pasos
-. En el menú Cloud Insights, haga clic en *Administrar > Anotaciones*.
+. En el menú Información de la infraestructura de datos, haga clic en *Administrar > Anotaciones*.
 +
 La página Anotaciones muestra la lista de anotaciones.
 

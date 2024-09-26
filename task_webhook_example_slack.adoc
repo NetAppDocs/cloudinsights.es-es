@@ -33,14 +33,14 @@ NOTE: Esta página hace referencia a instrucciones de terceros, que podrían est
 image:Webhooks_Slack_Create_Webhook.png["Cree Slack Webhook"]
 
 * Vaya a Webanzuelos entrantes, haga clic en _Activar Webanzuelos entrantes_, solicitar _Agregar nuevo Webhook_ y seleccione el canal en el que enviar.
-* Copie la URL de Webhook. Deberá pegarlo en la configuración de webhook de Cloud Insights.
+* Copie la URL de Webhook. Deberá pegarlo en la configuración del webhook de Data Infrastructure Insights.
 
 
 
 
-== Crear enlace web de Cloud Insights:
+== Webhook de Create Data Infrastructure:
 
-. En Cloud Insights, vaya a *Admin > Notificaciones* y seleccione la ficha *Webanches*. Haga clic en *+Webhook* para crear un nuevo webhook.
+. En Data Infrastructure Insights, navegue hasta *Admin > Notifications* y seleccione la pestaña *WebHooks*. Haga clic en *+Webhook* para crear un nuevo webhook.
 . Dé al webhook un nombre significativo, como "Slack Webhook".
 . En el menú desplegable _Template Type_, seleccione *Slack*.
 . Pegue la URL de arriba en el campo _URL_.
@@ -52,7 +52,7 @@ image:Webhooks-Slack_example.png["Plantilla de gancho web Slack"]
 
 == Notificaciones a través de Webhook
 
-Para notificar los eventos a través de webhook, en Cloud Insights vaya a *Alertas > Monitores* y haga clic en *+Monitor* para crear un nuevo link:task_create_monitor.html["supervisar"].
+Para notificar sobre eventos a través de webhook, en Información de infraestructura de datos navegue a *Alertas > Monitores* y haga clic en *+Monitor* para crear una nueva link:task_create_monitor.html["supervisar"].
 
 * Seleccione una métrica y defina las condiciones del monitor.
 * En _Configurar notificación(s) de equipo, elija el método de entrega *Webhook*.

@@ -31,13 +31,13 @@ La siguiente tabla enumera las posibles opciones para el archivo _AgentConfigura
 | agente |  | Opciones de configuración comunes a todos los componentes que el operador puede instalar. Estas pueden considerarse como opciones “globales”. 
 
 
-|  | Repositorio de documentos | Una anulación de dockerRepo para extraer imágenes de los repositorios de docker privados de los clientes en comparación con el repositorio de docker de Cloud Insights. El valor predeterminado es el repositorio de Cloud Insights docker 
+|  | Repositorio de documentos | Una anulación de dockerRepo para extraer imágenes de repositorios de Docker privados de clientes en comparación con el repositorio de Docker de Data Infrastructure Insights. El valor predeterminado es el repositorio de datos de información sobre infraestructura de datos 
 
 
 |  | DockerImagePullSecret | Opcional: Un secreto para el repositorio privado de los clientes 
 
 
-|  | Nombre del clúster | Campo de texto libre que identifica de forma única un clúster en todos los clústeres de clientes. Debe ser único en un cliente Cloud Insights. El valor predeterminado es lo que introduce el cliente en la interfaz de usuario del campo «Cluster Name» 
+|  | Nombre del clúster | Campo de texto libre que identifica de forma única un clúster en todos los clústeres de clientes. Debería ser único para un inquilino de Data Infrastructure Insights. El valor predeterminado es lo que introduce el cliente en la interfaz de usuario del campo «Cluster Name» 
 
 
 |  | proxy
@@ -271,10 +271,10 @@ spec:
   # #   To update them, uncomment the line, change the value, and apply the updated AgentConfiguration.
   agent:
     # # [Required Field] A uniquely identifiable user-friendly clustername.
-    # # clusterName must be unique across all clusters in your Cloud Insights environment.
+    # # clusterName must be unique across all clusters in your Data Infrastructure Insights environment.
     clusterName: "my_cluster"
 
-    # # Proxy settings. The proxy that the operator should use to send metrics to Cloud Insights.
+    # # Proxy settings. The proxy that the operator should use to send metrics to Data Infrastructure Insights.
     # # Please see documentation here: https://docs.netapp.com/us-en/cloudinsights/task_config_telegraf_agent_k8s.html#configuring-proxy-support
     # proxy:
     #   server:

@@ -27,7 +27,7 @@ Workload Security (anteriormente Cloud Secure) recopila datos de actividad de us
 
 * Se requiere el privilegio sudo para la instalación, la ejecución de scripts y la desinstalación.
 * Al instalar el agente, se crean en el equipo un usuario local _cssys_ y un grupo local _cssys_. Si la configuración de permisos no permite la creación de un usuario local y, en su lugar, requiere Active Directory, se debe crear un usuario con el nombre de usuario _cssys_ en el servidor de Active Directory.
-* Puede leer acerca de la seguridad de Cloud Insights link:security_overview.html["aquí"].
+* Puede leer sobre la seguridad de Data Infrastructure Insights link:security_overview.html["aquí"].
 
 
 
@@ -94,7 +94,7 @@ Salida de muestra:
 
 == 'Anclar' a un agente en la versión actual
 
-De forma predeterminada, la seguridad de carga de trabajo de Cloud Insights actualiza los agentes automáticamente. Es posible que algunos clientes deseen pausar la actualización automática, lo que deja a un agente en su versión actual hasta que ocurra una de las siguientes acciones:
+De forma predeterminada, Data Infrastructure Insights Workload Security actualiza los agentes automáticamente. Es posible que algunos clientes deseen pausar la actualización automática, lo que deja a un agente en su versión actual hasta que ocurra una de las siguientes acciones:
 
 * El cliente reanuda las actualizaciones automáticas del agente.
 * han pasado 30 días. Tenga en cuenta que los 30 días comienzan el día de la actualización más reciente del agente, no el día en que se pone en pausa el agente.
@@ -153,7 +153,7 @@ Los problemas conocidos y sus resoluciones se describen en la siguiente tabla.
 | Durante la instalación del agente, la instalación se bloquea después de descomprimir. | El comando “chmod 755 -RF” está fallando. Se produce un error en el comando de instalación del agente cuando un usuario sudo no raíz que tiene archivos en el directorio de trabajo, que pertenecen a otro usuario y los permisos de esos archivos no se pueden cambiar. Debido al comando chmod que falla, el resto de la instalación no se ejecuta. 1. Cree un nuevo directorio denominado “cloudsecure”. 2. Vaya a ese directorio. 3. Copiar y pegar el símbolo completo “token=…………… … ./cloudsecure-agent-install.sh" comando de instalación y presione entrar. 4. La instalación debe poder continuar. 
 
 
-| Si aún no se puede conectar el agente a Saas, abra un caso con el soporte de NetApp. Proporcione el número de serie de Cloud Insights para abrir un caso y adjunte los registros al caso como se indica. | Para adjuntar registros al caso: 1. Ejecute el siguiente script con permiso root y comparta el archivo de salida (cloudsecure-agent-presstomas.zip). a. /opt/netapp/cloudsecure/agent/bin/cloudsecure-agent-symptom-collector.sh 2. Ejecute los siguientes comandos uno por uno con permiso root y comparta los resultados. a. id cssys b. grupos cssys c. versión cat /etc/os 
+| Si aún no se puede conectar el agente a Saas, abra un caso con el soporte de NetApp. Proporcione el número de serie de Data Infrastructure Insights para abrir un caso y adjunte registros al caso según lo indicado. | Para adjuntar registros al caso: 1. Ejecute el siguiente script con permiso root y comparta el archivo de salida (cloudsecure-agent-presstomas.zip). a. /opt/netapp/cloudsecure/agent/bin/cloudsecure-agent-symptom-collector.sh 2. Ejecute los siguientes comandos uno por uno con permiso root y comparta los resultados. a. id cssys b. grupos cssys c. versión cat /etc/os 
 
 
 | La secuencia de comandos cloudsecure-agent-symptom-collector.sh falla con el siguiente error. [Root@machine tmp]# /opt/netapp/cloudsecure/agent/bin/cloudsecure-agent-symptom-collector.sh recopilar registros de servicio recopilar registros de aplicación recopilar configuraciones de agente tomar instantánea de estado de servicio tomar instantánea de estructura de directorio del agente ……………………………………………… . ……………………… . /Opt/netapp/cloudsecure/agent/bin/cloudsecure-agent-symptom-collector.sh: Línea 52: Zip: Comando no encontrado ERROR: No se pudo crear /tmp/cloudsecure-agent-symptoms.zip | La herramienta zip no está instalada. Instale la herramienta zip ejecutando el comando “yum install zip”. A continuación, vuelva a ejecutar el cloudsecure-agent-symptom-collector.sh. 

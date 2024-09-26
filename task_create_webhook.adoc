@@ -5,23 +5,20 @@ keywords: webhook, notification, slack, integration
 summary: Cree monitores para alertar sobre los umbrales de rendimiento o inventario 
 ---
 = Notificación mediante Webanzuelos
-:toc: macro
 :hardbreaks:
 :toclevels: 1
 :allow-uri-read: 
-:toc: 
 :toclevels: 1
 :nofooter: 
 :icons: font
 :linkattrs: 
 :imagesdir: ./media/
-:toc-position: content
 
 
 [role="lead"]
 Los enlaces Web permiten a los usuarios enviar notificaciones de alerta a varias aplicaciones mediante un canal de webhook personalizado.
 
-Muchas aplicaciones comerciales admiten enlaces web como una interfaz de entrada estándar, por ejemplo: Slack, PagerDuty, equipos y Discord todos admiten enlaces web. Al admitir un canal webhook genérico y personalizable, Cloud Insights puede admitir muchos de estos canales de entrega. Puede encontrar información sobre enlaces web en estos sitios web de aplicaciones. Por ejemplo, Slack proporciona link:https://api.slack.com/messaging/webhooks["esta útil guía"].
+Muchas aplicaciones comerciales admiten enlaces web como una interfaz de entrada estándar, por ejemplo: Slack, PagerDuty, equipos y Discord todos admiten enlaces web. Al admitir un canal webhook genérico y personalizable, Data Infrastructure Insights puede admitir muchos de estos canales de entrega. Puede encontrar información sobre enlaces web en estos sitios web de aplicaciones. Por ejemplo, Slack proporciona link:https://api.slack.com/messaging/webhooks["esta útil guía"].
 
 Puede crear varios canales de webhook, cada canal dirigido a un propósito diferente, aplicaciones independientes, destinatarios diferentes, etc.
 
@@ -54,7 +51,7 @@ La instancia del canal de webhook consta de los siguientes elementos:
 
 == Creación de un Webhook
 
-Para crear un webhook de Cloud Insights, vaya a *Administración > Notificaciones* y seleccione la ficha *ganchos*.
+Para crear un webhook de Data Infrastructure Insights, vaya a *Admin > Notificaciones* y seleccione la pestaña *WebHooks*.
 
 La siguiente imagen muestra un enlace web de ejemplo configurado para Slack:
 
@@ -64,9 +61,9 @@ Introduzca la información que corresponda a cada uno de los campos y haga clic 
 
 También puede hacer clic en el botón "Test Webhook" para probar la conexión. Tenga en cuenta que esto enviará el "cuerpo del mensaje" (sin sustituciones) a la URL definida según el método seleccionado.
 
-Los enlaces web de Cloud Insights contienen una serie de parámetros predeterminados. Además, puede crear sus propios parámetros o secretos personalizados.
+Los WebHooks de Data Infrastructure Insights comprenden una serie de parámetros predeterminados. Además, puede crear sus propios parámetros o secretos personalizados.
 
-image:Webhook_Default_Parameters.png["Parámetros predeterminados de Webhook de Cloud Insights"]
+image:Webhook_Default_Parameters.png["Parámetros de Webhook predeterminados de Data Infrastructure Insights"]
 
 
 

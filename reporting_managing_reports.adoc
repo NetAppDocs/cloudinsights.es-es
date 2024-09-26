@@ -22,7 +22,7 @@ keywords: reporting, cognos, data warehouse, dwh, managing, customizing, copying
 Puede personalizar el formato de salida y la entrega de un informe, establecer las propiedades o los horarios de los informes y enviar informes por correo electrónico.
 
 
-NOTE: La función Reporting se encuentra disponible en Cloud Insights link:concept_subscribing_to_cloud_insights.html["Edición Premium"].
+NOTE: La función Informes está disponible en Data Infrastructure Insights link:concept_subscribing_to_cloud_insights.html["Edición Premium"].
 
 
 
@@ -30,7 +30,7 @@ NOTE: La función Reporting se encuentra disponible en Cloud Insights link:conce
 
 Puede personalizar el formato y el método de entrega de los informes.
 
-. En el portal de informes de Cloud Insights, vaya a *Menú > Contenido > Mi contenido/contenido de equipo*. Pase el ratón sobre el informe que desee personalizar y abra el menú de tres puntos.
+. En el portal de informes de información sobre la infraestructura de datos, vaya a *Menú > Contenido > Mi contenido/Contenido del equipo*. Pase el ratón sobre el informe que desee personalizar y abra el menú de tres puntos.
 
 
 image:Reporting_Output_and_Delivery.png["Salida y entrega del informe"]

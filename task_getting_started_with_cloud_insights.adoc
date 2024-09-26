@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: task_getting_started_with_cloud_insights.html 
-summary: Primeros pasos con Cloud Insights. 
+summary: Introducción a Data Infrastructure Insights. 
 keywords: invite, roles, data collector, acquisition unit, AU 
 ---
 = Introducción a la recopilación de datos
@@ -19,11 +19,11 @@ keywords: invite, roles, data collector, acquisition unit, AU
 
 
 [role="lead"]
-Después de registrarse en Cloud Insights e iniciar sesión en su entorno por primera vez, se le guiarán los siguientes pasos con el fin de comenzar a recopilar y gestionar los datos.
+Después de registrarse en Data Infrastructure Insights e iniciar sesión en su entorno por primera vez, se le guiará a través de los siguientes pasos para empezar a recopilar y gestionar datos.
 
 Los recopiladores de datos detectan información de sus orígenes de datos, como dispositivos de almacenamiento, switches de red y máquinas virtuales. La información recopilada se utiliza para análisis, validación, supervisión y resolución de problemas.
 
-Cloud Insights dispone de tres tipos de recopiladores de datos:
+Data Infrastructure Insights tiene disponibles tres tipos de recopiladores de datos:
 
 * Infraestructura (dispositivos de almacenamiento, switches de red, infraestructura informática)
 * Sistemas operativos (como VMware o Windows)
@@ -36,7 +36,7 @@ Seleccione su primer recopilador de datos de los proveedores y modelos compatibl
 
 == Instale una unidad de adquisición
 
-Si seleccionó un recopilador de datos _Infrastructure_, se requiere una unidad de adquisición para inyectar datos en Cloud Insights. Deberá descargar e instalar el software de la unidad de adquisición en un servidor o VM en el centro de datos desde el que se va a recopilar. Una sola unidad de adquisición puede utilizarse para varios recopiladores de datos.
+Si seleccionó un recopilador de datos _Infrastructure_, se necesita una Unidad de adquisición para inyectar datos en Data Infrastructure Insights. Deberá descargar e instalar el software de la unidad de adquisición en un servidor o VM en el centro de datos desde el que se va a recopilar. Una sola unidad de adquisición puede utilizarse para varios recopiladores de datos.
 
 image:NewLinuxAUInstall.png["Instrucciones AU de Linux"]
 
@@ -69,7 +69,7 @@ Podrá configurar posteriormente recopiladores de datos adicionales.
 
 === Sistema operativo:
 
-Para los recopiladores de datos _Sistema operativo_, seleccione una plataforma (Linux, Windows) para instalar un agente de Cloud Insights. Debe tener al menos un agente para recopilar datos de los Servicios. El agente también recopila datos del propio host, para su uso en Cloud Insights. Estos datos se clasifican como datos "nodo" en widgets, etc.
+Para los recopiladores de datos _Operating System_, seleccione una plataforma (Linux, Windows) para instalar un agente de información de infraestructura de datos. Debe tener al menos un agente para recopilar datos de los Servicios. El agente también recopila datos del propio host, para usarlos en Data Infrastructure Insights. Estos datos se clasifican como datos "nodo" en widgets, etc.
 
 * Abra una ventana de terminal o comando en el host o VM del agente y pegue el comando mostrado para instalar el agente.
 * Una vez finalizada la instalación, haga clic en *completar configuración*.
@@ -92,7 +92,7 @@ Para los recopiladores de datos _Service_, haga clic en un mosaico para abrir la
 
 == Agregar paneles
 
-Dependiendo del tipo de recopilador de datos inicial que haya seleccionado para configurar (almacenamiento, conmutador, etc.), se importarán uno o más paneles relevantes. Por ejemplo, si configuró un recopilador de datos de almacenamiento, se importará un conjunto de paneles relacionados con el almacenamiento y uno se establecerá como página de inicio de Cloud Insights. Puede cambiar la página principal de la lista *Paneles > Mostrar todos los paneles*.
+Dependiendo del tipo de recopilador de datos inicial que haya seleccionado para configurar (almacenamiento, conmutador, etc.), se importarán uno o más paneles relevantes. Por ejemplo, si configuró un recopilador de datos de almacenamiento, se importará un conjunto de consolas relacionadas con el almacenamiento y una se establecerá como página de inicio de Data Infrastructure Insights. Puede cambiar la página principal de la lista *Paneles > Mostrar todos los paneles*.
 
 Puede importar paneles adicionales más adelante, o. link:concept_dashboards_overview.html["cree el suyo propio"].
 
@@ -113,7 +113,7 @@ Si se interrumpe el proceso de configuración inicial (por ejemplo, si cierra la
 
 == Definiciones útiles
 
-Las siguientes definiciones pueden ser útiles al hablar sobre recopiladores de datos o características de Cloud Insights:
+Las siguientes definiciones pueden ser útiles cuando se habla de recopiladores de datos o funciones de Data Infrastructure Insights:
 
 * Ciclo de vida del recolector: Un recolector pertenecerá a uno de los siguientes estados en su ciclo de vida:
 +

@@ -19,7 +19,7 @@ summary: Cree monitores para alertar sobre los umbrales de rendimiento o inventa
 
 
 [role="lead"]
-Cloud Insights incluye una serie de monitores definidos por el sistema para métricas y registros. Los monitores del sistema disponibles dependen de los recopiladores de datos presentes en el entorno. Debido a ello, los monitores disponibles en Cloud Insights pueden cambiar a medida que se agregan recopiladores de datos o se cambian sus configuraciones.
+Data Infrastructure Insights incluye una serie de monitores definidos por el sistema tanto para métricas como para registros. Los monitores del sistema disponibles dependen de los recopiladores de datos presentes en el entorno. Por este motivo, los monitores disponibles en Data Infrastructure Insights pueden cambiar a medida que se añaden los recopiladores de datos o se modifican sus configuraciones.
 
 
 NOTE: Muchos monitores del sistema están en estado _Paused_ por defecto. Puede activar un monitor del sistema seleccionando la opción _Reanudar_ para el monitor. Asegúrese de que _Advanced Counter Data Collection_ y _Enable ONTAP EMS log collection_ estén habilitados en el recopilador de datos. Estas opciones se pueden encontrar en el recopilador de datos de ONTAP en _Configuración avanzada_:image:Enable_Log_Monitor_Collection.png["Habilitar la recogida de contador avanzado y registro de EMS para ONTAP"]
@@ -41,7 +41,7 @@ Los siguientes monitores definidos por el sistema están disponibles, en los gru
 * Los monitores de ambos grupos tienen el estado _pausado_ predeterminado.
 
 
-A continuación, se incluyen los monitores del sistema que se incluyen actualmente con Cloud Insights:
+A continuación se muestran los monitores del sistema actualmente incluidos con Data Infrastructure Insights:
 
 
 
@@ -605,10 +605,10 @@ Ajuste el tamaño de los pods para liberar la CPU en los nodos. | Advertencia @ 
 | Nombre del monitor | Descripción | Acción correctiva 
 
 
-| Apagado de la unidad de adquisición | Las unidades de adquisición de Cloud Insights se reinician periódicamente como parte de las actualizaciones para introducir nuevas funciones. Esto ocurre una vez al mes o menos en un entorno normal. Una alerta de advertencia de que una unidad de adquisición se ha apagado debe ir seguida poco después de una resolución en la que se indica que la unidad de adquisición recién reiniciada ha completado un registro con Cloud Insights. Normalmente, este ciclo de apagado y registro lleva de 5 a 15 minutos. | Si la alerta se produce con frecuencia o dura más de 15 minutos, compruebe el funcionamiento del sistema que aloja la unidad de adquisición, la red y cualquier proxy que conecte la unidad AU a Internet. 
+| Apagado de la unidad de adquisición | Información sobre la infraestructura de datos Las unidades de adquisición se reinician periódicamente como parte de las actualizaciones para introducir nuevas funciones. Esto ocurre una vez al mes o menos en un entorno normal. Una alerta de advertencia de que una unidad de adquisición se ha apagado debe seguirse poco después de una resolución que indique que la unidad de adquisición recién reiniciado ha completado un registro con Data Infrastructure Insights. Normalmente, este ciclo de apagado y registro lleva de 5 a 15 minutos. | Si la alerta se produce con frecuencia o dura más de 15 minutos, compruebe el funcionamiento del sistema que aloja la unidad de adquisición, la red y cualquier proxy que conecte la unidad AU a Internet. 
 
 
-| Error del recopilador | El sondeo de un recopilador de datos ha encontrado una situación de fallo inesperada. | Visita la página del recopilador de datos de Cloud Insights para obtener más información sobre la situación. 
+| Error del recopilador | El sondeo de un recopilador de datos ha encontrado una situación de fallo inesperada. | Visite la página del recopilador de datos en Data Infrastructure Insights para obtener más información sobre la situación. 
 
 
 | Advertencia del recolector | Esta alerta puede surgir normalmente debido a una configuración errónea del recopilador de datos o del sistema de destino. Revise la configuración para evitar alertas futuras. También puede ser debido a una recuperación de datos menos que-completos donde el recopilador de datos recopiló todos los datos que podría. Esto puede suceder cuando las situaciones cambian durante la recopilación de datos (por ejemplo, una máquina virtual presente al comienzo de la recopilación de datos se elimina durante la recopilación de datos y antes de que se capturen sus datos). | Compruebe la configuración del recopilador de datos o del sistema de destino. Tenga en cuenta que el monitor de Collector Warning puede enviar más alertas que otros tipos de monitor, por lo que se recomienda no establecer destinatarios de alertas a menos que se esté solucionando problemas. 

@@ -67,7 +67,7 @@ Las anotaciones son notas especializadas que asigna a sus activos, lo que le per
 Debe haber identificado todos los agregados raíz que desea excluir del informe "Alta densidad de E/S".
 
 .Pasos
-. En el menú Cloud Insights, haga clic en *Administrar > Anotaciones*
+. En el menú Información de la infraestructura de datos, haga clic en *Administrar > Anotaciones*
 . Haga clic en *Agregar*
 +
 .. Introduzca el nombre de la anotación: *RootAggr*
@@ -88,7 +88,7 @@ Como alternativa a la aplicación manual de anotaciones a activos individuales, 
 Debe haber creado y guardado una consulta que identifique los agregados raíz de NetApp identificados en el entorno.
 
 .Pasos
-. En la barra de herramientas de Cloud Insights, haga clic en *Administrar > Reglas de anotación*.
+. En la barra de herramientas Data Infrastructure Insights, haga clic en *Administrar > Reglas de anotación*.
 . Haga clic en *Agregar*. Aparece el cuadro de diálogo Agregar regla.
 +
 .. En el cuadro Nombre, introduzca un nombre único que describa la regla: *“RootAggrExclude”*

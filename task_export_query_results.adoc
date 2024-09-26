@@ -22,7 +22,7 @@ keywords: query, queries, export, csv
 Puede exportar los resultados de cualquier consulta a un archivo .CSV, lo que le permitirá analizar los datos o importarlos a otra aplicación.
 
 .Pasos
-. Inicie sesión en Cloud Insights.
+. Inicie sesión en Data Infrastructure Insights.
 . Haga clic en *consultas* y seleccione *Mostrar todas las consultas*.
 +
 Se muestra la página consultas.

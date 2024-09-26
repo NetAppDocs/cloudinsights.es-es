@@ -19,12 +19,12 @@ keywords: reporting, cognos, data warehouse, dwh, pre-defined
 
 
 [role="lead"]
-Los informes de Cloud Insights incluyen informes predefinidos que abordan una serie de requisitos comunes de creación de informes, con los que se proporciona información crucial que las partes interesadas necesitan para tomar decisiones informadas sobre su infraestructura de almacenamiento.
+Los informes de Data Infrastructure Insights incluyen informes predefinidos que abordan una serie de requisitos de creación de informes comunes y proporcionan información crítica que las partes interesadas necesitan para tomar decisiones fundamentadas sobre su infraestructura de almacenamiento.
 
 
-NOTE: La función Reporting se encuentra disponible en Cloud Insights link:concept_subscribing_to_cloud_insights.html["Edición Premium"].
+NOTE: La función Informes está disponible en Data Infrastructure Insights link:concept_subscribing_to_cloud_insights.html["Edición Premium"].
 
-Puede generar informes predefinidos en el portal de informes de Cloud Insights, enviarlos por correo electrónico a otros usuarios e incluso modificarlos. Varios informes permiten filtrar por dispositivo, entidad de negocio o nivel. Las herramientas de elaboración de informes utilizan IBM Cognos como base y le proporcionan muchas opciones de presentación de datos.
+Puede generar informes predefinidos desde el portal de informes de Data Infrastructure Insights, enviarlos por correo electrónico a otros usuarios e incluso modificarlos. Varios informes permiten filtrar por dispositivo, entidad de negocio o nivel. Las herramientas de elaboración de informes utilizan IBM Cognos como base y le proporcionan muchas opciones de presentación de datos.
 
 Los informes predefinidos muestran su inventario, capacidad de almacenamiento, pago por uso, rendimiento, eficiencia del almacenamiento, y los datos de costes del cloud. Puede modificar estos informes predefinidos y guardar sus modificaciones.
 
@@ -34,7 +34,7 @@ Puede generar informes en distintos formatos, incluidos HTML, PDF, CSV, XML, Y E
 
 == Navegación a Informes predefinidos
 
-Al abrir el Portal de informes, la carpeta _Team Content_ es el punto de partida para que seleccione el tipo de información que necesita en los informes de Cloud Insights.
+Al abrir Reporting Portal, la carpeta _Team Content_ es el punto de partida para seleccionar el tipo de información que necesita en los informes de Data Infrastructure Insights.
 
 . En el panel de navegación de la izquierda, selecciona *Contenido > Contenido del equipo*.
 . Selecciona *Informes* para acceder a los informes predefinidos.
@@ -121,7 +121,7 @@ El informe sobre capacidad y rendimiento de NetApp proporciona datos globales pa
 
 === Tarjeta de puntuación
 
-El informe de la tabla de puntuación proporciona un resumen y el estado general de todos los activos adquiridos por Cloud Insights. El estado se indica con indicadores verde, amarillo y rojo:
+El informe de tabla de puntuación proporciona un resumen y el estado general de todos los activos adquiridos por Data Infrastructure Insights. El estado se indica con indicadores verde, amarillo y rojo:
 
 * El verde indica que la condición es normal
 * El amarillo indica un posible problema en el entorno

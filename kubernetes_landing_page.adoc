@@ -19,7 +19,7 @@ summary: Explicación de la página de destino de Kubernetes
 
 
 [role="lead"]
-El Explorador de Kubernetes de Cloud Insights es una potente herramienta para mostrar el estado y el uso generales de sus clústeres de Kubernetes, y le permite profundizar fácilmente en las áreas de investigación.
+El explorador de Kubernetes de información sobre infraestructuras de datos es una potente herramienta para mostrar el estado y el uso generales de tus clústeres de Kubernetes y te permite profundizar fácilmente en áreas de investigación.
 
 Al hacer clic en *Paneles > Explorador de Kubernetes* se abre la página de lista clúster de Kubernetes. Esta página de descripción general contiene una tabla de los clústeres de Kubernetes en el entorno.
 

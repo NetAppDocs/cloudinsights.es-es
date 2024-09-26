@@ -4,7 +4,7 @@ permalink: reporting_schema_diagrams.html
 keywords: Schema, DB Schema, premium, dwh, data warehouse 
 summary: Diagramas de esquema de informes 
 ---
-= Diagramas de esquema de informes de Cloud Insights
+= Diagramas de Esquema de Informes de Información de Infraestructura de Datos
 :toc: macro
 :hardbreaks:
 :allow-uri-read: 
@@ -21,7 +21,7 @@ summary: Diagramas de esquema de informes
 Este documento proporciona los diagramas de esquema para la base de datos de informes. También puede descargar un archivo que contenga el link:ci_reporting_database_schema.pdf["tablas de esquema"].
 
 
-NOTE: La función Reporting se encuentra disponible en Cloud Insights link:concept_subscribing_to_cloud_insights.html["Edición Premium"].
+NOTE: La función Informes está disponible en Data Infrastructure Insights link:concept_subscribing_to_cloud_insights.html["Edición Premium"].
 
 
 

@@ -22,7 +22,7 @@ keywords: reporting, cognos, data warehouse, dwh, smd, storage manager dashboard
 El panel de Storage Manager ofrece una visualización centralizada que permite comparar y contrastar el uso de recursos a lo largo del tiempo con los rangos aceptables y los días anteriores de actividad. Mostrando solo las métricas de rendimiento clave de los servicios de almacenamiento, puede tomar decisiones sobre cómo mantener sus centros de datos.
 
 
-NOTE: La función Reporting se encuentra disponible en Cloud Insights link:concept_subscribing_to_cloud_insights.html["Edición Premium"].
+NOTE: La función Informes está disponible en Data Infrastructure Insights link:concept_subscribing_to_cloud_insights.html["Edición Premium"].
 
 
 

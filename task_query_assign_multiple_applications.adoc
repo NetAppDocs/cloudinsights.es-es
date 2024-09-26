@@ -53,7 +53,7 @@ Puede seleccionar varias aplicaciones para hosts, volúmenes internos, qtrees y 
 
 Las aplicaciones nuevas que asigne anulan las aplicaciones del activo que se derivaron de otro activo. Por ejemplo, los volúmenes heredan aplicaciones de hosts y cuando se asignan aplicaciones nuevas a un volumen, la nueva aplicación tiene prioridad sobre la aplicación derivada.
 
-Después de hacer clic en _Save_ en un agregado masivo o _Remove_ en una acción de eliminación masiva, Cloud Insights le informa que la acción tomará algún tiempo. Puede ignorar este mensaje; la acción continuará en segundo plano.
+Después de hacer clic en _Save_ en una adición masiva o _Remove_ en una acción de eliminación masiva, Data Infrastructure Insights le informa de que la acción tardará algún tiempo. Puede ignorar este mensaje; la acción continuará en segundo plano.
 
 
 NOTE: En el caso de entornos con grandes cantidades de activos relacionados, la herencia de las asignaciones de aplicaciones a estos activos puede llevar varios minutos. Por favor, deje que se produzca más tiempo para la herencia si tiene muchos activos relacionados.

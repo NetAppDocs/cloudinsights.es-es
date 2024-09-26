@@ -27,10 +27,10 @@ image:Device_Resolution_IP.png["Resolución del dispositivo IP"]
 
 == Adición manual de dispositivos IP
 
-Puede agregar manualmente un dispositivo IP a Cloud Insights mediante la función de adición manual disponible en la pantalla de identificación de IP.
+Puede agregar manualmente un dispositivo IP a Data Infrastructure Insights mediante la función de adición manual disponible en la pantalla de identificación de IP.
 
 .Procedimiento
-. Inicie sesión en la interfaz de usuario web de Cloud Insights.
+. Inicie sesión en la interfaz de usuario web de Data Infrastructure Insights.
 . Haga clic en *Administrar > resolución del dispositivo*
 . Haga clic en la ficha *Identificación de dirección IP*.
 . Haga clic en el botón *Agregar*.
@@ -74,7 +74,7 @@ NOTE: Como práctica recomendada, se recomienda exportar primero la información
 
 == Exportando identificación de dispositivo IP a un archivo .CSV
 
-Puede exportar identificaciones de dispositivo IP existentes a un archivo .CSV desde la característica de resolución de dispositivo Cloud Insights. Es posible que desee exportar una identificación de dispositivo para poder modificarla y, a continuación, importarla de nuevo en Cloud Insights, donde se utilizará para identificar dispositivos similares a los que originalmente coinciden con la identificación exportada.
+Puede exportar las identificaciones de dispositivos IP existentes a un archivo .CSV desde la función de resolución de dispositivos Data Infrastructure Insights. Es posible que desee exportar una identificación de dispositivo de modo que pueda modificarla y luego importarla de nuevo a Data Infrastructure Insights, donde se utilizará para identificar dispositivos que son similares a los que originalmente coinciden con la identificación exportada.
 
 .Acerca de esta tarea
 . Este escenario se puede utilizar cuando los dispositivos tienen atributos similares que se pueden editar fácilmente en el archivo .CSV y luego volver a importar al sistema.
@@ -87,7 +87,7 @@ Al exportar una identificación de dispositivo IP a un archivo .CSV, el archivo 
 | Dirección | IP | Nombre 
 |===
 .Procedimiento
-. Inicie sesión en la interfaz de usuario web de Cloud Insights.
+. Inicie sesión en la interfaz de usuario web de Data Infrastructure Insights.
 . Haga clic en *Administrar > resolución del dispositivo*
 . Seleccione la ficha *Identificación de dirección IP*.
 . Seleccione el dispositivo IP o los dispositivos cuya identificación desea exportar.

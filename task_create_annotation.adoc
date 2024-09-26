@@ -5,17 +5,14 @@ keywords: annotations, annotation rules, manual annotations,
 summary: Cómo crear una anotación. 
 ---
 = Uso de anotaciones
-:toc: macro
 :hardbreaks:
 :toclevels: 1
 :allow-uri-read: 
-:toc: 
 :toclevels: 1
 :nofooter: 
 :icons: font
 :linkattrs: 
 :imagesdir: ./media/
-:toc-position: content
 
 
 [role="lead"]
@@ -25,9 +22,9 @@ Cree anotaciones y asígnelas a los activos que supervisa. Las anotaciones son n
 
 == Definición de anotaciones
 
-Con las anotaciones, puede agregar datos personalizados específicos del negocio que se ajusten a los activos de las necesidades del negocio. Aunque Cloud Insights proporciona un conjunto de anotaciones predeterminadas, como el ciclo de vida de activos (cumpleaños o fin de su vida), la ubicación del centro de datos o edificio y el nivel, es posible que desee ver los datos de otras formas.
+Con las anotaciones, puede agregar datos personalizados específicos del negocio que se ajusten a los activos de las necesidades del negocio. Mientras que Data Infrastructure Insights proporciona un conjunto de anotaciones predeterminadas, como el ciclo de vida de los activos (cumpleaños o fin de vida), la ubicación del edificio o el centro de datos y el nivel, es posible que quiera ver los datos de otras maneras.
 
-Los datos de anotaciones personalizadas complementan los datos del dispositivo ya recopilados, como el fabricante del switch, el número de puertos y las estadísticas de rendimiento. Cloud Insights no detecta los datos que se agregan con anotaciones.
+Los datos de anotaciones personalizadas complementan los datos del dispositivo ya recopilados, como el fabricante del switch, el número de puertos y las estadísticas de rendimiento. Data Infrastructure Insights no detecta los datos que agregue mediante anotaciones.
 
 .Antes de empezar
 * Enumere cualquier terminología del sector a la que deben asociarse los datos del entorno.
@@ -39,7 +36,7 @@ Los datos de anotaciones personalizadas complementan los datos del dispositivo y
 Utilice los siguientes pasos para crear una anotación.
 
 .Pasos
-. En el menú Cloud Insights, haga clic en *Administrar > Anotaciones*
+. En el menú Información de la infraestructura de datos, haga clic en *Observabilidad > Enriquecimiento > Anotaciones*
 . Haga clic en *+ anotación* para crear una nueva anotación.
 . Introduzca un nombre, una descripción y un tipo para la nueva anotación.
 +
@@ -64,7 +61,7 @@ La asignación de anotaciones a activos ayuda a ordenar, agrupar e informar sobr
 
 
 .Pasos
-. Inicie sesión en su entorno de Cloud Insights.
+. Inicie sesión en su entorno Data Infrastructure Insights.
 . Busque el activo al que desea aplicar la anotación.
 +
 ** Puede buscar activos consultando, eligiendo de un widget de dashoard o buscando. Cuando haya localizado el activo que desee, haga clic en el enlace para abrir la página de destino del activo.
@@ -88,7 +85,7 @@ Si desea cambiar el valor de la anotación después de asignarla, haga clic en e
 
 == Asignación de anotaciones mediante reglas de anotación
 
-Para asignar anotaciones automáticamente a activos basándose en los criterios definidos, configure reglas de anotación. Cloud Insights asigna las anotaciones a los activos basándose en estas reglas. Cloud Insights también proporciona dos reglas de anotación predeterminadas, que se pueden modificar para ajustarse a sus necesidades o quitar si no desea utilizarlas.
+Para asignar anotaciones automáticamente a activos basándose en los criterios definidos, configure reglas de anotación. Data Infrastructure Insights asigna las anotaciones a los activos en función de estas reglas. Data Infrastructure Insights también proporciona dos reglas de anotación predeterminadas, que puede modificar para satisfacer sus necesidades o eliminar si no desea utilizarlas.
 
 
 

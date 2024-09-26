@@ -22,7 +22,7 @@ summary: Configurar Workload Security LDAP User Directory Collector
 La función Seguridad de carga de trabajo se configura para recopilar atributos de usuario desde los servidores de directorio LDAP.
 
 .Antes de empezar
-* Debe ser administrador de Cloud Insights o propietario de la cuenta para realizar esta tarea.
+* Debe ser un administrador de Data Infrastructure Insights o un propietario de la cuenta para realizar esta tarea.
 * Debe tener la dirección IP del servidor donde se aloja el servidor de directorio LDAP.
 * Debe configurar un agente antes de configurar un conector de directorio LDAP.
 

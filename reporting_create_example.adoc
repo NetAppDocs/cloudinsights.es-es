@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: reporting_create_example.html 
-summary: Utilice este procedimiento para crear un informe utilizando los informes predefinidos de Cloud Insights. 
+summary: Utilice este procedimiento para crear un informe utilizando los informes predefinidos de Data Infrastructure Insights. 
 keywords: reporting, cognos, data warehouse, dwh, create, report 
 ---
 = Creación de un informe (ejemplo)
