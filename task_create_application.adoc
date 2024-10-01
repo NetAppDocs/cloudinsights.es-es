@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: task_create_application.html 
-summary: Defina las aplicaciones que luego se aplican a los activos del entorno según sea necesario. 
+summary: Defina las aplicaciones que, a continuación, aplique a los activos del entorno según sea necesario. 
 keywords: application, create application, 
 ---
 = Creación de aplicaciones
@@ -16,16 +16,16 @@ keywords: application, create application,
 
 
 [role="lead"]
-Para realizar un seguimiento de los datos asociados con aplicaciones específicas que se ejecutan en su entorno, puede definir las aplicaciones en Cloud Insights.
+Para realizar un seguimiento de los datos asociados con aplicaciones específicas que se ejecutan en su entorno, puede definir las aplicaciones en Data Infrastructure Insights.
 
 .Antes de empezar
 Si desea asociar la aplicación a una entidad de negocio, debe crear la entidad de negocio antes de definir la aplicación.
 
 .Acerca de esta tarea
-Cloud Insights le permite realizar un seguimiento de los datos de los activos asociados con las aplicaciones en relación con aspectos como el uso o la creación de informes de costes.
+Data Infrastructure Insights le permite realizar un seguimiento de los datos de los activos asociados con las aplicaciones, como la elaboración de informes de uso o de costes.
 
 .Pasos
-. En el menú Cloud Insights, haga clic en *Observabilidad > Enriquecimiento > Aplicaciones*. Seleccione
+. En el menú Información de la infraestructura de datos, haga clic en *Observabilidad > Enriquecimiento > Aplicaciones*. Seleccione
 +
 Aparece el cuadro de diálogo Agregar aplicación.
 
