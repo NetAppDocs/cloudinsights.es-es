@@ -865,8 +865,6 @@
   <block id="d867bfc5a8d8ee48bd2e10f3615136cf" category="cell">Establezca el tamaño del búfer de envío de ONTAP</block>
   <block id="b473afd1a1a7f9aa85950e270c33864e" category="cell">Establece el tamaño del búfer de envío de la directiva de ONTAP. Si se utiliza una versión de ONTAP anterior a 9.8p7 y se observa un problema de rendimiento, el tamaño del búfer de envío de ONTAP se puede modificar para mejorar el rendimiento de ONTAP. Póngase en contacto con el soporte de NetApp si no ve esta opción y desea explorarla.</block>
   <block id="82d21a2ba2528e048a25848fe767072e" category="list-text">En la página Recolectores de datos instalados, utilice el menú de opciones situado a la derecha de cada recopilador para editar el recopilador de datos. Puede reiniciar el recopilador de datos o editar los atributos de configuración del recopilador de datos.</block>
-  <block id="6d7dcfcccd12536dde9ff30f070659ea" category="section-title">Configuración recomendada para Metro Cluster</block>
-  <block id="dbefbdd0db747220531f4b1da3847502" category="paragraph">Se recomienda lo siguiente para Metro Cluster:</block>
   <block id="65b46bd8eed280f6feefa47f4a74d302" category="list-text">Conecte dos recopiladores de datos, uno a la SVM de origen y otro a la SVM de destino.</block>
   <block id="d5d55b52a220ca4d14feac2aa8b83d23" category="list-text">Los recopiladores de datos deben estar conectados por _Cluster IP_.</block>
   <block id="c2e2e688fedcc6b98883e05a15afc9b8" category="list-text">En cualquier momento, un recopilador de datos debe estar en ejecución, otro será un error.</block>
@@ -13438,4 +13436,6 @@ Si está ejecutando SELinux, se recomienda ejecutar los siguientes comandos en e
   <block id="cdf3e3a169b144bb9d2bce1646acfedc" category="paragraph">La siguiente tabla e imagen muestran la asignación de campos entre PagerDuty y Data Infrastructure Insights:</block>
   <block id="55f37f5127b4085cc0881e89df336196" category="cell">Una anulación de dockerRepo para extraer imágenes de repositorios de Docker privados de clientes en comparación con el repositorio de Docker de Data Infrastructure Insights. El valor predeterminado es el repositorio de datos de información sobre infraestructura de datos</block>
   <block id="5a550f6f445193e3c7e81200a2c9d8de" category="cell">Campo de texto libre que identifica de forma única un clúster en todos los clústeres de clientes. Debería ser único para un inquilino de Data Infrastructure Insights. El valor predeterminado es lo que introduce el cliente en la interfaz de usuario del campo «Cluster Name»</block>
+  <block id="3ea40c0971a5d2af49b6f75088f94403" category="section-title">Configuración recomendada para MetroCluster</block>
+  <block id="eff16f7e2ed55dec2fc30b6481ebf593" category="paragraph">Se recomienda lo siguiente para MetroCluster:</block>
 </blocks>
