@@ -76,7 +76,7 @@ Introduzca los datos en los campos del recopilador de datos de acuerdo con la ta
 
 == Resolución de problemas
 
-* Las credenciales utilizadas por el recopilador de datos ANF no deben tener acceso a ninguna suscripción de Azure que contenga volúmenes ANF.
+* Las credenciales que utiliza su recopilador de datos de ANF deben tener acceso a todas las suscripciones de Azure que contengan volúmenes de ANF.
 * Si el acceso de Reader provoca un error en la recopilación de rendimiento, intente conceder acceso de colaborador en un nivel de grupo de recursos.
 
 
