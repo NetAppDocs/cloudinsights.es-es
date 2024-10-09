@@ -268,31 +268,3 @@ image:SecurityAdmin_Encrypt_Key_Swagger_API.png["API para la recopilación de da
 Si establece la opción _preEncrypted_ en _True_, cualquier contraseña que pase a través del comando API se tratará como *ya cifrada*; la API no volverá a cifrar la(s) contraseña(s). Al crear su API, simplemente pegue la contraseña cifrada previamente en la ubicación adecuada.
 
 image:SecurityAdmin_Encrypt_Key_API_Example.png["Ejemplo de API, width=600"]
-
-
-
-== Cifrado de una contraseña para su uso en la API
-
-La opción 8 le permite cifrar una contraseña, que luego puede pasar a un recopilador de datos a través de API.
-
-Inicie la herramienta SecurityAdmin en modo interactivo y seleccione la opción 8: _Encrypt Password_.
-
- securityadmin.sh -i
-Se le pedirá que introduzca la contraseña que desea cifrar. Tenga en cuenta que los caracteres que escriba no se muestran en la pantalla.  Vuelva a introducir la contraseña cuando se le solicite.
-
-Alternativamente, si va a utilizar el comando en un script, en una línea de comandos utilice _securityadmin.sh_ con el parámetro «-enc», pasando su contraseña no cifrada:
-
- securityadmin -enc mypassword
-image:SecurityAdmin_Encrypt_Key_API_CLI_Example.png["Ejemplo de CLI"]
-
-La contraseña cifrada se muestra en la pantalla. Copie toda la cadena, incluidos los símbolos iniciales o finales.
-
-image:SecurityAdmin_Encrypt_Key_1.png["Contraseña de cifrado en modo interactivo, width=640"]
-
-Para enviar la contraseña cifrada a un recopilador de datos, puede utilizar la API de recopilación de datos. El Swagger para esta API se puede encontrar en *Admin > API Access* y haga clic en el enlace «Documentación de API». Seleccione el tipo de API de recopilación de datos.  En el encabezado _data_collection.data_collector_, seleccione la API _/collector/datasources_ POST para este ejemplo.
-
-image:SecurityAdmin_Encrypt_Key_Swagger_API.png["API para la recopilación de datos"]
-
-Si establece la opción _preEncrypted_ en _True_, cualquier contraseña que pase a través del comando API se tratará como *ya cifrada*; la API no volverá a cifrar la(s) contraseña(s). Al crear su API, simplemente pegue la contraseña cifrada previamente en la ubicación adecuada.
-
-image:SecurityAdmin_Encrypt_Key_API_Example.png["Ejemplo de API, width=600"]
