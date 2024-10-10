@@ -106,7 +106,7 @@ NOTE: A _Module Evaluation_ no es una _Trial_ - Utilizamos el término de prueba
 
 === Estimator
 
-Durante una evaluación de módulo, no se cambia el uso de UM para los recursos consumidos para el módulo, pero puedes abrir el *Estimator* (en la pestaña _Summary_) para ver cómo se cargarán las MU después de la evaluación, así como jugar con escenarios “What if” con el número de MU que puedas necesitar en el futuro. Restablezca los números saliendo de Estimator.
+Durante una evaluación del módulo, no se le cobrará el uso de MU por los recursos consumidos para el módulo, pero puede abrir el *Estimator* (en la pestaña _Summary_) para ver cómo se cobrarán las MU después de la evaluación, así como jugar con escenarios de simulación con el número de MU que pueda necesitar en el futuro. Restablezca los números saliendo de Estimator.
 
 image:Module_Trials_Estimator.png["Estimator"]
 
@@ -126,7 +126,36 @@ Para suscribirse, vaya a *Admin -> Suscripción*. Además de los botones *Suscri
 
 === Medición de observabilidad
 
-La observabilidad de la infraestructura y la observabilidad de Kubernetes se miden por cada *unidad gestionada*. El uso de las unidades administradas se calcula en función del número de *hosts o máquinas virtuales* y de la cantidad de *capacidad sin formato* que se administra en el entorno de la infraestructura.
+La observabilidad de los datos de la infraestructura se mide de una de dos maneras:
+
+* Medición de capacidad
+* Medición de unidades gestionadas (heredado)
+
+
+Su suscripción se medirá mediante uno de estos métodos, dependiendo de si tiene una suscripción existente o está lanzando una nueva suscripción.
+
+
+
+==== Medición de capacidad
+
+Información sobre la infraestructura de datos La observabilidad mide el uso en función del nivel de almacenamiento de su entorno. Es posible que tenga almacenamientos que se incluyan en una o más de estas categorías:
+
+* Bruto primario
+* Objeto sin procesar
+* Consumido en el cloud
+
+
+Cada nivel se mide a una tasa diferente, con el conjunto calculado juntos para darle un derecho _efectivo_. La fórmula para calcular el uso efectivo es la siguiente:
+
+ Effective usage = Raw TiB + (0.1 x Object Tier Raw TiB) + (0.25 x Cloud Tier Provisioning TiB)
+
+NOTE: La suma de unidades administradas puede diferir ligeramente del recuento de recopiladores de datos de la sección de resumen. Esto se debe a que los recuentos de unidades administradas se redondean a la unidad administrada más cercana. La suma de estos números en la lista de recopiladores de datos puede ser ligeramente superior al total de unidades administradas en la sección de estado. La sección de resumen refleja el recuento real de unidades administradas para su suscripción. Para facilitar esto, DII calcula un único número de *derecho efectivo* basado en cantidades _subscribed_; luego calcula ese mismo número basado en el almacenamiento _discovered_ y solo declara la violación si la capacidad efectiva descubierta es mayor que el derecho efectivo. Esto le da flexibilidad para supervisar las cantidades que varían de las cantidades suscritas para cada nivel, lo que DII permite siempre que el almacenamiento total descubierto se encuentre dentro del derecho efectivo suscrito.
+
+
+
+==== Medición de unidades gestionadas (heredado)
+
+Análisis de la infraestructura de datos Observabilidad de la infraestructura y Observabilidad de Kubernetes Uso del medidor por *Unidad gestionada*. El uso de las unidades administradas se calcula en función del número de *hosts o máquinas virtuales* y de la cantidad de *capacidad sin formato* que se administra en el entorno de la infraestructura.
 
 * 1 unidad gestionada = 2 hosts (cualquier máquina virtual o física)
 * 1 Unidad administrada = 4 TIB de capacidad sin formato de discos físicos o virtuales
