@@ -239,7 +239,7 @@ El recopilador de datos actual de la SVM en ‘ejecución’ se mostrará como _
 
 == Política de servicio
 
-Si se utiliza una política de servicio de ONTAP versión 9.9.1, para conectarse al recopilador de orígenes de datos, se necesita el servicio _data-fpolicy-client_ junto con el servicio de datos _data-nfs_ y/o _data-cifs_.
+Si se utiliza la política de servicio con ONTAP *versión 9.9.1 o posterior*, para conectarse al recopilador de fuentes de datos, se requiere el servicio _data-fpolicy-client_ junto con el servicio de datos _data-nfs_ y/o _data-cifs_.
 
 Ejemplo:
 
