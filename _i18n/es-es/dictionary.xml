@@ -13509,4 +13509,5 @@ Si está ejecutando SELinux, se recomienda ejecutar los siguientes comandos en e
   <block id="47740590cbaabba0f1b4f325ae5fe6de" category="doc">Resolución de host de base de datos genérica de NetApp:hardbreaks:</block>
   <block id="89a6e68ed7edbbdfb7886ea0a445b999" category="doc">Recopilador de DATOS DE REST DE NetApp ONTAP:hardbreaks:</block>
   <block id="56868b2777c66c74c7926c97d5cbfc1e" category="doc">Instalación Manual del Agente de Seguridad de Carga de Trabajo y del Recopilador:Interrumpencias:</block>
+  <block id="11ad95cf52a6f6d0f02121ba7f3398ce" category="admonition">Antes de realizar cambios en los permisos de informes o en la seguridad, debe copiar los informes de «Mi contenido» en la carpeta «Contenido del equipo» para asegurarse de que se guardan los informes.</block>
 </blocks>

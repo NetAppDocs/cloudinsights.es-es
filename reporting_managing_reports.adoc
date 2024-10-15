@@ -22,6 +22,9 @@ Puede personalizar el formato de salida y la entrega de un informe, establecer l
 NOTE: La función Informes está disponible en Data Infrastructure Insights link:concept_subscribing_to_cloud_insights.html["Edición Premium"].
 
 
+IMPORTANT: Antes de realizar cambios en los permisos de informes o en la seguridad, debe copiar los informes de «Mi contenido» en la carpeta «Contenido del equipo» para asegurarse de que se guardan los informes.
+
+
 
 == Personalización del formato de salida y la entrega de un informe
 
