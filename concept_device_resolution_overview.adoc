@@ -5,17 +5,14 @@ keywords: Automatic, AR, AHR, Host, automatic device resolution
 summary: La resolución automática de dispositivos le ayuda a realizar un seguimiento preciso del rendimiento y del inventario en su entorno. 
 ---
 = Descripción general de la resolución automática del dispositivo
-:toc: macro
 :hardbreaks:
 :toclevels: 2
 :allow-uri-read: 
-:toc: 
 :toclevels: 2
 :nofooter: 
 :icons: font
 :linkattrs: 
 :imagesdir: ./media/
-:toc-position: content
 
 
 [role="lead"]

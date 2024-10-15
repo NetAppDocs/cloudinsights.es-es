@@ -4,8 +4,7 @@ permalink: ws_manually_installing_agent_and_collector.html
 keywords: install, configure, agent, collector, workload, security, cloud secure 
 summary: Los agentes de seguridad de carga de trabajo se pueden instalar o actualizar manualmente, lo que proporciona un mayor control sobre el software instalado en su entorno. 
 ---
-= Instalación manual del agente de seguridad de carga de trabajo y del recopilador
-:hardbreaks:
+= Instalación Manual del Agente de Seguridad de Carga de Trabajo y del Recopilador:Interrumpencias:
 :toclevels: 2
 :allow-uri-read: 
 :toclevels: 2

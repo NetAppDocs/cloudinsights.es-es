@@ -4,13 +4,12 @@ permalink: cs_automated_response_policies.html
 keywords: alert, snapshot, ransomware, attack 
 summary: 'Puede definir políticas de respuesta automatizadas para ataques potenciales (como ransomware) y/o advertencias de actividad' 
 ---
-= Políticas de respuesta automatizadas
-:hardbreaks:
+= Políticas de respuesta automatizada:Interrumpencias:
 :allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media
+:imagesdir: ./media/
 
 
 [role="lead"]

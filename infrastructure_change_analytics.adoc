@@ -1,0 +1,109 @@
+---
+sidebar: sidebar 
+permalink: infrastructure_change_analytics.html 
+keywords: changes, management, analysis, infra, infrastructure 
+summary: Cloud Insights realiza un seguimiento de los cambios en la infraestructura para facilitar el análisis y la solución de problemas. 
+---
+= Análisis de cambios de infraestructura
+:hardbreaks:
+:toclevels: 1
+:allow-uri-read: 
+:toclevels: 1
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+El análisis de cambios de infraestructura le ofrece una visión integral de los cambios recientes en la infraestructura (almacenamiento, switch, etc.) de su entorno. Con Change Analytics, puede realizar un seguimiento de los cambios de configuración y profundizar en los problemas esperados e inesperados.
+
+
+
+== ¿Cómo ayuda el análisis del cambio de la infraestructura?
+
+En cualquier entorno, los cambios en su almacenamiento o dispositivos pueden ocurrir debido a cambios mal configurados, pérdida de energía, etc. Cambie la analítica ayuda con esto proporcionando un único panel para ver y correlacionar el estado de sus dispositivos con interrupciones o cambios planificados. Los cambios se calculan con cada encuesta de inventario (después de la primera encuesta en un nuevo cobrador).
+
+Para analizar los cambios en la infraestructura, vaya a *Observabilidad > Análisis de cambios*. Se muestran las alertas y los cambios de configuración correspondientes al intervalo de tiempo actual. Las filas de alerta muestran el estado de alerta actual (activa o resuelta).
+
+image:infraChange_list_example.png["Pantalla principal de análisis de cambio de infraestructura"].
+
+Al seleccionar un elemento de la lista, se abrirá un panel deslizante que proporcionará más detalles sobre la alerta o el cambio.
+
+image:infraChange_config_detail.png["Ejemplo de panel de detalles de cambios de configuración"]
+
+
+
+== Filtrado
+
+Al igual que con todas las funciones de Cloud Insights, filtrar la lista de cambios es intuitivo: En la parte superior de la página, puede filtrar por tipos de activos específicos (_trigger on:type_) y/o filtrar solo los activos con nombres específicos si lo desea (_trigger on:name_), o agregar sus propios filtros seleccionando el botón {+].
+
+image:infraChange_filter_dropdown.png["Lista desplegable de filtros de cambio de infraestructura"]
+
+También puede ir directamente a Alertas clave o cambios en la sección de estado debajo de la configuración del filtro, incluidos los tres recursos principales actuales con el mayor número de alertas.
+
+image:Change_Analysis_filters_and_status.png["estado y enlaces rápidos a alertas y cambios"]
+
+
+
+== ¿Qué objetos se analizan en busca de cambios?
+
+La siguiente tabla muestra los objetos y atributos incluidos en el análisis de cambios de infraestructura.
+
+|===
+
+
+| Tipo de objeto | Atributos | Atributos ampliados 
+
+
+| Disco | Disksize.total isVirtual diskGroup tipo de velocidad ubicación SerialNumber rol status vendor model storage.name storagePools.name name | Cifrado 
+
+
+| Reducida | datasources.name familia ip isActive microcodeVersion protocolos de nombre de modelo SerialNumber proveedor |  
+
+
+| Nodo de almacenamiento | Nombre storage.name nodeModelo de versión Número de serialOfProcesadores estado partner.name memoria caché | ManagementIpAddresses parentSerialNumber nombre del sitio 
+
+
+| StoragePool | Tipo de nombre isAutoTiering isVirtual redundancy vendorTier usesFlashPools storage.vendor storage.ip storage.model storage.family storage.name storageNodes.name capacity.total (atributo dinámico) | IsCompactionSavingsEnabled isEncrypted objectStoreName objectStoreProviderType objectStoreSizeLimit objectStoreTieringFullnessThreshold objectStoreS3Name objectStoreServer 
+
+
+| Qtree | Type datasources.name securityStyle isOplocksEnabled shares.name storage.name internalVolume.storagePool.name internalVolume.name storageVirtualMachine.name internalVolume.virtualStorage simpleName statusText name |  
+
+
+| StorageVirtualMachine | Name storage.name state type ipSpace protocols internalVolumeLimit comment |  
+
+
+| Volumen | Nombre simpleName etiqueta tipo storage.name storage.vendor storage.ip storage.model storage.family isAutoTiering isThinProvisioned diskGroup isMainframe isMeta isReplicaSource isReplicaTarget isSnapshot isVirtual internalVolume.name internalVolume.VirtualStorage storageNodes.name storageNodes.partner.name storagePools.minDiskSize.total storagePools.minDiskSpeed storagePools.minDiskType storagePools.name storagePools.redundancy storagePools.usesFlashPools storagePools.vendorTier storageVirtualMachine.name | StorageGroups isEncrypted isCompressionEnabled qosBurstIOPS qosLimitIOPS qosLimitMBPS qosMinIOPS qosPolicy qosLimitRaw 
+
+
+| InternalVolume | FlashPoolNombre de elegibilidad simpleName spaceGuarantee tipo de estado virtualStorage replicaSources.name storageNodes.name storageNodes.partner.name storagePool.disks.disksize.total storage.name storage.vendor storage.ip storage.model storage.family storagePool.disks.speed storageVirtualMachine.name storagePool.redundancy storagePool.name storagePool.disks.type storagePool.usesFlashPools capacity.isThinProvisioned | QosPolicy qosLimitRaw qosLimitIOPS qosLimitMBPS comment isAdaptiveQosPolicy junctionPath objectStoreTieringPolicy tieringMinimumCoolingDays 
+
+
+| VirtualMachine | Nombre dnsName Procesadores de memoria ip os guestState PowerState host.name host.clustername host.ip host.os dataStore.name | InstanceType publicIps securityGroups virtualCenterIp 
+
+
+| Almacén de datos | Nombre virtualCenterIp | tipo 
+
+
+| Host | Nombre modelo ip isFabricante de Active os cpuCount memory isHypervisor clustername | Ip. De centro de virtualización 
+
+
+| vmdk (VirtualMachineDisk) | Nombre tipo dataStore.name isRdm virtualMachine.host.name virtualMachine.name | Es Snapshot 
+
+
+| Puerto | Nombre isTipo de wwn activo portÍndice de velocidad blade gbicTipo connectedPorts.device.name connectedPorts.device.type connectedPorts.name connectedPorts.nodeWwn connectedPorts.wwn controlador device.name device.type fabrics.name Fabrics.vsanId nodeWwn | descripción 
+|===
+<<<<<< HEAD Data Infrastructure Insights enumera las alertas y los cambios que se crean para los siguientes registros:
+
+[]
+====
+La lista de Data Infrastructure Insights genera alertas y cambios para los siguientes registros: >>>>>> 2d5e94be3615a400bce1e7a050d2d523cc06b5b8
+
+* logs.vmware.events
+* logs.NetApp.ems
+
+
+Los supervisores de métricas también se observan en busca de objetos y atributos en la lista anterior. En el monitor, estos deben seleccionarse en la opción _Agrupar por_ para que Change Analytics realice un seguimiento de ellos.
+
+====

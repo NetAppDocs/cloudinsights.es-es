@@ -4,8 +4,7 @@ permalink: task_config_telegraf_agent_k8s.html
 keywords: kubernetes, Kubernetes, k8s, telegraf, installation, install, agent, telegraf agent, eks, operator 
 summary: El operador de supervisión de Kubernetes recopila datos de Kubernetes para su uso en Información de infraestructura de datos. 
 ---
-= Instalación y configuración del operador de supervisión de Kubernetes
-:hardbreaks:
+= Instalación y configuración del operador de supervisión de Kubernetes:hardbreaks:
 :toclevels: 2
 :allow-uri-read: 
 :nofooter: 
@@ -259,6 +258,11 @@ Registro de eventos
 Rendimiento de red y mapa
 
 * ci-net-observador
+
+
+Cambiar análisis
+
+* ci-k8s-cambio-observador
 
 
 Introduzca la imagen del operador docker en el repositorio de su proveedor de servicios de empresa/local/privado de acuerdo con las políticas de su empresa. Asegúrese de que las etiquetas de imagen y las rutas de directorio a estas imágenes del repositorio sean coherentes con las del repositorio de Data Infrastructure Insights.
