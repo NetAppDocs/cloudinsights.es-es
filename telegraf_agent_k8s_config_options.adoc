@@ -87,7 +87,7 @@ proxy:
 |  | RsMemRequest | Solicitud de memoria para telegraf rs 
 
 
-|  | Privilegios de ejecución | Ejecute el contenedor de telegraf en modo con privilegios. Establezca esta opción en true si SELinux está activado en los nodos k8s 
+|  | Privilegios de ejecución | Ejecute el contenedor _telegraf-mountstats-poller_ de telegraf DaemonSet en modo privilegiado. Establezca esta opción en true si SELinux está habilitado en sus nodos de Kubernetes. 
 
 
 |  | Tamaño de lote | Consulte link:https://github.com/influxdata/telegraf/blob/master/docs/CONFIGURATION.md#agent["Documentación de configuración de Telegraf"] 
@@ -179,7 +179,10 @@ persistentvolumeclaims=[*],persistentvolumes=[*],pods=[*],replicasets=[*],resour
 |  | Privilegios de ejecución | Defina runPrivileged en true si el bit fluido no se inicia, intentando abrir/crear su base de datos. 
 
 
-| asignación de carga de trabajo |  | Opciones de configuración que pueden personalizar la recopilación de mapas de carga de trabajo y la instalación del operador 
+|  | RunDsPrivileged | Establezca runDsPrivileged en true para ejecutar el contenedor telegraf DaemonSet en modo privilegiado. 
+
+
+| asignación de carga de trabajo |  | Opciones de configuración que pueden personalizar la recopilación de mapas de carga de trabajo y la instalación del operador. 
 
 
 |  | CpuLimit | Límite de CPU para ds de observador neto 
