@@ -5,27 +5,19 @@ summary: La matriz de soporte del recopilador de datos contiene información det
 keywords: support matrix, vendor, NetApp, IBM, EMC, Dell, HP, Hitachi, VMware, Huawei, OpenStack, 
 ---
 = Matriz de compatibilidad con recopilador de datos de información sobre infraestructuras de datos
-:toc: macro
 :hardbreaks:
 :toclevels: 1
 :allow-uri-read: 
-:toc: 
 :toclevels: 1
 :nofooter: 
 :icons: font
 :linkattrs: 
 :imagesdir: ./media/
-:firstname: [.lead]
-:author: [.lead]
-:authorinitials: [
-:authors: [.lead]
-:toc-position: content
 
 
+[role="lead"]
 La matriz de compatibilidad de recopilador de datos proporciona referencias para recopiladores de datos compatibles con Data Infrastructure Insights, incluida la información del proveedor y el modelo.
 
-
-toc::[]
 
 
 == Almacenamiento HP Enterprise 3PAR / Alletra 9000 / Primera StoreServ
@@ -675,20 +667,17 @@ API de gestión que usa este recopilador de datos:
 
 | CLI de 3PAR | SSH | SSH | 22 |  | verdadero | falso | verdadero | verdadero 
 |===
-<<top,Volver al inicio>>
-
 
 
 == Amazon AWS EC2
 
 Modelos y versiones compatibles con este recopilador de datos:
 
-|===
-| Versiones API 
+Versiones de API:
+
+* 2014-10-01
 
 
-| 2014-10-01 
-|===
 Productos compatibles con este recopilador de datos:
 
 |===
@@ -960,8 +949,6 @@ API de gestión que usa este recopilador de datos:
 
 | API DE EC2 | HTTPS | HTTPS | 443 |  | verdadero | verdadero | verdadero | verdadero 
 |===
-<<top,Volver al inicio>>
-
 
 
 == Amazon AWS S3
@@ -1119,8 +1106,6 @@ API de gestión que usa este recopilador de datos:
 
 | API S3 | HTTPS | HTTPS | 443 |  | verdadero | verdadero | verdadero | verdadero 
 |===
-<<top,Volver al inicio>>
-
 
 
 == Azure NetApp Files de Microsoft
@@ -1422,8 +1407,6 @@ API de gestión que usa este recopilador de datos:
 
 | API de REST de Azure NetApp Files | HTTPS | HTTPS | 443 |  | verdadero | verdadero | verdadero | verdadero 
 |===
-<<top,Volver al inicio>>
-
 
 
 == Switches Fibre Channel de Brocade
@@ -1845,8 +1828,6 @@ API de gestión que usa este recopilador de datos:
 
 | Configuración del asistente de origen de datos | Entrada manual |  |  |  | verdadero | verdadero | verdadero | verdadero 
 |===
-<<top,Volver al inicio>>
-
 
 
 == HTTP del asesor de red de Brocade
@@ -2118,8 +2099,6 @@ API de gestión que usa este recopilador de datos:
 
 | API DE REST de Brocade Network Advisor | HTTP/HTTPS | HTTP/HTTPS | 80/443 |  | verdadero | verdadero | verdadero | verdadero 
 |===
-<<top,Volver al inicio>>
-
 
 
 == REST DE Brocade FOS
@@ -2447,8 +2426,6 @@ API de gestión que usa este recopilador de datos:
 
 | API DE REST DE BROCADE FOS | HTTPS |  | 443 |  | verdadero | verdadero | verdadero | verdadero 
 |===
-<<top,Volver al inicio>>
-
 
 
 == Switches estructurales Cisco MDS y Nexus
@@ -2868,8 +2845,6 @@ API de gestión que usa este recopilador de datos:
 
 | SNMP de Cisco | SNMP | SNMPv1 (sólo Inventario), SNMPv2 y SNMPv3 | 161 |  | verdadero | verdadero | verdadero | verdadero 
 |===
-<<top,Volver al inicio>>
-
 
 
 == Cohesión
@@ -3182,8 +3157,6 @@ API de gestión que usa este recopilador de datos:
 
 | API de REST DE Cohesity | HTTPS | HTTPS | 443 |  | verdadero | verdadero | verdadero | verdadero 
 |===
-<<top,Volver al inicio>>
-
 
 
 == EMC Celerra (SSH)
@@ -3478,8 +3451,6 @@ API de gestión que usa este recopilador de datos:
 
 | CLI de Celerra | SSH | SSH |  |  | verdadero | falso | verdadero | verdadero 
 |===
-<<top,Volver al inicio>>
-
 
 
 == CLARiiON de EMC (NaviCLI)
@@ -4044,8 +4015,6 @@ API de gestión que usa este recopilador de datos:
 
 | CLI de Navi | CLI |  | 6389,2162,2163,443 (HTTPS)/80 (HTTP) |  | verdadero | verdadero | verdadero | falso 
 |===
-<<top,Volver al inicio>>
-
 
 
 == Dominio de datos de EMC (SSH)
@@ -4365,8 +4334,6 @@ API de gestión que usa este recopilador de datos:
 
 | CLI de Data Domain | SSH | SSH | 22 |  | verdadero | verdadero | verdadero | verdadero 
 |===
-<<top,Volver al inicio>>
-
 
 
 == ECS DE EMC
@@ -4650,8 +4617,6 @@ API de gestión que usa este recopilador de datos:
 
 | API REST DE EMC ECS | HTTPS | HTTPS | 443 |  | verdadero | verdadero | verdadero | verdadero 
 |===
-<<top,Volver al inicio>>
-
 
 
 == Dell EMC Isilon y PowerScale REST
@@ -5256,8 +5221,6 @@ API de gestión que usa este recopilador de datos:
 
 | API de REST DE EMC Isilon y PowerScale | HTTPS |  | 443 |  | verdadero | verdadero | verdadero | verdadero 
 |===
-<<top,Volver al inicio>>
-
 
 
 == Isilon / PowerScale (CLI) de Dell EMC
@@ -5781,8 +5744,6 @@ API de gestión que usa este recopilador de datos:
 
 | SSH de Isilon | SSH | SSH | 22 |  | verdadero | falso | verdadero | verdadero 
 |===
-<<top,Volver al inicio>>
-
 
 
 == POWERSTORE REST de EMC
@@ -6304,8 +6265,6 @@ API de gestión que usa este recopilador de datos:
 
 | API REST DE EMC POWERSTORE | HTTPS | HTTPS | 443 |  | verdadero | verdadero | verdadero | verdadero 
 |===
-<<top,Volver al inicio>>
-
 
 
 == RecoverPoint de EMC (HTTP)
@@ -6437,8 +6396,6 @@ API de gestión que usa este recopilador de datos:
 
 | API REST DE RecoverPoint | HTTPS | HTTPS | 443 |  | verdadero | verdadero | verdadero | verdadero 
 |===
-<<top,Volver al inicio>>
-
 
 
 == EMC ScaleIO y PowerFlex REST
@@ -6739,8 +6696,6 @@ API de gestión que usa este recopilador de datos:
 
 | API REST de EMC ScaleIO y PowerFlex | HTTPS | HTTPS | 443 |  | verdadero | verdadero | verdadero | verdadero 
 |===
-<<top,Volver al inicio>>
-
 
 
 == CLI de EMC Symmetrix
@@ -7504,8 +7459,6 @@ API de gestión que usa este recopilador de datos:
 
 | SMI-S de Symmetrix | SMI-S | HTTP/HTTPS | 5988/5989 |  | verdadero | falso | falso | verdadero 
 |===
-<<top,Volver al inicio>>
-
 
 
 == Dell Unisphere REST
@@ -7931,8 +7884,6 @@ API de gestión que usa este recopilador de datos:
 
 | API de Dell Unisphere | HTTPS | HTTPS | 443 |  | verdadero | verdadero | verdadero | verdadero 
 |===
-<<top,Volver al inicio>>
-
 
 
 == VNX DE EMC (SSH)
@@ -8450,8 +8401,6 @@ API de gestión que usa este recopilador de datos:
 
 | VNX SSH Y CLI | SSH | SSH | 22 |  | verdadero | falso | verdadero | verdadero 
 |===
-<<top,Volver al inicio>>
-
 
 
 == VNXe y Unity Unisphere de EMC (CLI)
@@ -9011,8 +8960,6 @@ API de gestión que usa este recopilador de datos:
 
 | VNXe y Unisphere CLI | HTTPS | HTTPS | 443 |  | verdadero | verdadero | verdadero | verdadero 
 |===
-<<top,Volver al inicio>>
-
 
 
 == VPLEX DE EMC
@@ -9331,8 +9278,6 @@ API de gestión que usa este recopilador de datos:
 
 | API VPLEX DE EMC | HTTP/HTTPS | HTTP/HTTPS | 80/443 |  | verdadero | verdadero | verdadero | verdadero 
 |===
-<<top,Volver al inicio>>
-
 
 
 == XtremIO (HTTP) de EMC
@@ -9791,8 +9736,6 @@ API de gestión que usa este recopilador de datos:
 
 | API DE REST DE XTREMIO DE EMC | HTTPS | HTTPS | 443 |  | verdadero | verdadero | verdadero | verdadero 
 |===
-<<top,Volver al inicio>>
-
 
 
 == E-Series de NetApp
@@ -10377,20 +10320,17 @@ API de gestión que usa este recopilador de datos:
 
 | API de SANtricity | RMI | TCP |  |  | verdadero | verdadero | falso | falso 
 |===
-<<top,Volver al inicio>>
-
 
 
 == Google Cloud Compute
 
 Modelos y versiones compatibles con este recopilador de datos:
 
-|===
-| Versiones API 
+Versiones de API:
+
+* v1
 
 
-| v1 
-|===
 Productos compatibles con este recopilador de datos:
 
 |===
@@ -10629,8 +10569,6 @@ API de gestión que usa este recopilador de datos:
 
 | API de REST DE Google Compute Platform | HTTPS |  | 443 |  | verdadero | verdadero | verdadero | verdadero 
 |===
-<<top,Volver al inicio>>
-
 
 
 == HCP DE HDS (HTTPS)
@@ -10837,8 +10775,6 @@ API de gestión que usa este recopilador de datos:
 
 | API DE REST DEL HCP DE HDS | HTTPS | HTTPS | 9090 |  | verdadero | verdadero | verdadero | verdadero 
 |===
-<<top,Volver al inicio>>
-
 
 
 == Administrador de dispositivos HiCommand
@@ -11404,8 +11340,6 @@ API de gestión que usa este recopilador de datos:
 
 | API XML de HiCommand Device Manager | API XML DE HDS | HTTP/HTTPS | 2001 |  | verdadero | verdadero | verdadero | verdadero 
 |===
-<<top,Volver al inicio>>
-
 
 
 == Centro de operaciones de Hitachi
@@ -11848,8 +11782,6 @@ API de gestión que usa este recopilador de datos:
 
 | API de REST DE Hitachi Ops Center | HTTPS | HTTPS | 443 |  | verdadero | verdadero | verdadero | verdadero 
 |===
-<<top,Volver al inicio>>
-
 
 
 == HNAS DE HDS (CLI)
@@ -12142,8 +12074,6 @@ API de gestión que usa este recopilador de datos:
 
 | CLI HNAS DE HDS | SSH | SSH | 22 |  | verdadero | verdadero | verdadero | verdadero 
 |===
-<<top,Volver al inicio>>
-
 
 
 == Almacenamiento HPE Nimble / Alletra 6000
@@ -12612,8 +12542,6 @@ API de gestión que usa este recopilador de datos:
 
 | API DE REST HP NIMBLE | HTTPS | HTTPS | 5392 |  | verdadero | falso | verdadero | verdadero 
 |===
-<<top,Volver al inicio>>
-
 
 
 == Huawei OceanStor (REST/HTTPS)
@@ -13132,8 +13060,6 @@ API de gestión que usa este recopilador de datos:
 
 | API de REST DE Huawei OceanStor Performance | HTTPS | HTTPS | 8088 |  | verdadero | falso | verdadero | verdadero 
 |===
-<<top,Volver al inicio>>
-
 
 
 == IBM Cleversafe
@@ -13324,8 +13250,6 @@ API de gestión que usa este recopilador de datos:
 
 | API DE REST DE IBM CLEVERSAFE | HTTPS | HTTPS | 443 |  | verdadero | verdadero | verdadero | verdadero 
 |===
-<<top,Volver al inicio>>
-
 
 
 == IBM DS 8K (DSCLI)
@@ -13721,8 +13645,6 @@ API de gestión que usa este recopilador de datos:
 
 | CLI DE IBM DS | NI DE NI | NI DE NI |  |  | verdadero | verdadero | verdadero | verdadero 
 |===
-<<top,Volver al inicio>>
-
 
 
 == IBM PowerVM (SSH)
@@ -13904,8 +13826,6 @@ API de gestión que usa este recopilador de datos:
 
 | Acceso SSH de IBM Hardware Management Console | SSH | SSH | 22 |  | verdadero | falso | verdadero | verdadero 
 |===
-<<top,Volver al inicio>>
-
 
 
 == IBM SVC (CLI)
@@ -14494,8 +14414,6 @@ API de gestión que usa este recopilador de datos:
 
 | CLI DE IBM SVC | SSH | SSH | 22 |  | verdadero | falso | verdadero | verdadero 
 |===
-<<top,Volver al inicio>>
-
 
 
 == IBM XIV Y A9000 (XIVCLI)
@@ -14907,8 +14825,6 @@ API de gestión que usa este recopilador de datos:
 
 | CLI DE XIV DE IBM | CLI DE XIV | TCP | 7778 |  | verdadero | falso | verdadero | falso 
 |===
-<<top,Volver al inicio>>
-
 
 
 == Infinidat Infinibox (HTTP)
@@ -15235,20 +15151,17 @@ API de gestión que usa este recopilador de datos:
 
 | API REST DE Infinidat | HTTPS | HTTPS | 443 |  | verdadero | verdadero | verdadero | verdadero 
 |===
-<<top,Volver al inicio>>
-
 
 
 == Computación de Microsoft Azure
 
 Modelos y versiones compatibles con este recopilador de datos:
 
-|===
-| Versiones API 
+Versiones de API:
+
+* 2018-06-01
 
 
-| 2018-06-01 
-|===
 Productos compatibles con este recopilador de datos:
 
 |===
@@ -15484,8 +15397,6 @@ API de gestión que usa este recopilador de datos:
 
 | API de REST DE Microsoft Azure Compute | HTTPS | HTTPS | 443 |  | verdadero | verdadero | verdadero | verdadero 
 |===
-<<top,Volver al inicio>>
-
 
 
 == Microsoft Hyper-V
@@ -15883,8 +15794,6 @@ API de gestión que usa este recopilador de datos:
 
 | WMI | WMI | WMI | 135 |  | verdadero | falso | verdadero | verdadero 
 |===
-<<top,Volver al inicio>>
-
 
 
 == Modo NetApp 7
@@ -16784,8 +16693,6 @@ API de gestión que usa este recopilador de datos:
 
 | ZAPI NetApp 7-Mode | ZAPI | ZAPI |  |  | verdadero | verdadero | verdadero | verdadero 
 |===
-<<top,Volver al inicio>>
-
 
 
 == Cloud Volumes Service de NetApp
@@ -16973,8 +16880,6 @@ API de gestión que usa este recopilador de datos:
 
 | API de REST de Cloud Volumes Service | HTTPS | HTTPS | 443 |  | verdadero | verdadero | verdadero | verdadero 
 |===
-<<top,Volver al inicio>>
-
 
 
 == Amazon FSX para ONTAP de NetApp
@@ -17615,8 +17520,6 @@ API de gestión que usa este recopilador de datos:
 
 | API de NetApp ONTAP | HTTP/HTTPS | HTTP/HTTPS | 80/443 |  | verdadero | verdadero | verdadero | verdadero 
 |===
-<<top,Volver al inicio>>
-
 
 
 == Clustered Data ONTAP de NetApp 8.1.1 o posterior
@@ -19069,8 +18972,6 @@ API de gestión que usa este recopilador de datos:
 
 | API de NetApp ONTAP | HTTP/HTTPS | HTTP/HTTPS | 80/443 |  | verdadero | verdadero | verdadero | verdadero 
 |===
-<<top,Volver al inicio>>
-
 
 
 == SolidFire 8.1 o posterior de NetApp
@@ -19666,8 +19567,6 @@ API de gestión que usa este recopilador de datos:
 
 | API de REST de SolidFire | HTTPS | HTTPS | 443 |  | verdadero | verdadero | verdadero | verdadero 
 |===
-<<top,Volver al inicio>>
-
 
 
 == NetApp StorageGRID (HTTPS)
@@ -19976,8 +19875,6 @@ API de gestión que usa este recopilador de datos:
 
 | API REST de StorageGRID | HTTPS | HTTPS | 443 |  | verdadero | falso | verdadero | verdadero 
 |===
-<<top,Volver al inicio>>
-
 
 
 == Almacenamiento Nutanix (REST)
@@ -20538,8 +20435,6 @@ API de gestión que usa este recopilador de datos:
 
 | API REST de Nutanix | HTTPS | HTTPS | 443 |  | verdadero | verdadero | verdadero | verdadero 
 |===
-<<top,Volver al inicio>>
-
 
 
 == OPENSTACK (API DE REST/SSH)
@@ -20820,8 +20715,6 @@ API de gestión que usa este recopilador de datos:
 
 | SSH de OpenStack | SSH | SSH | 22 |  | verdadero | falso | verdadero | verdadero 
 |===
-<<top,Volver al inicio>>
-
 
 
 == ZFS de Oracle (HTTPS)
@@ -21338,8 +21231,6 @@ API de gestión que usa este recopilador de datos:
 
 | API REST DE ORACLE ZFS | HTTP/HTTPS | HTTP/HTTPS | 215 |  | verdadero | verdadero | verdadero | verdadero 
 |===
-<<top,Volver al inicio>>
-
 
 
 == FlashArray de Pure Storage (HTTP)
@@ -21832,8 +21723,6 @@ API de gestión que usa este recopilador de datos:
 
 | API de REST de Pure Storage | HTTP/HTTPS | HTTP/HTTPS | 80/443 |  | verdadero | verdadero | verdadero | verdadero 
 |===
-<<top,Volver al inicio>>
-
 
 
 == Red Hat RHV (REST)
@@ -22075,8 +21964,6 @@ API de gestión que usa este recopilador de datos:
 
 | Red Hat RHEV REST API | HTTPS | HTTPS | 443 |  | verdadero | verdadero | verdadero | verdadero 
 |===
-<<top,Volver al inicio>>
-
 
 
 == Almacenamiento RUBRIK
@@ -22367,8 +22254,6 @@ API de gestión que usa este recopilador de datos:
 
 | API de REST de Rubrik Storage | HTTPS | HTTPS | 443 |  | verdadero | verdadero | verdadero | verdadero 
 |===
-<<top,Volver al inicio>>
-
 
 
 == Centro virtual de NetApp HCI
@@ -22834,22 +22719,19 @@ API de gestión que usa este recopilador de datos:
 
 | API de REST de VMware | Servicios Web | HTTP/HTTPS | 80/443 |  | verdadero | verdadero | verdadero | verdadero 
 |===
-<<top,Volver al inicio>>
-
 
 
 == VMware Cloud en AWS
 
 Modelos y versiones compatibles con este recopilador de datos:
 
-|===
-| Versiones API 
+Versiones de API:
+
+* VMware vCenter Server 7.0.3, compilación 20532039
+* VMware vCenter Server 7.0.3, compilación 20870699
+* VMware vCenter Server 8.0.0, compilación 21709157
 
 
-| VMware vCenter Server 7.0.3, compilación 20532039
-VMware vCenter Server 7.0.3, compilación 20870699
-VMware vCenter Server 8.0.0, compilación 21709157 
-|===
 Productos compatibles con este recopilador de datos:
 
 |===
@@ -23226,104 +23108,101 @@ API de gestión que usa este recopilador de datos:
 
 | API de REST de VMware | Servicios Web | HTTP/HTTPS | 80/443 |  | verdadero | verdadero | verdadero | verdadero 
 |===
-<<top,Volver al inicio>>
-
 
 
 == VSphere de VMware (Web Services)
 
 Modelos y versiones compatibles con este recopilador de datos:
 
-|===
-| Versiones API 
+Versiones de API:
+
+* VMware ESXi 6.0.0 build-10719132
+* VMware ESXi 6.0.0 build-2494585
+* VMware ESXi 6.0.0 build-5572656
+* VMware ESXi 6.0.0 build-9313334
+* VMware ESXi 6.5.0 build-14990892
+* VMware ESXi 6.5.0 build-5969303
+* VMware ESXi 7.0.0 build-15843807
+* VMware ESXi 7.0.3 build-20036589
+* VMware ESXi 7.0.3 build-20328353
+* VMware ESXi 7.0.3 build-20842708
+* VMware vCenter Server 5.0.0, compilación 3073236
+* VMware vCenter Server 5.0.0, compilación 455964
+* VMware vCenter Server 5.0.0, compilación 623373
+* VMware vCenter Server 5.1.0, compilación 3814779
+* VMware vCenter Server 5.5.0, compilación 1750787
+* VMware vCenter Server 5.5.0, compilación 2442329
+* VMware vCenter Server 5.5.0, compilación 3000241
+* VMware vCenter Server 5.5.0, compilación 3252642
+* VMware vCenter Server 5.5.0, compilación 3721164
+* VMware vCenter Server 5.5.0, compilación 4180647
+* VMware vCenter Server 5.5.0, compilación 6516310
+* VMware vCenter Server 5.5.0, compilación 9911218
+* VMware vCenter Server 6.0.0, compilación 13638472
+* VMware vCenter Server 6.0.0, compilación 14510545
+* VMware vCenter Server 6.0.0, compilación 2776511
+* VMware vCenter Server 6.0.0, compilación 3634793
+* VMware vCenter Server 6.0.0, compilación 3634794
+* VMware vCenter Server 6.0.0, compilación 5960847
+* VMware vCenter Server 6.0.0, compilación 7924803
+* VMware vCenter Server 6.0.0, compilación 8803875
+* VMware vCenter Server 6.0.0, compilación 9313458
+* VMware vCenter Server 6.5.0, compilación 10964411
+* VMware vCenter Server 6.5.0, compilación 15679215
+* VMware vCenter Server 6.5.0, compilación 17590285
+* VMware vCenter Server 6.5.0, compilación 17994927
+* VMware vCenter Server 6.5.0, compilación 18499837
+* VMware vCenter Server 6.5.0, compilación 18711281
+* VMware vCenter Server 6.5.0, compilación 19261680
+* VMware vCenter Server 6.5.0, compilación 20510539
+* VMware vCenter Server 6.5.0, compilación 7119157
+* VMware vCenter Server 6.7.0, compilación 10244857
+* VMware vCenter Server 6.7.0, compilación 11727113
+* VMware vCenter Server 6.7.0, compilación 13007421
+* VMware vCenter Server 6.7.0, compilación 13639324
+* VMware vCenter Server 6.7.0, compilación 14368073
+* VMware vCenter Server 6.7.0, compilación 15129973
+* VMware vCenter Server 6.7.0, compilación 15679289
+* VMware vCenter Server 6.7.0, compilación 17137327
+* VMware vCenter Server 6.7.0, compilación 18010599
+* VMware vCenter Server 6.7.0, compilación 18485185
+* VMware vCenter Server 6.7.0, compilación 18831049
+* VMware vCenter Server 6.7.0, compilación 19299595
+* VMware vCenter Server 6.7.0, compilación 19832247
+* VMware vCenter Server 6.7.0, compilación 19832280
+* VMware vCenter Server 6.7.0, compilación 20504301
+* VMware vCenter Server 6.7.0, compilación 20504362
+* VMware vCenter Server 6.7.0, compilación 8170161
+* VMware vCenter Server 6.7.0, compilación 9433931
+* VMware vCenter Server 7.0.0, compilación 16620013
+* VMware vCenter Server 7.0.0, compilación 16749670
+* VMware vCenter Server 7.0.1, compilación 17491160
+* VMware vCenter Server 7.0.2, compilación 17694817
+* VMware vCenter Server 7.0.2, compilación 17958471
+* VMware vCenter Server 7.0.2, compilación 18356314
+* VMware vCenter Server 7.0.2, compilación 18455184
+* VMware vCenter Server 7.0.3, compilación 18700403
+* VMware vCenter Server 7.0.3, compilación 18778458
+* VMware vCenter Server 7.0.3, compilación 19234570
+* VMware vCenter Server 7.0.3, compilación 19480866
+* VMware vCenter Server 7.0.3, compilación 19717403
+* VMware vCenter Server 7.0.3, compilación 20051473
+* VMware vCenter Server 7.0.3, compilación 20150588
+* VMware vCenter Server 7.0.3, compilación 20395099
+* VMware vCenter Server 7.0.3, compilación 20845200
+* VMware vCenter Server 7.0.3, compilación 20990077
+* VMware vCenter Server 7.0.3, compilación 21290409
+* VMware vCenter Server 7.0.3, compilación 21477706
+* VMware vCenter Server 7.0.3, compilación 21784236
+* VMware vCenter Server 7.0.3, compilación 21958406
+* VMware vCenter Server 8.0.0, compilación 20920323
+* VMware vCenter Server 8.0.0, compilación 21216066
+* VMware vCenter Server 8.0.0, compilación 21457384
+* VMware vCenter Server 8.0.1, compilación 21560480
+* VMware vCenter Server 8.0.1, compilación 21815093
+* VMware vCenter Server 8.0.1, compilación 21860503
 
 
-| VMware ESXi 6.0.0 build-10719132
-VMware ESXi 6.0.0 build-2494585
-VMware ESXi 6.0.0 build-5572656
-VMware ESXi 6.0.0 build-9313334
-VMware ESXi 6.5.0 build-14990892
-VMware ESXi 6.5.0 build-5969303
-VMware ESXi 7.0.0 build-15843807
-VMware ESXi 7.0.3 build-20036589
-VMware ESXi 7.0.3 build-20328353
-VMware ESXi 7.0.3 build-20842708
-VMware vCenter Server 5.0.0, compilación 3073236
-VMware vCenter Server 5.0.0, compilación 455964
-VMware vCenter Server 5.0.0, compilación 623373
-VMware vCenter Server 5.1.0, compilación 3814779
-VMware vCenter Server 5.5.0, compilación 1750787
-VMware vCenter Server 5.5.0, compilación 2442329
-VMware vCenter Server 5.5.0, compilación 3000241
-VMware vCenter Server 5.5.0, compilación 3252642
-VMware vCenter Server 5.5.0, compilación 3721164
-VMware vCenter Server 5.5.0, compilación 4180647
-VMware vCenter Server 5.5.0, compilación 6516310
-VMware vCenter Server 5.5.0, compilación 9911218
-VMware vCenter Server 6.0.0, compilación 13638472
-VMware vCenter Server 6.0.0, compilación 14510545
-VMware vCenter Server 6.0.0, compilación 2776511
-VMware vCenter Server 6.0.0, compilación 3634793
-VMware vCenter Server 6.0.0, compilación 3634794
-VMware vCenter Server 6.0.0, compilación 5960847
-VMware vCenter Server 6.0.0, compilación 7924803
-VMware vCenter Server 6.0.0, compilación 8803875
-VMware vCenter Server 6.0.0, compilación 9313458
-VMware vCenter Server 6.5.0, compilación 10964411
-VMware vCenter Server 6.5.0, compilación 15679215
-VMware vCenter Server 6.5.0, compilación 17590285
-VMware vCenter Server 6.5.0, compilación 17994927
-VMware vCenter Server 6.5.0, compilación 18499837
-VMware vCenter Server 6.5.0, compilación 18711281
-VMware vCenter Server 6.5.0, compilación 19261680
-VMware vCenter Server 6.5.0, compilación 20510539
-VMware vCenter Server 6.5.0, compilación 7119157
-VMware vCenter Server 6.7.0, compilación 10244857
-VMware vCenter Server 6.7.0, compilación 11727113
-VMware vCenter Server 6.7.0, compilación 13007421
-VMware vCenter Server 6.7.0, compilación 13639324
-VMware vCenter Server 6.7.0, compilación 14368073
-VMware vCenter Server 6.7.0, compilación 15129973
-VMware vCenter Server 6.7.0, compilación 15679289
-VMware vCenter Server 6.7.0, compilación 17137327
-VMware vCenter Server 6.7.0, compilación 18010599
-VMware vCenter Server 6.7.0, compilación 18485185
-VMware vCenter Server 6.7.0, compilación 18831049
-VMware vCenter Server 6.7.0, compilación 19299595
-VMware vCenter Server 6.7.0, compilación 19832247
-VMware vCenter Server 6.7.0, compilación 19832280
-VMware vCenter Server 6.7.0, compilación 20504301
-VMware vCenter Server 6.7.0, compilación 20504362
-VMware vCenter Server 6.7.0, compilación 8170161
-VMware vCenter Server 6.7.0, compilación 9433931
-VMware vCenter Server 7.0.0, compilación 16620013
-VMware vCenter Server 7.0.0, compilación 16749670
-VMware vCenter Server 7.0.1, compilación 17491160
-VMware vCenter Server 7.0.2, compilación 17694817
-VMware vCenter Server 7.0.2, compilación 17958471
-VMware vCenter Server 7.0.2, compilación 18356314
-VMware vCenter Server 7.0.2, compilación 18455184
-VMware vCenter Server 7.0.3, compilación 18700403
-VMware vCenter Server 7.0.3, compilación 18778458
-VMware vCenter Server 7.0.3, compilación 19234570
-VMware vCenter Server 7.0.3, compilación 19480866
-VMware vCenter Server 7.0.3, compilación 19717403
-VMware vCenter Server 7.0.3, compilación 20051473
-VMware vCenter Server 7.0.3, compilación 20150588
-VMware vCenter Server 7.0.3, compilación 20395099
-VMware vCenter Server 7.0.3, compilación 20845200
-VMware vCenter Server 7.0.3, compilación 20990077
-VMware vCenter Server 7.0.3, compilación 21290409
-VMware vCenter Server 7.0.3, compilación 21477706
-VMware vCenter Server 7.0.3, compilación 21784236
-VMware vCenter Server 7.0.3, compilación 21958406
-VMware vCenter Server 8.0.0, compilación 20920323
-VMware vCenter Server 8.0.0, compilación 21216066
-VMware vCenter Server 8.0.0, compilación 21457384
-VMware vCenter Server 8.0.1, compilación 21560480
-VMware vCenter Server 8.0.1, compilación 21815093
-VMware vCenter Server 8.0.1, compilación 21860503 
-|===
 Productos compatibles con este recopilador de datos:
 
 |===
@@ -23814,4 +23693,3 @@ API de gestión que usa este recopilador de datos:
 
 | API de REST de VMware | Servicios Web | HTTP/HTTPS | 80/443 |  | verdadero | verdadero | verdadero | verdadero 
 |===
-<<top,Volver al inicio>>
